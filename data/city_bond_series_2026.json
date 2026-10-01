@@ -1,0 +1,2512 @@
+{
+ "generated_by": "scripts/bonds_parse.py",
+ "units": "US dollars",
+ "window_note": "O'Hare, Midway and GO use the bond year ending Jan 1 2027 (payments Jan 2 2026 to Jan 1 2027). Water and Sewer use fiscal (calendar) year 2026.",
+ "status_key": {
+  "current": "series column from the series' own OS; no later transaction known to change it",
+  "current_group": "series printed combined in one column",
+  "current_with_caveat": "principal in the OS differs slightly from outstanding now",
+  "stale": "later refunding, defeasance or tender makes the printed figure an upper bound; not counted as a leaf amount",
+  "residual_by_subtraction": "aggregate outstanding column minus named series; not a single series",
+  "aggregate": "unnamed series bucket",
+  "loan_aggregate": "IEPA loans, not bonds"
+ },
+ "ordinance_lines": {
+  "ohare": {
+   "interest": 496066181,
+   "principal": 303172911,
+   "fees": 3231068
+  },
+  "midway": {
+   "interest": 61100475,
+   "principal": 77455000,
+   "fees": 6147941
+  },
+  "water_bonds": {
+   "interest": 92769138,
+   "principal": 86685000
+  },
+  "water_loans": {
+   "interest": 14135049,
+   "principal": 39667255
+  },
+  "sewer_bonds": {
+   "interest": 77313314,
+   "principal": 36753805
+  },
+  "sewer_loans": {
+   "interest": 11735386,
+   "principal": 32626175
+  },
+  "go": {
+   "interest": 285429137,
+   "principal": 132090000
+  }
+ },
+ "reconciliation": {
+  "ohare": {
+   "ordinance_principal": 303172911,
+   "ordinance_interest": 496066181,
+   "ordinance_pi": 799239092,
+   "sum_of_current_series_leaves": 648938919,
+   "senior_lien_total_per_2026CD_OS": 771416782,
+   "cfc_plus_tifia_plus_pfc": 23961000,
+   "all_listed_lines_total": 795377782,
+   "gap_to_ordinance": 3861310
+  },
+  "midway": {
+   "ordinance_pi": 138555475,
+   "os_aggregate_bond_year_2027": 134355876,
+   "fs_calendar_2026": 127835000,
+   "fs_calendar_2027": 137561000,
+   "sum_of_lines": 134355876
+  },
+  "water": {
+   "ordinance_bonds_pi": 179454138,
+   "ordinance_loans_pi": 53802304,
+   "ordinance_bonds_plus_loans": 233256442,
+   "os_total_debt_service_requirement_2026": 233775541,
+   "sum_of_lines": 233775541
+  },
+  "wastewater": {
+   "ordinance_bonds_pi": 114067119,
+   "ordinance_loans_pi": 44361561,
+   "ordinance_bonds_plus_loans": 158428680,
+   "os_total_debt_service_requirement_2026": 165855677,
+   "sum_of_lines": 165855677
+  },
+  "go": {
+   "ordinance_pi": 417519137
+  }
+ },
+ "leaves": [
+  {
+   "series": "O'Hare 2026A",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 7766934,
+   "principal": 0,
+   "interest": 7766934,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "earliest printed maturity is 2043 (cover); sinking fund installments not checked",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "OS.X6Bl2Stb8.pdf",
+    "pdf_page": 56,
+    "row": "2027 $764,807,117 $7,766,934 $772,574,051"
+   },
+   "outstanding_principal_after_2026CD": 612235000
+  },
+  {
+   "series": "O'Hare 2026B",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 3235655,
+   "principal": 1410000,
+   "interest": 1825655,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "ohare_2026B_OS.pdf",
+    "pdf_page": 60,
+    "row": "2027 $769,914,901 $3,235,655 $773,150,557"
+   },
+   "outstanding_principal_after_2026CD": 1291630000
+  },
+  {
+   "series": "O'Hare 2026C",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 7971212,
+   "principal": 4510000,
+   "interest": 3461212,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "ohare_2026CD_OS.pdf",
+    "pdf_page": 65,
+    "row": "2027 $754,929,701 $7,971,212 $8,515,870 $771,416,782"
+   },
+   "outstanding_principal_after_2026CD": 293185000
+  },
+  {
+   "series": "O'Hare 2026D",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 8515870,
+   "principal": 5825000,
+   "interest": 2690870,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "ohare_2026CD_OS.pdf",
+    "pdf_page": 65,
+    "row": "2027 $754,929,701 $7,971,212 $8,515,870 $771,416,782"
+   },
+   "outstanding_principal_after_2026CD": 226400000
+  },
+  {
+   "series": "O'Hare 2025C",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 23937813,
+   "principal": 1485000,
+   "interest": 22452813,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "Final-Official-Statement---ORD-2025CD.3PVt2SAKt.pdf",
+    "pdf_page": 67,
+    "row": "2027 689,411,105 23,937,813 51,458,199 764,807,117"
+   },
+   "outstanding_principal_after_2026CD": 429525000
+  },
+  {
+   "series": "O'Hare 2025D",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 51458199,
+   "principal": 24245000,
+   "interest": 27213199,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "Final-Official-Statement---ORD-2025CD.3PVt2SAKt.pdf",
+    "pdf_page": 67,
+    "row": "2027 689,411,105 23,937,813 51,458,199 764,807,117"
+   },
+   "outstanding_principal_after_2026CD": 525295000
+  },
+  {
+   "series": "O'Hare 2025E",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 10500879,
+   "principal": 0,
+   "interest": 10500879,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "earliest printed maturity is 2043 (cover); sinking fund installments not checked",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "Final-OS.KvjbpkoAR.pdf",
+    "pdf_page": 60,
+    "row": "2027 754,699,966 10,500,879 2,270,100 767,470,945"
+   },
+   "outstanding_principal_after_2026CD": 1101570000
+  },
+  {
+   "series": "O'Hare 2025G",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 2270100,
+   "principal": 1260000,
+   "interest": 1010100,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "Final-OS.KvjbpkoAR.pdf",
+    "pdf_page": 60,
+    "row": "2027 754,699,966 10,500,879 2,270,100 767,470,945"
+   },
+   "outstanding_principal_after_2026CD": 21300000
+  },
+  {
+   "series": "O'Hare 2025A",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 2435666,
+   "principal": 0,
+   "interest": 2435666,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "earliest printed maturity is 2036 (cover); sinking fund installments not checked",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "OS.NEfpPym7t.pdf",
+    "pdf_page": 55,
+    "row": "2027 752,104,389 2,435,666 2,592,223 757,132,278"
+   },
+   "outstanding_principal_after_2026CD": 211170000
+  },
+  {
+   "series": "O'Hare 2025B",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 2592223,
+   "principal": 0,
+   "interest": 2592223,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "earliest printed maturity is 2036 (cover); sinking fund installments not checked",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "OS.NEfpPym7t.pdf",
+    "pdf_page": 55,
+    "row": "2027 752,104,389 2,435,666 2,592,223 757,132,278"
+   },
+   "outstanding_principal_after_2026CD": 120980000
+  },
+  {
+   "series": "O'Hare 2024C",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 77534763,
+   "principal": 52790000,
+   "interest": 24744763,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "OS.ZupAfhGTd.pdf",
+    "pdf_page": 66,
+    "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389"
+   },
+   "outstanding_principal_after_2026CD": 491395000
+  },
+  {
+   "series": "O'Hare 2024D",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 90783500,
+   "principal": 52435000,
+   "interest": 38348500,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "OS.ZupAfhGTd.pdf",
+    "pdf_page": 66,
+    "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389"
+   },
+   "outstanding_principal_after_2026CD": 766970000
+  },
+  {
+   "series": "O'Hare 2024E",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 27252000,
+   "principal": 20490000,
+   "interest": 6762000,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "OS.ZupAfhGTd.pdf",
+    "pdf_page": 66,
+    "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389"
+   },
+   "outstanding_principal_after_2026CD": 135240000
+  },
+  {
+   "series": "O'Hare 2024F",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 10786250,
+   "principal": 8175000,
+   "interest": 2611250,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "OS.ZupAfhGTd.pdf",
+    "pdf_page": 66,
+    "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389"
+   },
+   "outstanding_principal_after_2026CD": 52225000
+  },
+  {
+   "series": "O'Hare 2024A",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 29530938,
+   "principal": 0,
+   "interest": 29530938,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "earliest printed maturity is 2036 (cover); sinking fund installments not checked",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "Chicago-O-Hare-General-Airport-Senor-Lien-Revenue-Bonds-Series-2024AB.A4BiRKyNl.pdf",
+    "pdf_page": 57,
+    "row": "2027 711,437,923 29,530,938 22,842,963 23,081,315 740,730,508"
+   },
+   "outstanding_principal_after_2026CD": 549985000,
+   "note_capitalized_interest": "The 2024AB table subtracts $23081315 of capitalized interest for both series together. It is not allocated here."
+  },
+  {
+   "series": "O'Hare 2024B",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 22842963,
+   "principal": 0,
+   "interest": 22842963,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "earliest printed maturity is 2036 (cover); sinking fund installments not checked",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "Chicago-O-Hare-General-Airport-Senor-Lien-Revenue-Bonds-Series-2024AB.A4BiRKyNl.pdf",
+    "pdf_page": 57,
+    "row": "2027 711,437,923 29,530,938 22,842,963 23,081,315 740,730,508"
+   },
+   "outstanding_principal_after_2026CD": 436875000,
+   "note_capitalized_interest": "The 2024AB table subtracts $23081315 of capitalized interest for both series together. It is not allocated here."
+  },
+  {
+   "series": "O'Hare 2022A",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 56821550,
+   "principal": 0,
+   "interest": 56821550,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "no 2027 serial maturity printed on cover (serial years [2025, 2026, 2028, 2029]); sinking fund installments not checked",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+    "pdf_page": 75,
+    "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085"
+   },
+   "outstanding_principal_after_2026CD": 1105415000
+  },
+  {
+   "series": "O'Hare 2022B",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 7138050,
+   "principal": 0,
+   "interest": 7138050,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "earliest printed maturity is 2056 (cover); sinking fund installments not checked",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+    "pdf_page": 75,
+    "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085"
+   },
+   "outstanding_principal_after_2026CD": 150450000
+  },
+  {
+   "series": "O'Hare 2022C",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 6983250,
+   "principal": 2900000,
+   "interest": 4083250,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+    "pdf_page": 75,
+    "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085"
+   },
+   "outstanding_principal_after_2026CD": 81665000
+  },
+  {
+   "series": "O'Hare 2022D",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 34346350,
+   "principal": 20095000,
+   "interest": 14251350,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+    "pdf_page": 75,
+    "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085"
+   },
+   "outstanding_principal_after_2026CD": 296360000
+  },
+  {
+   "series": "O'Hare 2020A",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 21545350,
+   "principal": 0,
+   "interest": 21545350,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "earliest printed maturity is 2028 (cover); sinking fund installments not checked",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "outstanding_principal_after_2026CD": 494360000
+  },
+  {
+   "series": "O'Hare 2020B",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 16782500,
+   "principal": 11875000,
+   "interest": 4907500,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "outstanding_principal_after_2026CD": 99390000
+  },
+  {
+   "series": "O'Hare 2020C",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 2394600,
+   "principal": 0,
+   "interest": 2394600,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "earliest printed maturity is 2034 (cover); sinking fund installments not checked",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "outstanding_principal_after_2026CD": 59865000
+  },
+  {
+   "series": "O'Hare 2020D",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 46032704,
+   "principal": 38760000,
+   "interest": 7272704,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "outstanding_principal_after_2026CD": 302590000
+  },
+  {
+   "series": "O'Hare 2020E",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 2675550,
+   "principal": 0,
+   "interest": 2675550,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "earliest printed maturity is 2029 (cover); sinking fund installments not checked",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "outstanding_principal_after_2026CD": 61955000
+  },
+  {
+   "series": "O'Hare 2018A",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 28690300,
+   "principal": 890000,
+   "interest": 27800300,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "ORD_2018ABC_OS.vKd4ptjc.pdf",
+    "pdf_page": 68,
+    "row": "2027 560,273,587.49 28,690,300.00 28,280,750.00 36,176,000.00 653,420,637.49"
+   },
+   "outstanding_principal_after_2026CD": 591215000
+  },
+  {
+   "series": "O'Hare 2018B",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 28280750,
+   "principal": 0,
+   "interest": 28280750,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "earliest printed maturity is 2036 (cover); sinking fund installments not checked",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "ORD_2018ABC_OS.vKd4ptjc.pdf",
+    "pdf_page": 68,
+    "row": "2027 560,273,587.49 28,690,300.00 28,280,750.00 36,176,000.00 653,420,637.49"
+   },
+   "outstanding_principal_after_2026CD": 612095000
+  },
+  {
+   "series": "O'Hare 2018C",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": null,
+   "status": "stale",
+   "note": "Printed amount 36176000 from the series' own statement is an UPPER BOUND, not a leaf amount. partly defeased by 2025C (ohare_FS2025 p.50 lists 2018C $89.87M). Its true 2026 amount is inside the O'Hare residual line.",
+   "cite": {
+    "doc": "ORD_2018ABC_OS.vKd4ptjc.pdf",
+    "pdf_page": 68,
+    "row": "2027 560,273,587.49 28,690,300.00 28,280,750.00 36,176,000.00 653,420,637.49"
+   },
+   "outstanding_principal_after_2026CD": 710130000,
+   "printed_upper_bound": 36176000
+  },
+  {
+   "series": "O'Hare 2017A",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": null,
+   "status": "stale",
+   "note": "Printed amount 9396644 from the series' own statement is an UPPER BOUND, not a leaf amount. partly refunded by 2026CD (p.64: $39.345M to $13.010M). Its true 2026 amount is inside the O'Hare residual line.",
+   "cite": {
+    "doc": "ORD_2017ABCD_OS.ugRRnIFv.pdf",
+    "pdf_page": 64,
+    "row": "2027 507,511,824 - 9,396,644 18,213,750 9,008,300 17,833,000 - 561,963,518"
+   },
+   "outstanding_principal_after_2026CD": 13010000,
+   "printed_upper_bound": 9396644
+  },
+  {
+   "series": "O'Hare 2017B",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": null,
+   "status": "stale",
+   "note": "Printed amount 18213750 from the series' own statement is an UPPER BOUND, not a leaf amount. fully refunded by 2026CD (p.64: $156.945M to 0), also partly defeased by 2025D (FS p.50). Its true 2026 amount is inside the O'Hare residual line.",
+   "cite": {
+    "doc": "ORD_2017ABCD_OS.ugRRnIFv.pdf",
+    "pdf_page": 64,
+    "row": "2027 507,511,824 - 9,396,644 18,213,750 9,008,300 17,833,000 - 561,963,518"
+   },
+   "outstanding_principal_after_2026CD": 0,
+   "printed_upper_bound": 18213750
+  },
+  {
+   "series": "O'Hare 2017C",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": null,
+   "status": "stale",
+   "note": "Printed amount 9008300 from the series' own statement is an UPPER BOUND, not a leaf amount. partly refunded by 2026CD (p.64: $61.985M to $34.380M). Its true 2026 amount is inside the O'Hare residual line.",
+   "cite": {
+    "doc": "ORD_2017ABCD_OS.ugRRnIFv.pdf",
+    "pdf_page": 64,
+    "row": "2027 507,511,824 - 9,396,644 18,213,750 9,008,300 17,833,000 - 561,963,518"
+   },
+   "outstanding_principal_after_2026CD": 34380000,
+   "printed_upper_bound": 9008300
+  },
+  {
+   "series": "O'Hare 2017D",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 17833000,
+   "principal": 5015000,
+   "interest": 12818000,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "serial maturity on OS cover, page 1",
+   "status": "current",
+   "note": "",
+   "cite": {
+    "doc": "ORD_2017ABCD_OS.ugRRnIFv.pdf",
+    "pdf_page": 64,
+    "row": "2027 507,511,824 - 9,396,644 18,213,750 9,008,300 17,833,000 - 561,963,518"
+   },
+   "outstanding_principal_after_2026CD": 153150000
+  },
+  {
+   "series": "O'Hare 2016D",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": null,
+   "status": "stale",
+   "note": "Printed amount 42617250 from the series' own statement is an UPPER BOUND, not a leaf amount. partly refunded by 2026CD (ohare_2026CD_OS p.64: $598.73M to $392.74M). Its true 2026 amount is inside the O'Hare residual line.",
+   "cite": {
+    "doc": "O'Hare_2016D-G_Sr._Lien_GARB_OS.bW9YWx6Cu3.pdf",
+    "pdf_page": 67,
+    "row": "2027 453,785,443 42,617,250 38,043,600 9,101,394 3,692,238 547,239,925"
+   },
+   "outstanding_principal_after_2026CD": 392740000,
+   "printed_upper_bound": 42617250
+  },
+  {
+   "series": "O'Hare 2016E",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": null,
+   "status": "stale",
+   "note": "Printed amount 38043600 from the series' own statement is an UPPER BOUND, not a leaf amount. partly refunded by 2026CD (p.64: $61.54M to $34.90M). Its true 2026 amount is inside the O'Hare residual line.",
+   "cite": {
+    "doc": "O'Hare_2016D-G_Sr._Lien_GARB_OS.bW9YWx6Cu3.pdf",
+    "pdf_page": 67,
+    "row": "2027 453,785,443 42,617,250 38,043,600 9,101,394 3,692,238 547,239,925"
+   },
+   "outstanding_principal_after_2026CD": 34900000,
+   "printed_upper_bound": 38043600
+  },
+  {
+   "series": "O'Hare 2016F",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": null,
+   "status": "stale",
+   "note": "Printed amount 9101394 from the series' own statement is an UPPER BOUND, not a leaf amount. fully refunded by 2026CD (p.64: $127.405M to 0), also partly defeased by 2025D (FS p.50). Its true 2026 amount is inside the O'Hare residual line.",
+   "cite": {
+    "doc": "O'Hare_2016D-G_Sr._Lien_GARB_OS.bW9YWx6Cu3.pdf",
+    "pdf_page": 67,
+    "row": "2027 453,785,443 42,617,250 38,043,600 9,101,394 3,692,238 547,239,925"
+   },
+   "outstanding_principal_after_2026CD": 0,
+   "printed_upper_bound": 9101394
+  },
+  {
+   "series": "O'Hare 2016G",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": null,
+   "status": "stale",
+   "note": "Printed amount 3692238 from the series' own statement is an UPPER BOUND, not a leaf amount. partly refunded by 2026CD (p.64: $58.675M to $37.075M). Its true 2026 amount is inside the O'Hare residual line.",
+   "cite": {
+    "doc": "O'Hare_2016D-G_Sr._Lien_GARB_OS.bW9YWx6Cu3.pdf",
+    "pdf_page": 67,
+    "row": "2027 453,785,443 42,617,250 38,043,600 9,101,394 3,692,238 547,239,925"
+   },
+   "outstanding_principal_after_2026CD": 37075000,
+   "printed_upper_bound": 3692238
+  },
+  {
+   "series": "O'Hare residual: Series 2010B (BAB, $328M) plus post-refunding remainder of 2016D/E/F/G, 2017A/B/C and 2018C",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 122477863,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": null,
+   "status": "residual_by_subtraction",
+   "note": "Not split by series. The 2026CD statement prints only the combined outstanding column ($754,929,701) after the 2026CD refunding.",
+   "cite": {
+    "doc": "ohare_2026CD_OS.pdf",
+    "pdf_page": 65,
+    "row": "2027 total net debt service $771,416,782 minus sum of current series columns"
+   }
+  },
+  {
+   "series": "O'Hare CFC Series 2023 bonds",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 8786000,
+   "principal": 0,
+   "interest": 8786000,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in the schedule",
+   "status": "current",
+   "note": "Calendar 2026 from the FY2025 financial statements ($ thousands x 1000)",
+   "cite": {
+    "doc": "ohare_FS2025.pdf",
+    "pdf_page": 51,
+    "row": "2026 interest $8,786K, principal 0"
+   }
+  },
+  {
+   "series": "O'Hare TIFIA loan",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 15171000,
+   "principal": 4336000,
+   "interest": 10835000,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in the schedule",
+   "status": "current",
+   "note": "Calendar 2026 from the FY2025 financial statements ($ thousands x 1000)",
+   "cite": {
+    "doc": "ohare_FS2025.pdf",
+    "pdf_page": 52,
+    "row": "2026 principal $4,336K, interest $10,835K"
+   }
+  },
+  {
+   "series": "O'Hare PFC Series 2012AB",
+   "credit": "ohare",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 4000,
+   "principal": 0,
+   "interest": 4000,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in the schedule",
+   "status": "current",
+   "note": "Calendar 2026 from the FY2025 financial statements ($ thousands x 1000)",
+   "cite": {
+    "doc": "ohare_FS2025.pdf",
+    "pdf_page": 51,
+    "row": "2026 interest $4K"
+   }
+  },
+  {
+   "series": "Midway 2025A",
+   "credit": "midway",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 11696413,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "not extracted",
+   "status": "current",
+   "note": "Net of capitalized interest. Variable-rate bonds assumed at 3.00% in the source (midway_2025AB_OS p.60 note 5).",
+   "cite": {
+    "doc": "midway_2025AB_OS.pdf",
+    "pdf_page": 60,
+    "row": "2027 111,523,075 11,696,413 11,136,388 134,355,876"
+   }
+  },
+  {
+   "series": "Midway 2025B",
+   "credit": "midway",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 11136388,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "not extracted",
+   "status": "current",
+   "note": "Net of capitalized interest. Variable-rate bonds assumed at 3.00% in the source (midway_2025AB_OS p.60 note 5).",
+   "cite": {
+    "doc": "midway_2025AB_OS.pdf",
+    "pdf_page": 60,
+    "row": "2027 111,523,075 11,696,413 11,136,388 134,355,876"
+   }
+  },
+  {
+   "series": "Midway 2024A",
+   "credit": "midway",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 9026000,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "not extracted",
+   "status": "current",
+   "note": "Net of capitalized interest. Variable-rate bonds assumed at 3.00% in the source (midway_2025AB_OS p.60 note 5).",
+   "cite": {
+    "doc": "Official-Statement---Chicago-Midway-Airport-Senior-Lien-Airport-Revenue-Refunding-Bonds--Series-2024A--AMT--and-Series-2024B--Non-AMT.gmjJS7nVk.pdf",
+    "pdf_page": 32,
+    "row": "2027 122,238,476 9,026,000 966,000 132,230,476"
+   }
+  },
+  {
+   "series": "Midway 2024B",
+   "credit": "midway",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 966000,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "not extracted",
+   "status": "current",
+   "note": "Net of capitalized interest. Variable-rate bonds assumed at 3.00% in the source (midway_2025AB_OS p.60 note 5).",
+   "cite": {
+    "doc": "Official-Statement---Chicago-Midway-Airport-Senior-Lien-Airport-Revenue-Refunding-Bonds--Series-2024A--AMT--and-Series-2024B--Non-AMT.gmjJS7nVk.pdf",
+    "pdf_page": 32,
+    "row": "2027 122,238,476 9,026,000 966,000 132,230,476"
+   }
+  },
+  {
+   "series": "Midway 2023A",
+   "credit": "midway",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 17850013,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "not extracted",
+   "status": "current",
+   "note": "Net of capitalized interest. Variable-rate bonds assumed at 3.00% in the source (midway_2025AB_OS p.60 note 5).",
+   "cite": {
+    "doc": "ILChicago07a-FIN.tKvfUEqGd.pdf",
+    "pdf_page": 40,
+    "row": "2027 83,888,102 17,850,013 35,419,750 137,157,865"
+   }
+  },
+  {
+   "series": "Midway 2023B",
+   "credit": "midway",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 35419750,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "not extracted",
+   "status": "current",
+   "note": "Net of capitalized interest. Variable-rate bonds assumed at 3.00% in the source (midway_2025AB_OS p.60 note 5).",
+   "cite": {
+    "doc": "ILChicago07a-FIN.tKvfUEqGd.pdf",
+    "pdf_page": 40,
+    "row": "2027 83,888,102 17,850,013 35,419,750 137,157,865"
+   }
+  },
+  {
+   "series": "Midway 2023C",
+   "credit": "midway",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 39148250,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "not extracted",
+   "status": "current",
+   "note": "Net of capitalized interest. Variable-rate bonds assumed at 3.00% in the source (midway_2025AB_OS p.60 note 5).",
+   "cite": {
+    "doc": "Official-Statement---Chicago-Midway-Airport-Senior-Lien-Airport-Revenue-Refunding-Bonds-Series-2023C--AMT.ezIVqKGLw.pdf",
+    "pdf_page": 36,
+    "row": "2027 93,319,115 39,148,250 132,467,365"
+   }
+  },
+  {
+   "series": "Midway residual: Series 2014B, 2014C, 2018A (and any 2016A remnant)",
+   "credit": "midway",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 9113062,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": null,
+   "status": "residual_by_subtraction",
+   "note": "FY2025 financial statement p.82 shows calendar 2027 for these as $4,240K (2014) + $5,256K (2018).",
+   "cite": {
+    "doc": "midway_2025AB_OS.pdf",
+    "pdf_page": 60,
+    "row": "outstanding column $111523075 minus the 2023A/B/C and 2024A/B columns"
+   }
+  },
+  {
+   "series": "Water 2026A, 2026B, 2026C (three series, printed combined)",
+   "credit": "water",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 22511703,
+   "principal": 2780000,
+   "interest": 19731703,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in table",
+   "status": "current_group",
+   "note": "Sold May 2026. Net of capitalized interest. Fiscal year 2026 (calendar).",
+   "cite": {
+    "doc": "water_2026ABC_OS.pdf",
+    "pdf_page": 36,
+    "row": "2026 169,218,793 2,780,000 19,731,703 22,511,703 191,730,496 42,045,045 233,775,541"
+   }
+  },
+  {
+   "series": "Water 2024A",
+   "credit": "water",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 23553000,
+   "principal": 8895000,
+   "interest": 14658000,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in table",
+   "status": "current",
+   "note": "Fiscal year 2026.",
+   "cite": {
+    "doc": "Final-Official-Statement.xhGQmBh3f.pdf",
+    "pdf_page": 25,
+    "row": "2026 153,430,599 8,895,000 14,658,000 23,553,000 176,983,599 40,608,385 217,591,984"
+   }
+  },
+  {
+   "series": "Water 2023A",
+   "credit": "water",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 13676838,
+   "principal": 0,
+   "interest": 13676838,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in table",
+   "status": "current",
+   "note": "Fiscal year 2026.",
+   "cite": {
+    "doc": "Second-Lien-Water-Revenue-Bonds--Project-Series-2023A-and-Refunding-Series-2023B---Offical-Statement.eCHJIWijc.pdf",
+    "pdf_page": 32,
+    "row": "2026 183,281,662 32,856,300 150,425,362 - 13,676,838 - 13,926,050 27,602,888 178,028,250"
+   }
+  },
+  {
+   "series": "Water 2023B",
+   "credit": "water",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 13926050,
+   "principal": 0,
+   "interest": 13926050,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in table",
+   "status": "current",
+   "note": "Fiscal year 2026.",
+   "cite": {
+    "doc": "Second-Lien-Water-Revenue-Bonds--Project-Series-2023A-and-Refunding-Series-2023B---Offical-Statement.eCHJIWijc.pdf",
+    "pdf_page": 32,
+    "row": "2026 183,281,662 32,856,300 150,425,362 - 13,676,838 - 13,926,050 27,602,888 178,028,250"
+   }
+  },
+  {
+   "series": "Water residual: Series 2001, 2004, 2010B, 2010C, 2016A-1, 2017, 2017-2 and 2023C (WIFIA)",
+   "credit": "water",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 118062905,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": null,
+   "status": "residual_by_subtraction",
+   "note": "Series list from water_2026_supplement.pdf p.5. Not split further here.",
+   "cite": {
+    "doc": "water_2026ABC_OS.pdf",
+    "pdf_page": 36,
+    "row": "outstanding column $169218793 minus 2024A and 2023A/B"
+   }
+  },
+  {
+   "series": "Water IEPA subordinate-lien loans (aggregate)",
+   "credit": "water",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 42045045,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "not printed",
+   "status": "loan_aggregate",
+   "note": "Loans, not bonds. Per-loan 2026 payments are not printed in the OS (water_2026_supplement.pdf p.6 lists balances).",
+   "cite": {
+    "doc": "water_2026ABC_OS.pdf",
+    "pdf_page": 36,
+    "row": "2026 169,218,793 2,780,000 19,731,703 22,511,703 191,730,496 42,045,045 233,775,541"
+   }
+  },
+  {
+   "series": "Sewer 2024B",
+   "credit": "wastewater",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 7729250,
+   "principal": 1145000,
+   "interest": 6584250,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in table",
+   "status": "current",
+   "note": "Fiscal year 2026.",
+   "cite": {
+    "doc": "wastewater_2024B_OS.pdf",
+    "pdf_page": 24,
+    "row": "2026 24,680,000 100,912,797 1,145,000 6,584,250 7,729,250 108,642,047 133,322,047 32,533,630 165,855,677"
+   }
+  },
+  {
+   "series": "Sewer 2024A",
+   "credit": "wastewater",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 17791000,
+   "principal": 7225000,
+   "interest": 10566000,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in table",
+   "status": "current",
+   "note": "Fiscal year 2026.",
+   "cite": {
+    "doc": "Official-Statement---Second-Lien-Wastewater-Transmission-Revenue-Bonds--Refunding-Series-2024A.KQj5S8Qjg.pdf",
+    "pdf_page": 23,
+    "row": "2026 24,680,000 91,594,547 7,225,000 10,566,000 17,791,000 109,385,547 134,065,547 31,133,861 165,199,408"
+   }
+  },
+  {
+   "series": "Sewer 2023A",
+   "credit": "wastewater",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 13749390,
+   "principal": 0,
+   "interest": 13749390,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "no principal column value printed for 2026",
+   "status": "current",
+   "note": "Interest $13760838 less capitalized interest $11447.",
+   "cite": {
+    "doc": "Second-Lien-Wastewater-Transmission-Revenue-Bonds--Project-Series-2023A-and-Refunding-Series-2023B---Offical-Statement.Pb8LUKjtl.pdf",
+    "pdf_page": 30,
+    "row": "2026 24,680,000 95,485,476 13,760,838 11,447 13,749,390 9,623,500 9,623,500 118,858,366 143,538,366"
+   }
+  },
+  {
+   "series": "Sewer 2023B",
+   "credit": "wastewater",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 9623500,
+   "principal": 0,
+   "interest": 9623500,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "no principal column value printed for 2026",
+   "status": "current",
+   "note": "Fiscal year 2026.",
+   "cite": {
+    "doc": "Second-Lien-Wastewater-Transmission-Revenue-Bonds--Project-Series-2023A-and-Refunding-Series-2023B---Offical-Statement.Pb8LUKjtl.pdf",
+    "pdf_page": 30,
+    "row": "2026 24,680,000 95,485,476 13,760,838 11,447 13,749,390 9,623,500 9,623,500 118,858,366 143,538,366"
+   }
+  },
+  {
+   "series": "Sewer residual: second-lien series outstanding other than 2023A/B and 2024A/B",
+   "credit": "wastewater",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 59748907,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": null,
+   "status": "residual_by_subtraction",
+   "note": "Series not named in the fetched documents. The 2008C variable-rate bonds were defeased in 2025 (sewer_FS2025.pdf p.44), so this line is overstated by that series' 2026 debt service.",
+   "cite": {
+    "doc": "wastewater_2024B_OS.pdf",
+    "pdf_page": 24,
+    "row": "outstanding second-lien column $100912797 minus 2024A, 2023A, 2023B"
+   }
+  },
+  {
+   "series": "Sewer senior-lien bonds (aggregate)",
+   "credit": "wastewater",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 24680000,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "not printed",
+   "status": "aggregate",
+   "note": "The OS column heading is 'Outstanding Senior Lien Bonds' and does not name the series.",
+   "cite": {
+    "doc": "wastewater_2024B_OS.pdf",
+    "pdf_page": 24,
+    "row": "2026 24,680,000 100,912,797 1,145,000 6,584,250 7,729,250 108,642,047 133,322,047 32,533,630 165,855,677"
+   }
+  },
+  {
+   "series": "Sewer IEPA subordinate-lien loans (aggregate)",
+   "credit": "wastewater",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 32533630,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "not printed",
+   "status": "loan_aggregate",
+   "note": "Loans, not bonds.",
+   "cite": {
+    "doc": "wastewater_2024B_OS.pdf",
+    "pdf_page": 24,
+    "row": "2026 24,680,000 100,912,797 1,145,000 6,584,250 7,729,250 108,642,047 133,322,047 32,533,630 165,855,677"
+   }
+  },
+  {
+   "series": "GO 2021A and 2021B",
+   "credit": "go",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 35230510,
+   "principal": 5645000,
+   "interest": 29585510,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in table (row labelled 2026 holds payments due Jan 1 2027)",
+   "status": "current_with_caveat",
+   "note": "Principal remaining in the statement from this row on is $655387000 vs $654167000 outstanding now (difference $1220000, probably later tenders and refundings).",
+   "cite": {
+    "doc": "Chicago-GO-Bonds--Series-2021A-and-2021B.idL0rD9yp.pdf",
+    "pdf_page": 115,
+    "row": "2026 5,645,000 29,585,510 -- 214,413,163 300,254,610 6,240,000 442,387"
+   }
+  },
+  {
+   "series": "GO 2020A",
+   "credit": "go",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "printed in table (row labelled 2026 holds payments due Jan 1 2027)",
+   "status": "stale",
+   "note": "Principal remaining in the statement from this row on is $357810000 vs $283090000 outstanding now (difference $74720000, probably later tenders and refundings). Printed amount is an upper bound only: principal $83920000, interest $17890500.",
+   "cite": {
+    "doc": "GO_2020A_OS.0CmwMzPx.pdf",
+    "pdf_page": 90,
+    "row": "2026 83,920,000 17,890,500 -- 145,378,163 350,284,864 6,240,000 442,387 -- -- 235,538,163 368,617,751 604,155,913"
+   },
+   "printed_upper_bound_principal": 83920000,
+   "printed_upper_bound_interest": 17890500
+  },
+  {
+   "series": "GO 2019A",
+   "credit": "go",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "printed in table (row labelled 2026 holds payments due Jan 1 2027)",
+   "status": "stale",
+   "note": "Principal remaining in the statement from this row on is $492252525 vs $407735000 outstanding now (difference $84517525, probably later tenders and refundings). Printed amount is an upper bound only: principal $21070000, interest $37671775.",
+   "cite": {
+    "doc": "GO_2019A_OS.0NiibecF.pdf",
+    "pdf_page": 80,
+    "row": "2026 21,070,000 37,671,775 254,641,163 371,237,031 6,470,000 452,162 282,181,163 409,360,969 691,542,131"
+   },
+   "printed_upper_bound_principal": 21070000,
+   "printed_upper_bound_interest": 37671775
+  },
+  {
+   "series": "GO 2017A and 2017B",
+   "credit": "go",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "printed in table (row labelled 2026 holds payments due Jan 1 2027)",
+   "status": "stale",
+   "note": "Principal remaining in the statement from this row on is $974455000 vs $414440000 outstanding now (difference $560015000, probably later tenders and refundings). Printed amount is an upper bound only: principal $34030000, interest $58826380.",
+   "cite": {
+    "doc": "GO_2017A&B_OS.e6ERb5RSFl.pdf",
+    "pdf_page": 91,
+    "row": "2026 34,030,000 58,826,380 324,691,163 387,015,982 7,665,000 511,912 366,386,163 446,354,274 812,740,436"
+   },
+   "printed_upper_bound_principal": 34030000,
+   "printed_upper_bound_interest": 58826380
+  },
+  {
+   "series": "GO 2015B (with 2015A)",
+   "credit": "go",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "printed in table (row labelled 2026 holds payments due Jan 1 2027)",
+   "status": "stale",
+   "note": "Principal remaining in the statement from this row on is $974395000 vs $98569000 outstanding now (difference $875826000, probably later tenders and refundings). Printed amount is an upper bound only: principal $28225000, interest $67832519.",
+   "cite": {
+    "doc": "GO_2015A&B_OS.pSd3kmRn2d.pdf",
+    "pdf_page": 69,
+    "row": "2026 28,225,000 67,832,519 285,106,163 312,666,748 - 7,665,000 511,912 320,996,163 381,011,179 702,007,342"
+   },
+   "printed_upper_bound_principal": 28225000,
+   "printed_upper_bound_interest": 67832519
+  },
+  {
+   "series": "GO 2015C",
+   "credit": "go",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": null,
+   "principal": null,
+   "interest": null,
+   "interest_is_derived_as_total_minus_principal": false,
+   "principal_basis": "printed in table (row labelled 2026 holds payments due Jan 1 2027)",
+   "status": "stale",
+   "note": "Principal remaining in the statement from this row on is $135852750 vs $40015000 outstanding now (difference $95837750, probably later tenders and refundings). Printed amount is an upper bound only: principal $11415000, interest $6531000.",
+   "cite": {
+    "doc": "GO_2015C_OS.zT7gfsJPNw.pdf",
+    "pdf_page": 67,
+    "row": "2026 11,415,000 6,531,000 313,301,163 380,489,182 - 7,665,000 511,912 332,381,163 387,532,094 719,913,257"
+   },
+   "printed_upper_bound_principal": 11415000,
+   "printed_upper_bound_interest": 6531000
+  }
+ ],
+ "ohare_parse_checks": [
+  {
+   "doc": "OS.X6Bl2Stb8.pdf",
+   "pdf_page": 56,
+   "row": "2027 $764,807,117 $7,766,934 $772,574,051",
+   "sum_check": "columns sum to printed total"
+  },
+  {
+   "doc": "ohare_2026B_OS.pdf",
+   "pdf_page": 60,
+   "row": "2027 $769,914,901 $3,235,655 $773,150,557",
+   "sum_check": "columns sum to printed total"
+  },
+  {
+   "doc": "ohare_2026CD_OS.pdf",
+   "pdf_page": 65,
+   "row": "2027 $754,929,701 $7,971,212 $8,515,870 $771,416,782",
+   "sum_check": "columns sum to printed total"
+  },
+  {
+   "doc": "Final-Official-Statement---ORD-2025CD.3PVt2SAKt.pdf",
+   "pdf_page": 67,
+   "row": "2027 689,411,105 23,937,813 51,458,199 764,807,117",
+   "sum_check": "columns sum to printed total"
+  },
+  {
+   "doc": "Final-OS.KvjbpkoAR.pdf",
+   "pdf_page": 60,
+   "row": "2027 754,699,966 10,500,879 2,270,100 767,470,945",
+   "sum_check": "columns sum to printed total"
+  },
+  {
+   "doc": "OS.NEfpPym7t.pdf",
+   "pdf_page": 55,
+   "row": "2027 752,104,389 2,435,666 2,592,223 757,132,278",
+   "sum_check": "columns sum to printed total"
+  },
+  {
+   "doc": "OS.ZupAfhGTd.pdf",
+   "pdf_page": 66,
+   "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389",
+   "sum_check": "columns sum to printed total"
+  },
+  {
+   "doc": "Chicago-O-Hare-General-Airport-Senor-Lien-Revenue-Bonds-Series-2024AB.A4BiRKyNl.pdf",
+   "pdf_page": 57,
+   "row": "2027 711,437,923 29,530,938 22,842,963 23,081,315 740,730,508",
+   "sum_check": "columns sum to printed total",
+   "note": "2024AB table subtracts one combined capitalized interest column of 23081315 from both series; it is not allocated to 2024A vs 2024B"
+  },
+  {
+   "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+   "pdf_page": 75,
+   "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085",
+   "sum_check": "columns sum to printed total"
+  },
+  {
+   "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+   "pdf_page": 85,
+   "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885",
+   "sum_check": "columns sum to printed total"
+  },
+  {
+   "doc": "ORD_2018ABC_OS.vKd4ptjc.pdf",
+   "pdf_page": 68,
+   "row": "2027 560,273,587.49 28,690,300.00 28,280,750.00 36,176,000.00 653,420,637.49",
+   "sum_check": "columns sum to printed total"
+  },
+  {
+   "doc": "ORD_2017ABCD_OS.ugRRnIFv.pdf",
+   "pdf_page": 64,
+   "row": "2027 507,511,824 - 9,396,644 18,213,750 9,008,300 17,833,000 - 561,963,518",
+   "sum_check": "columns sum to printed total"
+  },
+  {
+   "doc": "O'Hare_2016D-G_Sr._Lien_GARB_OS.bW9YWx6Cu3.pdf",
+   "pdf_page": 67,
+   "row": "2027 453,785,443 42,617,250 38,043,600 9,101,394 3,692,238 547,239,925",
+   "sum_check": "columns sum to printed total"
+  }
+ ],
+ "not_covered": [
+  "Library term notes ($125,926,011 principal, $2,200,000 interest): no official statement exists on the BondLink pages; the ACFR lists only the appropriation line (ACFR FY2025 budget schedule).",
+  "GO series 2012B, 2014B, 2015B, 2015C, 2017A/B, 2019A, 2020A: printed series columns are stale (see status).",
+  "O'Hare 2010B: no separate column in any statement fetched."
+ ],
+ "series": [
+  {
+   "series": "O'Hare 2026A",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.X6Bl2Stb8.pdf",
+    "pdf_page": 56,
+    "row": "2027 $764,807,117 $7,766,934 $772,574,051"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare 2026A",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.X6Bl2Stb8.pdf",
+    "pdf_page": 56,
+    "row": "2027 $764,807,117 $7,766,934 $772,574,051"
+   },
+   "kind": "interest",
+   "amount": 7766934
+  },
+  {
+   "series": "O'Hare 2026B",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ohare_2026B_OS.pdf",
+    "pdf_page": 60,
+    "row": "2027 $769,914,901 $3,235,655 $773,150,557"
+   },
+   "kind": "principal",
+   "amount": 1410000
+  },
+  {
+   "series": "O'Hare 2026B",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ohare_2026B_OS.pdf",
+    "pdf_page": 60,
+    "row": "2027 $769,914,901 $3,235,655 $773,150,557"
+   },
+   "kind": "interest",
+   "amount": 1825655
+  },
+  {
+   "series": "O'Hare 2026C",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ohare_2026CD_OS.pdf",
+    "pdf_page": 65,
+    "row": "2027 $754,929,701 $7,971,212 $8,515,870 $771,416,782"
+   },
+   "kind": "principal",
+   "amount": 4510000
+  },
+  {
+   "series": "O'Hare 2026C",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ohare_2026CD_OS.pdf",
+    "pdf_page": 65,
+    "row": "2027 $754,929,701 $7,971,212 $8,515,870 $771,416,782"
+   },
+   "kind": "interest",
+   "amount": 3461212
+  },
+  {
+   "series": "O'Hare 2026D",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ohare_2026CD_OS.pdf",
+    "pdf_page": 65,
+    "row": "2027 $754,929,701 $7,971,212 $8,515,870 $771,416,782"
+   },
+   "kind": "principal",
+   "amount": 5825000
+  },
+  {
+   "series": "O'Hare 2026D",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ohare_2026CD_OS.pdf",
+    "pdf_page": 65,
+    "row": "2027 $754,929,701 $7,971,212 $8,515,870 $771,416,782"
+   },
+   "kind": "interest",
+   "amount": 2690870
+  },
+  {
+   "series": "O'Hare 2025C",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Final-Official-Statement---ORD-2025CD.3PVt2SAKt.pdf",
+    "pdf_page": 67,
+    "row": "2027 689,411,105 23,937,813 51,458,199 764,807,117"
+   },
+   "kind": "principal",
+   "amount": 1485000
+  },
+  {
+   "series": "O'Hare 2025C",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Final-Official-Statement---ORD-2025CD.3PVt2SAKt.pdf",
+    "pdf_page": 67,
+    "row": "2027 689,411,105 23,937,813 51,458,199 764,807,117"
+   },
+   "kind": "interest",
+   "amount": 22452813
+  },
+  {
+   "series": "O'Hare 2025D",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Final-Official-Statement---ORD-2025CD.3PVt2SAKt.pdf",
+    "pdf_page": 67,
+    "row": "2027 689,411,105 23,937,813 51,458,199 764,807,117"
+   },
+   "kind": "principal",
+   "amount": 24245000
+  },
+  {
+   "series": "O'Hare 2025D",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Final-Official-Statement---ORD-2025CD.3PVt2SAKt.pdf",
+    "pdf_page": 67,
+    "row": "2027 689,411,105 23,937,813 51,458,199 764,807,117"
+   },
+   "kind": "interest",
+   "amount": 27213199
+  },
+  {
+   "series": "O'Hare 2025E",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Final-OS.KvjbpkoAR.pdf",
+    "pdf_page": 60,
+    "row": "2027 754,699,966 10,500,879 2,270,100 767,470,945"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare 2025E",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Final-OS.KvjbpkoAR.pdf",
+    "pdf_page": 60,
+    "row": "2027 754,699,966 10,500,879 2,270,100 767,470,945"
+   },
+   "kind": "interest",
+   "amount": 10500879
+  },
+  {
+   "series": "O'Hare 2025G",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Final-OS.KvjbpkoAR.pdf",
+    "pdf_page": 60,
+    "row": "2027 754,699,966 10,500,879 2,270,100 767,470,945"
+   },
+   "kind": "principal",
+   "amount": 1260000
+  },
+  {
+   "series": "O'Hare 2025G",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Final-OS.KvjbpkoAR.pdf",
+    "pdf_page": 60,
+    "row": "2027 754,699,966 10,500,879 2,270,100 767,470,945"
+   },
+   "kind": "interest",
+   "amount": 1010100
+  },
+  {
+   "series": "O'Hare 2025A",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.NEfpPym7t.pdf",
+    "pdf_page": 55,
+    "row": "2027 752,104,389 2,435,666 2,592,223 757,132,278"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare 2025A",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.NEfpPym7t.pdf",
+    "pdf_page": 55,
+    "row": "2027 752,104,389 2,435,666 2,592,223 757,132,278"
+   },
+   "kind": "interest",
+   "amount": 2435666
+  },
+  {
+   "series": "O'Hare 2025B",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.NEfpPym7t.pdf",
+    "pdf_page": 55,
+    "row": "2027 752,104,389 2,435,666 2,592,223 757,132,278"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare 2025B",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.NEfpPym7t.pdf",
+    "pdf_page": 55,
+    "row": "2027 752,104,389 2,435,666 2,592,223 757,132,278"
+   },
+   "kind": "interest",
+   "amount": 2592223
+  },
+  {
+   "series": "O'Hare 2024C",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.ZupAfhGTd.pdf",
+    "pdf_page": 66,
+    "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389"
+   },
+   "kind": "principal",
+   "amount": 52790000
+  },
+  {
+   "series": "O'Hare 2024C",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.ZupAfhGTd.pdf",
+    "pdf_page": 66,
+    "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389"
+   },
+   "kind": "interest",
+   "amount": 24744763
+  },
+  {
+   "series": "O'Hare 2024D",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.ZupAfhGTd.pdf",
+    "pdf_page": 66,
+    "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389"
+   },
+   "kind": "principal",
+   "amount": 52435000
+  },
+  {
+   "series": "O'Hare 2024D",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.ZupAfhGTd.pdf",
+    "pdf_page": 66,
+    "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389"
+   },
+   "kind": "interest",
+   "amount": 38348500
+  },
+  {
+   "series": "O'Hare 2024E",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.ZupAfhGTd.pdf",
+    "pdf_page": 66,
+    "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389"
+   },
+   "kind": "principal",
+   "amount": 20490000
+  },
+  {
+   "series": "O'Hare 2024E",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.ZupAfhGTd.pdf",
+    "pdf_page": 66,
+    "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389"
+   },
+   "kind": "interest",
+   "amount": 6762000
+  },
+  {
+   "series": "O'Hare 2024F",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.ZupAfhGTd.pdf",
+    "pdf_page": 66,
+    "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389"
+   },
+   "kind": "principal",
+   "amount": 8175000
+  },
+  {
+   "series": "O'Hare 2024F",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "OS.ZupAfhGTd.pdf",
+    "pdf_page": 66,
+    "row": "2027 545,747,876 77,534,763 90,783,500 27,252,000 10,786,250 752,104,389"
+   },
+   "kind": "interest",
+   "amount": 2611250
+  },
+  {
+   "series": "O'Hare 2024A",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-O-Hare-General-Airport-Senor-Lien-Revenue-Bonds-Series-2024AB.A4BiRKyNl.pdf",
+    "pdf_page": 57,
+    "row": "2027 711,437,923 29,530,938 22,842,963 23,081,315 740,730,508"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare 2024A",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-O-Hare-General-Airport-Senor-Lien-Revenue-Bonds-Series-2024AB.A4BiRKyNl.pdf",
+    "pdf_page": 57,
+    "row": "2027 711,437,923 29,530,938 22,842,963 23,081,315 740,730,508"
+   },
+   "kind": "interest",
+   "amount": 29530938
+  },
+  {
+   "series": "O'Hare 2024B",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-O-Hare-General-Airport-Senor-Lien-Revenue-Bonds-Series-2024AB.A4BiRKyNl.pdf",
+    "pdf_page": 57,
+    "row": "2027 711,437,923 29,530,938 22,842,963 23,081,315 740,730,508"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare 2024B",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-O-Hare-General-Airport-Senor-Lien-Revenue-Bonds-Series-2024AB.A4BiRKyNl.pdf",
+    "pdf_page": 57,
+    "row": "2027 711,437,923 29,530,938 22,842,963 23,081,315 740,730,508"
+   },
+   "kind": "interest",
+   "amount": 22842963
+  },
+  {
+   "series": "O'Hare 2022A",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+    "pdf_page": 75,
+    "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare 2022A",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+    "pdf_page": 75,
+    "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085"
+   },
+   "kind": "interest",
+   "amount": 56821550
+  },
+  {
+   "series": "O'Hare 2022B",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+    "pdf_page": 75,
+    "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare 2022B",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+    "pdf_page": 75,
+    "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085"
+   },
+   "kind": "interest",
+   "amount": 7138050
+  },
+  {
+   "series": "O'Hare 2022C",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+    "pdf_page": 75,
+    "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085"
+   },
+   "kind": "principal",
+   "amount": 2900000
+  },
+  {
+   "series": "O'Hare 2022C",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+    "pdf_page": 75,
+    "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085"
+   },
+   "kind": "interest",
+   "amount": 4083250
+  },
+  {
+   "series": "O'Hare 2022D",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+    "pdf_page": 75,
+    "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085"
+   },
+   "kind": "principal",
+   "amount": 20095000
+  },
+  {
+   "series": "O'Hare 2022D",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "P21754542-P11248433-P11672754.3p5IZkVgq.pdf",
+    "pdf_page": 75,
+    "row": "2027 647,485,885 56,821,550 7,138,050 6,983,250 34,346,350 752,775,085"
+   },
+   "kind": "interest",
+   "amount": 14251350
+  },
+  {
+   "series": "O'Hare 2020A",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare 2020A",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "kind": "interest",
+   "amount": 21545350
+  },
+  {
+   "series": "O'Hare 2020B",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "kind": "principal",
+   "amount": 11875000
+  },
+  {
+   "series": "O'Hare 2020B",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "kind": "interest",
+   "amount": 4907500
+  },
+  {
+   "series": "O'Hare 2020C",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare 2020C",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "kind": "interest",
+   "amount": 2394600
+  },
+  {
+   "series": "O'Hare 2020D",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "kind": "principal",
+   "amount": 38760000
+  },
+  {
+   "series": "O'Hare 2020D",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "kind": "interest",
+   "amount": 7272704
+  },
+  {
+   "series": "O'Hare 2020E",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare 2020E",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "Chicago-OHare-OS-2020.tjU4y0Zzx.pdf",
+    "pdf_page": 85,
+    "row": "2027 558,055,181 21,545,350 16,782,500 2,394,600 46,032,704 2,675,550 647,485,885"
+   },
+   "kind": "interest",
+   "amount": 2675550
+  },
+  {
+   "series": "O'Hare 2018A",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ORD_2018ABC_OS.vKd4ptjc.pdf",
+    "pdf_page": 68,
+    "row": "2027 560,273,587.49 28,690,300.00 28,280,750.00 36,176,000.00 653,420,637.49"
+   },
+   "kind": "principal",
+   "amount": 890000
+  },
+  {
+   "series": "O'Hare 2018A",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ORD_2018ABC_OS.vKd4ptjc.pdf",
+    "pdf_page": 68,
+    "row": "2027 560,273,587.49 28,690,300.00 28,280,750.00 36,176,000.00 653,420,637.49"
+   },
+   "kind": "interest",
+   "amount": 27800300
+  },
+  {
+   "series": "O'Hare 2018B",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ORD_2018ABC_OS.vKd4ptjc.pdf",
+    "pdf_page": 68,
+    "row": "2027 560,273,587.49 28,690,300.00 28,280,750.00 36,176,000.00 653,420,637.49"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare 2018B",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ORD_2018ABC_OS.vKd4ptjc.pdf",
+    "pdf_page": 68,
+    "row": "2027 560,273,587.49 28,690,300.00 28,280,750.00 36,176,000.00 653,420,637.49"
+   },
+   "kind": "interest",
+   "amount": 28280750
+  },
+  {
+   "series": "O'Hare 2017D",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ORD_2017ABCD_OS.ugRRnIFv.pdf",
+    "pdf_page": 64,
+    "row": "2027 507,511,824 - 9,396,644 18,213,750 9,008,300 17,833,000 - 561,963,518"
+   },
+   "kind": "principal",
+   "amount": 5015000
+  },
+  {
+   "series": "O'Hare 2017D",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ORD_2017ABCD_OS.ugRRnIFv.pdf",
+    "pdf_page": 64,
+    "row": "2027 507,511,824 - 9,396,644 18,213,750 9,008,300 17,833,000 - 561,963,518"
+   },
+   "kind": "interest",
+   "amount": 12818000
+  },
+  {
+   "series": "O'Hare CFC Series 2023 bonds",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ohare_FS2025.pdf",
+    "pdf_page": 51,
+    "row": "2026 interest $8,786K, principal 0"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare CFC Series 2023 bonds",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ohare_FS2025.pdf",
+    "pdf_page": 51,
+    "row": "2026 interest $8,786K, principal 0"
+   },
+   "kind": "interest",
+   "amount": 8786000
+  },
+  {
+   "series": "O'Hare TIFIA loan",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ohare_FS2025.pdf",
+    "pdf_page": 52,
+    "row": "2026 principal $4,336K, interest $10,835K"
+   },
+   "kind": "principal",
+   "amount": 4336000
+  },
+  {
+   "series": "O'Hare TIFIA loan",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ohare_FS2025.pdf",
+    "pdf_page": 52,
+    "row": "2026 principal $4,336K, interest $10,835K"
+   },
+   "kind": "interest",
+   "amount": 10835000
+  },
+  {
+   "series": "O'Hare PFC Series 2012AB",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ohare_FS2025.pdf",
+    "pdf_page": 51,
+    "row": "2026 interest $4K"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "O'Hare PFC Series 2012AB",
+   "fund": "Chicago O'Hare Airport Fund",
+   "credit": "ohare",
+   "status": "current",
+   "cite": {
+    "doc": "ohare_FS2025.pdf",
+    "pdf_page": 51,
+    "row": "2026 interest $4K"
+   },
+   "kind": "interest",
+   "amount": 4000
+  },
+  {
+   "series": "Midway 2025A",
+   "fund": "Chicago Midway Airport Fund",
+   "credit": "midway",
+   "status": "current",
+   "cite": {
+    "doc": "midway_2025AB_OS.pdf",
+    "pdf_page": 60,
+    "row": "2027 111,523,075 11,696,413 11,136,388 134,355,876"
+   },
+   "kind": "principal_and_interest",
+   "amount": 11696413,
+   "split_note": "principal/interest split not extracted for this series"
+  },
+  {
+   "series": "Midway 2025B",
+   "fund": "Chicago Midway Airport Fund",
+   "credit": "midway",
+   "status": "current",
+   "cite": {
+    "doc": "midway_2025AB_OS.pdf",
+    "pdf_page": 60,
+    "row": "2027 111,523,075 11,696,413 11,136,388 134,355,876"
+   },
+   "kind": "principal_and_interest",
+   "amount": 11136388,
+   "split_note": "principal/interest split not extracted for this series"
+  },
+  {
+   "series": "Midway 2024A",
+   "fund": "Chicago Midway Airport Fund",
+   "credit": "midway",
+   "status": "current",
+   "cite": {
+    "doc": "Official-Statement---Chicago-Midway-Airport-Senior-Lien-Airport-Revenue-Refunding-Bonds--Series-2024A--AMT--and-Series-2024B--Non-AMT.gmjJS7nVk.pdf",
+    "pdf_page": 32,
+    "row": "2027 122,238,476 9,026,000 966,000 132,230,476"
+   },
+   "kind": "principal_and_interest",
+   "amount": 9026000,
+   "split_note": "principal/interest split not extracted for this series"
+  },
+  {
+   "series": "Midway 2024B",
+   "fund": "Chicago Midway Airport Fund",
+   "credit": "midway",
+   "status": "current",
+   "cite": {
+    "doc": "Official-Statement---Chicago-Midway-Airport-Senior-Lien-Airport-Revenue-Refunding-Bonds--Series-2024A--AMT--and-Series-2024B--Non-AMT.gmjJS7nVk.pdf",
+    "pdf_page": 32,
+    "row": "2027 122,238,476 9,026,000 966,000 132,230,476"
+   },
+   "kind": "principal_and_interest",
+   "amount": 966000,
+   "split_note": "principal/interest split not extracted for this series"
+  },
+  {
+   "series": "Midway 2023A",
+   "fund": "Chicago Midway Airport Fund",
+   "credit": "midway",
+   "status": "current",
+   "cite": {
+    "doc": "ILChicago07a-FIN.tKvfUEqGd.pdf",
+    "pdf_page": 40,
+    "row": "2027 83,888,102 17,850,013 35,419,750 137,157,865"
+   },
+   "kind": "principal_and_interest",
+   "amount": 17850013,
+   "split_note": "principal/interest split not extracted for this series"
+  },
+  {
+   "series": "Midway 2023B",
+   "fund": "Chicago Midway Airport Fund",
+   "credit": "midway",
+   "status": "current",
+   "cite": {
+    "doc": "ILChicago07a-FIN.tKvfUEqGd.pdf",
+    "pdf_page": 40,
+    "row": "2027 83,888,102 17,850,013 35,419,750 137,157,865"
+   },
+   "kind": "principal_and_interest",
+   "amount": 35419750,
+   "split_note": "principal/interest split not extracted for this series"
+  },
+  {
+   "series": "Midway 2023C",
+   "fund": "Chicago Midway Airport Fund",
+   "credit": "midway",
+   "status": "current",
+   "cite": {
+    "doc": "Official-Statement---Chicago-Midway-Airport-Senior-Lien-Airport-Revenue-Refunding-Bonds-Series-2023C--AMT.ezIVqKGLw.pdf",
+    "pdf_page": 36,
+    "row": "2027 93,319,115 39,148,250 132,467,365"
+   },
+   "kind": "principal_and_interest",
+   "amount": 39148250,
+   "split_note": "principal/interest split not extracted for this series"
+  },
+  {
+   "series": "Water 2026A, 2026B, 2026C (three series, printed combined)",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current_group",
+   "cite": {
+    "doc": "water_2026ABC_OS.pdf",
+    "pdf_page": 36,
+    "row": "2026 169,218,793 2,780,000 19,731,703 22,511,703 191,730,496 42,045,045 233,775,541"
+   },
+   "kind": "principal",
+   "amount": 2780000
+  },
+  {
+   "series": "Water 2026A, 2026B, 2026C (three series, printed combined)",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current_group",
+   "cite": {
+    "doc": "water_2026ABC_OS.pdf",
+    "pdf_page": 36,
+    "row": "2026 169,218,793 2,780,000 19,731,703 22,511,703 191,730,496 42,045,045 233,775,541"
+   },
+   "kind": "interest",
+   "amount": 19731703
+  },
+  {
+   "series": "Water 2024A",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current",
+   "cite": {
+    "doc": "Final-Official-Statement.xhGQmBh3f.pdf",
+    "pdf_page": 25,
+    "row": "2026 153,430,599 8,895,000 14,658,000 23,553,000 176,983,599 40,608,385 217,591,984"
+   },
+   "kind": "principal",
+   "amount": 8895000
+  },
+  {
+   "series": "Water 2024A",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current",
+   "cite": {
+    "doc": "Final-Official-Statement.xhGQmBh3f.pdf",
+    "pdf_page": 25,
+    "row": "2026 153,430,599 8,895,000 14,658,000 23,553,000 176,983,599 40,608,385 217,591,984"
+   },
+   "kind": "interest",
+   "amount": 14658000
+  },
+  {
+   "series": "Water 2023A",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current",
+   "cite": {
+    "doc": "Second-Lien-Water-Revenue-Bonds--Project-Series-2023A-and-Refunding-Series-2023B---Offical-Statement.eCHJIWijc.pdf",
+    "pdf_page": 32,
+    "row": "2026 183,281,662 32,856,300 150,425,362 - 13,676,838 - 13,926,050 27,602,888 178,028,250"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "Water 2023A",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current",
+   "cite": {
+    "doc": "Second-Lien-Water-Revenue-Bonds--Project-Series-2023A-and-Refunding-Series-2023B---Offical-Statement.eCHJIWijc.pdf",
+    "pdf_page": 32,
+    "row": "2026 183,281,662 32,856,300 150,425,362 - 13,676,838 - 13,926,050 27,602,888 178,028,250"
+   },
+   "kind": "interest",
+   "amount": 13676838
+  },
+  {
+   "series": "Water 2023B",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current",
+   "cite": {
+    "doc": "Second-Lien-Water-Revenue-Bonds--Project-Series-2023A-and-Refunding-Series-2023B---Offical-Statement.eCHJIWijc.pdf",
+    "pdf_page": 32,
+    "row": "2026 183,281,662 32,856,300 150,425,362 - 13,676,838 - 13,926,050 27,602,888 178,028,250"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "Water 2023B",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current",
+   "cite": {
+    "doc": "Second-Lien-Water-Revenue-Bonds--Project-Series-2023A-and-Refunding-Series-2023B---Offical-Statement.eCHJIWijc.pdf",
+    "pdf_page": 32,
+    "row": "2026 183,281,662 32,856,300 150,425,362 - 13,676,838 - 13,926,050 27,602,888 178,028,250"
+   },
+   "kind": "interest",
+   "amount": 13926050
+  },
+  {
+   "series": "Sewer 2024B",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "wastewater_2024B_OS.pdf",
+    "pdf_page": 24,
+    "row": "2026 24,680,000 100,912,797 1,145,000 6,584,250 7,729,250 108,642,047 133,322,047 32,533,630 165,855,677"
+   },
+   "kind": "principal",
+   "amount": 1145000
+  },
+  {
+   "series": "Sewer 2024B",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "wastewater_2024B_OS.pdf",
+    "pdf_page": 24,
+    "row": "2026 24,680,000 100,912,797 1,145,000 6,584,250 7,729,250 108,642,047 133,322,047 32,533,630 165,855,677"
+   },
+   "kind": "interest",
+   "amount": 6584250
+  },
+  {
+   "series": "Sewer 2024A",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "Official-Statement---Second-Lien-Wastewater-Transmission-Revenue-Bonds--Refunding-Series-2024A.KQj5S8Qjg.pdf",
+    "pdf_page": 23,
+    "row": "2026 24,680,000 91,594,547 7,225,000 10,566,000 17,791,000 109,385,547 134,065,547 31,133,861 165,199,408"
+   },
+   "kind": "principal",
+   "amount": 7225000
+  },
+  {
+   "series": "Sewer 2024A",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "Official-Statement---Second-Lien-Wastewater-Transmission-Revenue-Bonds--Refunding-Series-2024A.KQj5S8Qjg.pdf",
+    "pdf_page": 23,
+    "row": "2026 24,680,000 91,594,547 7,225,000 10,566,000 17,791,000 109,385,547 134,065,547 31,133,861 165,199,408"
+   },
+   "kind": "interest",
+   "amount": 10566000
+  },
+  {
+   "series": "Sewer 2023A",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "Second-Lien-Wastewater-Transmission-Revenue-Bonds--Project-Series-2023A-and-Refunding-Series-2023B---Offical-Statement.Pb8LUKjtl.pdf",
+    "pdf_page": 30,
+    "row": "2026 24,680,000 95,485,476 13,760,838 11,447 13,749,390 9,623,500 9,623,500 118,858,366 143,538,366"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "Sewer 2023A",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "Second-Lien-Wastewater-Transmission-Revenue-Bonds--Project-Series-2023A-and-Refunding-Series-2023B---Offical-Statement.Pb8LUKjtl.pdf",
+    "pdf_page": 30,
+    "row": "2026 24,680,000 95,485,476 13,760,838 11,447 13,749,390 9,623,500 9,623,500 118,858,366 143,538,366"
+   },
+   "kind": "interest",
+   "amount": 13749390
+  },
+  {
+   "series": "Sewer 2023B",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "Second-Lien-Wastewater-Transmission-Revenue-Bonds--Project-Series-2023A-and-Refunding-Series-2023B---Offical-Statement.Pb8LUKjtl.pdf",
+    "pdf_page": 30,
+    "row": "2026 24,680,000 95,485,476 13,760,838 11,447 13,749,390 9,623,500 9,623,500 118,858,366 143,538,366"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "Sewer 2023B",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "Second-Lien-Wastewater-Transmission-Revenue-Bonds--Project-Series-2023A-and-Refunding-Series-2023B---Offical-Statement.Pb8LUKjtl.pdf",
+    "pdf_page": 30,
+    "row": "2026 24,680,000 95,485,476 13,760,838 11,447 13,749,390 9,623,500 9,623,500 118,858,366 143,538,366"
+   },
+   "kind": "interest",
+   "amount": 9623500
+  },
+  {
+   "series": "GO 2021A and 2021B",
+   "fund": "Bond Redemption and Interest Series Fund",
+   "credit": "go",
+   "status": "current_with_caveat",
+   "cite": {
+    "doc": "Chicago-GO-Bonds--Series-2021A-and-2021B.idL0rD9yp.pdf",
+    "pdf_page": 115,
+    "row": "2026 5,645,000 29,585,510 -- 214,413,163 300,254,610 6,240,000 442,387"
+   },
+   "kind": "principal",
+   "amount": 5645000
+  },
+  {
+   "series": "GO 2021A and 2021B",
+   "fund": "Bond Redemption and Interest Series Fund",
+   "credit": "go",
+   "status": "current_with_caveat",
+   "cite": {
+    "doc": "Chicago-GO-Bonds--Series-2021A-and-2021B.idL0rD9yp.pdf",
+    "pdf_page": 115,
+    "row": "2026 5,645,000 29,585,510 -- 214,413,163 300,254,610 6,240,000 442,387"
+   },
+   "kind": "interest",
+   "amount": 29585510
+  }
+ ],
+ "series_total_by_credit": {
+  "ohare": 672899919,
+  "midway": 125242814,
+  "water": 73667591,
+  "wastewater": 48893140,
+  "go": 35230510
+ }
+}

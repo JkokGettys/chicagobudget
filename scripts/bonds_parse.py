@@ -1,0 +1,527 @@
+#!/usr/bin/env python3
+"""Parse per-series debt service from City of Chicago official statements (OS).
+
+Reads PDFs in raw/bonds/ (see scripts/bonds_fetch.py), caches page text in
+raw/bonds/txt/<pdf stem>.txt, and writes data/city_bond_series_2026.json.
+
+Convention. The OS tables are labelled "Bond Year Ending January 1" and include
+principal and interest paid from January 2 of the prior year through January 1 of
+the stated year. The row "2027" is therefore the window Jan 2 2026 to Jan 1 2027.
+This is the window that reproduces the 2026 ordinance O'Hare and Midway lines
+(see research/bond_series.md section 2). Water and Sewer tables are by fiscal
+(calendar) year, and the row "2026" is used for them, which reproduces the ordinance
+within 0.2 percent for Water.
+
+Every extracted row is checked: the printed total must equal the sum of the
+printed columns (within rounding of the printed figures), or the script stops.
+"""
+import json
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+RAW = ROOT / "raw" / "bonds"
+TXT = RAW / "txt"
+OUT = ROOT / "data" / "city_bond_series_2026.json"
+
+
+# ---------------------------------------------------------------- text cache
+def pdf_text(pdf_name):
+    """Return {page_number: text}, building the cache with pdfplumber if needed."""
+    stem = Path(pdf_name).stem
+    cache = TXT / (stem + ".txt")
+    if not cache.exists():
+        import pdfplumber
+        TXT.mkdir(parents=True, exist_ok=True)
+        with pdfplumber.open(RAW / pdf_name) as pdf, open(cache, "w") as out:
+            for i, page in enumerate(pdf.pages, 1):
+                out.write("\n<<<PAGE %d>>>\n" % i)
+                out.write(page.extract_text() or "")
+    parts = re.split(r"<<<PAGE (\d+)>>>", cache.read_text())
+    return {int(parts[i]): parts[i + 1] for i in range(1, len(parts), 2)}
+
+
+def find_pdf(fragment):
+    hits = [p.name for p in RAW.glob("*.pdf") if fragment in p.name]
+    if len(hits) != 1:
+        raise SystemExit("expected one PDF containing %r, found %r" % (fragment, hits))
+    return hits[0]
+
+
+# ---------------------------------------------------------------- numbers
+TOK = re.compile(r"\(?\$?\s?\d[\d,]*(?:\.\d+)?\)?|(?<![\w.])[-\u2013\u2014]{1,2}(?![\w.])")
+
+
+def to_num(tok):
+    t = tok.replace("$", "").replace(",", "").replace(" ", "")
+    if t in ("-", "--", "\u2013", "\u2014"):
+        return 0
+    if t.startswith("("):
+        return -round(float(t.strip("()")))
+    return round(float(t))
+
+
+def row_tokens(page_text, year, after_anchor=None, nth=0):
+    """Numeric tokens of the table row that starts with the given year label."""
+    lines = page_text.split("\n")
+    start = 0
+    if after_anchor:
+        idx = [i for i, l in enumerate(lines) if re.search(after_anchor, l)]
+        if not idx:
+            raise ValueError("anchor %r not on page" % after_anchor)
+        start = idx[0]
+    seen = 0
+    for l in lines[start:]:
+        m = re.match(r"^%d(\(\d\))?\s+(.*)$" % year, l.strip())
+        if m:
+            toks = [to_num(t) for t in TOK.findall(m.group(2).replace("$ ", "$"))]
+            if len(toks) >= 3:
+                if seen == nth:
+                    return toks, l.strip()
+                seen += 1
+    raise ValueError("no row %d" % year)
+
+
+def page_of(pages, needle):
+    for n, t in pages.items():
+        if needle in t:
+            return n
+    raise ValueError("%r not found" % needle)
+
+
+# ---------------------------------------------------------------- O'Hare
+# (pdf fragment, page, anchor, columns in printed order, capitalized-interest column or None)
+# 'total' is always the last printed column. A column named 'cap' is subtracted.
+OHARE_SPECS = [
+    ("OS.X6Bl2Stb8", ["outstanding", "2026A", "total"]),
+    ("ohare_2026B_OS", ["outstanding", "2026B", "total"]),
+    ("ohare_2026CD_OS", ["outstanding", "2026C", "2026D", "total"]),
+    ("Final-Official-Statement---ORD-2025CD", ["outstanding", "2025C", "2025D", "total"]),
+    ("Final-OS.KvjbpkoAR", ["outstanding", "2025E", "2025G", "total"]),
+    ("OS.NEfpPym7t", ["outstanding", "2025A", "2025B", "total"]),
+    ("OS.ZupAfhGTd", ["outstanding", "2024C", "2024D", "2024E", "2024F", "total"]),
+    ("Senor-Lien-Revenue-Bonds-Series-2024AB", ["outstanding", "2024A", "2024B", "-cap2024", "total"]),
+    ("P21754542-P11248433-P11672754", ["outstanding", "2022A", "2022B", "2022C", "2022D", "total"]),
+    ("Chicago-OHare-OS-2020", ["outstanding", "2020A", "2020B", "2020C", "2020D", "2020E", "total"]),
+    ("ORD_2018ABC_OS", ["outstanding", "2018A", "2018B", "2018C", "total"]),
+    ("ORD_2017ABCD_OS", ["outstanding", "-cap_out", "2017A", "2017B", "2017C", "2017D", "-cap2017D", "total"]),
+    ("2016D-G_Sr._Lien_GARB_OS", ["outstanding", "2016D", "2016E", "2016F", "2016G", "total"]),
+]
+
+# Series that a later transaction partly or wholly refunded or defeased, so the
+# printed series column (from the series' own statement) overstates what is due now.
+# Sources: ohare_2026CD_OS pp.64, 339-343 (2026CD refunded list) and ohare_FS2025 p.50.
+OHARE_STALE = {
+    "2016D": "partly refunded by 2026CD (ohare_2026CD_OS p.64: $598.73M to $392.74M)",
+    "2016E": "partly refunded by 2026CD (p.64: $61.54M to $34.90M)",
+    "2016F": "fully refunded by 2026CD (p.64: $127.405M to 0), also partly defeased by 2025D (FS p.50)",
+    "2016G": "partly refunded by 2026CD (p.64: $58.675M to $37.075M)",
+    "2017A": "partly refunded by 2026CD (p.64: $39.345M to $13.010M)",
+    "2017B": "fully refunded by 2026CD (p.64: $156.945M to 0), also partly defeased by 2025D (FS p.50)",
+    "2017C": "partly refunded by 2026CD (p.64: $61.985M to $34.380M)",
+    "2018C": "partly defeased by 2025C (ohare_FS2025 p.50 lists 2018C $89.87M)",
+}
+
+# Outstanding principal after the 2026CD refunding, ohare_2026CD_OS p.64 (par amounts).
+OHARE_OUTSTANDING = {
+    "2010B": 328000000, "2016D": 392740000, "2016E": 34900000, "2016F": 0, "2016G": 37075000,
+    "2017A": 13010000, "2017B": 0, "2017C": 34380000, "2017D": 153150000,
+    "2018A": 591215000, "2018B": 612095000, "2018C": 710130000,
+    "2020A": 494360000, "2020B": 99390000, "2020C": 59865000, "2020D": 302590000, "2020E": 61955000,
+    "2022A": 1105415000, "2022B": 150450000, "2022C": 81665000, "2022D": 296360000,
+    "2024A": 549985000, "2024B": 436875000, "2024C": 491395000, "2024D": 766970000,
+    "2024E": 135240000, "2024F": 52225000,
+    "2025A": 211170000, "2025B": 120980000, "2025C": 429525000, "2025D": 525295000,
+    "2025E": 1101570000, "2025G": 21300000, "2026A": 612235000, "2026B": 1291630000,
+    "2026C": 293185000, "2026D": 226400000,
+}
+
+
+def cover_2027_principal(pdf_name, series):
+    """Principal maturing Jan 1 2027 for a series, read from the OS inside cover pages.
+
+    Returns (amount or None, basis). Serial maturities only. A series whose earliest
+    printed maturity or term bond date is after 2027 returns 0 with that basis.
+    """
+    pages = pdf_text(pdf_name)
+    found = None
+    years = []
+    for n in sorted(pages)[:14]:
+        cur = None
+        for l in pages[n].split("\n"):
+            m = re.search(r"SERIES\s+(20\d\d[A-G])\b", l.upper())
+            if m and len(l) < 70:
+                cur = m.group(1)
+            if cur != series:
+                continue
+            m = re.match(r"^(20\d\d)\*?\s+\$?\s?([\d,]{7,})", l.strip())
+            if m:
+                y = int(m.group(1))
+                years.append(y)
+                if y == 2027:
+                    found = (found or 0) + int(m.group(2).replace(",", ""))
+            m = re.search(r"Term Bond Due January 1, (20\d\d)", l)
+            if m:
+                years.append(int(m.group(1)))
+    if found is not None:
+        return found, "serial maturity on OS cover, page %s" % [n for n in sorted(pages)[:14]][0]
+    if years and min(years) > 2027:
+        return 0, "earliest printed maturity is %d (cover); sinking fund installments not checked" % min(years)
+    if years:
+        return 0, "no 2027 serial maturity printed on cover (serial years %s); sinking fund installments not checked" % sorted(set(years))[:4]
+    return None, "not determinable from cover"
+
+
+def parse_ohare():
+    series = []
+    checks = []
+    for frag, cols in OHARE_SPECS:
+        pdf = find_pdf(frag)
+        pages = pdf_text(pdf)
+        pg = None
+        for n, t in pages.items():
+            if "DEBT SERVICE SCHEDULE FOR SENIOR LIEN BONDS" in t:
+                pg = n
+                break
+        toks, line = row_tokens(pages[pg], 2027)
+        if len(toks) != len(cols):
+            raise SystemExit("%s: %d tokens vs %d columns: %s" % (frag, len(toks), len(cols), line))
+        vals = dict(zip(cols, toks))
+        calc = sum(v for k, v in vals.items() if k != "total" and not k.startswith("-")) - sum(
+            v for k, v in vals.items() if k.startswith("-"))
+        if abs(calc - vals["total"]) > 5:
+            raise SystemExit("%s: columns sum %d vs printed total %d" % (frag, calc, vals["total"]))
+        checks.append({"doc": pdf, "pdf_page": pg, "row": line, "sum_check": "columns sum to printed total"})
+        for k, v in vals.items():
+            if re.fullmatch(r"20\d\d[A-G]", k):
+                cap = vals.get("-cap2024", 0) if k in ("2024A", "2024B") else 0
+                series.append({"series": k, "d_s_2027_row": v, "doc": pdf, "pdf_page": pg, "row": line,
+                               "outstanding_total_in_doc": vals["outstanding"], "doc_total": vals["total"]})
+        if "-cap2024" in vals:
+            checks[-1]["note"] = ("2024AB table subtracts one combined capitalized interest column of %d "
+                                  "from both series; it is not allocated to 2024A vs 2024B" % vals["-cap2024"])
+            for s in series:
+                if s["series"] in ("2024A", "2024B"):
+                    s["capitalized_interest_combined_2024AB"] = vals["-cap2024"]
+    return series, checks
+
+
+# ---------------------------------------------------------------- GO older series
+# (label, pdf fragment, table anchor regex, series included, outstanding principal now)
+GO_SPECS = [
+    ("2021A and 2021B", "Series-2021A-and-2021B", r"TABLE 53\. LONG-TERM", 435040000 + 219127000),
+    ("2020A", "GO_2020A_OS", r"^LONG-TERM GENERAL OBLIGATION BONDS DEBT SERVICE SCHEDULE\(1\)", 283090000),
+    ("2019A", "GO_2019A_OS", r"^DEBT SERVICE SCHEDULE\(1\)\(2\)", 407735000),
+    ("2017A and 2017B", "GO_2017A&B_OS", r"^DEBT SERVICE SCHEDULE\(1\)\(2\)", 402675000 + 11765000),
+    ("2015B (with 2015A)", "GO_2015A&B_OS", r"^Debt Service Schedule\(1\)\(2\)", 98569000),
+    ("2015C", "GO_2015C_OS", r"^Debt Service Schedule\(1\)\(2\)", 40015000),
+]
+
+
+def parse_go_older():
+    out = []
+    for label, frag, anchor, outstanding in GO_SPECS:
+        pdf = find_pdf(frag)
+        pages = pdf_text(pdf)
+        pg = None
+        for n, t in sorted(pages.items()):
+            if re.search(anchor, t, re.M) and re.search(r"^2026\s", t, re.M):
+                pg = n
+                break
+        lines = pages[pg].split("\n")
+        i0 = [i for i, l in enumerate(lines) if re.search(anchor, l.strip())][0]
+        princ_total = 0
+        row27 = None
+        rows = 0
+        for l in lines[i0:]:
+            m = re.match(r"^(20\d\d)\s+(.*)$", l.strip())
+            if not m:
+                continue
+            toks = [to_num(t) for t in TOK.findall(m.group(2).replace("$ ", "$"))]
+            if len(toks) < 7:
+                continue
+            rows += 1
+            # Older GO statements label the row by the calendar year of payment, so the
+            # row "2026" holds principal due Jan 1 2027 (checked against the cover
+            # maturities and the ACFR). It is the same window as the 2027 bond-year rows.
+            if int(m.group(1)) >= 2026:
+                princ_total += toks[0]
+            if int(m.group(1)) == 2026:
+                row27 = (toks[0], toks[1], l.strip())
+        out.append({"label": label, "doc": pdf, "pdf_page": pg, "principal_2027": row27[0],
+                    "interest_2027": row27[1], "row": row27[2],
+                    "principal_remaining_in_doc_from_2027": princ_total,
+                    "outstanding_principal_now": outstanding,
+                    "principal_mismatch": princ_total - outstanding})
+    return out
+
+
+# ---------------------------------------------------------------- Midway, Water, Sewer
+def row_after(pdf_frag, page, year, cols, label, checks):
+    """Parse one table row and verify each (parts, whole) identity within $5."""
+    pdf = find_pdf(pdf_frag)
+    pages = pdf_text(pdf)
+    toks, line = row_tokens(pages[page], year)
+    if len(toks) != len(cols):
+        raise SystemExit("%s p%d: %d tokens vs %d: %s" % (pdf_frag, page, len(toks), len(cols), line))
+    vals = dict(zip(cols, toks))
+    for parts, whole in checks:
+        if abs(sum(vals[k] for k in parts) - vals[whole]) > 5:
+            raise SystemExit("%s p%d: %s != %s in %s" % (pdf_frag, page, parts, whole, line))
+    return {"doc": pdf, "pdf_page": page, "row": line, "values": vals, "label": label,
+            "checks": ["%s = %s" % ("+".join(p_), w) for p_, w in checks]}
+
+
+def parse_others():
+    r = {}
+    # Midway, bond year ending Jan 1 2027 (payments Jan 2 2026 to Jan 1 2027)
+    r["midway_2025AB"] = row_after("midway_2025AB_OS", 60, 2027, ["outstanding", "2025A", "2025B", "total"], "Midway 2025AB OS",
+                                   [(["outstanding", "2025A", "2025B"], "total")])
+    r["midway_2023AB"] = row_after("ILChicago07a-FIN.tKvfUEqGd", 40, 2027, ["outstanding", "2023A", "2023B", "total"], "Midway 2023AB OS",
+                                   [(["outstanding", "2023A", "2023B"], "total")])
+    r["midway_2023C"] = row_after("Series-2023C--AMT", 36, 2027, ["outstanding", "2023C", "total"], "Midway 2023C OS",
+                                  [(["outstanding", "2023C"], "total")])
+    r["midway_2024"] = row_after("Series-2024A--AMT", 32, 2027, ["outstanding", "2024A", "2024B", "total"], "Midway 2024AB OS",
+                                 [(["outstanding", "2024A", "2024B"], "total")])
+    pages = pdf_text(find_pdf("midway_FS2025"))
+    toks, line = row_tokens(pages[82], 2026)
+    toks = [t * 1000 for t in toks]
+    r["midway_fs_2026"] = {"doc": "midway_FS2025.pdf", "pdf_page": 82, "row": line,
+                           "unit": "thousands in source, converted to dollars",
+                           "values": dict(zip(["2014", "2016", "2018", "2023", "2024", "2025", "total"], toks))}
+    # Water, fiscal (calendar) year 2026
+    r["water_2026ABC"] = row_after("water_2026ABC_OS", 36, 2026,
+        ["outstanding", "ABC_principal", "ABC_interest", "ABC_total", "second_lien_total", "subordinate_iepa", "total"], "Water 2026ABC OS",
+        [(["ABC_principal", "ABC_interest"], "ABC_total"), (["outstanding", "ABC_total"], "second_lien_total"),
+         (["second_lien_total", "subordinate_iepa"], "total")])
+    r["water_2024A"] = row_after("Final-Official-Statement.xhGQmBh3f", 25, 2026,
+        ["outstanding", "A_principal", "A_interest", "A_total", "second_lien_total", "subordinate_iepa", "total"], "Water 2024A OS",
+        [(["A_principal", "A_interest"], "A_total"), (["outstanding", "A_total"], "second_lien_total"),
+         (["second_lien_total", "subordinate_iepa"], "total")])
+    # 2023 OS: columns gross outstanding, refunded, net outstanding, A principal, A interest,
+    # B principal, B interest, A+B total, total (a "-" prints as 0)
+    r["water_2023AB"] = row_after("Offical-Statement.eCHJIWijc", 32, 2026,
+        ["gross_outstanding", "refunded", "net_outstanding", "A_principal", "A_interest", "B_principal", "B_interest", "AB_total", "total"],
+        "Water 2023AB OS",
+        [(["A_principal", "A_interest", "B_principal", "B_interest"], "AB_total"), (["net_outstanding", "AB_total"], "total"),
+         (["refunded", "net_outstanding"], "gross_outstanding")])
+    # Sewer fiscal 2026
+    r["sewer_2024B"] = row_after("wastewater_2024B_OS", 24, 2026,
+        ["senior", "second_outstanding", "B_principal", "B_interest", "B_total", "second_lien_total", "senior_plus_second", "subordinate_iepa", "total"],
+        "Sewer 2024B OS",
+        [(["B_principal", "B_interest"], "B_total"), (["second_outstanding", "B_total"], "second_lien_total"),
+         (["senior", "second_lien_total"], "senior_plus_second"), (["senior_plus_second", "subordinate_iepa"], "total")])
+    r["sewer_2024A"] = row_after("Refunding-Series-2024A", 23, 2026,
+        ["senior", "second_outstanding", "A_principal", "A_interest", "A_total", "second_lien_total", "senior_plus_second", "subordinate_iepa", "total"],
+        "Sewer 2024A OS",
+        [(["A_principal", "A_interest"], "A_total"), (["second_outstanding", "A_total"], "second_lien_total"),
+         (["senior", "second_lien_total"], "senior_plus_second"), (["senior_plus_second", "subordinate_iepa"], "total")])
+    # 2023 OS: senior, outstanding second, A principal, A interest, A capitalized interest (neg), A total,
+    # B principal, B interest, B total, total second lien, total debt service requirements
+    pages = pdf_text(find_pdf("Wastewater-Transmission-Revenue-Bonds--Project-Series-2023A"))
+    toks, line = row_tokens(pages[30], 2026)
+    r["sewer_2023AB"] = {"doc": find_pdf("Wastewater-Transmission-Revenue-Bonds--Project-Series-2023A"), "pdf_page": 30, "row": line, "label": "Sewer 2023AB OS",
+                         "tokens": toks}
+    return {k: v for k, v in r.items() if v}
+
+
+# ---------------------------------------------------------------- build
+ORD = {  # 2026 ordinance, Finance General, dataset 6694 / raw/city_appropriations_2026.json
+    "ohare": {"interest": 496066181, "principal": 303172911, "fees": 3231068},
+    "midway": {"interest": 61100475, "principal": 77455000, "fees": 6147941},
+    "water_bonds": {"interest": 92769138, "principal": 86685000},
+    "water_loans": {"interest": 14135049, "principal": 39667255},
+    "sewer_bonds": {"interest": 77313314, "principal": 36753805},
+    "sewer_loans": {"interest": 11735386, "principal": 32626175},
+    "go": {"interest": 285429137, "principal": 132090000},
+}
+OHARE_COVER_PDF = {
+    "2026A": "OS.X6Bl2Stb8", "2026B": "ohare_2026B_OS", "2026C": "ohare_2026CD_OS", "2026D": "ohare_2026CD_OS",
+    "2025C": "Final-Official-Statement---ORD-2025CD", "2025D": "Final-Official-Statement---ORD-2025CD",
+    "2025E": "Final-OS.Kvjb", "2025G": "Final-OS.Kvjb", "2025A": "OS.NEfpPym7t", "2025B": "OS.NEfpPym7t",
+    "2024C": "OS.ZupAfhGTd", "2024D": "OS.ZupAfhGTd", "2024E": "OS.ZupAfhGTd", "2024F": "OS.ZupAfhGTd",
+    "2024A": "Senor-Lien-Revenue-Bonds-Series-2024AB", "2024B": "Senor-Lien-Revenue-Bonds-Series-2024AB",
+    "2022A": "P21754542", "2022B": "P21754542", "2022C": "P21754542", "2022D": "P21754542",
+    "2020A": "Chicago-OHare-OS-2020", "2020B": "Chicago-OHare-OS-2020", "2020C": "Chicago-OHare-OS-2020",
+    "2020D": "Chicago-OHare-OS-2020", "2020E": "Chicago-OHare-OS-2020",
+    "2018A": "ORD_2018ABC", "2018B": "ORD_2018ABC", "2018C": "ORD_2018ABC",
+    "2017A": "ORD_2017ABCD", "2017B": "ORD_2017ABCD", "2017C": "ORD_2017ABCD", "2017D": "ORD_2017ABCD",
+    "2016D": "2016D-G", "2016E": "2016D-G", "2016F": "2016D-G", "2016G": "2016D-G",
+}
+
+
+def leaf(name, credit, total, principal, doc, page, row, status, note, principal_basis=None, extra=None):
+    d = {"series": name, "credit": credit, "window": "payments Jan 2 2026 through Jan 1 2027",
+         "total_pi": total, "principal": principal,
+         "interest": (total - principal) if principal is not None and total is not None else None,
+         "interest_is_derived_as_total_minus_principal": principal is not None,
+         "principal_basis": principal_basis, "status": status, "note": note,
+         "cite": {"doc": doc, "pdf_page": page, "row": row}}
+    if extra:
+        d.update(extra)
+    return d
+
+
+def build():
+    ohare, ohare_checks = parse_ohare()
+    go_older = parse_go_older()
+    oth = parse_others()
+    leaves = []
+    # ---- O'Hare
+    cur_sum = stale_printed = 0
+    for srs in ohare:
+        k = srs["series"]
+        p, basis = cover_2027_principal(find_pdf(OHARE_COVER_PDF[k]), k)
+        stale = k in OHARE_STALE
+        extra = {"outstanding_principal_after_2026CD": OHARE_OUTSTANDING.get(k)}
+        if k in ("2024A", "2024B"):
+            extra["note_capitalized_interest"] = ("The 2024AB table subtracts $%d of capitalized interest for both series together. "
+                                                  "It is not allocated here." % srs["capitalized_interest_combined_2024AB"])
+        if stale:
+            stale_printed += srs["d_s_2027_row"]
+            leaves.append(leaf("O'Hare " + k, "ohare", None, None, srs["doc"], srs["pdf_page"], srs["row"], "stale",
+                               "Printed amount %d from the series' own statement is an UPPER BOUND, not a leaf amount. %s. Its true 2026 amount is inside the O'Hare residual line."
+                               % (srs["d_s_2027_row"], OHARE_STALE[k]), None, dict(extra, printed_upper_bound=srs["d_s_2027_row"])))
+        else:
+            cur_sum += srs["d_s_2027_row"]
+            leaves.append(leaf("O'Hare " + k, "ohare", srs["d_s_2027_row"], p, srs["doc"], srs["pdf_page"], srs["row"], "current", "", basis, extra))
+    total_gar = 771416782
+    leaves.append(leaf("O'Hare residual: Series 2010B (BAB, $328M) plus post-refunding remainder of 2016D/E/F/G, 2017A/B/C and 2018C",
+                       "ohare", total_gar - cur_sum, None, "ohare_2026CD_OS.pdf", 65,
+                       "2027 total net debt service $771,416,782 minus sum of current series columns",
+                       "residual_by_subtraction",
+                       "Not split by series. The 2026CD statement prints only the combined outstanding column ($754,929,701) after the 2026CD refunding."))
+    for key, amt, pg, doc, lab in [("O'Hare CFC Series 2023 bonds", 8786000, 51, "ohare_FS2025.pdf", "2026 interest $8,786K, principal 0"),
+                                   ("O'Hare TIFIA loan", 15171000, 52, "ohare_FS2025.pdf", "2026 principal $4,336K, interest $10,835K"),
+                                   ("O'Hare PFC Series 2012AB", 4000, 51, "ohare_FS2025.pdf", "2026 interest $4K")]:
+        pr = {"O'Hare TIFIA loan": 4336000}.get(key, 0)
+        leaves.append(leaf(key, "ohare", amt, pr, doc, pg, lab, "current",
+                           "Calendar 2026 from the FY2025 financial statements ($ thousands x 1000)", "printed in the schedule"))
+    # ---- Midway
+    m = {k: oth[k] for k in oth if k.startswith("midway_") and k != "midway_fs_2026"}
+    mid_sum = 0
+    for key, col, nm in [("midway_2025AB", "2025A", "2025A"), ("midway_2025AB", "2025B", "2025B"), ("midway_2024", "2024A", "2024A"),
+                         ("midway_2024", "2024B", "2024B"), ("midway_2023AB", "2023A", "2023A"), ("midway_2023AB", "2023B", "2023B"),
+                         ("midway_2023C", "2023C", "2023C")]:
+        v = oth[key]
+        mid_sum += v["values"][col]
+        leaves.append(leaf("Midway " + nm, "midway", v["values"][col], None, v["doc"], v["pdf_page"], v["row"], "current",
+                           "Net of capitalized interest. Variable-rate bonds assumed at 3.00% in the source (midway_2025AB_OS p.60 note 5).",
+                           "not extracted"))
+    mid_out = oth["midway_2025AB"]["values"]["outstanding"]
+    mid_other = mid_out - (oth["midway_2024"]["values"]["2024A"] + oth["midway_2024"]["values"]["2024B"]
+                           + oth["midway_2023AB"]["values"]["2023A"] + oth["midway_2023AB"]["values"]["2023B"] + oth["midway_2023C"]["values"]["2023C"])
+    leaves.append(leaf("Midway residual: Series 2014B, 2014C, 2018A (and any 2016A remnant)", "midway", mid_other, None,
+                       "midway_2025AB_OS.pdf", 60, "outstanding column $%d minus the 2023A/B/C and 2024A/B columns" % mid_out,
+                       "residual_by_subtraction", "FY2025 financial statement p.82 shows calendar 2027 for these as $4,240K (2014) + $5,256K (2018)."))
+    # ---- Water
+    w = oth["water_2026ABC"]["values"]; wa = oth["water_2024A"]["values"]; wb = oth["water_2023AB"]["values"]
+    leaves.append(leaf("Water 2026A, 2026B, 2026C (three series, printed combined)", "water", w["ABC_total"], w["ABC_principal"],
+                       oth["water_2026ABC"]["doc"], 36, oth["water_2026ABC"]["row"], "current_group",
+                       "Sold May 2026. Net of capitalized interest. Fiscal year 2026 (calendar).", "printed in table"))
+    leaves.append(leaf("Water 2024A", "water", wa["A_total"], wa["A_principal"], oth["water_2024A"]["doc"], 25, oth["water_2024A"]["row"], "current",
+                       "Fiscal year 2026.", "printed in table"))
+    leaves.append(leaf("Water 2023A", "water", wb["A_interest"], wb["A_principal"], oth["water_2023AB"]["doc"], 32, oth["water_2023AB"]["row"], "current", "Fiscal year 2026.", "printed in table"))
+    leaves.append(leaf("Water 2023B", "water", wb["B_interest"], wb["B_principal"], oth["water_2023AB"]["doc"], 32, oth["water_2023AB"]["row"], "current", "Fiscal year 2026.", "printed in table"))
+    w_res = w["outstanding"] - wa["A_total"] - wb["AB_total"]
+    leaves.append(leaf("Water residual: Series 2001, 2004, 2010B, 2010C, 2016A-1, 2017, 2017-2 and 2023C (WIFIA)", "water", w_res, None,
+                       "water_2026ABC_OS.pdf", 36, "outstanding column $%d minus 2024A and 2023A/B" % w["outstanding"],
+                       "residual_by_subtraction", "Series list from water_2026_supplement.pdf p.5. Not split further here."))
+    leaves.append(leaf("Water IEPA subordinate-lien loans (aggregate)", "water", w["subordinate_iepa"], None, oth["water_2026ABC"]["doc"], 36,
+                       oth["water_2026ABC"]["row"], "loan_aggregate", "Loans, not bonds. Per-loan 2026 payments are not printed in the OS (water_2026_supplement.pdf p.6 lists balances).", "not printed"))
+    # ---- Sewer
+    s24b = oth["sewer_2024B"]["values"]; s24a = oth["sewer_2024A"]["values"]
+    # sewer_2023AB tokens: senior, outstanding second, A interest, A cap interest, A total, B interest, B total, second total, total
+    t = oth["sewer_2023AB"]["tokens"]
+    if len(t) != 9 or abs(t[1] + t[4] + t[5] - t[7]) > 5:
+        raise SystemExit("sewer 2023AB row check failed: %r" % t)
+    leaves.append(leaf("Sewer 2024B", "wastewater", s24b["B_total"], s24b["B_principal"], oth["sewer_2024B"]["doc"], 24, oth["sewer_2024B"]["row"], "current", "Fiscal year 2026.", "printed in table"))
+    leaves.append(leaf("Sewer 2024A", "wastewater", s24a["A_total"], s24a["A_principal"], oth["sewer_2024A"]["doc"], 23, oth["sewer_2024A"]["row"], "current", "Fiscal year 2026.", "printed in table"))
+    leaves.append(leaf("Sewer 2023A", "wastewater", t[4], 0, oth["sewer_2023AB"]["doc"], 30, oth["sewer_2023AB"]["row"], "current",
+                       "Interest $%d less capitalized interest $%d." % (t[2], -t[3] if t[3] < 0 else t[3]), "no principal column value printed for 2026"))
+    leaves.append(leaf("Sewer 2023B", "wastewater", t[5], 0, oth["sewer_2023AB"]["doc"], 30, oth["sewer_2023AB"]["row"], "current", "Fiscal year 2026.", "no principal column value printed for 2026"))
+    s_res = s24b["second_outstanding"] - s24a["A_total"] - t[4] - t[5]
+    leaves.append(leaf("Sewer residual: second-lien series outstanding other than 2023A/B and 2024A/B", "wastewater", s_res, None,
+                       "wastewater_2024B_OS.pdf", 24, "outstanding second-lien column $%d minus 2024A, 2023A, 2023B" % s24b["second_outstanding"],
+                       "residual_by_subtraction", "Series not named in the fetched documents. The 2008C variable-rate bonds were defeased in 2025 (sewer_FS2025.pdf p.44), so this line is overstated by that series' 2026 debt service."))
+    leaves.append(leaf("Sewer senior-lien bonds (aggregate)", "wastewater", s24b["senior"], None, "wastewater_2024B_OS.pdf", 24, oth["sewer_2024B"]["row"], "aggregate",
+                       "The OS column heading is 'Outstanding Senior Lien Bonds' and does not name the series.", "not printed"))
+    leaves.append(leaf("Sewer IEPA subordinate-lien loans (aggregate)", "wastewater", s24b["subordinate_iepa"], None, "wastewater_2024B_OS.pdf", 24, oth["sewer_2024B"]["row"], "loan_aggregate", "Loans, not bonds.", "not printed"))
+    # ---- GO older
+    go_out = []
+    for g in go_older:
+        clean = abs(g["principal_mismatch"]) < 2000000 and g["label"].startswith("2021")
+        go_out.append(leaf("GO " + g["label"], "go", (g["principal_2027"] + g["interest_2027"]) if clean else None,
+                           g["principal_2027"] if clean else None, g["doc"], g["pdf_page"], g["row"],
+                           "current_with_caveat" if clean else "stale",
+                           ("Principal remaining in the statement from this row on is $%d vs $%d outstanding now (difference $%d, probably later tenders and refundings)."
+                            % (g["principal_remaining_in_doc_from_2027"], g["outstanding_principal_now"], g["principal_mismatch"]))
+                           + ("" if clean else " Printed amount is an upper bound only: principal $%d, interest $%d." % (g["principal_2027"], g["interest_2027"])),
+                           "printed in table (row labelled 2026 holds payments due Jan 1 2027)",
+                           None if clean else {"printed_upper_bound_principal": g["principal_2027"], "printed_upper_bound_interest": g["interest_2027"]}))
+    leaves += go_out
+    # ---- reconciliations
+    cur = lambda c: sum(l["total_pi"] for l in leaves if l["credit"] == c and l.get("total_pi") is not None and l["status"] in ("current", "current_group", "current_with_caveat"))
+    allc = lambda c: sum(l["total_pi"] for l in leaves if l["credit"] == c and l.get("total_pi") is not None)
+    oh_ord = ORD["ohare"]["interest"] + ORD["ohare"]["principal"]
+    recon = {
+        "ohare": {"ordinance_principal": ORD["ohare"]["principal"], "ordinance_interest": ORD["ohare"]["interest"], "ordinance_pi": oh_ord,
+                  "sum_of_current_series_leaves": cur("ohare") - 8786000 - 15171000 - 4000,
+                  "senior_lien_total_per_2026CD_OS": total_gar, "cfc_plus_tifia_plus_pfc": 8786000 + 15171000 + 4000,
+                  "all_listed_lines_total": allc("ohare"), "gap_to_ordinance": oh_ord - allc("ohare")},
+        "midway": {"ordinance_pi": ORD["midway"]["interest"] + ORD["midway"]["principal"], "os_aggregate_bond_year_2027": oth["midway_2025AB"]["values"]["total"],
+                   "fs_calendar_2026": oth["midway_fs_2026"]["values"]["total"], "fs_calendar_2027": 137561000,
+                   "sum_of_lines": allc("midway")},
+        "water": {"ordinance_bonds_pi": ORD["water_bonds"]["interest"] + ORD["water_bonds"]["principal"],
+                  "ordinance_loans_pi": ORD["water_loans"]["interest"] + ORD["water_loans"]["principal"],
+                  "ordinance_bonds_plus_loans": sum(ORD["water_bonds"].values()) + sum(ORD["water_loans"].values()),
+                  "os_total_debt_service_requirement_2026": w["total"], "sum_of_lines": allc("water")},
+        "wastewater": {"ordinance_bonds_pi": ORD["sewer_bonds"]["interest"] + ORD["sewer_bonds"]["principal"],
+                       "ordinance_loans_pi": ORD["sewer_loans"]["interest"] + ORD["sewer_loans"]["principal"],
+                       "ordinance_bonds_plus_loans": sum(ORD["sewer_bonds"].values()) + sum(ORD["sewer_loans"].values()),
+                       "os_total_debt_service_requirement_2026": s24b["total"], "sum_of_lines": allc("wastewater")},
+        "go": {"ordinance_pi": ORD["go"]["interest"] + ORD["go"]["principal"]},
+    }
+    out = {"generated_by": "scripts/bonds_parse.py", "units": "US dollars",
+           "window_note": "O'Hare, Midway and GO use the bond year ending Jan 1 2027 (payments Jan 2 2026 to Jan 1 2027). Water and Sewer use fiscal (calendar) year 2026.",
+           "status_key": {"current": "series column from the series' own OS; no later transaction known to change it",
+                          "current_group": "series printed combined in one column", "current_with_caveat": "principal in the OS differs slightly from outstanding now",
+                          "stale": "later refunding, defeasance or tender makes the printed figure an upper bound; not counted as a leaf amount",
+                          "residual_by_subtraction": "aggregate outstanding column minus named series; not a single series",
+                          "aggregate": "unnamed series bucket", "loan_aggregate": "IEPA loans, not bonds"},
+           "ordinance_lines": ORD, "reconciliation": recon, "leaves": leaves,
+           "ohare_parse_checks": ohare_checks,
+           "not_covered": ["Library term notes ($125,926,011 principal, $2,200,000 interest): no official statement exists on the BondLink pages; the ACFR lists only the appropriation line (ACFR FY2025 budget schedule).",
+                           "GO series 2012B, 2014B, 2015B, 2015C, 2017A/B, 2019A, 2020A: printed series columns are stale (see status).",
+                           "O'Hare 2010B: no separate column in any statement fetched."]}
+    # Flat list for scripts/leaves_inventory.py: one row per fund x series x kind.
+    fund = {"ohare": "Chicago O'Hare Airport Fund", "midway": "Chicago Midway Airport Fund", "water": "Water Fund",
+            "wastewater": "Sewer Fund", "go": "Bond Redemption and Interest Series Fund"}
+    flat = []
+    for l in leaves:
+        if l["status"] not in ("current", "current_group", "current_with_caveat"):
+            continue
+        base = {"series": l["series"], "fund": fund[l["credit"]], "credit": l["credit"], "status": l["status"], "cite": l["cite"]}
+        if l["principal"] is not None:
+            flat.append(dict(base, kind="principal", amount=l["principal"]))
+            flat.append(dict(base, kind="interest", amount=l["total_pi"] - l["principal"]))
+        else:
+            flat.append(dict(base, kind="principal_and_interest", amount=l["total_pi"],
+                             split_note="principal/interest split not extracted for this series"))
+    out["series"] = flat
+    out["series_total_by_credit"] = {c: sum(r["amount"] for r in flat if r["credit"] == c) for c in fund}
+    json.dump(out, open(OUT, "w"), indent=1)
+    return out
+
+
+def main():
+    out = build()
+    ls = out["leaves"]
+    print("leaves", len(ls))
+    for c in out["reconciliation"]:
+        print(c, out["reconciliation"][c])
+
+
+if __name__ == "__main__":
+    main()
