@@ -1,0 +1,9088 @@
+{
+ "meta": {
+  "generated_by": "scripts/parkvend_build.py",
+  "question": "What did the Chicago Park District actually pay each vendor?",
+  "answer": "Only one public source exists: the Ethics Ordinance 'Vendor Payments' lists for calendar years 2019, 2020, 2021 and 2022 (payee and amount, vendors paid $10,000 or more in a 12-month period). Nothing later than 2022 is published. No contract, department or account is shown.",
+  "source_urls": {
+   "2019": "https://www.chicagoparkdistrict.com/media/29071/download?inline",
+   "2020": "https://www.chicagoparkdistrict.com/media/29076/download?inline",
+   "2021": "https://www.chicagoparkdistrict.com/media/29081/download?inline",
+   "2022": "https://www.chicagoparkdistrict.com/media/29086/download?inline"
+  },
+  "source_page": "https://www.chicagoparkdistrict.com/ethics-office",
+  "file_urls_on_cdn": {
+   "2019": "https://files.chicagoparkdistrict.com/2025-05/2019%20Vendor%20Payments%20-%20Ethics%20Ordinance%20Report.pdf",
+   "2020": "https://files.chicagoparkdistrict.com/2025-05/2020%20Vendor%20Payments%20-%20Ethics%20Ordinance%20Report.pdf",
+   "2021": "https://files.chicagoparkdistrict.com/2025-05/2021%20Vendor%20Payments%20-%20Ethics%20Ordinance%20Report.pdf",
+   "2022": "https://files.chicagoparkdistrict.com/2025-05/2022%20Vendor%20Payments%20-%20Ethics%20Ordinance%20Report.pdf"
+  }
+ },
+ "coverage": {
+  "grand_total_2026": 637580350,
+  "personnel_610000": 245230929,
+  "non_personnel_2026": 392349421,
+  "of_which_debt_service_600005_600015": 70556546,
+  "non_personnel_excluding_debt": 321792875,
+  "budget_2026_by_mapping": {
+   "A_contract_named_counterparty": {
+    "accounts": [
+     "626045",
+     "626055",
+     "626065",
+     "626040",
+     "626015",
+     "626050",
+     "626010",
+     "626005",
+     "626030",
+     "626035",
+     "623030",
+     "625035"
+    ],
+    "budget_2026": 79462990,
+    "pct_of_non_personnel": 20.3
+   },
+   "A_institution_remittances_and_grants": {
+    "accounts": [
+     "625005",
+     "625010",
+     "623185",
+     "623170",
+     "623175",
+     "623180"
+    ],
+    "budget_2026": 39599287,
+    "pct_of_non_personnel": 10.1
+   },
+   "A_pension_contribution": {
+    "accounts": [
+     "625020",
+     "625023"
+    ],
+    "budget_2026": 69332412,
+    "pct_of_non_personnel": 17.7
+   },
+   "B_payee_class_by_name_only": {
+    "accounts": [
+     "626060",
+     "626025",
+     "623070",
+     "623075",
+     "623015",
+     "626075"
+    ],
+    "budget_2026": 43323021,
+    "pct_of_non_personnel": 11.0
+   }
+  },
+  "tier_A_total_budget_2026": 188394689,
+  "tier_A_pct_of_non_personnel": 48.0,
+  "tier_A_pct_of_non_personnel_excl_debt_and_pension": 47.2,
+  "tier_A_plus_B_budget_2026": 231717710,
+  "tier_A_plus_B_pct_of_non_personnel": 59.1,
+  "unmapped_non_personnel_budget_2026": 160631711,
+  "paid_2022_tier_A": 171827314.13,
+  "caveats": [
+   "Paid amounts are calendar 2019-2022 only (latest list published). They are not 2026 spend.",
+   "Budget dollars are 2026 appropriations for lines whose counterparty the sources name. They are not paid amounts.",
+   "The list only shows payees paid $10,000 or more in a 12-month period and has no contract, department or account detail.",
+   "Coverage here means 'a named payee with a published paid amount exists for this budget line in 2019-2022', not that the 2026 line is explained by those payees."
+  ]
+ },
+ "list_coverage": {
+  "list_total_by_year": {
+   "2019": 343402874.71,
+   "2020": 304192268.88,
+   "2021": 364934332.86,
+   "2022": 379275384.87
+  },
+  "payee_rows_by_year": {
+   "2019": 437,
+   "2020": 345,
+   "2021": 369,
+   "2022": 440
+  },
+  "2022_total": 379275384.87,
+  "2022_mapped_to_a_budget_line": 196281138.23,
+  "2022_city_of_chicago_payee_unmapped": 18945588.65,
+  "2022_other_unmapped": 164048657.99
+ },
+ "mapping_groups": [
+  {
+   "accounts": [
+    "626045",
+    "626055",
+    "626065"
+   ],
+   "account_names": [
+    "Soldier Field Management",
+    "McFetridge Sports Center Management",
+    "Beverly Morgan Park Sports Complex Management"
+   ],
+   "kind": "contract",
+   "tier": "A",
+   "budget2026": 41353087,
+   "budget2025": 40021011,
+   "basis": "SMG (ASM Global) holds P-12035 Soldier Field and McFetridge, and P-15018 Beverly/Morgan Park. The ERP list gives one payee total, not split by facility. The payee 'SMNG A LTD' ($0.2M to $0.4M a year) is not assumed to be SMG and is left unmapped.",
+   "payees": [
+    {
+     "payee": "SMG",
+     "paid_by_year": {
+      "2019": 31548720.0,
+      "2020": 21809995.0,
+      "2021": 28280499.0,
+      "2022": 40623156.36
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 31548720.0,
+    "2020": 21809995.0,
+    "2021": 28280499.0,
+    "2022": 40623156.36
+   }
+  },
+  {
+   "accounts": [
+    "626040",
+    "626015"
+   ],
+   "account_names": [
+    "Harbor Management",
+    "Ice Skating Management"
+   ],
+   "kind": "contract",
+   "tier": "A",
+   "budget2026": 17573203,
+   "budget2025": 16583018,
+   "basis": "Westrec holds harbor management P-14010 (budget PDF p264). Ice rinks P-23010 (Board action 23-1103-0913, Sep 2023) are also Westrec SMI OpCo. The payee WESTREC SMI OPCO, LLC appears only in 2022 and the list does not say which service it paid for, so harbors and ice rinks are reported as one group.",
+   "payees": [
+    {
+     "payee": "WESTREC MARINAS",
+     "paid_by_year": {
+      "2019": 18421396.0,
+      "2020": 15889972.0,
+      "2021": 20661739.0,
+      "2022": 11494462.87
+     }
+    },
+    {
+     "payee": "WESTREC SMI OPCO, LLC",
+     "paid_by_year": {
+      "2019": 0,
+      "2020": 0,
+      "2021": 0,
+      "2022": 6038136.1
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 18421396.0,
+    "2020": 15889972.0,
+    "2021": 20661739.0,
+    "2022": 17532598.97
+   }
+  },
+  {
+   "accounts": [
+    "626050"
+   ],
+   "account_names": [
+    "Golf Management"
+   ],
+   "kind": "contract",
+   "tier": "A",
+   "budget2026": 8490697,
+   "budget2025": 8141644,
+   "basis": "Golf management payee by name. The operator behind this LLC is not stated in the list. Indigo Sports P-24001 began Jan 2025 (Board action 24-1125-0911), so no payment to Indigo is published.",
+   "payees": [
+    {
+     "payee": "CHICAGO PARK GOLF MANAGEMENT LLC",
+     "paid_by_year": {
+      "2019": 5890547.3,
+      "2020": 6323785.6,
+      "2021": 7310751.4,
+      "2022": 8704065.07
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 5890547.3,
+    "2020": 6323785.6,
+    "2021": 7310751.4,
+    "2022": 8704065.07
+   }
+  },
+  {
+   "accounts": [
+    "626010"
+   ],
+   "account_names": [
+    "MLK Center Management"
+   ],
+   "kind": "contract",
+   "tier": "A",
+   "budget2026": 1548354,
+   "budget2025": 1628081,
+   "basis": "Predecessor operator of the MLK Center per the contracts library (research/park_district.md). Only the 2022 payee string matches exactly. 'CHICAGO SKATING LLC' (2019-2022) is NOT included because the list does not say which facility it ran.",
+   "payees": [
+    {
+     "payee": "CHICAGO CITY SKATING LLC",
+     "paid_by_year": {
+      "2019": 0,
+      "2020": 0,
+      "2021": 0,
+      "2022": 1288808.86
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 1288808.86
+   }
+  },
+  {
+   "accounts": [
+    "626005"
+   ],
+   "account_names": [
+    "Parking Management"
+   ],
+   "kind": "contract",
+   "tier": "A",
+   "budget2026": 1691052,
+   "budget2025": 1491844,
+   "basis": "Parking management P-14012 (Standard Parking Corporation, now SP Plus).",
+   "payees": [
+    {
+     "payee": "STANDARD PARKING CORP",
+     "paid_by_year": {
+      "2019": 1583177.2,
+      "2020": 1026306.2,
+      "2021": 1360757.7,
+      "2022": 2485593.87
+     }
+    },
+    {
+     "payee": "SP PLUS CORPORATION",
+     "paid_by_year": {
+      "2019": 0,
+      "2020": 154845.01,
+      "2021": 157250.0,
+      "2022": 252954.22
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 1583177.2,
+    "2020": 1181151.21,
+    "2021": 1518007.7,
+    "2022": 2738548.09
+   }
+  },
+  {
+   "accounts": [
+    "626030"
+   ],
+   "account_names": [
+    "Cellular Telecommunication Infrastructure Management"
+   ],
+   "kind": "contract",
+   "tier": "A",
+   "budget2026": 537438,
+   "budget2025": 0,
+   "basis": "Cellular infrastructure management P-19014-R and P-25001 (Board actions 19-1121-0115, 25-1149-0910).",
+   "payees": [
+    {
+     "payee": "SPAAN TECH INC",
+     "paid_by_year": {
+      "2019": 0,
+      "2020": 67708.3,
+      "2021": 293637.43,
+      "2022": 515545.92
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 67708.3,
+    "2021": 293637.43,
+    "2022": 515545.92
+   }
+  },
+  {
+   "accounts": [
+    "626035"
+   ],
+   "account_names": [
+    "Concessions Management"
+   ],
+   "kind": "contract",
+   "tier": "A",
+   "budget2026": 929159,
+   "budget2025": 910940,
+   "basis": "Concession program management P-20011 (Board action 20-1212-1014).",
+   "payees": [
+    {
+     "payee": "UCG ASSOCIATES, INC",
+     "paid_by_year": {
+      "2019": 0,
+      "2020": 17500.0,
+      "2021": 590464.4,
+      "2022": 1118362.09
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 17500.0,
+    "2021": 590464.4,
+    "2022": 1118362.09
+   }
+  },
+  {
+   "accounts": [
+    "623030"
+   ],
+   "account_names": [
+    "Disposal Of Waste"
+   ],
+   "kind": "contract",
+   "tier": "A",
+   "budget2026": 4090000,
+   "budget2025": 4180456,
+   "basis": "Waste disposal contract (Flood Bros, library value $3.8M). Lakeshore Recycling also appears on the list, not counted.",
+   "payees": [
+    {
+     "payee": "FLOOD BROS DISPOSAL CO",
+     "paid_by_year": {
+      "2019": 2205323.9,
+      "2020": 2396229.0,
+      "2021": 2628472.2,
+      "2022": 2790955.63
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 2205323.9,
+    "2020": 2396229.0,
+    "2021": 2628472.2,
+    "2022": 2790955.63
+   }
+  },
+  {
+   "accounts": [
+    "625035"
+   ],
+   "account_names": [
+    "Workers Compensation"
+   ],
+   "kind": "contract",
+   "tier": "A",
+   "budget2026": 3250000,
+   "budget2025": 3500000,
+   "basis": "Third-party workers compensation administrator, Cannon Cochran Management Services Inc (P-22017, Board action 23-1096-0809), payee string CCMSI. Whether the payments are fees or claims is not stated.",
+   "payees": [
+    {
+     "payee": "CCMSI",
+     "paid_by_year": {
+      "2019": 3500495.6,
+      "2020": 2553400.9,
+      "2021": 2663394.6,
+      "2022": 1830979.03
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 3500495.6,
+    "2020": 2553400.9,
+    "2021": 2663394.6,
+    "2022": 1830979.03
+   }
+  },
+  {
+   "accounts": [
+    "625005"
+   ],
+   "account_names": [
+    "Remittance To Zoo"
+   ],
+   "kind": "institution",
+   "tier": "A",
+   "budget2026": 6751687,
+   "budget2025": 5696210,
+   "basis": "Ordinance Appropriation F: remittance to the Zoo.",
+   "payees": [
+    {
+     "payee": "LINCOLN PARK ZOO",
+     "paid_by_year": {
+      "2019": 5590000.0,
+      "2020": 5590000.0,
+      "2021": 5837158.0,
+      "2022": 5696210.0
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 5590000.0,
+    "2020": 5590000.0,
+    "2021": 5837158.0,
+    "2022": 5696210.0
+   }
+  },
+  {
+   "accounts": [
+    "625010"
+   ],
+   "account_names": [
+    "Remittance to Aquarium & Museum"
+   ],
+   "kind": "institution",
+   "tier": "A",
+   "budget2026": 29617600,
+   "budget2025": 29730610,
+   "basis": "Ordinance Appropriation F lists 11 Aquarium and Museum institutions. Payee names match all 11.",
+   "payees": [
+    {
+     "payee": "THE  ART INSTITUTE OF CHICAGO",
+     "paid_by_year": {
+      "2019": 5577460.3,
+      "2020": 5439337.6,
+      "2021": 5134043.6,
+      "2022": 4521989.34
+     }
+    },
+    {
+     "payee": "FIELD MUSEUM OF NATURAL HISTORY",
+     "paid_by_year": {
+      "2019": 5577460.3,
+      "2020": 5439337.6,
+      "2021": 5132043.6,
+      "2022": 4521989.34
+     }
+    },
+    {
+     "payee": "MUSEUM OF SCIENCE & INDUSTRY",
+     "paid_by_year": {
+      "2019": 5577460.3,
+      "2020": 5439337.6,
+      "2021": 5132043.6,
+      "2022": 4521989.34
+     }
+    },
+    {
+     "payee": "SHEDD AQUARIUM SOCIETY",
+     "paid_by_year": {
+      "2019": 3997943.3,
+      "2020": 3898942.6,
+      "2021": 4270887.6,
+      "2022": 3774846.02
+     }
+    },
+    {
+     "payee": "ADLER PLANETARIUM",
+     "paid_by_year": {
+      "2019": 1736301.5,
+      "2020": 1693238.3,
+      "2021": 1881213.2,
+      "2022": 1678822.34
+     }
+    },
+    {
+     "payee": "CHICAGO HISTORICAL SOCIETY",
+     "paid_by_year": {
+      "2019": 1736290.2,
+      "2020": 1693229.1,
+      "2021": 1881213.2,
+      "2022": 1663166.34
+     }
+    },
+    {
+     "payee": "MUSEUM OF CONTEMPORARY ART",
+     "paid_by_year": {
+      "2019": 1708488.7,
+      "2020": 1666259.6,
+      "2021": 1881053.5,
+      "2022": 1663527.72
+     }
+    },
+    {
+     "payee": "NATIONAL MUSEUM OF MEXICAN ART",
+     "paid_by_year": {
+      "2019": 1510822.1,
+      "2020": 1464474.9,
+      "2021": 1880704.8,
+      "2022": 1666268.13
+     }
+    },
+    {
+     "payee": "DUSABLE MUSEUM",
+     "paid_by_year": {
+      "2019": 1503022.1,
+      "2020": 1464474.9,
+      "2021": 1880704.8,
+      "2022": 1667368.13
+     }
+    },
+    {
+     "payee": "CHICAGO ACADEMY OF SCIENCES",
+     "paid_by_year": {
+      "2019": 1307871.7,
+      "2020": 1299903.2,
+      "2021": 1879569.2,
+      "2022": 1668822.75
+     }
+    },
+    {
+     "payee": "INSTITUTE  OF PUERTO RICAN  ARTS & CULTURE",
+     "paid_by_year": {
+      "2019": 521041.84,
+      "2020": 505372.49,
+      "2021": 1875091.3,
+      "2022": 1679043.74
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 30754162.34,
+    "2020": 30003907.89,
+    "2021": 32828568.4,
+    "2022": 29027833.19
+   }
+  },
+  {
+   "accounts": [
+    "625020",
+    "625023"
+   ],
+   "account_names": [
+    "Pension Expense",
+    "Supplemental Contribution to Pension Fund"
+   ],
+   "kind": "pension",
+   "tier": "A",
+   "budget2026": 69332412,
+   "budget2025": 59679376,
+   "basis": "Pension Fund statutory contribution (ordinance Appropriation C). 2021 includes extra supplemental payments. One payee covers both lines.",
+   "payees": [
+    {
+     "payee": "PARK EMPLOYEES A&B FUND",
+     "paid_by_year": {
+      "2019": 27487785.0,
+      "2020": 34062019.0,
+      "2021": 84064284.0,
+      "2022": 55744220.74
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 27487785.0,
+    "2020": 34062019.0,
+    "2021": 84064284.0,
+    "2022": 55744220.74
+   }
+  },
+  {
+   "accounts": [
+    "623185"
+   ],
+   "account_names": [
+    "Grant Park Music Festival"
+   ],
+   "kind": "institution",
+   "tier": "A",
+   "budget2026": 2400000,
+   "budget2025": 2900000,
+   "basis": "Grant Park Music Festival grant line.",
+   "payees": [
+    {
+     "payee": "GRANT PARK ORCHESTRAL ASSOCIATION",
+     "paid_by_year": {
+      "2019": 2900000.0,
+      "2020": 1450000.0,
+      "2021": 2600000.0,
+      "2022": 2900000.0
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 2900000.0,
+    "2020": 1450000.0,
+    "2021": 2600000.0,
+    "2022": 2900000.0
+   }
+  },
+  {
+   "accounts": [
+    "623170"
+   ],
+   "account_names": [
+    "Chicago Parks Foundation"
+   ],
+   "kind": "institution",
+   "tier": "A",
+   "budget2026": 200000,
+   "budget2025": 200000,
+   "basis": "Budget line is named for this payee.",
+   "payees": [
+    {
+     "payee": "CHICAGO PARKS FOUNDATION",
+     "paid_by_year": {
+      "2019": 100000.0,
+      "2020": 106000.0,
+      "2021": 477300.0,
+      "2022": 177430.0
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 100000.0,
+    "2020": 106000.0,
+    "2021": 477300.0,
+    "2022": 177430.0
+   }
+  },
+  {
+   "accounts": [
+    "623175"
+   ],
+   "account_names": [
+    "Neighborspace"
+   ],
+   "kind": "institution",
+   "tier": "A",
+   "budget2026": 180000,
+   "budget2025": 180000,
+   "basis": "Budget line is named for this payee.",
+   "payees": [
+    {
+     "payee": "NEIGHBOR SPACE",
+     "paid_by_year": {
+      "2019": 100000.0,
+      "2020": 100000.0,
+      "2021": 100000.0,
+      "2022": 100115.0
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 100000.0,
+    "2020": 100000.0,
+    "2021": 100000.0,
+    "2022": 100115.0
+   }
+  },
+  {
+   "accounts": [
+    "623180"
+   ],
+   "account_names": [
+    "Garfield Park Conservatory Alliance"
+   ],
+   "kind": "institution",
+   "tier": "A",
+   "budget2026": 450000,
+   "budget2025": 450000,
+   "basis": "Budget line is named for this payee.",
+   "payees": [
+    {
+     "payee": "GARFIELD PARK CONSERVATORY ALLIANCE",
+     "paid_by_year": {
+      "2019": 771887.05,
+      "2020": 659497.58,
+      "2021": 348390.96,
+      "2022": 1038485.18
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 771887.05,
+    "2020": 659497.58,
+    "2021": 348390.96,
+    "2022": 1038485.18
+   }
+  },
+  {
+   "accounts": [
+    "626060"
+   ],
+   "account_names": [
+    "Maggie Daley Park Management"
+   ],
+   "kind": "contract",
+   "tier": "B",
+   "budget2026": 4387340,
+   "budget2025": 6006610,
+   "basis": "Payee string is the park name, not a company. Operator in 2019-2022 is not named in the list. Name match only.",
+   "payees": [
+    {
+     "payee": "MAGGIE DALEY PARK",
+     "paid_by_year": {
+      "2019": 5153615.8,
+      "2020": 4228254.0,
+      "2021": 4896092.3,
+      "2022": 5921206.73
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 5153615.8,
+    "2020": 4228254.0,
+    "2021": 4896092.3,
+    "2022": 5921206.73
+   }
+  },
+  {
+   "accounts": [
+    "626025"
+   ],
+   "account_names": [
+    "Landscape Services"
+   ],
+   "kind": "contract",
+   "tier": "B",
+   "budget2026": 8107327,
+   "budget2025": 7721264,
+   "basis": "Landscape contractors. Mapping to 626025 is by contractor type (inference). Other landscape vendors may exist.",
+   "payees": [
+    {
+     "payee": "MOORE LANDSCAPES, LLC",
+     "paid_by_year": {
+      "2019": 4930284.9,
+      "2020": 3621724.7,
+      "2021": 3544066.2,
+      "2022": 4104237.69
+     }
+    },
+    {
+     "payee": "SPEEDY GONZALEZ LANDSCAPING INC",
+     "paid_by_year": {
+      "2019": 4196125.8,
+      "2020": 2500518.2,
+      "2021": 2646375.5,
+      "2022": 3651234.79
+     }
+    },
+    {
+     "payee": "CHRISTY WEBBER LANDSCAPES",
+     "paid_by_year": {
+      "2019": 256063.8,
+      "2020": 776362.2,
+      "2021": 954876.13,
+      "2022": 970539.75
+     }
+    },
+    {
+     "payee": "CHRISTY WEBBER & CO",
+     "paid_by_year": {
+      "2019": 823306.04,
+      "2020": 0,
+      "2021": 0,
+      "2022": 0
+     }
+    },
+    {
+     "payee": "CLAUSS BROTHERS INC",
+     "paid_by_year": {
+      "2019": 74512.0,
+      "2020": 116223.0,
+      "2021": 130575.0,
+      "2022": 116695.0
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 10280292.54,
+    "2020": 7014828.1,
+    "2021": 7275892.83,
+    "2022": 8842707.23
+   }
+  },
+  {
+   "accounts": [
+    "623070",
+    "623075"
+   ],
+   "account_names": [
+    "Natural Gas Utility",
+    "Electric Utility Service"
+   ],
+   "kind": "contract",
+   "tier": "B",
+   "budget2026": 20941512,
+   "budget2025": 20041512,
+   "basis": "Gas and electric suppliers, by name. Water and sewer 623080 is not mapped (payee not identified).",
+   "payees": [
+    {
+     "payee": "DIRECT ENERGY BUSINESS",
+     "paid_by_year": {
+      "2019": 9791285.4,
+      "2020": 9368812.7,
+      "2021": 4067186.8,
+      "2022": 0
+     }
+    },
+    {
+     "payee": "CENTERPOINT ENERGY SERVICES INC",
+     "paid_by_year": {
+      "2019": 4466123.6,
+      "2020": 2525067.6,
+      "2021": 0,
+      "2022": 0
+     }
+    },
+    {
+     "payee": "PEOPLES GAS-PAYMENT PROCESSING",
+     "paid_by_year": {
+      "2019": 337261.46,
+      "2020": 342337.83,
+      "2021": 424067.1,
+      "2022": 3409665.54
+     }
+    },
+    {
+     "payee": "SYMMETRY ENERGY SOLUTIONS, LLC",
+     "paid_by_year": {
+      "2019": 0,
+      "2020": 1411340.8,
+      "2021": 2918916.9,
+      "2022": 0
+     }
+    },
+    {
+     "payee": "COMMONWEALTH EDISON CO",
+     "paid_by_year": {
+      "2019": 112037.07,
+      "2020": 72050.52,
+      "2021": 559215.59,
+      "2022": 264043.5
+     }
+    },
+    {
+     "payee": "COMED",
+     "paid_by_year": {
+      "2019": 25890.38,
+      "2020": 100093.01,
+      "2021": 41423.0,
+      "2022": 343406.66
+     }
+    },
+    {
+     "payee": "CENTRIO ENERGY CHICAGO LLC",
+     "paid_by_year": {
+      "2019": 0,
+      "2020": 0,
+      "2021": 53093.05,
+      "2022": 131909.02
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 14732597.91,
+    "2020": 13819702.46,
+    "2021": 8063902.44,
+    "2022": 4149024.72
+   }
+  },
+  {
+   "accounts": [
+    "623015"
+   ],
+   "account_names": [
+    "Communication Services & Expenses"
+   ],
+   "kind": "contract",
+   "tier": "B",
+   "budget2026": 2589342,
+   "budget2025": 2702231,
+   "basis": "Telecom carriers, by name.",
+   "payees": [
+    {
+     "payee": "AT&T",
+     "paid_by_year": {
+      "2019": 2228154.2,
+      "2020": 1164130.5,
+      "2021": 1759393.6,
+      "2022": 945879.13
+     }
+    },
+    {
+     "payee": "VERIZON WIRELESS",
+     "paid_by_year": {
+      "2019": 395737.25,
+      "2020": 329086.84,
+      "2021": 326551.04,
+      "2022": 290574.86
+     }
+    },
+    {
+     "payee": "WINDSTREAM",
+     "paid_by_year": {
+      "2019": 313779.27,
+      "2020": 356626.68,
+      "2021": 340509.26,
+      "2022": 323100.61
+     }
+    },
+    {
+     "payee": "COMCAST",
+     "paid_by_year": {
+      "2019": 162324.23,
+      "2020": 208094.32,
+      "2021": 433999.8,
+      "2022": 301524.29
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 3099994.95,
+    "2020": 2057938.34,
+    "2021": 2860453.7,
+    "2022": 1861078.89
+   }
+  },
+  {
+   "accounts": [
+    "626075"
+   ],
+   "account_names": [
+    "Fleet Expenses"
+   ],
+   "kind": "contract",
+   "tier": "B",
+   "budget2026": 7297500,
+   "budget2025": 6950000,
+   "basis": "Vehicle leasing (City contract 126710, Board action 25-1200-1119). Fleet fuel and repairs are via City DFFM IGA 25-1145-0910, not visible here.",
+   "payees": [
+    {
+     "payee": "ENTERPRISE FLEET MANAGEMENT",
+     "paid_by_year": {
+      "2019": 3411670.7,
+      "2020": 2952620.6,
+      "2021": 2975322.8,
+      "2022": 3487447.66
+     }
+    },
+    {
+     "payee": "ENTERPRISE LEASING",
+     "paid_by_year": {
+      "2019": 287094.72,
+      "2020": 165673.29,
+      "2021": 333548.76,
+      "2022": 192358.87
+     }
+    }
+   ],
+   "paid_by_year": {
+    "2019": 3698765.42,
+    "2020": 3118293.89,
+    "2021": 3308871.56,
+    "2022": 3679806.53
+   }
+  }
+ ],
+ "payees": [
+  {
+   "payee": "PARK EMPLOYEES A&B FUND",
+   "paid_by_year": {
+    "2019": 27487785.0,
+    "2020": 34062019.0,
+    "2021": 84064284.0,
+    "2022": 55744220.74
+   },
+   "mapped_budget_lines": [
+    "625020",
+    "625023"
+   ],
+   "note": "pension contribution (mapped to 625020/625023 above)"
+  },
+  {
+   "payee": "SMG",
+   "paid_by_year": {
+    "2019": 31548720.0,
+    "2020": 21809995.0,
+    "2021": 28280499.0,
+    "2022": 40623156.36
+   },
+   "mapped_budget_lines": [
+    "626045",
+    "626055",
+    "626065"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "PASCHEN ALL JOINT VENTURE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 11393288.0,
+    "2022": 35280457.56
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BLUE CROSS BLUE SHIELD OF ILLINOIS",
+   "paid_by_year": {
+    "2019": 19996624.0,
+    "2020": 19676677.0,
+    "2021": 22412772.0,
+    "2022": 22564273.62
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CITY OF CHICAGO",
+   "paid_by_year": {
+    "2019": 23066180.0,
+    "2020": 13174565.0,
+    "2021": 18350467.0,
+    "2022": 18945588.65
+   },
+   "mapped_budget_lines": [],
+   "note": "City of Chicago, purpose not stated in the list"
+  },
+  {
+   "payee": "OFMS EE SOLUTIONS, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 7264823.0,
+    "2022": 13009218.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PUBLIC BUILDING COMMISSION OF CHICAGO",
+   "paid_by_year": {
+    "2019": 12165940.0,
+    "2020": 1869458.3,
+    "2021": 1101491.8,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WESTREC MARINAS",
+   "paid_by_year": {
+    "2019": 18421396.0,
+    "2020": 15889972.0,
+    "2021": 20661739.0,
+    "2022": 11494462.87
+   },
+   "mapped_budget_lines": [
+    "626015",
+    "626040"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "DIRECT ENERGY BUSINESS",
+   "paid_by_year": {
+    "2019": 9791285.4,
+    "2020": 9368812.7,
+    "2021": 4067186.8,
+    "2022": 0
+   },
+   "mapped_budget_lines": [
+    "623070",
+    "623075"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO PARK GOLF MANAGEMENT LLC",
+   "paid_by_year": {
+    "2019": 5890547.3,
+    "2020": 6323785.6,
+    "2021": 7310751.4,
+    "2022": 8704065.07
+   },
+   "mapped_budget_lines": [
+    "626050"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "ROBE INC",
+   "paid_by_year": {
+    "2019": 4355579.6,
+    "2020": 6774239.0,
+    "2021": 6170726.8,
+    "2022": 7658449.42
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO COMMERCIAL CONSTRUCTION",
+   "paid_by_year": {
+    "2019": 3775269.1,
+    "2020": 7211506.6,
+    "2021": 1299629.8,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CVS/CAREMARK",
+   "paid_by_year": {
+    "2019": 4622662.8,
+    "2020": 5411240.1,
+    "2021": 6266501.0,
+    "2022": 6381561.8
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WESTREC SMI OPCO, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 6038136.1
+   },
+   "mapped_budget_lines": [
+    "626015",
+    "626040"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "MAGGIE DALEY PARK",
+   "paid_by_year": {
+    "2019": 5153615.8,
+    "2020": 4228254.0,
+    "2021": 4896092.3,
+    "2022": 5921206.73
+   },
+   "mapped_budget_lines": [
+    "626060"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "LINCOLN PARK ZOO",
+   "paid_by_year": {
+    "2019": 5590000.0,
+    "2020": 5590000.0,
+    "2021": 5837158.0,
+    "2022": 5696210.0
+   },
+   "mapped_budget_lines": [
+    "625005"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "FIELD MUSEUM OF NATURAL HISTORY",
+   "paid_by_year": {
+    "2019": 5577460.3,
+    "2020": 5439337.6,
+    "2021": 5132043.6,
+    "2022": 4521989.34
+   },
+   "mapped_budget_lines": [
+    "625010"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "MUSEUM OF SCIENCE & INDUSTRY",
+   "paid_by_year": {
+    "2019": 5577460.3,
+    "2020": 5439337.6,
+    "2021": 5132043.6,
+    "2022": 4521989.34
+   },
+   "mapped_budget_lines": [
+    "625010"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "THE  ART INSTITUTE OF CHICAGO",
+   "paid_by_year": {
+    "2019": 5577460.3,
+    "2020": 5439337.6,
+    "2021": 5134043.6,
+    "2022": 4521989.34
+   },
+   "mapped_budget_lines": [
+    "625010"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "CENTERPOINT ENERGY SERVICES INC",
+   "paid_by_year": {
+    "2019": 4466123.6,
+    "2020": 2525067.6,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [
+    "623070",
+    "623075"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "ALL-BRY CONSTRUCTION COMPANY",
+   "paid_by_year": {
+    "2019": 1842423.5,
+    "2020": 1054211.8,
+    "2021": 4169440.3,
+    "2022": 4289553.59
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MOORE LANDSCAPES, LLC",
+   "paid_by_year": {
+    "2019": 4930284.9,
+    "2020": 3621724.7,
+    "2021": 3544066.2,
+    "2022": 4104237.69
+   },
+   "mapped_budget_lines": [
+    "626025"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "SHEDD AQUARIUM SOCIETY",
+   "paid_by_year": {
+    "2019": 3997943.3,
+    "2020": 3898942.6,
+    "2021": 4270887.6,
+    "2022": 3774846.02
+   },
+   "mapped_budget_lines": [
+    "625010"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "MESIROW INSURANCE SERVICES INC",
+   "paid_by_year": {
+    "2019": 2973817.0,
+    "2020": 3102740.0,
+    "2021": 3298124.0,
+    "2022": 3692031.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SPEEDY GONZALEZ LANDSCAPING INC",
+   "paid_by_year": {
+    "2019": 4196125.8,
+    "2020": 2500518.2,
+    "2021": 2646375.5,
+    "2022": 3651234.79
+   },
+   "mapped_budget_lines": [
+    "626025"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "MICHELS CORPORATION",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 3575974.0,
+    "2021": 397330.46,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COMPUTER AID INC",
+   "paid_by_year": {
+    "2019": 1769729.4,
+    "2020": 1562398.6,
+    "2021": 2523226.7,
+    "2022": 3532407.36
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ENTERPRISE FLEET MANAGEMENT",
+   "paid_by_year": {
+    "2019": 3411670.7,
+    "2020": 2952620.6,
+    "2021": 2975322.8,
+    "2022": 3487447.66
+   },
+   "mapped_budget_lines": [
+    "626075"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "SERVPRO OF WHEATON / GLEN ELLYN / LISLE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 52711.95,
+    "2021": 0,
+    "2022": 3473986.27
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PEOPLES GAS-PAYMENT PROCESSING",
+   "paid_by_year": {
+    "2019": 337261.46,
+    "2020": 342337.83,
+    "2021": 424067.1,
+    "2022": 3409665.54
+   },
+   "mapped_budget_lines": [
+    "623070",
+    "623075"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "PAN-OCEANIC ENGINEERING CO INC",
+   "paid_by_year": {
+    "2019": 2225076.8,
+    "2020": 2135426.4,
+    "2021": 2531212.2,
+    "2022": 2988384.73
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SYMMETRY ENERGY SOLUTIONS, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 1411340.8,
+    "2021": 2918916.9,
+    "2022": 0
+   },
+   "mapped_budget_lines": [
+    "623070",
+    "623075"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "GRANT PARK ORCHESTRAL ASSOCIATION",
+   "paid_by_year": {
+    "2019": 2900000.0,
+    "2020": 1450000.0,
+    "2021": 2600000.0,
+    "2022": 2900000.0
+   },
+   "mapped_budget_lines": [
+    "623185"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "FLOOD BROS DISPOSAL CO",
+   "paid_by_year": {
+    "2019": 2205323.9,
+    "2020": 2396229.0,
+    "2021": 2628472.2,
+    "2022": 2790955.63
+   },
+   "mapped_budget_lines": [
+    "623030"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "SDI PRESENCE LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 410143.07,
+    "2021": 1260714.1,
+    "2022": 2566405.14
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STANDARD PARKING CORP",
+   "paid_by_year": {
+    "2019": 1583177.2,
+    "2020": 1026306.2,
+    "2021": 1360757.7,
+    "2022": 2485593.87
+   },
+   "mapped_budget_lines": [
+    "626005"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "FRIEDLER CONSTRUCTION COMPANY",
+   "paid_by_year": {
+    "2019": 4049477.0,
+    "2020": 1949194.0,
+    "2021": 3606858.7,
+    "2022": 2419489.81
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SCALE CONSTRUCTION INC",
+   "paid_by_year": {
+    "2019": 2309296.8,
+    "2020": 856289.6,
+    "2021": 28137.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DELL MARKETING LP",
+   "paid_by_year": {
+    "2019": 2103923.9,
+    "2020": 1677831.4,
+    "2021": 36533.04,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MECCOR INDUSTRIES LTD",
+   "paid_by_year": {
+    "2019": 2503526.8,
+    "2020": 2550475.5,
+    "2021": 2834007.6,
+    "2022": 2103560.3
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CARDNO INC",
+   "paid_by_year": {
+    "2019": 4074817.6,
+    "2020": 2482689.0,
+    "2021": 3049642.9,
+    "2022": 2090526.13
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AMERICAN FIDELITY ASSURANCE COMPANY",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 140484.3,
+    "2021": 1628894.9,
+    "2022": 2077642.74
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "INDUSTRIA INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 1984945.14
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NORTHWESTERN MEMORIAL HEALTHCARE",
+   "paid_by_year": {
+    "2019": 1633831.6,
+    "2020": 1757064.2,
+    "2021": 1845765.2,
+    "2022": 1850514.57
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CCMSI",
+   "paid_by_year": {
+    "2019": 3500495.6,
+    "2020": 2553400.9,
+    "2021": 2663394.6,
+    "2022": 1830979.03
+   },
+   "mapped_budget_lines": [
+    "625035"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "INSTITUTE  OF PUERTO RICAN  ARTS & CULTURE",
+   "paid_by_year": {
+    "2019": 521041.84,
+    "2020": 505372.49,
+    "2021": 1875091.3,
+    "2022": 1679043.74
+   },
+   "mapped_budget_lines": [
+    "625010"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "ADLER PLANETARIUM",
+   "paid_by_year": {
+    "2019": 1736301.5,
+    "2020": 1693238.3,
+    "2021": 1881213.2,
+    "2022": 1678822.34
+   },
+   "mapped_budget_lines": [
+    "625010"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO ACADEMY OF SCIENCES",
+   "paid_by_year": {
+    "2019": 1307871.7,
+    "2020": 1299903.2,
+    "2021": 1879569.2,
+    "2022": 1668822.75
+   },
+   "mapped_budget_lines": [
+    "625010"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "DUSABLE MUSEUM",
+   "paid_by_year": {
+    "2019": 1503022.1,
+    "2020": 1464474.9,
+    "2021": 1880704.8,
+    "2022": 1667368.13
+   },
+   "mapped_budget_lines": [
+    "625010"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "NATIONAL MUSEUM OF MEXICAN ART",
+   "paid_by_year": {
+    "2019": 1510822.1,
+    "2020": 1464474.9,
+    "2021": 1880704.8,
+    "2022": 1666268.13
+   },
+   "mapped_budget_lines": [
+    "625010"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "MUSEUM OF CONTEMPORARY ART",
+   "paid_by_year": {
+    "2019": 1708488.7,
+    "2020": 1666259.6,
+    "2021": 1881053.5,
+    "2022": 1663527.72
+   },
+   "mapped_budget_lines": [
+    "625010"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO HISTORICAL SOCIETY",
+   "paid_by_year": {
+    "2019": 1736290.2,
+    "2020": 1693229.1,
+    "2021": 1881213.2,
+    "2022": 1663166.34
+   },
+   "mapped_budget_lines": [
+    "625010"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "STRUCTURES CONSTRUCTION LLC",
+   "paid_by_year": {
+    "2019": 1408283.1,
+    "2020": 1465707.5,
+    "2021": 1706394.4,
+    "2022": 1586868.3
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DLT SOLUTIONS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 144692.43,
+    "2021": 1185072.4,
+    "2022": 1516211.85
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "OPEN KITCHENS INC",
+   "paid_by_year": {
+    "2019": 2506112.9,
+    "2020": 532056.16,
+    "2021": 1103748.7,
+    "2022": 1388504.57
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "OFFICES OF CATHERINE SIMMONS-GILL LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 1378782.72
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "INSIGHT PUBLIC SECTOR INC",
+   "paid_by_year": {
+    "2019": 95506.3,
+    "2020": 0,
+    "2021": 306428.63,
+    "2022": 1300557.13
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO CITY SKATING LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 1288808.86
+   },
+   "mapped_budget_lines": [
+    "626010"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "MCHUGH BOWA GATELY PARK JOINT VENTURE LLC",
+   "paid_by_year": {
+    "2019": 24081627.0,
+    "2020": 24686667.0,
+    "2021": 3173643.7,
+    "2022": 1149855.49
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KNICKERBOCKER ROOFING & PAVING CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 1499110.6,
+    "2021": 1840986.9,
+    "2022": 1121618.67
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "UCG ASSOCIATES, INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 17500.0,
+    "2021": 590464.4,
+    "2022": 1118362.09
+   },
+   "mapped_budget_lines": [
+    "626035"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "CDW GOVERNMENT INC",
+   "paid_by_year": {
+    "2019": 1870515.9,
+    "2020": 1873804.1,
+    "2021": 1397118.8,
+    "2022": 1115273.34
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GARFIELD PARK CONSERVATORY ALLIANCE",
+   "paid_by_year": {
+    "2019": 771887.05,
+    "2020": 659497.58,
+    "2021": 348390.96,
+    "2022": 1038485.18
+   },
+   "mapped_budget_lines": [
+    "623180"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO TITLE COMPANY, LLC",
+   "paid_by_year": {
+    "2019": 21635.0,
+    "2020": 0,
+    "2021": 1034155.9,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ALLIANT INSURANCE SERVICES INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 1000697.52
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ANCHOR MECHANICAL INC",
+   "paid_by_year": {
+    "2019": 587300.83,
+    "2020": 897977.18,
+    "2021": 1122880.8,
+    "2022": 977713.64
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHRISTY WEBBER LANDSCAPES",
+   "paid_by_year": {
+    "2019": 256063.8,
+    "2020": 776362.2,
+    "2021": 954876.13,
+    "2022": 970539.75
+   },
+   "mapped_budget_lines": [
+    "626025"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "SERVPRO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 961757.82,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HUMANA DENTAL INSURANCE",
+   "paid_by_year": {
+    "2019": 862732.42,
+    "2020": 951756.71,
+    "2021": 769467.58,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AT&T",
+   "paid_by_year": {
+    "2019": 2228154.2,
+    "2020": 1164130.5,
+    "2021": 1759393.6,
+    "2022": 945879.13
+   },
+   "mapped_budget_lines": [
+    "623015"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "LITTMANN INDUSTRIES INC",
+   "paid_by_year": {
+    "2019": 544258.59,
+    "2020": 510101.68,
+    "2021": 649747.38,
+    "2022": 917107.36
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "F H PASCHEN SN NIELSEN INC",
+   "paid_by_year": {
+    "2019": 509860.88,
+    "2020": 1111373.6,
+    "2021": 1463162.7,
+    "2022": 905455.58
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ENVIROPLUS INC",
+   "paid_by_year": {
+    "2019": 588086.12,
+    "2020": 285432.0,
+    "2021": 601906.35,
+    "2022": 857519.2
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SHOREWOOD HOME & AUTO",
+   "paid_by_year": {
+    "2019": 855225.06,
+    "2020": 779325.72,
+    "2021": 135083.67,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CCC HOLDINGS, INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 1148114.7,
+    "2022": 843808.45
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JP SIMONS AND CO",
+   "paid_by_year": {
+    "2019": 836270.47,
+    "2020": 1177830.6,
+    "2021": 708001.71,
+    "2022": 833836.39
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHRISTY WEBBER & CO",
+   "paid_by_year": {
+    "2019": 823306.04,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [
+    "626025"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "PARK CONCESSION MANAGEMENT LLC",
+   "paid_by_year": {
+    "2019": 771337.96,
+    "2020": 566512.97,
+    "2021": 206989.24,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ALTAWORX, LLC",
+   "paid_by_year": {
+    "2019": 506580.35,
+    "2020": 551857.83,
+    "2021": 669110.94,
+    "2022": 746205.57
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CAL RIPKEN SR FOUNDATION INC",
+   "paid_by_year": {
+    "2019": 719313.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ARLINGTON POWER EQUIPMENT INC",
+   "paid_by_year": {
+    "2019": 193426.28,
+    "2020": 276964.79,
+    "2021": 437317.32,
+    "2022": 694120.81
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ARAMARK FACILITY SERVICES",
+   "paid_by_year": {
+    "2019": 604186.04,
+    "2020": 429612.42,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JOHN BURNS CONSTRUCTION COMPANY",
+   "paid_by_year": {
+    "2019": 273500.0,
+    "2020": 582057.3,
+    "2021": 1864569.7,
+    "2022": 596486.81
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JOHN KENO AND COMPANY, INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 565675.06
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BURLING BUILDERS INC",
+   "paid_by_year": {
+    "2019": 11749822.0,
+    "2020": 9603545.9,
+    "2021": 1598358.9,
+    "2022": 556291.7
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RUSSO'S POWER EQUIPMENT",
+   "paid_by_year": {
+    "2019": 304715.79,
+    "2020": 284301.52,
+    "2021": 325232.74,
+    "2022": 552895.84
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SMITH GROUP JJR LLC",
+   "paid_by_year": {
+    "2019": 550448.79,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "EVERGREEN SUPPLY",
+   "paid_by_year": {
+    "2019": 348458.9,
+    "2020": 349632.44,
+    "2021": 159087.47,
+    "2022": 537456.81
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ELECTRONIC KNOWLEDGE INTERCHANGE",
+   "paid_by_year": {
+    "2019": 260800.0,
+    "2020": 150528.0,
+    "2021": 305408.0,
+    "2022": 523264.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SPAAN TECH INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 67708.3,
+    "2021": 293637.43,
+    "2022": 515545.92
+   },
+   "mapped_budget_lines": [
+    "626030"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "WILLIAMS ARCHITECTS",
+   "paid_by_year": {
+    "2019": 500364.73,
+    "2020": 139797.89,
+    "2021": 72442.4,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SMITH MAINTENANCE COMPANY",
+   "paid_by_year": {
+    "2019": 312854.07,
+    "2020": 263816.52,
+    "2021": 303448.81,
+    "2022": 490983.1
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GRAINGER",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 241286.48,
+    "2022": 485132.42
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PALOS SPORTS INC",
+   "paid_by_year": {
+    "2019": 702737.2,
+    "2020": 217056.21,
+    "2021": 362248.47,
+    "2022": 440879.07
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STANDARD EQUIPMENT COMPANY",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 410478.14
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ACTIVE ALARM CO INC",
+   "paid_by_year": {
+    "2019": 467285.72,
+    "2020": 218683.4,
+    "2021": 314166.89,
+    "2022": 393986.21
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HERC RENTALS INC",
+   "paid_by_year": {
+    "2019": 304691.68,
+    "2020": 222140.6,
+    "2021": 405082.25,
+    "2022": 392343.95
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WW GRAINGER",
+   "paid_by_year": {
+    "2019": 390345.21,
+    "2020": 349257.81,
+    "2021": 201197.1,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CENTERPOINT",
+   "paid_by_year": {
+    "2019": 387480.62,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "UNIVAR USA INC",
+   "paid_by_year": {
+    "2019": 385185.02,
+    "2020": 17787.3,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ARAMARK SERVICES, INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 169353.54,
+    "2021": 491352.55,
+    "2022": 380370.3
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "UNIVERSITY OF ILLINOIS",
+   "paid_by_year": {
+    "2019": 327080.0,
+    "2020": 255017.14,
+    "2021": 283443.0,
+    "2022": 365000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JP MORGAN CHASE BANK NA",
+   "paid_by_year": {
+    "2019": 286829.56,
+    "2020": 191569.92,
+    "2021": 206895.35,
+    "2022": 356503.63
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CONSERVATION OF SCULPTURE & OBJECTS STUDIO INC",
+   "paid_by_year": {
+    "2019": 29460.0,
+    "2020": 88435.25,
+    "2021": 43200.0,
+    "2022": 347978.42
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COMED",
+   "paid_by_year": {
+    "2019": 25890.38,
+    "2020": 100093.01,
+    "2021": 41423.0,
+    "2022": 343406.66
+   },
+   "mapped_budget_lines": [
+    "623070",
+    "623075"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "CHEMCRAFT INDUSTRIES INC",
+   "paid_by_year": {
+    "2019": 385258.0,
+    "2020": 355213.56,
+    "2021": 295803.87,
+    "2022": 334447.62
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SITE DESIGN GROUP, LTD",
+   "paid_by_year": {
+    "2019": 132934.5,
+    "2020": 59058.02,
+    "2021": 34236.5,
+    "2022": 330145.17
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JOHN RONAN ARCHITECTS",
+   "paid_by_year": {
+    "2019": 895247.3,
+    "2020": 1688109.3,
+    "2021": 370421.34,
+    "2022": 324638.7
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WINDSTREAM",
+   "paid_by_year": {
+    "2019": 313779.27,
+    "2020": 356626.68,
+    "2021": 340509.26,
+    "2022": 323100.61
+   },
+   "mapped_budget_lines": [
+    "623015"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "PULLMAN COMMUNITY CENTER, NFP",
+   "paid_by_year": {
+    "2019": 484511.04,
+    "2020": 403759.2,
+    "2021": 202879.6,
+    "2022": 323007.36
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MEDICAL EXPRESS AMBULANCE SERV",
+   "paid_by_year": {
+    "2019": 135708.75,
+    "2020": 25440.0,
+    "2021": 41546.25,
+    "2022": 320038.75
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BAILEY EDWARD DESIGN",
+   "paid_by_year": {
+    "2019": 51352.9,
+    "2020": 121121.9,
+    "2021": 0,
+    "2022": 312515.59
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "S & S WORLDWIDE",
+   "paid_by_year": {
+    "2019": 309513.18,
+    "2020": 179324.5,
+    "2021": 129802.12,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COMCAST",
+   "paid_by_year": {
+    "2019": 162324.23,
+    "2020": 208094.32,
+    "2021": 433999.8,
+    "2022": 301524.29
+   },
+   "mapped_budget_lines": [
+    "623015"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "RADA ARCHITECTS INC",
+   "paid_by_year": {
+    "2019": 294308.66,
+    "2020": 254663.87,
+    "2021": 36941.45,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "VERIZON WIRELESS",
+   "paid_by_year": {
+    "2019": 395737.25,
+    "2020": 329086.84,
+    "2021": 326551.04,
+    "2022": 290574.86
+   },
+   "mapped_budget_lines": [
+    "623015"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "CANON SOLUTIONS AMERICA, INC",
+   "paid_by_year": {
+    "2019": 379686.08,
+    "2020": 344347.35,
+    "2021": 318318.87,
+    "2022": 280201.11
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MID AMERICAN ELEVATOR CO INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 21160.28,
+    "2022": 277400.46
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LIVE NATION",
+   "paid_by_year": {
+    "2019": 276190.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COOK COUNTY DEPT OF REVENUE",
+   "paid_by_year": {
+    "2019": 226978.36,
+    "2020": 109223.65,
+    "2021": 304413.92,
+    "2022": 273248.92
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FARR ASSOCIATES ARCHITECTURE & URBAN DESIGN INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 270946.22,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LAZ PARKING",
+   "paid_by_year": {
+    "2019": 270280.0,
+    "2020": 30245.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "THE PRUDENTIAL INSURANCE",
+   "paid_by_year": {
+    "2019": 290312.14,
+    "2020": 263729.02,
+    "2021": 263511.6,
+    "2022": 265411.2
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COMMONWEALTH EDISON CO",
+   "paid_by_year": {
+    "2019": 112037.07,
+    "2020": 72050.52,
+    "2021": 559215.59,
+    "2022": 264043.5
+   },
+   "mapped_budget_lines": [
+    "623070",
+    "623075"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "TOPNOTCH SILKSCREENING",
+   "paid_by_year": {
+    "2019": 257040.71,
+    "2020": 52689.82,
+    "2021": 131949.65,
+    "2022": 263748.63
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RSM US LLP",
+   "paid_by_year": {
+    "2019": 227000.0,
+    "2020": 234000.0,
+    "2021": 241000.0,
+    "2022": 260000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SAUL EWING ARNSTEIN & LEHR LLP",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 254567.75
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SP PLUS CORPORATION",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 154845.01,
+    "2021": 157250.0,
+    "2022": 252954.22
+   },
+   "mapped_budget_lines": [
+    "626005"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO SKATING LLC",
+   "paid_by_year": {
+    "2019": 1612468.7,
+    "2020": 1051955.8,
+    "2021": 1097648.5,
+    "2022": 249070.7
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SMITH GROUP INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 519392.03,
+    "2021": 449382.18,
+    "2022": 248361.25
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STRATEGO PARTNERS",
+   "paid_by_year": {
+    "2019": 246722.68,
+    "2020": 12000.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO PUBLIC SCHOOLS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 245357.05
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BUSINESS ONLY BROADBAND",
+   "paid_by_year": {
+    "2019": 241827.42,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "S&S WORLDWIDE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 75809.81,
+    "2022": 226941.15
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "REINDERS",
+   "paid_by_year": {
+    "2019": 770773.08,
+    "2020": 1080309.3,
+    "2021": 940754.95,
+    "2022": 225209.1
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GEORGE SOLLITT CONSTRUCTION CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 3636033.5,
+    "2021": 833478.41,
+    "2022": 222216.42
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GLOBETROTTERS ENGINEERING",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 31870.9,
+    "2021": 99558.03,
+    "2022": 218068.04
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MCDONAGH DEMOLITION",
+   "paid_by_year": {
+    "2019": 216900.0,
+    "2020": 24100.0,
+    "2021": 48300.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FITNESS EXPERIENCE",
+   "paid_by_year": {
+    "2019": 216240.25,
+    "2020": 22786.18,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PARKWAY ELEVATORS",
+   "paid_by_year": {
+    "2019": 213773.29,
+    "2020": 204924.66,
+    "2021": 155064.89,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SUNRISE TRANSPORTATION INC",
+   "paid_by_year": {
+    "2019": 170049.0,
+    "2020": 46476.0,
+    "2021": 64752.0,
+    "2022": 212214.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SMNG A LTD",
+   "paid_by_year": {
+    "2019": 349568.49,
+    "2020": 94294.81,
+    "2021": 418284.35,
+    "2022": 207708.2
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BURKE WARREN MACKAY & SERRITELLA P C",
+   "paid_by_year": {
+    "2019": 212537.3,
+    "2020": 180213.96,
+    "2021": 164604.99,
+    "2022": 204830.33
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DUST EM CLEAN MAINTENANCE CO",
+   "paid_by_year": {
+    "2019": 145203.89,
+    "2020": 141191.26,
+    "2021": 193669.45,
+    "2022": 202390.08
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "UPLAND DESIGN LTD",
+   "paid_by_year": {
+    "2019": 57236.07,
+    "2020": 74949.95,
+    "2021": 74569.0,
+    "2022": 194862.47
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LAKESHORE RECYCLING SYSTEMS",
+   "paid_by_year": {
+    "2019": 179849.78,
+    "2020": 127913.51,
+    "2021": 192989.43,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ENTERPRISE LEASING",
+   "paid_by_year": {
+    "2019": 287094.72,
+    "2020": 165673.29,
+    "2021": 333548.76,
+    "2022": 192358.87
+   },
+   "mapped_budget_lines": [
+    "626075"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "CLARITY PARTNERS LLC",
+   "paid_by_year": {
+    "2019": 239026.36,
+    "2020": 164878.67,
+    "2021": 189419.05,
+    "2022": 190114.74
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "G&O THERMAL SUPPLY CO",
+   "paid_by_year": {
+    "2019": 81581.91,
+    "2020": 88208.18,
+    "2021": 107800.03,
+    "2022": 190068.66
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AECOM SERVICES OF ILLINOIS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 187346.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MIDCO ELECTRIC SUPPLY INC",
+   "paid_by_year": {
+    "2019": 161772.73,
+    "2020": 60120.39,
+    "2021": 154606.33,
+    "2022": 186650.99
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SERVPRO OF WHEATON, GLEN ELLYN, LISLE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 184176.57
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "UNIVAR SOLUTIONS USA INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 259172.03,
+    "2022": 183762.53
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LAKESHORE RECYCLING SYSTEMS, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 182591.28
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "EAN SERVICES LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 181270.4
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PACIFIC CONSTRUCTION SERVICES LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 180155.25
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO PARKS FOUNDATION",
+   "paid_by_year": {
+    "2019": 100000.0,
+    "2020": 106000.0,
+    "2021": 477300.0,
+    "2022": 177430.0
+   },
+   "mapped_budget_lines": [
+    "623170"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "AZTEC SUPPLY CORP",
+   "paid_by_year": {
+    "2019": 186763.59,
+    "2020": 132988.86,
+    "2021": 175627.25,
+    "2022": 170609.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ILLINOIS DEPARTMENT OF TRANSPORTATION",
+   "paid_by_year": {
+    "2019": 81432.2,
+    "2020": 167949.39,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COLETTE HOLT & ASSOCIATES",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 127600.0,
+    "2022": 167450.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HARRYS LUMBER CO",
+   "paid_by_year": {
+    "2019": 66960.0,
+    "2020": 132833.76,
+    "2021": 47758.03,
+    "2022": 162446.73
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PERONA, ALISON R",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 18622.5,
+    "2022": 157784.9
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AQUA PURE ENTERPRISES INC",
+   "paid_by_year": {
+    "2019": 168739.91,
+    "2020": 66303.63,
+    "2021": 149555.32,
+    "2022": 155889.15
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "INTER CITY SUPPLY CO INC",
+   "paid_by_year": {
+    "2019": 189006.1,
+    "2020": 194586.1,
+    "2021": 106654.74,
+    "2022": 153809.31
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WIGHT & COMPANY",
+   "paid_by_year": {
+    "2019": 150400.26,
+    "2020": 109138.44,
+    "2021": 27666.77,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DELOITTE & TOUCHE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 150000.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HITCHCOCK DESIGN GROUP",
+   "paid_by_year": {
+    "2019": 402627.22,
+    "2020": 342934.88,
+    "2021": 332580.0,
+    "2022": 146536.58
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "TERRA ENGINEERING LTD",
+   "paid_by_year": {
+    "2019": 47476.91,
+    "2020": 27888.11,
+    "2021": 0,
+    "2022": 145277.47
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ENVISION PHARMACEUTICAL SERVICES LLC",
+   "paid_by_year": {
+    "2019": 144124.74,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BSN SPORTS LLC",
+   "paid_by_year": {
+    "2019": 140154.29,
+    "2020": 13770.51,
+    "2021": 0,
+    "2022": 140178.26
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CENTRIO ENERGY CHICAGO LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 53093.05,
+    "2022": 131909.02
+   },
+   "mapped_budget_lines": [
+    "623070",
+    "623075"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "ULINE SHIPPING SUPPLY SPECIALISTS",
+   "paid_by_year": {
+    "2019": 76270.65,
+    "2020": 77600.02,
+    "2021": 123418.08,
+    "2022": 130424.44
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WALSH CONSTRUCTION CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 128286.62,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DIRECT FITNESS SOLUTIONS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 126718.39,
+    "2022": 123965.18
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ENWAVE USA",
+   "paid_by_year": {
+    "2019": 107483.21,
+    "2020": 123578.02,
+    "2021": 68076.54,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PULLMAN COMMUNITY CENTER NFP",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 121127.76
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "THE BOEING COMPANY",
+   "paid_by_year": {
+    "2019": 120188.64,
+    "2020": 106917.02,
+    "2021": 105606.14,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FLOWERS COMMUNICATIONS GROUP",
+   "paid_by_year": {
+    "2019": 348610.0,
+    "2020": 289599.31,
+    "2021": 90000.0,
+    "2022": 120000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PHYSICIANS IMMEDIATE CARE CHICAGO PLLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 118721.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "VSP OF ILLINOIS NFP",
+   "paid_by_year": {
+    "2019": 117809.08,
+    "2020": 103691.31,
+    "2021": 113192.94,
+    "2022": 117344.58
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CLAUSS BROTHERS INC",
+   "paid_by_year": {
+    "2019": 74512.0,
+    "2020": 116223.0,
+    "2021": 130575.0,
+    "2022": 116695.0
+   },
+   "mapped_budget_lines": [
+    "626025"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "SEMPLE & RAPPE ARCHITECTS PC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 116395.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ROOT BROTHERS MFG",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 66521.3,
+    "2021": 99908.5,
+    "2022": 113447.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COOGAN, JOAN",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 16667.0,
+    "2022": 112403.78
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SOS TECHNOLOGIES",
+   "paid_by_year": {
+    "2019": 112040.0,
+    "2020": 0,
+    "2021": 46625.2,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FRIENDS OF BIG MARSH",
+   "paid_by_year": {
+    "2019": 62963.76,
+    "2020": 0,
+    "2021": 36319.99,
+    "2022": 111499.74
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HUMANA BEN PLAN OF IL",
+   "paid_by_year": {
+    "2019": 103343.27,
+    "2020": 120503.63,
+    "2021": 104829.94,
+    "2022": 110838.75
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DELTA-T GROUP ILLINOIS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 109705.44
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ARENA AMERICAS",
+   "paid_by_year": {
+    "2019": 109287.33,
+    "2020": 38794.39,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HOMER INDUSTRIES LLC",
+   "paid_by_year": {
+    "2019": 127774.5,
+    "2020": 26602.0,
+    "2021": 179460.0,
+    "2022": 109238.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GREENCORPS CHICAGO, CHGO DEPT OF TRANSP",
+   "paid_by_year": {
+    "2019": 108000.0,
+    "2020": 75762.5,
+    "2021": 95550.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LYNCH CHICAGO, INC",
+   "paid_by_year": {
+    "2019": 107202.13,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DLZ ILLINOIS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 76589.94,
+    "2021": 107159.96,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LCM ARCHITECTS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 208194.25,
+    "2022": 106886.75
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RATIO ARCHITECTS INC",
+   "paid_by_year": {
+    "2019": 88342.8,
+    "2020": 104309.52,
+    "2021": 23104.38,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MUSE COMMUNITY DESIGN, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 103753.75
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "METHODS & MATERIALS INC",
+   "paid_by_year": {
+    "2019": 74443.97,
+    "2020": 0,
+    "2021": 17550.71,
+    "2022": 103644.7
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "VALERIO DEWALT TRAIN ASSOCIATES",
+   "paid_by_year": {
+    "2019": 236472.24,
+    "2020": 167956.7,
+    "2021": 107282.95,
+    "2022": 101331.25
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NEIGHBOR SPACE",
+   "paid_by_year": {
+    "2019": 100000.0,
+    "2020": 100000.0,
+    "2021": 100000.0,
+    "2022": 100115.0
+   },
+   "mapped_budget_lines": [
+    "623175"
+   ],
+   "note": ""
+  },
+  {
+   "payee": "JOHNSON LASKY KINDELIN ARCHITECTS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 99962.4
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SURFACE SOLUTIONS",
+   "paid_by_year": {
+    "2019": 99786.0,
+    "2020": 98370.0,
+    "2021": 89800.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KECO INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 97960.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AMERESCO, INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 97000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PROTOLIGHT INC",
+   "paid_by_year": {
+    "2019": 96811.4,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ADVANCE SWEEPING SERVICES INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 58151.09,
+    "2021": 68177.14,
+    "2022": 96641.1
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "A EPSTEIN AND SONS INTERNATIONAL INC",
+   "paid_by_year": {
+    "2019": 96601.29,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LIPE LYONS MURPHY NAHRSTADT & PONTIKIS, LTD",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 16282.5,
+    "2022": 96497.32
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JOHN DEERE AG & TURF DIVISION",
+   "paid_by_year": {
+    "2019": 95802.24,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PEOPLES GAS LIGHT & COKE CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 54530.0,
+    "2021": 94936.23,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FORWARD SPACE LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 91556.25,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ORACLE AMERICA INC",
+   "paid_by_year": {
+    "2019": 91099.14,
+    "2020": 31240.04,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MERCY WORKS",
+   "paid_by_year": {
+    "2019": 90104.54,
+    "2020": 13649.97,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SWANK MOTION PICTURES, INC",
+   "paid_by_year": {
+    "2019": 89334.0,
+    "2020": 22560.0,
+    "2021": 43029.75,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BIG BELLY SOLAR, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 102875.44,
+    "2021": 101101.11,
+    "2022": 88364.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JULI ORDOWER LANDSCAPE ARCHITECTURE LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 87695.0,
+    "2021": 18981.1,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ATLAS BOBCAT INC",
+   "paid_by_year": {
+    "2019": 87241.18,
+    "2020": 33519.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BMS CAT OF ILLINOIS, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 86956.17,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "URBAN WORKS LTD",
+   "paid_by_year": {
+    "2019": 48000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 86449.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JOHN DEERE COMPANY",
+   "paid_by_year": {
+    "2019": 86391.06,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ESCARENO, ROSA",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 19166.67,
+    "2022": 86250.02
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ALL PESTS CONTROLLED INC",
+   "paid_by_year": {
+    "2019": 59691.5,
+    "2020": 57678.5,
+    "2021": 78846.45,
+    "2022": 86161.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FLEET US LLC",
+   "paid_by_year": {
+    "2019": 94428.06,
+    "2020": 30834.87,
+    "2021": 21547.97,
+    "2022": 86070.23
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO-LAWNDALE AMACHI MENTORING PROGRAM",
+   "paid_by_year": {
+    "2019": 70000.0,
+    "2020": 80000.0,
+    "2021": 74638.88,
+    "2022": 85818.25
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STARFISH TRANSPORTATION INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 84910.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ADVANCED RESOURCES, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 84670.2
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COOK COUNTY TREASURER",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 84334.96,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "INTERNATIONAL SPORT SURFACES (ISS) INC",
+   "paid_by_year": {
+    "2019": 25200.0,
+    "2020": 0,
+    "2021": 83470.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NUTOYS LEISURE PRODUCTS INC",
+   "paid_by_year": {
+    "2019": 56245.51,
+    "2020": 38336.26,
+    "2021": 63996.71,
+    "2022": 82797.87
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO JOURNEYMEN PLUMBERS",
+   "paid_by_year": {
+    "2019": 76607.7,
+    "2020": 74199.78,
+    "2021": 64109.58,
+    "2022": 81612.37
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BENEFITFOCUS.COM, INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 80632.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HEXAGON EAM HOLDINGS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 79451.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AECOM TECHNICAL SERVICES INC",
+   "paid_by_year": {
+    "2019": 638875.04,
+    "2020": 14596.0,
+    "2021": 0,
+    "2022": 79394.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ARLINGTON GLASS & MIRROR CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 22599.73,
+    "2021": 12974.59,
+    "2022": 78471.21
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "INTEGRA GRAPHICS",
+   "paid_by_year": {
+    "2019": 121976.5,
+    "2020": 83592.4,
+    "2021": 36370.9,
+    "2022": 78042.6
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CARNOW CONIBEAR & ASSOC",
+   "paid_by_year": {
+    "2019": 155455.79,
+    "2020": 128603.55,
+    "2021": 75105.98,
+    "2022": 77433.96
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AMERICAN RECYCLING CENTER INC",
+   "paid_by_year": {
+    "2019": 33480.2,
+    "2020": 75660.8,
+    "2021": 76864.7,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "TANGO HEALTH INC",
+   "paid_by_year": {
+    "2019": 75000.0,
+    "2020": 75000.0,
+    "2021": 75000.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "INFOR (US) INC",
+   "paid_by_year": {
+    "2019": 66709.0,
+    "2020": 70711.54,
+    "2021": 74954.24,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NATIONAL AUDUBON SOCIETY",
+   "paid_by_year": {
+    "2019": 50000.0,
+    "2020": 80000.0,
+    "2021": 50000.0,
+    "2022": 73548.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "XIBITZ INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 73539.22,
+    "2021": 52643.91,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BIG BELLY SOLAR",
+   "paid_by_year": {
+    "2019": 73070.73,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MCGARRY AND MCGARRY LLC",
+   "paid_by_year": {
+    "2019": 72210.85,
+    "2020": 0,
+    "2021": 36129.4,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MODE ARCHITECTS PC",
+   "paid_by_year": {
+    "2019": 43244.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 71511.65
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FIRST STUDENT INC",
+   "paid_by_year": {
+    "2019": 70020.25,
+    "2020": 16491.75,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RAE PRODUCTS & CHEMICAL CORPORATION",
+   "paid_by_year": {
+    "2019": 118908.37,
+    "2020": 85647.55,
+    "2021": 76168.43,
+    "2022": 69443.58
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JOHNSON PIPE & SUPPLY CO",
+   "paid_by_year": {
+    "2019": 765609.64,
+    "2020": 567011.01,
+    "2021": 240111.7,
+    "2022": 69071.74
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "IDN H HOFFMAN INC",
+   "paid_by_year": {
+    "2019": 15408.13,
+    "2020": 35281.51,
+    "2021": 87432.34,
+    "2022": 68734.36
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "VANS ENTERPRISES LTD",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 68470.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HOH WATER TECHNOLGY INC",
+   "paid_by_year": {
+    "2019": 68296.22,
+    "2020": 40476.78,
+    "2021": 45434.37,
+    "2022": 68289.25
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ILLINOIS CENTRAL SWEEPING SERVICES",
+   "paid_by_year": {
+    "2019": 67961.94,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GOOD SOLUTIONS GROUP",
+   "paid_by_year": {
+    "2019": 60250.0,
+    "2020": 66750.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PRODUCE DRIVERS & FLORIST",
+   "paid_by_year": {
+    "2019": 66154.0,
+    "2020": 65419.5,
+    "2021": 67906.0,
+    "2022": 65528.07
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "OZINGA READY MIX CONCRETE INC",
+   "paid_by_year": {
+    "2019": 45184.91,
+    "2020": 45269.87,
+    "2021": 64549.09,
+    "2022": 65247.69
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DEPARTMENT OF THE ARMY",
+   "paid_by_year": {
+    "2019": 64854.24,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SWANK MOTION PICTURES INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 64105.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ACCURATE BIOMETRICS INC",
+   "paid_by_year": {
+    "2019": 142107.25,
+    "2020": 12036.0,
+    "2021": 32974.25,
+    "2022": 62297.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CONSERV FS",
+   "paid_by_year": {
+    "2019": 51880.48,
+    "2020": 26558.4,
+    "2021": 32507.5,
+    "2022": 62271.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "EPSTEIN AND SONS INTERNATIONAL INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 64099.52,
+    "2021": 58712.79,
+    "2022": 62181.73
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MCGUIRE IGLESKI & ASSOCIATES INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 62177.5,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PARTYTIME-HDO OPERATIONS, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 61492.43
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "OPERATING ENGINEERS LOCAL 399",
+   "paid_by_year": {
+    "2019": 58955.37,
+    "2020": 59207.46,
+    "2021": 59600.37,
+    "2022": 61476.57
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PRECISION HUMAN RESOURCES SOLUTIONS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 60789.45
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MY PARK SUPPLY INC",
+   "paid_by_year": {
+    "2019": 26840.0,
+    "2020": 60170.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PARJANA DISTRIBUTION",
+   "paid_by_year": {
+    "2019": 60000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "INDIGENOUS ENERGY INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 137105.47,
+    "2021": 74373.8,
+    "2022": 59303.61
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "THE STANDARD COMPANIES",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 58759.17,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "TREMCO CPG INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 58459.59
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SPORTAFENCE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 58215.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HY TEST SAFETY SHOE SERVICES INC",
+   "paid_by_year": {
+    "2019": 63481.53,
+    "2020": 37917.56,
+    "2021": 63933.25,
+    "2022": 57930.71
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO SCULPTURE INTERNATIONAL",
+   "paid_by_year": {
+    "2019": 140000.0,
+    "2020": 30500.0,
+    "2021": 78500.0,
+    "2022": 57880.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MIDWEST PROMOTIONAL GROUP",
+   "paid_by_year": {
+    "2019": 57777.74,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HAUNTED TRAILS",
+   "paid_by_year": {
+    "2019": 56703.7,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "B2GNOW",
+   "paid_by_year": {
+    "2019": 43949.0,
+    "2020": 46696.0,
+    "2021": 54100.0,
+    "2022": 56700.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CDM SMITH INC",
+   "paid_by_year": {
+    "2019": 84495.66,
+    "2020": 80088.11,
+    "2021": 51811.6,
+    "2022": 56288.47
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SERVICE SANITATION INC",
+   "paid_by_year": {
+    "2019": 28159.77,
+    "2020": 23709.58,
+    "2021": 27252.36,
+    "2022": 56190.54
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DESCHAMPS MAT SYSTEMS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 54803.4,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CONSERVATION DESIGN FORUM INC",
+   "paid_by_year": {
+    "2019": 54765.73,
+    "2020": 49030.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PIONEER ENGINEERING & ENVIRONMENTAL SVCS LLC",
+   "paid_by_year": {
+    "2019": 137590.61,
+    "2020": 308047.46,
+    "2021": 0,
+    "2022": 54459.07
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GRANICUS INC",
+   "paid_by_year": {
+    "2019": 71051.09,
+    "2020": 87750.58,
+    "2021": 44787.6,
+    "2022": 54157.2
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "YANCY, BRYCE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 32370.0,
+    "2021": 53690.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COLUMBIA PIPE AND SUPPLY CO",
+   "paid_by_year": {
+    "2019": 139697.22,
+    "2020": 123715.69,
+    "2021": 27096.52,
+    "2022": 53181.55
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DESIGN WORKSHOP INC",
+   "paid_by_year": {
+    "2019": 268307.84,
+    "2020": 226536.59,
+    "2021": 47051.43,
+    "2022": 53138.48
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BOOTH HANSEN,  LTD",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 773971.36,
+    "2022": 52657.86
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JAMES D BROSNAHAN LTD",
+   "paid_by_year": {
+    "2019": 52000.0,
+    "2020": 48000.0,
+    "2021": 44000.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PALM ELECTRIC",
+   "paid_by_year": {
+    "2019": 65447.49,
+    "2020": 63567.95,
+    "2021": 75873.05,
+    "2022": 51536.69
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DISTRICT COUNCIL OF CARPENTERS",
+   "paid_by_year": {
+    "2019": 41864.57,
+    "2020": 40529.38,
+    "2021": 40889.69,
+    "2022": 50106.78
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PAINTERS DISTRICT COUNCIL",
+   "paid_by_year": {
+    "2019": 50548.43,
+    "2020": 46237.19,
+    "2021": 47425.85,
+    "2022": 50034.43
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO SHAKESPEARE THEATER",
+   "paid_by_year": {
+    "2019": 202578.0,
+    "2020": 10000.0,
+    "2021": 51600.0,
+    "2022": 50000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WINDWARD BOATWORKS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 49650.02
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BJ'S TRANSPORTATION",
+   "paid_by_year": {
+    "2019": 49013.5,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "TETRA TECH",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 48910.6,
+    "2021": 38944.75,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SUNWEST SALES COMPANY",
+   "paid_by_year": {
+    "2019": 48900.0,
+    "2020": 40320.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "POWER EQUIPMENT",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 34500.0,
+    "2021": 48810.22,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GLOBAL INDUSTRIAL",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 48042.81
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KLF ENTERPRISES",
+   "paid_by_year": {
+    "2019": 47979.6,
+    "2020": 20339.82,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AMERICAN RED CROSS",
+   "paid_by_year": {
+    "2019": 23449.26,
+    "2020": 23514.58,
+    "2021": 25052.9,
+    "2022": 47826.7
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SILK SCREEN EXPRESS",
+   "paid_by_year": {
+    "2019": 294159.68,
+    "2020": 88808.08,
+    "2021": 112785.54,
+    "2022": 47746.68
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LEXISNEXIS",
+   "paid_by_year": {
+    "2019": 48393.41,
+    "2020": 44481.36,
+    "2021": 50856.0,
+    "2022": 47729.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CIC PLUS",
+   "paid_by_year": {
+    "2019": 26455.67,
+    "2020": 67078.62,
+    "2021": 68654.04,
+    "2022": 46612.66
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "IN THE GAME, HOLLYWOOD PARK",
+   "paid_by_year": {
+    "2019": 46263.15,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DUSABLE PARK DESIGN ALLIANCE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 46238.4
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FRANCZEK P.C.",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 46222.56
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "TEAMSTERS LOCAL UNION 700",
+   "paid_by_year": {
+    "2019": 49780.0,
+    "2020": 51071.0,
+    "2021": 47728.0,
+    "2022": 46108.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "TAL MAR",
+   "paid_by_year": {
+    "2019": 17643.0,
+    "2020": 15770.0,
+    "2021": 17784.0,
+    "2022": 45902.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ARCADIS U.S. INC",
+   "paid_by_year": {
+    "2019": 130717.18,
+    "2020": 32659.81,
+    "2021": 259455.18,
+    "2022": 45841.28
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KEY CHICAGO PRIVATE INVESTIGATORS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 45708.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "INDIGENOUS ENERGY LLC",
+   "paid_by_year": {
+    "2019": 45619.6,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GINSBERG JACOBS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 45591.82
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MILHOUSE ENGINEERING & CONSTRUCTION INC",
+   "paid_by_year": {
+    "2019": 209099.73,
+    "2020": 26014.5,
+    "2021": 56409.75,
+    "2022": 45557.25
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SCHILLER MANAGEMENT LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 45000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MEADOWS OFFICE SUPPLY",
+   "paid_by_year": {
+    "2019": 17686.41,
+    "2020": 0,
+    "2021": 20509.68,
+    "2022": 44961.11
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "REGIONAL TRUCK EQUIPMENT CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 43711.22,
+    "2021": 15507.24,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SLEDGE, QUINTON",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 43700.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PITNEY BOWES",
+   "paid_by_year": {
+    "2019": 43690.17,
+    "2020": 40636.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CIRQUES EXPERIENCE",
+   "paid_by_year": {
+    "2019": 22737.83,
+    "2020": 0,
+    "2021": 11905.0,
+    "2022": 43623.4
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AGGREKO, LLC",
+   "paid_by_year": {
+    "2019": 42615.5,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "1717 STUDIO INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 42337.28
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PRO ACOUSTICS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 41686.96
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KALTSOUNI MEHDI INC",
+   "paid_by_year": {
+    "2019": 41581.63,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FUN EXPRESS",
+   "paid_by_year": {
+    "2019": 57756.18,
+    "2020": 29284.86,
+    "2021": 46214.19,
+    "2022": 41370.75
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "POWER EQUIPMENT LEASING CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 10784.62,
+    "2022": 40521.14
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GIZMOS FUN FACTORY",
+   "paid_by_year": {
+    "2019": 40402.5,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ENWAVE CHICAGO INC",
+   "paid_by_year": {
+    "2019": 40124.89,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BONAPARTE, BLAKE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 17281.5,
+    "2021": 39800.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BUILDERS CHICAGO CORP",
+   "paid_by_year": {
+    "2019": 30864.29,
+    "2020": 36751.16,
+    "2021": 11879.09,
+    "2022": 39574.74
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "REG MARKETING & LOGISTICS GROUP LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 14812.08,
+    "2022": 39573.74
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "TAPIA, RICHARD MATTHEW",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 11531.25,
+    "2022": 39531.25
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GLOBAL INDUSTRIAL EQUIPMENT COMPANY",
+   "paid_by_year": {
+    "2019": 39307.56,
+    "2020": 14206.75,
+    "2021": 20836.36,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HEARTLINE FITNESS SYSTEMS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 39185.76,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LAWSON PRODUCTS INC",
+   "paid_by_year": {
+    "2019": 64586.58,
+    "2020": 53608.57,
+    "2021": 42099.84,
+    "2022": 39097.98
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SWEETWATER",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 39063.75
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BAKER TILLY VIRCHOW KRAUSE LLP",
+   "paid_by_year": {
+    "2019": 38785.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CLOWNING AROUND ENTERTAINMENT INC",
+   "paid_by_year": {
+    "2019": 38162.68,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LABORERS INT UNION OF N/A LOCAL1092",
+   "paid_by_year": {
+    "2019": 26661.9,
+    "2020": 30543.12,
+    "2021": 32865.66,
+    "2022": 37918.98
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KNIGHT E/A, INC",
+   "paid_by_year": {
+    "2019": 140853.0,
+    "2020": 37302.05,
+    "2021": 124485.89,
+    "2022": 37686.25
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STUDENT CONSERVATION ASSOCIATION INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 150000.0,
+    "2021": 75000.0,
+    "2022": 37500.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JOHN WALT FOUNDATION INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 33800.0,
+    "2022": 37499.99
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "OAK BROOK MECHANICAL SERVICES INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 37451.1
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ACCOUNTING PRINCIPALS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 37320.99
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PRESCIENT",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 37091.25,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "THE NATURE CONSERVANCY",
+   "paid_by_year": {
+    "2019": 36123.88,
+    "2020": 12094.36,
+    "2021": 74632.85,
+    "2022": 36845.45
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BRUSH ARCHITECTS, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 46940.0,
+    "2021": 0,
+    "2022": 36603.55
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COLLINS ENGINEERS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 175862.45,
+    "2021": 67575.0,
+    "2022": 36589.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CITY UTILITY EQUIPMENT SALES & LEASING CO",
+   "paid_by_year": {
+    "2019": 36685.61,
+    "2020": 29440.0,
+    "2021": 35501.37,
+    "2022": 36087.26
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ILLINOIS PARK & RECREATION ASSOC",
+   "paid_by_year": {
+    "2019": 41880.0,
+    "2020": 0,
+    "2021": 29256.0,
+    "2022": 35460.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FRIEDMAN, BURTON K",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 35000.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FREE STREET THEATER",
+   "paid_by_year": {
+    "2019": 10300.0,
+    "2020": 0,
+    "2021": 19250.0,
+    "2022": 34450.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SEIU LOCAL 73 COPE",
+   "paid_by_year": {
+    "2019": 33053.15,
+    "2020": 34873.4,
+    "2021": 33841.4,
+    "2022": 34448.75
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AM LEONARD INC",
+   "paid_by_year": {
+    "2019": 34445.25,
+    "2020": 33316.37,
+    "2021": 50219.64,
+    "2022": 34045.94
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RUSSO INDUSTRIAL SUPPLY",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 33737.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "REICHMAN, ISAAC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 12031.68,
+    "2022": 33688.71
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BRACKENBOX INC",
+   "paid_by_year": {
+    "2019": 224662.47,
+    "2020": 25199.56,
+    "2021": 41746.48,
+    "2022": 33480.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COMPASS TRANSPORTATION LLC",
+   "paid_by_year": {
+    "2019": 33380.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHOSEN VALLEY LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 33245.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ODP BUSINESS SOLUTIONS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 33223.63
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "TRANE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 32762.76
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HILTI",
+   "paid_by_year": {
+    "2019": 41012.61,
+    "2020": 48229.75,
+    "2021": 38683.43,
+    "2022": 32726.08
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "B & H PHOTO VIDEO",
+   "paid_by_year": {
+    "2019": 25404.49,
+    "2020": 0,
+    "2021": 12408.21,
+    "2022": 32721.15
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SANCHEZ PAVING COMPANY INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 32675.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WORKPLACE SOLUTIONS",
+   "paid_by_year": {
+    "2019": 30447.0,
+    "2020": 49794.75,
+    "2021": 39001.5,
+    "2022": 31914.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SCHOOL SPECIALTY",
+   "paid_by_year": {
+    "2019": 31734.81,
+    "2020": 11293.86,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GARVEYS OFFICE PRODUCTS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 11119.79,
+    "2022": 31366.04
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SMITH, CHARLES",
+   "paid_by_year": {
+    "2019": 31200.0,
+    "2020": 20500.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PERFECT MULCH PRODUCTS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 31153.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "T & R ELECTRIC SUPPLY CO INC",
+   "paid_by_year": {
+    "2019": 76191.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 31065.22
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ARNOLD & PORTER",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 228662.77,
+    "2022": 30792.27
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AON CONSULTING",
+   "paid_by_year": {
+    "2019": 30762.5,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "THERMAL-CHEM CORP",
+   "paid_by_year": {
+    "2019": 30525.27,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "US FIRE & SAFETY EQUIPMENT CO",
+   "paid_by_year": {
+    "2019": 51837.25,
+    "2020": 33032.94,
+    "2021": 45800.58,
+    "2022": 30467.62
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "IDN H HOFFMAN CO",
+   "paid_by_year": {
+    "2019": 30446.08,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO UNITED INDUSTRIES LTD",
+   "paid_by_year": {
+    "2019": 89471.5,
+    "2020": 0,
+    "2021": 12428.4,
+    "2022": 30321.6
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "TERRY GUEN DESIGN ASSOC INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 50150.0,
+    "2021": 0,
+    "2022": 30210.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NAK MAN CORPORATION",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 13990.04,
+    "2022": 30104.49
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "VERMEER MIDWEST INC",
+   "paid_by_year": {
+    "2019": 77116.53,
+    "2020": 18275.45,
+    "2021": 30092.72,
+    "2022": 30074.27
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "IL DEPARTMENT OF NATURAL RESOURCES",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 30050.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STL ARCHITECTS",
+   "paid_by_year": {
+    "2019": 168598.12,
+    "2020": 11916.33,
+    "2021": 0,
+    "2022": 29682.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JOLIET EQUIPMENT CORPORATION",
+   "paid_by_year": {
+    "2019": 29635.0,
+    "2020": 24974.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "A LAVA AND SON CORP",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 29497.5,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO BOTANIC GARDEN",
+   "paid_by_year": {
+    "2019": 28997.57,
+    "2020": 30918.32,
+    "2021": 29770.78,
+    "2022": 29451.34
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ILLINOIS STATE BOARD OF EDUCATION",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 29274.64,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "U S LEGAL SUPPORT INC",
+   "paid_by_year": {
+    "2019": 29109.57,
+    "2020": 14887.25,
+    "2021": 12353.23,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ADVANCED TURF SOLUTIONS INC",
+   "paid_by_year": {
+    "2019": 29089.16,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HPZS",
+   "paid_by_year": {
+    "2019": 28597.64,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CENTURY SUPPLY CO",
+   "paid_by_year": {
+    "2019": 11462.86,
+    "2020": 14867.64,
+    "2021": 28237.21,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "4 IMPRINT INC",
+   "paid_by_year": {
+    "2019": 32673.44,
+    "2020": 0,
+    "2021": 19654.57,
+    "2022": 28003.69
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PREMIER CATERING & EVENTS LLC",
+   "paid_by_year": {
+    "2019": 27811.25,
+    "2020": 26483.75,
+    "2021": 12993.75,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KIEFER AQUATICS",
+   "paid_by_year": {
+    "2019": 12630.44,
+    "2020": 0,
+    "2021": 12149.47,
+    "2022": 27160.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CARLIN HORTICULTURAL SUPPLIES",
+   "paid_by_year": {
+    "2019": 25501.63,
+    "2020": 26302.01,
+    "2021": 25239.19,
+    "2022": 26970.1
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RJM INVESTIGATIONS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 26736.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WE GOT GAME LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 13391.0,
+    "2022": 26122.25
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KATTEN MUCHIN ROSENMAN LLP",
+   "paid_by_year": {
+    "2019": 16500.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 26000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JAZZ INSTITUTE OF CHICAGO",
+   "paid_by_year": {
+    "2019": 25800.0,
+    "2020": 0,
+    "2021": 12250.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BLICK ART MATERIALS",
+   "paid_by_year": {
+    "2019": 23472.48,
+    "2020": 23257.21,
+    "2021": 16951.96,
+    "2022": 25788.39
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LOLLAPALOOZA",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 25740.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ILLINOIS PROCESS EQUIPMENT",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 25703.97
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MLK FAMILY ENT CENTER",
+   "paid_by_year": {
+    "2019": 25571.5,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PLAYMAKERS LABORATORY THEATER",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 25490.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CLAUSEN MILLER, PC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 25452.49
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "TECHNOLOGY MANAGEMENT REV FUND",
+   "paid_by_year": {
+    "2019": 25615.0,
+    "2020": 27600.0,
+    "2021": 27600.0,
+    "2022": 25300.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "EMPIRE TODAY LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 25249.43
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FLOOR AND DECOR OUTLETS OF AMERICA INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 25179.36
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "REDLINE EVENT SERVICES INC",
+   "paid_by_year": {
+    "2019": 22150.0,
+    "2020": 12075.0,
+    "2021": 10798.0,
+    "2022": 25131.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ASI SIGNAGE INNOVATIONS",
+   "paid_by_year": {
+    "2019": 25000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MANUAL CINEMA LLC",
+   "paid_by_year": {
+    "2019": 25000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MIDNIGHT CIRCUS",
+   "paid_by_year": {
+    "2019": 100000.0,
+    "2020": 16000.0,
+    "2021": 25000.0,
+    "2022": 25000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SEE THE VISION GRAB THE VISION INC",
+   "paid_by_year": {
+    "2019": 25000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CITY OF CHICAGO DEPARTMENT OF CULTURAL AFFAIRS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 25000.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COLECTIVO MULTIPOLAR COMMUNICATIONS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 25000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ASONYE & ASSOCIATES",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 24867.99
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MARTIN'S INTERNATIONAL FOUNDATION",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 24789.99
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PURCELL & WARDROPE CHARTERED",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 24762.75
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "THE HOUSE OF SAFETY INC",
+   "paid_by_year": {
+    "2019": 17297.75,
+    "2020": 0,
+    "2021": 24739.35,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DAVID MASON & ASSOCIATES OF IL LTD",
+   "paid_by_year": {
+    "2019": 24641.1,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ROCKLER WOODWORKING AND HARDWARE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 24397.58,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "INFO TECH RESEARCH GROUP INC",
+   "paid_by_year": {
+    "2019": 24120.9,
+    "2020": 11199.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO ACTION SPORTS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 21240.0,
+    "2022": 24110.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KUKLINSKI & RAPPE ARCHITECTS",
+   "paid_by_year": {
+    "2019": 436047.0,
+    "2020": 36812.0,
+    "2021": 72620.0,
+    "2022": 24000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "UNITED FOR A BETTER LIVING",
+   "paid_by_year": {
+    "2019": 21600.0,
+    "2020": 22400.0,
+    "2021": 24000.0,
+    "2022": 24000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "THE MAXIMAL LIST LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 24000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "TAFT STETTINIUS & HOLLISTER LLP",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 23992.5,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COCA COLA REFRESHMENTS USA INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 23962.32,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STEVENSON, CRAIG",
+   "paid_by_year": {
+    "2019": 25000.0,
+    "2020": 38150.0,
+    "2021": 23500.0,
+    "2022": 23950.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HARDWICK LAW FIRM LLC",
+   "paid_by_year": {
+    "2019": 25102.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 23937.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "O'LEARYS CONTRACTORS EQUIP & SUPPLY",
+   "paid_by_year": {
+    "2019": 23683.07,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SPORTSFIELDS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 23500.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "H2I GROUP INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 23310.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "IMAGINE NATION LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 23234.14
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RJM INVESTIGATIONS, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 23232.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SEDGWICK CLAIMS MGMT SVS, INC",
+   "paid_by_year": {
+    "2019": 27319.17,
+    "2020": 14690.4,
+    "2021": 61744.42,
+    "2022": 23228.44
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO AREA RUNNERS ASSOCIATION",
+   "paid_by_year": {
+    "2019": 23223.0,
+    "2020": 15482.0,
+    "2021": 23223.0,
+    "2022": 23223.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KIRK, SAM",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 15000.0,
+    "2022": 23200.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AHW LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 23198.19
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FREEDOM ASSETS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 23120.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SHIM, MICHAEL J",
+   "paid_by_year": {
+    "2019": 36050.0,
+    "2020": 23550.0,
+    "2021": 66240.0,
+    "2022": 22880.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ATLAS BOBCAT LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 49743.72,
+    "2022": 22665.74
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AMS PLANNING & RESEARCH CORP",
+   "paid_by_year": {
+    "2019": 22642.41,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MOBILE OFFICE INC",
+   "paid_by_year": {
+    "2019": 22560.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BONFIRE INTERACTIVE LTD",
+   "paid_by_year": {
+    "2019": 45000.0,
+    "2020": 0,
+    "2021": 22500.0,
+    "2022": 22500.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KATZ, RYE ELLIS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 22500.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SKYLOGIX",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 19915.0,
+    "2022": 22495.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ENCHANTED CASTLE",
+   "paid_by_year": {
+    "2019": 22477.05,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CA TOURS AND TRAVEL",
+   "paid_by_year": {
+    "2019": 22427.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "URBAN LANDSCAPE COLLABORATIVE LLC",
+   "paid_by_year": {
+    "2019": 22417.5,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CORKYS CATERING INC",
+   "paid_by_year": {
+    "2019": 22318.15,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NORTHERN TOOL EQUIPMENT CO",
+   "paid_by_year": {
+    "2019": 38684.92,
+    "2020": 31639.46,
+    "2021": 25248.68,
+    "2022": 22305.55
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ASCAP",
+   "paid_by_year": {
+    "2019": 16869.08,
+    "2020": 17011.22,
+    "2021": 17081.01,
+    "2022": 22206.33
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BLAIDA AND ASSOCIATES LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 92000.0,
+    "2022": 22000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JOLIET ELECTRIC MOTORS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 21836.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PLANNING RESOURCES INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 21792.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "EF DESIGN GROUP INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 21685.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PLAYGROUND GUARDIAN, LLC",
+   "paid_by_year": {
+    "2019": 21600.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "UNCOMMON USA INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 21500.12
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GRACE PRINTING",
+   "paid_by_year": {
+    "2019": 22824.58,
+    "2020": 11402.0,
+    "2021": 0,
+    "2022": 21490.08
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AON HEWITT",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 21400.0,
+    "2021": 10700.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CONSOLIDATED PRINTING COMPANY",
+   "paid_by_year": {
+    "2019": 27938.71,
+    "2020": 0,
+    "2021": 0,
+    "2022": 21136.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WATER SAFETY PRODUCTS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 21116.3
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FOUNTAIN PROS, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 12200.0,
+    "2022": 21020.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SIGN A RAMA",
+   "paid_by_year": {
+    "2019": 21007.4,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "EAT DRINK AND BE EVENTS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 20805.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AMC MECHANICAL INC",
+   "paid_by_year": {
+    "2019": 14024.14,
+    "2020": 0,
+    "2021": 22680.96,
+    "2022": 20784.52
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "VERTEX INC",
+   "paid_by_year": {
+    "2019": 19111.0,
+    "2020": 20736.0,
+    "2021": 11249.5,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HILTON CHICAGO",
+   "paid_by_year": {
+    "2019": 49250.72,
+    "2020": 0,
+    "2021": 10338.54,
+    "2022": 20722.66
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ILLINOIS OFFICE OF THE STATE TREASURER",
+   "paid_by_year": {
+    "2019": 24872.87,
+    "2020": 26667.01,
+    "2021": 0,
+    "2022": 20708.34
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MCDONALD, REGINA",
+   "paid_by_year": {
+    "2019": 20560.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JUDD GOLDMAN ADAPTIVE FOUNDATION",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 20489.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "OLD TOWN SCHOOL OF FOLK MUSIC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 20400.04
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CPI",
+   "paid_by_year": {
+    "2019": 20322.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AMALGAMATED BANK OF CHICAGO",
+   "paid_by_year": {
+    "2019": 14843.66,
+    "2020": 11268.16,
+    "2021": 14294.0,
+    "2022": 20259.33
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STEEP THEATRE COMPANY",
+   "paid_by_year": {
+    "2019": 20200.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AV CHICAGO INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 20000.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GLENROCK COMPANY",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 19940.08,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SENSACT GROUP LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 27619.28,
+    "2021": 33483.05,
+    "2022": 19938.67
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AKERMAN LLP",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 63395.01,
+    "2021": 0,
+    "2022": 19909.9
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NAZDAR CHICAGO",
+   "paid_by_year": {
+    "2019": 12807.01,
+    "2020": 16030.19,
+    "2021": 19889.33,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BIG KAHUNA SPORTS & UNIFORMS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 31772.0,
+    "2022": 19882.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ALLTOWN BUS SERVICE INC",
+   "paid_by_year": {
+    "2019": 311105.65,
+    "2020": 0,
+    "2021": 0,
+    "2022": 19876.16
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FLYNN, JENNIFER D",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 10570.0,
+    "2021": 19875.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ALCON LIGHTING INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 19840.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BUSINESS LOGISTICS DEVELOPMENT",
+   "paid_by_year": {
+    "2019": 19700.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SUNBELT RENTALS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 19420.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SEWER BUILDERS SUPPLIES INC",
+   "paid_by_year": {
+    "2019": 16702.11,
+    "2020": 0,
+    "2021": 13254.32,
+    "2022": 19239.81
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PROS CONSULTING",
+   "paid_by_year": {
+    "2019": 60000.0,
+    "2020": 11736.16,
+    "2021": 61584.0,
+    "2022": 19158.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FINE, MICHAEL P",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 19125.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SCOPELITIES GARVIN LIGHT HANSON",
+   "paid_by_year": {
+    "2019": 20304.4,
+    "2020": 33089.6,
+    "2021": 10803.62,
+    "2022": 18957.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ACTIVE ELECTRICAL SUPPLY CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 18933.24,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AM BUS COMPANY",
+   "paid_by_year": {
+    "2019": 243643.5,
+    "2020": 10925.0,
+    "2021": 0,
+    "2022": 18869.35
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HOKE ATTORNEYS AT LAW LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 18696.04,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BACKYARD LIFEGUARDS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 18637.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PLAY ILLINOIS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 18606.46
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "IRON WORKERS UNION LOCAL 63",
+   "paid_by_year": {
+    "2019": 18606.35,
+    "2020": 20240.98,
+    "2021": 18477.55,
+    "2022": 18594.46
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PARAMONT EO, INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 18441.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SEGAL CONSULTING",
+   "paid_by_year": {
+    "2019": 18412.5,
+    "2020": 0,
+    "2021": 14783.34,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FREE SPIRIT MEDIA NFP",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 18195.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GRAND STAGE LIGHTING CO INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 18191.56
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BLOOMBERG FINANCE LP",
+   "paid_by_year": {
+    "2019": 11820.0,
+    "2020": 23640.0,
+    "2021": 23793.34,
+    "2022": 18180.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LINSNER, JEAN M",
+   "paid_by_year": {
+    "2019": 18162.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "TRANSPORTATION FOR ALL, INC",
+   "paid_by_year": {
+    "2019": 18145.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BIOHABITATS",
+   "paid_by_year": {
+    "2019": 15350.91,
+    "2020": 17867.26,
+    "2021": 18085.88,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "REG MARKETING & LOGISTICS GROUP",
+   "paid_by_year": {
+    "2019": 12108.33,
+    "2020": 0,
+    "2021": 18023.02,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CALDERON, DAYNA A",
+   "paid_by_year": {
+    "2019": 18000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GAMBINO, GIANA",
+   "paid_by_year": {
+    "2019": 18000.0,
+    "2020": 18000.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PIERCE, JAMES A",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 18000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SEARCY, NAJEE-ZAID",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 18000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WOLF, BRETT",
+   "paid_by_year": {
+    "2019": 17750.0,
+    "2020": 10500.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PAULA COOPER INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 17744.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SUPERCO SPECIALTY PRODUCTS",
+   "paid_by_year": {
+    "2019": 12138.01,
+    "2020": 18385.82,
+    "2021": 0,
+    "2022": 17690.55
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO TRIBUNE",
+   "paid_by_year": {
+    "2019": 17486.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FORESTRY SUPPLIERS INC",
+   "paid_by_year": {
+    "2019": 17362.49,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "INTL BROTHERHOOD OF ELECTRICAL WORKERS",
+   "paid_by_year": {
+    "2019": 17361.23,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FRANCZEK RADELET",
+   "paid_by_year": {
+    "2019": 188027.5,
+    "2020": 47741.0,
+    "2021": 294704.3,
+    "2022": 17270.44
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SUN TIMES MEDIA",
+   "paid_by_year": {
+    "2019": 17173.55,
+    "2020": 11320.8,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GYMNASIUM MATTERS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 17157.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO BLUES MUSEUM",
+   "paid_by_year": {
+    "2019": 13000.0,
+    "2020": 0,
+    "2021": 16941.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HILTON HOTELS CORPORATION",
+   "paid_by_year": {
+    "2019": 16929.89,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MICOMP COMPUTER CENTER CORP",
+   "paid_by_year": {
+    "2019": 26058.89,
+    "2020": 0,
+    "2021": 20446.26,
+    "2022": 16771.07
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MTM RECOGNITION CORPORATION",
+   "paid_by_year": {
+    "2019": 16765.39,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MULLER & MULLER LTD",
+   "paid_by_year": {
+    "2019": 23343.75,
+    "2020": 0,
+    "2021": 106842.5,
+    "2022": 16720.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PRODUCTION DISTRIBUTION COMPANIES",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 23490.19,
+    "2021": 41350.4,
+    "2022": 16692.1
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DEEPLY ROOTED PRODUCTIONS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 16650.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BEST BUY BUSINESS ADVANTAGE ACCT",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 16617.79,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "REDMOND, SARAI",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 16500.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DU BUCLET, KIMBERLY",
+   "paid_by_year": {
+    "2019": 16475.75,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JUST ELEVATOR INSPECTION SERVICE INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 16399.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GARAY, GABRIELA",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 16387.5,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WAVELAND BOWL",
+   "paid_by_year": {
+    "2019": 16305.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PER4MAX MEDICAL",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 16272.2
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KAFKA GRANITE LLC",
+   "paid_by_year": {
+    "2019": 16257.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FOX VALLEY FIRE & SAFETY",
+   "paid_by_year": {
+    "2019": 27947.0,
+    "2020": 14239.0,
+    "2021": 23201.95,
+    "2022": 16226.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ATLAS & ASSOCIATES INC",
+   "paid_by_year": {
+    "2019": 159730.96,
+    "2020": 168572.76,
+    "2021": 50933.35,
+    "2022": 16193.02
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HABETLER BOWL",
+   "paid_by_year": {
+    "2019": 16156.5,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ILLINOIS COMMUNICATIONS SALES INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 16137.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "OUTDOOR MOVIES",
+   "paid_by_year": {
+    "2019": 16136.9,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CUSTOMER EXPRESSION CORP",
+   "paid_by_year": {
+    "2019": 11600.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 16060.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RCX SPORTS LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 16050.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PERFECT MOUND",
+   "paid_by_year": {
+    "2019": 15995.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "T & N CHICAGO INC",
+   "paid_by_year": {
+    "2019": 66030.0,
+    "2020": 0,
+    "2021": 34030.0,
+    "2022": 15945.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JAPANESE ARTS FOUNDATION",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 15750.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STATE DISBURSEMENT UNIT",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 15731.69,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WILLIAMS SCOTSMAN INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 15684.95
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "VAN ENGELEN",
+   "paid_by_year": {
+    "2019": 20427.65,
+    "2020": 0,
+    "2021": 20416.53,
+    "2022": 15682.08
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ILLINOIS ENVIRONMENTAL PROTECTION AGENCY",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 15671.8,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NEW CITY COMMUNICATIONS INC",
+   "paid_by_year": {
+    "2019": 14780.0,
+    "2020": 10775.0,
+    "2021": 0,
+    "2022": 15635.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RICHARDS BUILDING SUPPLY CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 15625.85,
+    "2021": 14104.04,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KARPOWICZ STUDIOS",
+   "paid_by_year": {
+    "2019": 78594.0,
+    "2020": 20020.0,
+    "2021": 24101.0,
+    "2022": 15586.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "T S DISTRIBUTORS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 10704.52,
+    "2021": 15527.14,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FONDRIEST ENVIRONMENTAL INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 15386.95
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "J&J AMUSEMENTS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 15332.85
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ACTIVE NETWORK LLC",
+   "paid_by_year": {
+    "2019": 12154.03,
+    "2020": 132909.73,
+    "2021": 0,
+    "2022": 15310.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MPAACT",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 15300.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BIG FOOT MEDIA",
+   "paid_by_year": {
+    "2019": 15250.0,
+    "2020": 13438.04,
+    "2021": 11850.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BALTIC MARINE SERVICES INC",
+   "paid_by_year": {
+    "2019": 15169.32,
+    "2020": 13773.24,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WEISSMAN",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 15148.16
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ILLINOIS DEPARTMENT OF NATURAL RESOURCES",
+   "paid_by_year": {
+    "2019": 15100.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ENVIRONMENTAL CONSULTING GROUP INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 15030.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ALOFT DANCE LLC",
+   "paid_by_year": {
+    "2019": 15000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CIRC ESTEEM, INC",
+   "paid_by_year": {
+    "2019": 10400.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 15000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SALTARELLI ADR LLC",
+   "paid_by_year": {
+    "2019": 15000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FUENTES CONSULTING",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 15000.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RECREONICS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 14947.93
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BLUEGRASS RECR SALES & INSTA LLC",
+   "paid_by_year": {
+    "2019": 24611.0,
+    "2020": 24458.0,
+    "2021": 0,
+    "2022": 14868.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NADLER GOLF CAR SALES INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 14837.18,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SEAWAY SUPPLY CO",
+   "paid_by_year": {
+    "2019": 14753.08,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GLASDON INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 83518.75,
+    "2022": 14560.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "IL ENVIRONMENTAL PROTECTION AGENCY",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 10801.69,
+    "2022": 14525.34
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WINDY CITY SILKSCREENING",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 10606.0,
+    "2021": 21041.1,
+    "2022": 14489.05
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ILLINOIS SWIMMING INC",
+   "paid_by_year": {
+    "2019": 24265.0,
+    "2020": 15422.0,
+    "2021": 12417.0,
+    "2022": 14425.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HEINLEIN SUPPLY CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 14410.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ULTIMATE NINJAS CHICAGO",
+   "paid_by_year": {
+    "2019": 14402.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LOOKINGGLASS THEATRE COMPANY",
+   "paid_by_year": {
+    "2019": 14400.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MOTION INDUSTRIES INC",
+   "paid_by_year": {
+    "2019": 12858.52,
+    "2020": 12066.72,
+    "2021": 10499.67,
+    "2022": 14386.97
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MAGID GLOVE & SAFETY MANUFACTURING CO",
+   "paid_by_year": {
+    "2019": 12641.53,
+    "2020": 14331.93,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NORBERTS ATHLETIC PRODUCTS INC",
+   "paid_by_year": {
+    "2019": 11565.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 14302.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FENCE MASTERS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 14271.2
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PREMIER GYMNASTICS WEST",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 14250.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FRONTLINE EDUCATION",
+   "paid_by_year": {
+    "2019": 14238.2,
+    "2020": 14928.75,
+    "2021": 15652.79,
+    "2022": 14243.34
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LAKEFRONT ROOFING SUPPLY",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 14185.72
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BUDGET BLINDS OF FRANKFORT",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 14084.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "OUI OUI ENTERPRISES LLC",
+   "paid_by_year": {
+    "2019": 14078.26,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DANCE IN THE PARKS",
+   "paid_by_year": {
+    "2019": 14000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "R.A.G.E.",
+   "paid_by_year": {
+    "2019": 14000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO ENCLOSURES LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 20261.0,
+    "2021": 12000.0,
+    "2022": 14000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MOTABOLI, ABENA",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 14000.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LINJEN PROMOTIONS INC",
+   "paid_by_year": {
+    "2019": 13884.56,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ARTHUR CLESEN INC",
+   "paid_by_year": {
+    "2019": 13878.61,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SECURITY DOOR INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 13783.63
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "USDA, APHIS, GENERAL",
+   "paid_by_year": {
+    "2019": 14311.58,
+    "2020": 0,
+    "2021": 34654.72,
+    "2022": 13778.66
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LIVE NATION WORLDWIDE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 13712.83
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CUMMINS NPOWER LLC",
+   "paid_by_year": {
+    "2019": 13631.32,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "EQUITICITY",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 13500.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DISCOUNT SCHOOL SUPPLY",
+   "paid_by_year": {
+    "2019": 20473.61,
+    "2020": 11114.15,
+    "2021": 10022.55,
+    "2022": 13486.36
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RC SPORTS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 13400.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PRAIRIE GYMNASTICS CLUB",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 13340.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ENVIRONMENTAL DESIGN INTERNATIONAL INC",
+   "paid_by_year": {
+    "2019": 20710.0,
+    "2020": 75285.0,
+    "2021": 0,
+    "2022": 13270.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BALL HORTICULTURAL CO",
+   "paid_by_year": {
+    "2019": 13228.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GRAEF",
+   "paid_by_year": {
+    "2019": 13210.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "VOGEL, JEANNE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 13203.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "UNITED UNION OF ROOFERS & WATERPROOFERS LOCAL 11",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 12804.96,
+    "2021": 12528.94,
+    "2022": 13003.28
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CAVIN, CONCITTA",
+   "paid_by_year": {
+    "2019": 13000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HARRISON, NICOLE",
+   "paid_by_year": {
+    "2019": 13000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "VILLAREAL, ROMAN",
+   "paid_by_year": {
+    "2019": 13000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DELATORRE, LUIS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 13000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "THE COMPOUND DANCE LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 13000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SPRAGUE, ERICH",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 12835.62,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MIDWEST NETTING SOLUTIONS LLC",
+   "paid_by_year": {
+    "2019": 12834.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GEMPLERS INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 12818.7,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ARTE CHICAGO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 12800.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ESKILLZ CORP",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 12765.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SUBWAY CATERING",
+   "paid_by_year": {
+    "2019": 12585.7,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JABBERWOCKY MARIONETTES",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 12550.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "I HEART MEDIA",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 10000.0,
+    "2021": 0,
+    "2022": 12495.25
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "INTERSECTION MEDIA LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 12480.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KOMPAN INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 10670.49,
+    "2021": 0,
+    "2022": 12453.08
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MAGIC JUMP",
+   "paid_by_year": {
+    "2019": 12400.09,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PIPE FITTERS UNION",
+   "paid_by_year": {
+    "2019": 15330.75,
+    "2020": 12661.61,
+    "2021": 12045.33,
+    "2022": 12393.81
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PERFECT 10 GYMNASTICS CHALLENGE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 12380.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SECUREWORKS, INC",
+   "paid_by_year": {
+    "2019": 73567.38,
+    "2020": 78483.2,
+    "2021": 48947.98,
+    "2022": 12339.79
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SECURITY INDUSTRIES INC",
+   "paid_by_year": {
+    "2019": 12334.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STAPLES BUSINESS ADVANTAGE",
+   "paid_by_year": {
+    "2019": 12288.89,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AMERICAN WELDING & GAS INC",
+   "paid_by_year": {
+    "2019": 12493.66,
+    "2020": 11822.36,
+    "2021": 15590.19,
+    "2022": 12249.21
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "101 MOBILITY NORTH CHICAGO",
+   "paid_by_year": {
+    "2019": 12171.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PAPA JOE'S ORLAND PARK",
+   "paid_by_year": {
+    "2019": 12145.5,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DOOLIN AMUSEMENT & SUPPLY CO",
+   "paid_by_year": {
+    "2019": 12132.45,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "UNITED GYMNASTICS ACADEMY BOOSTER CLUB",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 12255.0,
+    "2022": 12080.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CLOVERS GARDEN CENTER",
+   "paid_by_year": {
+    "2019": 19354.25,
+    "2020": 0,
+    "2021": 0,
+    "2022": 12077.25
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "JUMP GUY INFLATABLES & GAMES",
+   "paid_by_year": {
+    "2019": 15781.3,
+    "2020": 0,
+    "2021": 0,
+    "2022": 12050.2
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MID AMERICA SPORTS ADVANTAGE",
+   "paid_by_year": {
+    "2019": 12029.66,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "INTRADO ENTERPRISE COLLABORATION, INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 12011.6,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ROBINSON WHOLESALE INC-BAIT",
+   "paid_by_year": {
+    "2019": 12004.92,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO PHILHARMONIC SOCIETY",
+   "paid_by_year": {
+    "2019": 18000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 12000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MEDDY TEDDY INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 11955.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RINGSIDE COMBAT SPORTS AND FIGHT GEAR",
+   "paid_by_year": {
+    "2019": 22309.4,
+    "2020": 0,
+    "2021": 0,
+    "2022": 11935.86
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SYSCO FOOD SERVICES OF CHICAGO",
+   "paid_by_year": {
+    "2019": 11904.08,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GRIFFITH, KAITLYN",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 11900.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "EATON CORPORATION",
+   "paid_by_year": {
+    "2019": 11875.24,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MITY LITE INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 11797.19,
+    "2021": 10199.5,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MADE N CHICAGO, INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 11760.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ILLINOIS ASSOCIATION OF PARK DISTRICTS",
+   "paid_by_year": {
+    "2019": 12067.91,
+    "2020": 11982.91,
+    "2021": 11727.91,
+    "2022": 11727.91
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COMMUNICATION REVOLVING FUND",
+   "paid_by_year": {
+    "2019": 11725.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DUPAGE COUNTY CLERK",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 11705.02,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CENTRO FRESH MARKET",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 11670.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GORDON FOOD SERVICE INC",
+   "paid_by_year": {
+    "2019": 21861.29,
+    "2020": 0,
+    "2021": 0,
+    "2022": 11574.62
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PHOENIX ELEVATOR CO., INC",
+   "paid_by_year": {
+    "2019": 11552.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GUS BERTHOLD ELECTRIC",
+   "paid_by_year": {
+    "2019": 52060.0,
+    "2020": 16896.0,
+    "2021": 40332.0,
+    "2022": 11538.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STEVENSON, CORY JAMES",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 11500.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DIVERSEY RIVER BOWL",
+   "paid_by_year": {
+    "2019": 11464.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WOLFF LANDSCAPE ARCHITECTURE INC",
+   "paid_by_year": {
+    "2019": 11400.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ARAMARK",
+   "paid_by_year": {
+    "2019": 11398.2,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "U.S. TREASURY",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 11340.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "THE LOGAN THEATRE",
+   "paid_by_year": {
+    "2019": 11294.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PARKREATION INC",
+   "paid_by_year": {
+    "2019": 10304.51,
+    "2020": 11281.71,
+    "2021": 10530.73,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO HEARING SOCIETY",
+   "paid_by_year": {
+    "2019": 11255.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ORSOLINI WELDING & FAB, INC",
+   "paid_by_year": {
+    "2019": 11250.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WEDNESDAY JOURNAL INC",
+   "paid_by_year": {
+    "2019": 11249.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BERMAS, YVONNE GAIL E",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 11400.0,
+    "2022": 11200.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PEGASUS THEATRE CHICAGO",
+   "paid_by_year": {
+    "2019": 11150.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GAMETIME",
+   "paid_by_year": {
+    "2019": 40918.75,
+    "2020": 0,
+    "2021": 10527.44,
+    "2022": 11145.16
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "AUTOTIME",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 11107.73,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BIKE-ON.COM INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 11100.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "OFFICE DEPOT INC",
+   "paid_by_year": {
+    "2019": 282752.62,
+    "2020": 175382.04,
+    "2021": 124817.44,
+    "2022": 11093.23
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WGN FLAG & DECORATING CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 11081.75
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "S & R SPORT",
+   "paid_by_year": {
+    "2019": 11027.11,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WAY-KEN CONTRACTOR SUPPLY CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 11011.79,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FOUNTAIN TECHNOLOGIES LTD",
+   "paid_by_year": {
+    "2019": 11000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HAYNES, LEVETTE",
+   "paid_by_year": {
+    "2019": 10999.99,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LANCASTER ARCHERY SUPPLY INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 10999.85,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MCFARLANE DOUGLASS & COMPANIES",
+   "paid_by_year": {
+    "2019": 11429.88,
+    "2020": 10844.02,
+    "2021": 12815.65,
+    "2022": 10982.57
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MIDWEST TRADING HORTICULTURAL SUPPLIES INC",
+   "paid_by_year": {
+    "2019": 14223.91,
+    "2020": 11823.58,
+    "2021": 12348.62,
+    "2022": 10939.83
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PAYFLEX SYSTEMS USA INC",
+   "paid_by_year": {
+    "2019": 17024.0,
+    "2020": 11888.0,
+    "2021": 12716.0,
+    "2022": 10911.5
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "BEAMAN, SARA",
+   "paid_by_year": {
+    "2019": 10909.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NATIONAL RECREATION AND PARK ASSOCIATION",
+   "paid_by_year": {
+    "2019": 10907.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ADVANCED RESOURCES",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10904.6
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ASSOCIATED ATTRACTIONS ENTERPRISES INC",
+   "paid_by_year": {
+    "2019": 10900.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DONDA'S HOUSE INC",
+   "paid_by_year": {
+    "2019": 10850.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ADVANCED RESOURCES LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10838.4
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "WAREHOUSE DIRECT",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 16328.27,
+    "2022": 10765.53
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LIBERTY MOUNTAIN SPORTS LLC",
+   "paid_by_year": {
+    "2019": 10761.73,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO MOBILE MAKERS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10750.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SCHOOL SPECIALTY, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 12674.29,
+    "2022": 10600.55
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ANIMATE STUDIO LLC",
+   "paid_by_year": {
+    "2019": 10500.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "OPERA MATIC NFP",
+   "paid_by_year": {
+    "2019": 10500.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GUZMAN, JOSEPH",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10500.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "IGNITE GRAPHICS",
+   "paid_by_year": {
+    "2019": 10462.55,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FULL COMPASS SYSTEMS, LTD",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10457.36
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HUMMERT SEED INTERNATIONAL INC",
+   "paid_by_year": {
+    "2019": 14035.98,
+    "2020": 16117.02,
+    "2021": 0,
+    "2022": 10439.4
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "LAKE PLACID CHRISTIAN CONFERENCE CENTER",
+   "paid_by_year": {
+    "2019": 10431.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "UNIVERSOUL CIRCUS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 10400.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "DM LUXURY LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 10400.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CHICAGO KILN SERVICE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 28152.15,
+    "2022": 10397.1
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ARTICULATE GLOBAL INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 10392.0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NAJWA DANCE CORPS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10392.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "RESILIENCE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10375.15
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "METROPOLITAN WATER RECLAMATION DISTRICT",
+   "paid_by_year": {
+    "2019": 10344.39,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "UNIVERSITY OF CHICAGO",
+   "paid_by_year": {
+    "2019": 10300.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "IL WORKERS COMPENSATION COMMISSION",
+   "paid_by_year": {
+    "2019": 10266.47,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SYLVAIN STUDIOS",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10250.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "PAXTON PATTERSON LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10160.09
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "FLYING HIGH GYMNASTICS PARENT CLUB",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 10160.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "CAMPBELL, JORDAN",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10144.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GERMANIA SEED CO",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10143.08
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HERALD NEWSPAPER INC",
+   "paid_by_year": {
+    "2019": 10142.15,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "MOBILE FACILITIES OF ILLINOIS",
+   "paid_by_year": {
+    "2019": 10140.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "IN THE GAME HOLLYWOOD PARK",
+   "paid_by_year": {
+    "2019": 10102.34,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NATIONAL RECREATION AND PARK ASSOCIATION (NRPA)",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10090.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STRAUGHN FARM INC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 12718.5,
+    "2021": 24853.2,
+    "2022": 10008.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "COLLABORACTION THEATER COMPANY",
+   "paid_by_year": {
+    "2019": 10000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SHERIFF'S WORK ALTERNATIVE PROGRAM",
+   "paid_by_year": {
+    "2019": 10000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SPLUNK INC",
+   "paid_by_year": {
+    "2019": 10000.0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "NORTHWESTERN UNIVERSITY",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 13000.0,
+    "2021": 15207.5,
+    "2022": 10000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "GOODMAN THEATRE",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 10000.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "ICL LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 10000.0,
+    "2022": 0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "HERITAGE LANDSCAPES, LLC",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "KREBS, VIRGINIA",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "SKY CUBACUB",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "STEPPENWOLF THEATRE COMPANY",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  },
+  {
+   "payee": "THOMPSON COBURN LLP",
+   "paid_by_year": {
+    "2019": 0,
+    "2020": 0,
+    "2021": 0,
+    "2022": 10000.0
+   },
+   "mapped_budget_lines": [],
+   "note": ""
+  }
+ ],
+ "contract_fee_schedules_from_board_exhibits": [
+  {
+   "vendor": "ASM Global (SMG dba)",
+   "asset": "Maggie Daley Park",
+   "contract": "P-24009",
+   "board_action": "25-1070-0409",
+   "url": "https://legistar2.granicus.com/chicagoparkdistrict/attachments/59187994-fdc6-4764-8b26-b29c8a5b1362.pdf",
+   "management_fee_by_year": {
+    "2025": 200000,
+    "2026": 200000,
+    "2027": 200000,
+    "2028": 225000,
+    "2029": 225000,
+    "2030": 225000,
+    "2031": 250000
+   },
+   "capital_investment_by_year": {
+    "2025": 50000,
+    "2026": 25000,
+    "2027": 15000,
+    "2028": 10000,
+    "2029": 10000,
+    "2030": 10000,
+    "2031": 10000
+   },
+   "kind": "contract schedule, not payments"
+  },
+  {
+   "vendor": "Indigo Sports, LLC",
+   "asset": "golf courses",
+   "contract": "P-24001",
+   "board_action": "24-1125-0911",
+   "management_fee_per_year": 1275000,
+   "contractor_capital_by_year": {
+    "1": 3575000,
+    "2": 1200000,
+    "3": 1700000,
+    "4": 525000,
+    "5": 1250000,
+    "6": 200000,
+    "7": 150000,
+    "8": 150000,
+    "9": 150000,
+    "10": 100000
+   },
+   "kind": "contract schedule, not payments"
+  }
+ ],
+ "acfr_context": {
+  "source": "FY2022 ACFR, Required Supplementary Information, General Fund budget vs actual (PDF p97, printed p89)",
+  "url": "https://files.chicagoparkdistrict.com/2025-04/2022%20Annual%20Comprehensive%20Financial%20Report.pdf",
+  "fy2022_general_fund_actual_thousands": {
+   "personnel_services": 168243,
+   "materials_supplies": 5848,
+   "small_tools_equipment": 454,
+   "contractual_services": 172498,
+   "program_expense": 369,
+   "other_expense": 6743,
+   "supplemental_pension": 15000,
+   "principal_retirement": 21962,
+   "total": 391117
+  }
+ },
+ "federal_single_audit_totals": {
+  "source": "https://api.fac.gov/general (Federal Audit Clearinghouse)",
+  "rows": [
+   {
+    "audit_year": "2025",
+    "report_id": "2025-12-GSAFAC-0000431241",
+    "total_federal_expended": 3612861,
+    "accepted": "2026-09-29"
+   },
+   {
+    "audit_year": "2024",
+    "report_id": "2024-12-GSAFAC-0000383915",
+    "total_federal_expended": 4427283,
+    "accepted": "2025-09-30"
+   },
+   {
+    "audit_year": "2023",
+    "report_id": "2023-12-GSAFAC-0000057834",
+    "total_federal_expended": 3128456,
+    "accepted": "2024-09-30"
+   },
+   {
+    "audit_year": "2022",
+    "report_id": "2022-12-CENSUS-0000222196",
+    "total_federal_expended": 2459389,
+    "accepted": "2023-09-27"
+   },
+   {
+    "audit_year": "2021",
+    "report_id": "2021-12-CENSUS-0000222196",
+    "total_federal_expended": 2203694,
+    "accepted": "2022-08-15"
+   },
+   {
+    "audit_year": "2020",
+    "report_id": "2020-12-CENSUS-0000222196",
+    "total_federal_expended": 3396067,
+    "accepted": "2021-08-12"
+   },
+   {
+    "audit_year": "2019",
+    "report_id": "2019-12-CENSUS-0000222196",
+    "total_federal_expended": 6017939,
+    "accepted": "2020-09-24"
+   },
+   {
+    "audit_year": "2018",
+    "report_id": "2018-12-CENSUS-0000222196",
+    "total_federal_expended": 4358034,
+    "accepted": "2019-07-29"
+   },
+   {
+    "audit_year": "2017",
+    "report_id": "2017-12-CENSUS-0000222196",
+    "total_federal_expended": 5518378,
+    "accepted": "2018-07-18"
+   },
+   {
+    "audit_year": "2016",
+    "report_id": "2016-12-CENSUS-0000222196",
+    "total_federal_expended": 3472322,
+    "accepted": "2017-08-03"
+   }
+  ],
+  "note": "Totals of federal awards the District spent. Not vendor payments."
+ }
+}
