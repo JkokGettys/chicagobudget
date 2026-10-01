@@ -311,10 +311,10 @@
       "owner_department": "CDOT - Department of Transportation",
       "sr_type": "Sign Repair Request - All Other Signs",
       "requests": 9828,
-      "completed": 9043,
-      "open": 641,
+      "completed": 9042,
+      "open": 642,
       "canceled": 144,
-      "share_completed": 0.9201
+      "share_completed": 0.92
     },
     {
       "owner_department": "Animal Care and Control",
@@ -484,6 +484,8 @@
       "owner_department": "Streets and Sanitation",
       "sr_type": "Graffiti Removal Request",
       "completed_requests": 89034,
+      "completed_within_5_days": 88491,
+      "share_within_5_days": 0.9939,
       "completed_within_7_days": 88760,
       "share_within_7_days": 0.9969,
       "avg_days_to_close": 1.1
@@ -492,6 +494,8 @@
       "owner_department": "Streets and Sanitation",
       "sr_type": "Abandoned Vehicle Complaint",
       "completed_requests": 52601,
+      "completed_within_5_days": 18963,
+      "share_within_5_days": 0.3605,
       "completed_within_7_days": 22101,
       "share_within_7_days": 0.4202,
       "avg_days_to_close": 19.7
@@ -500,6 +504,8 @@
       "owner_department": "Streets and Sanitation",
       "sr_type": "Garbage Cart Maintenance",
       "completed_requests": 47681,
+      "completed_within_5_days": 8160,
+      "share_within_5_days": 0.1711,
       "completed_within_7_days": 10676,
       "share_within_7_days": 0.2239,
       "avg_days_to_close": 24.2
@@ -508,6 +514,8 @@
       "owner_department": "Streets and Sanitation",
       "sr_type": "Rodent Baiting/Rat Complaint",
       "completed_requests": 43053,
+      "completed_within_5_days": 28767,
+      "share_within_5_days": 0.6682,
       "completed_within_7_days": 34316,
       "share_within_7_days": 0.7971,
       "avg_days_to_close": 4.1
@@ -516,6 +524,8 @@
       "owner_department": "CDOT - Department of Transportation",
       "sr_type": "Street Light Out Complaint",
       "completed_requests": 31368,
+      "completed_within_5_days": 25295,
+      "share_within_5_days": 0.8064,
       "completed_within_7_days": 27039,
       "share_within_7_days": 0.862,
       "avg_days_to_close": 7.6
@@ -524,6 +534,8 @@
       "owner_department": "CDOT - Department of Transportation",
       "sr_type": "Pothole in Street Complaint",
       "completed_requests": 28230,
+      "completed_within_5_days": 13033,
+      "share_within_5_days": 0.4617,
       "completed_within_7_days": 15040,
       "share_within_7_days": 0.5328,
       "avg_days_to_close": 26.5
@@ -532,6 +544,8 @@
       "owner_department": "Streets and Sanitation",
       "sr_type": "Tree Emergency",
       "completed_requests": 25330,
+      "completed_within_5_days": 23042,
+      "share_within_5_days": 0.9097,
       "completed_within_7_days": 23968,
       "share_within_7_days": 0.9462,
       "avg_days_to_close": 2.9
@@ -540,6 +554,8 @@
       "owner_department": "CDOT - Department of Transportation",
       "sr_type": "Traffic Signal Out Complaint",
       "completed_requests": 23751,
+      "completed_within_5_days": 20219,
+      "share_within_5_days": 0.8513,
       "completed_within_7_days": 20647,
       "share_within_7_days": 0.8693,
       "avg_days_to_close": 8.1
@@ -548,6 +564,8 @@
       "owner_department": "Streets and Sanitation",
       "sr_type": "Blue Recycling Cart",
       "completed_requests": 20726,
+      "completed_within_5_days": 609,
+      "share_within_5_days": 0.0294,
       "completed_within_7_days": 849,
       "share_within_7_days": 0.041,
       "avg_days_to_close": 34.6
@@ -556,6 +574,8 @@
       "owner_department": "DOB - Buildings",
       "sr_type": "Building Violation",
       "completed_requests": 18477,
+      "completed_within_5_days": 5010,
+      "share_within_5_days": 0.2711,
       "completed_within_7_days": 5731,
       "share_within_7_days": 0.3102,
       "avg_days_to_close": 46.6
@@ -564,6 +584,8 @@
       "owner_department": "DWM - Department of Water Management",
       "sr_type": "Water in Basement Complaint",
       "completed_requests": 17739,
+      "completed_within_5_days": 17432,
+      "share_within_5_days": 0.9827,
       "completed_within_7_days": 17490,
       "share_within_7_days": 0.986,
       "avg_days_to_close": 1.3
@@ -572,6 +594,8 @@
       "owner_department": "Streets and Sanitation",
       "sr_type": "Fly Dumping Complaint",
       "completed_requests": 14561,
+      "completed_within_5_days": 8093,
+      "share_within_5_days": 0.5558,
       "completed_within_7_days": 8979,
       "share_within_7_days": 0.6166,
       "avg_days_to_close": 16.3
@@ -580,6 +604,8 @@
       "owner_department": "Streets and Sanitation",
       "sr_type": "Missed Garbage Pick-Up Complaint",
       "completed_requests": 9088,
+      "completed_within_5_days": 6976,
+      "share_within_5_days": 0.7676,
       "completed_within_7_days": 7743,
       "share_within_7_days": 0.852,
       "avg_days_to_close": 4.7
@@ -588,6 +614,8 @@
       "owner_department": "CDOT - Department of Transportation",
       "sr_type": "Alley Pothole Complaint",
       "completed_requests": 5556,
+      "completed_within_5_days": 1237,
+      "share_within_5_days": 0.2226,
       "completed_within_7_days": 1568,
       "share_within_7_days": 0.2822,
       "avg_days_to_close": 52.6
@@ -596,6 +624,8 @@
       "owner_department": "Animal Care and Control",
       "sr_type": "Stray Animal Complaint",
       "completed_requests": 1870,
+      "completed_within_5_days": 1388,
+      "share_within_5_days": 0.7422,
       "completed_within_7_days": 1473,
       "share_within_7_days": 0.7877,
       "avg_days_to_close": 17.9

@@ -1,0 +1,2040 @@
+{
+  "generated_by": "scripts/context_dept_map.py",
+  "dataset": "https://data.cityofchicago.org/resource/6694-f78c.json",
+  "population_used": 2721326,
+  "coverage_meaning": {
+    "have": "Several independent measures (activity data, outside reviews, comparisons).",
+    "partial": "Some activity data or an outside review, but no direct measure of results.",
+    "none": "Nothing found in this pass except the department's own description. This does NOT mean the department performs well or badly."
+  },
+  "coverage_summary": {
+    "none": {
+      "count": 17,
+      "departments": [
+        "Office of the Mayor",
+        "Office of Budget and Management",
+        "Department of Technology and Innovation",
+        "City Council",
+        "Department of Cultural Affairs and Special Events",
+        "City Treasurer's Office",
+        "Department of Administrative Hearings",
+        "Board of Election Commissioners",
+        "Chicago Commission on Human Relations",
+        "Mayor's Office for People with Disabilities",
+        "Office of Public Safety Administration",
+        "Chicago Police Board",
+        "Community Commission for Public Safety and Accountability",
+        "Department of Environment",
+        "License Appeal Commission",
+        "Board of Ethics",
+        "Chicago Department of Aviation"
+      ]
+    },
+    "partial": {
+      "count": 19,
+      "departments": [
+        "Office of Inspector General",
+        "Department of Housing",
+        "Office of City Clerk",
+        "Department of Finance",
+        "Department of Law",
+        "Department of Human Resources",
+        "Department of Procurement Services",
+        "Department of Fleet and Facility Management",
+        "Chicago Department of Public Health",
+        "Department of Family and Support Services",
+        "Department of Planning and Development",
+        "Office of Emergency Management and Communications",
+        "Chicago Fire Department",
+        "Civilian Office of Police Accountability",
+        "Department of Business Affairs and Consumer Protection",
+        "Chicago Animal Care and Control",
+        "Department of Water Management",
+        "Chicago Public Library",
+        "Finance General"
+      ]
+    },
+    "have": {
+      "count": 4,
+      "departments": [
+        "Chicago Police Department",
+        "Department of Buildings",
+        "Department of Streets and Sanitation",
+        "Chicago Department of Transportation"
+      ]
+    }
+  },
+  "departments_with_oversight_findings": 15,
+  "departments_with_budget_overview_key_results": 38,
+  "departments_missing_budget_overview_key_results": [
+    "City Council",
+    "Finance General"
+  ],
+  "departments": [
+    {
+      "department_number": "1",
+      "department": "Office of the Mayor",
+      "budget_2026": {
+        "total": 16419712.0,
+        "local_funds": 15557712.0,
+        "grants": 862000.0,
+        "per_resident_total": 6.03,
+        "per_resident_local": 5.72,
+        "per_household_total": 14.0
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 112.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 112,
+        "cofa_printed_page": 25,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 63,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Safest summer since 1965, and year-over-year declines across all violent crime categories, by addressing the root causes of crime. Funds were allocated to street outreach and victim services, including a $20 million grant for Community Violence Intervention efforts. • To date , 4,063 units have been built, rehabbed, or preserved. In Summer 2025 alone, 422 new units were completed and construction is ongoing for 1,600 more. Passed a landmark Green Social Housing ordinance to build permanently affordable, mixed- income housing across Chicago. Reduced barriers to constructing housing by working with City Council to eliminate parking minimums near transit and expanded Accessory Dwelling Units. • In 2025, a $48 million investment in One Summer Chicago to hire 19,000 young people and reached a total 31,122 young people in partnership with Sister Agencies, an increase of over 40 percent since Mayor Johnson took office. • Announced a $7M investment to support salary increases for early childhood professionals, raising wages by 5-10% for at least 3,000 early childhood workers across 86 providers, a step towards aligning their pay with the broader K-12 workforce. • Invested over $66 million in 163 small and 20 medium- sized businesses with the Community Development Grant and Neighborhood Opportunity Fund. • Summer tourism hit record levels, with over 3.5 million hotel room nights sold and $1 billion in hotel revenue. • Introduced the Hazel Johnson Cumulative Impacts Ordinance, which addresses the disproportionate pollution burden experienced by historically disinvested communities. • Transitioned all City-owned buildings, including O 'Hare and Midway Airports, to 100% renewable energy; one of the largest U.S. cities to do so. • Created the Protecting Chicago Initiative to ensure all Chicagoans know their constitutional rights.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No public outcome measure. Judge by staffing and by what the Mayor's office budget line pays for.",
+      "missing": null
+    },
+    {
+      "department_number": "3",
+      "department": "Office of Inspector General",
+      "budget_2026": {
+        "total": 14297022.0,
+        "local_funds": 14297022.0,
+        "grants": 0.0,
+        "per_resident_total": 5.25,
+        "per_resident_local": 5.25,
+        "per_household_total": 12.19
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 118.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 118,
+        "cofa_printed_page": 145,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 157,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Included in collaboration with law enforcement and prosecutorial entities, and in debarment and Board of Ethics proceedings, pursued criminal and administrative cases against City actors committing misconduct. • Meaningfully engaged with Chicago' s communities and completed substantive, human-centered fieldwork in the service of our performance audit work, engaged with communities across Chicago's neighborhoods to raise awareness of OIG and to collect lived experiences of Chicagoans to inform OIG's work. • Continued to update and expand the data dashboards which mak e up its Information Portal, furthering OIG's efforts in the service of its transparency mandate to make City data more accessible, meaningful, and engaging for members of the public. • Partnered with organizations that focus on underrepresented groups to widen the diverse talent pool and continue tailored workshops for our leadership team to ensure they understand their role in fostering an inclusive environment and leading by example.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "OIG publishes audits and dashboards. A dollars-saved total was not found in the reports we read. Budget Overview lists its results.",
+      "missing": null
+    },
+    {
+      "department_number": "5",
+      "department": "Office of Budget and Management",
+      "budget_2026": {
+        "total": 38552702.0,
+        "local_funds": 4921702.0,
+        "grants": 33631000.0,
+        "per_resident_total": 14.17,
+        "per_resident_local": 1.81,
+        "per_household_total": 32.88
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 56.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 56,
+        "cofa_printed_page": 29,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 65,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Oversaw the implementation of the Mayor's Ex ecutive Order 2025-1, including the establishment and support of the Chicago Financial Future Task Force (CFFTF) and the large-scale review of the City's budget for efficiencies. • Applied lessons learned from ARPA to develop and submit the City' s $500M+ Flood Recovery Plan to the U.S. Department of Housing and Urban Development (HUD) and City Council, creating a six-year Action Plan for generational investments in housing and infrastructure on the City's Westside. • Launched an ARPA Impact Dashboard with interactive maps illustrating targeted program impact, an extensive set of program metrics and demographic indicators that provide meaningful insight into Chicago's communities. • Submitted the City's $571. 7M Consolidated Plan to HUD, producing a five-year road map for critical City investments in housing, human services, public health, and more. • Published the inaugural Mid-Y ear Budget Report, enhancing fiscal transparency and providing budget data on the City's revenues, expenditures, contracts, special events, bonds, transfers, and workforce.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure. COFA and the Civic Federation are the outside check on its budget forecasts.",
+      "missing": null
+    },
+    {
+      "department_number": "6",
+      "department": "Department of Technology and Innovation",
+      "budget_2026": {
+        "total": 76383040.0,
+        "local_funds": 64258040.0,
+        "grants": 12125000.0,
+        "per_resident_total": 28.07,
+        "per_resident_local": 23.61,
+        "per_household_total": 65.15
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 144.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 144,
+        "cofa_printed_page": 35,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 67,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Awarded $8M task order award to local M/WBE certified IT firm for ERP Program Management. This is one of the primary awards that will be issued for this significant technology and business process modernization initiative . • Designed, developed, and ex ecuted a new IT budget request process to collect, review, and assess all 2026 IT budget request submissions from all City departments. These requests were assessed for technical feasibility, strategic alignment, and mandatory requirements. The data received provided a new level of insight into how the City will plan for IT capacity and investment in 2026 and beyond. • Realized, as of July 2025, over $6M in actual savings as compared to actual spend in 2024. W e have achieved this by modernizing our technology, reducing redundant software licenses and renegotiating contracts. • Established the Process Improvement & Innovation Division, leading to improved tools and processes for k ey resident outcomes with initiatives like Cut-the- Tape. • Enhanced the Open Data Portal with new public data services for residents.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "311 site availability datasets exist but are old (2011). No current outcome measure found.",
+      "missing": null
+    },
+    {
+      "department_number": "15",
+      "department": "City Council",
+      "budget_2026": {
+        "total": 37764468.0,
+        "local_funds": 37764468.0,
+        "grants": 0.0,
+        "per_resident_total": 13.88,
+        "per_resident_local": 13.88,
+        "per_household_total": 32.21
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 265.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 265,
+        "cofa_printed_page": 72,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "oversight_finding_ids": [
+        "oig-cofa-audit-2026"
+      ],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure. COFA, a Council office, was itself audited by OIG.",
+      "missing": null
+    },
+    {
+      "department_number": "21",
+      "department": "Department of Housing",
+      "budget_2026": {
+        "total": 173252026.0,
+        "local_funds": 13792026.0,
+        "grants": 159460000.0,
+        "per_resident_total": 63.66,
+        "per_resident_local": 5.07,
+        "per_household_total": 147.77
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 122.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 122,
+        "cofa_printed_page": 81,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 147,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• To date , 4,063 units have been built, rehabbed, or preserved. In Summer 2025 alone, 422 new units were completed and construction is ongoing for 1,600 more. • Facilitated the acquisition and rehabilitation of vacant and abandoned homes. To date , DOH has acquired 78 buildings and transferred 72 to local developers for rehabilitation. • Established 13 affordable housing developments with 175 Permanent Supportive Housing. • Developed and advanced the Green Social Housing Ordinance, which was successfully passed by City Council. • Implemented the successful Green Homes Chicago pilot program, advancing an equitable clean energy transition through whole-home retrofits of 1- to 4-unit homes. • Released the Draft 2025 Architectural & T echnical Standards Manual (ATSM), developed in collaboration with industry partners in order to streamline development requirements, clarify design standards, and support Mayor Johnson's Cut the Tape initiative. • Launched the 2025 Qualified Allocation Plan (Q AP), aligning with Mayor Johnson's agenda to promote a fair, accessible, and sustainable housing market. • Multifamily Finance closed on proposals to provide approximately $127 .6M in City financial assistance supporting nearly $344.6M in development across seven affordable housing proposals in transit-served locations, creating 505 new units, of which 419 units are legally-restricted affordable housing.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "service_311_2025": {
+        "owner_department_label": "Department of Housing",
+        "requests": 169,
+        "avg_days_to_close": 6.4,
+        "requests_per_1000_residents": 0.1,
+        "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
+        "focus_types_completed_speed": [],
+        "top_request_types": [],
+        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+      },
+      "peer_comparison_census_2024": {
+        "census_item": "E50",
+        "function": "Housing and community development",
+        "match_quality": "weak: NYC and Philadelphia run housing programs Chicago leaves to the CHA and county",
+        "chicago_per_resident": 4.15,
+        "peer_average_per_resident": 428.65,
+        "chicago_vs_peer_average_pct": -99.0,
+        "rank_of_5_highest_first": 5,
+        "peer_cities": [
+          "New York City",
+          "Los Angeles",
+          "Houston",
+          "Philadelphia"
+        ],
+        "source": "https://www2.census.gov/programs-surveys/gov-finances/tables/2024/2024_Individual_Unit_Files.zip",
+        "caveats": "See comparability_limits in data/context_peers_2024.json. Census 2024, not FY2026. City government only."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "Affordable Rental Housing Developments dataset (s6ha-ppgi) exists but was not analyzed in this pass.",
+      "missing": null
+    },
+    {
+      "department_number": "23",
+      "department": "Department of Cultural Affairs and Special Events",
+      "budget_2026": {
+        "total": 62003597.0,
+        "local_funds": 43667597.0,
+        "grants": 18336000.0,
+        "per_resident_total": 22.78,
+        "per_resident_local": 16.05,
+        "per_household_total": 52.88
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 80.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 80,
+        "cofa_printed_page": 85,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 150,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Advanced 36 public art projects in 19 wards, with a $10.6M investment from multiple sources. • Awarded cultural grants - Individual Artists Program, City Arts, Chicago Presents, and Neighborhood Access are distributing over $8M in new funding, including a $1.5M increased investment in direct-to-artist funding. • The Chicago Film Office processed over 750 filming permits, up from last year, and supported major national, award-winning TV productions. • Launched ExperienceDC ASE, bringing critical resources and departmental information directly to City wards and residents. • Launched Phase 2 of the Creative W orker Rights: Art is Labor campaign, developing a learning framework on pay equity, contracting, and labor law. • The Operations Division approved over 200 special events permits citywide - spanning cultural, artistic, social, and recreational activities. • The Chicago Made Professional Development Series launched with workshops on public art, event production, storytelling, taxes, and legal support for freelance artists. • Healing Arts Chicago continued services in City mental health centers and expanded to CDPH agencies supporting Substance Use R ecovery/Harm Reduction.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure found. Event permit data not analyzed.",
+      "missing": null
+    },
+    {
+      "department_number": "25",
+      "department": "Office of City Clerk",
+      "budget_2026": {
+        "total": 15214652.0,
+        "local_funds": 15214652.0,
+        "grants": 0.0,
+        "per_resident_total": 5.59,
+        "per_resident_local": 5.59,
+        "per_household_total": 12.98
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 92.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 93,
+        "cofa_printed_page": 39,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 69,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Issued 708,565 City Vehicle S tickers, 127,590 annual residential zone permits, and 125,119 residential daily parking passes ,4,882 dog licenses, and 13,481 CityKeys. • Through the Legislative Management S ystem, 17,106 matters and 587 meetings have been processed, while 7,349 matters have been submitted digitally by City stakeholders. • Improved eLMS for expanded stak eholder support, including adding eVoting optimizations for committees, committee meeting management, City Council agenda management, security, and improving OCR for search. • Scheduled and ex ecuted eight Mobile City Hall events under a new regionalized approach across the City and continued to offer the Municipal ID (CityKey) to all Chicagoans. • Secured City Council approval for and ex ecuted amnesty month, giving drivers a break from back charges and late fees no matter how long they had been without a City Sticker while gaining revenue by approximately $1.6 million. • Increased revenue by $240,000 to date through the mak e/model enhancement that was made to our system in late April, allowing us to more accurately classify vehicles. We should see this increase over the next two years.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "service_311_2025": {
+        "owner_department_label": "City Clerk's Office",
+        "requests": 4510,
+        "avg_days_to_close": 9.1,
+        "requests_per_1000_residents": 1.7,
+        "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
+        "focus_types_completed_speed": [],
+        "top_request_types": [],
+        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "City sticker violation 311 requests are available (4,510 in 2025). No outcome measure for the clerk's other work.",
+      "missing": null
+    },
+    {
+      "department_number": "27",
+      "department": "Department of Finance",
+      "budget_2026": {
+        "total": 127818882.0,
+        "local_funds": 113180882.0,
+        "grants": 14638000.0,
+        "per_resident_total": 46.97,
+        "per_resident_local": 41.59,
+        "per_household_total": 109.02
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 579.0,
+        "hourly_or_monthly_position_rows_not_counted": 6,
+        "cofa_ftes_budgeted": 654,
+        "cofa_printed_page": 43,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 71,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• 2025 Parking Violation Debt Relief Program: Ran April 1st through July 31st, VDR allowed motorists to pay the original fine amount in full and receive a waiver of additional penalties and costs. DOF collected over $15.7M with more than 100,000 motorists taking advantage of this program and saving $16.4M. • Smart Streets: T o date DOF and CDOT have issued 29,664 warnings, 8,152 violations, and collected $650,000 pursuant to the Smart Streets Pilot Program. Enforcement will be expanded to include meter violations in October 2025. In addition, though a collaboration with the CTA, Smart Streets enforcement through eight cameras affixed to CTA buses will begin in the fourth quarter of 2025. • Leak R elief Pilot Program: On January 1, 2025, DOF launched the Leak Relief Pilot Program. DOF has advertised the program by distributing palm cards to aldermanic offices, payment centers, and at community events; sent approximately 3,400 emails and 7,000 postcards to potentially eligible customers. • ChiWallet and Debt Check Portal: DOF is working with our vendors to build a portal that will integrate with all current City debt source systems to create efficiencies and enhance the user experience. The portal will be used to search for outstanding debt, generate a consolidated bill of debt, check results, and allow the debtor to pay multiple debt types on a single platform. • New POS System: DOF kick ed off development of a new City-owned POS solution in the third quarter of 2025. The current system is nearing its end of life for PCI compliance, and the existing technology does not enable the collection of credit card service fees on POS transactions. The new system will be fully PCI compliant and result in additional projected revenue of $2M - $4M annually in credit card service fees. • ChiPay Expansion: DOF moved its quick payment processing from a third-party vendor to a city -owned, centralized web application. The most recent fee transition was the building inspection fee . The department is prioritizing further receivable categories for future rollout and working to centralize links to all City web apps that accept payments. • Payment Plan Enhancements: DOF is currently working on transitioning AH payment plans online and offering autopay (automatic withdrawals) for parking, compliance, red light, and speed ticket payment plans.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "service_311_2025": {
+        "owner_department_label": "Finance",
+        "requests": 20377,
+        "avg_days_to_close": 0.0,
+        "requests_per_1000_residents": 7.5,
+        "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
+        "focus_types_completed_speed": [],
+        "top_request_types": [],
+        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+      },
+      "oversight_finding_ids": [
+        "oig-water-billing-2026",
+        "oig-city-debt-owed-2026",
+        "oig-payment-timeliness-2026",
+        "oig-workers-comp-2024"
+      ],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "OIG audits on debt ($8.1B owed to the City) and vendor payment timeliness. Revenue collected is a result measure we did not find.",
+      "missing": null
+    },
+    {
+      "department_number": "28",
+      "department": "City Treasurer's Office",
+      "budget_2026": {
+        "total": 6504251.0,
+        "local_funds": 6504251.0,
+        "grants": 0.0,
+        "per_resident_total": 2.39,
+        "per_resident_local": 2.39,
+        "per_household_total": 5.55
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 40.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 40,
+        "cofa_printed_page": 47,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 76,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Generated $194.5 million in investment earnings year-to-date for taxpayers in 2025, building on $380.1 million in 2024 and $372.5 million in 2023. • Launched the Chicago S tar Award to recognize outstanding small businesses. In 2024, 151 nominations led to 37 winners. As of 2025, 67 nominations have been received. • Expanded the reach of Money Mondays in the Community, visiting 30 neighborhoods in partnership with local bank s. • Hosted the Money Matters Institute (MMI), a blended in-person and online program providing credit and money management education to 650 participants, in collaboration with certified financial counselors and banks. • Partnered with City Colleges of Chicago to host a Financial Services Career Fair , connecting financial institutions with diverse, qualified job seekers. • Advocated for equity in hiring, lending, and investment practices through the Advancing Equity in Banking Commission. • Expanded the Municipal Depository Program to include locally owned community banks, fostering neighborhood investment. • Hosted Building Wealth T oday for Tomorrow (BWTT), drawing over 5,000 attendees. • Increased internship opportunities for Chicago youth, supporting year-round exposure to public service.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure found in this pass.",
+      "missing": null
+    },
+    {
+      "department_number": "30",
+      "department": "Department of Administrative Hearings",
+      "budget_2026": {
+        "total": 8389224.0,
+        "local_funds": 8389224.0,
+        "grants": 0.0,
+        "per_resident_total": 3.08,
+        "per_resident_local": 3.08,
+        "per_household_total": 7.16
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 39.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 39,
+        "cofa_printed_page": 51,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 78,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Accepted electronic filings for transportation related violations issued by CDOT . • Increased number of free legal consultations from 758 to 932 offered by the Coordinated Advice and R eferral Program for Legal Advice (CARPLS). Achieved this 19% increase by raising visibility and expanding outreach at DOAH's three Courthouses highlighting CARPLS' in-person consultations at 400 W Superior and its hotline service. • In the third quarter, distributed \"Notice of ALJ Opportunity\" information to L atinx and Asian law firms identified via canvas to build a stronger pipeline for ALJ candidates from these communities.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure found in this pass. The Budget Overview describes it as adjudicating ordinance violations.",
+      "missing": null
+    },
+    {
+      "department_number": "31",
+      "department": "Department of Law",
+      "budget_2026": {
+        "total": 47954637.0,
+        "local_funds": 47831637.0,
+        "grants": 123000.0,
+        "per_resident_total": 17.62,
+        "per_resident_local": 17.58,
+        "per_household_total": 40.9
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 402.0,
+        "hourly_or_monthly_position_rows_not_counted": 3,
+        "cofa_ftes_budgeted": 418,
+        "cofa_printed_page": 55,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 80,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Defended the City's W elcoming City Ordinance and other local, sanctuary protections against federal Supremacy Clause challenges-resulting in dismissal of the lawsuit without prejudice. • Challenged unlawful grant conditions that sought to eliminate federal support for City programs and services. • Joined numerous amicus briefs opposing federal attempts to eliminate birthright citizenship, resulting in multiple preliminary injunctions at district and appellate levels. • Opposed State Department passport changes that e xcluded transgender, nonbinary, and intersex individuals. • Expanded access to equity-focused continuing legal education and professional responsibility training in support of departmental professional development goals. • Provided legal support to City departments pursuing clean energy projects by advising on project structure, intergovernmental agreements, regulatory compliance , procurement strategies, and tax credit eligibility and monetization. • Expanded the Law Clerk, Externship , Pre-Law Volunteer, Fellowship (LCEVF) Program, a year-round non-paid volunteer program for participants at every level (high school, undergraduate, law school and beyond including licensed attorneys).",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "settlements": {
+        "note": "The Law Department files the annual CPD litigation report. See police entry and data/context_settlements_2019_2025.json.",
+        "department_of_law_total_2026": 47954637.0
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "Cost side only: police settlement and outside-counsel totals from the Law Department's CPD litigation reports. No measure of how well the department does its work. An all-City payout total is not published in one place.",
+      "missing": null
+    },
+    {
+      "department_number": "33",
+      "department": "Department of Human Resources",
+      "budget_2026": {
+        "total": 12957553.0,
+        "local_funds": 12035553.0,
+        "grants": 922000.0,
+        "per_resident_total": 4.76,
+        "per_resident_local": 4.42,
+        "per_household_total": 11.05
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 119.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 119,
+        "cofa_printed_page": 59,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 83,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Completed first update of City's P ersonnel Rules in 11 years. • Launched the Citywide Employee P erformance Review Program. • Reduced barriers to employment with skills-based hiring initiative. • Expanded the Reasonable Accommodations team to better manage requests. • Created and updated several employment policies including Ineligible for R ehire, Paid Parental Leave, and Bereavement Leave.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [
+        "oig-dhr-eap-2025",
+        "cofa-midyear-options-2026"
+      ],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "OIG found HR cannot show its Employee Assistance Program works. No hiring-speed measure found.",
+      "missing": null
+    },
+    {
+      "department_number": "35",
+      "department": "Department of Procurement Services",
+      "budget_2026": {
+        "total": 13923365.0,
+        "local_funds": 13923365.0,
+        "grants": 0.0,
+        "per_resident_total": 5.12,
+        "per_resident_local": 5.12,
+        "per_household_total": 11.88
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 124.0,
+        "hourly_or_monthly_position_rows_not_counted": 2,
+        "cofa_ftes_budgeted": 126,
+        "cofa_printed_page": 63,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 85,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• The initial phase of the Enterprise Resource Planning (ERP) system replacement is underway , and the Department is currently in contract negotiations with the best-value respondent. Phase two of the initiative is ongoing. • Conducted several successful engagement activities with alderpersons, Assist Agencies and the vendor community, including but not limited to workshop sessions and a full-day Spotlight Series at the 2025 DPS Construction Summit that educated vendors about the City's M/WBE program.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [
+        "ey-procurement-civicfed-2025"
+      ],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "EY (via Civic Federation) says 49% of City spending is not managed by procurement. A City auctions dataset exists (s9wg-6is6).",
+      "missing": null
+    },
+    {
+      "department_number": "38",
+      "department": "Department of Fleet and Facility Management",
+      "budget_2026": {
+        "total": 503454074.0,
+        "local_funds": 495522074.0,
+        "grants": 7932000.0,
+        "per_resident_total": 185.0,
+        "per_resident_local": 182.09,
+        "per_household_total": 429.4
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 197.0,
+        "hourly_or_monthly_position_rows_not_counted": 96,
+        "cofa_ftes_budgeted": 1031,
+        "cofa_printed_page": 67,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 87,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Roof replacements and facade stabilization were conducted at six regional libraries and two senior centers. • Accessibility upgrades and security system modernizations were made in collaboration with the Mayor's Office for P eople with Disabilities. • Purchased 60 EVs, which includes heavy-duty vehicles including refuse and street sweepers. • Commenced construction on an EMS addition at the Joint Public Safety Training Center and upgraded security hardening at five CPD stations. • Completed energy efficiency upgrades and installed rooftop solar panel systems at Humboldt Park and South Chicago library branches, with similar outcomes to be achieved at W est Lawn and Toman branches. • Implemented the Cut the Tape initiative to reduce barriers to the activation, sale and redevelopment of environmentally cleared parcels.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [
+        "ey-fleet-civicfed-2025",
+        "ey-real-estate-civicfed-2025"
+      ],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "EY (via Civic Federation): average vehicle driven 7,000 miles a year and one vehicle per 17 employees. Not audited.",
+      "missing": null
+    },
+    {
+      "department_number": "39",
+      "department": "Board of Election Commissioners",
+      "budget_2026": {
+        "total": 27867404.0,
+        "local_funds": 27867404.0,
+        "grants": 0.0,
+        "per_resident_total": 10.24,
+        "per_resident_local": 10.24,
+        "per_household_total": 23.77
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 122.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 122,
+        "cofa_printed_page": 76,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 180,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Finished administering the November 5, 2024, Presidential General Election and processed all ballot applications and same day registrations. • Performed a canvass mailing to all 1.5+ million registered voters in Chicago to k eep the voter rolls accurate and updated. • Managed the Electoral Board session for the March 2026 Primary candidates. • Held a citywide voter forum at Harold Washington College and conducted a public survey that received over 6,600 voter responses. • Began development on a Chicago Elections mobile app and improved resources on the ChicagoElections. gov website, including creating interactive voter turnout maps.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure found in this pass. OIG audited it in 2019 and published a follow-up in 2020.",
+      "missing": null
+    },
+    {
+      "department_number": "41",
+      "department": "Chicago Department of Public Health",
+      "budget_2026": {
+        "total": 335049660.0,
+        "local_funds": 104988660.0,
+        "grants": 230061000.0,
+        "per_resident_total": 123.12,
+        "per_resident_local": 38.58,
+        "per_household_total": 285.77
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 759.0,
+        "hourly_or_monthly_position_rows_not_counted": 5,
+        "cofa_ftes_budgeted": 764,
+        "cofa_printed_page": 94,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 132,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Held 406 vaccination events citywide over the 2024- 25 viral respiratory season, administering over 20,000 COVID and flu doses. • Responded to 2,541 out of 2,638 (97.7%) environmental complaints from January - July 2025. • Launched a 5-pronged summer overdose response , which reduced Opioid overdose EMS responses by 22% year-to-date compared to 2024, with 3,191 overdoses from January to June 2025 compared to 4,200 during the same period in 2024 and 5,300 in 2023. • From January - July, 2025, completed nearly 10 ,000 inspections of food establishments across the City to ensure safe food practices that keep residents and visitors healthy. • Through the expansion of peacek eepers, street outreach and hospital-based violence prevention, by end of July 2025, the City recorded 110 fewer homicides in 2025 than in 2024, a decrease of 32%. • Increased the reach of families receiving post partum public health nurse home visits from 43% (2024) to 51% Reach (Q1 2025) in Priority Communities. • Since May 2024, over 1000 individuals have been trained in suicide prevention. • Initiated response to 1,940 (100%) of notifiable infectious diseases within 24 hours from January - June 2025. • Over 1,300 unique individuals served at the City's mental health centers from January - June 2025.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "service_311_2025": {
+        "owner_department_label": "Health",
+        "requests": 3532,
+        "avg_days_to_close": 27.7,
+        "requests_per_1000_residents": 1.3,
+        "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
+        "focus_types_completed_speed": [],
+        "top_request_types": [],
+        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+      },
+      "food_inspections_by_year": [
+        {
+          "year": 2019,
+          "inspections": 19052,
+          "partial_year": false
+        },
+        {
+          "year": 2020,
+          "inspections": 15123,
+          "partial_year": false
+        },
+        {
+          "year": 2021,
+          "inspections": 15868,
+          "partial_year": false
+        },
+        {
+          "year": 2022,
+          "inspections": 16936,
+          "partial_year": false
+        },
+        {
+          "year": 2023,
+          "inspections": 18261,
+          "partial_year": false
+        },
+        {
+          "year": 2024,
+          "inspections": 19228,
+          "partial_year": false
+        },
+        {
+          "year": 2025,
+          "inspections": 19205,
+          "partial_year": false
+        },
+        {
+          "year": 2026,
+          "inspections": 12061,
+          "partial_year": true
+        }
+      ],
+      "food_inspections_note": "Food Inspections dataset (4ijn-s7e5) is run by CDPH Food Protection. Counts are inspections, not outcomes.",
+      "peer_comparison_census_2024": {
+        "census_item": "E32",
+        "function": "Public health",
+        "match_quality": "weak: Chicago has a separate Cook County health system",
+        "chicago_per_resident": 114.5,
+        "peer_average_per_resident": 612.59,
+        "chicago_vs_peer_average_pct": -81.3,
+        "rank_of_5_highest_first": 4,
+        "peer_cities": [
+          "New York City",
+          "Los Angeles",
+          "Houston",
+          "Philadelphia"
+        ],
+        "source": "https://www2.census.gov/programs-surveys/gov-finances/tables/2024/2024_Individual_Unit_Files.zip",
+        "caveats": "See comparability_limits in data/context_peers_2024.json. Census 2024, not FY2026. City government only."
+      },
+      "oversight_finding_ids": [
+        "oig-cdph-mental-health-2025"
+      ],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "311 volume only (3,532 requests). OIG mental health audit. Public health indicator datasets exist (iqnk-2tcu) but not analyzed here.",
+      "missing": null
+    },
+    {
+      "department_number": "45",
+      "department": "Chicago Commission on Human Relations",
+      "budget_2026": {
+        "total": 2773200.0,
+        "local_funds": 1665200.0,
+        "grants": 1108000.0,
+        "per_resident_total": 1.02,
+        "per_resident_local": 0.61,
+        "per_household_total": 2.37
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 20.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 20,
+        "cofa_printed_page": 98,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 136,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Completed 173 investigations compared to 168 in 2024, and completed 65% of investigations within one year, as compared to 59% for the same period in 2024 (January - July). • Released the 2024 Hate Crimes and Hate Incidents Report, which reports that Chicago led the nation with a 25.5% decline in hate crimes in 2024, yet anti- Jewish hate crimes rose 58% and anti-gay (male) hate crimes rose 25%. • Convened three community meetings on the north, west, and south sides of the city to discuss the problem of Transfemicide, defined as the murder of Black, Indigenous, and People of Color (BIPOC) transgender women, with community residents to hear their concerns and work towards solutions in collaboration with our city partners, the Chicago Police Department, Department of Family & Support Services, and the Chicago Department of Health.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure found in this pass.",
+      "missing": null
+    },
+    {
+      "department_number": "48",
+      "department": "Mayor's Office for People with Disabilities",
+      "budget_2026": {
+        "total": 9679159.0,
+        "local_funds": 3263159.0,
+        "grants": 6416000.0,
+        "per_resident_total": 3.56,
+        "per_resident_local": 1.2,
+        "per_household_total": 8.26
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 40.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 40,
+        "cofa_printed_page": 102,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 138,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Celebrated key milestones, including the 35 th Anniversary of the ADA and the 25th year of the Home Modification Program, which has now surpassed 2,000 completed projects. • Launched the Disabled Survivors of Gun and Community Violence HomeMod Program and distributing $500 in cash assistance to K -12 students with disabilities across all 50 wards. • Strengthened access to housing and employment outcomes for people with disabilities by maintaining the Chicago Housing Locator Tool, with over 25,800 monthly searches, and placing 165 job seekers with disabilities in roles including IT and local universities. • Advanced accessibility compliance , including having a 25% increase in permit reviews and completing the assessment of 126 City facilities under the Title II Self Evaluation federal requirements. • Provided language access and disability training through 1,448 hours of ASL interpretation and 31 Disability and Access training sessions across City departments, sister agencies, ward events, and other community partners.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure found in this pass.",
+      "missing": null
+    },
+    {
+      "department_number": "50",
+      "department": "Department of Family and Support Services",
+      "budget_2026": {
+        "total": 653365973.0,
+        "local_funds": 213878973.0,
+        "grants": 439487000.0,
+        "per_resident_total": 240.09,
+        "per_resident_local": 78.59,
+        "per_household_total": 557.26
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 392.0,
+        "hourly_or_monthly_position_rows_not_counted": 4,
+        "cofa_ftes_budgeted": 433,
+        "cofa_printed_page": 106,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 140,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Continued expanded investment in rapid rehousing that has supported 1,000 e xisting and over 300 new households with housing; an additional 167 households will be housed by December. • Through the Emergency Financial Assistance for Survivors of Gender-Based Violence program, an estimated 4,100 survivors will receive $1,000 payments throughout 2025. • Provided more than 31,122 job opportunities citywide for youth ages 14-24 through One Summer Chicago , of which 19,454 were funded through DFSS delegates; 884 of those opportunities continue year-round. • Through the My CHI. My Future. Safe Spaces for Y outh program, DFSS delegates employed 224 young people who planned and hosted dozens of events that provided safe spaces for thousands of youth (ages 13- 19) and their families to engage in their community during critical out-of-school periods. • The Home Delivered Meals program is on track to provide 4.5 million meals to 13,000 seniors. The program provides both nutritional support and senior check-ins by the delivery drivers.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [
+        "oig-dfss-encampments-2023",
+        "oig-dfss-contracting-2022"
+      ],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "One OIG outcome (94.1% of encampment residents who attended a housing event entered stable housing). Youth services utilization dataset exists (xczi-kmtf), not analyzed.",
+      "missing": null
+    },
+    {
+      "department_number": "51",
+      "department": "Office of Public Safety Administration",
+      "budget_2026": {
+        "total": 135631676.0,
+        "local_funds": 115080676.0,
+        "grants": 20551000.0,
+        "per_resident_total": 49.84,
+        "per_resident_local": 42.29,
+        "per_household_total": 115.68
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 277.0,
+        "hourly_or_monthly_position_rows_not_counted": 16,
+        "cofa_ftes_budgeted": 373,
+        "cofa_printed_page": 115,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 114,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Deployed 4,000 new CPD cell phones, enabling in- vehicle and on-foot work with full application access, while k eeping mobile telecom costs flat. • Began the upgrade of the OEMC 911 radio consoles to enhance reliability and features and installed 600 in-vehicle ALPR cameras, feeding real-time data to CPD's Strategic Decision Support Centers (SDSC) and hijacking teams. • Launched the candidate portal of Firefighter/EMT , Paramedic, and Police Officer candidates and have hired over 200 employees using the OPSA's Candidate Tracking Portal. • Purchased an Enterprise Asset Management platform to be able to have granular asset tracking capabilities for all Public Safety assets. • Awarded seven new contracts to MBE/WBE Certified firms this year.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure found in this pass.",
+      "missing": null
+    },
+    {
+      "department_number": "54",
+      "department": "Department of Planning and Development",
+      "budget_2026": {
+        "total": 146482815.0,
+        "local_funds": 114033815.0,
+        "grants": 32449000.0,
+        "per_resident_total": 53.83,
+        "per_resident_local": 41.9,
+        "per_household_total": 124.94
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 194.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 194,
+        "cofa_printed_page": 89,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 153,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• On target to meet the goal of making 700 vacant City lots available for private purchase, with 387 parcels offered in April, 44 in August, and approximately 300 anticipated in October, all through the City's land sale portal ChiBlockBuilder.com. • The Missing Middle initiative will ex ceed its 2025 goal of 120 West and South Side lot listings for market-rate housing construction, with 98 listed to date and more than 50 anticipated this fall. Meanwhile, the goal of closing every North Lawndale Missing Middle project will advance with 24 sales to be finalized along with the remaining 12 by the end of the year. • Expecting to ex ceed the 2025 goal of awarding $60M in medium and large capital improvement grants to at least 30 organizations. Meanwhile, DPD is approximately halfway toward the goal of making pre- development grant awards to 15 organizations, with the remainder anticipated this fall. • On pace to ex ceed the 2025 goal of awarding at least $88 million in small grants to at least 375 recipients.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "TIF datasets exist on the data portal (for example qm7s-3ctt, the TIF annual report) but were not analyzed here. No outcome measure found.",
+      "missing": null
+    },
+    {
+      "department_number": "55",
+      "department": "Chicago Police Board",
+      "budget_2026": {
+        "total": 498200.0,
+        "local_funds": 498200.0,
+        "grants": 0.0,
+        "per_resident_total": 0.18,
+        "per_resident_local": 0.18,
+        "per_household_total": 0.42
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 2.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 2,
+        "cofa_printed_page": 119,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 116,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Decided four discharge cases and ruled on two COPA/ CPD disagreement cases through July 31. • Decided 19 appeals from disqualified CPD applicants through July 31. • Currently conducting a comprehensive review of the CPD Rules of Conduct to determine which existing rules may be revised or for which comments may be drafted that will more clearly and effectively communicate to Chicago police officers and the public how CPD members are required to conduct themselves.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure found in this pass.",
+      "missing": null
+    },
+    {
+      "department_number": "57",
+      "department": "Chicago Police Department",
+      "budget_2026": {
+        "total": 2109811600.0,
+        "local_funds": 2023303600.0,
+        "grants": 86508000.0,
+        "per_resident_total": 775.29,
+        "per_resident_local": 743.5,
+        "per_household_total": 1799.48
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 13727.0,
+        "hourly_or_monthly_position_rows_not_counted": 8,
+        "cofa_ftes_budgeted": 13792,
+        "cofa_printed_page": 123,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 118,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• In partnership with other public safety agencies, has delivered year over year reductions of 31. 7% in homicides, 36.6% in shooting incidents, 33.3% in robberies, and 47.4% in vehicular hijackings as August 19th. • Created the Victim Services Division with 2,248 connections with victims and 1,280 referrals to non- profit partners to center the needs of victims in our response as of August 1st. • Piloted new revenue generating initiatives to digitize ticketing and billing stadiums for traffic control services and expanded Strategic Decision Support Centers to analyze and respond to crime on the CTA.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "peer_comparison_census_2024": {
+        "census_item": "E62",
+        "function": "Police protection",
+        "match_quality": "approximate",
+        "chicago_per_resident": 839.94,
+        "peer_average_per_resident": 649.06,
+        "chicago_vs_peer_average_pct": 29.4,
+        "rank_of_5_highest_first": 2,
+        "peer_cities": [
+          "New York City",
+          "Los Angeles",
+          "Houston",
+          "Philadelphia"
+        ],
+        "source": "https://www2.census.gov/programs-surveys/gov-finances/tables/2024/2024_Individual_Unit_Files.zip",
+        "caveats": "See comparability_limits in data/context_peers_2024.json. Census 2024, not FY2026. City government only."
+      },
+      "settlements": {
+        "payout_2025_excluding_watts": 258956775.56,
+        "payout_2025_including_watts": 360256775.56,
+        "outside_counsel_2025": 36081682.68,
+        "budget_2026_for_judgments_line": 82558000.0,
+        "per_resident_2025_excluding_watts": 95.16,
+        "source": "data/context_settlements_2019_2025.json"
+      },
+      "oversight_finding_ids": [
+        "cpd-homicide-clearance-2025",
+        "oig-clearance-caution-2026",
+        "budget-overview-clearance-2025",
+        "oig-cpd-911-followup-2026",
+        "cofa-cpd-overtime-fy26",
+        "budget-overview-cpd-civilianization",
+        "civicfed-adopted-2026"
+      ],
+      "value_metric_coverage": "have",
+      "what_a_resident_can_check": "Homicide clearance (71% self-reported, with the Inspector General's warning), crime totals, settlements, overtime, peer per-resident. Missing: response times (OIG says data gaps), complaint outcomes.",
+      "missing": null
+    },
+    {
+      "department_number": "58",
+      "department": "Office of Emergency Management and Communications",
+      "budget_2026": {
+        "total": 99931120.0,
+        "local_funds": 91493120.0,
+        "grants": 8438000.0,
+        "per_resident_total": 36.72,
+        "per_resident_local": 33.62,
+        "per_household_total": 85.23
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 854.0,
+        "hourly_or_monthly_position_rows_not_counted": 9,
+        "cofa_ftes_budgeted": 970,
+        "cofa_printed_page": 128,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 121,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• In an effort to improve the wellness of OEMC's critical 9-1-1 workforce , OEMC's new onsite clinical therapist program was developed and continues to expand a first-of-its-kind Employee Assistance Program (EAP) for OEMC employees. This includes dedicated wellness trainings, check-in appointments, counseling sessions, informational materials, wellness fairs and providers, amongst other resources. • Expanded its partnership with City Colleges to offer an OEMC-specific course at additional campus locations to diversify and strengthen OEMC's job applicant pool. • Provided citywide coordination and support to hundreds of events, including hosting planning meetings, scenario-based workshops, and after-action reviews. In addition, OEMC continues coordinating resources, deploying bollards, pushing out notifications, public information, and situation reports, staffing forward command posts, and activating the Emergency Operations Center , when necessary. • Coordinated the citywide response to an increasing number of extreme weather events, including multiple e xtreme cold, extreme heat, and flash flooding incidents. • Built upon foundational Safe Chicago efforts to expand bleeding control kits to new partners, like the Park District, as well as critical training to additional houses of worship across the City.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [
+        "oig-cpd-911-followup-2026",
+        "oig-311-audit-2026"
+      ],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "OIG audit of 311 and 911 response-time data follow-up. No 911 answer-time measure found.",
+      "missing": null
+    },
+    {
+      "department_number": "59",
+      "department": "Chicago Fire Department",
+      "budget_2026": {
+        "total": 901681972.0,
+        "local_funds": 862436972.0,
+        "grants": 39245000.0,
+        "per_resident_total": 331.34,
+        "per_resident_local": 316.92,
+        "per_household_total": 769.05
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 5137.0,
+        "hourly_or_monthly_position_rows_not_counted": 1,
+        "cofa_ftes_budgeted": 5141,
+        "cofa_printed_page": 132,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 123,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Twenty Chicago P olice and Firefighter Training Academy (CPFTA) participants and eight One Summer Chicago interns received immersive, hands-on exposure to careers in the fire service, expanding their knowledge and opportunities for future employment in public safety. • In partnership with the Department of Family and Support Services (DFSS), the CFD hosted Camp Courage, a three-day, interactive training experience. The program introduced over 200 youth-82.5% of whom were CPS students representing over 40 wards-to potential careers in the fire service. • The EAP has expanded to include six clinical therapists with diverse backgrounds, aligning with the diversity of CFD's workforce. In addition, CFD hosted peer support and recruitment events and a peer support town hall aimed at normalizing the use of EAP services. • The Mobile Integrated Health Unit (MIH) expanded its coverage from 26 to 37 neighborhoods, increasing its ability to serve more communities across Chicago . • CFD has implemented a referral process within its Patient Care R eport system, allowing for targeted follow-up by the MIH Unit. This initiative aims to reduce repeat \"citizen assist\" calls by connecting residents with additional resources and support services.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "service_311_2025": {
+        "owner_department_label": "Fire",
+        "requests": 282,
+        "avg_days_to_close": 16.0,
+        "requests_per_1000_residents": 0.1,
+        "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
+        "focus_types_completed_speed": [],
+        "top_request_types": [],
+        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+      },
+      "peer_comparison_census_2024": {
+        "census_item": "E24",
+        "function": "Fire protection",
+        "match_quality": "approximate",
+        "chicago_per_resident": 261.56,
+        "peer_average_per_resident": 329.76,
+        "chicago_vs_peer_average_pct": -20.7,
+        "rank_of_5_highest_first": 3,
+        "peer_cities": [
+          "New York City",
+          "Los Angeles",
+          "Houston",
+          "Philadelphia"
+        ],
+        "source": "https://www2.census.gov/programs-surveys/gov-finances/tables/2024/2024_Individual_Unit_Files.zip",
+        "caveats": "See comparability_limits in data/context_peers_2024.json. Census 2024, not FY2026. City government only."
+      },
+      "settlements": {
+        "budget_2026_for_judgments_line": 12000000.0,
+        "note": "Fire's judgments line is $12M in the 2026 appropriations. We found no public fire-specific payout total."
+      },
+      "oversight_finding_ids": [
+        "oig-cfd-response-times-2025",
+        "oig-cfd-fire-prevention-2025",
+        "cofa-cfd-manning-2026",
+        "oig-cfd-hiring-note",
+        "civicfed-adopted-2026",
+        "cofa-midyear-options-2026"
+      ],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "CFD does not report response times publicly (OIG, COFA). Overtime, staffing and inspection findings exist. Total emergency events (365,573 in 2025) from COFA.",
+      "missing": null
+    },
+    {
+      "department_number": "60",
+      "department": "Civilian Office of Police Accountability",
+      "budget_2026": {
+        "total": 15781027.0,
+        "local_funds": 15781027.0,
+        "grants": 0.0,
+        "per_resident_total": 5.8,
+        "per_resident_local": 5.8,
+        "per_household_total": 13.46
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 150.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 150,
+        "cofa_printed_page": 136,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 125,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• From January 1 - June 30, received 3, 168 complaints. • Through second quarter, has 609 pending cases under investigation. • Concluded 280 cases in the first half of 2025. • Executed robust community engagement of nearly 14,000 residents through participation in community meetings. These meetings took place throughout 34 wards, 18 police districts and 42 community areas. • The Video Release and T ransparency Unit (VRTU), which positions the City of Chicago to deliver on its obligations well in advance of the current 60-day release mandate, published 12 full transparency releases with a total of 222 materials (body worn camera, police reports, audio files, etc.). • As of the most recent public reporting on the consent decree, achieved 90% full compliance while building on a robust internal tracking system that mak es the consent decree compliance more efficient and thorough. • Finalized the Timeliness Benchmarks P olicy and presented training to staff to ensure compliance. • Established a collaborative process with CPD for policy recommendations, which led to CPD incorporating COPA 's suggestions into their directives.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [
+        "oig-copa-timeliness-2026"
+      ],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "OIG review of its backlog initiative. COPA Cases datasets exist (mft5-nfa8), not analyzed.",
+      "missing": null
+    },
+    {
+      "department_number": "62",
+      "department": "Community Commission for Public Safety and Accountability",
+      "budget_2026": {
+        "total": 4026765.0,
+        "local_funds": 4026765.0,
+        "grants": 0.0,
+        "per_resident_total": 1.48,
+        "per_resident_local": 1.48,
+        "per_household_total": 3.43
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 29.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 29,
+        "cofa_printed_page": 140,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 128,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Reviewed policies and practices on traffic stops, including e xtensive community engagement and engagement with subject matter experts, in order to engage with CPD, Illinois Attorney General, and Consent Decree Independent Monitor to develop traffic stops policy. • Launched a search for a COPA Chief Administrator, which included community engagement and engagement with subject matter experts. • Established goals for CPD, COP A, and Police Board, with clear deliverables and objectives; met quarterly to assess progress. • Increased and improved communication between District Councils and CPD District Commanders, enabling District Council members to better address constituents' concerns. • Supported District Council efforts to engage in district strategic planning efforts, strengthened the COPA mediation program, developed an alternative response pilot program, and informed on the development of a CPD workforce allocation plan.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure found in this pass.",
+      "missing": null
+    },
+    {
+      "department_number": "67",
+      "department": "Department of Buildings",
+      "budget_2026": {
+        "total": 39368146.0,
+        "local_funds": 39368146.0,
+        "grants": 0.0,
+        "per_resident_total": 14.47,
+        "per_resident_local": 14.47,
+        "per_household_total": 33.58
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 162.0,
+        "hourly_or_monthly_position_rows_not_counted": 24,
+        "cofa_ftes_budgeted": 279,
+        "cofa_printed_page": 149,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 161,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Following the launch of the Express Permit Program in late 2023 and its expansion in late 2024, the DOB continues training users on the new platform through webinars and telephone technical support, ensuring efficiency and ease of experience for homeowners, businesses, building owners/tenants, and their contractors. This Express Permit Program \"cuts the tape\" to streamline smaller-scale commercial work such as kitchenette and bathroom remodels. • The Project-Do x System upgrades are now complete, featuring a modern interface with enhanced reporting tools that improve project management and tracking for plan-based permits. This update supports the Department's long-term technology modernization, as we transition from Hansen 7 to IPS 11 for all permits. • Enhanced and automated data sharing with the Department of Business Affairs and Consumer Protection (BA CP) regarding licensed expediters. This improved transparency and consumer protection and ensures only properly licensed expediters have access to provide services that require this license.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "service_311_2025": {
+        "owner_department_label": "DOB - Buildings",
+        "requests": 37578,
+        "avg_days_to_close": 47.7,
+        "requests_per_1000_residents": 13.8,
+        "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
+        "focus_types_completed_speed": [
+          {
+            "sr_type": "Building Violation",
+            "completed_requests": 18477,
+            "share_within_5_days": 0.2711,
+            "share_within_7_days": 0.3102,
+            "avg_days_to_close": 46.6
+          }
+        ],
+        "top_request_types": [
+          {
+            "sr_type": "Building Violation",
+            "requests": 18481,
+            "completed": 18477,
+            "open": 3,
+            "canceled": 1,
+            "share_completed": 0.9998
+          },
+          {
+            "sr_type": "Buildings - Plumbing Violation",
+            "requests": 8485,
+            "completed": 8477,
+            "open": 8,
+            "canceled": 0,
+            "share_completed": 0.9991
+          }
+        ],
+        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+      },
+      "permits_issued_by_year": [
+        {
+          "year": 2019,
+          "permits": 48544,
+          "partial_year": false
+        },
+        {
+          "year": 2020,
+          "permits": 38513,
+          "partial_year": false
+        },
+        {
+          "year": 2021,
+          "permits": 39119,
+          "partial_year": false
+        },
+        {
+          "year": 2022,
+          "permits": 38337,
+          "partial_year": false
+        },
+        {
+          "year": 2023,
+          "permits": 34389,
+          "partial_year": false
+        },
+        {
+          "year": 2024,
+          "permits": 33440,
+          "partial_year": false
+        },
+        {
+          "year": 2025,
+          "permits": 32032,
+          "partial_year": false
+        },
+        {
+          "year": 2026,
+          "permits": 24021,
+          "partial_year": true
+        }
+      ],
+      "peer_comparison_census_2024": {
+        "census_item": "E66",
+        "function": "Protective inspection and regulation",
+        "match_quality": "approximate",
+        "chicago_per_resident": 16.1,
+        "peer_average_per_resident": 52.45,
+        "chicago_vs_peer_average_pct": -69.3,
+        "rank_of_5_highest_first": 5,
+        "peer_cities": [
+          "New York City",
+          "Los Angeles",
+          "Houston",
+          "Philadelphia"
+        ],
+        "source": "https://www2.census.gov/programs-surveys/gov-finances/tables/2024/2024_Individual_Unit_Files.zip",
+        "caveats": "See comparability_limits in data/context_peers_2024.json. Census 2024, not FY2026. City government only."
+      },
+      "oversight_finding_ids": [
+        "oig-dob-permit-inspections-2022"
+      ],
+      "value_metric_coverage": "have",
+      "what_a_resident_can_check": "311 building violation requests and speed, permits issued per year, OIG inspection audit.",
+      "missing": null
+    },
+    {
+      "department_number": "70",
+      "department": "Department of Business Affairs and Consumer Protection",
+      "budget_2026": {
+        "total": 36783162.0,
+        "local_funds": 33136162.0,
+        "grants": 3647000.0,
+        "per_resident_total": 13.52,
+        "per_resident_local": 12.18,
+        "per_household_total": 31.37
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 202.0,
+        "hourly_or_monthly_position_rows_not_counted": 1,
+        "cofa_ftes_budgeted": 213,
+        "cofa_printed_page": 153,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 164,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Protected workers under the new P aid Leave and Paid Sick and Safe Leave Ordinance and investigated wage theft complaints while enforcing Chicago's existing worker protections, including the annually scheduled increase to the City's minimum wage and the second stage of phaseout for the tipped-wage credit. • Supported the small business community through education and access to resources by hosting webinars, small business expos, including youth- centered business events to inspire the next generation of Chicago's entrepreneurs. • Implemented a redesigned web-based business license guide to increase access and provide an improved licensing experience. • Reimagined the Neighborhood Business Development Center (NBDC) program has made significant strides in supporting small businesses across Chicago. With an equitable funding strategy, improved data collection, and increased feedback from the small business community, the program has achieved its goal of ensuring coverage in all 77 community areas. • Announced a partnership with City Colleges of Chicago for the BA CP Entrepreneur Certificate Program, which will provide Credit for Prior Learning through Olive Harvey College upon completion.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "service_311_2025": {
+        "owner_department_label": "BACP - Business Affairs and Consumer Protection",
+        "requests": 11852,
+        "avg_days_to_close": 34.9,
+        "requests_per_1000_residents": 4.4,
+        "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
+        "focus_types_completed_speed": [],
+        "top_request_types": [],
+        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "311 volume and speed. Business license performance dataset exists (emvs-38e6), not analyzed.",
+      "missing": null
+    },
+    {
+      "department_number": "72",
+      "department": "Department of Environment",
+      "budget_2026": {
+        "total": 52458895.0,
+        "local_funds": 5610895.0,
+        "grants": 46848000.0,
+        "per_resident_total": 19.28,
+        "per_resident_local": 2.06,
+        "per_household_total": 44.74
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 79.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 79,
+        "cofa_printed_page": 157,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 167,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Restored the Department of Environment, bringing additional capacity to advance the City's climate and environmental justice priorities. • Supported FFM in library solar and efficiency program, installing lighting retrofits and rooftop solar panels at two libraries, coupled with three solar education workshops. • Partnered with DOH to advance the Green Homes Chicago retrofit program for 1-to-4-unit homes with thirty 1-to-4-unit homes retrofitted in 2025. • Introduced the Hazel Johnson Cumulative Impacts Ordinance in City Council, in partnership with CDPH and community leaders, to address the disproportionate pollution burden placed on some Chicago communities. • Partnered with D WM, CPS, MWRD and DOE to advance Space to Grow, transforming CPS schoolyards into multifunctional green spaces that manage stormwater, reduce urban heat, and provide safe outdoor play areas through Space to Grow campaign. Two Space to Grow schools were completed, and five additional schools are in development.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure found in this pass.",
+      "missing": null
+    },
+    {
+      "department_number": "73",
+      "department": "Chicago Animal Care and Control",
+      "budget_2026": {
+        "total": 8177388.0,
+        "local_funds": 8177388.0,
+        "grants": 0.0,
+        "per_resident_total": 3.0,
+        "per_resident_local": 3.0,
+        "per_household_total": 6.97
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 90.0,
+        "hourly_or_monthly_position_rows_not_counted": 1,
+        "cofa_ftes_budgeted": 79,
+        "cofa_printed_page": 161,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 169,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• As of July 31, 2025, increased adoptions by 27%, compared to 2024. • Processed 10 ,700 animals, with 1,967 adoptions, and 5,605 transfers to rescue, and returned 854 pets to their owners as of July 31, 2025. • Field Services received and responded to 26,297 calls through July 31, 2025. • Performed 1, 731 spay/neuter surgeries with an additional 443 spay/neuter surgeries performed by our partner agencies at no cost to the City through July 31, 2025. • Maintained significant growth in public engagement, continuing gains in social media reach, positive media coverage, and website improvements initiated in 2024. • Continued the public-private partnership with PA WS Chicago through the PAWS Chicago 360@CACC initiative. • Increased outreach and supportive services to Chicago residents to keep pets in their homes.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "service_311_2025": {
+        "owner_department_label": "Animal Care and Control",
+        "requests": 38736,
+        "avg_days_to_close": 9.8,
+        "requests_per_1000_residents": 14.2,
+        "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
+        "focus_types_completed_speed": [
+          {
+            "sr_type": "Stray Animal Complaint",
+            "completed_requests": 1870,
+            "share_within_5_days": 0.7422,
+            "share_within_7_days": 0.7877,
+            "avg_days_to_close": 17.9
+          }
+        ],
+        "top_request_types": [
+          {
+            "sr_type": "Stray Animal Complaint",
+            "requests": 11694,
+            "completed": 1870,
+            "open": 24,
+            "canceled": 9800,
+            "share_completed": 0.1599
+          },
+          {
+            "sr_type": "Report an Injured Animal",
+            "requests": 9455,
+            "completed": 8194,
+            "open": 0,
+            "canceled": 1261,
+            "share_completed": 0.8666
+          },
+          {
+            "sr_type": "Vicious Animal Complaint",
+            "requests": 6011,
+            "completed": 5399,
+            "open": 0,
+            "canceled": 612,
+            "share_completed": 0.8982
+          },
+          {
+            "sr_type": "Nuisance Animal Complaint",
+            "requests": 5499,
+            "completed": 5391,
+            "open": 8,
+            "canceled": 100,
+            "share_completed": 0.9804
+          }
+        ],
+        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "311 request volume and speed. For stray animal complaints, 1,870 of 11,694 are marked Completed and 9,800 are marked Canceled (2025). We do not know why so many are canceled.",
+      "missing": null
+    },
+    {
+      "department_number": "77",
+      "department": "License Appeal Commission",
+      "budget_2026": {
+        "total": 209988.0,
+        "local_funds": 209988.0,
+        "grants": 0.0,
+        "per_resident_total": 0.08,
+        "per_resident_local": 0.08,
+        "per_household_total": 0.18
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 1.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 1,
+        "cofa_printed_page": 165,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 171,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Held seven public status meetings as of August 8, 2025, matching the number of sessions through that date in 2024. • Continued case management from 2024 with one case and three new appeals filed with the Commission as of August 8, 2025.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "No outcome measure found in this pass.",
+      "missing": null
+    },
+    {
+      "department_number": "78",
+      "department": "Board of Ethics",
+      "budget_2026": {
+        "total": 925597.0,
+        "local_funds": 925597.0,
+        "grants": 0.0,
+        "per_resident_total": 0.34,
+        "per_resident_local": 0.34,
+        "per_household_total": 0.79
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 8.0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": 8,
+        "cofa_printed_page": 169,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 173,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Implemented comprehensive amendments to the GEO' s lobbying and campaign financing provisions and conducted educational outreach to the affected non-profit community. • Proposed amendments to the Board's Rules & Regulations and consulted with DHR, City Council, and DOL on proposed amendments to the City's ethic laws and Personnel Rules. • Published one new and revised all 37 other educational brochures on various aspects of the GEO. • Issued one confidential formal advisory opinion, and 4,500 informal advisory opinions to City personnel and others covered by the GEO. • Annual, online training was administered for 32,700 City personnel and 765 lobbyists. • Conducted 64 in-person ethics training classes for 1,100 City personnel. • Collected $445,000 in lobbyist registration fees. • Found probable cause in 13 matters referred by the OIG or a Special OIG • Referred 14 complaints to the OIG. • Advised the Mayor's Office , the Department of Law, and OIG on the Green Social Housing Ordinance, leading to its enactment.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "Old performance datasets exist (2012). No current outcome measure found.",
+      "missing": null
+    },
+    {
+      "department_number": "81",
+      "department": "Department of Streets and Sanitation",
+      "budget_2026": {
+        "total": 349888561.0,
+        "local_funds": 346888561.0,
+        "grants": 3000000.0,
+        "per_resident_total": 128.57,
+        "per_resident_local": 127.47,
+        "per_household_total": 298.42
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 347.0,
+        "hourly_or_monthly_position_rows_not_counted": 118,
+        "cofa_ftes_budgeted": 2204,
+        "cofa_printed_page": 174,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 92,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Onboarded 97 General Laborer T rainees from Chicago Public Schools who worked on neighborhood cleanup initiatives and received classroom and hands-on training from our partners at LiUna 1001. • Launched new food scrap diversion programs, including 20 drop-off sites with 15 more in planning, and distributed 2,598 backyard compost bins. • Trimmed 13,413 trees year-to-date, with 195,617 trims completed since the Area Trimming program launched. • Planted 1,833 trees so far in 2025, contributing to the 64,452 total trees planted toward the City's 75,000- tree goal within five years. • Addressed 53,741 graffiti removal complaints year to date , with an annual projection to exceed 95,000 service calls, ensuring graffiti is removed within five days. • Y ear to date, responded to 22,716 rodent baiting requests and removed 6,194 dead animals, maintaining a five-day response time.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "service_311_2025": {
+        "owner_department_label": "Streets and Sanitation",
+        "requests": 483252,
+        "avg_days_to_close": 17.3,
+        "requests_per_1000_residents": 177.6,
+        "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
+        "focus_types_completed_speed": [
+          {
+            "sr_type": "Graffiti Removal Request",
+            "completed_requests": 89034,
+            "share_within_5_days": 0.9939,
+            "share_within_7_days": 0.9969,
+            "avg_days_to_close": 1.1
+          },
+          {
+            "sr_type": "Abandoned Vehicle Complaint",
+            "completed_requests": 52601,
+            "share_within_5_days": 0.3605,
+            "share_within_7_days": 0.4202,
+            "avg_days_to_close": 19.7
+          },
+          {
+            "sr_type": "Garbage Cart Maintenance",
+            "completed_requests": 47681,
+            "share_within_5_days": 0.1711,
+            "share_within_7_days": 0.2239,
+            "avg_days_to_close": 24.2
+          },
+          {
+            "sr_type": "Rodent Baiting/Rat Complaint",
+            "completed_requests": 43053,
+            "share_within_5_days": 0.6682,
+            "share_within_7_days": 0.7971,
+            "avg_days_to_close": 4.1
+          },
+          {
+            "sr_type": "Tree Emergency",
+            "completed_requests": 25330,
+            "share_within_5_days": 0.9097,
+            "share_within_7_days": 0.9462,
+            "avg_days_to_close": 2.9
+          },
+          {
+            "sr_type": "Blue Recycling Cart",
+            "completed_requests": 20726,
+            "share_within_5_days": 0.0294,
+            "share_within_7_days": 0.041,
+            "avg_days_to_close": 34.6
+          },
+          {
+            "sr_type": "Fly Dumping Complaint",
+            "completed_requests": 14561,
+            "share_within_5_days": 0.5558,
+            "share_within_7_days": 0.6166,
+            "avg_days_to_close": 16.3
+          },
+          {
+            "sr_type": "Missed Garbage Pick-Up Complaint",
+            "completed_requests": 9088,
+            "share_within_5_days": 0.7676,
+            "share_within_7_days": 0.852,
+            "avg_days_to_close": 4.7
+          }
+        ],
+        "top_request_types": [
+          {
+            "sr_type": "Graffiti Removal Request",
+            "requests": 90857,
+            "completed": 89034,
+            "open": 1000,
+            "canceled": 823,
+            "share_completed": 0.9799
+          },
+          {
+            "sr_type": "Abandoned Vehicle Complaint",
+            "requests": 52937,
+            "completed": 52601,
+            "open": 336,
+            "canceled": 0,
+            "share_completed": 0.9937
+          },
+          {
+            "sr_type": "Garbage Cart Maintenance",
+            "requests": 48744,
+            "completed": 47681,
+            "open": 286,
+            "canceled": 777,
+            "share_completed": 0.9782
+          },
+          {
+            "sr_type": "Rodent Baiting/Rat Complaint",
+            "requests": 43083,
+            "completed": 43053,
+            "open": 0,
+            "canceled": 30,
+            "share_completed": 0.9993
+          },
+          {
+            "sr_type": "Tree Trim Request (NO LONGER BEING ACCEPTED)",
+            "requests": 42858,
+            "completed": 42852,
+            "open": 6,
+            "canceled": 0,
+            "share_completed": 0.9999
+          },
+          {
+            "sr_type": "Tree Debris Clean-Up Request",
+            "requests": 27043,
+            "completed": 23120,
+            "open": 12,
+            "canceled": 3911,
+            "share_completed": 0.8549
+          },
+          {
+            "sr_type": "Tree Emergency",
+            "requests": 25862,
+            "completed": 25330,
+            "open": 157,
+            "canceled": 375,
+            "share_completed": 0.9794
+          },
+          {
+            "sr_type": "Blue Recycling Cart",
+            "requests": 21115,
+            "completed": 20726,
+            "open": 115,
+            "canceled": 274,
+            "share_completed": 0.9816
+          }
+        ],
+        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+      },
+      "peer_comparison_census_2024": {
+        "census_item": "E81",
+        "function": "Garbage and solid waste",
+        "match_quality": "approximate",
+        "chicago_per_resident": 69.06,
+        "peer_average_per_resident": 152.19,
+        "chicago_vs_peer_average_pct": -54.6,
+        "rank_of_5_highest_first": 4,
+        "peer_cities": [
+          "New York City",
+          "Los Angeles",
+          "Houston",
+          "Philadelphia"
+        ],
+        "source": "https://www2.census.gov/programs-surveys/gov-finances/tables/2024/2024_Individual_Unit_Files.zip",
+        "caveats": "See comparability_limits in data/context_peers_2024.json. Census 2024, not FY2026. City government only."
+      },
+      "oversight_finding_ids": [
+        "oig-rat-abatement-2026",
+        "oig-auto-pounds-2026",
+        "cofa-midyear-options-2026",
+        "budget-overview-graffiti-2025",
+        "budget-overview-rodents-2025"
+      ],
+      "value_metric_coverage": "have",
+      "what_a_resident_can_check": "311 volume and speed for graffiti, rats, carts, abandoned cars. Two OIG audits (rats, auto pounds). Peer garbage spending per resident.",
+      "missing": null
+    },
+    {
+      "department_number": "84",
+      "department": "Chicago Department of Transportation",
+      "budget_2026": {
+        "total": 1837522563.0,
+        "local_funds": 240118563.0,
+        "grants": 1597404000.0,
+        "per_resident_total": 675.23,
+        "per_resident_local": 88.24,
+        "per_household_total": 1567.24
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 368.0,
+        "hourly_or_monthly_position_rows_not_counted": 136,
+        "cofa_ftes_budgeted": 1481,
+        "cofa_printed_page": 178,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 97,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• On pace to resurface over 150 miles of residential and arterial streets, install 7,500 ADA ramps, modernize street lighting on 250 blocks of residential and arterial streets, and complete 50 green alley reconstructions citywide. • On pace to complete streetscape improvement projects along five commercial corridors and break ground on three more, enhancing walkability and traffic safety. • Broke ground on the Chicago-Halsted Bridge and Viaduct, a major reconstruction project to replace the Chicago A venue Bridge over the Chicago River and the adjacent Halsted Street Viaduct, upgrading infrastructure to improve safety, accessibility, and multimodal connectivity. • On pace to install 50 new speed cameras across Chicago in coordination with City Council, prioritizing areas experiencing traffic safety concerns and using crash data and community input to guide site selection.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "service_311_2025": {
+        "owner_department_label": "CDOT - Department of Transportation",
+        "requests": 144702,
+        "avg_days_to_close": 38.8,
+        "requests_per_1000_residents": 53.2,
+        "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
+        "focus_types_completed_speed": [
+          {
+            "sr_type": "Street Light Out Complaint",
+            "completed_requests": 31368,
+            "share_within_5_days": 0.8064,
+            "share_within_7_days": 0.862,
+            "avg_days_to_close": 7.6
+          },
+          {
+            "sr_type": "Pothole in Street Complaint",
+            "completed_requests": 28230,
+            "share_within_5_days": 0.4617,
+            "share_within_7_days": 0.5328,
+            "avg_days_to_close": 26.5
+          },
+          {
+            "sr_type": "Traffic Signal Out Complaint",
+            "completed_requests": 23751,
+            "share_within_5_days": 0.8513,
+            "share_within_7_days": 0.8693,
+            "avg_days_to_close": 8.1
+          },
+          {
+            "sr_type": "Alley Pothole Complaint",
+            "completed_requests": 5556,
+            "share_within_5_days": 0.2226,
+            "share_within_7_days": 0.2822,
+            "avg_days_to_close": 52.6
+          }
+        ],
+        "top_request_types": [
+          {
+            "sr_type": "Street Light Out Complaint",
+            "requests": 31810,
+            "completed": 31368,
+            "open": 428,
+            "canceled": 14,
+            "share_completed": 0.9861
+          },
+          {
+            "sr_type": "Pothole in Street Complaint",
+            "requests": 28300,
+            "completed": 28230,
+            "open": 62,
+            "canceled": 8,
+            "share_completed": 0.9975
+          },
+          {
+            "sr_type": "Traffic Signal Out Complaint",
+            "requests": 24258,
+            "completed": 23751,
+            "open": 368,
+            "canceled": 139,
+            "share_completed": 0.9791
+          },
+          {
+            "sr_type": "Sign Repair Request - All Other Signs",
+            "requests": 9828,
+            "completed": 9042,
+            "open": 642,
+            "canceled": 144,
+            "share_completed": 0.92
+          },
+          {
+            "sr_type": "Snow – Uncleared Sidewalk Complaint",
+            "requests": 8567,
+            "completed": 8432,
+            "open": 34,
+            "canceled": 101,
+            "share_completed": 0.9842
+          },
+          {
+            "sr_type": "Inspect Public Way Request",
+            "requests": 8193,
+            "completed": 7261,
+            "open": 916,
+            "canceled": 16,
+            "share_completed": 0.8862
+          },
+          {
+            "sr_type": "Alley Light Out Complaint",
+            "requests": 5753,
+            "completed": 5727,
+            "open": 24,
+            "canceled": 2,
+            "share_completed": 0.9955
+          },
+          {
+            "sr_type": "Alley Pothole Complaint",
+            "requests": 5559,
+            "completed": 5556,
+            "open": 2,
+            "canceled": 1,
+            "share_completed": 0.9995
+          }
+        ],
+        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+      },
+      "potholes": {
+        "patched_by_year": [
+          {
+            "year": 2019,
+            "blocks_patched": 30579,
+            "potholes_filled": 434689,
+            "partial_year": false
+          },
+          {
+            "year": 2020,
+            "blocks_patched": 31795,
+            "potholes_filled": 371877,
+            "partial_year": false
+          },
+          {
+            "year": 2021,
+            "blocks_patched": 24908,
+            "potholes_filled": 274918,
+            "partial_year": false
+          },
+          {
+            "year": 2022,
+            "blocks_patched": 39649,
+            "potholes_filled": 489943,
+            "partial_year": false
+          },
+          {
+            "year": 2023,
+            "blocks_patched": 34885,
+            "potholes_filled": 366510,
+            "partial_year": false
+          },
+          {
+            "year": 2024,
+            "blocks_patched": 30262,
+            "potholes_filled": 319240,
+            "partial_year": false
+          },
+          {
+            "year": 2025,
+            "blocks_patched": 25633,
+            "potholes_filled": 248541,
+            "partial_year": false
+          },
+          {
+            "year": 2026,
+            "blocks_patched": 24005,
+            "potholes_filled": 266366,
+            "partial_year": true
+          }
+        ],
+        "avg_days_request_to_patch_2025": 35.2,
+        "source": "https://data.cityofchicago.org/d/wqdh-9gek"
+      },
+      "peer_comparison_census_2024": {
+        "census_item": "E44",
+        "function": "Streets and highways",
+        "match_quality": "approximate",
+        "chicago_per_resident": 157.85,
+        "peer_average_per_resident": 136.38,
+        "chicago_vs_peer_average_pct": 15.7,
+        "rank_of_5_highest_first": 3,
+        "peer_cities": [
+          "New York City",
+          "Los Angeles",
+          "Houston",
+          "Philadelphia"
+        ],
+        "source": "https://www2.census.gov/programs-surveys/gov-finances/tables/2024/2024_Individual_Unit_Files.zip",
+        "caveats": "See comparability_limits in data/context_peers_2024.json. Census 2024, not FY2026. City government only."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "have",
+      "what_a_resident_can_check": "Potholes patched per year and days to patch, 311 street light, signal and pothole speed, peer streets spending.",
+      "missing": null
+    },
+    {
+      "department_number": "85",
+      "department": "Chicago Department of Aviation",
+      "budget_2026": {
+        "total": 1666093529.0,
+        "local_funds": 919564529.0,
+        "grants": 746529000.0,
+        "per_resident_total": 612.24,
+        "per_resident_local": 337.91,
+        "per_household_total": 1421.03
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 1215.0,
+        "hourly_or_monthly_position_rows_not_counted": 87,
+        "cofa_ftes_budgeted": 2445,
+        "cofa_printed_page": 182,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 104,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Broke ground on foundation work for Satellite Concourse 1, the first full concourse facility to be built at O'Hare in more than 30 years. Satellite Concourse 1 adds 19 new gates and is designed to flexibly accommodate different sizes of aircraft bodies, increase operational efficiency for carriers, and reduce layover transfers for passengers in one of the nation's busiest airports. • Closed submissions for the ORDerUp RFP on June 20, one of the largest concessions bid opportunities in the history of U .S. airports. • Furthered the CDA 's commitment to being a good neighbor in partnership with local wards and suburban communities through the O'Hare Noise Compatibility Commission and the Midway Noise Compatibility Commission. • Expanded outreach through the annual Airport Expo and Job Fair - which had its largest ever turnout in 2025 with more than 1,600 attendees - as well as through connecting with school and community groups by hosting or attending more than 120 local events throughout the region.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "service_311_2025": {
+        "owner_department_label": "Aviation",
+        "requests": 364926,
+        "avg_days_to_close": 0.0,
+        "requests_per_1000_residents": 134.1,
+        "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
+        "focus_types_completed_speed": [],
+        "top_request_types": [],
+        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "none",
+      "what_a_resident_can_check": "311 volume is mostly information calls. No outcome measure found. Airport costs are paid by airline and passenger fees.",
+      "missing": null
+    },
+    {
+      "department_number": "88",
+      "department": "Department of Water Management",
+      "budget_2026": {
+        "total": 772719058.0,
+        "local_funds": 433053058.0,
+        "grants": 339666000.0,
+        "per_resident_total": 283.95,
+        "per_resident_local": 159.13,
+        "per_household_total": 659.06
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 414.0,
+        "hourly_or_monthly_position_rows_not_counted": 185,
+        "cofa_ftes_budgeted": 2492,
+        "cofa_printed_page": 186,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 107,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• Procured contractor and will break ground on DWM Combined Sewer Wing S torage projects providing approximately 1.5M gallons of sewer storage for West Side affected by the July 2023 storms. • Executed a funding agreement with the Metropolitan Water Reclamation District of Greater Chicago (MWRD) that will provide $6M for Combined Sewer Wing Storage projects. • Initiated three stand-alone sewer improvement projects, with lead service line replacement for impacted locations, to improve the performance of the sewer network. • Performed appro ximately 5,000 lead service line replacements across numerous DWM programs. • Completed the first combined water main replacement/ sewer main replacement/lead service line replacement pilot. • Executed four SBI contracts for block-level lead service line replacements allowing smaller firms to gain initial entry into DWM's replacement programs. • Secured $14M in State R evolving Fund (SRF) funding for lead service line replacements on the South Side.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "service_311_2025": {
+        "owner_department_label": "DWM - Department of Water Management",
+        "requests": 77565,
+        "avg_days_to_close": 29.9,
+        "requests_per_1000_residents": 28.5,
+        "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
+        "focus_types_completed_speed": [
+          {
+            "sr_type": "Water in Basement Complaint",
+            "completed_requests": 17739,
+            "share_within_5_days": 0.9827,
+            "share_within_7_days": 0.986,
+            "avg_days_to_close": 1.3
+          }
+        ],
+        "top_request_types": [
+          {
+            "sr_type": "Water in Basement Complaint",
+            "requests": 18639,
+            "completed": 17739,
+            "open": 38,
+            "canceled": 862,
+            "share_completed": 0.9517
+          },
+          {
+            "sr_type": "Water Lead Test Kit Request",
+            "requests": 16360,
+            "completed": 6632,
+            "open": 8834,
+            "canceled": 894,
+            "share_completed": 0.4054
+          },
+          {
+            "sr_type": "Check for Leak",
+            "requests": 8601,
+            "completed": 7387,
+            "open": 105,
+            "canceled": 1109,
+            "share_completed": 0.8589
+          },
+          {
+            "sr_type": "Water On Street Complaint",
+            "requests": 8186,
+            "completed": 7432,
+            "open": 136,
+            "canceled": 618,
+            "share_completed": 0.9079
+          },
+          {
+            "sr_type": "Sewer Cleaning Inspection Request",
+            "requests": 7333,
+            "completed": 6714,
+            "open": 136,
+            "canceled": 483,
+            "share_completed": 0.9156
+          }
+        ],
+        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+      },
+      "peer_comparison_census_2024": {
+        "census_item": "E91",
+        "function": "Water utility",
+        "match_quality": "approximate",
+        "chicago_per_resident": 155.42,
+        "peer_average_per_resident": 135.26,
+        "chicago_vs_peer_average_pct": 14.9,
+        "rank_of_5_highest_first": 2,
+        "peer_cities": [
+          "New York City",
+          "Los Angeles",
+          "Houston",
+          "Philadelphia"
+        ],
+        "source": "https://www2.census.gov/programs-surveys/gov-finances/tables/2024/2024_Individual_Unit_Files.zip",
+        "caveats": "See comparability_limits in data/context_peers_2024.json. Census 2024, not FY2026. City government only."
+      },
+      "oversight_finding_ids": [
+        "oig-water-billing-2026",
+        "cofa-midyear-options-2026"
+      ],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "OIG water billing audit. 311 water complaints and speed. Peer water and sewer per resident.",
+      "missing": null
+    },
+    {
+      "department_number": "91",
+      "department": "Chicago Public Library",
+      "budget_2026": {
+        "total": 116016346.0,
+        "local_funds": 95544346.0,
+        "grants": 20472000.0,
+        "per_resident_total": 42.63,
+        "per_resident_local": 35.11,
+        "per_household_total": 98.95
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 897.0,
+        "hourly_or_monthly_position_rows_not_counted": 10,
+        "cofa_ftes_budgeted": 1033,
+        "cofa_printed_page": 110,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "self_reported_results_budget_overview": {
+        "printed_page": 143,
+        "pdf_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+        "text_as_extracted": "• A landmark agreement with Chicago Public Schools is enabling automatic library accounts for all students. In 2025, we expanded outreach, deepened out-of- school learning, and entered a new stage focused on usage , equity, and enrichment. • Launched a public-driven strategic planning process, formed an AI W orking Group, and began reimagining HWLC as a next-generation civic and digital anchor. • Expanded ESL, eased ID rules, and launched systemwide inclusion training. We also created a Safety T askforce to strengthen physical and psychological safety. • Offered teen internships at every branch, scaled Jump Into Reading, and delivered more than 75,000 personalized learning and digital support sessions. • Processed over 300 linear feet from the Harsh Collection, launched new cultural programs, and celebrated the Carter G. Woodson R egional Library's 50th Anniversary.",
+        "caveat": "Written by the department's own budget office. PDF text extraction leaves some odd spacing. Not audited."
+      },
+      "peer_comparison_census_2024": {
+        "census_item": "E52",
+        "function": "Libraries",
+        "match_quality": "good",
+        "chicago_per_resident": 45.38,
+        "peer_average_per_resident": 42.39,
+        "chicago_vs_peer_average_pct": 7.1,
+        "rank_of_5_highest_first": 2,
+        "peer_cities": [
+          "New York City",
+          "Los Angeles",
+          "Houston",
+          "Philadelphia"
+        ],
+        "source": "https://www2.census.gov/programs-surveys/gov-finances/tables/2024/2024_Individual_Unit_Files.zip",
+        "caveats": "See comparability_limits in data/context_peers_2024.json. Census 2024, not FY2026. City government only."
+      },
+      "oversight_finding_ids": [],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "Library visitor and circulation datasets exist by branch (2014-2019 only). Peer comparison is a good match.",
+      "missing": null
+    },
+    {
+      "department_number": "99",
+      "department": "Finance General",
+      "budget_2026": {
+        "total": 8190935451.0,
+        "local_funds": 8190935451.0,
+        "grants": 0.0,
+        "per_resident_total": 3009.91,
+        "per_resident_local": 3009.91,
+        "per_household_total": 6986.14
+      },
+      "headcount": {
+        "annual_positions_budgeted_positions_dataset": 0,
+        "hourly_or_monthly_position_rows_not_counted": 0,
+        "cofa_ftes_budgeted": null,
+        "cofa_printed_page": null,
+        "note": "The positions dataset counts 'Annual' positions only. COFA's FTE figure (from the City's Budget Recommendations) is the better headcount where it exists."
+      },
+      "settlements": {
+        "budget_2026_for_judgments_line": 47992820.0,
+        "note": "Finance General holds the citywide 'tort and non-tort judgments' line ($48.0M by our sum of the appropriations)."
+      },
+      "oversight_finding_ids": [
+        "ey-benefits-civicfed-2025",
+        "civicfed-adopted-2026"
+      ],
+      "value_metric_coverage": "partial",
+      "what_a_resident_can_check": "Not a service department. See research/finance_general.md. Pension and debt costs have no service outcome. Civic Federation and COFA comment on its savings options.",
+      "missing": null
+    }
+  ]
+}

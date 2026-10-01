@@ -69,6 +69,7 @@ def main():
     types_sql = ",".join("'%s'" % t.replace("'", "''") for t in FOCUS_TYPES)
     within = socrata("v6vf-nfxy", {
         "$select": "owner_department,sr_type,count(*) as n,"
+                   "sum(case(date_diff_d(closed_date,created_date)<=5,1,true,0)) as within5,"
                    "sum(case(date_diff_d(closed_date,created_date)<=7,1,true,0)) as within7,"
                    "avg(date_diff_d(closed_date,created_date)) as avg_days",
         "$where": WHERE_YEAR + " and status='Completed' and sr_type in (%s)" % types_sql,
@@ -90,7 +91,9 @@ def main():
         n = int(r["n"])
         within_rows.append({
             "owner_department": r["owner_department"], "sr_type": r["sr_type"],
-            "completed_requests": n, "completed_within_7_days": int(r["within7"]),
+            "completed_requests": n, "completed_within_5_days": int(r["within5"]),
+            "share_within_5_days": round(int(r["within5"]) / n, 4),
+            "completed_within_7_days": int(r["within7"]),
             "share_within_7_days": round(int(r["within7"]) / n, 4),
             "avg_days_to_close": round(float(r["avg_days"]), 1),
         })

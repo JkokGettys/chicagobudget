@@ -1,0 +1,813 @@
+{
+  "generated_by": "scripts/context_oversight.py",
+  "how_verified": "Each source is downloaded; each quote is checked as a substring of the source text after collapsing whitespace and normalizing curly quotes and dashes. verified=true means the quote is in the source, not that the source's claim is true.",
+  "findings": [
+    {
+      "id": "oig-cfd-response-times-2025",
+      "departments": [
+        "Chicago Fire Department"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_cfd_followup",
+      "source_url": "https://igchicago.org/wp-content/uploads/2025/10/OIG-Second-Follow-up-to-Second-Audit-of-CFD-and-EMS-Response-Times.pdf",
+      "date": "2025-10-29",
+      "title": "CFD still has not fixed how it measures response times (second follow-up to 2021 audit)",
+      "summary": "The Inspector General checked again and found the Fire Department has not done what the 2021 audit asked: no public response-time reporting, no documented goals, no fix for data gaps. CFD says the budget office denied its requests for data-analysis staff.",
+      "quotes": [
+        "OIG concludes that CFD has not implemented corrective actions related to the audit findings.",
+        "CFD attributed its lack of progress to the Office of Budget and Management's (OBM) denying budget requests for personnel and resources to conduct data analysis."
+      ],
+      "tone": "concern",
+      "caveat": "This is about whether response times are MEASURED and reported, not proof that response times are slow.",
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-cfd-fire-prevention-2025",
+      "departments": [
+        "Chicago Fire Department"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_q4_2025",
+      "source_url": "https://igchicago.org/wp-content/uploads/2026/01/OIG-Quarterly-Report-Q4-2025.pdf",
+      "date": "2025-10-23",
+      "title": "Fire Prevention Bureau inspected only 16.8% of buildings in its database within 12 months",
+      "summary": "OIG audited annual fire-code inspections. Few buildings were inspected on time, and the City collected little of the re-check fees owed.",
+      "quotes": [
+        "Of the buildings and tenant spaces in FPB's database, 16.8% received an annual inspection within a 12-month period.",
+        "The City collected only 13.2% of the fees owed for re-checks of violations, leaving $1.1 million unrecovered over a ten-year period."
+      ],
+      "tone": "concern",
+      "caveat": "Quoted from the OIG Q4 2025 quarterly report summary of the audit (page 40). Full audit: https://igchicago.org/publications/audit-cfd-fpb/",
+      "dollar_figures": [
+        {
+          "label": "re-check fees unrecovered over 10 years",
+          "value": 1100000.0
+        }
+      ],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "cofa-cfd-manning-2026",
+      "departments": [
+        "Chicago Fire Department"
+      ],
+      "org": "Council Office of Financial Analysis",
+      "source_key": "cofa_cfd_manning",
+      "source_url": "https://www.chicago.gov/content/dam/city/depts/COFA/RevenueResources/COFA_Savings%20Resource_CFD%20Manning_FY26%20Mid%20Year%20Update2.pdf",
+      "date": "2026 mid-year",
+      "title": "COFA: lowering fire engine and truck minimum crew from 5 to 4 could save up to $69.43M a year",
+      "summary": "COFA modeled the savings of a four-person minimum on engines and trucks (NFPA recommends four). It needs a union contract change. COFA also notes CFD does not report response times publicly and has 80 ambulances for 2.7 million people.",
+      "quotes": [
+        "CFD could realize up to approximately $69.43 million in personnel savings",
+        "the Department does not report response times publicly",
+        "The City operates 80 ambulances to support a population of over 2.7 million"
+      ],
+      "tone": "context",
+      "caveat": "A savings option, not a recommendation. Savings depend on how the City implements it and need union agreement. COFA says it does not net out other costs.",
+      "dollar_figures": [
+        {
+          "label": "COFA modeled annual savings, up to",
+          "value": 69430000.0
+        },
+        {
+          "label": "CFD overtime paid in 2025 (COFA)",
+          "value": 90940000.0
+        }
+      ],
+      "is_estimate_not_audited": true,
+      "verified": true,
+      "quote_check": "all 3 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-cfd-hiring-note",
+      "departments": [
+        "Chicago Fire Department"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_q4_2025",
+      "source_url": "https://igchicago.org/wp-content/uploads/2026/01/OIG-Quarterly-Report-Q4-2025.pdf",
+      "date": "2025-10-23",
+      "title": "OIG: CFD also is not producing the legally required annual fire-loss report",
+      "summary": "Same Fire Prevention audit: CFD was not in compliance with a Municipal Code rule to report yearly to the Mayor and Council on the causes and extent of fire loss.",
+      "quotes": [
+        "CFD was not in compliance with MCC"
+      ],
+      "tone": "concern",
+      "caveat": null,
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 1 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "cpd-homicide-clearance-2025",
+      "departments": [
+        "Chicago Police Department"
+      ],
+      "org": "Chicago Police Department",
+      "source_key": "cpd_2025",
+      "source_url": "https://www.chicagopolice.org/wp-content/uploads/2025-in-Review.pdf",
+      "date": "2026-01-05",
+      "title": "CPD reports 416 homicides in 2025 and a 71% homicide clearance rate",
+      "summary": "CPD's own year-end release.",
+      "quotes": [
+        "ending the year with 416 homicides, the lowest since 1965",
+        "The Bureau of Detectives cleared a total of 296 homicides this year, for a 71% clearance rate."
+      ],
+      "tone": "context",
+      "caveat": "Self-reported by CPD. 'Cleared' is not the same as 'solved': it can include cases where the suspect died or prosecutors declined to charge.",
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-clearance-caution-2026",
+      "departments": [
+        "Chicago Police Department"
+      ],
+      "org": "Inspector General (quoted by Hyde Park Herald)",
+      "source_key": "hpherald",
+      "source_url": "https://www.hpherald.com/evening_digest/police-homicide-clearance-rate-hits-13-year-high-as-murders-fall-dramatically-citywide/article_74ff6015-4da0-4584-944b-354034b61696.html",
+      "date": "2026-01-29",
+      "title": "Inspector General: clearance rate is 'a tricky metric'",
+      "summary": "The OIG's dashboard shows 71.2% of 423 homicides cleared in 2025 (CPD's own release says 416 homicides). The Inspector General warned that 'cleared' does not mean justice was done.",
+      "quotes": [
+        "Chicago police cleared 71.2% of homicides in 2025, a 13-year high, according to new data released by the city's Office of Inspector General (OIG).",
+        "We talk about them as if they are solved crimes, but in fact they are cleared crimes"
+      ],
+      "tone": "context",
+      "caveat": "Homicide count differs between sources (416 CPD release, 423 OIG dashboard per the Herald). The Herald is a news report of the OIG dashboard, not the dashboard itself.",
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "budget-overview-clearance-2025",
+      "departments": [
+        "Chicago Police Department"
+      ],
+      "org": "Office of Budget and Management",
+      "source_key": "budget_overview",
+      "source_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+      "date": "2025-10",
+      "title": "Mayor's budget book says homicide clearance rate 'has risen to 77.4%'",
+      "summary": "The 2026 Budget Overview cites a higher number than CPD's full-year 71%. Likely a partway-through-2025 figure, not confirmed.",
+      "quotes": [
+        "homicide clearance rate has risen to 77.4%, the highest in over a decade"
+      ],
+      "tone": "context",
+      "caveat": "Do not mix the 77.4% (budget book, partial year, as of the book's writing) with the 71% full-year number. Show one, and say which.",
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 1 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-cpd-911-followup-2026",
+      "departments": [
+        "Chicago Police Department",
+        "Office of Emergency Management and Communications"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_911_page",
+      "source_url": "https://igchicago.org/publications/cpd-911-response-time-follow-up/",
+      "date": "2026-07-23",
+      "title": "OIG follow-up on 911 response-time data: 1 fixed, 2 mostly fixed, 2 not fixed",
+      "summary": "OIG checked whether CPD fixed missing timestamps in 911 response-time data.",
+      "quotes": [
+        "CPD has fully implemented one, substantially implemented two, and not implemented two of the corrective actions"
+      ],
+      "tone": "mixed",
+      "caveat": null,
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 1 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-copa-timeliness-2026",
+      "departments": [
+        "Civilian Office of Police Accountability"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_copa_page",
+      "source_url": "https://igchicago.org/publications/review-of-the-civilian-office-of-accountabilitys-timeliness-initiative/",
+      "date": "2026-06-17",
+      "title": "OIG: COPA cut its backlog but did not follow its own rules while doing it",
+      "summary": "COPA closed old low-level cases with training recommendations instead of discipline. OIG says COPA did not fully follow its guidelines.",
+      "quotes": [
+        "COPA did reduce its investigative caseload under the initiative",
+        "COPA did not fully adhere to the TIP guidelines as outlined"
+      ],
+      "tone": "mixed",
+      "caveat": null,
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "cofa-cpd-overtime-fy26",
+      "departments": [
+        "Chicago Police Department"
+      ],
+      "org": "Council Office of Financial Analysis",
+      "source_key": "cofa_budget_rec",
+      "source_url": "https://www.chicago.gov/content/dam/city/depts/COFA/ProposedBudget/Presentations_ProposedBudget/COFA_Budget%20Recommendation%20Summary_Final.pdf",
+      "date": "2025-10",
+      "title": "COFA: CPD overtime is budgeted at $200M for 2026, and actual spending typically runs about 2x budget",
+      "summary": "Overtime above $200M needs City Council approval under the 2026 management ordinance. In 2025 the budget was $100M.",
+      "quotes": [
+        "Budgeted $200M in Corporate Fund; any overtime above $200M requires City Council approval",
+        "actual spend typically 2x over budget"
+      ],
+      "tone": "concern",
+      "caveat": null,
+      "dollar_figures": [
+        {
+          "label": "CPD overtime budgeted FY2026",
+          "value": 200000000.0
+        },
+        {
+          "label": "CPD overtime budgeted FY2025",
+          "value": 100000000.0
+        }
+      ],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "budget-overview-cpd-civilianization",
+      "departments": [
+        "Chicago Police Department"
+      ],
+      "org": "Office of Budget and Management",
+      "source_key": "budget_overview",
+      "source_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+      "date": "2025-10",
+      "title": "Budget book: CPD claims nearly $10M in savings from replacing officers with civilians in desk jobs since 2024",
+      "summary": "Self-reported by the City.",
+      "quotes": [
+        "nearly $10M in civilianization savings achieved since the 2024 budget"
+      ],
+      "tone": "context",
+      "caveat": null,
+      "dollar_figures": [
+        {
+          "label": "claimed civilianization savings since 2024 budget",
+          "value": 10000000.0
+        }
+      ],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 1 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-rat-abatement-2026",
+      "departments": [
+        "Department of Streets and Sanitation"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_rats",
+      "source_url": "https://igchicago.org/wp-content/uploads/2026/07/Audit-of-DSSs-Rat-Abatement-Program.pdf",
+      "date": "2026-07-28",
+      "title": "OIG: rat control reacts to complaints and does not track whether it works",
+      "summary": "The Bureau of Rodent Control's main tool is poisoning in response to 311 complaints, with no survey of root causes and no evaluation of results. The 2026 budget gives the bureau $12.5M.",
+      "quotes": [
+        "BORC's primary goal was to poison rats in response to complaints rather than addressing the root causes of rat infestations while using poison as a last resort.",
+        "BORC did not evaluate or report on the effectiveness of its intervention efforts",
+        "The City's 2026 Budget allocated $12,527,603 to BORC"
+      ],
+      "tone": "concern",
+      "caveat": null,
+      "dollar_figures": [
+        {
+          "label": "2026 budget for Bureau of Rodent Control",
+          "value": 12527603
+        }
+      ],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 3 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-auto-pounds-2026",
+      "departments": [
+        "Department of Streets and Sanitation"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_autopounds",
+      "source_url": "https://igchicago.org/wp-content/uploads/2026/08/Audit-of-the-Department-of-Streets-and-Sanitations-Administration-of-Auto-Pounds.pdf",
+      "date": "2026-08-26",
+      "title": "OIG: auto pound records are unreliable and vehicle retrieval is confusing",
+      "summary": "Records for 15% of a random sample of vehicles could not show whether the car was redeemed, disposed of, or still impounded. Most pound operations are contracted to United Road Towing.",
+      "quotes": [
+        "digital impoundment records are unreliable, such that it was unclear whether 15% of a randomly selected sample of vehicles had been redeemed, disposed of, or remained impounded",
+        "The City Has Awarded URT and its Affiliates Over $223 Million in Contracts to Operate City Auto Pounds"
+      ],
+      "tone": "concern",
+      "caveat": "The $223M is a multi-decade total of contract values, not one year's spend.",
+      "dollar_figures": [
+        {
+          "label": "contract value awarded to towing contractor and affiliates since 1997 (OIG Figure 8)",
+          "value": 223000000.0
+        }
+      ],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-311-audit-2026",
+      "departments": [
+        "Office of Emergency Management and Communications"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_311",
+      "source_url": "https://igchicago.org/wp-content/uploads/2026/02/OIG-Audit-of-311-Service-Request-Process.pdf",
+      "date": "2026-02-26",
+      "title": "OIG: 311 status information confuses people, and only 2 staff cover 40+ departments",
+      "summary": "311 is run by OEMC. The public-facing request status information 'contributes to public confusion and distrust'.",
+      "quotes": [
+        "information about service requests on 311's public facing platforms contributes to public confusion and distrust",
+        "The two staff in the Service Advocacy Unit are responsible for serving more than 40 City departments"
+      ],
+      "tone": "concern",
+      "caveat": "311 City Services is part of OEMC in the budget (assumption based on the OIG audit's wording, 'OEMC's management of 311'). Not checked against the department's budget lines.",
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-water-billing-2026",
+      "departments": [
+        "Department of Water Management",
+        "Department of Finance"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_water",
+      "source_url": "https://igchicago.org/wp-content/uploads/2026/05/Audit-of-the-Citys-Metered-Water-Billing.pdf",
+      "date": "2026-05-06",
+      "title": "OIG: water meters are accurate, but billing and service-order processes can create errors",
+      "summary": "Good news and bad news: residential meters measure accurately (OIG reviewed 2,200 meter tests). The billing and work-order processes can cause or worsen bill spikes.",
+      "quotes": [
+        "OIG reviewed 2,200 DWM meter tests and concluded that meters generally measure water use accurately.",
+        "DWM and DOF's processes related to service orders, billing exceptions, and estimate and credit calculations may introduce errors that lead to or worsen spikes for some customers"
+      ],
+      "tone": "mixed",
+      "caveat": null,
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-city-debt-owed-2026",
+      "departments": [
+        "Department of Finance"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_debt",
+      "source_url": "https://igchicago.org/wp-content/uploads/2026/05/Audit-of-DOFs-Management-of-Outstanding-Debt-Updated.pdf",
+      "date": "2026-04-16",
+      "title": "OIG: about $8.1 billion is owed TO the City (fines, fees, etc.), and no one tracks all of it",
+      "summary": "This is money people and businesses owe the City, not City borrowing. OIG calls $8.1B 'almost certainly a floor'.",
+      "quotes": [
+        "The systems actively used by DOF contain approximately $8.1 billion in outstanding debt.",
+        "No City department has knowledge or management oversight of all debt owed to the City."
+      ],
+      "tone": "concern",
+      "caveat": "Includes fines, penalties and interest that may never be collected. Do not read it as '$8.1B the City could collect'.",
+      "dollar_figures": [
+        {
+          "label": "debt owed to the City in DOF systems (OIG)",
+          "value": 8100000000.0
+        }
+      ],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-payment-timeliness-2026",
+      "departments": [
+        "Department of Finance"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_paytime",
+      "source_url": "https://igchicago.org/wp-content/uploads/2026/08/Audit-of-DOFs-Payment-Timeliness.pdf",
+      "date": "2026-08-11",
+      "title": "OIG: the City cannot tell whether it pays vendors within 30 days",
+      "summary": "Data in the City's payment system is not reliable enough to measure on-time payment.",
+      "quotes": [
+        "neither OIG nor DOF can provide reliable information about the timeliness of vendor payments"
+      ],
+      "tone": "concern",
+      "caveat": null,
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 1 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-workers-comp-2024",
+      "departments": [
+        "Department of Finance"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_wc",
+      "source_url": "https://igchicago.org/wp-content/uploads/2024/07/Audit-of-DOFs-Civilian-Workers-Compensation-Program-Administration.pdf",
+      "date": "2024-07-31",
+      "title": "OIG: workers' compensation program improved; open claims expected to cost over half a billion",
+      "summary": "Positive on process, a large cost.",
+      "quotes": [
+        "Given that the Program has more than 2,000 open claims expected to cost over half a billion dollars across their lifetimes",
+        "DOF has substantially implemented the corrective actions recommended by Grant Thornton in 2019."
+      ],
+      "tone": "mixed",
+      "caveat": null,
+      "dollar_figures": [
+        {
+          "label": "expected lifetime cost of open civilian workers' comp claims, over",
+          "value": 500000000.0
+        }
+      ],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-dhr-eap-2025",
+      "departments": [
+        "Department of Human Resources"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_dhr_eap",
+      "source_url": "https://igchicago.org/wp-content/uploads/2025/04/OIG-Audit-of-DHRs-Employee-Assistance-Program.pdf",
+      "date": "2025-04-17",
+      "title": "OIG: HR cannot tell whether the Employee Assistance Program works",
+      "summary": "No structure, goals or documented policies.",
+      "quotes": [
+        "DHR cannot determine whether the City of Chicago's EAP achieves either of these aims because the program lacks structure, guidance, and clear goals."
+      ],
+      "tone": "concern",
+      "caveat": null,
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 1 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-cofa-audit-2026",
+      "departments": [
+        "City Council"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_cofa",
+      "source_url": "https://igchicago.org/wp-content/uploads/2026/04/Audit-of-City-Council-Office-of-Financial-Analysis.pdf",
+      "date": "2026-04-21",
+      "title": "OIG: Council's own budget office (COFA) has not consistently given Council independent analysis",
+      "summary": "COFA is staffed under the City Council. COFA says it lacks timely data access and resources. Which budget department pays for COFA is not checked here.",
+      "quotes": [
+        "COFA has not consistently provided independent financial analysis to assist City Council and protect the public's interest in the effective and efficient expenditure of City funds."
+      ],
+      "tone": "concern",
+      "caveat": "We cite COFA elsewhere in this file. Weigh it knowing this audit.",
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 1 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-dob-permit-inspections-2022",
+      "departments": [
+        "Department of Buildings"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_dob",
+      "source_url": "https://igchicago.org/wp-content/uploads/2023/08/Audit-of-the-Department-of-Buildings-Permit-Inspections-Process.pdf",
+      "date": "2022-08-25",
+      "title": "OIG: 42 buildings were fully built without all required inspections (2017 to 2019 permits)",
+      "summary": "Buildings relies on contractors to request inspections and does not check which are missing. 35 of the 42 were single-family homes.",
+      "quotes": [
+        "OIG identified 42 buildings within DOB's permit and inspection system that did not have all required inspections and found that the associated buildings had nonetheless been fully constructed."
+      ],
+      "tone": "concern",
+      "caveat": "2022 audit, followed up in 2024. Check the follow-up before saying the problem persists: https://igchicago.org/publications/follow-up-audit-dob-permit-inspections/",
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 1 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-cdph-mental-health-2025",
+      "departments": [
+        "Chicago Department of Public Health"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_cdph",
+      "source_url": "https://igchicago.org/wp-content/uploads/2025/08/OIG-Audit-of-CDPHs-Mental-Equity-Program.pdf",
+      "date": "2025-08-12",
+      "title": "OIG: mental health network is equitable overall, but City-run clinics' data is not reliable",
+      "summary": "Mixed: services generally fit program goals, but the City-run centers' own data cannot show performance.",
+      "quotes": [
+        "OIG concluded that CDPH is supporting equitable and integrated mental health services for Chicagoans through the MHEI network",
+        "the City-run Mental Health Centers' service data is not complete or reliable enough to enable informed decisions about operations"
+      ],
+      "tone": "mixed",
+      "caveat": null,
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-dfss-encampments-2023",
+      "departments": [
+        "Department of Family and Support Services"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_dfss_enc",
+      "source_url": "https://igchicago.org/wp-content/uploads/2023/08/Audit-of-DFSS-Outreach-to-Encampments-of-People-Experiencing-Homelessness.pdf",
+      "date": "2023-08-23",
+      "title": "OIG: 94.1% of encampment residents who attended a housing event entered stable housing; 78.6% were still housed at the check date",
+      "summary": "One of the few audit findings that measures an OUTCOME and finds it good.",
+      "quotes": [
+        "224 encampment residents, or 94.1% of participants, entered stable housing",
+        "187, or 78.6% of all participants, remained housed as of October 3, 2022"
+      ],
+      "tone": "positive",
+      "caveat": "Covers Nov 2020 to May 2022 participants only. Small group (about 238 people).",
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "oig-dfss-contracting-2022",
+      "departments": [
+        "Department of Family and Support Services"
+      ],
+      "org": "Office of Inspector General",
+      "source_key": "oig_dfss_contract",
+      "source_url": "https://igchicago.org/wp-content/uploads/2023/08/Audit-of-the-Department-of-Family-and-Support-Services-Strategic-Contracting.pdf",
+      "date": "2022-08-09",
+      "title": "OIG: DFSS grant evaluators scored nonprofit applications inconsistently",
+      "summary": "DFSS passes much of its money to nonprofit 'delegate agencies' (see the delegate agencies line in the appropriations).",
+      "quotes": [
+        "RFP application evaluators inconsistently applied scoring guidance."
+      ],
+      "tone": "concern",
+      "caveat": null,
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 1 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "ey-fleet-civicfed-2025",
+      "departments": [
+        "Department of Fleet and Facility Management"
+      ],
+      "org": "Civic Federation (summarizing City-commissioned EY report)",
+      "source_key": "civicfed_eff",
+      "source_url": "https://www.civicfed.org/blog/which-cuts-didnt-make-cut-efficiency-opportunities-chicagos-fy2026-budget",
+      "date": "2025-11-07",
+      "title": "EY report: average City vehicle driven only 7,000 miles a year; 1 vehicle per 17 employees",
+      "summary": "The Civic Federation summarized an Ernst & Young efficiency study the City commissioned.",
+      "quotes": [
+        "The average City vehicle was driven only 7,000 miles per year, less than a third of the rate of vehicle usage in Chicago's peer cities.",
+        "The City owns one vehicle for every 17 full-time equivalent (FTE) positions, far in excess of the industry equivalent of one per 65 FTE.",
+        "The report estimated between $16 million and $31 million in cost savings from optimizing the City's vehicle fleet management."
+      ],
+      "tone": "concern",
+      "caveat": "An EY estimate reported by the Civic Federation. Not audited.",
+      "dollar_figures": [
+        {
+          "label": "EY estimated fleet savings, low",
+          "value": 16000000.0
+        },
+        {
+          "label": "EY estimated fleet savings, high",
+          "value": 31000000.0
+        }
+      ],
+      "is_estimate_not_audited": true,
+      "verified": true,
+      "quote_check": "all 3 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "ey-real-estate-civicfed-2025",
+      "departments": [
+        "Department of Fleet and Facility Management"
+      ],
+      "org": "Civic Federation (summarizing EY)",
+      "source_key": "civicfed_eff",
+      "source_url": "https://www.civicfed.org/blog/which-cuts-didnt-make-cut-efficiency-opportunities-chicagos-fy2026-budget",
+      "date": "2025-11-07",
+      "title": "EY report: office space in the 10 largest City buildings exceeds the number of employees by 33%",
+      "summary": "Selling buildings and land is an EY-identified option.",
+      "quotes": [
+        "amount of workspace exceeds the number of employees by 33%",
+        "the report identifies $157-$202 million in real estate savings over the course of ten years"
+      ],
+      "tone": "context",
+      "caveat": "An EY estimate over ten years, much of it one-time sale proceeds.",
+      "dollar_figures": [
+        {
+          "label": "EY real estate savings over 10 years, low",
+          "value": 157000000.0
+        },
+        {
+          "label": "high",
+          "value": 202000000.0
+        }
+      ],
+      "is_estimate_not_audited": true,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "ey-benefits-civicfed-2025",
+      "departments": [
+        "Finance General"
+      ],
+      "org": "Civic Federation (summarizing EY)",
+      "source_key": "civicfed_eff",
+      "source_url": "https://www.civicfed.org/blog/which-cuts-didnt-make-cut-efficiency-opportunities-chicagos-fy2026-budget",
+      "date": "2025-11-07",
+      "title": "EY report: $80M to $103M a year possible by aligning employee benefits with peer employers",
+      "summary": "Employee health care sits in Finance General. Many items need union negotiation.",
+      "quotes": [
+        "EY identified $80-$103 million in savings the City could realize from moving itself to align its benefit structure with its peers."
+      ],
+      "tone": "context",
+      "caveat": "An EY estimate. Requires bargaining with unions.",
+      "dollar_figures": [
+        {
+          "label": "EY benefits savings, low",
+          "value": 80000000.0
+        },
+        {
+          "label": "high",
+          "value": 103000000.0
+        }
+      ],
+      "is_estimate_not_audited": true,
+      "verified": true,
+      "quote_check": "all 1 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "ey-procurement-civicfed-2025",
+      "departments": [
+        "Department of Procurement Services"
+      ],
+      "org": "Civic Federation (summarizing EY)",
+      "source_key": "civicfed_eff",
+      "source_url": "https://www.civicfed.org/blog/which-cuts-didnt-make-cut-efficiency-opportunities-chicagos-fy2026-budget",
+      "date": "2025-11-07",
+      "title": "EY report: 49% of City spending is not managed by the procurement department",
+      "summary": "EY recommends centralized purchasing ('category management'), taking three to five years.",
+      "quotes": [
+        "49% of total spending not managed by the Department of Procurement Services",
+        "EY estimates $55-$111 million in savings based on the 2024 budget"
+      ],
+      "tone": "context",
+      "caveat": null,
+      "dollar_figures": [
+        {
+          "label": "EY procurement savings, low",
+          "value": 55000000.0
+        },
+        {
+          "label": "high",
+          "value": 111000000.0
+        }
+      ],
+      "is_estimate_not_audited": true,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "civicfed-adopted-2026",
+      "departments": [
+        "Finance General",
+        "Chicago Police Department",
+        "Chicago Fire Department"
+      ],
+      "org": "Civic Federation",
+      "source_key": "civicfed_adopted",
+      "source_url": "https://www.civicfed.org/chicagos-fy2026-adopted-budget",
+      "date": "2026-01",
+      "title": "Civic Federation: FY2026 budget borrows to pay police settlements and firefighter back pay",
+      "summary": "The Civic Federation's view of the adopted $16.6B budget.",
+      "quotes": [
+        "Uses debt, rather than operating revenue, to cover the cost of legal police settlements and retroactive salaries for firefighters.",
+        "Includes only a handful of efficiencies and cost savings."
+      ],
+      "tone": "concern",
+      "caveat": "An opinion from a business-funded civic watchdog. It is a fair summary of the budget but also a policy position.",
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "cofa-midyear-options-2026",
+      "departments": [
+        "Chicago Fire Department",
+        "Department of Streets and Sanitation",
+        "Department of Water Management",
+        "Department of Human Resources"
+      ],
+      "org": "Council Office of Financial Analysis",
+      "source_key": "cofa_midyear",
+      "source_url": "https://www.chicago.gov/content/dam/city/depts/COFA/MidyearReport/COFA_FY2026_MidYear_Full%20Report.pdf",
+      "date": "2026 mid-year",
+      "title": "COFA Budget Options: savings and revenue ideas with dollar ranges",
+      "summary": "COFA's published menu. Estimates do not net out implementation costs.",
+      "quotes": [
+        "Firefighter Manning Requirement Up to $69.43M in annual savings",
+        "Timekeeping and Payroll Modernization Up to $12M annual savings",
+        "Garbage Fee Increase $55.38M-$211.75M additional annual revenue",
+        "Stormwater Utility User Fee $90.50M annual cost recovery"
+      ],
+      "tone": "context",
+      "caveat": "Options, not recommendations. COFA says the estimates are not comparable to each other.",
+      "dollar_figures": [],
+      "is_estimate_not_audited": true,
+      "verified": true,
+      "quote_check": "all 4 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "budget-overview-graffiti-2025",
+      "departments": [
+        "Department of Streets and Sanitation"
+      ],
+      "org": "Office of Budget and Management",
+      "source_key": "budget_overview",
+      "source_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+      "date": "2025-10",
+      "title": "Budget book: 53,741 graffiti complaints addressed year to date, removed within five days",
+      "summary": "Self-reported. We can check this against 311 data (see data/context_service_metrics_2025.json).",
+      "quotes": [
+        "Addressed 53,741 graffiti removal complaints year to date",
+        "ensuring graffiti is removed within five days"
+      ],
+      "tone": "context",
+      "caveat": null,
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 2 quotes found verbatim in downloaded source"
+    },
+    {
+      "id": "budget-overview-rodents-2025",
+      "departments": [
+        "Department of Streets and Sanitation"
+      ],
+      "org": "Office of Budget and Management",
+      "source_key": "budget_overview",
+      "source_url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+      "date": "2025-10",
+      "title": "Budget book: rodent baiting 'maintaining a five-day response time'",
+      "summary": "Self-reported. 311 data for 2025 shows a more mixed picture (see service metrics).",
+      "quotes": [
+        "maintaining a five-day response time"
+      ],
+      "tone": "context",
+      "caveat": null,
+      "dollar_figures": [],
+      "is_estimate_not_audited": false,
+      "verified": true,
+      "quote_check": "all 1 quotes found verbatim in downloaded source"
+    }
+  ],
+  "unverified_leads": [
+    {
+      "id": "cwb-clearance-critique-2026",
+      "departments": [
+        "Chicago Police Department"
+      ],
+      "org": "CWB Chicago (news site)",
+      "source_url": "https://cwbchicago.com/2026/04/cpd-calls-hundreds-of-murders-cleared-in-most-cases-nobody-was-ever-charged.html",
+      "claim_from_search_snippet": "CPD reported a 71 percent clearance rate in 2025, with 296 homicide cases cleared. But internal records show that only 140 of those were cleared by charging someone with murder.",
+      "status": "NOT VERIFIED. The page returned HTTP 403 to our script, so this is the search-result snippet only. Read the article before using."
+    }
+  ],
+  "tones": {
+    "concern": "oversight body found a problem",
+    "positive": "oversight body found a good outcome",
+    "mixed": "both good and bad",
+    "context": "numbers or options, no judgment"
+  }
+}
