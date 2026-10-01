@@ -361,6 +361,39 @@ def parse_others():
     return {k: v for k, v in r.items() if v}
 
 
+
+def parse_water_round2():
+    pdf10 = find_pdf("Water_2010A-C")
+    pg10 = pdf_text(pdf10)
+    toks, line = row_tokens(pg10[34], 2026)
+    if len(toks) != 3 or abs(toks[0] + toks[1] - toks[2]) > 5:
+        raise SystemExit("water 2010 table row: %r" % toks)
+    printed = toks[1]  # 'Series 2010 Bonds principal and interest' column (2010A matured 2023)
+    cover = pg10[2]
+    if "$250,000,000 6.742% Term Bonds due November 1, 2040" not in cover or "$29,665,000 6.642% Term Bonds due November 1, 2029" not in cover:
+        raise SystemExit("water 2010 cover not as expected")
+    b_int = round(250000000 * 0.06742)
+    c_int = round(29665000 * 0.06642)
+    sf = pg10[22]
+    m = re.search(r"2026 \$([\d,]+)", sf[sf.index("Taxable Series 2010C Bonds due"):])
+    c_prin = to_num(m.group(1))
+    if abs(b_int + c_int + c_prin - printed) > 5:
+        raise SystemExit("water 2010B+2010C %d != printed %d" % (b_int + c_int + c_prin, printed))
+    pdf17 = find_pdf("Water_Refunding_Series_2017")
+    pg17 = pdf_text(pdf17)
+    t17, l17 = row_tokens(pg17[31], 2026)
+    # columns: senior, outstanding second, refunded, net, 2017 principal, 2017 interest, 2017 total, total
+    if len(t17) != 8 or abs(t17[4] + t17[5] - t17[6]) > 5:
+        raise SystemExit("water 2017 row: %r" % t17)
+    cov = [l for l in pg17[3].split("\n") if l.startswith("2026 ")][0]
+    if to_num(re.findall(r"[\d,]{7,}", cov)[0]) != t17[4]:
+        raise SystemExit("2017 cover maturity differs from table principal")
+    tend = pdf_text(find_pdf("water_2026ABC_OS"))[170]
+    if any(l.startswith("2017 2026") or l.startswith("2017 2027") or l.startswith("2017 2028") for l in tend.split("\n")):
+        raise SystemExit("2017 2026-2028 maturity was tendered")
+    return {"doc2010": pdf10, "pg2010": 34, "row2010": line, "printed_2010": printed, "b_int": b_int,
+            "c_tot": c_int + c_prin, "c_prin": c_prin, "doc2017": pdf17, "pg2017": 31, "row2017": l17, "p2017": t17[4]}
+
 # ---------------------------------------------------------------- build
 ORD = {  # 2026 ordinance, Finance General, dataset 6694 / raw/city_appropriations_2026.json
     "ohare": {"interest": 496066181, "principal": 303172911, "fees": 3231068},
@@ -459,9 +492,20 @@ def build():
                        "Fiscal year 2026.", "printed in table"))
     leaves.append(leaf("Water 2023A", "water", wb["A_interest"], wb["A_principal"], oth["water_2023AB"]["doc"], 32, oth["water_2023AB"]["row"], "current", "Fiscal year 2026.", "printed in table"))
     leaves.append(leaf("Water 2023B", "water", wb["B_interest"], wb["B_principal"], oth["water_2023AB"]["doc"], 32, oth["water_2023AB"]["row"], "current", "Fiscal year 2026.", "printed in table"))
-    w_res = w["outstanding"] - wa["A_total"] - wb["AB_total"]
-    leaves.append(leaf("Water residual: Series 2001, 2004, 2010B, 2010C, 2016A-1, 2017, 2017-2 and 2023C (WIFIA)", "water", w_res, None,
-                       "water_2026ABC_OS.pdf", 36, "outstanding column $%d minus 2024A and 2023A/B" % w["outstanding"],
+    # ---- Water round 2: series 2010B, 2010C and 2017 principal (checked against printed totals)
+    w2 = parse_water_round2()
+    leaves.append(leaf("Water 2010B (Build America Bonds, taxable)", "water", w2["b_int"], 0, w2["doc2010"], w2["pg2010"], w2["row2010"], "current",
+                       "Term bond, no principal until the 2031 sinking fund. Interest = $250,000,000 x 6.742%% (cover). The 2010B + 2010C pieces add to the printed 'Series 2010 Bonds' column (%d) within $5. Gross of the federal subsidy. Not touched by the 2026 refunding or tender (Appendix I lists no 2010 bonds). Calendar 2026." % w2["printed_2010"],
+                       "no principal due 2026 (first sinking fund installment 2031, OS p.22)"))
+    leaves.append(leaf("Water 2010C (Qualified Energy Conservation Bonds)", "water", w2["c_tot"], w2["c_prin"], w2["doc2010"], w2["pg2010"], w2["row2010"], "current",
+                       "Principal = 2026 sinking fund installment (OS p.22). Interest = $29,665,000 x 6.642% (cover). Ties to the printed 2010 column with 2010B. Not in the 2026 refunding or tender. Calendar 2026.",
+                       "sinking fund schedule, OS p.22"))
+    leaves.append(leaf("Water 2017 (principal only; interest left in residual)", "water", w2["p2017"], w2["p2017"], w2["doc2017"], w2["pg2017"], w2["row2017"], "current",
+                       "Principal due Nov 1 2026 is $19,425,000, printed in the 2017 OS table and on its cover. The 2026 tender (water_2026ABC_OS Appendix I p.170) removed only 2029 to 2036 maturities, so the 2026 maturity is unaffected. Interest of $7,024,713 printed in the 2017 OS is NOT used because the tender (May 21 2026) changed it by an amount whose timing the statement does not state; it stays in the residual.",
+                       "printed in table"))
+    w_res = w["outstanding"] - wa["A_total"] - wb["AB_total"] - w2["b_int"] - w2["c_tot"] - w2["p2017"]
+    leaves.append(leaf("Water residual: Series 2001, 2004, 2016A-1, 2017 interest, 2017-2 and 2023C (WIFIA)", "water", w_res, None,
+                       "water_2026ABC_OS.pdf", 36, "outstanding column $%d minus 2024A, 2023A/B, 2010B, 2010C and 2017 principal" % w["outstanding"],
                        "residual_by_subtraction", "Series list from water_2026_supplement.pdf p.5. Not split further here."))
     leaves.append(leaf("Water IEPA subordinate-lien loans (aggregate)", "water", w["subordinate_iepa"], None, oth["water_2026ABC"]["doc"], 36,
                        oth["water_2026ABC"]["row"], "loan_aggregate", "Loans, not bonds. Per-loan 2026 payments are not printed in the OS (water_2026_supplement.pdf p.6 lists balances).", "not printed"))

@@ -1011,10 +1011,61 @@
    }
   },
   {
-   "series": "Water residual: Series 2001, 2004, 2010B, 2010C, 2016A-1, 2017, 2017-2 and 2023C (WIFIA)",
+   "series": "Water 2010B (Build America Bonds, taxable)",
    "credit": "water",
    "window": "payments Jan 2 2026 through Jan 1 2027",
-   "total_pi": 118062905,
+   "total_pi": 16855000,
+   "principal": 0,
+   "interest": 16855000,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "no principal due 2026 (first sinking fund installment 2031, OS p.22)",
+   "status": "current",
+   "note": "Term bond, no principal until the 2031 sinking fund. Interest = $250,000,000 x 6.742% (cover). The 2010B + 2010C pieces add to the printed 'Series 2010 Bonds' column (29825349) within $5. Gross of the federal subsidy. Not touched by the 2026 refunding or tender (Appendix I lists no 2010 bonds). Calendar 2026.",
+   "cite": {
+    "doc": "Water_2010A-C__2nd_Lien_OS.Ajuy6keu0V.pdf",
+    "pdf_page": 34,
+    "row": "2026 83,526,185 29,825,349 113,351,534"
+   }
+  },
+  {
+   "series": "Water 2010C (Qualified Energy Conservation Bonds)",
+   "credit": "water",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 12970349,
+   "principal": 11000000,
+   "interest": 1970349,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "sinking fund schedule, OS p.22",
+   "status": "current",
+   "note": "Principal = 2026 sinking fund installment (OS p.22). Interest = $29,665,000 x 6.642% (cover). Ties to the printed 2010 column with 2010B. Not in the 2026 refunding or tender. Calendar 2026.",
+   "cite": {
+    "doc": "Water_2010A-C__2nd_Lien_OS.Ajuy6keu0V.pdf",
+    "pdf_page": 34,
+    "row": "2026 83,526,185 29,825,349 113,351,534"
+   }
+  },
+  {
+   "series": "Water 2017 (principal only; interest left in residual)",
+   "credit": "water",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 19425000,
+   "principal": 19425000,
+   "interest": 0,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in table",
+   "status": "current",
+   "note": "Principal due Nov 1 2026 is $19,425,000, printed in the 2017 OS table and on its cover. The 2026 tender (water_2026ABC_OS Appendix I p.170) removed only 2029 to 2036 maturities, so the 2026 maturity is unaffected. Interest of $7,024,713 printed in the 2017 OS is NOT used because the tender (May 21 2026) changed it by an amount whose timing the statement does not state; it stays in the residual.",
+   "cite": {
+    "doc": "Water_Refunding_Series_2017_OS_with_Supplement.fzFFV8an.pdf",
+    "pdf_page": 31,
+    "row": "2026 \u2013 186,195,787 28,660,450 157,535,337 19,425,000 7,024,713 26,449,713 183,985,049"
+   }
+  },
+  {
+   "series": "Water residual: Series 2001, 2004, 2016A-1, 2017 interest, 2017-2 and 2023C (WIFIA)",
+   "credit": "water",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 68812556,
    "principal": null,
    "interest": null,
    "interest_is_derived_as_total_minus_principal": false,
@@ -1024,7 +1075,7 @@
    "cite": {
     "doc": "water_2026ABC_OS.pdf",
     "pdf_page": 36,
-    "row": "outstanding column $169218793 minus 2024A and 2023A/B"
+    "row": "outstanding column $169218793 minus 2024A, 2023A/B, 2010B, 2010C and 2017 principal"
    }
   },
   {
@@ -2407,6 +2458,84 @@
    "amount": 13926050
   },
   {
+   "series": "Water 2010B (Build America Bonds, taxable)",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current",
+   "cite": {
+    "doc": "Water_2010A-C__2nd_Lien_OS.Ajuy6keu0V.pdf",
+    "pdf_page": 34,
+    "row": "2026 83,526,185 29,825,349 113,351,534"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "Water 2010B (Build America Bonds, taxable)",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current",
+   "cite": {
+    "doc": "Water_2010A-C__2nd_Lien_OS.Ajuy6keu0V.pdf",
+    "pdf_page": 34,
+    "row": "2026 83,526,185 29,825,349 113,351,534"
+   },
+   "kind": "interest",
+   "amount": 16855000
+  },
+  {
+   "series": "Water 2010C (Qualified Energy Conservation Bonds)",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current",
+   "cite": {
+    "doc": "Water_2010A-C__2nd_Lien_OS.Ajuy6keu0V.pdf",
+    "pdf_page": 34,
+    "row": "2026 83,526,185 29,825,349 113,351,534"
+   },
+   "kind": "principal",
+   "amount": 11000000
+  },
+  {
+   "series": "Water 2010C (Qualified Energy Conservation Bonds)",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current",
+   "cite": {
+    "doc": "Water_2010A-C__2nd_Lien_OS.Ajuy6keu0V.pdf",
+    "pdf_page": 34,
+    "row": "2026 83,526,185 29,825,349 113,351,534"
+   },
+   "kind": "interest",
+   "amount": 1970349
+  },
+  {
+   "series": "Water 2017 (principal only; interest left in residual)",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current",
+   "cite": {
+    "doc": "Water_Refunding_Series_2017_OS_with_Supplement.fzFFV8an.pdf",
+    "pdf_page": 31,
+    "row": "2026 \u2013 186,195,787 28,660,450 157,535,337 19,425,000 7,024,713 26,449,713 183,985,049"
+   },
+   "kind": "principal",
+   "amount": 19425000
+  },
+  {
+   "series": "Water 2017 (principal only; interest left in residual)",
+   "fund": "Water Fund",
+   "credit": "water",
+   "status": "current",
+   "cite": {
+    "doc": "Water_Refunding_Series_2017_OS_with_Supplement.fzFFV8an.pdf",
+    "pdf_page": 31,
+    "row": "2026 \u2013 186,195,787 28,660,450 157,535,337 19,425,000 7,024,713 26,449,713 183,985,049"
+   },
+   "kind": "interest",
+   "amount": 0
+  },
+  {
    "series": "Sewer 2024B",
    "fund": "Sewer Fund",
    "credit": "wastewater",
@@ -2592,7 +2721,7 @@
  "series_total_by_credit": {
   "ohare": 672899919,
   "midway": 125242814,
-  "water": 73667591,
+  "water": 122917940,
   "wastewater": 48893140,
   "go": 54506741
  }
