@@ -80,7 +80,7 @@ CPS and the Park District have no open data API, so we'll build PDF parsers and 
 City funds move money to each other (pension allocations, reimbursements). The passed ordinance deducts $1.826B (transfers $1.700B + debt proceeds $0.126B) to reach its printed net of $16,842,553,003. Our rule reproduces $1.529B plus named lines; $117.0M of OBM's single deduction figure is not reproducible from line items. See `research/reconciliation.md`. Grants were amended +$72.2M mid-year (now $3.94B).
 
 ## Open questions for you
-00. ~~Which year's vendor payments?~~ Decided 2026-10-01: **2026 year-to-date payments (deduplicated)** are the primary vendor view, labelled as a partial year (Jan 1 to latest check date). 2025 is kept for comparison. 2026 YTD through 9/28 was $7.57B vs $7.77B over the same months of 2025 (-2.5%).
+00. ~~Which year's vendor payments?~~ Decided 2026-10-01: **2026 year-to-date payments (deduplicated)** are the primary vendor view, labelled as a partial year (Jan 1 to latest check date). 2025 is kept for comparison. Deduplicated (research/payments_dedupe.md): 2026 YTD through 9/28 was $7,967M vs $8,004M over the same dates of 2025 (-0.5%).
 0. ~~Show employee names?~~ Decided 2026-10-01: **names are stored in our data (`data/people/`, gitignored so they are never published with the code) but NOT shown on the site.** The site shows job-title totals only. Groups with fewer than 5 people don't show averages; they are rolled into "other titles".
 1. ~~Sister agencies?~~ Decided: City + CPS + Park District.
 2. Should we start with the 2026 budget only and add history later?
