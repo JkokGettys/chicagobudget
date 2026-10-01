@@ -1,0 +1,1708 @@
+{
+ "top_vendors_all_resolved": [
+  {
+   "vendor": "BLUE CROSS & BLUE SHIELD",
+   "paid_2025": 609983745.56,
+   "payments": 68,
+   "depts": [
+    "Department of Finance"
+   ]
+  },
+  {
+   "vendor": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC",
+   "paid_2025": 332735104.89,
+   "payments": 321,
+   "depts": [
+    "Department of Fleet and Facility Management",
+    "Department of Environment",
+    "Chicago Department of Transportation",
+    "Chicago Department of Aviation",
+    "Department of Water Management"
+   ]
+  },
+  {
+   "vendor": "BOARD OF EDUCATION OF THE CITY OF CHICAGO",
+   "paid_2025": 146921051.39,
+   "payments": 80,
+   "depts": [
+    "Department of Cultural Affairs and Special Events",
+    "Chicago Department of Public Health",
+    "Office of Budget and Management",
+    "Department of Family and Support Services",
+    "Department of Planning and Development"
+   ]
+  },
+  {
+   "vendor": "LOEVY & LOEVY ATTORNEYS AT LAW",
+   "paid_2025": 134450910.6,
+   "payments": 46,
+   "depts": [
+    "Finance General"
+   ]
+  },
+  {
+   "vendor": "CAREMARK INC",
+   "paid_2025": 129568900.58,
+   "payments": 53,
+   "depts": [
+    "Department of Finance"
+   ]
+  },
+  {
+   "vendor": "TURNER PASCHEN AVIATION PARTNERS",
+   "paid_2025": 122314823.71,
+   "payments": 87,
+   "depts": [
+    "Chicago Department of Aviation"
+   ]
+  },
+  {
+   "vendor": "AECOM HUNT / CLAYCO, A JOINT VENTURE",
+   "paid_2025": 121981273.53,
+   "payments": 61,
+   "depts": [
+    "Chicago Department of Aviation"
+   ]
+  },
+  {
+   "vendor": "CLARK-W.E. ONEIL JV",
+   "paid_2025": 105189358.2,
+   "payments": 52,
+   "depts": [
+    "Chicago Department of Aviation"
+   ]
+  },
+  {
+   "vendor": "CONSTELLATION NEWENERGY INC",
+   "paid_2025": 92249308.56,
+   "payments": 35,
+   "depts": [
+    "Department of Fleet and Facility Management"
+   ]
+  },
+  {
+   "vendor": "BIGANE PAVING COMPANY",
+   "paid_2025": 71875950.6,
+   "payments": 228,
+   "depts": [
+    "Chicago Department of Transportation",
+    "Department of Water Management"
+   ]
+  },
+  {
+   "vendor": "CDW GOVERNMENT, LLC.",
+   "paid_2025": 70965548.6,
+   "payments": 729,
+   "depts": [
+    "City Council",
+    "Board of Election Commissioners",
+    "Department of Technology and Innovation"
+   ]
+  },
+  {
+   "vendor": "PAN-OCEANIC ENGINEERING CO INC",
+   "paid_2025": 67668700.6,
+   "payments": 93,
+   "depts": [
+    "Chicago Department of Transportation",
+    "Department of Water Management"
+   ]
+  },
+  {
+   "vendor": "SUMIT CONSTRUCTION CO., INC.",
+   "paid_2025": 62934923.7,
+   "payments": 117,
+   "depts": [
+    "Chicago Department of Transportation",
+    "Department of Water Management"
+   ]
+  },
+  {
+   "vendor": "K.L.E.O. COMMUNITY FAMILY LIFE CENTER",
+   "paid_2025": 59462741.22,
+   "payments": 140,
+   "depts": [
+    "Department of Family and Support Services",
+    "Department of Planning and Development"
+   ]
+  },
+  {
+   "vendor": "AOR TRANSIT",
+   "paid_2025": 56302242.57,
+   "payments": 37,
+   "depts": [
+    "Chicago Department of Aviation"
+   ]
+  },
+  {
+   "vendor": "SDI PRESENCE LLC",
+   "paid_2025": 55494288.43,
+   "payments": 288,
+   "depts": [
+    "Department of Fleet and Facility Management",
+    "Department of Technology and Innovation",
+    "Chicago Department of Aviation"
+   ]
+  },
+  {
+   "vendor": "RELIABLE CONTRACTING & EQUIPMENT COMPANY",
+   "paid_2025": 49362779.38,
+   "payments": 57,
+   "depts": [
+    "Department of Water Management"
+   ]
+  },
+  {
+   "vendor": "SKIDMORE,OWINGS & MERRILL LLP",
+   "paid_2025": 48307046.44,
+   "payments": 66,
+   "depts": [
+    "Department of Planning and Development",
+    "Chicago Department of Aviation"
+   ]
+  },
+  {
+   "vendor": "CHICAGO TRANSITY AUTHORITY.",
+   "paid_2025": 47205968.0,
+   "payments": 6,
+   "depts": [
+    "Department of Finance",
+    "Department of Planning and Development"
+   ]
+  },
+  {
+   "vendor": "ALLIED WASTE TRANSPORTATION INC",
+   "paid_2025": 46990432.16,
+   "payments": 114,
+   "depts": [
+    "Department of Fleet and Facility Management",
+    "Department of Streets and Sanitation",
+    "Department of Water Management"
+   ]
+  },
+  {
+   "vendor": "STANDARD PARKING CORPORATION 01",
+   "paid_2025": 46168607.82,
+   "payments": 75,
+   "depts": [
+    "Department of Cultural Affairs and Special Events",
+    "Department of Finance",
+    "Chicago Department of Aviation"
+   ]
+  },
+  {
+   "vendor": "CHICAGO AIRLINES TERMINAL CONSORTIUM",
+   "paid_2025": 44442605.07,
+   "payments": 112,
+   "depts": [
+    "Chicago Department of Aviation"
+   ]
+  },
+  {
+   "vendor": "TRANSYSTEMS CORPORATION",
+   "paid_2025": 43249972.93,
+   "payments": 142,
+   "depts": [
+    "Chicago Department of Transportation",
+    "Department of Water Management"
+   ]
+  },
+  {
+   "vendor": "AECOM-DBS",
+   "paid_2025": 42075478.7,
+   "payments": 12,
+   "depts": [
+    "Department of Water Management"
+   ]
+  },
+  {
+   "vendor": "GENUINE PARTS COMPANY",
+   "paid_2025": 39004513.95,
+   "payments": 271,
+   "depts": [
+    "Department of Fleet and Facility Management"
+   ]
+  },
+  {
+   "vendor": "JOHN BURNS CONSTRUCTION CO.",
+   "paid_2025": 38694928.62,
+   "payments": 154,
+   "depts": [
+    "Chicago Department of Transportation",
+    "Department of Water Management"
+   ]
+  },
+  {
+   "vendor": "CONNECT CHICAGO ALLIANCE JV",
+   "paid_2025": 38586119.74,
+   "payments": 450,
+   "depts": [
+    "Chicago Department of Aviation"
+   ]
+  },
+  {
+   "vendor": "CHICAGO PARK DISTRICT",
+   "paid_2025": 38557792.29,
+   "payments": 35,
+   "depts": [
+    "Department of Cultural Affairs and Special Events",
+    "Department of Fleet and Facility Management",
+    "Office of Budget and Management",
+    "Department of Planning and Development"
+   ]
+  },
+  {
+   "vendor": "DEPARTMENT OF FINANCE",
+   "paid_2025": 35019523.79,
+   "payments": 33,
+   "depts": [
+    "Department of Streets and Sanitation",
+    "Chicago Department of Aviation",
+    "Finance General"
+   ]
+  },
+  {
+   "vendor": "STUDIO ORD INC",
+   "paid_2025": 34706918.27,
+   "payments": 173,
+   "depts": [
+    "Chicago Department of Aviation"
+   ]
+  },
+  {
+   "vendor": "CNECT LLC",
+   "paid_2025": 34100143.9,
+   "payments": 58,
+   "depts": [
+    "Chicago Department of Transportation"
+   ]
+  },
+  {
+   "vendor": "MAT CONSTRUCTION LEASING, INC.",
+   "paid_2025": 33546959.11,
+   "payments": 127,
+   "depts": [
+    "Chicago Department of Transportation",
+    "Department of Water Management"
+   ]
+  },
+  {
+   "vendor": "POWER ROGERS, LLP",
+   "paid_2025": 33534968.29,
+   "payments": 5,
+   "depts": [
+    "Finance General"
+   ]
+  },
+  {
+   "vendor": "RELIABLE ASPHALT CORP.",
+   "paid_2025": 31757082.39,
+   "payments": 85,
+   "depts": [
+    "Chicago Department of Transportation",
+    "Department of Water Management"
+   ]
+  },
+  {
+   "vendor": "PCWP, LLC",
+   "paid_2025": 31584133.02,
+   "payments": 13,
+   "depts": [
+    "Department of Water Management"
+   ]
+  },
+  {
+   "vendor": "USI INSURANCE SERVICES LLC.",
+   "paid_2025": 31438883.2,
+   "payments": 40,
+   "depts": [
+    "Department of Cultural Affairs and Special Events",
+    "Department of Finance",
+    "Department of Law",
+    "Department of Family and Support Services",
+    "Finance General"
+   ]
+  },
+  {
+   "vendor": "LAKESHORE RECYCLING SYSTEMS",
+   "paid_2025": 31205793.24,
+   "payments": 58,
+   "depts": [
+    "Department of Cultural Affairs and Special Events",
+    "Department of Streets and Sanitation"
+   ]
+  },
+  {
+   "vendor": "ABM Aviation",
+   "paid_2025": 30891065.78,
+   "payments": 13,
+   "depts": [
+    "Chicago Department of Aviation"
+   ]
+  },
+  {
+   "vendor": "ALL CHICAGO MAKING HOMELESSNESS HISTORY",
+   "paid_2025": 30362144.11,
+   "payments": 298,
+   "depts": [
+    "Department of Family and Support Services"
+   ]
+  },
+  {
+   "vendor": "MIDWAY AIRLINES' TERMINAL",
+   "paid_2025": 29000595.77,
+   "payments": 55,
+   "depts": [
+    "Chicago Department of Aviation"
+   ]
+  }
+ ],
+ "sole_source_top_contracts": [
+  {
+   "contract": "295220",
+   "vendor": "SECURITAS SECURITY SERVICES, USA, INC.",
+   "desc": "Security Services",
+   "dept": "Department of Fleet and Facility Management",
+   "type": "WORK SERVICES / FACILITIES MAINT.",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 15461762.52,
+   "award_total": 30592400.0
+  },
+  {
+   "contract": "60663",
+   "vendor": "AXON ENTERPRISE INC",
+   "desc": "Taser International - New Sole Source Contract",
+   "dept": "Chicago Police Department",
+   "type": "COMMODITIES",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 13236816.73,
+   "award_total": 110870780.8
+  },
+  {
+   "contract": "246965",
+   "vendor": "BELL HELICOPTER-TEXTRON",
+   "desc": "Purchase of 2 Helicopters",
+   "dept": "Office of Public Safety Administration",
+   "type": "VEHICLES/HEAVY EQUIPMENT (CAPITAL)",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 11879683.0,
+   "award_total": 22868285.3
+  },
+  {
+   "contract": "289783",
+   "vendor": "AT&T Enterprises, LLC",
+   "desc": "REPLACEMENT AND MAINTENANCE OF OEMC 911 PUBLIC EMERGENCY SYSTEM  (TRANSFER FROM PO # 155121)",
+   "dept": "Office of Public Safety Administration",
+   "type": "PRO SERV CONSULTING $250,000orABOVE",
+   "procurement": "CONTRACT ASSIGNMENT/TRANSFER|SOLE SOURCE",
+   "paid_2025": 8296994.39,
+   "award_total": 9017825.1
+  },
+  {
+   "contract": "84871",
+   "vendor": "SIEMENS INDUSTRY INC. 01",
+   "desc": "SUPPORT & MAINTENANCE OF THE SUPERVISORY MONITORING SYSTEM (SMS) AND THE FIRE ALARM SYSTEM (FAS)",
+   "dept": "Chicago Department of Aviation",
+   "type": "WORK SERV-AVIATION",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 5407545.61,
+   "award_total": 43495300.4
+  },
+  {
+   "contract": "16761",
+   "vendor": "INFOR PUBLIC SECTOR INC",
+   "desc": "HANSEN 8 SOFTWARE LICENSE, IMPLEMENTATION, MAINTENANCE & SUPPORT",
+   "dept": "Department of Technology and Innovation",
+   "type": "PRO SERV CONSULTING $250,000orABOVE",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 4294329.94,
+   "award_total": 100139181.1
+  },
+  {
+   "contract": "68348",
+   "vendor": "A SAFE HAVEN FOUNDATION",
+   "desc": "MEDIAN AND BOULEVARD LANDSCAPE MAINTENANCE AND SERVICES- CENTRAL REGION",
+   "dept": "Chicago Department of Transportation",
+   "type": "WORK SERVICES / FACILITIES MAINT.",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 2076929.0,
+   "award_total": 9690000.0
+  },
+  {
+   "contract": "81523",
+   "vendor": "HEARTLAND HUMAN CARE SERVICES, INC.",
+   "desc": "INFORMATION AND PROFESSIONAL SOCIAL SERVICES WITHIN CHICAGO O'HARE INTERNATIONAL AIRPORT (SPEC #757459)",
+   "dept": "Chicago Department of Aviation",
+   "type": "PRO SERV-AVIATION",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 1910602.1,
+   "award_total": 5990321.0
+  },
+  {
+   "contract": "270136",
+   "vendor": "CONDY HOLDINGS LLC DBA CARUS LLC",
+   "desc": "Corrosion Control Product-Liquid Blended Phosphate",
+   "dept": "Department of Water Management",
+   "type": "WORK SERVICES / FACILITIES MAINT.",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 1880152.07,
+   "award_total": 9408000.0
+  },
+  {
+   "contract": "98336",
+   "vendor": "A SAFE HAVEN FOUNDATION",
+   "desc": "MEDIAN AND BOULEVARD LANDSCAPE MAINTENANCE AND SERVICES - SOUTHEAST REGION",
+   "dept": "Chicago Department of Transportation",
+   "type": "WORK SERVICES / FACILITIES MAINT.",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 1659803.52,
+   "award_total": 7282550.0
+  },
+  {
+   "contract": "T26138",
+   "vendor": "MOTOROLA INC FKA SUNCOAST",
+   "desc": "SOFTWARE AND SERVICES AGREEMENT",
+   "dept": "Department of Technology and Innovation",
+   "type": "Time Extension",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 1452499.75,
+   "award_total": 44213180.1
+  },
+  {
+   "contract": "283026",
+   "vendor": "LION APPAREL, INC",
+   "desc": "Purchase and Maintenance of Bunker Gear",
+   "dept": "Chicago Fire Department",
+   "type": "WORK SERVICES / FACILITIES MAINT.",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 1216576.56,
+   "award_total": 45023192.3
+  },
+  {
+   "contract": "143696",
+   "vendor": "ASSETWORKS, INC.",
+   "desc": "LICENSING, PARTS AND SERVICES FOR SOFTWARE HARDWARE AND PROFESSINAL SERVICES",
+   "dept": "Department of Fleet and Facility Management",
+   "type": "PRO SERV CONSULTING $250,000orABOVE",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 1075930.66,
+   "award_total": 6250000.0
+  },
+  {
+   "contract": "300020",
+   "vendor": "RON SMITH & ASSOCIATES, INC.",
+   "desc": "Latent Print Examination Training and Laboratory Accreditation Services",
+   "dept": "Office of Public Safety Administration",
+   "type": "PRO SERV CONSULTING $250,000orABOVE",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 999712.34,
+   "award_total": 4466871.3
+  },
+  {
+   "contract": "T26824",
+   "vendor": "GORDIAN GROUP, INC",
+   "desc": "T2920490201 DEVELOPMENT & IMPLEMENTATION OF JOB ORDER CONTRACTING (JOC) SYSTEM",
+   "dept": "Chicago Department of Transportation",
+   "type": "PRO SERV CONSULTING $250,000orABOVE",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 854325.73,
+   "award_total": 25249097.3
+  },
+  {
+   "contract": "241819",
+   "vendor": "BELOVED COMMUNITY FAMILY WELLNESS CENTER",
+   "desc": "CDPH-CONTACT-TRACING: PO 241819 BELOVED COMM FAM WELL",
+   "dept": "Chicago Department of Public Health",
+   "type": "DELEGATE AGENCY",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 642112.03,
+   "award_total": 984365.0
+  },
+  {
+   "contract": "112351",
+   "vendor": "HASTINGS AIR ENERGY CONTROL",
+   "desc": "PLYMOVENT EXHAUST EXTRACTION SYSTEMS- INSPECTIONS, PREVENTIVE MAINTENANCE AND REPAIR AT CITY OF CHICAGO FACILI",
+   "dept": "Department of Fleet and Facility Management",
+   "type": "WORK SERVICES / FACILITIES MAINT.",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 623207.75,
+   "award_total": 3462646.0
+  },
+  {
+   "contract": "242435",
+   "vendor": "FINCANTIERI MARINE GROUP LLC",
+   "desc": "Regulatory Inspection & Maintenance of James J Versluis Tugboat",
+   "dept": "Department of Water Management",
+   "type": "WORK SERVICES / FACILITIES MAINT.",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 608425.0,
+   "award_total": 2018879.0
+  },
+  {
+   "contract": "241834",
+   "vendor": "LAWNDALE CHRISTIAN HEALTH CENTER",
+   "desc": "CDPH-CONTACT-TRACING: PO 241834 LAWNDALE CHRISTIAN HLTH CNTR",
+   "dept": "Chicago Department of Public Health",
+   "type": "DELEGATE AGENCY",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 582828.3,
+   "award_total": 1053818.0
+  },
+  {
+   "contract": "241813",
+   "vendor": "ALIVIO MEDICAL CENTER,INC",
+   "desc": "CDPH-CONTACT-TRACING: PO 241813 ALIVIO MED CENTER",
+   "dept": "Chicago Department of Public Health",
+   "type": "DELEGATE AGENCY",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 576413.63,
+   "award_total": 1436242.0
+  },
+  {
+   "contract": "204694",
+   "vendor": "Signature Flight Support LLC",
+   "desc": "Transferred from PO 19542: SUPPLY AND DISPENSE JET FUEL AT MIDWAY AND O'HARE AIRPORTS",
+   "dept": "Department of Fleet and Facility Management",
+   "type": "VEHICLES/HEAVY EQUIPMENT (CAPITAL)",
+   "procurement": "CONTRACT ASSIGNMENT/TRANS|CONTRACT ASSIGNMENT/TRANSFER|SOLE SOURCE",
+   "paid_2025": 561168.22,
+   "award_total": 2686949.9
+  },
+  {
+   "contract": "189132",
+   "vendor": "AIRGAS USA LLC",
+   "desc": "1178867C: NCRB INDUSTRIAL, MEDICAL & PROPANE GAS IN CYLINDER & BULK",
+   "dept": "Department of Water Management",
+   "type": "COMMODITIES",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 555359.8,
+   "award_total": 10360361.9
+  },
+  {
+   "contract": "241270",
+   "vendor": "SINAI COMMUNITY INSTITUTE, INC.",
+   "desc": "CDPH-PLANNING-HC: PO 241270 SINAI HEALTH SYSTEM - Healthy Chicago Equity Zones initiative-Health Disparities",
+   "dept": "Chicago Department of Public Health",
+   "type": "DELEGATE AGENCY",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 536496.99,
+   "award_total": 1331865.0
+  },
+  {
+   "contract": "241826",
+   "vendor": "FRIEND FAMILY HEALTH CENTER",
+   "desc": "CDPH-CONTACT-TRACING: PO 241826 FRIEND FAM HLTH CNTR",
+   "dept": "Chicago Department of Public Health",
+   "type": "DELEGATE AGENCY",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 509122.2,
+   "award_total": 974643.0
+  },
+  {
+   "contract": "241843",
+   "vendor": "TCA HEALTH INC",
+   "desc": "CDPH-CONTACT-TRACING: PO 241843 TCA HLTH INC",
+   "dept": "Chicago Department of Public Health",
+   "type": "DELEGATE AGENCY",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 449228.59,
+   "award_total": 928735.0
+  },
+  {
+   "contract": "245656",
+   "vendor": "EX3 LABS, LLC",
+   "desc": "MAINTENANCE AND SUPPORT OF THE MY CHI. MY FUTURE. (MCMF) MOBILE APPLICATION",
+   "dept": "Department of Family and Support Services",
+   "type": "PRO SERV CONSULTING $250,000orABOVE",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 407219.37,
+   "award_total": 782100.0
+  },
+  {
+   "contract": "69858",
+   "vendor": "SDI PRESENCE LLC",
+   "desc": "WATER MANAGEMENT CUSTOMER SERVICE, BILLING, AND INFORMATION SYSTEM SUPPORT",
+   "dept": "Department of Technology and Innovation",
+   "type": "PRO SERV CONSULTING $250,000orABOVE",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 374250.03,
+   "award_total": 45967229.7
+  },
+  {
+   "contract": "59622",
+   "vendor": "TECH LOGIC CORP",
+   "desc": "MAINTENANCE SERVICE FOR THE AUTOMATED MATERIAL HANDLING (AMH) SYSTEM AND PURCHASE OF RELATED GOODS AND SERVICE",
+   "dept": "Chicago Public Library",
+   "type": "WORK SERVICES / FACILITIES MAINT.",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 299556.7,
+   "award_total": 3750395.0
+  },
+  {
+   "contract": "262496",
+   "vendor": "ESPERANZA HEALTH CENTER",
+   "desc": "CDPH-SHLTRBSDTMS-HLTH: Shelter Based Service Teams - PO 262496 Esperanza Health Center",
+   "dept": "Chicago Department of Public Health",
+   "type": "DELEGATE AGENCY",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 246840.91,
+   "award_total": 370000.0
+  },
+  {
+   "contract": "241833",
+   "vendor": "INNER-CITY MUSLIM ACTION",
+   "desc": "CDPH-CONTACT-TRACING: PO 241833 INNER-CITY MUSLIM ACTION NETWORK",
+   "dept": "Chicago Department of Public Health",
+   "type": "DELEGATE AGENCY",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 231704.3,
+   "award_total": 964249.0
+  }
+ ],
+ "emergency_top_contracts": [],
+ "sole_source_by_dept": {
+  "Office of Public Safety Administration": 21412426.05,
+  "Department of Fleet and Facility Management": 17775724.9,
+  "Chicago Police Department": 13569506.28,
+  "Chicago Department of Aviation": 7733232.81,
+  "Department of Technology and Innovation": 6121079.72,
+  "Chicago Department of Public Health": 5169495.28,
+  "Chicago Department of Transportation": 4808220.16,
+  "Department of Water Management": 3043936.87,
+  "Chicago Fire Department": 1216576.56,
+  "Department of Family and Support Services": 407219.37,
+  "Chicago Public Library": 299556.7,
+  "Department of Planning and Development": 63706.03
+ },
+ "procurement_type_coverage": {
+  "paid_on_contracts_2025": 5708513359.85,
+  "with_procurement_type": 3495383807.6,
+  "pct_with_procurement_type": 61.231069934674665,
+  "sole_source_paid": 81620680.73,
+  "emergency_paid": 0.0
+ },
+ "procurement_type_paid_breakdown": {
+  "BID": 1545440155.02,
+  "RFP": 1040738426.73,
+  "RFQ": 585369858.59,
+  "MASTER AGREEMENT": 121226833.48,
+  "SOLE SOURCE": 81620680.73,
+  "EMERGENCY": 0.0,
+  "JOINT PURCHASE": 18527976.11,
+  "REFERENCE CONTRACT": 27899622.12,
+  "CONTRACT ASSIGNMENT/TRANSFER": 134533098.14,
+  "RFI": 0.0,
+  "CM": 0.0,
+  "INNOVATIVE PROCUREMENT": 0.0,
+  "(blank, mostly delegate agency, comptroller and legacy)": 2213129552.25
+ },
+ "consulting": {
+  "definition": "contract_type contains CONSULT (PRO SERV CONSULTING over/under $250,000, PRO SERV-BUSINESS CONSULTING) or description contains CONSULT",
+  "paid_2025": 631088024.36,
+  "contract_type_only_paid_2025": 521172694.58000004,
+  "by_dept": {
+   "Department of Technology and Innovation": 146995954.91,
+   "Department of Fleet and Facility Management": 124919905.43,
+   "Chicago Department of Aviation": 108803116.99,
+   "Department of Finance": 83787750.71,
+   "Chicago Department of Transportation": 65284621.37,
+   "Office of Public Safety Administration": 25269801.53,
+   "Chicago Department of Public Health": 14917612.51,
+   "Department of Water Management": 13599763.47,
+   "Office of Emergency Management and Communications": 10102859.76,
+   "Department of Streets and Sanitation": 8164783.49,
+   "Department of Planning and Development": 7405559.94,
+   "Department of Human Resources": 5854478.23,
+   "Department of Family and Support Services": 5793589.61,
+   "Department of Law": 2692087.62,
+   "Chicago Police Department": 1657317.35
+  },
+  "top_vendors": [
+   {
+    "vendor": "CDW GOVERNMENT, LLC.",
+    "paid_2025": 70074018.84,
+    "payments": 701,
+    "depts": [
+     "Department of Technology and Innovation"
+    ]
+   },
+   {
+    "vendor": "AOR TRANSIT",
+    "paid_2025": 56302242.57,
+    "payments": 37,
+    "depts": [
+     "Chicago Department of Aviation"
+    ]
+   },
+   {
+    "vendor": "SDI PRESENCE LLC",
+    "paid_2025": 43502264.51,
+    "payments": 183,
+    "depts": [
+     "Department of Fleet and Facility Management",
+     "Department of Technology and Innovation"
+    ]
+   },
+   {
+    "vendor": "GENUINE PARTS COMPANY",
+    "paid_2025": 39004513.95,
+    "payments": 271,
+    "depts": [
+     "Department of Fleet and Facility Management"
+    ]
+   },
+   {
+    "vendor": "CNECT LLC",
+    "paid_2025": 34100143.9,
+    "payments": 58,
+    "depts": [
+     "Chicago Department of Transportation"
+    ]
+   },
+   {
+    "vendor": "TRANSWESTERN COMMERCIAL SERVICES, LLC.",
+    "paid_2025": 28653821.06,
+    "payments": 205,
+    "depts": [
+     "Department of Fleet and Facility Management"
+    ]
+   },
+   {
+    "vendor": "CBRE INC.",
+    "paid_2025": 27057292.04,
+    "payments": 70,
+    "depts": [
+     "Department of Fleet and Facility Management",
+     "Department of Planning and Development"
+    ]
+   },
+   {
+    "vendor": "KYNDRYL, INC.",
+    "paid_2025": 25373985.26,
+    "payments": 63,
+    "depts": [
+     "Department of Finance"
+    ]
+   },
+   {
+    "vendor": "WORLDPAY HOLDING, LLC",
+    "paid_2025": 18709671.5,
+    "payments": 14,
+    "depts": [
+     "Department of Finance"
+    ]
+   },
+   {
+    "vendor": "RICONDO & ASSOCIATES, INC.",
+    "paid_2025": 17433037.66,
+    "payments": 593,
+    "depts": [
+     "Chicago Department of Aviation"
+    ]
+   },
+   {
+    "vendor": "COMPUTER AID INC",
+    "paid_2025": 13088216.43,
+    "payments": 28,
+    "depts": [
+     "Department of Fleet and Facility Management",
+     "Department of Technology and Innovation"
+    ]
+   },
+   {
+    "vendor": "VERIZON WIRELESS",
+    "paid_2025": 12909188.08,
+    "payments": 372,
+    "depts": [
+     "Department of Technology and Innovation"
+    ]
+   },
+   {
+    "vendor": "LANDRUM & BROWN, INC",
+    "paid_2025": 11706922.02,
+    "payments": 300,
+    "depts": [
+     "Chicago Department of Aviation"
+    ]
+   },
+   {
+    "vendor": "NTT DATA AMERICAS, INC",
+    "paid_2025": 10003695.58,
+    "payments": 36,
+    "depts": [
+     "Department of Finance"
+    ]
+   },
+   {
+    "vendor": "AMERICAN TRAFFIC SOLUTIONS, INC.",
+    "paid_2025": 9437667.99,
+    "payments": 8,
+    "depts": [
+     "Chicago Department of Transportation"
+    ]
+   },
+   {
+    "vendor": "Motorola Solutions Connectivity, Inc",
+    "paid_2025": 9317017.4,
+    "payments": 3,
+    "depts": [
+     "Office of Public Safety Administration"
+    ]
+   },
+   {
+    "vendor": "DELL MARKETING LP.",
+    "paid_2025": 8908735.82,
+    "payments": 253,
+    "depts": [
+     "Department of Technology and Innovation",
+     "Finance General"
+    ]
+   },
+   {
+    "vendor": "AT&T Enterprises, LLC",
+    "paid_2025": 8296994.39,
+    "payments": 28,
+    "depts": [
+     "Office of Public Safety Administration"
+    ]
+   },
+   {
+    "vendor": "CATALYST CONSULTING GROUP INC",
+    "paid_2025": 8216902.55,
+    "payments": 94,
+    "depts": [
+     "Department of Fleet and Facility Management",
+     "Department of Technology and Innovation",
+     "Chicago Department of Aviation"
+    ]
+   },
+   {
+    "vendor": "UNITED ROAD TOWING, INC.",
+    "paid_2025": 8164783.49,
+    "payments": 29,
+    "depts": [
+     "Department of Streets and Sanitation"
+    ]
+   }
+  ],
+  "top_contracts": [
+   {
+    "contract": "33232",
+    "vendor": "CDW GOVERNMENT, LLC.",
+    "desc": "PROVISION OF SOFTWARE, APPLE PRODUCTS, PANASONIC RUGGEDIZED NOTEBOOKS, NETWORK EQUIPMENT, SERVERS, STORAGE SOL",
+    "dept": "Department of Technology and Innovation",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFP",
+    "paid_2025": 70074018.84,
+    "award_total": 505972156.7
+   },
+   {
+    "contract": "25743",
+    "vendor": "AOR TRANSIT",
+    "desc": "OPERATION AND MAINTENANCE OF AIRPORT TRANSIT SYSTEM (ATS) at O'HARE, Spec# 92543, Req# 55032, RFQ# 3593",
+    "dept": "Chicago Department of Aviation",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFQ",
+    "paid_2025": 56302242.57,
+    "award_total": 643999134.2
+   },
+   {
+    "contract": "186191",
+    "vendor": "GENUINE PARTS COMPANY",
+    "desc": "923104:  VEHICLE AND EQUIPMENT PARTS MANAGEMENT AND SUPPLY",
+    "dept": "Department of Fleet and Facility Management",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFP",
+    "paid_2025": 38988134.18,
+    "award_total": 225000000.0
+   },
+   {
+    "contract": "93627",
+    "vendor": "SDI PRESENCE LLC",
+    "desc": "INFORMATION TECHNOLOGY INFRASTRUCTURE SERVICES FOR CITY OF CHICAGO",
+    "dept": "Department of Technology and Innovation",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFP",
+    "paid_2025": 38538014.12,
+    "award_total": 261622963.0
+   },
+   {
+    "contract": "52685",
+    "vendor": "CNECT LLC",
+    "desc": "PROGRAM MANAGEMENT CONSULTANT FOR CAPITAL IMPROVEMENT PROJECTS",
+    "dept": "Chicago Department of Transportation",
+    "type": "ARCH/ENGINEERING",
+    "procurement": "RFP",
+    "paid_2025": 34100143.9,
+    "award_total": 259000000.0
+   },
+   {
+    "contract": "167326",
+    "vendor": "KYNDRYL, INC.",
+    "desc": "CITY OF CHICAGO VIOLATION, NOTICING AND ADJUDICATION BUSINESS PROCESS AND SYSTEM SUPPORT (TRANSFER FROM PO # 2",
+    "dept": "Department of Finance",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "CONTRACT ASSIGNMENT/TRANSFER|RFP",
+    "paid_2025": 25373985.26,
+    "award_total": 177307695.7
+   },
+   {
+    "contract": "33959",
+    "vendor": "CBRE INC.",
+    "desc": "PROPERTY MANAGEMENT SERVICES FOR THE HAROLD WASHINGTON LIBRARY CENTER",
+    "dept": "Department of Fleet and Facility Management",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFP",
+    "paid_2025": 25222661.24,
+    "award_total": 111491227.7
+   },
+   {
+    "contract": "224888",
+    "vendor": "TRANSWESTERN COMMERCIAL SERVICES, LLC.",
+    "desc": "TRANSFERRED FROM PO 33323 - PROPERTY MANAGEMENT AND EVENT SUPPORT SERVICES FOR MILLENNIUM PARK AND VARIOUS DCA",
+    "dept": "Department of Fleet and Facility Management",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "CONTRACT ASSIGNMENT/TRANS|CONTRACT ASSIGNMENT/TRANSFER",
+    "paid_2025": 19890074.98,
+    "award_total": 78913740.8
+   },
+   {
+    "contract": "29885",
+    "vendor": "WORLDPAY HOLDING, LLC",
+    "desc": "PAYMENT PROCESSING FOR CITY OF CHICAGO",
+    "dept": "Department of Finance",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFP",
+    "paid_2025": 18709671.5,
+    "award_total": 238157586.0
+   },
+   {
+    "contract": "145306",
+    "vendor": "RICONDO & ASSOCIATES, INC.",
+    "desc": "ON-CALL AVIATION PLANNING CONSULTING SERVICES FOR CHICAGO O'HARE AND MIDWAY INTERNATIONAL AIRPORTS",
+    "dept": "Chicago Department of Aviation",
+    "type": "PRO SERV-AVIATION",
+    "procurement": "RFP",
+    "paid_2025": 17433037.66,
+    "award_total": 122700000.0
+   },
+   {
+    "contract": "117688",
+    "vendor": "VERIZON WIRELESS",
+    "desc": "CELLULAR BASED WIRELESS COMMUNICATIONS",
+    "dept": "Department of Technology and Innovation",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFP",
+    "paid_2025": 12909188.08,
+    "award_total": 55500000.0
+   },
+   {
+    "contract": "26625",
+    "vendor": "NTT DATA AMERICAS, INC",
+    "desc": "CUSTOMER SERVICE AND CALL CENTER SERVICES FOR WATER/SEWER BILLING OPERATIONS FOR CITY OF CHICAGO",
+    "dept": "Department of Finance",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFP",
+    "paid_2025": 10003695.58,
+    "award_total": 105799800.5
+   },
+   {
+    "contract": "28009",
+    "vendor": "AMERICAN TRAFFIC SOLUTIONS, INC.",
+    "desc": "AUTOMATED SPEED ENFORCEMENT PROGRAM-CITY OF CHICAGO",
+    "dept": "Chicago Department of Transportation",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFP",
+    "paid_2025": 9437667.99,
+    "award_total": 142466360.0
+   },
+   {
+    "contract": "200495",
+    "vendor": "Motorola Solutions Connectivity, Inc",
+    "desc": "Next Generation 9-1-1 (NG9-1-1) IP Enabled Network Implementation, Maintenance Services and IP Based PSAP",
+    "dept": "Office of Public Safety Administration",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFP",
+    "paid_2025": 9317017.4,
+    "award_total": 51966747.5
+   },
+   {
+    "contract": "289783",
+    "vendor": "AT&T Enterprises, LLC",
+    "desc": "REPLACEMENT AND MAINTENANCE OF OEMC 911 PUBLIC EMERGENCY SYSTEM  (TRANSFER FROM PO # 155121)",
+    "dept": "Office of Public Safety Administration",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "CONTRACT ASSIGNMENT/TRANSFER|SOLE SOURCE",
+    "paid_2025": 8296994.39,
+    "award_total": 9017825.1
+   },
+   {
+    "contract": "225233",
+    "vendor": "COMPUTER AID INC",
+    "desc": "NON-TARGET MARKET \nMASTER CONSULTING AGREEMENT (RFQ) FOR \nINFORMATION TECHNOLOGY CONSULTING AND RELATED SERVIC",
+    "dept": "Department of Fleet and Facility Management",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "MASTER AGREEMENT",
+    "paid_2025": 8241200.22,
+    "award_total": 75000000.0
+   },
+   {
+    "contract": "34921",
+    "vendor": "UNITED ROAD TOWING, INC.",
+    "desc": "IMPOUND FACILITY MANAGEMENT, BOOT RELEASE, TOWING AND RELATED SERVICES",
+    "dept": "Department of Streets and Sanitation",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFP",
+    "paid_2025": 8164783.49,
+    "award_total": 96986494.0
+   },
+   {
+    "contract": "224600",
+    "vendor": "TRANSWESTERN COMMERCIAL SERVICES, LLC.",
+    "desc": "TRANSFER FROM PO 60672 (MB REAL ESTATE) PROPERTY AND CONCESSIONS MANAGEMENT ON THE CHICAGO RIVERWALK",
+    "dept": "Department of Fleet and Facility Management",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "CONTRACT ASSIGNMENT/TRANS|CONTRACT ASSIGNMENT/TRANSFER",
+    "paid_2025": 7844194.82,
+    "award_total": 27615692.5
+   },
+   {
+    "contract": "33939",
+    "vendor": "MOTOROLA SOLUTIONS INC",
+    "desc": "RADIO EQUIPMENT, PARTS AND SERVICES",
+    "dept": "Office of Emergency Management and Communications",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFP",
+    "paid_2025": 7826281.29,
+    "award_total": 117628555.0
+   },
+   {
+    "contract": "54815",
+    "vendor": "ADVANCED DATA PROCESSING INC",
+    "desc": "PART A: EMERGENCY MEDICAL SERVICES (EMS) BILLING AND COLLECTION SERVICES & PART B: PATIENT TRACKING AND MOBILE",
+    "dept": "Department of Finance",
+    "type": "PRO SERV CONSULTING $250,000orABOVE",
+    "procurement": "RFP",
+    "paid_2025": 7713574.58,
+    "award_total": 49402912.2
+   }
+  ]
+ },
+ "delegate_agencies": {
+  "paid_2025": 621211111.81,
+  "agencies_dept_pairs": {
+   "groups": 639,
+   "groups_under_1M": 522,
+   "dollars": 621211111.81,
+   "dollars_in_groups_under_1M": 131919941.04,
+   "pct_dollars_under_1M": 21.2359274539745,
+   "pct_groups_under_1M": 81.69014084507042
+  },
+  "agency_contract_groups": {
+   "groups": 1672,
+   "groups_under_1M": 1552,
+   "dollars": 621211768.8800001,
+   "dollars_in_groups_under_1M": 263048618.92999998,
+   "pct_dollars_under_1M": 42.344435844198124,
+   "pct_groups_under_1M": 92.82296650717703
+  },
+  "by_dept": {
+   "Department of Family and Support Services": 466617204.1,
+   "Chicago Department of Public Health": 114305852.82,
+   "Department of Housing": 15481391.62,
+   "Department of Business Affairs and Consumer Protection": 8497520.7,
+   "Mayor's Office for People with Disabilities": 7218913.56,
+   "Department of Planning and Development": 4131241.28,
+   "Department of Cultural Affairs and Special Events": 2416018.68,
+   "Office of Budget and Management": 1384309.29,
+   "Department of Finance": 912859.96,
+   "Office of City Clerk": 217466.46,
+   "Department of Procurement Services": 28333.34
+  },
+  "top_agencies": [
+   {
+    "vendor": "K.L.E.O. COMMUNITY FAMILY LIFE CENTER",
+    "paid_2025": 41462741.22,
+    "payments": 136,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "ALL CHICAGO MAKING HOMELESSNESS HISTORY",
+    "paid_2025": 30362144.11,
+    "payments": 298,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "AFTER-SCHOOL MATTERS, INC.",
+    "paid_2025": 25731421.76,
+    "payments": 269,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "OPEN KITCHENS, INC.",
+    "paid_2025": 24132219.25,
+    "payments": 123,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "METROPOLITAN FAMILY SERVICES",
+    "paid_2025": 17779306.08,
+    "payments": 727,
+    "depts": [
+     "Department of Housing",
+     "Chicago Department of Public Health",
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "Equitable Social Solutions, LLC",
+    "paid_2025": 14658208.72,
+    "payments": 22,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "SGA YOUTH & FAMILY SERVICES, NFP",
+    "paid_2025": 12657085.2,
+    "payments": 500,
+    "depts": [
+     "Chicago Department of Public Health",
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "EL VALOR CORP. 01",
+    "paid_2025": 11568210.98,
+    "payments": 101,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "AIDS FOUNDATION OF CHICAGO",
+    "paid_2025": 11382442.52,
+    "payments": 286,
+    "depts": [
+     "Chicago Department of Public Health"
+    ]
+   },
+   {
+    "vendor": "ALTERNATIVE SCHOOLS NETWORK",
+    "paid_2025": 11102716.72,
+    "payments": 282,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "SALVATION ARMY FAMILY & COMMUNITY SERVICES",
+    "paid_2025": 10100216.47,
+    "payments": 391,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "ADA S. MC KINLEY COMMUNITY SERVICES, INC.",
+    "paid_2025": 8877129.0,
+    "payments": 141,
+    "depts": [
+     "Chicago Department of Public Health",
+     "Mayor's Office for People with Disabilities",
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "MARY CRANE LEAGUE",
+    "paid_2025": 8361405.39,
+    "payments": 255,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "CHICAGO YOUTH CENTERS",
+    "paid_2025": 8230974.21,
+    "payments": 424,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "KIMBALL DAYCARE CENTER & KINDERGARTEN INC",
+    "paid_2025": 8042865.24,
+    "payments": 147,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "YOUNG MEN'S CHRISTIAN ASSOCIATION OF CHICAGO",
+    "paid_2025": 7606252.91,
+    "payments": 297,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "PUERTO RICAN CULTURAL CENTER",
+    "paid_2025": 6575388.16,
+    "payments": 382,
+    "depts": [
+     "Chicago Department of Public Health",
+     "Department of Family and Support Services",
+     "Department of Planning and Development",
+     "Department of Business Affairs and Consumer Protection"
+    ]
+   },
+   {
+    "vendor": "CHRISTOPHER HOUSE",
+    "paid_2025": 6415800.35,
+    "payments": 82,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "SEVENTY-SEVEN COMMUNITIES MEAL SERVICES LLC",
+    "paid_2025": 6189840.0,
+    "payments": 57,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "CHICAGO CHILD CARE SOCIETY",
+    "paid_2025": 5876995.44,
+    "payments": 84,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "BOARD OF TRUSTEES OF THE UNIV. OF ILLINOIS",
+    "paid_2025": 5214704.46,
+    "payments": 470,
+    "depts": [
+     "Chicago Department of Public Health",
+     "Department of Family and Support Services",
+     "Department of Planning and Development"
+    ]
+   },
+   {
+    "vendor": "TRINITY UNITED CHURCH OF CHRIST CHILD CARE CENTERS, INC",
+    "paid_2025": 5206911.48,
+    "payments": 293,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "NETWORK ADVOCATING AGAINST DOMESTIC VIOLENCE",
+    "paid_2025": 5205873.71,
+    "payments": 101,
+    "depts": [
+     "Department of Housing",
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "CHICAGO COMMONS ASSOCIATION 02",
+    "paid_2025": 5192864.09,
+    "payments": 276,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "EXTENDED HOME LIVING SERVICES",
+    "paid_2025": 5146375.72,
+    "payments": 150,
+    "depts": [
+     "Mayor's Office for People with Disabilities"
+    ]
+   }
+  ]
+ },
+ "dfss_programs": {
+  "DFSS-ECBG-CS-CEL": 86409410.94,
+  "DFSS-HHS-CS-CEL": 58178195.44,
+  "DFSS-CORP-YS-SYEP": 28214524.52,
+  "DFSS-CORP-HL-EFSP": 27621649.26,
+  "DFSS-CORP-HL-SPC": 25177610.46,
+  "DFSS-IDOA-SS-HDM": 19518969.91,
+  "DFSS-CORP-HL-RRP": 18871951.99,
+  "DFSS-CORP-YS-OST": 17382419.16,
+  "DFSS-IDHS-HL-INTHS": 12481920.59,
+  "DFSS-CORP-HL-ESH": 8756105.42,
+  "DFSS-CORP-YS-CB": 8234413.51,
+  "DFSS-ARP-HL-EFSP": 7929037.7,
+  "DFSS-IDHS-CS-CCO": 7688546.43,
+  "DFSS-CORP-YS-MENT": 7413143.83,
+  "DFSS-CDBG-HL-ESH": 5490327.68,
+  "DFSS-ARP-HL-RRP": 5436744.37,
+  "DFSS-ARP-YS-SYEP": 5099208.29,
+  "DFSS-IDHS-HL-EFSP": 4697175.28,
+  "DFSS-ARP-YS-MCMF": 4657595.9,
+  "DFSS-ESG-HL-ESH": 4568543.59,
+  "DFSS-ARP-YS-CYSC": 4526735.3,
+  "DFSS-ARP-DV-EFA": 4297445.34,
+  "DFSS-CORP-YS-SCAN": 3548922.12,
+  "DFSS-CSBG-HL-INTHS": 3516498.41,
+  "DFSS-CORP-HL-SOES": 3278981.64
+ },
+ "direct_vouchers": {
+  "total": 4944993303.849999,
+  "count": 45704,
+  "by_class": {
+   "PENSION": 1934884718.32,
+   "TAX_COUNTY_STATE": 1000641691.89,
+   "DEBT_BANKS": 979495266.98,
+   "OTHER_DIRECT_VOUCHER": 448500510.13,
+   "LEGAL_SETTLEMENT": 336860379.75,
+   "TRANSIT_AGENCY": 134605984.9,
+   "INSURANCE_ADMIN": 66612584.26,
+   "UTILITIES": 43392167.62
+  },
+  "by_prefix": {
+   "PV27": 3847183247.69,
+   "PVPR": 701784795.36,
+   "PV31": 75998931.47,
+   "PV85": 66067572.03,
+   "PV38": 53942514.95,
+   "PV84": 38896560.77,
+   "PV88": 22545008.56,
+   "PV50": 14957850.67,
+   "PV57": 13340277.08,
+   "PV05": 11290237.32,
+   "PV23": 11099468.71,
+   "PV91": 10870669.62
+  },
+  "top_vendors_excluding_pv27_pvpr": [
+   {
+    "vendor": "PUBLIC BUILDING COMMISSION CHICAGO",
+    "paid_2025": 62346550.54,
+    "payments": 23,
+    "depts": [
+     "Department of Fleet and Facility Management",
+     "Chicago Department of Transportation"
+    ]
+   },
+   {
+    "vendor": "USI INSURANCE SERVICES LLC.",
+    "paid_2025": 14573869.0,
+    "payments": 9,
+    "depts": [
+     "Department of Cultural Affairs and Special Events",
+     "Department of Law",
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "CITY OF CHICAGO DEPT OF WATER",
+    "paid_2025": 12626785.86,
+    "payments": 85,
+    "depts": [
+     "City Council",
+     "Chicago Department of Aviation"
+    ]
+   },
+   {
+    "vendor": "COMED EXELON ENERGY DELIVERY",
+    "paid_2025": 10643844.14,
+    "payments": 36,
+    "depts": [
+     "City Council",
+     "Chicago Department of Aviation",
+     "Department of Water Management"
+    ]
+   },
+   {
+    "vendor": "DEPARTMENT OF AVIATION MIDWAY AIRPORT",
+    "paid_2025": 9817677.94,
+    "payments": 196,
+    "depts": [
+     "Chicago Department of Aviation"
+    ]
+   },
+   {
+    "vendor": "CHICAGO PARK DISTRICT",
+    "paid_2025": 9629112.25,
+    "payments": 16,
+    "depts": [
+     "Office of the Mayor",
+     "Department of Law",
+     "Department of Procurement Services",
+     "Office of Budget and Management",
+     "Chicago Department of Transportation",
+     "Department of Water Management"
+    ]
+   },
+   {
+    "vendor": "ALLIANT INSURANCE SERVICES INC",
+    "paid_2025": 8311252.6,
+    "payments": 44,
+    "depts": [
+     "Chicago Department of Aviation"
+    ]
+   },
+   {
+    "vendor": "BADGER METER INC",
+    "paid_2025": 8042211.86,
+    "payments": 2,
+    "depts": [
+     "Department of Water Management"
+    ]
+   },
+   {
+    "vendor": "COMMONWEALTH. EDISON CO.",
+    "paid_2025": 7266742.6,
+    "payments": 201,
+    "depts": [
+     "City Council",
+     "Department of Fleet and Facility Management",
+     "Department of Water Management"
+    ]
+   },
+   {
+    "vendor": "METROPOLITAN WATER RECLAMATION OF GREATER CHICAGO",
+    "paid_2025": 6572505.2,
+    "payments": 20,
+    "depts": [
+     "Chicago Department of Transportation",
+     "Chicago Department of Aviation",
+     "Department of Water Management"
+    ]
+   },
+   {
+    "vendor": "AMALGAMATED BANK OF CHICAGO",
+    "paid_2025": 6006000.0,
+    "payments": 3,
+    "depts": [
+     "Department of Family and Support Services"
+    ]
+   },
+   {
+    "vendor": "HALE LAW LLC",
+    "paid_2025": 5892082.45,
+    "payments": 221,
+    "depts": [
+     "Department of Law"
+    ]
+   },
+   {
+    "vendor": "SOTOS LAW FIRM, P.C.",
+    "paid_2025": 5652700.88,
+    "payments": 59,
+    "depts": [
+     "Department of Law"
+    ]
+   },
+   {
+    "vendor": "BORKAN & SCAHILL LIMITED",
+    "paid_2025": 5308797.79,
+    "payments": 138,
+    "depts": [
+     "Department of Law"
+    ]
+   },
+   {
+    "vendor": "AT&T CORP",
+    "paid_2025": 4053728.73,
+    "payments": 386,
+    "depts": [
+     "City Council",
+     "City Treasurer's Office",
+     "Chicago Department of Public Health",
+     "Department of Family and Support Services",
+     "Department of Technology and Innovation",
+     "Chicago Department of Aviation",
+     "Department of Water Management"
+    ]
+   }
+  ]
+ },
+ "tif": {
+  "vendor_payments_over_10k_by_report_year": {
+   "2017": 312912357.77,
+   "2018": 417325771.98,
+   "2019": 328585612.66,
+   "2020": 412598119.65,
+   "2021": 285228781.74,
+   "2022": 342919717.36,
+   "2023": 418957254.0,
+   "2024": 498789047.34,
+   "2025": 559440838.79
+  },
+  "project_payments_by_report_year": {
+   "2017": 151291606.22,
+   "2018": 174140153.36,
+   "2019": 170076736.0,
+   "2020": 330271004.0,
+   "2021": 162561810.0,
+   "2022": 142429099.0,
+   "2023": 234832442.0,
+   "2024": 286704652.2,
+   "2025": 386909068.0
+  }
+ },
+ "mid_year_grants": {
+  "extract_date": "2026-05-31",
+  "rows": 509,
+  "budget": 4083893245.71,
+  "rows_under_1M": 195,
+  "budget_in_rows_under_1M": 64410775.52,
+  "by_dept_top": {
+   "Office of Budget And Management": 1217826458.57,
+   "Chicago Department of Transportation": 1003872863.79,
+   "Department of Family and Support Services": 730028779.03,
+   "Department of Public Health": 308773652.93,
+   "Chicago Fire Department": 186642876.11,
+   "Department of Housing": 168547828.03,
+   "Chicago Police Department": 129238303.59,
+   "Department of Planning and Development": 76424627.37,
+   "Department of Fleet and Facility Management": 68612041.21,
+   "Department of Business Affairs and Consumer Protection": 49991126.17,
+   "Department of Cultural Affairs and Special Events": 47490428.29,
+   "Office of Public Safety Administration": 28224518.01
+  }
+ },
+ "overtime": {
+  "total_2025_ot_pay_elements": 466958278.5,
+  "budget_2026_0020": 422323124.0,
+  "by_dept": {
+   "Chicago Police Department": {
+    "paid_2025": 236260234.8,
+    "budget_2026": 204578513.0
+   },
+   "Chicago Fire Department": {
+    "paid_2025": 90945882.85,
+    "budget_2026": 93426401.0
+   },
+   "Department of Water Management": {
+    "paid_2025": 47786745.17,
+    "budget_2026": 47096677.0
+   },
+   "Chicago Department of Aviation": {
+    "paid_2025": 28204756.48,
+    "budget_2026": 24434536.0
+   },
+   "Department of Streets and Sanitation": {
+    "paid_2025": 23964392.24,
+    "budget_2026": 15194227.0
+   },
+   "Chicago Department of Transportation": {
+    "paid_2025": 11123760.81,
+    "budget_2026": 14623446.0
+   },
+   "Office of Emergency Management and Communications": {
+    "paid_2025": 10827418.58,
+    "budget_2026": 9688931.0
+   },
+   "Department of Fleet and Facility Management": {
+    "paid_2025": 13921357.67,
+    "budget_2026": 9368972.0
+   },
+   "Office of Public Safety Administration": {
+    "paid_2025": 1515933.05,
+    "budget_2026": 1409142.0
+   },
+   "Board of Election Commissioners": {
+    "paid_2025": 13827.83,
+    "budget_2026": 800000.0
+   },
+   "Department of Buildings": {
+    "paid_2025": 1014317.79,
+    "budget_2026": 614450.0
+   },
+   "Chicago Public Library": {
+    "paid_2025": 545402.05,
+    "budget_2026": 400000.0
+   }
+  }
+ },
+ "payment_routing_all": {
+  "payment dept name": {
+   "amount": 4597272181.09,
+   "rows": 53225
+  },
+  "central Finance direct voucher (PV27) -> Finance General": {
+   "amount": 3847183247.69,
+   "rows": 7512
+  },
+  "contract join": {
+   "amount": 1069138775.98,
+   "rows": 14840
+  },
+  "payroll deduction voucher (PVPR) -> Finance General": {
+   "amount": 701784795.36,
+   "rows": 2416
+  },
+  "voucher prefix (direct voucher)": {
+   "amount": 392731289.68,
+   "rows": 34368
+  },
+  "contract description prefix (CDPH-, MOPD- ...)": {
+   "amount": 29288590.12,
+   "rows": 1406
+  },
+  "contract join, contract dept unmappable/blank": {
+   "amount": 12813812.66,
+   "rows": 175
+  },
+  "unresolved": {
+   "amount": 12744715.34,
+   "rows": 1868
+  }
+ },
+ "payment_routing_blank_dept": {
+  "central Finance direct voucher (PV27) -> Finance General": {
+   "amount": 3847183247.69,
+   "rows": 7512
+  },
+  "contract join": {
+   "amount": 1069138775.98,
+   "rows": 14840
+  },
+  "payroll deduction voucher (PVPR) -> Finance General": {
+   "amount": 701784795.36,
+   "rows": 2416
+  },
+  "voucher prefix (direct voucher)": {
+   "amount": 392731289.68,
+   "rows": 34368
+  },
+  "contract description prefix (CDPH-, MOPD- ...)": {
+   "amount": 29288590.12,
+   "rows": 1406
+  },
+  "contract join, contract dept unmappable/blank": {
+   "amount": 12813812.66,
+   "rows": 175
+  },
+  "unresolved": {
+   "amount": 12744715.34,
+   "rows": 1868
+  }
+ },
+ "unmapped_payment_dept_names": {},
+ "unmapped_contract_dept_names_contracts": {
+  "OFFICE OF COMPLIANCE": 101,
+  "OFFICE OF CABLE COMMUNICATION ADM": 32,
+  "CITYWIDE/MULTIPLE": 23
+ },
+ "budget_depts_missing_alias": [],
+ "voucher_prefix_vs_dept_name_agreement": {
+  "rows_pct": 85.65327120947389,
+  "dollars_pct": 98.49399298521114
+ }
+}

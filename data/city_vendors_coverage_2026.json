@@ -1,0 +1,3375 @@
+{
+ "budget_by_kind_family": {
+  "nonvendor:DEBT": 1975204416.0,
+  "nonvendor:PASSTHRU": 65789053.0,
+  "nonvendor:PENSION": 2843221414.0,
+  "nonvendor:PERSONNEL": 4941732702.0,
+  "nonvendor:RESERVE": 1850101536.0,
+  "nonvendor:TAXES": 75379927.0,
+  "nonvendor:TRANSFER": 1547949807.0,
+  "vendor:BENEFITS": 831079263.0,
+  "vendor:CONSTR": 1030693391.0,
+  "vendor:DELEGATE": 593371527.0,
+  "vendor:DEVLOAN": 191591897.0,
+  "vendor:EQUIP": 20048610.0,
+  "vendor:FACILITY": 306470695.0,
+  "vendor:FUEL": 40662700.0,
+  "vendor:IT": 312323852.0,
+  "vendor:LEGAL": 154263081.0,
+  "vendor:MATERIALS": 180720469.0,
+  "vendor:OTHER_VENDOR": 236052734.0,
+  "vendor:PROF": 1074957612.0,
+  "vendor:RENTAL": 133716831.0,
+  "vendor:TELECOM": 36277362.0,
+  "vendor:UTIL": 160802534.0,
+  "vendor:WASTE": 66157047.0
+ },
+ "source": "2026 Budget Ordinance 6694-f78c vs 2025 Payments s4vu-giwb + Contracts rsxa-ify5",
+ "definitions": {
+  "budget_vendor_payable": "2026 appropriation lines whose account maps to a vendor-facing family (see families). Excludes personnel, pensions, debt, internal transfers, reserves, tax distributions.",
+  "paid_2025_vendor": "2025 payments resolved to the department, excluding pension / bank / tax / pass-through direct vouchers and payments on contracts missing from the Contracts dataset",
+  "covered_capped_by_family": "sum over families of min(2026 budget, 2025 paid) so over-payment in one family cannot hide a gap in another"
+ },
+ "families": {
+  "PROF": "Professional & technical services (0140-0148)",
+  "IT": "IT services, software, hardware (0138, 0139, 0149, 0154, 0312, 0446)",
+  "TELECOM": "Telephone, mobile, data circuits (0181, 0189-0197, 0423)",
+  "DELEGATE": "Delegate agencies and program grants (0135 + 92xx program accounts)",
+  "CONSTR": "Construction and capital (0540, 0521, 9097)",
+  "FACILITY": "Facility, equipment and street repair, maintenance services (0125, 0160-0163, 0176, 0188, 0526)",
+  "WASTE": "Waste disposal (0185)",
+  "RENTAL": "Rental of property and equipment, leases (0155, 0157, 0159)",
+  "UTIL": "Electricity, gas, water (0331, 0332, 0322, 0183, 0314, 0316)",
+  "FUEL": "Fuel (0315, 0320, 0325, 0318)",
+  "MATERIALS": "Materials, supplies, drugs (0300-0365 other)",
+  "EQUIP": "Equipment and vehicles purchase (04xx)",
+  "BENEFITS": "Employee health, insurance, workers comp (0029, 0042-0056, 0172, 0937 ...)",
+  "LEGAL": "Judgments, claims, outside counsel (0931, 0934, 0145)",
+  "DEVLOAN": "Housing / development loans and grants (9103, 0991, 9102)",
+  "OTHER_VENDOR": "Other vendor-payable accounts",
+  "LEGACY_UNTYPED": "(payments only) contracts imported from legacy systems with no contract type"
+ },
+ "nonvendor_kinds": {
+  "PERSONNEL": "Salaries, wages, overtime, premiums (0000-0099 labor accounts)",
+  "PENSION": "Pension contributions and allocations",
+  "DEBT": "Debt service (interest, principal, notes, bond fees)",
+  "TRANSFER": "Internal transfers and reimbursements between funds",
+  "RESERVE": "Reserve Balance (909A) and savings placeholders",
+  "TAXES": "Loss in collection, refunds",
+  "PASSTHRU": "Tax proceeds and contributions passed to the CTA (9189, 9205)"
+ },
+ "departments": [
+  {
+   "dept": "99",
+   "name": "Finance General",
+   "budget_total": 8190935451.0,
+   "budget_personnel": 356587954.0,
+   "budget_nonvendor_other": 6467145893.0,
+   "budget_vendor_payable": 1367201604.0,
+   "paid_2025_vendor": 418578904.65,
+   "ratio_paid_to_budget": 0.30615741191743073,
+   "covered_capped_by_family": 186995979.91,
+   "covered_capped_pct": 13.677279149096142
+  },
+  {
+   "dept": "57",
+   "name": "Chicago Police Department",
+   "budget_total": 2109811600.0,
+   "budget_personnel": 1913457100.0,
+   "budget_nonvendor_other": 47813392.0,
+   "budget_vendor_payable": 148541108.0,
+   "paid_2025_vendor": 35504722.28,
+   "ratio_paid_to_budget": 0.23902287224086144,
+   "covered_capped_by_family": 22866517.130000003,
+   "covered_capped_pct": 15.394066624304434
+  },
+  {
+   "dept": "84",
+   "name": "Chicago Department of Transportation",
+   "budget_total": 1837522563.0,
+   "budget_personnel": 175446218.0,
+   "budget_nonvendor_other": 834785760.0,
+   "budget_vendor_payable": 827290585.0,
+   "paid_2025_vendor": 788830965.3900001,
+   "ratio_paid_to_budget": 0.9535113534381636,
+   "covered_capped_by_family": 641069753.22,
+   "covered_capped_pct": 77.49027546590537
+  },
+  {
+   "dept": "85",
+   "name": "Chicago Department of Aviation",
+   "budget_total": 1666093529.0,
+   "budget_personnel": 250222614.0,
+   "budget_nonvendor_other": 591683000.0,
+   "budget_vendor_payable": 824187915.0,
+   "paid_2025_vendor": 1319487537.96,
+   "ratio_paid_to_budget": 1.600954726398773,
+   "covered_capped_by_family": 584753162.87,
+   "covered_capped_pct": 70.94900959206615
+  },
+  {
+   "dept": "59",
+   "name": "Chicago Fire Department",
+   "budget_total": 901681972.0,
+   "budget_personnel": 831147146.0,
+   "budget_nonvendor_other": 26158607.0,
+   "budget_vendor_payable": 44376219.0,
+   "paid_2025_vendor": 32362413.689999998,
+   "ratio_paid_to_budget": 0.729273796174478,
+   "covered_capped_by_family": 6027150.609999999,
+   "covered_capped_pct": 13.581938132223478
+  },
+  {
+   "dept": "88",
+   "name": "Department of Water Management",
+   "budget_total": 772719058.0,
+   "budget_personnel": 308943847.0,
+   "budget_nonvendor_other": 28881511.0,
+   "budget_vendor_payable": 434893700.0,
+   "paid_2025_vendor": 464177292.8299999,
+   "ratio_paid_to_budget": 1.0673350587281443,
+   "covered_capped_by_family": 357947087.38,
+   "covered_capped_pct": 82.30679988696089
+  },
+  {
+   "dept": "50",
+   "name": "Department of Family and Support Services",
+   "budget_total": 653365973.0,
+   "budget_personnel": 79716786.0,
+   "budget_nonvendor_other": 62036412.0,
+   "budget_vendor_payable": 511612775.0,
+   "paid_2025_vendor": 486804567.23,
+   "ratio_paid_to_budget": 0.9515097961148449,
+   "covered_capped_by_family": 436673307.58,
+   "covered_capped_pct": 85.3523072366596
+  },
+  {
+   "dept": "38",
+   "name": "Department of Fleet and Facility Management",
+   "budget_total": 503454074.0,
+   "budget_personnel": 120224875.0,
+   "budget_nonvendor_other": 7932000.0,
+   "budget_vendor_payable": 375297199.0,
+   "paid_2025_vendor": 645500795.5799999,
+   "ratio_paid_to_budget": 1.7199723240673586,
+   "covered_capped_by_family": 334848256.0,
+   "covered_capped_pct": 89.22215697112091
+  },
+  {
+   "dept": "81",
+   "name": "Department of Streets and Sanitation",
+   "budget_total": 349888561.0,
+   "budget_personnel": 220655684.0,
+   "budget_nonvendor_other": 3273989.0,
+   "budget_vendor_payable": 125958888.0,
+   "paid_2025_vendor": 119903265.61999999,
+   "ratio_paid_to_budget": 0.9519238183493648,
+   "covered_capped_by_family": 75026225.73,
+   "covered_capped_pct": 59.564058496610414
+  },
+  {
+   "dept": "41",
+   "name": "Chicago Department of Public Health",
+   "budget_total": 335049660.0,
+   "budget_personnel": 103092688.0,
+   "budget_nonvendor_other": 80068673.0,
+   "budget_vendor_payable": 151888299.0,
+   "paid_2025_vendor": 153890222.73000002,
+   "ratio_paid_to_budget": 1.0131802366816947,
+   "covered_capped_by_family": 123479871.98,
+   "covered_capped_pct": 81.29650064749228
+  },
+  {
+   "dept": "21",
+   "name": "Department of Housing",
+   "budget_total": 173252026.0,
+   "budget_personnel": 15423657.0,
+   "budget_nonvendor_other": 102973862.0,
+   "budget_vendor_payable": 54854507.0,
+   "paid_2025_vendor": 38432226.46,
+   "ratio_paid_to_budget": 0.7006211259906137,
+   "covered_capped_by_family": 18427284.53,
+   "covered_capped_pct": 33.593018218174855
+  },
+  {
+   "dept": "54",
+   "name": "Department of Planning and Development",
+   "budget_total": 146482815.0,
+   "budget_personnel": 19970472.0,
+   "budget_nonvendor_other": 555000.0,
+   "budget_vendor_payable": 125957343.0,
+   "paid_2025_vendor": 560040039.66,
+   "ratio_paid_to_budget": 4.446267492797144,
+   "covered_capped_by_family": 121344779.44,
+   "covered_capped_pct": 96.33799550693921
+  },
+  {
+   "dept": "51",
+   "name": "Office of Public Safety Administration",
+   "budget_total": 135631676.0,
+   "budget_personnel": 39592533.0,
+   "budget_nonvendor_other": 16413380.0,
+   "budget_vendor_payable": 79625763.0,
+   "paid_2025_vendor": 47060143.42,
+   "ratio_paid_to_budget": 0.5910165459890162,
+   "covered_capped_by_family": 26456582.82,
+   "covered_capped_pct": 33.22615925199988
+  },
+  {
+   "dept": "27",
+   "name": "Department of Finance",
+   "budget_total": 127818882.0,
+   "budget_personnel": 55071607.0,
+   "budget_nonvendor_other": 4076000.0,
+   "budget_vendor_payable": 68671275.0,
+   "paid_2025_vendor": 865272186.7800001,
+   "ratio_paid_to_budget": 12.60020564318924,
+   "covered_capped_by_family": 30896029.369999997,
+   "covered_capped_pct": 44.9911980955647
+  },
+  {
+   "dept": "91",
+   "name": "Chicago Public Library",
+   "budget_total": 116016346.0,
+   "budget_personnel": 87576978.0,
+   "budget_nonvendor_other": 12070000.0,
+   "budget_vendor_payable": 16369368.0,
+   "paid_2025_vendor": 12537715.14,
+   "ratio_paid_to_budget": 0.765925424854521,
+   "covered_capped_by_family": 12159664.850000001,
+   "covered_capped_pct": 74.28304409797619
+  },
+  {
+   "dept": "58",
+   "name": "Office of Emergency Management and Communications",
+   "budget_total": 99931120.0,
+   "budget_personnel": 87146580.0,
+   "budget_nonvendor_other": 6967460.0,
+   "budget_vendor_payable": 5817080.0,
+   "paid_2025_vendor": 34160202.18,
+   "ratio_paid_to_budget": 5.8723968348380975,
+   "covered_capped_by_family": 5642131.05,
+   "covered_capped_pct": 96.99249537568677
+  },
+  {
+   "dept": "6",
+   "name": "Department of Technology and Innovation",
+   "budget_total": 76383040.0,
+   "budget_personnel": 15025701.0,
+   "budget_nonvendor_other": 11031000.0,
+   "budget_vendor_payable": 50326339.0,
+   "paid_2025_vendor": 183012141.24,
+   "ratio_paid_to_budget": 3.636508136226639,
+   "covered_capped_by_family": 46576465.0,
+   "covered_capped_pct": 92.54888379621653
+  },
+  {
+   "dept": "23",
+   "name": "Department of Cultural Affairs and Special Events",
+   "budget_total": 62003597.0,
+   "budget_personnel": 8292449.0,
+   "budget_nonvendor_other": 7540000.0,
+   "budget_vendor_payable": 46171148.0,
+   "paid_2025_vendor": 49219906.260000005,
+   "ratio_paid_to_budget": 1.0660316754523844,
+   "covered_capped_by_family": 20429587.25,
+   "covered_capped_pct": 44.24751849358392
+  },
+  {
+   "dept": "72",
+   "name": "Department of Environment",
+   "budget_total": 52458895.0,
+   "budget_personnel": 6977968.0,
+   "budget_nonvendor_other": 44112372.0,
+   "budget_vendor_payable": 1368555.0,
+   "paid_2025_vendor": 2235132.81,
+   "ratio_paid_to_budget": 1.6332064184486557,
+   "covered_capped_by_family": 919009.0,
+   "covered_capped_pct": 67.15177687414828
+  },
+  {
+   "dept": "31",
+   "name": "Department of Law",
+   "budget_total": 47954637.0,
+   "budget_personnel": 43745295.0,
+   "budget_nonvendor_other": 16250.0,
+   "budget_vendor_payable": 4193092.0,
+   "paid_2025_vendor": 78600059.35000001,
+   "ratio_paid_to_budget": 18.745131122808658,
+   "covered_capped_by_family": 2842546.62,
+   "covered_capped_pct": 67.791181781845
+  },
+  {
+   "dept": "67",
+   "name": "Department of Buildings",
+   "budget_total": 39368146.0,
+   "budget_personnel": 35754956.0,
+   "budget_nonvendor_other": 20000.0,
+   "budget_vendor_payable": 3593190.0,
+   "paid_2025_vendor": 10875610.190000001,
+   "ratio_paid_to_budget": 3.0267283917633083,
+   "covered_capped_by_family": 1071205.52,
+   "covered_capped_pct": 29.812103451250838
+  },
+  {
+   "dept": "5",
+   "name": "Office of Budget and Management",
+   "budget_total": 38552702.0,
+   "budget_personnel": 8629554.0,
+   "budget_nonvendor_other": 0.0,
+   "budget_vendor_payable": 29923148.0,
+   "paid_2025_vendor": 13688304.450000001,
+   "ratio_paid_to_budget": 0.4574486765229381,
+   "covered_capped_by_family": 3377579.45,
+   "covered_capped_pct": 11.28751376693388
+  },
+  {
+   "dept": "15",
+   "name": "City Council",
+   "budget_total": 37764468.0,
+   "budget_personnel": 30857354.0,
+   "budget_nonvendor_other": 1000.0,
+   "budget_vendor_payable": 6906114.0,
+   "paid_2025_vendor": 3684592.4800000004,
+   "ratio_paid_to_budget": 0.533526159573966,
+   "covered_capped_by_family": 3605262.38,
+   "covered_capped_pct": 52.20392220574407
+  },
+  {
+   "dept": "70",
+   "name": "Department of Business Affairs and Consumer Protection",
+   "budget_total": 36783162.0,
+   "budget_personnel": 20307684.0,
+   "budget_nonvendor_other": 1622000.0,
+   "budget_vendor_payable": 14853478.0,
+   "paid_2025_vendor": 18874789.490000002,
+   "ratio_paid_to_budget": 1.2707319787325233,
+   "covered_capped_by_family": 5425948.9,
+   "covered_capped_pct": 36.52982082714904
+  },
+  {
+   "dept": "39",
+   "name": "Board of Election Commissioners",
+   "budget_total": 27867404.0,
+   "budget_personnel": 9342836.0,
+   "budget_nonvendor_other": 0.0,
+   "budget_vendor_payable": 18524568.0,
+   "paid_2025_vendor": 9910085.73,
+   "ratio_paid_to_budget": 0.5349698697427114,
+   "covered_capped_by_family": 1377829.94,
+   "covered_capped_pct": 7.4378519380317
+  },
+  {
+   "dept": "1",
+   "name": "Office of the Mayor",
+   "budget_total": 16419712.0,
+   "budget_personnel": 12805495.0,
+   "budget_nonvendor_other": 223976.0,
+   "budget_vendor_payable": 3390241.0,
+   "paid_2025_vendor": 2220527.42,
+   "ratio_paid_to_budget": 0.6549762745480335,
+   "covered_capped_by_family": 569344.0,
+   "covered_capped_pct": 16.793614377266984
+  },
+  {
+   "dept": "60",
+   "name": "Civilian Office of Police Accountability",
+   "budget_total": 15781027.0,
+   "budget_personnel": 14141332.0,
+   "budget_nonvendor_other": 10000.0,
+   "budget_vendor_payable": 1629695.0,
+   "paid_2025_vendor": 566515.5,
+   "ratio_paid_to_budget": 0.34762056703861766,
+   "covered_capped_by_family": 506773.66000000003,
+   "covered_capped_pct": 31.09622720815858
+  },
+  {
+   "dept": "25",
+   "name": "Office of City Clerk",
+   "budget_total": 15214652.0,
+   "budget_personnel": 8413762.0,
+   "budget_nonvendor_other": 10000.0,
+   "budget_vendor_payable": 6790890.0,
+   "paid_2025_vendor": 2906182.31,
+   "ratio_paid_to_budget": 0.42795308273289656,
+   "covered_capped_by_family": 2629401.66,
+   "covered_capped_pct": 38.71954427181121
+  },
+  {
+   "dept": "3",
+   "name": "Office of Inspector General",
+   "budget_total": 14297022.0,
+   "budget_personnel": 12269004.0,
+   "budget_nonvendor_other": 2000.0,
+   "budget_vendor_payable": 2026018.0,
+   "paid_2025_vendor": 1878544.4400000002,
+   "ratio_paid_to_budget": 0.9272101432465063,
+   "covered_capped_by_family": 175264.0,
+   "covered_capped_pct": 8.650663518290559
+  },
+  {
+   "dept": "35",
+   "name": "Department of Procurement Services",
+   "budget_total": 13923365.0,
+   "budget_personnel": 12255234.0,
+   "budget_nonvendor_other": 25000.0,
+   "budget_vendor_payable": 1643131.0,
+   "paid_2025_vendor": 1029009.85,
+   "ratio_paid_to_budget": 0.6262494286821927,
+   "covered_capped_by_family": 748205.86,
+   "covered_capped_pct": 45.535374842298026
+  },
+  {
+   "dept": "33",
+   "name": "Department of Human Resources",
+   "budget_total": 12957553.0,
+   "budget_personnel": 12257020.0,
+   "budget_nonvendor_other": 14000.0,
+   "budget_vendor_payable": 686533.0,
+   "paid_2025_vendor": 7227224.76,
+   "ratio_paid_to_budget": 10.527133815854445,
+   "covered_capped_by_family": 522353.0,
+   "covered_capped_pct": 76.08563608741314
+  },
+  {
+   "dept": "48",
+   "name": "Mayor's Office for People with Disabilities",
+   "budget_total": 9679159.0,
+   "budget_personnel": 4474211.0,
+   "budget_nonvendor_other": 115766.0,
+   "budget_vendor_payable": 5089182.0,
+   "paid_2025_vendor": 7415635.3,
+   "ratio_paid_to_budget": 1.4571369819354072,
+   "covered_capped_by_family": 4629740.0,
+   "covered_capped_pct": 90.97218374190587
+  },
+  {
+   "dept": "30",
+   "name": "Department of Administrative Hearings",
+   "budget_total": 8389224.0,
+   "budget_personnel": 3461864.0,
+   "budget_nonvendor_other": 21850.0,
+   "budget_vendor_payable": 4905510.0,
+   "paid_2025_vendor": 2937774.72,
+   "ratio_paid_to_budget": 0.5988724352819584,
+   "covered_capped_by_family": 97130.0,
+   "covered_capped_pct": 1.980018387486724
+  },
+  {
+   "dept": "73",
+   "name": "Chicago Animal Care and Control",
+   "budget_total": 8177388.0,
+   "budget_personnel": 6527849.0,
+   "budget_nonvendor_other": 6000.0,
+   "budget_vendor_payable": 1643539.0,
+   "paid_2025_vendor": 771875.2200000001,
+   "ratio_paid_to_budget": 0.46964216851562396,
+   "covered_capped_by_family": 51485.29,
+   "covered_capped_pct": 3.1325870575629784
+  },
+  {
+   "dept": "28",
+   "name": "City Treasurer's Office",
+   "budget_total": 6504251.0,
+   "budget_personnel": 4275721.0,
+   "budget_nonvendor_other": 10000.0,
+   "budget_vendor_payable": 2218530.0,
+   "paid_2025_vendor": 2155069.45,
+   "ratio_paid_to_budget": 0.9713952256674465,
+   "covered_capped_by_family": 340420.0,
+   "covered_capped_pct": 15.344394711813678
+  },
+  {
+   "dept": "62",
+   "name": "Community Commission for Public Safety and Accountability",
+   "budget_total": 4026765.0,
+   "budget_personnel": 3686829.0,
+   "budget_nonvendor_other": 25000.0,
+   "budget_vendor_payable": 314936.0,
+   "paid_2025_vendor": 589907.69,
+   "ratio_paid_to_budget": 1.8731033924352882,
+   "covered_capped_by_family": 92000.0,
+   "covered_capped_pct": 29.21228440064013
+  },
+  {
+   "dept": "45",
+   "name": "Chicago Commission on Human Relations",
+   "budget_total": 2773200.0,
+   "budget_personnel": 2652146.0,
+   "budget_nonvendor_other": 3000.0,
+   "budget_vendor_payable": 118054.0,
+   "paid_2025_vendor": 119274.08,
+   "ratio_paid_to_budget": 1.0103349314720382,
+   "covered_capped_by_family": 45274.0,
+   "covered_capped_pct": 38.35024649736561
+  },
+  {
+   "dept": "78",
+   "name": "Board of Ethics",
+   "budget_total": 925597.0,
+   "budget_personnel": 868232.0,
+   "budget_nonvendor_other": 0.0,
+   "budget_vendor_payable": 57365.0,
+   "paid_2025_vendor": 6329.969999999999,
+   "ratio_paid_to_budget": 0.11034550684215112,
+   "covered_capped_by_family": 6185.75,
+   "covered_capped_pct": 10.78314303146518
+  },
+  {
+   "dept": "55",
+   "name": "Chicago Police Board",
+   "budget_total": 498200.0,
+   "budget_personnel": 317940.0,
+   "budget_nonvendor_other": 2000.0,
+   "budget_vendor_payable": 178260.0,
+   "paid_2025_vendor": 208343.65,
+   "ratio_paid_to_budget": 1.1687627622573769,
+   "covered_capped_by_family": 2700.0,
+   "covered_capped_pct": 1.5146415348367552
+  },
+  {
+   "dept": "77",
+   "name": "License Appeal Commission",
+   "budget_total": 209988.0,
+   "budget_personnel": 115527.0,
+   "budget_nonvendor_other": 0.0,
+   "budget_vendor_payable": 94461.0,
+   "paid_2025_vendor": 45185.41,
+   "ratio_paid_to_budget": 0.4783499010173511,
+   "covered_capped_by_family": 44.0,
+   "covered_capped_pct": 0.046580070081832715
+  }
+ ],
+ "by_dept_family": {
+  "1": {
+   "name": "Office of the Mayor",
+   "budget_2026": {
+    "DEVLOAN": 2445540.0,
+    "FACILITY": 1000.0,
+    "IT": 32107.0,
+    "LEGAL": 316000.0,
+    "MATERIALS": 4000.0,
+    "OTHER_VENDOR": 552094.0,
+    "PROF": 14000.0,
+    "RENTAL": 25500.0
+   },
+   "paid_2025": {
+    "LEGAL": 17250.0,
+    "OTHER_VENDOR": 2203277.42
+   }
+  },
+  "3": {
+   "name": "Office of Inspector General",
+   "budget_2026": {
+    "FACILITY": 1000.0,
+    "FUEL": 4638.0,
+    "IT": 1132763.0,
+    "MATERIALS": 13890.0,
+    "OTHER_VENDOR": 175264.0,
+    "PROF": 416297.0,
+    "RENTAL": 144847.0,
+    "TELECOM": 137319.0
+   },
+   "paid_2025": {
+    "OTHER_VENDOR": 1878544.44
+   }
+  },
+  "5": {
+   "name": "Office of Budget and Management",
+   "budget_2026": {
+    "DELEGATE": 2000000.0,
+    "MATERIALS": 10600.0,
+    "OTHER_VENDOR": 6971281.0,
+    "PROF": 20933267.0,
+    "RENTAL": 8000.0
+   },
+   "paid_2025": {
+    "BENEFITS": 127925.0,
+    "DELEGATE": 1384309.29,
+    "DEVLOAN": 8117800.0,
+    "LEGAL": 2065000.0,
+    "OTHER_VENDOR": 1943270.1600000001,
+    "PROF": 50000.0
+   }
+  },
+  "6": {
+   "name": "Department of Technology and Innovation",
+   "budget_2026": {
+    "FACILITY": 3703809.0,
+    "IT": 29752877.0,
+    "MATERIALS": 46065.0,
+    "OTHER_VENDOR": 643268.0,
+    "PROF": 4991507.0,
+    "TELECOM": 11188813.0
+   },
+   "paid_2025": {
+    "IT": 140496925.41,
+    "LEGAL": 480.0,
+    "OTHER_VENDOR": 4100293.5,
+    "PROF": 17946952.4,
+    "TELECOM": 16757356.7,
+    "UTIL": 3710133.23
+   }
+  },
+  "15": {
+   "name": "City Council",
+   "budget_2026": {
+    "EQUIP": 9500.0,
+    "LEGAL": 100000.0,
+    "MATERIALS": 138820.0,
+    "OTHER_VENDOR": 6441274.0,
+    "PROF": 124520.0,
+    "RENTAL": 92000.0
+   },
+   "paid_2025": {
+    "BENEFITS": 17444.56,
+    "LEGAL": 71678.95999999999,
+    "OTHER_VENDOR": 3533583.42,
+    "UTIL": 61885.54
+   }
+  },
+  "21": {
+   "name": "Department of Housing",
+   "budget_2026": {
+    "DELEGATE": 23633425.0,
+    "DEVLOAN": 28224015.0,
+    "FACILITY": 40000.0,
+    "IT": 481405.0,
+    "MATERIALS": 1000.0,
+    "OTHER_VENDOR": 1346300.0,
+    "PROF": 828362.0,
+    "RENTAL": 300000.0
+   },
+   "paid_2025": {
+    "DELEGATE": 15481391.62,
+    "DEVLOAN": 1599592.9100000001,
+    "LEGAL": 9500.0,
+    "OTHER_VENDOR": 21341741.93
+   }
+  },
+  "23": {
+   "name": "Department of Cultural Affairs and Special Events",
+   "budget_2026": {
+    "BENEFITS": 516610.0,
+    "DELEGATE": 14485000.0,
+    "DEVLOAN": 191000.0,
+    "FACILITY": 80000.0,
+    "IT": 156990.0,
+    "MATERIALS": 35000.0,
+    "OTHER_VENDOR": 21016916.0,
+    "PROF": 9670600.0,
+    "RENTAL": 19032.0
+   },
+   "paid_2025": {
+    "BENEFITS": 507936.0,
+    "DELEGATE": 2416018.68,
+    "DEVLOAN": 27001189.76,
+    "FACILITY": 518678.81,
+    "LEGAL": 137112.73,
+    "OTHER_VENDOR": 17215600.57,
+    "RENTAL": 1419252.21,
+    "UTIL": 4117.5
+   }
+  },
+  "25": {
+   "name": "Office of City Clerk",
+   "budget_2026": {
+    "DELEGATE": 500000.0,
+    "FACILITY": 32825.0,
+    "IT": 2618781.0,
+    "MATERIALS": 778655.0,
+    "OTHER_VENDOR": 1445608.0,
+    "PROF": 1147371.0,
+    "RENTAL": 267650.0
+   },
+   "paid_2025": {
+    "DELEGATE": 217466.46,
+    "LEGAL": 2403.0,
+    "MATERIALS": 9778.0,
+    "OTHER_VENDOR": 1702586.25,
+    "PROF": 956549.2,
+    "UTIL": 17399.4
+   }
+  },
+  "27": {
+   "name": "Department of Finance",
+   "budget_2026": {
+    "DELEGATE": 4090000.0,
+    "EQUIP": 1236127.0,
+    "FACILITY": 1650007.0,
+    "IT": 33028679.0,
+    "MATERIALS": 282125.0,
+    "OTHER_VENDOR": 2414850.0,
+    "PROF": 25854431.0,
+    "RENTAL": 115056.0
+   },
+   "paid_2025": {
+    "BENEFITS": 769597817.55,
+    "DELEGATE": 912859.96,
+    "DEVLOAN": 6000187.5,
+    "FACILITY": 145860.8,
+    "IT": 1285902.6099999999,
+    "MATERIALS": 378690.0,
+    "OTHER_VENDOR": 7075222.98,
+    "PROF": 79875645.38
+   }
+  },
+  "28": {
+   "name": "City Treasurer's Office",
+   "budget_2026": {
+    "IT": 586046.0,
+    "MATERIALS": 1500.0,
+    "OTHER_VENDOR": 340420.0,
+    "PROF": 1218826.0,
+    "RENTAL": 71738.0
+   },
+   "paid_2025": {
+    "LEGAL": 113400.0,
+    "OTHER_VENDOR": 2039215.37,
+    "UTIL": 2454.08
+   }
+  },
+  "30": {
+   "name": "Department of Administrative Hearings",
+   "budget_2026": {
+    "FACILITY": 1375.0,
+    "IT": 1364512.0,
+    "MATERIALS": 25208.0,
+    "OTHER_VENDOR": 97130.0,
+    "PROF": 3386978.0,
+    "RENTAL": 30307.0
+   },
+   "paid_2025": {
+    "LEGAL": 97240.0,
+    "OTHER_VENDOR": 2840534.72
+   }
+  },
+  "31": {
+   "name": "Department of Law",
+   "budget_2026": {
+    "FACILITY": 7110.0,
+    "IT": 1119930.0,
+    "LEGAL": 54701.0,
+    "MATERIALS": 63454.0,
+    "OTHER_VENDOR": 339563.0,
+    "PROF": 2401738.0,
+    "RENTAL": 206596.0
+   },
+   "paid_2025": {
+    "BENEFITS": 15640524.149999999,
+    "IT": 46544.619999999995,
+    "LEGAL": 40141959.96,
+    "OTHER_VENDOR": 20125307.62,
+    "PROF": 2645543.0,
+    "UTIL": 180.0
+   }
+  },
+  "33": {
+   "name": "Department of Human Resources",
+   "budget_2026": {
+    "FACILITY": 9100.0,
+    "IT": 41681.0,
+    "MATERIALS": 35049.0,
+    "OTHER_VENDOR": 156602.0,
+    "PROF": 365751.0,
+    "RENTAL": 78350.0
+   },
+   "paid_2025": {
+    "LEGAL": 316.33,
+    "OTHER_VENDOR": 1372430.2,
+    "PROF": 5854478.23
+   }
+  },
+  "35": {
+   "name": "Department of Procurement Services",
+   "budget_2026": {
+    "FACILITY": 37336.0,
+    "IT": 179160.0,
+    "MATERIALS": 30223.0,
+    "OTHER_VENDOR": 100961.0,
+    "PROF": 1236654.0,
+    "RENTAL": 58797.0
+   },
+   "paid_2025": {
+    "DELEGATE": 28333.34,
+    "FACILITY": 67941.01,
+    "LEGAL": 179885.0,
+    "OTHER_VENDOR": 142941.63999999998,
+    "PROF": 609908.86
+   }
+  },
+  "38": {
+   "name": "Department of Fleet and Facility Management",
+   "budget_2026": {
+    "EQUIP": 803034.0,
+    "FACILITY": 60283600.0,
+    "FUEL": 40610182.0,
+    "IT": 1127078.0,
+    "MATERIALS": 48794170.0,
+    "OTHER_VENDOR": 15588550.0,
+    "PROF": 34706345.0,
+    "RENTAL": 34296006.0,
+    "UTIL": 139079834.0,
+    "WASTE": 8400.0
+   },
+   "paid_2025": {
+    "CONSTR": 53478581.83,
+    "EQUIP": 93174260.34,
+    "FACILITY": 80570987.6,
+    "FUEL": 35341780.21,
+    "IT": 28489999.37,
+    "LEGAL": 483978.38,
+    "MATERIALS": 13814376.78,
+    "OTHER_VENDOR": 58394274.82,
+    "PROF": 99985060.98,
+    "RENTAL": 42880009.26,
+    "UTIL": 138887486.01
+   }
+  },
+  "39": {
+   "name": "Board of Election Commissioners",
+   "budget_2026": {
+    "BENEFITS": 2300.0,
+    "FACILITY": 455184.0,
+    "IT": 5308618.0,
+    "LEGAL": 3091960.0,
+    "MATERIALS": 601115.0,
+    "OTHER_VENDOR": 980336.0,
+    "PROF": 2939340.0,
+    "RENTAL": 3260729.0,
+    "TELECOM": 1884986.0
+   },
+   "paid_2025": {
+    "LEGAL": 397493.94,
+    "OTHER_VENDOR": 8424115.62,
+    "UTIL": 1088476.17
+   }
+  },
+  "41": {
+   "name": "Chicago Department of Public Health",
+   "budget_2026": {
+    "DELEGATE": 104909975.0,
+    "DEVLOAN": 1400000.0,
+    "FACILITY": 26745.0,
+    "IT": 168500.0,
+    "MATERIALS": 2485955.0,
+    "OTHER_VENDOR": 4124073.0,
+    "PROF": 38322499.0,
+    "RENTAL": 313230.0,
+    "TELECOM": 137322.0
+   },
+   "paid_2025": {
+    "BENEFITS": 301219.06,
+    "DELEGATE": 114305852.82,
+    "FACILITY": 47757.86,
+    "LEGAL": 237994.3,
+    "OTHER_VENDOR": 24555994.41,
+    "PROF": 14419078.98,
+    "UTIL": 22325.3
+   }
+  },
+  "45": {
+   "name": "Chicago Commission on Human Relations",
+   "budget_2026": {
+    "IT": 2554.0,
+    "MATERIALS": 4600.0,
+    "OTHER_VENDOR": 45274.0,
+    "PROF": 59149.0,
+    "RENTAL": 6477.0
+   },
+   "paid_2025": {
+    "LEGAL": 8041.799999999999,
+    "OTHER_VENDOR": 111232.28
+   }
+  },
+  "48": {
+   "name": "Mayor's Office for People with Disabilities",
+   "budget_2026": {
+    "DELEGATE": 4614800.0,
+    "IT": 224920.0,
+    "MATERIALS": 23686.0,
+    "OTHER_VENDOR": 14940.0,
+    "PROF": 201292.0,
+    "RENTAL": 9544.0
+   },
+   "paid_2025": {
+    "DELEGATE": 7218913.56,
+    "OTHER_VENDOR": 196721.74
+   }
+  },
+  "50": {
+   "name": "Department of Family and Support Services",
+   "budget_2026": {
+    "DELEGATE": 428696458.0,
+    "DEVLOAN": 17966000.0,
+    "FACILITY": 43616.0,
+    "IT": 2569743.0,
+    "MATERIALS": 106316.0,
+    "OTHER_VENDOR": 901025.0,
+    "PROF": 61105577.0,
+    "RENTAL": 219681.0,
+    "TELECOM": 4359.0
+   },
+   "paid_2025": {
+    "BENEFITS": 11873.0,
+    "DELEGATE": 466617204.1,
+    "DEVLOAN": 1280439.27,
+    "FACILITY": 1795.7,
+    "IT": 407219.37,
+    "LEGAL": 77770.0,
+    "OTHER_VENDOR": 13001255.27,
+    "PROF": 5386370.24,
+    "UTIL": 20640.28
+   }
+  },
+  "51": {
+   "name": "Office of Public Safety Administration",
+   "budget_2026": {
+    "EQUIP": 305200.0,
+    "FACILITY": 731063.0,
+    "FUEL": 45000.0,
+    "IT": 36761742.0,
+    "MATERIALS": 4296120.0,
+    "OTHER_VENDOR": 5370442.0,
+    "PROF": 7873620.0,
+    "RENTAL": 10274647.0,
+    "TELECOM": 13967929.0
+   },
+   "paid_2025": {
+    "BENEFITS": 9743.34,
+    "EQUIP": 11879683.0,
+    "FACILITY": 1857018.95,
+    "IT": 9553053.72,
+    "LEGAL": 22942.5,
+    "MATERIALS": 3824154.57,
+    "OTHER_VENDOR": 4169491.53,
+    "PROF": 15716747.81,
+    "UTIL": 27308.0
+   }
+  },
+  "54": {
+   "name": "Department of Planning and Development",
+   "budget_2026": {
+    "DELEGATE": 800000.0,
+    "DEVLOAN": 113173057.0,
+    "IT": 1919474.0,
+    "MATERIALS": 45356.0,
+    "OTHER_VENDOR": 88975.0,
+    "PROF": 9885239.0,
+    "RENTAL": 45242.0
+   },
+   "paid_2025": {
+    "BENEFITS": 253750.0,
+    "DELEGATE": 4131241.28,
+    "DEVLOAN": 389450828.84,
+    "FACILITY": 41689.0,
+    "IT": 63706.03,
+    "LEGAL": 25266.25,
+    "OTHER_VENDOR": 158854516.85,
+    "PROF": 7219041.41
+   }
+  },
+  "55": {
+   "name": "Chicago Police Board",
+   "budget_2026": {
+    "MATERIALS": 500.0,
+    "OTHER_VENDOR": 2700.0,
+    "PROF": 174100.0,
+    "RENTAL": 960.0
+   },
+   "paid_2025": {
+    "LEGAL": 25781.59,
+    "OTHER_VENDOR": 182562.06
+   }
+  },
+  "57": {
+   "name": "Chicago Police Department",
+   "budget_2026": {
+    "BENEFITS": 25243000.0,
+    "EQUIP": 1791467.0,
+    "FACILITY": 608176.0,
+    "IT": 1980869.0,
+    "LEGAL": 82558000.0,
+    "MATERIALS": 10674124.0,
+    "OTHER_VENDOR": 7589873.0,
+    "PROF": 15781308.0,
+    "RENTAL": 2186354.0,
+    "TELECOM": 2500.0,
+    "WASTE": 125437.0
+   },
+   "paid_2025": {
+    "BENEFITS": 3250.0,
+    "FACILITY": 1284962.55,
+    "LEGAL": 2323594.0100000002,
+    "MATERIALS": 19305206.62,
+    "OTHER_VENDOR": 10914065.47,
+    "PROF": 1657317.3499999999,
+    "UTIL": 6143.51,
+    "WASTE": 10182.77
+   }
+  },
+  "58": {
+   "name": "Office of Emergency Management and Communications",
+   "budget_2026": {
+    "IT": 95000.0,
+    "MATERIALS": 381447.0,
+    "OTHER_VENDOR": 60125.0,
+    "PROF": 5276508.0,
+    "TELECOM": 4000.0
+   },
+   "paid_2025": {
+    "CONSTR": 581717.73,
+    "FACILITY": 4777910.75,
+    "LEGAL": 11635.0,
+    "MATERIALS": 305498.05,
+    "OTHER_VENDOR": 18380580.89,
+    "PROF": 10102859.76
+   }
+  },
+  "59": {
+   "name": "Chicago Fire Department",
+   "budget_2026": {
+    "BENEFITS": 9187400.0,
+    "FACILITY": 708166.0,
+    "FUEL": 2880.0,
+    "LEGAL": 12000000.0,
+    "MATERIALS": 4448615.0,
+    "OTHER_VENDOR": 46140.0,
+    "PROF": 17983018.0
+   },
+   "paid_2025": {
+    "BENEFITS": 440674.0,
+    "FACILITY": 9342455.47,
+    "LEGAL": 67643.05,
+    "MATERIALS": 16397855.35,
+    "OTHER_VENDOR": 5797873.26,
+    "PROF": 315912.56
+   }
+  },
+  "60": {
+   "name": "Civilian Office of Police Accountability",
+   "budget_2026": {
+    "FACILITY": 500.0,
+    "IT": 145000.0,
+    "MATERIALS": 64000.0,
+    "OTHER_VENDOR": 694495.0,
+    "PROF": 590700.0,
+    "RENTAL": 135000.0
+   },
+   "paid_2025": {
+    "LEGAL": 57974.5,
+    "OTHER_VENDOR": 506773.66000000003,
+    "UTIL": 1767.34
+   }
+  },
+  "62": {
+   "name": "Community Commission for Public Safety and Accountability",
+   "budget_2026": {
+    "IT": 22120.0,
+    "MATERIALS": 46016.0,
+    "OTHER_VENDOR": 92000.0,
+    "PROF": 129300.0,
+    "RENTAL": 10500.0,
+    "TELECOM": 15000.0
+   },
+   "paid_2025": {
+    "LEGAL": 15381.25,
+    "OTHER_VENDOR": 574526.44
+   }
+  },
+  "67": {
+   "name": "Department of Buildings",
+   "budget_2026": {
+    "FACILITY": 17000.0,
+    "IT": 24000.0,
+    "MATERIALS": 72000.0,
+    "OTHER_VENDOR": 334168.0,
+    "PROF": 2900367.0,
+    "RENTAL": 245655.0
+   },
+   "paid_2025": {
+    "CONSTR": 7733605.66,
+    "IT": 939724.0,
+    "LEGAL": 170092.22,
+    "OTHER_VENDOR": 1319150.79,
+    "PROF": 713037.52
+   }
+  },
+  "70": {
+   "name": "Department of Business Affairs and Consumer Protection",
+   "budget_2026": {
+    "DELEGATE": 5264039.0,
+    "DEVLOAN": 8300000.0,
+    "FACILITY": 5000.0,
+    "IT": 446500.0,
+    "MATERIALS": 97250.0,
+    "OTHER_VENDOR": 126317.0,
+    "PROF": 280372.0,
+    "RENTAL": 310000.0,
+    "TELECOM": 24000.0
+   },
+   "paid_2025": {
+    "DELEGATE": 8497520.7,
+    "LEGAL": 61901.55,
+    "OTHER_VENDOR": 10279774.34,
+    "PROF": 35592.9
+   }
+  },
+  "72": {
+   "name": "Department of Environment",
+   "budget_2026": {
+    "EQUIP": 200000.0,
+    "FACILITY": 12100.0,
+    "IT": 177018.0,
+    "MATERIALS": 53420.0,
+    "OTHER_VENDOR": 90570.0,
+    "PROF": 828439.0,
+    "TELECOM": 7008.0
+   },
+   "paid_2025": {
+    "CONSTR": 465580.23000000004,
+    "DEVLOAN": 62571.82,
+    "OTHER_VENDOR": 165060.09999999998,
+    "PROF": 1541920.66
+   }
+  },
+  "73": {
+   "name": "Chicago Animal Care and Control",
+   "budget_2026": {
+    "DELEGATE": 465000.0,
+    "FACILITY": 3500.0,
+    "IT": 2200.0,
+    "MATERIALS": 816976.0,
+    "OTHER_VENDOR": 36168.0,
+    "PROF": 290695.0,
+    "RENTAL": 29000.0
+   },
+   "paid_2025": {
+    "FACILITY": 181873.18,
+    "LEGAL": 76.5,
+    "MATERIALS": 11817.29,
+    "OTHER_VENDOR": 578108.25
+   }
+  },
+  "77": {
+   "name": "License Appeal Commission",
+   "budget_2026": {
+    "MATERIALS": 500.0,
+    "OTHER_VENDOR": 44.0,
+    "PROF": 93142.0,
+    "RENTAL": 775.0
+   },
+   "paid_2025": {
+    "OTHER_VENDOR": 45185.41
+   }
+  },
+  "78": {
+   "name": "Board of Ethics",
+   "budget_2026": {
+    "IT": 6000.0,
+    "MATERIALS": 3810.0,
+    "OTHER_VENDOR": 18160.0,
+    "PROF": 22800.0,
+    "RENTAL": 6595.0
+   },
+   "paid_2025": {
+    "LEGAL": 144.22,
+    "OTHER_VENDOR": 6185.75
+   }
+  },
+  "81": {
+   "name": "Department of Streets and Sanitation",
+   "budget_2026": {
+    "DELEGATE": 1964928.0,
+    "EQUIP": 154264.0,
+    "FACILITY": 160304.0,
+    "IT": 199128.0,
+    "MATERIALS": 17564596.0,
+    "OTHER_VENDOR": 910276.0,
+    "PROF": 42571345.0,
+    "RENTAL": 6978273.0,
+    "TELECOM": 56936.0,
+    "WASTE": 55398838.0
+   },
+   "paid_2025": {
+    "BENEFITS": 1525.0,
+    "FACILITY": 17189790.06,
+    "LEGAL": 252683.57,
+    "MATERIALS": 10120064.24,
+    "OTHER_VENDOR": 5650371.21,
+    "PROF": 8164783.49,
+    "RENTAL": 271960.0,
+    "WASTE": 78252088.05
+   }
+  },
+  "84": {
+   "name": "Chicago Department of Transportation",
+   "budget_2026": {
+    "CONSTR": 681218229.0,
+    "DELEGATE": 600000.0,
+    "EQUIP": 12100.0,
+    "FACILITY": 18317393.0,
+    "IT": 3514817.0,
+    "MATERIALS": 11434035.0,
+    "OTHER_VENDOR": 1331655.0,
+    "PROF": 104993305.0,
+    "RENTAL": 5690089.0,
+    "TELECOM": 48005.0,
+    "UTIL": 10000.0,
+    "WASTE": 120957.0
+   },
+   "paid_2025": {
+    "BENEFITS": 1509.14,
+    "CONSTR": 504983365.22,
+    "DEVLOAN": 6090964.54,
+    "FACILITY": 20568307.78,
+    "LEGAL": 160532.63,
+    "MATERIALS": 76452657.05,
+    "OTHER_VENDOR": 12997646.91,
+    "PROF": 167565807.12,
+    "UTIL": 10175.0
+   }
+  },
+  "85": {
+   "name": "Chicago Department of Aviation",
+   "budget_2026": {
+    "BENEFITS": 8956014.0,
+    "EQUIP": 4888500.0,
+    "FACILITY": 177071500.0,
+    "IT": 91266500.0,
+    "MATERIALS": 28008800.0,
+    "OTHER_VENDOR": 4544900.0,
+    "PROF": 422230800.0,
+    "RENTAL": 62775101.0,
+    "TELECOM": 7687300.0,
+    "UTIL": 13808900.0,
+    "WASTE": 2949600.0
+   },
+   "paid_2025": {
+    "BENEFITS": 9774386.76,
+    "CONSTR": 507575082.9,
+    "DEVLOAN": 70745985.74,
+    "FACILITY": 109851125.62,
+    "IT": 5304691.64,
+    "LEGAL": 1566591.21,
+    "MATERIALS": 18546202.33,
+    "OTHER_VENDOR": 78511624.7,
+    "PROF": 488774542.96,
+    "RENTAL": 1510529.28,
+    "UTIL": 27326774.82
+   }
+  },
+  "88": {
+   "name": "Department of Water Management",
+   "budget_2026": {
+    "CONSTR": 295185315.0,
+    "EQUIP": 3333118.0,
+    "FACILITY": 11321550.0,
+    "IT": 887223.0,
+    "MATERIALS": 48180662.0,
+    "OTHER_VENDOR": 1051190.0,
+    "PROF": 60993160.0,
+    "RENTAL": 5282867.0,
+    "TELECOM": 1000.0,
+    "UTIL": 1103800.0,
+    "WASTE": 7553815.0
+   },
+   "paid_2025": {
+    "BENEFITS": 386.18,
+    "CONSTR": 222460043.38,
+    "FACILITY": 27537830.35,
+    "FUEL": 555359.8,
+    "LEGAL": 319580.06,
+    "MATERIALS": 65902551.2,
+    "OTHER_VENDOR": 18550932.31,
+    "PROF": 102890342.24,
+    "RENTAL": 7668444.4,
+    "UTIL": 3208118.0799999996,
+    "WASTE": 15083704.83
+   }
+  },
+  "91": {
+   "name": "Chicago Public Library",
+   "budget_2026": {
+    "BENEFITS": 24000.0,
+    "EQUIP": 471000.0,
+    "FACILITY": 645427.0,
+    "IT": 2007051.0,
+    "MATERIALS": 675811.0,
+    "OTHER_VENDOR": 10366985.0,
+    "PROF": 845976.0,
+    "RENTAL": 222233.0,
+    "TELECOM": 1110885.0
+   },
+   "paid_2025": {
+    "BENEFITS": 20000.0,
+    "FACILITY": 356823.65,
+    "IT": 618321.9299999999,
+    "LEGAL": 4130.77,
+    "MATERIALS": 535755.3,
+    "OTHER_VENDOR": 10740904.52,
+    "PROF": 261778.97
+   }
+  },
+  "99": {
+   "name": "Finance General",
+   "budget_2026": {
+    "BENEFITS": 787149939.0,
+    "CONSTR": 54289847.0,
+    "DELEGATE": 1347902.0,
+    "DEVLOAN": 19892285.0,
+    "EQUIP": 6844300.0,
+    "FACILITY": 30496309.0,
+    "IT": 92972866.0,
+    "LEGAL": 56142420.0,
+    "MATERIALS": 375000.0,
+    "OTHER_VENDOR": 139601822.0,
+    "PROF": 171288914.0,
+    "UTIL": 6800000.0
+   },
+   "paid_2025": {
+    "BENEFITS": 36996367.48,
+    "IT": 2153.78,
+    "LEGAL": 287725344.74,
+    "OTHER_VENDOR": 93854637.96000001,
+    "UTIL": 400.69
+   }
+  }
+ },
+ "explained_by_named_contracts": {
+  "vendor_payable_budget": 5369189605.0,
+  "explained_by_named_contracts": 3080655539.75,
+  "explained_in_items_under_1M": 440459024.4849684,
+  "by_family": {
+   "BENEFITS": {
+    "budget": 831076963.0,
+    "explained": 46924241.480000004,
+    "explained_under_1M": 2377238.7194556934
+   },
+   "CONSTR": {
+    "budget": 976403544.0,
+    "explained": 727443408.6,
+    "explained_under_1M": 16770680.11
+   },
+   "DELEGATE": {
+    "budget": 588993697.0,
+    "explained": 564697318.01,
+    "explained_under_1M": 235962378.86662143
+   },
+   "DEVLOAN": {
+    "budget": 159554072.0,
+    "explained": 116244089.18,
+    "explained_under_1M": 7789836.229131894
+   },
+   "EQUIP": {
+    "budget": 1108234.0,
+    "explained": 1108234.0,
+    "explained_under_1M": 20623.746081471923
+   },
+   "FACILITY": {
+    "budget": 271688383.0,
+    "explained": 202633438.77,
+    "explained_under_1M": 19859400.487308342
+   },
+   "FUEL": {
+    "budget": 40610182.0,
+    "explained": 35341780.21,
+    "explained_under_1M": 711363.23
+   },
+   "IT": {
+    "budget": 292549940.0,
+    "explained": 48185548.7,
+    "explained_under_1M": 2779537.8616285087
+   },
+   "LEGAL": {
+    "budget": 154263081.0,
+    "explained": 59074780.96,
+    "explained_under_1M": 4830582.104993376
+   },
+   "MATERIALS": {
+    "budget": 176336136.0,
+    "explained": 122187207.55999999,
+    "explained_under_1M": 14144647.602595547
+   },
+   "OTHER_VENDOR": {
+    "budget": 236052734.0,
+    "explained": 177167887.04999998,
+    "explained_under_1M": 72556617.05433354
+   },
+   "PROF": {
+    "budget": 883508597.0,
+    "explained": 710304975.48,
+    "explained_under_1M": 53350052.584287494
+   },
+   "RENTAL": {
+    "budget": 109351279.0,
+    "explained": 41380394.28,
+    "explained_under_1M": 2174563.9888599077
+   },
+   "TELECOM": {
+    "budget": 11188813.0,
+    "explained": 11188813.0,
+    "explained_under_1M": 0.0
+   },
+   "UTIL": {
+    "budget": 160802534.0,
+    "explained": 153810586.70000002,
+    "explained_under_1M": 6253338.776861177
+   },
+   "WASTE": {
+    "budget": 63078090.0,
+    "explained": 62962835.77,
+    "explained_under_1M": 878163.1228100919
+   }
+  },
+  "by_dept": {
+   "1": {
+    "name": "Office of the Mayor",
+    "budget": 868094.0,
+    "explained": 569344.0,
+    "explained_under_1M": 569344.0
+   },
+   "15": {
+    "name": "City Council",
+    "budget": 6541274.0,
+    "explained": 3605262.38,
+    "explained_under_1M": 3605262.38
+   },
+   "21": {
+    "name": "Department of Housing",
+    "budget": 53203740.0,
+    "explained": 18427284.53,
+    "explained_under_1M": 7897690.418999902
+   },
+   "23": {
+    "name": "Department of Cultural Affairs and Special Events",
+    "budget": 36308558.0,
+    "explained": 20429587.25,
+    "explained_under_1M": 17893172.651297357
+   },
+   "25": {
+    "name": "Office of City Clerk",
+    "budget": 3871634.0,
+    "explained": 2629401.66,
+    "explained_under_1M": 2629401.66
+   },
+   "27": {
+    "name": "Department of Finance",
+    "budget": 67320092.0,
+    "explained": 30896029.37,
+    "explained_under_1M": 3397560.873182872
+   },
+   "28": {
+    "name": "City Treasurer's Office",
+    "budget": 340420.0,
+    "explained": 340420.0,
+    "explained_under_1M": 340420.0
+   },
+   "3": {
+    "name": "Office of Inspector General",
+    "budget": 175264.0,
+    "explained": 175264.0,
+    "explained_under_1M": 9304.003114240939
+   },
+   "30": {
+    "name": "Department of Administrative Hearings",
+    "budget": 97130.0,
+    "explained": 97129.99999999999,
+    "explained_under_1M": 97129.99999999999
+   },
+   "31": {
+    "name": "Department of Law",
+    "budget": 3915932.0,
+    "explained": 2842546.62,
+    "explained_under_1M": 1435354.7631912283
+   },
+   "33": {
+    "name": "Department of Human Resources",
+    "budget": 522353.0,
+    "explained": 522353.0,
+    "explained_under_1M": 253932.58387716813
+   },
+   "35": {
+    "name": "Department of Procurement Services",
+    "budget": 1374951.0,
+    "explained": 748205.86,
+    "explained_under_1M": 748205.86
+   },
+   "38": {
+    "name": "Department of Fleet and Facility Management",
+    "budget": 375288799.0,
+    "explained": 334848256.0,
+    "explained_under_1M": 20803793.43108142
+   },
+   "39": {
+    "name": "Board of Election Commissioners",
+    "budget": 4072296.0,
+    "explained": 1377829.94,
+    "explained_under_1M": 906854.1022169379
+   },
+   "41": {
+    "name": "Chicago Department of Public Health",
+    "budget": 147383292.0,
+    "explained": 123479871.98,
+    "explained_under_1M": 74885666.56366163
+   },
+   "45": {
+    "name": "Chicago Commission on Human Relations",
+    "budget": 45274.0,
+    "explained": 45274.0,
+    "explained_under_1M": 45274.0
+   },
+   "48": {
+    "name": "Mayor's Office for People with Disabilities",
+    "budget": 4629740.0,
+    "explained": 4629740.0,
+    "explained_under_1M": 1802602.1771755912
+   },
+   "5": {
+    "name": "Office of Budget and Management",
+    "budget": 29904548.0,
+    "explained": 3377579.45,
+    "explained_under_1M": 913836.98
+   },
+   "50": {
+    "name": "Department of Family and Support Services",
+    "budget": 511282419.0,
+    "explained": 436673307.58,
+    "explained_under_1M": 151557806.8255465
+   },
+   "51": {
+    "name": "Office of Public Safety Administration",
+    "budget": 55338187.0,
+    "explained": 26456582.82,
+    "explained_under_1M": 5243533.413204805
+   },
+   "54": {
+    "name": "Department of Planning and Development",
+    "budget": 125866745.0,
+    "explained": 121344779.44,
+    "explained_under_1M": 10428208.342332557
+   },
+   "55": {
+    "name": "Chicago Police Board",
+    "budget": 2700.0,
+    "explained": 2700.0,
+    "explained_under_1M": 2700.0
+   },
+   "57": {
+    "name": "Chicago Police Department",
+    "budget": 142579918.0,
+    "explained": 22866517.13,
+    "explained_under_1M": 10572157.020761244
+   },
+   "58": {
+    "name": "Office of Emergency Management and Communications",
+    "budget": 5718080.0,
+    "explained": 5642131.05,
+    "explained_under_1M": 969280.5736474263
+   },
+   "59": {
+    "name": "Chicago Fire Department",
+    "budget": 44373339.0,
+    "explained": 6027150.609999999,
+    "explained_under_1M": 1462290.9792146154
+   },
+   "6": {
+    "name": "Department of Technology and Innovation",
+    "budget": 46576465.0,
+    "explained": 46576465.0,
+    "explained_under_1M": 1384372.517896778
+   },
+   "60": {
+    "name": "Civilian Office of Police Accountability",
+    "budget": 694495.0,
+    "explained": 506773.6600000001,
+    "explained_under_1M": 506773.6600000001
+   },
+   "62": {
+    "name": "Community Commission for Public Safety and Accountability",
+    "budget": 92000.0,
+    "explained": 92000.0,
+    "explained_under_1M": 92000.0
+   },
+   "67": {
+    "name": "Department of Buildings",
+    "budget": 3258535.0,
+    "explained": 1071205.52,
+    "explained_under_1M": 1071205.52
+   },
+   "70": {
+    "name": "Department of Business Affairs and Consumer Protection",
+    "budget": 5670728.0,
+    "explained": 5425948.9,
+    "explained_under_1M": 5395937.754968387
+   },
+   "72": {
+    "name": "Department of Environment",
+    "budget": 919009.0,
+    "explained": 919009.0,
+    "explained_under_1M": 919009.0
+   },
+   "73": {
+    "name": "Chicago Animal Care and Control",
+    "budget": 856644.0,
+    "explained": 51485.29,
+    "explained_under_1M": 51485.29
+   },
+   "77": {
+    "name": "License Appeal Commission",
+    "budget": 44.0,
+    "explained": 44.0,
+    "explained_under_1M": 44.0
+   },
+   "78": {
+    "name": "Board of Ethics",
+    "budget": 18160.0,
+    "explained": 6185.75,
+    "explained_under_1M": 6185.75
+   },
+   "81": {
+    "name": "Department of Streets and Sanitation",
+    "budget": 123583632.0,
+    "explained": 75026225.73,
+    "explained_under_1M": 2431884.61444866
+   },
+   "84": {
+    "name": "Chicago Department of Transportation",
+    "budget": 817304617.0,
+    "explained": 641069753.22,
+    "explained_under_1M": 35830283.31776515
+   },
+   "85": {
+    "name": "Chicago Department of Aviation",
+    "budget": 808662515.0,
+    "explained": 584753162.87,
+    "explained_under_1M": 20454259.393747695
+   },
+   "88": {
+    "name": "Department of Water Management",
+    "budget": 430672359.0,
+    "explained": 357947087.38,
+    "explained_under_1M": 21652272.09033648
+   },
+   "91": {
+    "name": "Chicago Public Library",
+    "budget": 14565250.0,
+    "explained": 12159664.85,
+    "explained_under_1M": 5344549.076902256
+   },
+   "99": {
+    "name": "Finance General",
+    "budget": 1082667047.0,
+    "explained": 186995979.91,
+    "explained_under_1M": 26847978.896397565
+   }
+  },
+  "pooled_citywide_by_family": {
+   "BENEFITS": {
+    "budget": 831079263.0,
+    "paid": 833706331.22,
+    "explained": 831079263.0,
+    "explained_under_1M": 3992183.479909285
+   },
+   "CONSTR": {
+    "budget": 1030693391.0,
+    "paid": 1297277976.95,
+    "explained": 1030693391.0,
+    "explained_under_1M": 19062175.648381945
+   },
+   "DELEGATE": {
+    "budget": 593371527.0,
+    "paid": 621211768.8800001,
+    "explained": 593371527.0,
+    "explained_under_1M": 251259825.56825376
+   },
+   "DEVLOAN": {
+    "budget": 191591897.0,
+    "paid": 510349560.37999994,
+    "explained": 191591897.0,
+    "explained_under_1M": 13743345.595640222
+   },
+   "EQUIP": {
+    "budget": 20048610.0,
+    "paid": 105053943.34,
+    "explained": 20048610.0,
+    "explained_under_1M": 456668.9482493518
+   },
+   "FACILITY": {
+    "budget": 306470695.0,
+    "paid": 274342809.14,
+    "explained": 274342809.14,
+    "explained_under_1M": 33140361.64
+   },
+   "FUEL": {
+    "budget": 40662700.0,
+    "paid": 35897140.01,
+    "explained": 35897140.01,
+    "explained_under_1M": 1266723.03
+   },
+   "IT": {
+    "budget": 312323852.0,
+    "paid": 187208242.48,
+    "explained": 187208242.48,
+    "explained_under_1M": 8785544.75
+   },
+   "LEGAL": {
+    "budget": 154263081.0,
+    "paid": 336852800.02,
+    "explained": 154263081.0,
+    "explained_under_1M": 14433827.097641254
+   },
+   "MATERIALS": {
+    "budget": 180720469.0,
+    "paid": 225604606.78000003,
+    "explained": 180720469.0,
+    "explained_under_1M": 17698638.23809658
+   },
+   "OTHER_VENDOR": {
+    "budget": 236052734.0,
+    "paid": 624278116.77,
+    "explained": 236052734.0,
+    "explained_under_1M": 74195262.56441562
+   },
+   "PROF": {
+    "budget": 1074957612.0,
+    "paid": 1032689272.02,
+    "explained": 1032689272.02,
+    "explained_under_1M": 82101317.0
+   },
+   "RENTAL": {
+    "budget": 133716831.0,
+    "paid": 53750195.15,
+    "explained": 53750195.15,
+    "explained_under_1M": 2987653.4600000004
+   },
+   "TELECOM": {
+    "budget": 36277362.0,
+    "paid": 16757356.700000001,
+    "explained": 16757356.700000001,
+    "explained_under_1M": 0.0
+   },
+   "UTIL": {
+    "budget": 160802534.0,
+    "paid": 174395784.95000002,
+    "explained": 160802534.0,
+    "explained_under_1M": 6447400.709672758
+   },
+   "WASTE": {
+    "budget": 66157047.0,
+    "paid": 93345975.65,
+    "explained": 66157047.0,
+    "explained_under_1M": 876148.6204949336
+   }
+  },
+  "pooled_citywide_total": {
+   "budget": 5369189605.0,
+   "explained": 5065425568.499999,
+   "explained_under_1M": 530447076.3507557,
+   "budget_in_families_without_payments": 0.0
+  },
+  "headline_accounts": [
+   {
+    "account": "0140",
+    "family": "PROF",
+    "description": "For Professional and Technical Services and Other Third Party Benefit ",
+    "budget_2026": 1054952586.0,
+    "explained": 698760825.0782568,
+    "explained_under_1M": 51585323.94429781
+   },
+   {
+    "account": "0540",
+    "family": "CONSTR",
+    "description": "Construction of Buildings and Other Structures",
+    "budget_2026": 971457229.0,
+    "explained": 723715725.0278306,
+    "explained_under_1M": 16674307.08289624
+   },
+   {
+    "account": "0135",
+    "family": "DELEGATE",
+    "description": "For Delegate Agencies",
+    "budget_2026": 360484363.0,
+    "explained": 340388096.44279253,
+    "explained_under_1M": 146786896.14165264
+   },
+   {
+    "account": "0138",
+    "family": "IT",
+    "description": "For Professional Services for Information Technology Maintenance",
+    "budget_2026": 221819637.0,
+    "explained": 22855152.82949178,
+    "explained_under_1M": 937148.8287397658
+   },
+   {
+    "account": "0162",
+    "family": "FACILITY",
+    "description": "Repair/Maintenance of Equipment",
+    "budget_2026": 104744637.0,
+    "explained": 75477848.13250586,
+    "explained_under_1M": 9904890.097424168
+   },
+   {
+    "account": "0157",
+    "family": "RENTAL",
+    "description": "Rental of Equipment and Services",
+    "budget_2026": 89035888.0,
+    "explained": 8142602.935300147,
+    "explained_under_1M": 372636.98947360547
+   },
+   {
+    "account": "0331",
+    "family": "UTIL",
+    "description": "Electricity",
+    "budget_2026": 90071360.0,
+    "explained": 89946790.93377171,
+    "explained_under_1M": 3805720.576231438
+   },
+   {
+    "account": "0340",
+    "family": "MATERIALS",
+    "description": "Material and Supplies",
+    "budget_2026": 81328249.0,
+    "explained": 60401845.859351866,
+    "explained_under_1M": 5862590.355416826
+   }
+  ]
+ },
+ "family_totals": [
+  {
+   "family": "PROF",
+   "label": "Professional & technical services (0140-0148)",
+   "budget_2026": 1074957612.0,
+   "paid_2025": 1039255767.6
+  },
+  {
+   "family": "IT",
+   "label": "IT services, software, hardware (0138, 0139, 0149, 0154, 0312, 0446)",
+   "budget_2026": 312323852.0,
+   "paid_2025": 187208242.48000002
+  },
+  {
+   "family": "TELECOM",
+   "label": "Telephone, mobile, data circuits (0181, 0189-0197, 0423)",
+   "budget_2026": 36277362.0,
+   "paid_2025": 16757356.7
+  },
+  {
+   "family": "DELEGATE",
+   "label": "Delegate agencies and program grants (0135 + 92xx program accounts)",
+   "budget_2026": 593371527.0,
+   "paid_2025": 621211111.81
+  },
+  {
+   "family": "CONSTR",
+   "label": "Construction and capital (0540, 0521, 9097)",
+   "budget_2026": 1030693391.0,
+   "paid_2025": 1297588610.29
+  },
+  {
+   "family": "FACILITY",
+   "label": "Facility, equipment and street repair, maintenance services (0125, 0160-0163, 0176, 0188, 0526)",
+   "budget_2026": 306470695.0,
+   "paid_2025": 280086140.63
+  },
+  {
+   "family": "WASTE",
+   "label": "Waste disposal (0185)",
+   "budget_2026": 66157047.0,
+   "paid_2025": 93345975.65
+  },
+  {
+   "family": "RENTAL",
+   "label": "Rental of property and equipment, leases (0155, 0157, 0159)",
+   "budget_2026": 133716831.0,
+   "paid_2025": 53750195.15
+  },
+  {
+   "family": "UTIL",
+   "label": "Electricity, gas, water (0331, 0332, 0322, 0183, 0314, 0316)",
+   "budget_2026": 160802534.0,
+   "paid_2025": 174735659.76
+  },
+  {
+   "family": "FUEL",
+   "label": "Fuel (0315, 0320, 0325, 0318)",
+   "budget_2026": 40662700.0,
+   "paid_2025": 35897140.01
+  },
+  {
+   "family": "MATERIALS",
+   "label": "Materials, supplies, drugs (0300-0365 other)",
+   "budget_2026": 180720469.0,
+   "paid_2025": 225639217.48
+  },
+  {
+   "family": "EQUIP",
+   "label": "Equipment and vehicles purchase (04xx)",
+   "budget_2026": 20048610.0,
+   "paid_2025": 105053943.34
+  },
+  {
+   "family": "BENEFITS",
+   "label": "Employee health, insurance, workers comp (0029, 0042-0056, 0172, 0937 ...)",
+   "budget_2026": 831079263.0,
+   "paid_2025": 833710795.33
+  },
+  {
+   "family": "LEGAL",
+   "label": "Judgments, claims, outside counsel (0931, 0934, 0145)",
+   "budget_2026": 154263081.0,
+   "paid_2025": 336859327.41999996
+  },
+  {
+   "family": "DEVLOAN",
+   "label": "Housing / development loans and grants (9103, 0991, 9102)",
+   "budget_2026": 191591897.0,
+   "paid_2025": 510349560.38
+  },
+  {
+   "family": "OTHER_VENDOR",
+   "label": "Other vendor-payable accounts",
+   "budget_2026": 236052734.0,
+   "paid_2025": 627379963.12
+  },
+  {
+   "family": "LEGACY_UNTYPED",
+   "label": "(payments only) contracts imported from legacy systems with no contract type",
+   "budget_2026": 0.0,
+   "paid_2025": 0.0
+  },
+  {
+   "family": "UNMATCHED",
+   "label": "Payments on contracts not found in Contracts dataset",
+   "budget_2026": 0.0,
+   "paid_2025": 9450744.219999999
+  }
+ ],
+ "nonvendor_direct_voucher_totals_2025": {
+  "X_PENSION": 1398149917.4199998,
+  "X_DEBT_BANK": 979495266.98,
+  "X_TAX_GOV": 1000641691.89,
+  "X_PASSTHRU_AGENCY": 134605984.9,
+  "X_PAYROLL_DEDUCTION": 701784795.3600001
+ },
+ "under_1M": {
+  "overall": {
+   "dept_vendor": {
+    "groups": 18563,
+    "groups_under_1M": 17953,
+    "dollars": 6422721223.370001,
+    "dollars_in_groups_under_1M": 462072194.19000006,
+    "pct_dollars_under_1M": 7.194336763499613,
+    "pct_groups_under_1M": 96.71389322846522
+   },
+   "dept_vendor_contract": {
+    "groups": 20383,
+    "groups_under_1M": 19638,
+    "dollars": 6422721880.440001,
+    "dollars_in_groups_under_1M": 716391002.28,
+    "pct_dollars_under_1M": 11.154009399997907,
+    "pct_groups_under_1M": 96.34499337683364
+   },
+   "dept_vendor_family": {
+    "groups": 18821,
+    "groups_under_1M": 18199,
+    "dollars": 6422721223.37,
+    "dollars_in_groups_under_1M": 490687262.31,
+    "pct_dollars_under_1M": 7.639865490729435,
+    "pct_groups_under_1M": 96.69518091493545
+   },
+   "dept_vendor_contract_quarter": {
+    "groups": 31281,
+    "groups_under_1M": 30224,
+    "dollars": 6422767451.12,
+    "dollars_in_groups_under_1M": 1275609882.81,
+    "pct_dollars_under_1M": 19.86075149875712,
+    "pct_groups_under_1M": 96.62095201560052
+   },
+   "dept_vendor_contract_month": {
+    "groups": 44222,
+    "groups_under_1M": 42929,
+    "dollars": 6422848580.240001,
+    "dollars_in_groups_under_1M": 1803478472.18,
+    "pct_dollars_under_1M": 28.079106173052736,
+    "pct_groups_under_1M": 97.07611596038171
+   },
+   "dept_voucher_line": {
+    "groups": 94110,
+    "groups_under_1M": 93014,
+    "dollars": 6422803771.22,
+    "dollars_in_groups_under_1M": 2774651023.47,
+    "pct_dollars_under_1M": 43.19999679739492,
+    "pct_groups_under_1M": 98.83540537668685
+   },
+   "voucher_level_by_family": {
+    "BENEFITS": {
+     "dollars": 833706331.2199999,
+     "dollars_in_vouchers_1M_plus": 773827402.4,
+     "vouchers_1M_plus": 63
+    },
+    "CONSTR": {
+     "dollars": 1297277976.95,
+     "dollars_in_vouchers_1M_plus": 915363240.1099999,
+     "vouchers_1M_plus": 303
+    },
+    "DELEGATE": {
+     "dollars": 621293426.27,
+     "dollars_in_vouchers_1M_plus": 47583742.78,
+     "vouchers_1M_plus": 35
+    },
+    "DEVLOAN": {
+     "dollars": 510349560.38000005,
+     "dollars_in_vouchers_1M_plus": 405410711.66999996,
+     "vouchers_1M_plus": 121
+    },
+    "EQUIP": {
+     "dollars": 105053943.34,
+     "dollars_in_vouchers_1M_plus": 60345522.660000004,
+     "vouchers_1M_plus": 28
+    },
+    "FACILITY": {
+     "dollars": 274342809.14,
+     "dollars_in_vouchers_1M_plus": 28638386.680000003,
+     "vouchers_1M_plus": 20
+    },
+    "FUEL": {
+     "dollars": 35897140.010000005,
+     "dollars_in_vouchers_1M_plus": 3932595.0,
+     "vouchers_1M_plus": 1
+    },
+    "IT": {
+     "dollars": 187208242.48000002,
+     "dollars_in_vouchers_1M_plus": 67823411.49,
+     "vouchers_1M_plus": 29
+    },
+    "LEGAL": {
+     "dollars": 336852800.02,
+     "dollars_in_vouchers_1M_plus": 257485039.07999998,
+     "vouchers_1M_plus": 33
+    },
+    "MATERIALS": {
+     "dollars": 225604606.77999997,
+     "dollars_in_vouchers_1M_plus": 71925431.80999999,
+     "vouchers_1M_plus": 45
+    },
+    "OTHER_VENDOR": {
+     "dollars": 624278350.16,
+     "dollars_in_vouchers_1M_plus": 275060604.71000004,
+     "vouchers_1M_plus": 95
+    },
+    "PROF": {
+     "dollars": 1032689272.02,
+     "dollars_in_vouchers_1M_plus": 562752989.5799999,
+     "vouchers_1M_plus": 260
+    },
+    "RENTAL": {
+     "dollars": 53750195.150000006,
+     "dollars_in_vouchers_1M_plus": 0.0,
+     "vouchers_1M_plus": 0
+    },
+    "TELECOM": {
+     "dollars": 16757356.7,
+     "dollars_in_vouchers_1M_plus": 1058987.5,
+     "vouchers_1M_plus": 1
+    },
+    "UTIL": {
+     "dollars": 174395784.95,
+     "dollars_in_vouchers_1M_plus": 120287123.12,
+     "vouchers_1M_plus": 34
+    },
+    "WASTE": {
+     "dollars": 93345975.65,
+     "dollars_in_vouchers_1M_plus": 56657559.16000001,
+     "vouchers_1M_plus": 28
+    }
+   }
+  },
+  "by_dept": {
+   "1": {
+    "dept_vendor": {
+     "groups": 228,
+     "groups_under_1M": 228,
+     "dollars": 2220527.42,
+     "dollars_in_groups_under_1M": 2220527.42,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 229,
+     "groups_under_1M": 229,
+     "dollars": 2220527.42,
+     "dollars_in_groups_under_1M": 2220527.42,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "15": {
+    "dept_vendor": {
+     "groups": 444,
+     "groups_under_1M": 444,
+     "dollars": 3684592.4800000004,
+     "dollars_in_groups_under_1M": 3684592.4800000004,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 444,
+     "groups_under_1M": 444,
+     "dollars": 3684592.4800000004,
+     "dollars_in_groups_under_1M": 3684592.4800000004,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "21": {
+    "dept_vendor": {
+     "groups": 63,
+     "groups_under_1M": 57,
+     "dollars": 38432226.45999999,
+     "dollars_in_groups_under_1M": 6790687.45,
+     "pct_dollars_under_1M": 17.669253320693514,
+     "pct_groups_under_1M": 90.47619047619048
+    },
+    "dept_vendor_contract": {
+     "groups": 90,
+     "groups_under_1M": 84,
+     "dollars": 38432226.46,
+     "dollars_in_groups_under_1M": 8164913.13,
+     "pct_dollars_under_1M": 21.244965181754395,
+     "pct_groups_under_1M": 93.33333333333333
+    }
+   },
+   "23": {
+    "dept_vendor": {
+     "groups": 1679,
+     "groups_under_1M": 1675,
+     "dollars": 49219906.260000005,
+     "dollars_in_groups_under_1M": 30740573.82,
+     "pct_dollars_under_1M": 62.45557164943694,
+     "pct_groups_under_1M": 99.76176295413937
+    },
+    "dept_vendor_contract": {
+     "groups": 1796,
+     "groups_under_1M": 1790,
+     "dollars": 49219906.260000005,
+     "dollars_in_groups_under_1M": 30748173.82,
+     "pct_dollars_under_1M": 62.4710125565363,
+     "pct_groups_under_1M": 99.66592427616926
+    }
+   },
+   "25": {
+    "dept_vendor": {
+     "groups": 305,
+     "groups_under_1M": 305,
+     "dollars": 2906182.31,
+     "dollars_in_groups_under_1M": 2906182.31,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 305,
+     "groups_under_1M": 305,
+     "dollars": 2906182.31,
+     "dollars_in_groups_under_1M": 2906182.31,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "27": {
+    "dept_vendor": {
+     "groups": 52,
+     "groups_under_1M": 31,
+     "dollars": 865272186.7800001,
+     "dollars_in_groups_under_1M": 8222932.59,
+     "pct_dollars_under_1M": 0.9503290081009761,
+     "pct_groups_under_1M": 59.61538461538461
+    },
+    "dept_vendor_contract": {
+     "groups": 61,
+     "groups_under_1M": 38,
+     "dollars": 865272186.7799999,
+     "dollars_in_groups_under_1M": 8472932.59,
+     "pct_dollars_under_1M": 0.979221650649715,
+     "pct_groups_under_1M": 62.295081967213115
+    }
+   },
+   "28": {
+    "dept_vendor": {
+     "groups": 44,
+     "groups_under_1M": 44,
+     "dollars": 2155069.4499999997,
+     "dollars_in_groups_under_1M": 2155069.4499999997,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 44,
+     "groups_under_1M": 44,
+     "dollars": 2155069.4499999997,
+     "dollars_in_groups_under_1M": 2155069.4499999997,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "3": {
+    "dept_vendor": {
+     "groups": 2,
+     "groups_under_1M": 1,
+     "dollars": 1878544.44,
+     "dollars_in_groups_under_1M": 99723.75,
+     "pct_dollars_under_1M": 5.3085648588648775,
+     "pct_groups_under_1M": 50.0
+    },
+    "dept_vendor_contract": {
+     "groups": 2,
+     "groups_under_1M": 1,
+     "dollars": 1878544.44,
+     "dollars_in_groups_under_1M": 99723.75,
+     "pct_dollars_under_1M": 5.3085648588648775,
+     "pct_groups_under_1M": 50.0
+    }
+   },
+   "30": {
+    "dept_vendor": {
+     "groups": 76,
+     "groups_under_1M": 76,
+     "dollars": 2937774.7199999997,
+     "dollars_in_groups_under_1M": 2937774.7199999997,
+     "pct_dollars_under_1M": 100.00000000000001,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 76,
+     "groups_under_1M": 76,
+     "dollars": 2937774.7199999997,
+     "dollars_in_groups_under_1M": 2937774.7199999997,
+     "pct_dollars_under_1M": 100.00000000000001,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "31": {
+    "dept_vendor": {
+     "groups": 682,
+     "groups_under_1M": 664,
+     "dollars": 78600059.35,
+     "dollars_in_groups_under_1M": 19759452.909999996,
+     "pct_dollars_under_1M": 25.13923408379716,
+     "pct_groups_under_1M": 97.36070381231671
+    },
+    "dept_vendor_contract": {
+     "groups": 688,
+     "groups_under_1M": 670,
+     "dollars": 78600059.35,
+     "dollars_in_groups_under_1M": 19759452.909999996,
+     "pct_dollars_under_1M": 25.13923408379716,
+     "pct_groups_under_1M": 97.38372093023256
+    }
+   },
+   "33": {
+    "dept_vendor": {
+     "groups": 145,
+     "groups_under_1M": 143,
+     "dollars": 7227224.76,
+     "dollars_in_groups_under_1M": 2930691.0999999996,
+     "pct_dollars_under_1M": 40.55071202739237,
+     "pct_groups_under_1M": 98.62068965517241
+    },
+    "dept_vendor_contract": {
+     "groups": 146,
+     "groups_under_1M": 144,
+     "dollars": 7227224.76,
+     "dollars_in_groups_under_1M": 2930691.1,
+     "pct_dollars_under_1M": 40.55071202739238,
+     "pct_groups_under_1M": 98.63013698630137
+    }
+   },
+   "35": {
+    "dept_vendor": {
+     "groups": 57,
+     "groups_under_1M": 57,
+     "dollars": 1029009.8500000001,
+     "dollars_in_groups_under_1M": 1029009.8500000001,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 58,
+     "groups_under_1M": 58,
+     "dollars": 1029009.8500000001,
+     "dollars_in_groups_under_1M": 1029009.8500000001,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "38": {
+    "dept_vendor": {
+     "groups": 241,
+     "groups_under_1M": 176,
+     "dollars": 645500795.58,
+     "dollars_in_groups_under_1M": 28535215.909999996,
+     "pct_dollars_under_1M": 4.420632182855844,
+     "pct_groups_under_1M": 73.02904564315352
+    },
+    "dept_vendor_contract": {
+     "groups": 319,
+     "groups_under_1M": 242,
+     "dollars": 645500795.5799999,
+     "dollars_in_groups_under_1M": 40934150.24,
+     "pct_dollars_under_1M": 6.341456202733191,
+     "pct_groups_under_1M": 75.86206896551724
+    }
+   },
+   "39": {
+    "dept_vendor": {
+     "groups": 194,
+     "groups_under_1M": 190,
+     "dollars": 9910085.73,
+     "dollars_in_groups_under_1M": 4775417.82,
+     "pct_dollars_under_1M": 48.18745215839823,
+     "pct_groups_under_1M": 97.9381443298969
+    },
+    "dept_vendor_contract": {
+     "groups": 194,
+     "groups_under_1M": 190,
+     "dollars": 9910085.73,
+     "dollars_in_groups_under_1M": 4775417.82,
+     "pct_dollars_under_1M": 48.18745215839823,
+     "pct_groups_under_1M": 97.9381443298969
+    }
+   },
+   "41": {
+    "dept_vendor": {
+     "groups": 569,
+     "groups_under_1M": 537,
+     "dollars": 153890222.73,
+     "dollars_in_groups_under_1M": 53279549.7,
+     "pct_dollars_under_1M": 34.62178997133485,
+     "pct_groups_under_1M": 94.37609841827768
+    },
+    "dept_vendor_contract": {
+     "groups": 849,
+     "groups_under_1M": 821,
+     "dollars": 153890222.73000002,
+     "dollars_in_groups_under_1M": 92090328.56,
+     "pct_dollars_under_1M": 59.841572080620246,
+     "pct_groups_under_1M": 96.70200235571261
+    }
+   },
+   "45": {
+    "dept_vendor": {
+     "groups": 29,
+     "groups_under_1M": 29,
+     "dollars": 119274.08,
+     "dollars_in_groups_under_1M": 119274.08,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 29,
+     "groups_under_1M": 29,
+     "dollars": 119274.08,
+     "dollars_in_groups_under_1M": 119274.08,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "48": {
+    "dept_vendor": {
+     "groups": 38,
+     "groups_under_1M": 36,
+     "dollars": 7415635.3,
+     "dollars_in_groups_under_1M": 1144687.77,
+     "pct_dollars_under_1M": 15.436138964385156,
+     "pct_groups_under_1M": 94.73684210526316
+    },
+    "dept_vendor_contract": {
+     "groups": 41,
+     "groups_under_1M": 40,
+     "dollars": 7415635.300000001,
+     "dollars_in_groups_under_1M": 2993154.68,
+     "pct_dollars_under_1M": 40.36275462467794,
+     "pct_groups_under_1M": 97.5609756097561
+    }
+   },
+   "5": {
+    "dept_vendor": {
+     "groups": 21,
+     "groups_under_1M": 17,
+     "dollars": 13688304.450000001,
+     "dollars_in_groups_under_1M": 694805.71,
+     "pct_dollars_under_1M": 5.07590777614535,
+     "pct_groups_under_1M": 80.95238095238095
+    },
+    "dept_vendor_contract": {
+     "groups": 23,
+     "groups_under_1M": 19,
+     "dollars": 13688304.45,
+     "dollars_in_groups_under_1M": 1041761.98,
+     "pct_dollars_under_1M": 7.610599134504201,
+     "pct_groups_under_1M": 82.6086956521739
+    }
+   },
+   "50": {
+    "dept_vendor": {
+     "groups": 529,
+     "groups_under_1M": 441,
+     "dollars": 486804567.23,
+     "dollars_in_groups_under_1M": 72089000.97999999,
+     "pct_dollars_under_1M": 14.808612291827611,
+     "pct_groups_under_1M": 83.3648393194707
+    },
+    "dept_vendor_contract": {
+     "groups": 1197,
+     "groups_under_1M": 1097,
+     "dollars": 486805224.3,
+     "dollars_in_groups_under_1M": 167651784.49,
+     "pct_dollars_under_1M": 34.439191718017064,
+     "pct_groups_under_1M": 91.64578111946533
+    }
+   },
+   "51": {
+    "dept_vendor": {
+     "groups": 122,
+     "groups_under_1M": 114,
+     "dollars": 47060143.419999994,
+     "dollars_in_groups_under_1M": 4485752.5,
+     "pct_dollars_under_1M": 9.531956713275994,
+     "pct_groups_under_1M": 93.44262295081967
+    },
+    "dept_vendor_contract": {
+     "groups": 123,
+     "groups_under_1M": 116,
+     "dollars": 47060143.42,
+     "dollars_in_groups_under_1M": 6301179.84,
+     "pct_dollars_under_1M": 13.389631611964177,
+     "pct_groups_under_1M": 94.3089430894309
+    }
+   },
+   "54": {
+    "dept_vendor": {
+     "groups": 409,
+     "groups_under_1M": 335,
+     "dollars": 560040039.6600001,
+     "dollars_in_groups_under_1M": 39097253.06,
+     "pct_dollars_under_1M": 6.981153183928763,
+     "pct_groups_under_1M": 81.90709046454768
+    },
+    "dept_vendor_contract": {
+     "groups": 536,
+     "groups_under_1M": 430,
+     "dollars": 560040039.6600001,
+     "dollars_in_groups_under_1M": 58429444.379999995,
+     "pct_dollars_under_1M": 10.433083394443097,
+     "pct_groups_under_1M": 80.22388059701493
+    }
+   },
+   "55": {
+    "dept_vendor": {
+     "groups": 17,
+     "groups_under_1M": 17,
+     "dollars": 208343.65,
+     "dollars_in_groups_under_1M": 208343.65,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 17,
+     "groups_under_1M": 17,
+     "dollars": 208343.65,
+     "dollars_in_groups_under_1M": 208343.65,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "57": {
+    "dept_vendor": {
+     "groups": 1483,
+     "groups_under_1M": 1477,
+     "dollars": 35504722.28,
+     "dollars_in_groups_under_1M": 14592303.399999999,
+     "pct_dollars_under_1M": 41.0996128484574,
+     "pct_groups_under_1M": 99.59541469993258
+    },
+    "dept_vendor_contract": {
+     "groups": 1492,
+     "groups_under_1M": 1486,
+     "dollars": 35504722.28,
+     "dollars_in_groups_under_1M": 15229692.18,
+     "pct_dollars_under_1M": 42.894835396526865,
+     "pct_groups_under_1M": 99.59785522788204
+    }
+   },
+   "58": {
+    "dept_vendor": {
+     "groups": 44,
+     "groups_under_1M": 41,
+     "dollars": 34160202.18,
+     "dollars_in_groups_under_1M": 3212080.19,
+     "pct_dollars_under_1M": 9.402989399988382,
+     "pct_groups_under_1M": 93.18181818181819
+    },
+    "dept_vendor_contract": {
+     "groups": 47,
+     "groups_under_1M": 43,
+     "dollars": 34160202.18,
+     "dollars_in_groups_under_1M": 3273583.39,
+     "pct_dollars_under_1M": 9.583032830867163,
+     "pct_groups_under_1M": 91.48936170212765
+    }
+   },
+   "59": {
+    "dept_vendor": {
+     "groups": 262,
+     "groups_under_1M": 257,
+     "dollars": 32362413.69,
+     "dollars_in_groups_under_1M": 8752604.42,
+     "pct_dollars_under_1M": 27.045585980827376,
+     "pct_groups_under_1M": 98.09160305343511
+    },
+    "dept_vendor_contract": {
+     "groups": 278,
+     "groups_under_1M": 271,
+     "dollars": 32362413.69,
+     "dollars_in_groups_under_1M": 10992241.079999998,
+     "pct_dollars_under_1M": 33.966073066412235,
+     "pct_groups_under_1M": 97.4820143884892
+    }
+   },
+   "6": {
+    "dept_vendor": {
+     "groups": 28,
+     "groups_under_1M": 15,
+     "dollars": 183012141.24000004,
+     "dollars_in_groups_under_1M": 1895422.5999999999,
+     "pct_dollars_under_1M": 1.0356813417719453,
+     "pct_groups_under_1M": 53.57142857142857
+    },
+    "dept_vendor_contract": {
+     "groups": 61,
+     "groups_under_1M": 44,
+     "dollars": 183012141.24,
+     "dollars_in_groups_under_1M": 6478468.79,
+     "pct_dollars_under_1M": 3.5399120222872047,
+     "pct_groups_under_1M": 72.1311475409836
+    }
+   },
+   "60": {
+    "dept_vendor": {
+     "groups": 57,
+     "groups_under_1M": 57,
+     "dollars": 566515.5,
+     "dollars_in_groups_under_1M": 566515.5,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 57,
+     "groups_under_1M": 57,
+     "dollars": 566515.5,
+     "dollars_in_groups_under_1M": 566515.5,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "62": {
+    "dept_vendor": {
+     "groups": 127,
+     "groups_under_1M": 127,
+     "dollars": 589907.6900000001,
+     "dollars_in_groups_under_1M": 589907.6900000001,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 127,
+     "groups_under_1M": 127,
+     "dollars": 589907.6900000001,
+     "dollars_in_groups_under_1M": 589907.6900000001,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "67": {
+    "dept_vendor": {
+     "groups": 29,
+     "groups_under_1M": 27,
+     "dollars": 10875610.190000001,
+     "dollars_in_groups_under_1M": 4186378.53,
+     "pct_dollars_under_1M": 38.49327492308732,
+     "pct_groups_under_1M": 93.10344827586206
+    },
+    "dept_vendor_contract": {
+     "groups": 32,
+     "groups_under_1M": 30,
+     "dollars": 10875610.19,
+     "dollars_in_groups_under_1M": 4186378.5300000003,
+     "pct_dollars_under_1M": 38.49327492308733,
+     "pct_groups_under_1M": 93.75
+    }
+   },
+   "70": {
+    "dept_vendor": {
+     "groups": 950,
+     "groups_under_1M": 948,
+     "dollars": 18874789.490000002,
+     "dollars_in_groups_under_1M": 16432459.489999998,
+     "pct_dollars_under_1M": 87.06035899741309,
+     "pct_groups_under_1M": 99.78947368421052
+    },
+    "dept_vendor_contract": {
+     "groups": 1051,
+     "groups_under_1M": 1049,
+     "dollars": 18874789.490000002,
+     "dollars_in_groups_under_1M": 16432459.49,
+     "pct_dollars_under_1M": 87.0603589974131,
+     "pct_groups_under_1M": 99.80970504281636
+    }
+   },
+   "72": {
+    "dept_vendor": {
+     "groups": 10,
+     "groups_under_1M": 10,
+     "dollars": 2235132.81,
+     "dollars_in_groups_under_1M": 2235132.81,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 13,
+     "groups_under_1M": 13,
+     "dollars": 2235132.8099999996,
+     "dollars_in_groups_under_1M": 2235132.8099999996,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "73": {
+    "dept_vendor": {
+     "groups": 19,
+     "groups_under_1M": 19,
+     "dollars": 771875.22,
+     "dollars_in_groups_under_1M": 771875.22,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 19,
+     "groups_under_1M": 19,
+     "dollars": 771875.22,
+     "dollars_in_groups_under_1M": 771875.22,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "77": {
+    "dept_vendor": {
+     "groups": 1,
+     "groups_under_1M": 1,
+     "dollars": 45185.41,
+     "dollars_in_groups_under_1M": 45185.41,
+     "pct_dollars_under_1M": 99.99999999999999,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 1,
+     "groups_under_1M": 1,
+     "dollars": 45185.41,
+     "dollars_in_groups_under_1M": 45185.41,
+     "pct_dollars_under_1M": 99.99999999999999,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "78": {
+    "dept_vendor": {
+     "groups": 6,
+     "groups_under_1M": 6,
+     "dollars": 6329.97,
+     "dollars_in_groups_under_1M": 6329.97,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    },
+    "dept_vendor_contract": {
+     "groups": 6,
+     "groups_under_1M": 6,
+     "dollars": 6329.97,
+     "dollars_in_groups_under_1M": 6329.97,
+     "pct_dollars_under_1M": 100.0,
+     "pct_groups_under_1M": 100.0
+    }
+   },
+   "81": {
+    "dept_vendor": {
+     "groups": 1973,
+     "groups_under_1M": 1963,
+     "dollars": 119903265.62,
+     "dollars_in_groups_under_1M": 7387426.25,
+     "pct_dollars_under_1M": 6.161155171046291,
+     "pct_groups_under_1M": 99.4931576279777
+    },
+    "dept_vendor_contract": {
+     "groups": 1987,
+     "groups_under_1M": 1972,
+     "dollars": 119903265.61999999,
+     "dollars_in_groups_under_1M": 9904726.11,
+     "pct_dollars_under_1M": 8.260597456444824,
+     "pct_groups_under_1M": 99.2450931051837
+    }
+   },
+   "84": {
+    "dept_vendor": {
+     "groups": 633,
+     "groups_under_1M": 563,
+     "dollars": 788830965.39,
+     "dollars_in_groups_under_1M": 19660905.78,
+     "pct_dollars_under_1M": 2.49241049637036,
+     "pct_groups_under_1M": 88.94154818325434
+    },
+    "dept_vendor_contract": {
+     "groups": 784,
+     "groups_under_1M": 682,
+     "dollars": 788830965.3899999,
+     "dollars_in_groups_under_1M": 60462744.83,
+     "pct_dollars_under_1M": 7.664854383613995,
+     "pct_groups_under_1M": 86.98979591836735
+    }
+   },
+   "85": {
+    "dept_vendor": {
+     "groups": 463,
+     "groups_under_1M": 375,
+     "dollars": 1319487537.96,
+     "dollars_in_groups_under_1M": 26910023.7,
+     "pct_dollars_under_1M": 2.039429924560286,
+     "pct_groups_under_1M": 80.99352051835854
+    },
+    "dept_vendor_contract": {
+     "groups": 538,
+     "groups_under_1M": 437,
+     "dollars": 1319487537.96,
+     "dollars_in_groups_under_1M": 43296945.83,
+     "pct_dollars_under_1M": 3.2813455666992843,
+     "pct_groups_under_1M": 81.22676579925651
+    }
+   },
+   "88": {
+    "dept_vendor": {
+     "groups": 411,
+     "groups_under_1M": 363,
+     "dollars": 464177292.83000004,
+     "dollars_in_groups_under_1M": 21131000.340000004,
+     "pct_dollars_under_1M": 4.552355461243772,
+     "pct_groups_under_1M": 88.32116788321167
+    },
+    "dept_vendor_contract": {
+     "groups": 498,
+     "groups_under_1M": 426,
+     "dollars": 464177292.83000004,
+     "dollars_in_groups_under_1M": 36474808.34,
+     "pct_dollars_under_1M": 7.857947578094587,
+     "pct_groups_under_1M": 85.5421686746988
+    }
+   },
+   "91": {
+    "dept_vendor": {
+     "groups": 387,
+     "groups_under_1M": 385,
+     "dollars": 12537715.139999997,
+     "dollars_in_groups_under_1M": 5476789.7299999995,
+     "pct_dollars_under_1M": 43.68251845607015,
+     "pct_groups_under_1M": 99.48320413436693
+    },
+    "dept_vendor_contract": {
+     "groups": 391,
+     "groups_under_1M": 389,
+     "dollars": 12537715.14,
+     "dollars_in_groups_under_1M": 5476789.73,
+     "pct_dollars_under_1M": 43.682518456070135,
+     "pct_groups_under_1M": 99.48849104859335
+    }
+   },
+   "99": {
+    "dept_vendor": {
+     "groups": 5734,
+     "groups_under_1M": 5702,
+     "dollars": 418578904.65,
+     "dollars_in_groups_under_1M": 40313334.129999995,
+     "pct_dollars_under_1M": 9.630999957751932,
+     "pct_groups_under_1M": 99.44192535751657
+    },
+    "dept_vendor_contract": {
+     "groups": 5734,
+     "groups_under_1M": 5702,
+     "dollars": 418578904.65,
+     "dollars_in_groups_under_1M": 40313334.129999995,
+     "pct_dollars_under_1M": 9.630999957751932,
+     "pct_groups_under_1M": 99.44192535751657
+    }
+   }
+  },
+  "by_family": {
+   "BENEFITS": {
+    "dept_vendor": {
+     "groups": 87,
+     "groups_under_1M": 73,
+     "dollars": 833706331.22,
+     "dollars_in_groups_under_1M": 4004802.9,
+     "pct_dollars_under_1M": 0.4803613394826439,
+     "pct_groups_under_1M": 83.9080459770115
+    },
+    "dept_vendor_contract": {
+     "groups": 89,
+     "groups_under_1M": 73,
+     "dollars": 833706331.22,
+     "dollars_in_groups_under_1M": 4004802.9,
+     "pct_dollars_under_1M": 0.4803613394826439,
+     "pct_groups_under_1M": 82.02247191011236
+    }
+   },
+   "CONSTR": {
+    "dept_vendor": {
+     "groups": 72,
+     "groups_under_1M": 18,
+     "dollars": 1297277976.95,
+     "dollars_in_groups_under_1M": 6431118.779999999,
+     "pct_dollars_under_1M": 0.4957394555575554,
+     "pct_groups_under_1M": 25.0
+    },
+    "dept_vendor_contract": {
+     "groups": 183,
+     "groups_under_1M": 72,
+     "dollars": 1297277976.95,
+     "dollars_in_groups_under_1M": 23992528.6,
+     "pct_dollars_under_1M": 1.849451623036743,
+     "pct_groups_under_1M": 39.34426229508197
+    }
+   },
+   "DELEGATE": {
+    "dept_vendor": {
+     "groups": 639,
+     "groups_under_1M": 522,
+     "dollars": 621211111.81,
+     "dollars_in_groups_under_1M": 131919941.04,
+     "pct_dollars_under_1M": 21.2359274539745,
+     "pct_groups_under_1M": 81.69014084507042
+    },
+    "dept_vendor_contract": {
+     "groups": 1672,
+     "groups_under_1M": 1552,
+     "dollars": 621211768.8800001,
+     "dollars_in_groups_under_1M": 263048618.92999998,
+     "pct_dollars_under_1M": 42.344435844198124,
+     "pct_groups_under_1M": 92.82296650717703
+    }
+   },
+   "DEVLOAN": {
+    "dept_vendor": {
+     "groups": 532,
+     "groups_under_1M": 477,
+     "dollars": 510349560.38000005,
+     "dollars_in_groups_under_1M": 23558324.990000002,
+     "pct_dollars_under_1M": 4.616115466516471,
+     "pct_groups_under_1M": 89.66165413533835
+    },
+    "dept_vendor_contract": {
+     "groups": 610,
+     "groups_under_1M": 531,
+     "dollars": 510349560.37999994,
+     "dollars_in_groups_under_1M": 36608596.15,
+     "pct_dollars_under_1M": 7.173239479767886,
+     "pct_groups_under_1M": 87.04918032786885
+    }
+   },
+   "EQUIP": {
+    "dept_vendor": {
+     "groups": 17,
+     "groups_under_1M": 8,
+     "dollars": 105053943.34,
+     "dollars_in_groups_under_1M": 1675892.49,
+     "pct_dollars_under_1M": 1.5952685227398717,
+     "pct_groups_under_1M": 47.05882352941177
+    },
+    "dept_vendor_contract": {
+     "groups": 24,
+     "groups_under_1M": 10,
+     "dollars": 105053943.34,
+     "dollars_in_groups_under_1M": 2392927.6799999997,
+     "pct_dollars_under_1M": 2.2778085276203774,
+     "pct_groups_under_1M": 41.666666666666664
+    }
+   },
+   "FACILITY": {
+    "dept_vendor": {
+     "groups": 158,
+     "groups_under_1M": 105,
+     "dollars": 274342809.14,
+     "dollars_in_groups_under_1M": 25045292.09,
+     "pct_dollars_under_1M": 9.129195756400938,
+     "pct_groups_under_1M": 66.45569620253164
+    },
+    "dept_vendor_contract": {
+     "groups": 188,
+     "groups_under_1M": 129,
+     "dollars": 274342809.14,
+     "dollars_in_groups_under_1M": 33140361.64,
+     "pct_dollars_under_1M": 12.079908980988865,
+     "pct_groups_under_1M": 68.61702127659575
+    }
+   },
+   "FUEL": {
+    "dept_vendor": {
+     "groups": 7,
+     "groups_under_1M": 5,
+     "dollars": 35897140.01,
+     "dollars_in_groups_under_1M": 1266723.03,
+     "pct_dollars_under_1M": 3.52875752677546,
+     "pct_groups_under_1M": 71.42857142857143
+    },
+    "dept_vendor_contract": {
+     "groups": 8,
+     "groups_under_1M": 5,
+     "dollars": 35897140.01,
+     "dollars_in_groups_under_1M": 1266723.03,
+     "pct_dollars_under_1M": 3.52875752677546,
+     "pct_groups_under_1M": 62.5
+    }
+   },
+   "IT": {
+    "dept_vendor": {
+     "groups": 34,
+     "groups_under_1M": 15,
+     "dollars": 187208242.48,
+     "dollars_in_groups_under_1M": 4634858.970000001,
+     "pct_dollars_under_1M": 2.4757771926068672,
+     "pct_groups_under_1M": 44.11764705882353
+    },
+    "dept_vendor_contract": {
+     "groups": 69,
+     "groups_under_1M": 48,
+     "dollars": 187208242.48,
+     "dollars_in_groups_under_1M": 8785544.75,
+     "pct_dollars_under_1M": 4.692926248126381,
+     "pct_groups_under_1M": 69.56521739130434
+    }
+   },
+   "LEGAL": {
+    "dept_vendor": {
+     "groups": 469,
+     "groups_under_1M": 436,
+     "dollars": 336852800.02,
+     "dollars_in_groups_under_1M": 31518073.16,
+     "pct_dollars_under_1M": 9.35663089578851,
+     "pct_groups_under_1M": 92.96375266524521
+    },
+    "dept_vendor_contract": {
+     "groups": 469,
+     "groups_under_1M": 436,
+     "dollars": 336852800.02,
+     "dollars_in_groups_under_1M": 31518073.16,
+     "pct_dollars_under_1M": 9.35663089578851,
+     "pct_groups_under_1M": 92.96375266524521
+    }
+   },
+   "MATERIALS": {
+    "dept_vendor": {
+     "groups": 111,
+     "groups_under_1M": 73,
+     "dollars": 225604606.78000003,
+     "dollars_in_groups_under_1M": 16949821.14,
+     "pct_dollars_under_1M": 7.513065172702231,
+     "pct_groups_under_1M": 65.76576576576576
+    },
+    "dept_vendor_contract": {
+     "groups": 157,
+     "groups_under_1M": 113,
+     "dollars": 225604606.78000003,
+     "dollars_in_groups_under_1M": 22094311.41,
+     "pct_dollars_under_1M": 9.793377770670006,
+     "pct_groups_under_1M": 71.97452229299363
+    }
+   },
+   "OTHER_VENDOR": {
+    "dept_vendor": {
+     "groups": 16319,
+     "groups_under_1M": 16228,
+     "dollars": 624278116.77,
+     "dollars_in_groups_under_1M": 183224815.51,
+     "pct_dollars_under_1M": 29.349869967892005,
+     "pct_groups_under_1M": 99.44236779214413
+    },
+    "dept_vendor_contract": {
+     "groups": 16432,
+     "groups_under_1M": 16331,
+     "dollars": 624278116.77,
+     "dollars_in_groups_under_1M": 196220895.23000002,
+     "pct_dollars_under_1M": 31.43164720321164,
+     "pct_groups_under_1M": 99.38534566699124
+    }
+   },
+   "PROF": {
+    "dept_vendor": {
+     "groups": 284,
+     "groups_under_1M": 174,
+     "dollars": 1032689272.02,
+     "dollars_in_groups_under_1M": 49508610.27000001,
+     "pct_dollars_under_1M": 4.794143951273775,
+     "pct_groups_under_1M": 61.267605633802816
+    },
+    "dept_vendor_contract": {
+     "groups": 383,
+     "groups_under_1M": 271,
+     "dollars": 1032689272.02,
+     "dollars_in_groups_under_1M": 82101317.0,
+     "pct_dollars_under_1M": 7.9502440109022405,
+     "pct_groups_under_1M": 70.75718015665797
+    }
+   },
+   "RENTAL": {
+    "dept_vendor": {
+     "groups": 23,
+     "groups_under_1M": 13,
+     "dollars": 53750195.150000006,
+     "dollars_in_groups_under_1M": 2987653.4600000004,
+     "pct_dollars_under_1M": 5.558404860972863,
+     "pct_groups_under_1M": 56.52173913043478
+    },
+    "dept_vendor_contract": {
+     "groups": 28,
+     "groups_under_1M": 15,
+     "dollars": 53750195.15,
+     "dollars_in_groups_under_1M": 2987653.4600000004,
+     "pct_dollars_under_1M": 5.558404860972864,
+     "pct_groups_under_1M": 53.57142857142857
+    }
+   },
+   "TELECOM": {
+    "dept_vendor": {
+     "groups": 2,
+     "groups_under_1M": 0,
+     "dollars": 16757356.700000001,
+     "dollars_in_groups_under_1M": 0.0,
+     "pct_dollars_under_1M": 0.0,
+     "pct_groups_under_1M": 0.0
+    },
+    "dept_vendor_contract": {
+     "groups": 2,
+     "groups_under_1M": 0,
+     "dollars": 16757356.700000001,
+     "dollars_in_groups_under_1M": 0.0,
+     "pct_dollars_under_1M": 0.0,
+     "pct_groups_under_1M": 0.0
+    }
+   },
+   "UTIL": {
+    "dept_vendor": {
+     "groups": 62,
+     "groups_under_1M": 50,
+     "dollars": 174395784.95000002,
+     "dollars_in_groups_under_1M": 6992424.06,
+     "pct_dollars_under_1M": 4.009514371006591,
+     "pct_groups_under_1M": 80.64516129032258
+    },
+    "dept_vendor_contract": {
+     "groups": 62,
+     "groups_under_1M": 50,
+     "dollars": 174395784.95000002,
+     "dollars_in_groups_under_1M": 6992424.06,
+     "pct_dollars_under_1M": 4.009514371006591,
+     "pct_groups_under_1M": 80.64516129032258
+    }
+   },
+   "WASTE": {
+    "dept_vendor": {
+     "groups": 5,
+     "groups_under_1M": 2,
+     "dollars": 93345975.65,
+     "dollars_in_groups_under_1M": 968910.42,
+     "pct_dollars_under_1M": 1.0379777095403897,
+     "pct_groups_under_1M": 40.0
+    },
+    "dept_vendor_contract": {
+     "groups": 8,
+     "groups_under_1M": 3,
+     "dollars": 93345975.65,
+     "dollars_in_groups_under_1M": 1236224.28,
+     "pct_dollars_under_1M": 1.3243466270417625,
+     "pct_groups_under_1M": 37.5
+    }
+   }
+  }
+ },
+ "active_contracts_2026_by_dept": {
+  "Office of the Mayor": {
+   "contracts": 11,
+   "award_total": 1401795.8
+  },
+  "Department of Housing": {
+   "contracts": 104,
+   "award_total": 276092398.3
+  },
+  "Department of Cultural Affairs and Special Events": {
+   "contracts": 622,
+   "award_total": 137237126.9
+  },
+  "Office of City Clerk": {
+   "contracts": 7,
+   "award_total": 7713249.0
+  },
+  "Department of Finance": {
+   "contracts": 51,
+   "award_total": 4771098016.5
+  },
+  "City Treasurer's Office": {
+   "contracts": 2,
+   "award_total": 505800.0
+  },
+  "Office of Inspector General": {
+   "contracts": 1,
+   "award_total": 99723.8
+  },
+  "Department of Law": {
+   "contracts": 6,
+   "award_total": 18957906.0
+  },
+  "Department of Human Resources": {
+   "contracts": 11,
+   "award_total": 90839541.1
+  },
+  "Department of Procurement Services": {
+   "contracts": 5,
+   "award_total": 2822300.0
+  },
+  "Department of Fleet and Facility Management": {
+   "contracts": 158,
+   "award_total": 5707794399.2
+  },
+  "Chicago Department of Public Health": {
+   "contracts": 318,
+   "award_total": 610852404.1
+  },
+  "Mayor's Office for People with Disabilities": {
+   "contracts": 8,
+   "award_total": 4473438.0
+  },
+  "Office of Budget and Management": {
+   "contracts": 9,
+   "award_total": 14237742.3
+  },
+  "Department of Family and Support Services": {
+   "contracts": 1261,
+   "award_total": 4167435231.7
+  },
+  "Office of Public Safety Administration": {
+   "contracts": 38,
+   "award_total": 246229933.9
+  },
+  "Department of Planning and Development": {
+   "contracts": 548,
+   "award_total": 3681004312.1
+  },
+  "Chicago Police Department": {
+   "contracts": 50,
+   "award_total": 182821580.3
+  },
+  "Office of Emergency Management and Communications": {
+   "contracts": 19,
+   "award_total": 350096903.4
+  },
+  "Chicago Fire Department": {
+   "contracts": 30,
+   "award_total": 240949340.8
+  },
+  "Department of Technology and Innovation": {
+   "contracts": 39,
+   "award_total": 2300861307.1
+  },
+  "Department of Buildings": {
+   "contracts": 22,
+   "award_total": 140805000.0
+  },
+  "Department of Business Affairs and Consumer Protection": {
+   "contracts": 83,
+   "award_total": 20418000.0
+  },
+  "Department of Environment": {
+   "contracts": 26,
+   "award_total": 90853956.5
+  },
+  "Chicago Animal Care and Control": {
+   "contracts": 2,
+   "award_total": 505600.0
+  },
+  "Department of Streets and Sanitation": {
+   "contracts": 33,
+   "award_total": 893562688.7
+  },
+  "Chicago Department of Transportation": {
+   "contracts": 230,
+   "award_total": 5126523029.1
+  },
+  "Chicago Department of Aviation": {
+   "contracts": 229,
+   "award_total": 11399174094.4
+  },
+  "Department of Water Management": {
+   "contracts": 228,
+   "award_total": 4747947861.9
+  },
+  "Chicago Public Library": {
+   "contracts": 13,
+   "award_total": 22021164.2
+  }
+ },
+ "dept_aliases": {
+  "Chicago Department of Aviation": [
+   "CHICAGO DEPARTMENT OF AVIATION",
+   "OHARE MODERNIZATION PROJECT",
+   "O'HARE MODERNIZATION PROGRAM"
+  ],
+  "Chicago Department of Public Health": [
+   "CHICAGO DEPARTMENT OF PUBLIC HEALTH"
+  ],
+  "Chicago Department of Transportation": [
+   "CHICAGO DEPARTMENT OF TRANSPORTATION"
+  ],
+  "Chicago Fire Department": [
+   "CHICAGO FIRE DEPARTMENT"
+  ],
+  "Chicago Police Department": [
+   "CHICAGO POLICE DEPARTMENT"
+  ],
+  "Chicago Public Library": [
+   "CHICAGO PUBLIC LIBRARY"
+  ],
+  "Department of Buildings": [
+   "DEPARTMENT OF BUILDINGS",
+   "DEPARTMENT OF CONSTRUCTION AND PERMITS"
+  ],
+  "Department of Business Affairs and Consumer Protection": [
+   "DEPARTMENT OF BUSINESS AFFAIRS AND CONSUMER PROTECTION",
+   "DEPT OF BUSINESS AFFAIRS & CONSUMER PROTECTION",
+   "DEPARTMENT OF BUSINESS AFFAIRS AND LICENSING",
+   "DEPT OF CONSUMER SERVICES"
+  ],
+  "Department of Cultural Affairs and Special Events": [
+   "DEPARTMENT OF CULTURAL AFFAIRS",
+   "DEPARTMENT OF CULTURAL AFFAIRS AND SPECIAL EVENTS",
+   "OFFICE OF SPECIAL EVENTS",
+   "DEPARTMENT OF SPECIAL EVENTS"
+  ],
+  "Department of Environment": [
+   "DEPARTMENT OF ENVIRONMENT",
+   "DEPARTMENT OF ENVIROMENT"
+  ],
+  "Department of Family and Support Services": [
+   "DEPARTMENT OF FAMILY AND SUPPORT SERVICES",
+   "DEPT ON AGING",
+   "DEPARTMENT OF CHILDREN AND YOUTH SERVICES",
+   "MAYORS OFFICE OF WORKFORCE DEVELOPMENT"
+  ],
+  "Department of Finance": [
+   "DEPARTMENT OF FINANCE",
+   "DEPARTMENT OF REVENUE",
+   "GENERAL ACCOUNTING"
+  ],
+  "Department of Fleet and Facility Management": [
+   "DEPARTMENT OF FLEET AND FACILITY MANAGEMENT",
+   "DEPT OF FLEET MGMT",
+   "DEPT OF GENERAL SERVICES",
+   "DEPT OF ASSETS INFORMATION AND SERVICES",
+   "GRAPHICS & REPRODUCTION CTR"
+  ],
+  "Department of Housing": [
+   "DEPARTMENT OF HOUSING"
+  ],
+  "Department of Human Resources": [
+   "DEPARTMENT OF HUMAN RESOURCES",
+   "DEPARTMENT OF PERSONNEL"
+  ],
+  "Department of Law": [
+   "DEPARTMENT OF LAW",
+   "DEPT OF LAW"
+  ],
+  "Department of Planning and Development": [
+   "DEPARTMENT OF PLANNING AND DEVELOPMENT",
+   "PLANNING & DEVELOPMENT",
+   "DEPARTMENT OF ZONING",
+   "DEPT OF ZONING & LAND USE PLANNING",
+   "DEPT OF ECONOMIC DEVELOPMENT"
+  ],
+  "Department of Procurement Services": [
+   "DEPARTMENT OF PROCUREMENT SERVICES"
+  ],
+  "Department of Streets and Sanitation": [
+   "DEPARTMENT OF STREETS AND SANITATION"
+  ],
+  "Department of Technology and Innovation": [
+   "DEPARTMENT OF TECHNOLOGY AND INNOVATION",
+   "DEPT OF BUSINESS & INFORMATION SERVICES",
+   "DEPT OF INNOVATION & TECHNOLOGY"
+  ],
+  "Department of Water Management": [
+   "DEPARTMENT OF WATER MANAGEMENT",
+   "DEPT OF WATER"
+  ],
+  "Office of Emergency Management and Communications": [
+   "OFFICE OF EMERGENCY MANAGEMENT AND COMMUNICATIONS"
+  ],
+  "Office of Public Safety Administration": [
+   "OFFICE OF PUBLIC SAFETY ADMINISTRATION"
+  ],
+  "Office of Budget and Management": [
+   "OFFICE OF BUDGET & MANAGEMENT"
+  ],
+  "Office of City Clerk": [
+   "OFFICE OF CITY CLERK"
+  ],
+  "City Treasurer's Office": [
+   "CITY TREASURER'S OFFICE"
+  ],
+  "Office of the Mayor": [
+   "OFFICE OF THE MAYOR"
+  ],
+  "Mayor's Office for People with Disabilities": [
+   "MAYORS OFFICE FOR PEOPLE WITH DISABILITIES"
+  ],
+  "Chicago Animal Care and Control": [
+   "CHICAGO ANIMAL CARE AND CONTROL"
+  ],
+  "Department of Administrative Hearings": [
+   "DEPARTMENT OF ADMINISTRATIVE HEARINGS",
+   "ADMINISTRATIVE ADJUDICATION"
+  ],
+  "Chicago Commission on Human Relations": [
+   "CHICAGO COMMISSION ON HUMAN RELATIONS"
+  ],
+  "Board of Ethics": [
+   "BOARD OF ETHICS"
+  ],
+  "Chicago Police Board": [
+   "CHICAGO POLICE BOARD"
+  ],
+  "License Appeal Commission": [
+   "LICENSE APPEAL COMMISSION",
+   "LIC COMM & LOCAL LIQ CTRL COMM"
+  ],
+  "Office of Inspector General": [
+   "OFFICE OF INSPECTOR GENERAL"
+  ],
+  "Board of Election Commissioners": [
+   "BOARD OF ELECTION COMMISSIONERS"
+  ],
+  "Civilian Office of Police Accountability": [
+   "INDEPENDENT POLICE REVIEW AUTHORITY"
+  ],
+  "Finance General": [
+   "FINANCE GENERAL"
+  ],
+  "City Council": [
+   "CITY COUNCIL"
+  ],
+  "Community Commission for Public Safety and Accountability": [
+   "COMMUNITY COMMISSION FOR PUBLIC SAFETY AND ACCOUNTABILITY"
+  ]
+ }
+}
