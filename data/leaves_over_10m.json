@@ -4,14 +4,18 @@
   "City": {
    "before_count": 202,
    "before_dollars": 14920851346,
-   "after_strict_count": 165,
-   "after_strict_dollars": 11717502814,
-   "after_team_count": 158,
-   "after_team_dollars": 5047134729.0,
+   "after_strict_count": 163,
+   "after_strict_dollars": 11603435695,
+   "after_team_count": 157,
+   "after_team_dollars": 4969821415.0,
    "by_status": {
+    "accepted_single_obligation": {
+     "count": 2,
+     "dollars": 114067119
+    },
     "split_partial": {
-     "count": 95,
-     "dollars": 5950083721
+     "count": 93,
+     "dollars": 5836016602
     },
     "split_proxy": {
      "count": 33,
@@ -97,8 +101,8 @@
    "parks_total": 637580350
   },
   "remaining_over_10m": {
-   "count": 215,
-   "dollars": 7188864377
+   "count": 214,
+   "dollars": 7111551063
   }
  },
  "round3": {
@@ -303,8 +307,8 @@
     "amount": 256090385,
     "status": "split_partial",
     "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-    "piece": "budget with no matched 2025 payee (group residual)",
-    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+    "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+    "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
    },
    {
     "budget": "City",
@@ -368,7 +372,7 @@
     "status": "split_partial",
     "leaf_path": "City > Local > Bond Redemption and Interest Series Fund > Finance General > Finance General > 0902 For Interest on Bonds",
     "piece": "bond series not in data/city_bond_series_2026.json",
-    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+    "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026."
    },
    {
     "budget": "City",
@@ -376,7 +380,7 @@
     "status": "split_partial",
     "leaf_path": "City > Local > Bond Redemption and Interest Series Fund > Finance General > Finance General > 0912 For Payment of Bonds",
     "piece": "bond series not in data/city_bond_series_2026.json",
-    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+    "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026."
    },
    {
     "budget": "CPS",
@@ -440,7 +444,7 @@
     "status": "split_partial",
     "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Finance General > Finance General > 0902 For Interest on Bonds",
     "piece": "bond series not in data/city_bond_series_2026.json",
-    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+    "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026."
    },
    {
     "budget": "City",
@@ -449,14 +453,6 @@
     "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
     "piece": "LOEVY & LOEVY ATTORNEYS AT LAW (contract direct voucher), 2026 YTD payments",
     "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-   },
-   {
-    "budget": "City",
-    "amount": 77313314,
-    "status": "split_partial",
-    "leaf_path": "City > Local > Sewer Fund > Finance General > Finance General > 0902 For Interest on Bonds",
-    "piece": "Midway series not in file (2014B, 2014C, 2018A) plus ordinance gap, shared by principal and interest lines",
-    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
    },
    {
     "budget": "City",
@@ -487,16 +483,16 @@
     "amount": 71282664,
     "status": "split_partial",
     "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0138 For Professional Services for Information Technology Mainten",
-    "piece": "budget with no matched 2025 payee (group residual)",
-    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+    "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+    "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
    },
    {
     "budget": "City",
     "amount": 69064834,
     "status": "split_partial",
     "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
-    "piece": "budget with no matched 2025 payee (group residual)",
-    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+    "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+    "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
    },
    {
     "budget": "City",
@@ -519,8 +515,8 @@
     "amount": 64951014,
     "status": "split_partial",
     "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-    "piece": "budget with no matched 2025 payee (group residual)",
-    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+    "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+    "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
    },
    {
     "budget": "City",
@@ -543,8 +539,8 @@
     "amount": 62613693,
     "status": "split_partial",
     "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0161 Operation, Repair or Maintenance of Facilities",
-    "piece": "budget with no matched 2025 payee (group residual)",
-    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+    "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+    "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
    },
    {
     "budget": "City",
@@ -599,8 +595,8 @@
     "amount": 55723575,
     "status": "split_partial",
     "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0157 Rental of Equipment and Services",
-    "piece": "budget with no matched 2025 payee (group residual)",
-    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+    "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+    "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
    },
    {
     "budget": "City",
@@ -617,6 +613,14 @@
     "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
     "piece": "CONSTELLATION NEWENERGY INC (contract 198906), 2026 YTD payments",
     "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   },
+   {
+    "budget": "CPS",
+    "amount": 52894514,
+    "status": "unsplit_no_source",
+    "leaf_path": "CPS > Chief Executive Officer Total > Education General - City Wide > General Education Fund > Other Instr Purposes Misc > A57915 Miscellaneous - Contingent Projects",
+    "piece": null,
+    "why_cant_go_deeper": "This is a planned cut that offsets spending counted elsewhere, so there is nothing to itemize."
    }
   ]
  },
@@ -626,8 +630,8 @@
    "amount": 256090385,
    "status": "split_partial",
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
@@ -691,7 +695,7 @@
    "status": "split_partial",
    "leaf_path": "City > Local > Bond Redemption and Interest Series Fund > Finance General > Finance General > 0902 For Interest on Bonds",
    "piece": "bond series not in data/city_bond_series_2026.json",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026."
   },
   {
    "budget": "City",
@@ -699,7 +703,7 @@
    "status": "split_partial",
    "leaf_path": "City > Local > Bond Redemption and Interest Series Fund > Finance General > Finance General > 0912 For Payment of Bonds",
    "piece": "bond series not in data/city_bond_series_2026.json",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026."
   },
   {
    "budget": "CPS",
@@ -763,7 +767,7 @@
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Finance General > Finance General > 0902 For Interest on Bonds",
    "piece": "bond series not in data/city_bond_series_2026.json",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026."
   },
   {
    "budget": "City",
@@ -772,14 +776,6 @@
    "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
    "piece": "LOEVY & LOEVY ATTORNEYS AT LAW (contract direct voucher), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 77313314,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Sewer Fund > Finance General > Finance General > 0902 For Interest on Bonds",
-   "piece": "Midway series not in file (2014B, 2014C, 2018A) plus ordinance gap, shared by principal and interest lines",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
   },
   {
    "budget": "City",
@@ -810,16 +806,16 @@
    "amount": 71282664,
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0138 For Professional Services for Information Technology Mainten",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
    "amount": 69064834,
    "status": "split_partial",
    "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
@@ -842,8 +838,8 @@
    "amount": 64951014,
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
@@ -866,8 +862,8 @@
    "amount": 62613693,
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0161 Operation, Repair or Maintenance of Facilities",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
@@ -922,8 +918,8 @@
    "amount": 55723575,
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0157 Rental of Equipment and Services",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
@@ -954,8 +950,8 @@
    "amount": 52702859,
    "status": "split_partial",
    "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
@@ -995,15 +991,15 @@
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Finance General > Finance General > 0912 For Payment of Bonds",
    "piece": "bond series not in data/city_bond_series_2026.json",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026."
   },
   {
    "budget": "City",
    "amount": 44926379,
    "status": "split_partial",
    "leaf_path": "City > Local > Corporate Fund > Finance General > Finance General > 9222 Emergency Medical Transportation",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
@@ -1019,7 +1015,7 @@
    "status": "split_partial",
    "leaf_path": "City > Local > Water Fund > Finance General > Finance General > 0912 For Payment of Bonds",
    "piece": "bond series not in data/city_bond_series_2026.json",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026."
   },
   {
    "budget": "CPS",
@@ -1106,8 +1102,8 @@
    "amount": 38169946,
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "CPS",
@@ -1290,16 +1286,16 @@
    "amount": 27124654,
    "status": "split_partial",
    "leaf_path": "City > Local > Corporate Fund > Department of Streets and Sanitation > Bureau of Sanitation > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
    "amount": 25242078,
    "status": "split_partial",
    "leaf_path": "City > Local > Corporate Fund > Department of Finance > Revenue Services and Operations > 0138 For Professional Services for Information Technology Mainten",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
@@ -1402,8 +1398,8 @@
    "amount": 22571061,
    "status": "split_partial",
    "leaf_path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Fleet Operations > 0360 Repair Parts and Material",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
@@ -1570,8 +1566,8 @@
    "amount": 18507566,
    "status": "split_partial",
    "leaf_path": "City > Grants > Disaster Recovery Fund > Office of Budget and Management > HUD - CPD - CDBG-DR - Planning and Administration (14.218) > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
@@ -1835,7 +1831,7 @@
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago Midway Airport Fund > Finance General > Finance General > 0902 For Interest on Bonds",
    "piece": "Midway series not in file (2014B, 2014C, 2018A) plus ordinance gap, shared by principal and interest lines",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026."
   },
   {
    "budget": "CPS",
@@ -1930,8 +1926,8 @@
    "amount": 12202108,
    "status": "split_partial",
    "leaf_path": "City > Local > Corporate Fund > Chicago Department of Public Health > Department of Public Health > 9254 Violence Reduction Program",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "CPS",
@@ -1947,7 +1943,7 @@
    "status": "split_partial",
    "leaf_path": "City > Local > Water Fund > Finance General > Finance General > 0902 For Interest on Bonds",
    "piece": "bond series not in data/city_bond_series_2026.json",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026."
   },
   {
    "budget": "City",
@@ -2138,8 +2134,8 @@
    "amount": 10441279,
    "status": "split_partial",
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Public Health > HHS - HRSA - HIV Emergency Relief Project Grants (Ryan White) (93.914) > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "piece": "budget with no matched payee in 2026 YTD payments (group residual)",
+   "why_cant_go_deeper": "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
   },
   {
    "budget": "City",
@@ -3888,7 +3884,7 @@
     }
    ],
    "note": "Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026.",
    "round3_pieces": [
     {
      "name": "O'Hare 2026A",
@@ -4052,7 +4048,7 @@
      "amount": 10160908
     },
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 256090385
     }
    ],
@@ -4490,7 +4486,7 @@
     }
    ],
    "note": "Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026.",
    "round3_pieces": [
     {
      "name": "O'Hare 2026A",
@@ -4631,7 +4627,7 @@
     }
    ],
    "note": "$143.0M of $285.4M sits in 6 series groups, the rest is older series. Source to try: GO series debt-service tables per series on cityofchicagoinvestors.com / EMMA.",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026.",
    "round3_pieces": [
     {
      "name": "GO 2021A and 2021B",
@@ -4741,7 +4737,7 @@
      "amount": 10548919
     },
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 64951014
     }
    ],
@@ -4996,7 +4992,7 @@
     }
    ],
    "note": "Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026.",
    "round3_pieces": [
     {
      "name": "GO 2021A and 2021B",
@@ -5032,7 +5028,7 @@
      "amount": 11615509
     },
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 44926379
     }
    ],
@@ -5227,7 +5223,7 @@
     }
    ],
    "note": "Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026.",
    "round3_pieces": [
     {
      "name": "Water 2026A, 2026B, 2026C (three series, printed combined)",
@@ -5292,7 +5288,7 @@
     }
    ],
    "note": "Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026.",
    "round3_pieces": [
     {
      "name": "Water 2026A, 2026B, 2026C (three series, printed combined)",
@@ -5431,7 +5427,7 @@
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026.",
    "round3_pieces": [
     {
      "name": "Midway 2025A",
@@ -5467,17 +5463,68 @@
    "budget": "City",
    "path": "City > Local > Sewer Fund > Finance General > Finance General > 0902 For Interest on Bonds",
    "amount": 77313314,
-   "split_source": "data/city_bond_series_2026.json: 1 Midway series, combined principal+interest $24.7M of $114.1M (both lines)",
-   "status": "split_partial",
-   "remaining_pieces_over_10m": [
-    {
-     "name": "Midway series not in file (2014B, 2014C, 2018A) plus ordinance gap, shared by principal and interest lines",
-     "amount": 89387119
-    }
-   ],
+   "split_source": "data/city_bond_series_2026.json: 15 Sewer series, combined principal+interest $117.8M of $114.1M (both lines)",
+   "status": "accepted_single_obligation",
+   "remaining_pieces_over_10m": [],
    "note": "Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
    "round3_pieces": [
+    {
+     "name": "Sewer 2024B",
+     "amount": 1145000
+    },
+    {
+     "name": "Sewer 2024A",
+     "amount": 7225000
+    },
+    {
+     "name": "Sewer 2023A",
+     "amount": 0
+    },
+    {
+     "name": "Sewer 2023B",
+     "amount": 0
+    },
+    {
+     "name": "Sewer 2017A",
+     "amount": 3170000
+    },
+    {
+     "name": "Sewer 2017B",
+     "amount": 9545000
+    },
+    {
+     "name": "Sewer 2010B (Build America Bonds, taxable)",
+     "amount": 0
+    },
+    {
+     "name": "Sewer 2024B",
+     "amount": 6584250
+    },
+    {
+     "name": "Sewer 2024A",
+     "amount": 10566000
+    },
+    {
+     "name": "Sewer 2023A",
+     "amount": 13749390
+    },
+    {
+     "name": "Sewer 2023B",
+     "amount": 9623500
+    },
+    {
+     "name": "Sewer 2017A",
+     "amount": 7703213
+    },
+    {
+     "name": "Sewer 2017B",
+     "amount": 6509250
+    },
+    {
+     "name": "Sewer 2010B (Build America Bonds, taxable)",
+     "amount": 17250000
+    },
     {
      "name": "Sewer 1998A (senior lien)",
      "amount": 24680000
@@ -5574,7 +5621,7 @@
      "amount": 10023883
     },
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 69064834
     }
    ],
@@ -5625,7 +5672,7 @@
      "amount": 10931834
     },
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 62613693
     }
    ],
@@ -5656,7 +5703,7 @@
     }
    ],
    "note": "Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
+   "why_cant_go_deeper": "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026.",
    "round3_pieces": [
     {
      "name": "Midway 2025A",
@@ -5762,7 +5809,7 @@
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 71282664
     }
    ],
@@ -5919,7 +5966,7 @@
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 55723575
     }
    ],
@@ -6006,12 +6053,68 @@
    "budget": "City",
    "path": "City > Local > Sewer Fund > Finance General > Finance General > 0912 For Payment of Bonds",
    "amount": 36753805,
-   "split_source": "data/city_bond_series_2026.json: 1 Midway series, combined principal+interest $24.7M of $114.1M (both lines)",
-   "status": "split_partial",
+   "split_source": "data/city_bond_series_2026.json: 15 Sewer series, combined principal+interest $117.8M of $114.1M (both lines)",
+   "status": "accepted_single_obligation",
    "remaining_pieces_over_10m": [],
    "note": "Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
    "round3_pieces": [
+    {
+     "name": "Sewer 2024B",
+     "amount": 1145000
+    },
+    {
+     "name": "Sewer 2024A",
+     "amount": 7225000
+    },
+    {
+     "name": "Sewer 2023A",
+     "amount": 0
+    },
+    {
+     "name": "Sewer 2023B",
+     "amount": 0
+    },
+    {
+     "name": "Sewer 2017A",
+     "amount": 3170000
+    },
+    {
+     "name": "Sewer 2017B",
+     "amount": 9545000
+    },
+    {
+     "name": "Sewer 2010B (Build America Bonds, taxable)",
+     "amount": 0
+    },
+    {
+     "name": "Sewer 2024B",
+     "amount": 6584250
+    },
+    {
+     "name": "Sewer 2024A",
+     "amount": 10566000
+    },
+    {
+     "name": "Sewer 2023A",
+     "amount": 13749390
+    },
+    {
+     "name": "Sewer 2023B",
+     "amount": 9623500
+    },
+    {
+     "name": "Sewer 2017A",
+     "amount": 7703213
+    },
+    {
+     "name": "Sewer 2017B",
+     "amount": 6509250
+    },
+    {
+     "name": "Sewer 2010B (Build America Bonds, taxable)",
+     "amount": 17250000
+    },
     {
      "name": "Sewer 1998A (senior lien)",
      "amount": 24680000
@@ -6066,7 +6169,7 @@
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 52702859
     }
    ],
@@ -6112,7 +6215,7 @@
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 12202108
     }
    ],
@@ -6146,7 +6249,7 @@
      "amount": 16259385
     },
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 39751452
     }
    ],
@@ -6162,7 +6265,7 @@
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 27124654
     }
    ],
@@ -6315,7 +6418,7 @@
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 22571061
     }
    ],
@@ -6351,7 +6454,7 @@
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 25242078
     }
    ],
@@ -6639,7 +6742,7 @@
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 18507566
     }
    ],
@@ -7134,7 +7237,7 @@
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "budget with no matched 2025 payee (group residual)",
+     "name": "budget with no matched payee in 2026 YTD payments (group residual)",
      "amount": 10441279
     }
    ],
