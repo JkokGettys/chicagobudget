@@ -1,0 +1,65 @@
+{
+ "ordinance_local": 14798710460,
+ "ordinance_grants": 3869858000,
+ "midyear_grand_total": 14952722619,
+ "mft_double": 147770259,
+ "parking_meters_double": 6500000,
+ "ward_wage_cut_total": 258100,
+ "wards_cut": 29,
+ "grant_925_amendments": [
+  {
+   "record": "O2026-0022417",
+   "passed": "2026-01-21",
+   "amount": 9878000,
+   "title": "Annual Appropriation Ordinance Year 2026 amendment within Fund No. 925 for Dept. of Housin"
+  },
+  {
+   "record": "O2026-0023185",
+   "passed": "2026-02-18",
+   "amount": 1690000,
+   "title": "Annual Appropriation Ordinance Year 2026 amendment within Fund No. 925 for Dept. of Family"
+  },
+  {
+   "record": "O2026-0023819",
+   "passed": "2026-03-18",
+   "amount": 11338330,
+   "title": "Annual Appropriation Ordinance Year 2026 amendment within Fund No. 925 for Office of Mayor"
+  },
+  {
+   "record": "O2026-0024352",
+   "passed": "2026-04-15",
+   "amount": 10052000,
+   "title": "Annual Appropriation Ordinance Year 2026 amendment within Fund No. 925 for Department of P"
+  },
+  {
+   "record": "O2026-0025214",
+   "passed": "2026-05-20",
+   "amount": 48000,
+   "title": "Annual Appropriation Ordinance Year 2026 amendment within Fund No. 925 for Mayor's Office "
+  },
+  {
+   "record": "O2026-0026183",
+   "passed": "2026-06-17",
+   "amount": 15745000,
+   "title": "Annual Appropriation Ordinance Year 2026 amendment within Fund No. 925 for Department of F"
+  },
+  {
+   "record": "O2026-0026839",
+   "passed": "2026-07-15",
+   "amount": 4526000,
+   "title": "Annual Appropriation Ordinance Year 2026 amendment within Fund No. 925 for Department of P"
+  },
+  {
+   "record": "O2026-0028061",
+   "passed": "2026-09-23",
+   "amount": 18924000,
+   "title": "Annual Appropriation Ordinance Year 2026 amendment within Fund No. 925 for Chicago Departm"
+  }
+ ],
+ "grant_925_through_may": 33006330,
+ "grant_925_through_sep": 72201330,
+ "grants_appropriation_after_amendments": 3942059330,
+ "budget_transfers_bfy2026_rows": 24,
+ "budget_transfers_bfy2026_total": 834627.0,
+ "budget_transfers_cross_fund_or_dept": 0
+}

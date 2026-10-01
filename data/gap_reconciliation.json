@@ -1,0 +1,147 @@
+{
+ "printed": {
+  "ord_gross": 18668568460,
+  "ord_deduct_transfers": 1700089446,
+  "ord_deduct_debt": 125926011,
+  "ord_net": 16842553003,
+  "rec_gross": 18350767715,
+  "rec_deduct_transfers": 1679051626,
+  "rec_deduct_debt": 117145000,
+  "rec_net": 16554571089,
+  "rec_fg_interfund_line": 1389476663,
+  "ord2025_fg_interfund_line": 1543512195,
+  "ord2025_deduct_transfers": 1622468611,
+  "rec_appA_internal": 9015367,
+  "rec_appB_internal": 10911809,
+  "ord_appA_internal": 7766967,
+  "ord_appB_internal": 10911809
+ },
+ "site_gap_parts": {
+  "FG transfer lines the site rule misses (OBM definition)": 7761432,
+  "Appendix A+B department-side reimbursements (non-FG)": 18678776,
+  "Proceeds of Debt (Library term notes, printed separately)": 125926011,
+  "Unexplained remainder inside Deduct Transfers": 152502787
+ },
+ "site_gap_total": 304869006,
+ "residual_detail": {
+  "residual_2026_adopted": 152502787,
+  "residual_2025": 60581630,
+  "matching_funds_2026": 35514285,
+  "matching_funds_2025": 23999259,
+  "unexplained_after_matching_2026": 116988502,
+  "unexplained_after_matching_2025": 36582371,
+  "rejected_corp_fund_subsidy_2026": 90493270,
+  "rejected_corp_fund_subsidy_2025": 144705349
+ },
+ "gross_ord": 18668568460,
+ "gross_rec": 18350767715,
+ "fg_interfund_adopted": {
+  "pension": 1220866110,
+  "reimburse": 300280341,
+  "transfer": 7761432,
+  "total": 1528907883
+ },
+ "fg_interfund_recs": {
+  "pension": 1081434890,
+  "reimburse": 300280341,
+  "transfer": 7761432,
+  "total": 1389476663
+ },
+ "fg_interfund_2025": {
+  "pension": 1256927474,
+  "reimburse": 278432506,
+  "transfer": 8152215,
+  "total": 1543512195
+ },
+ "current_site_rule_removes": 1521146451,
+ "site_rule_misses_in_fg": 7761432,
+ "missed_transfer_lines": [
+  {
+   "fund": "Chicago Midway Airport Fund",
+   "account": "Transfer to O'Hare Fund for Administrative Salaries",
+   "amount": 3000000
+  },
+  {
+   "fund": "Water Fund",
+   "account": "Transfer for Services Provided by the Department of Police",
+   "amount": 1470301
+  },
+  {
+   "fund": "Houseshare Surcharge - Homeless Services Fund",
+   "account": "Transfer to Specified Operating Funds for Administration",
+   "amount": 973241
+  },
+  {
+   "fund": "Water Fund",
+   "account": "Transfer for Contractual Services",
+   "amount": 625000
+  },
+  {
+   "fund": "Houseshare Surcharge - Domestic Violence Fund",
+   "account": "Transfer to Specified Operating Funds for Administration",
+   "amount": 494621
+  },
+  {
+   "fund": "Wheelchair Accessible Vehicle Fund",
+   "account": "Transfers Out",
+   "amount": 389069
+  },
+  {
+   "fund": "Corporate Fund",
+   "account": "Transfers Out",
+   "amount": 350000
+  },
+  {
+   "fund": "Water Fund",
+   "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+   "amount": 325000
+  },
+  {
+   "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+   "account": "Transfer for Services Provided by the Department of Assets, Information, and Services",
+   "amount": 134400
+  },
+  {
+   "fund": "Sewer Fund",
+   "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+   "amount": 120000
+  },
+  {
+   "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+   "account": "Transfer for Services Provided by the Department of Police",
+   "amount": 120000
+  },
+  {
+   "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+   "account": "Transfer for Services Provided by the Chicago Department of Aviation",
+   "amount": 35000
+  },
+  {
+   "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+   "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+   "amount": 34800
+  },
+  {
+   "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+   "account": "Transfer for Services Provided by the Fire Department",
+   "amount": 21000
+  },
+  {
+   "fund": "Vehicle Tax Fund",
+   "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+   "amount": 10000
+  },
+  {
+   "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+   "account": "Transfer for Services Provided by the Department of Streets and Sanitation",
+   "amount": 9000
+  }
+ ],
+ "appendix_ab_adopted": 18678776,
+ "appendix_ab_recs": 19927176,
+ "residual_adopted": 152502787,
+ "residual_recs": 269647787,
+ "delta_deduction_recs_to_adopted": 21037820,
+ "advance_pension_delta": 139431220,
+ "net_if_site_removes_obm_fg_line_only": 17013734566
+}
