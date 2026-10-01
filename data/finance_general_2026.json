@@ -1,0 +1,2617 @@
+{
+ "source": "https://data.cityofchicago.org/resource/6694-f78c.json",
+ "total_gross": 8190935451,
+ "categories": [
+  {
+   "name": "Pensions",
+   "amount": 2843221414,
+   "internal_transfer": false,
+   "children": [
+    {
+     "name": "For the City's Contribution to Employees' Annuity and Benefit Fund",
+     "amount": 2583594734,
+     "items": [
+      {
+       "account": "For the City's Contribution to Employees' Annuity and Benefit Fund",
+       "fund": "Policemen's Annuity and Benefit Fund",
+       "amount": 1040273100,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City's Contribution to Employees' Annuity and Benefit Fund",
+       "fund": "Municipal Employees' Annuity and Benefit Fund",
+       "amount": 965001553,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City's Contribution to Employees' Annuity and Benefit Fund",
+       "fund": "Firemen's Annuity and Benefit Fund",
+       "amount": 441746521,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City's Contribution to Employees' Annuity and Benefit Fund",
+       "fund": "Laborers' and Retirement Board Annuity and Benefit Fund",
+       "amount": 136573560,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For the City's Advance Contribution to Employees' Annuity and Benefit Fund",
+     "amount": 259626680,
+     "items": [
+      {
+       "account": "For the City's Advance Contribution to Employees' Annuity and Benefit Fund",
+       "fund": "Municipal Employees' Annuity and Benefit Fund",
+       "amount": 161218894,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City's Advance Contribution to Employees' Annuity and Benefit Fund",
+       "fund": "Policemen's Annuity and Benefit Fund",
+       "amount": 72249824,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City's Advance Contribution to Employees' Annuity and Benefit Fund",
+       "fund": "Laborers' and Retirement Board Annuity and Benefit Fund",
+       "amount": 14574818,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City's Advance Contribution to Employees' Annuity and Benefit Fund",
+       "fund": "Firemen's Annuity and Benefit Fund",
+       "amount": 11583144,
+       "internal_transfer": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Debt payments",
+   "amount": 1972904416,
+   "internal_transfer": false,
+   "children": [
+    {
+     "name": "Interest",
+     "amount": 1038548680,
+     "items": [
+      {
+       "account": "For Interest on Bonds",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 496066181,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Interest on Bonds",
+       "fund": "Bond Redemption and Interest Series Fund",
+       "amount": 285429137,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Interest on Bonds",
+       "fund": "Water Fund",
+       "amount": 92769138,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Interest on Bonds",
+       "fund": "Sewer Fund",
+       "amount": 77313314,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Interest on Bonds",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 61100475,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Interest on Loans",
+       "fund": "Water Fund",
+       "amount": 14135049,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Interest on Loans",
+       "fund": "Sewer Fund",
+       "amount": 11735386,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Paying back principal",
+     "amount": 924869427,
+     "items": [
+      {
+       "account": "For Payment of Bonds",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 303172911,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Payment of Bonds",
+       "fund": "Bond Redemption and Interest Series Fund",
+       "amount": 132090000,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Payment of Term Notes",
+       "fund": "Library Property Tax Levy Fund",
+       "amount": 125926011,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Payment of Bonds",
+       "fund": "Corporate Fund",
+       "amount": 90493270,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Payment of Bonds",
+       "fund": "Water Fund",
+       "amount": 86685000,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Payment of Bonds",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 77455000,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Payment on Loans",
+       "fund": "Water Fund",
+       "amount": 39667255,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Payment of Bonds",
+       "fund": "Sewer Fund",
+       "amount": 36753805,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Payment on Loans",
+       "fund": "Sewer Fund",
+       "amount": 32626175,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Bond fees",
+     "amount": 9486309,
+     "items": [
+      {
+       "account": "For Bond Fees and Costs",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 6147941,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Bond Fees and Costs",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 3231068,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Bond Fees and Costs",
+       "fund": "Sewer Fund",
+       "amount": 57800,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Bond Fees and Costs",
+       "fund": "Water Fund",
+       "amount": 49500,
+       "internal_transfer": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Internal transfers (double counted)",
+   "amount": 1521146451,
+   "internal_transfer": true,
+   "children": [
+    {
+     "name": "Pension money moved into pension funds",
+     "amount": 1220866110,
+     "items": [
+      {
+       "account": "Municipal Fund Pension Allocation",
+       "fund": "Corporate Fund",
+       "amount": 400059421,
+       "internal_transfer": true
+      },
+      {
+       "account": "Policemen's Fund Pension Allocation",
+       "fund": "Corporate Fund",
+       "amount": 206083096,
+       "internal_transfer": true
+      },
+      {
+       "account": "Municipal Fund Advance Pension Payment",
+       "fund": "Corporate Fund",
+       "amount": 128823928,
+       "internal_transfer": true
+      },
+      {
+       "account": "Policemen's Fund Advance Pension Payment",
+       "fund": "Corporate Fund",
+       "amount": 70717328,
+       "internal_transfer": true
+      },
+      {
+       "account": "Municipal Fund Pension Allocation",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 61910204,
+       "internal_transfer": true
+      },
+      {
+       "account": "Municipal Fund Pension Allocation",
+       "fund": "Water Fund",
+       "amount": 56388124,
+       "internal_transfer": true
+      },
+      {
+       "account": "Firemen's Fund Pension Allocation",
+       "fund": "Corporate Fund",
+       "amount": 48914587,
+       "internal_transfer": true
+      },
+      {
+       "account": "Laborers' Fund Pension Allocation",
+       "fund": "Corporate Fund",
+       "amount": 33338197,
+       "internal_transfer": true
+      },
+      {
+       "account": "Municipal Fund Pension Allocation",
+       "fund": "Emergency Communication Fund",
+       "amount": 24216526,
+       "internal_transfer": true
+      },
+      {
+       "account": "Firemen's Fund Pension Allocation",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 21691647,
+       "internal_transfer": true
+      },
+      {
+       "account": "Laborers' Fund Pension Allocation",
+       "fund": "Water Fund",
+       "amount": 21643898,
+       "internal_transfer": true
+      },
+      {
+       "account": "Policemen's Fund Pension Allocation",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 16155269,
+       "internal_transfer": true
+      },
+      {
+       "account": "Laborers' Fund Pension Allocation",
+       "fund": "Sewer Fund",
+       "amount": 14491447,
+       "internal_transfer": true
+      },
+      {
+       "account": "Municipal Fund Pension Allocation",
+       "fund": "Sewer Fund",
+       "amount": 14449821,
+       "internal_transfer": true
+      },
+      {
+       "account": "Municipal Fund Advance Pension Payment",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 11524366,
+       "internal_transfer": true
+      },
+      {
+       "account": "Municipal Fund Pension Allocation",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 11280153,
+       "internal_transfer": true
+      },
+      {
+       "account": "Municipal Fund Advance Pension Payment",
+       "fund": "Water Fund",
+       "amount": 11269072,
+       "internal_transfer": true
+      },
+      {
+       "account": "Laborers' Fund Pension Allocation",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 11185236,
+       "internal_transfer": true
+      },
+      {
+       "account": "Firemen's Fund Advance Pension Payment",
+       "fund": "Corporate Fund",
+       "amount": 10841632,
+       "internal_transfer": true
+      },
+      {
+       "account": "Laborers' Fund Advance Pension Payment",
+       "fund": "Corporate Fund",
+       "amount": 9006538,
+       "internal_transfer": true
+      },
+      {
+       "account": "Firemen's Fund Pension Allocation",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 5975758,
+       "internal_transfer": true
+      },
+      {
+       "account": "Policemen's Fund Pension Allocation",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 5323264,
+       "internal_transfer": true
+      },
+      {
+       "account": "Municipal Fund Advance Pension Payment",
+       "fund": "Emergency Communication Fund",
+       "amount": 4769078,
+       "internal_transfer": true
+      },
+      {
+       "account": "Municipal Fund Pension Allocation",
+       "fund": "Library Fund",
+       "amount": 4692000,
+       "internal_transfer": true
+      },
+      {
+       "account": "Laborers' Fund Pension Allocation",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 3440782,
+       "internal_transfer": true
+      },
+      {
+       "account": "Municipal Fund Advance Pension Payment",
+       "fund": "Sewer Fund",
+       "amount": 2877924,
+       "internal_transfer": true
+      },
+      {
+       "account": "Laborers' Fund Advance Pension Payment",
+       "fund": "Water Fund",
+       "amount": 2586398,
+       "internal_transfer": true
+      },
+      {
+       "account": "Municipal Fund Advance Pension Payment",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 1954526,
+       "internal_transfer": true
+      },
+      {
+       "account": "Laborers' Fund Advance Pension Payment",
+       "fund": "Sewer Fund",
+       "amount": 1713758,
+       "internal_transfer": true
+      },
+      {
+       "account": "Policemen's Fund Advance Pension Payment",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 1160680,
+       "internal_transfer": true
+      },
+      {
+       "account": "Laborers' Fund Advance Pension Payment",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 1003036,
+       "internal_transfer": true
+      },
+      {
+       "account": "Firemen's Fund Advance Pension Payment",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 582148,
+       "internal_transfer": true
+      },
+      {
+       "account": "Policemen's Fund Advance Pension Payment",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 371816,
+       "internal_transfer": true
+      },
+      {
+       "account": "Laborers' Fund Advance Pension Payment",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 265088,
+       "internal_transfer": true
+      },
+      {
+       "account": "Firemen's Fund Advance Pension Payment",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 159364,
+       "internal_transfer": true
+      }
+     ]
+    },
+    {
+     "name": "Reimbursements to the Corporate Fund",
+     "amount": 300280341,
+     "items": [
+      {
+       "account": "To Reimburse the Corporate Fund for Indirect Costs Chargeable to Fund",
+       "fund": "Water Fund",
+       "amount": 81623715,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse Corporate Fund for Pension Payments",
+       "fund": "Vehicle Tax Fund",
+       "amount": 43395631,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse the Corporate Fund for Indirect Costs Chargeable to Fund",
+       "fund": "Sewer Fund",
+       "amount": 38892780,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse the Corporate Fund for Indirect Costs Chargeable to Fund",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 33037650,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse the Corporate Fund for Indirect Pension Costs Chargeable to Fund",
+       "fund": "Water Fund",
+       "amount": 25805551,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse the Corporate Fund for Indirect Costs Chargeable to Fund",
+       "fund": "Vehicle Tax Fund",
+       "amount": 19347780,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse the Corporate Fund for Indirect Pension Costs Chargeable to Fund",
+       "fund": "Sewer Fund",
+       "amount": 16333629,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse the Corporate Fund for Indirect Costs Chargeable to Fund",
+       "fund": "Emergency Communication Fund",
+       "amount": 12894867,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse the Corporate Fund for Indirect Costs Chargeable to Fund",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 8991765,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse the Corporate Fund for Indirect Costs Chargeable to Fund",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 6995793,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse Corporate Fund for Pension Payments",
+       "fund": "Tax Increment Financing Administration Fund",
+       "amount": 3467189,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse Midway Fund for Fire Department Salaries",
+       "fund": "Corporate Fund",
+       "amount": 2923412,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse Corporate Fund for Pension Payments",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 2838315,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse Midway Fund for Fire Department Benefits",
+       "fund": "Corporate Fund",
+       "amount": 1504095,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse the Corporate Fund for Indirect Costs Chargeable to Fund",
+       "fund": "Tax Increment Financing Administration Fund",
+       "amount": 1085000,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse Corporate Fund for Costs Incurred for Collection of the Real Property Transfer Tax - CTA Portion",
+       "fund": "CTA Real Property Transfer Tax Fund",
+       "amount": 634233,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse Corporate Fund for Pension Payments",
+       "fund": "Affordable Housing Opportunity Fund",
+       "amount": 179085,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse the Corporate Fund for Indirect Costs Chargeable to Fund",
+       "fund": "Neighborhoods Opportunity Fund",
+       "amount": 167000,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse Corporate Fund for Pension Payments",
+       "fund": "Neighborhoods Opportunity Fund",
+       "amount": 133851,
+       "internal_transfer": true
+      },
+      {
+       "account": "To Reimburse the Corporate Fund for Indirect Costs Chargeable to Fund",
+       "fund": "Affordable Housing Opportunity Fund",
+       "amount": 29000,
+       "internal_transfer": true
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Employee health & benefits",
+   "amount": 813375272,
+   "internal_transfer": false,
+   "children": [
+    {
+     "name": "Health care",
+     "amount": 658127147,
+     "items": [
+      {
+       "account": "For the Costs of Claims and Administration for Hospital and Medical Care Provided to Eligible Employees  Provided However  That All Payments to the In...",
+       "fund": "Corporate Fund",
+       "amount": 408653865,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Health Maintenance Organization Premiums (HMO) Provided to Eligible Employees and Their Families",
+       "fund": "Corporate Fund",
+       "amount": 85169477,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Costs of Claims and Administration for Hospital and Medical Care Provided to Eligible Employees  Provided However  That All Payments to the In...",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 36430192,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Costs of Claims and Administration for Hospital and Medical Care Provided to Eligible Employees  Provided However  That All Payments to the In...",
+       "fund": "Water Fund",
+       "amount": 25867089,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for a Co-Insured Dental Plan for Employees",
+       "fund": "Corporate Fund",
+       "amount": 15208383,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Costs of Claims and Administration for Hospital and Medical Care Provided to Eligible Employees  Provided However  That All Payments to the In...",
+       "fund": "Vehicle Tax Fund",
+       "amount": 14604695,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Costs of Claims and Administration for Hospital and Medical Care Provided to Eligible Employees  Provided However  That All Payments to the In...",
+       "fund": "Library Fund",
+       "amount": 11103769,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Costs of Claims and Administration for Hospital and Medical Care Provided to Eligible Employees  Provided However  That All Payments to the In...",
+       "fund": "Emergency Communication Fund",
+       "amount": 9218139,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Costs of Claims and Administration for Hospital and Medical Care Provided to Eligible Employees  Provided However  That All Payments to the In...",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 8025098,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Health Maintenance Organization Premiums (HMO) Provided to Eligible Employees and Their Families",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 7567588,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Costs of Claims and Administration for Hospital and Medical Care Provided to Eligible Employees  Provided However  That All Payments to the In...",
+       "fund": "Sewer Fund",
+       "amount": 7075581,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Health Maintenance Organization Premiums (HMO) Provided to Eligible Employees and Their Families",
+       "fund": "Water Fund",
+       "amount": 5373331,
+       "internal_transfer": false
+      },
+      {
+       "account": "Costs of Claims and Administration for Hospital and Medical Care to Eligible Annuitants and Their Eligible Dependents",
+       "fund": "Corporate Fund",
+       "amount": 3859974,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Health Maintenance Organization Premiums (HMO) Provided to Eligible Employees and Their Families",
+       "fund": "Vehicle Tax Fund",
+       "amount": 3033811,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Health Maintenance Organization Premiums (HMO) Provided to Eligible Employees and Their Families",
+       "fund": "Library Fund",
+       "amount": 2306569,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Health Maintenance Organization Premiums (HMO) Provided to Eligible Employees and Their Families",
+       "fund": "Emergency Communication Fund",
+       "amount": 1914870,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Health Maintenance Organization Premiums (HMO) Provided to Eligible Employees and Their Families",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 1667041,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Health Maintenance Organization Premiums (HMO) Provided to Eligible Employees and Their Families",
+       "fund": "Sewer Fund",
+       "amount": 1469800,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for a Co-Insured Dental Plan for Employees",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 1351315,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Costs of Claims and Administration for Hospital and Medical Care Provided to Eligible Employees  Provided However  That All Payments to the In...",
+       "fund": "Tax Increment Financing Administration Fund",
+       "amount": 1244426,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Health Maintenance Organization Premiums or Cost of Claims and Administration for Hospital and Medical Care Provided to Police and Fire Depart...",
+       "fund": "Corporate Fund",
+       "amount": 1177416,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Costs of Claims and Administration for Hospital and Medical Care Provided to Eligible Employees  Provided However  That All Payments to the In...",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 1038884,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for a Co-Insured Dental Plan for Employees",
+       "fund": "Water Fund",
+       "amount": 959495,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for a Co-Insured Dental Plan for Employees",
+       "fund": "Vehicle Tax Fund",
+       "amount": 541736,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for a Co-Insured Dental Plan for Employees",
+       "fund": "Library Fund",
+       "amount": 411875,
+       "internal_transfer": false
+      },
+      {
+       "account": "Costs of Claims and Administration for Hospital and Medical Care to Eligible Annuitants and Their Eligible Dependents",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 342971,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for a Co-Insured Dental Plan for Employees",
+       "fund": "Emergency Communication Fund",
+       "amount": 341931,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for a Co-Insured Dental Plan for Employees",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 297677,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for a Co-Insured Dental Plan for Employees",
+       "fund": "Sewer Fund",
+       "amount": 262456,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Health Maintenance Organization Premiums (HMO) Provided to Eligible Employees and Their Families",
+       "fund": "Tax Increment Financing Administration Fund",
+       "amount": 258503,
+       "internal_transfer": false
+      },
+      {
+       "account": "Costs of Claims and Administration for Hospital and Medical Care to Eligible Annuitants and Their Eligible Dependents",
+       "fund": "Water Fund",
+       "amount": 243525,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Health Maintenance Organization Premiums (HMO) Provided to Eligible Employees and Their Families",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 215806,
+       "internal_transfer": false
+      },
+      {
+       "account": "Costs of Claims and Administration for Hospital and Medical Care to Eligible Annuitants and Their Eligible Dependents",
+       "fund": "Vehicle Tax Fund",
+       "amount": 137496,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Health Maintenance Organization Premiums or Cost of Claims and Administration for Hospital and Medical Care Provided to Police and Fire Depart...",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 115055,
+       "internal_transfer": false
+      },
+      {
+       "account": "Costs of Claims and Administration for Hospital and Medical Care to Eligible Annuitants and Their Eligible Dependents",
+       "fund": "Library Fund",
+       "amount": 104536,
+       "internal_transfer": false
+      },
+      {
+       "account": "Costs of Claims and Administration for Hospital and Medical Care to Eligible Annuitants and Their Eligible Dependents",
+       "fund": "Emergency Communication Fund",
+       "amount": 86784,
+       "internal_transfer": false
+      },
+      {
+       "account": "Costs of Claims and Administration for Hospital and Medical Care to Eligible Annuitants and Their Eligible Dependents",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 75552,
+       "internal_transfer": false
+      },
+      {
+       "account": "Costs of Claims and Administration for Hospital and Medical Care to Eligible Annuitants and Their Eligible Dependents",
+       "fund": "Sewer Fund",
+       "amount": 66613,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Costs of Claims and Administration for Hospital and Medical Care Provided to Eligible Employees  Provided However  That All Payments to the In...",
+       "fund": "Affordable Housing Opportunity Fund",
+       "amount": 64791,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Health Maintenance Organization Premiums or Cost of Claims and Administration for Hospital and Medical Care Provided to Police and Fire Depart...",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 57528,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Costs of Claims and Administration for Hospital and Medical Care Provided to Eligible Employees  Provided However  That All Payments to the In...",
+       "fund": "Neighborhoods Opportunity Fund",
+       "amount": 46917,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for a Co-Insured Dental Plan for Employees",
+       "fund": "Tax Increment Financing Administration Fund",
+       "amount": 46160,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for a Co-Insured Dental Plan for Employees",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 38536,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Health Maintenance Organization Premiums (HMO) Provided to Eligible Employees and Their Families",
+       "fund": "Affordable Housing Opportunity Fund",
+       "amount": 13459,
+       "internal_transfer": false
+      },
+      {
+       "account": "Costs of Claims and Administration for Hospital and Medical Care to Eligible Annuitants and Their Eligible Dependents",
+       "fund": "Tax Increment Financing Administration Fund",
+       "amount": 11716,
+       "internal_transfer": false
+      },
+      {
+       "account": "Costs of Claims and Administration for Hospital and Medical Care to Eligible Annuitants and Their Eligible Dependents",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 9781,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Health Maintenance Organization Premiums (HMO) Provided to Eligible Employees and Their Families",
+       "fund": "Neighborhoods Opportunity Fund",
+       "amount": 9740,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for a Co-Insured Dental Plan for Employees",
+       "fund": "Affordable Housing Opportunity Fund",
+       "amount": 2403,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for a Co-Insured Dental Plan for Employees",
+       "fund": "Neighborhoods Opportunity Fund",
+       "amount": 1740,
+       "internal_transfer": false
+      },
+      {
+       "account": "Costs of Claims and Administration for Hospital and Medical Care to Eligible Annuitants and Their Eligible Dependents",
+       "fund": "Affordable Housing Opportunity Fund",
+       "amount": 610,
+       "internal_transfer": false
+      },
+      {
+       "account": "Costs of Claims and Administration for Hospital and Medical Care to Eligible Annuitants and Their Eligible Dependents",
+       "fund": "Neighborhoods Opportunity Fund",
+       "amount": 442,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Workers' compensation",
+     "amount": 81142986,
+     "items": [
+      {
+       "account": "Claims and Costs of Administration Pursuant to the Workers' Compensation Act",
+       "fund": "Corporate Fund",
+       "amount": 44780000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims and Costs of Administration Pursuant to the Workers' Compensation Act",
+       "fund": "Water Fund",
+       "amount": 16000000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims and Costs of Administration Pursuant to the Workers' Compensation Act",
+       "fund": "Vehicle Tax Fund",
+       "amount": 12362400,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims and Costs of Administration Pursuant to the Workers' Compensation Act",
+       "fund": "Sewer Fund",
+       "amount": 6761367,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims and Costs of Administration Pursuant to the Workers' Compensation Act",
+       "fund": "Library Fund",
+       "amount": 611939,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims and Costs of Administration Pursuant to the Workers' Compensation Act",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 374500,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims and Costs of Administration Pursuant to the Workers' Compensation Act",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 192780,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims and Costs of Administration Pursuant to the Workers' Compensation Act",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 60000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Medicare tax",
+     "amount": 44467038,
+     "items": [
+      {
+       "account": "City's Contribution to Medicare Tax",
+       "fund": "Corporate Fund",
+       "amount": 38193322,
+       "internal_transfer": false
+      },
+      {
+       "account": "City's Contribution to Medicare Tax",
+       "fund": "Water Fund",
+       "amount": 1700162,
+       "internal_transfer": false
+      },
+      {
+       "account": "City's Contribution to Medicare Tax",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 1683261,
+       "internal_transfer": false
+      },
+      {
+       "account": "City's Contribution to Medicare Tax",
+       "fund": "Vehicle Tax Fund",
+       "amount": 1027533,
+       "internal_transfer": false
+      },
+      {
+       "account": "City's Contribution to Medicare Tax",
+       "fund": "Library Fund",
+       "amount": 875431,
+       "internal_transfer": false
+      },
+      {
+       "account": "City's Contribution to Medicare Tax",
+       "fund": "Sewer Fund",
+       "amount": 598267,
+       "internal_transfer": false
+      },
+      {
+       "account": "City's Contribution to Medicare Tax",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 301180,
+       "internal_transfer": false
+      },
+      {
+       "account": "City's Contribution to Medicare Tax",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 87882,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Other benefits",
+     "amount": 23985077,
+     "items": [
+      {
+       "account": "Employee Contractual Expenses",
+       "fund": "Corporate Fund",
+       "amount": 19000000,
+       "internal_transfer": false
+      },
+      {
+       "account": "City Deferred Compensation Contributions for Union Members",
+       "fund": "Corporate Fund",
+       "amount": 1677246,
+       "internal_transfer": false
+      },
+      {
+       "account": "City Deferred Compensation Contributions for Union Members",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 937499,
+       "internal_transfer": false
+      },
+      {
+       "account": "City Deferred Compensation Contributions for Union Members",
+       "fund": "Water Fund",
+       "amount": 665000,
+       "internal_transfer": false
+      },
+      {
+       "account": "City Deferred Compensation Contributions for Union Members",
+       "fund": "Vehicle Tax Fund",
+       "amount": 469921,
+       "internal_transfer": false
+      },
+      {
+       "account": "City Deferred Compensation Contributions for Union Members",
+       "fund": "Emergency Communication Fund",
+       "amount": 397438,
+       "internal_transfer": false
+      },
+      {
+       "account": "City Deferred Compensation Contributions for Union Members",
+       "fund": "Library Fund",
+       "amount": 375387,
+       "internal_transfer": false
+      },
+      {
+       "account": "City Deferred Compensation Contributions for Union Members",
+       "fund": "Sewer Fund",
+       "amount": 267396,
+       "internal_transfer": false
+      },
+      {
+       "account": "City Deferred Compensation Contributions for Union Members",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 182056,
+       "internal_transfer": false
+      },
+      {
+       "account": "City Deferred Compensation Contributions for Union Members",
+       "fund": "Tax Increment Financing Administration Fund",
+       "amount": 9790,
+       "internal_transfer": false
+      },
+      {
+       "account": "City Deferred Compensation Contributions for Union Members",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 3344,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Unemployment insurance",
+     "amount": 5653024,
+     "items": [
+      {
+       "account": "Claims Under Unemployment Insurance Act",
+       "fund": "Corporate Fund",
+       "amount": 3748283,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims Under Unemployment Insurance Act",
+       "fund": "Water Fund",
+       "amount": 507896,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims Under Unemployment Insurance Act",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 502668,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims Under Unemployment Insurance Act",
+       "fund": "Vehicle Tax Fund",
+       "amount": 306231,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims Under Unemployment Insurance Act",
+       "fund": "Library Fund",
+       "amount": 261417,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims Under Unemployment Insurance Act",
+       "fund": "Sewer Fund",
+       "amount": 182992,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims Under Unemployment Insurance Act",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 97844,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims Under Unemployment Insurance Act",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 29877,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims Under Unemployment Insurance Act",
+       "fund": "Emergency Communication Fund",
+       "amount": 15816,
+       "internal_transfer": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Raises not yet assigned to departments",
+   "amount": 282987964,
+   "internal_transfer": false,
+   "children": [
+    {
+     "name": "Scheduled Wage Adjustments",
+     "amount": 282987964,
+     "items": [
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Corporate Fund",
+       "amount": 262287301,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 13621776,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 3642578,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Emergency Communication Fund",
+       "amount": 2000000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Water Fund",
+       "amount": 390000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Tax Increment Financing Administration Fund",
+       "amount": 257892,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Vehicle Tax Fund",
+       "amount": 221000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 143000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Sewer Fund",
+       "amount": 116000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Library Fund",
+       "amount": 115000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Garbage Collection Fund",
+       "amount": 82559,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Opioid Settlement Fund",
+       "amount": 40177,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Motor Fuel Tax Fund",
+       "amount": 26000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Neighborhoods Opportunity Fund",
+       "amount": 13379,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Cannabis Regulation Tax",
+       "amount": 13238,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Vaping Settlement Fund",
+       "amount": 9235,
+       "internal_transfer": false
+      },
+      {
+       "account": "Scheduled Wage Adjustments",
+       "fund": "Affordable Housing Opportunity Fund",
+       "amount": 8829,
+       "internal_transfer": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Technology & outside services",
+   "amount": 257522685,
+   "internal_transfer": false,
+   "children": [
+    {
+     "name": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+     "amount": 166658914,
+     "items": [
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 92222410,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Corporate Fund",
+       "amount": 55183120,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Water Fund",
+       "amount": 7438473,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Vehicle Tax Fund",
+       "amount": 5254412,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Garbage Collection Fund",
+       "amount": 2424603,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 2009384,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Sewer Fund",
+       "amount": 1311235,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Library Fund",
+       "amount": 362483,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 269409,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Emergency Communication Fund",
+       "amount": 159644,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Tax Increment Financing Administration Fund",
+       "amount": 21207,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Affordable Housing Opportunity Fund",
+       "amount": 1107,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Neighborhoods Opportunity Fund",
+       "amount": 800,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional and Technical Services and Other Third Party Benefit Agreements",
+       "fund": "Construction and Demolition Debris Management Fund",
+       "amount": 627,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Professional Services for Information Technology Maintenance",
+     "amount": 86686327,
+     "items": [
+      {
+       "account": "For Professional Services for Information Technology Maintenance",
+       "fund": "Corporate Fund",
+       "amount": 64766701,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Maintenance",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 7169511,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Maintenance",
+       "fund": "Water Fund",
+       "amount": 5671469,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Maintenance",
+       "fund": "Vehicle Tax Fund",
+       "amount": 3125034,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Maintenance",
+       "fund": "Emergency Communication Fund",
+       "amount": 2205485,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Maintenance",
+       "fund": "Sewer Fund",
+       "amount": 1841499,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Maintenance",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 1565948,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Maintenance",
+       "fund": "Tax Increment Financing Administration Fund",
+       "amount": 291484,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Maintenance",
+       "fund": "Library Fund",
+       "amount": 26672,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Maintenance",
+       "fund": "Garbage Collection Fund",
+       "amount": 22524,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Professional Services for Information Technology Development",
+     "amount": 4177444,
+     "items": [
+      {
+       "account": "For Professional Services for Information Technology Development",
+       "fund": "Corporate Fund",
+       "amount": 1813363,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Development",
+       "fund": "Water Fund",
+       "amount": 1708609,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Development",
+       "fund": "Sewer Fund",
+       "amount": 523007,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Development",
+       "fund": "Vehicle Tax Fund",
+       "amount": 77355,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Professional Services for Information Technology Development",
+       "fund": "Emergency Communication Fund",
+       "amount": 55110,
+       "internal_transfer": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Other citywide costs",
+   "amount": 131780680,
+   "internal_transfer": false,
+   "children": [
+    {
+     "name": "For Capital Construction",
+     "amount": 54289847,
+     "items": [
+      {
+       "account": "For Capital Construction",
+       "fund": "Sewer Fund",
+       "amount": 52414653,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Capital Construction",
+       "fund": "Water Fund",
+       "amount": 1875194,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Reserve Balance",
+     "amount": 31000000,
+     "items": [
+      {
+       "account": "Reserve Balance",
+       "fund": "Protecting CARE Fund",
+       "amount": 31000000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "To Provide for Matching and Supplementary Grant Funds Currently in Effect as Well as New Grants",
+     "amount": 19892285,
+     "items": [
+      {
+       "account": "To Provide for Matching and Supplementary Grant Funds Currently in Effect as Well as New Grants",
+       "fund": "Corporate Fund",
+       "amount": 14943285,
+       "internal_transfer": false
+      },
+      {
+       "account": "To Provide for Matching and Supplementary Grant Funds Currently in Effect as Well as New Grants",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 4091000,
+       "internal_transfer": false
+      },
+      {
+       "account": "To Provide for Matching and Supplementary Grant Funds Currently in Effect as Well as New Grants",
+       "fund": "Vehicle Tax Fund",
+       "amount": 710000,
+       "internal_transfer": false
+      },
+      {
+       "account": "To Provide for Matching and Supplementary Grant Funds Currently in Effect as Well as New Grants",
+       "fund": "Emergency Communication Fund",
+       "amount": 148000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For the Maintenance, Use, Benefit, or Enhancement of Fire Stations and Training Facilities",
+     "amount": 15072100,
+     "items": [
+      {
+       "account": "For the Maintenance, Use, Benefit, or Enhancement of Fire Stations and Training Facilities",
+       "fund": "Foreign Fire Insurance Tax Fund",
+       "amount": 15072100,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Property Maintenance Contract for the Harold Washington Library Center",
+     "amount": 10374209,
+     "items": [
+      {
+       "account": "Property Maintenance Contract for the Harold Washington Library Center",
+       "fund": "Library Fund",
+       "amount": 10374209,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For the Maintenance, Use, Benefit, and Enhancement of Emergency Response Vehicles",
+     "amount": 6399900,
+     "items": [
+      {
+       "account": "For the Maintenance, Use, Benefit, and Enhancement of Emergency Response Vehicles",
+       "fund": "Foreign Fire Insurance Tax Fund",
+       "amount": 6399900,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Operation, Repair or Maintenance of Facilities",
+     "amount": 5050000,
+     "items": [
+      {
+       "account": "Operation, Repair or Maintenance of Facilities",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 5030000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Operation, Repair or Maintenance of Facilities",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 20000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Accounting and Auditing",
+     "amount": 4415000,
+     "items": [
+      {
+       "account": "Accounting and Auditing",
+       "fund": "Corporate Fund",
+       "amount": 1820000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Accounting and Auditing",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 1077000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Accounting and Auditing",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 470500,
+       "internal_transfer": false
+      },
+      {
+       "account": "Accounting and Auditing",
+       "fund": "Water Fund",
+       "amount": 442500,
+       "internal_transfer": false
+      },
+      {
+       "account": "Accounting and Auditing",
+       "fund": "Tax Increment Financing Administration Fund",
+       "amount": 195000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Accounting and Auditing",
+       "fund": "Vehicle Tax Fund",
+       "amount": 150000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Accounting and Auditing",
+       "fund": "Sewer Fund",
+       "amount": 150000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Accounting and Auditing",
+       "fund": "Library Fund",
+       "amount": 110000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Operations and Maintenance Reserve",
+     "amount": 4200000,
+     "items": [
+      {
+       "account": "For Operations and Maintenance Reserve",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 3000000,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Operations and Maintenance Reserve",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 1200000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+     "amount": 3900000,
+     "items": [
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+       "fund": "Corporate Fund",
+       "amount": 3047348,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 270767,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+       "fund": "Water Fund",
+       "amount": 192257,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+       "fund": "Vehicle Tax Fund",
+       "amount": 108549,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+       "fund": "Library Fund",
+       "amount": 82529,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+       "fund": "Emergency Communication Fund",
+       "amount": 68514,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 59646,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+       "fund": "Sewer Fund",
+       "amount": 52589,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+       "fund": "Tax Increment Financing Administration Fund",
+       "amount": 9249,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 7721,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+       "fund": "Affordable Housing Opportunity Fund",
+       "amount": 482,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Claims and Administration or Premiums for Term Life Insurance",
+       "fund": "Neighborhoods Opportunity Fund",
+       "amount": 349,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Other Maintenance, Use, and Benefits for the Chicago Fire Department (CFD)",
+     "amount": 3837000,
+     "items": [
+      {
+       "account": "For Other Maintenance, Use, and Benefits for the Chicago Fire Department (CFD)",
+       "fund": "Foreign Fire Insurance Tax Fund",
+       "amount": 3837000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Payment of the Annual Contribution to the Chicago Transit Authority (CTA)",
+     "amount": 3000000,
+     "items": [
+      {
+       "account": "For Payment of the Annual Contribution to the Chicago Transit Authority (CTA)",
+       "fund": "Motor Fuel Tax Fund",
+       "amount": 3000000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Transfer to O'Hare Fund for Administrative Salaries",
+     "amount": 3000000,
+     "items": [
+      {
+       "account": "Transfer to O'Hare Fund for Administrative Salaries",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 3000000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Interest on Library Financing",
+     "amount": 2200000,
+     "items": [
+      {
+       "account": "Interest on Library Financing",
+       "fund": "Library Fund",
+       "amount": 2200000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Software Maintenance and Licensing",
+     "amount": 2109095,
+     "items": [
+      {
+       "account": "For Software Maintenance and Licensing",
+       "fund": "Water Fund",
+       "amount": 425025,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Software Maintenance and Licensing",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 425025,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Software Maintenance and Licensing",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 425025,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Software Maintenance and Licensing",
+       "fund": "Corporate Fund",
+       "amount": 408995,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Software Maintenance and Licensing",
+       "fund": "Vehicle Tax Fund",
+       "amount": 400000,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Software Maintenance and Licensing",
+       "fund": "Sewer Fund",
+       "amount": 25025,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Paying the Salary of Any Sworn Member of the Police or Fire Department Killed in the Line of Duty for a Period of One Year Commencing From the Dat...",
+     "amount": 2000000,
+     "items": [
+      {
+       "account": "For Paying the Salary of Any Sworn Member of the Police or Fire Department Killed in the Line of Duty for a Period of One Year Commencing From the Dat...",
+       "fund": "Corporate Fund",
+       "amount": 2000000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Special Capital Projects Requiring Airline Approval, Excluding Airline Improvement Program",
+     "amount": 2000000,
+     "items": [
+      {
+       "account": "For Special Capital Projects Requiring Airline Approval, Excluding Airline Improvement Program",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 2000000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For World Business Chicago Program",
+     "amount": 1600000,
+     "items": [
+      {
+       "account": "For World Business Chicago Program",
+       "fund": "Corporate Fund",
+       "amount": 1600000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Transfer for Services Provided by the Department of Police",
+     "amount": 1590301,
+     "items": [
+      {
+       "account": "Transfer for Services Provided by the Department of Police",
+       "fund": "Water Fund",
+       "amount": 1470301,
+       "internal_transfer": false
+      },
+      {
+       "account": "Transfer for Services Provided by the Department of Police",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 120000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Transfer to Specified Operating Funds for Administration",
+     "amount": 1467862,
+     "items": [
+      {
+       "account": "Transfer to Specified Operating Funds for Administration",
+       "fund": "Houseshare Surcharge - Homeless Services Fund",
+       "amount": 973241,
+       "internal_transfer": false
+      },
+      {
+       "account": "Transfer to Specified Operating Funds for Administration",
+       "fund": "Houseshare Surcharge - Domestic Violence Fund",
+       "amount": 494621,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Delegate Agencies",
+     "amount": 1347902,
+     "items": [
+      {
+       "account": "For Delegate Agencies",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 1255902,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Delegate Agencies",
+       "fund": "Corporate Fund",
+       "amount": 92000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For the City Contribution to Social Security Tax",
+     "amount": 1337875,
+     "items": [
+      {
+       "account": "For the City Contribution to Social Security Tax",
+       "fund": "Corporate Fund",
+       "amount": 1189189,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City Contribution to Social Security Tax",
+       "fund": "Water Fund",
+       "amount": 40166,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City Contribution to Social Security Tax",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 39766,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City Contribution to Social Security Tax",
+       "fund": "Vehicle Tax Fund",
+       "amount": 24275,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City Contribution to Social Security Tax",
+       "fund": "Library Fund",
+       "amount": 20682,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City Contribution to Social Security Tax",
+       "fund": "Sewer Fund",
+       "amount": 14134,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City Contribution to Social Security Tax",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 7587,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the City Contribution to Social Security Tax",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 2076,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Payment of Allowances of Money to Families or Dependents of Policemen or Firemen Fatally Injured While in the Performance of Their Duties",
+     "amount": 1200000,
+     "items": [
+      {
+       "account": "For Payment of Allowances of Money to Families or Dependents of Policemen or Firemen Fatally Injured While in the Performance of Their Duties",
+       "fund": "Corporate Fund",
+       "amount": 1200000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Refunds for Cancelled Voucher Warrants and Payroll Checks and for Refunding Duplicate Payments and Payments Made in Error",
+     "amount": 765000,
+     "items": [
+      {
+       "account": "For Refunds for Cancelled Voucher Warrants and Payroll Checks and for Refunding Duplicate Payments and Payments Made in Error",
+       "fund": "Vehicle Tax Fund",
+       "amount": 765000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Transfers Out",
+     "amount": 739069,
+     "items": [
+      {
+       "account": "Transfers Out",
+       "fund": "Wheelchair Accessible Vehicle Fund",
+       "amount": 389069,
+       "internal_transfer": false
+      },
+      {
+       "account": "Transfers Out",
+       "fund": "Corporate Fund",
+       "amount": 350000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Transfer for Contractual Services",
+     "amount": 625000,
+     "items": [
+      {
+       "account": "Transfer for Contractual Services",
+       "fund": "Water Fund",
+       "amount": 625000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Claims for Damages and Liabilities Against the City When Ordered Paid by the City Council",
+     "amount": 615000,
+     "items": [
+      {
+       "account": "Claims for Damages and Liabilities Against the City When Ordered Paid by the City Council",
+       "fund": "Vehicle Tax Fund",
+       "amount": 375000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims for Damages and Liabilities Against the City When Ordered Paid by the City Council",
+       "fund": "Corporate Fund",
+       "amount": 200000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims for Damages and Liabilities Against the City When Ordered Paid by the City Council",
+       "fund": "Sewer Fund",
+       "amount": 25000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Claims for Damages and Liabilities Against the City When Ordered Paid by the City Council",
+       "fund": "Water Fund",
+       "amount": 15000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Tuition Reimbursement and Educational Programs",
+     "amount": 610000,
+     "items": [
+      {
+       "account": "Tuition Reimbursement and Educational Programs",
+       "fund": "Corporate Fund",
+       "amount": 205000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Tuition Reimbursement and Educational Programs",
+       "fund": "Water Fund",
+       "amount": 150000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Tuition Reimbursement and Educational Programs",
+       "fund": "Library Fund",
+       "amount": 150000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Tuition Reimbursement and Educational Programs",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 50000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Tuition Reimbursement and Educational Programs",
+       "fund": "Sewer Fund",
+       "amount": 30000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Tuition Reimbursement and Educational Programs",
+       "fund": "Vehicle Tax Fund",
+       "amount": 25000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Physical Exams",
+     "amount": 510000,
+     "items": [
+      {
+       "account": "For Physical Exams",
+       "fund": "Corporate Fund",
+       "amount": 450000,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Physical Exams",
+       "fund": "Water Fund",
+       "amount": 30000,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Physical Exams",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 30000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+     "amount": 489800,
+     "items": [
+      {
+       "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+       "fund": "Water Fund",
+       "amount": 325000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+       "fund": "Sewer Fund",
+       "amount": 120000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 34800,
+       "internal_transfer": false
+      },
+      {
+       "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+       "fund": "Vehicle Tax Fund",
+       "amount": 10000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Postage",
+     "amount": 449635,
+     "items": [
+      {
+       "account": "Postage",
+       "fund": "Sewer Fund",
+       "amount": 308181,
+       "internal_transfer": false
+      },
+      {
+       "account": "Postage",
+       "fund": "Garbage Collection Fund",
+       "amount": 111577,
+       "internal_transfer": false
+      },
+      {
+       "account": "Postage",
+       "fund": "Water Fund",
+       "amount": 29877,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "To Provide for Senior Citizens - Rebate of Sewer Services When Senior Occupies Multi-Family Residency or Condominium",
+     "amount": 350000,
+     "items": [
+      {
+       "account": "To Provide for Senior Citizens - Rebate of Sewer Services When Senior Occupies Multi-Family Residency or Condominium",
+       "fund": "Sewer Fund",
+       "amount": 350000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Furniture and Fixtures",
+     "amount": 284400,
+     "items": [
+      {
+       "account": "Furniture and Fixtures",
+       "fund": "Corporate Fund",
+       "amount": 284400,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Material and Supplies",
+     "amount": 250000,
+     "items": [
+      {
+       "account": "Material and Supplies",
+       "fund": "Corporate Fund",
+       "amount": 250000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Investigation Costs.  To Be Expended at the Direction of the Comptroller",
+     "amount": 165000,
+     "items": [
+      {
+       "account": "Investigation Costs.  To Be Expended at the Direction of the Comptroller",
+       "fund": "Water Fund",
+       "amount": 100000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Investigation Costs.  To Be Expended at the Direction of the Comptroller",
+       "fund": "Sewer Fund",
+       "amount": 40000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Investigation Costs.  To Be Expended at the Direction of the Comptroller",
+       "fund": "Vehicle Tax Fund",
+       "amount": 25000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Vehicles",
+     "amount": 160000,
+     "items": [
+      {
+       "account": "Vehicles",
+       "fund": "Library Fund",
+       "amount": 160000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Reimbursement to Travelers",
+     "amount": 150000,
+     "items": [
+      {
+       "account": "Reimbursement to Travelers",
+       "fund": "Corporate Fund",
+       "amount": 150000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Transfer for Services Provided by the Department of Assets, Information, and Services",
+     "amount": 134400,
+     "items": [
+      {
+       "account": "Transfer for Services Provided by the Department of Assets, Information, and Services",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 134400,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Drugs, Medicine and Chemical Materials",
+     "amount": 125000,
+     "items": [
+      {
+       "account": "Drugs, Medicine and Chemical Materials",
+       "fund": "Corporate Fund",
+       "amount": 125000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Educational Development through Cooperative Education Program and Apprenticeship Program",
+     "amount": 100000,
+     "items": [
+      {
+       "account": "Educational Development through Cooperative Education Program and Apprenticeship Program",
+       "fund": "Corporate Fund",
+       "amount": 100000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Miscellaneous Supplies",
+     "amount": 100000,
+     "items": [
+      {
+       "account": "Miscellaneous Supplies",
+       "fund": "Corporate Fund",
+       "amount": 100000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Keep Chicago Clean Campaign",
+     "amount": 100000,
+     "items": [
+      {
+       "account": "Keep Chicago Clean Campaign",
+       "fund": "Corporate Fund",
+       "amount": 100000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Payment of Water Pipe Extension Certificates",
+     "amount": 100000,
+     "items": [
+      {
+       "account": "For Payment of Water Pipe Extension Certificates",
+       "fund": "Water Fund",
+       "amount": 100000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Surety Bond Premiums",
+     "amount": 85000,
+     "items": [
+      {
+       "account": "Surety Bond Premiums",
+       "fund": "Corporate Fund",
+       "amount": 85000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Dues, Subscriptions and Memberships",
+     "amount": 75000,
+     "items": [
+      {
+       "account": "Dues, Subscriptions and Memberships",
+       "fund": "Sewer Fund",
+       "amount": 75000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Court Reporting",
+     "amount": 50000,
+     "items": [
+      {
+       "account": "Court Reporting",
+       "fund": "Corporate Fund",
+       "amount": 50000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Transfer for Services Provided by the Chicago Department of Aviation",
+     "amount": 35000,
+     "items": [
+      {
+       "account": "Transfer for Services Provided by the Chicago Department of Aviation",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 35000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Transfer for Services Provided by the Fire Department",
+     "amount": 21000,
+     "items": [
+      {
+       "account": "Transfer for Services Provided by the Fire Department",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 21000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Transfer for Services Provided by the Department of Streets and Sanitation",
+     "amount": 9000,
+     "items": [
+      {
+       "account": "Transfer for Services Provided by the Department of Streets and Sanitation",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 9000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Less Corporate Fund Savings",
+     "amount": -56600000,
+     "items": [
+      {
+       "account": "Less Corporate Fund Savings",
+       "fund": "Corporate Fund",
+       "amount": -56600000,
+       "internal_transfer": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Emergency medical transportation (ambulance)",
+   "amount": 124725187,
+   "internal_transfer": false,
+   "children": [
+    {
+     "name": "Emergency Medical Transportation",
+     "amount": 124725187,
+     "items": [
+      {
+       "account": "Emergency Medical Transportation",
+       "fund": "Corporate Fund",
+       "amount": 124725187,
+       "internal_transfer": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Taxes the city expects not to collect",
+   "amount": 74308127,
+   "internal_transfer": false,
+   "children": [
+    {
+     "name": "For Loss in Collection of Taxes",
+     "amount": 74308127,
+     "items": [
+      {
+       "account": "For Loss in Collection of Taxes",
+       "fund": "Policemen's Annuity and Benefit Fund",
+       "amount": 32541000,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Loss in Collection of Taxes",
+       "fund": "Firemen's Annuity and Benefit Fund",
+       "amount": 14679000,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Loss in Collection of Taxes",
+       "fund": "Bond Redemption and Interest Series Fund",
+       "amount": 12584133,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Loss in Collection of Taxes",
+       "fund": "Municipal Employees' Annuity and Benefit Fund",
+       "amount": 7070077,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Loss in Collection of Taxes",
+       "fund": "Library Property Tax Levy Fund",
+       "amount": 5246917,
+       "internal_transfer": false
+      },
+      {
+       "account": "For Loss in Collection of Taxes",
+       "fund": "Laborers' and Retirement Board Annuity and Benefit Fund",
+       "amount": 2187000,
+       "internal_transfer": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Money passed to other agencies",
+   "amount": 69589053,
+   "internal_transfer": false,
+   "children": [
+    {
+     "name": "For Distribution of the Net Proceeds of the Real Property Transfer Tax - CTA Portion",
+     "amount": 62789053,
+     "items": [
+      {
+       "account": "For Distribution of the Net Proceeds of the Real Property Transfer Tax - CTA Portion",
+       "fund": "CTA Real Property Transfer Tax Fund",
+       "amount": 62789053,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "For Payment to Metropolitan Sanitary District for Wastewater Services",
+     "amount": 6800000,
+     "items": [
+      {
+       "account": "For Payment to Metropolitan Sanitary District for Wastewater Services",
+       "fund": "Water Fund",
+       "amount": 6800000,
+       "internal_transfer": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Lawsuits & legal",
+   "amount": 61047420,
+   "internal_transfer": false,
+   "children": [
+    {
+     "name": "For the Payment of Tort and Non-Tort Judgments, Outside Counsel Expenses and Expert Costs, as Approved by the Corporation Counsel",
+     "amount": 47992820,
+     "items": [
+      {
+       "account": "For the Payment of Tort and Non-Tort Judgments, Outside Counsel Expenses and Expert Costs, as Approved by the Corporation Counsel",
+       "fund": "Corporate Fund",
+       "amount": 40785387,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Payment of Tort and Non-Tort Judgments, Outside Counsel Expenses and Expert Costs, as Approved by the Corporation Counsel",
+       "fund": "Water Fund",
+       "amount": 6800000,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Payment of Tort and Non-Tort Judgments, Outside Counsel Expenses and Expert Costs, as Approved by the Corporation Counsel",
+       "fund": "Sewer Fund",
+       "amount": 383133,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Payment of Tort and Non-Tort Judgments, Outside Counsel Expenses and Expert Costs, as Approved by the Corporation Counsel",
+       "fund": "Vehicle Tax Fund",
+       "amount": 11800,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Payment of Tort and Non-Tort Judgments, Outside Counsel Expenses and Expert Costs, as Approved by the Corporation Counsel",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 8000,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Payment of Tort and Non-Tort Judgments, Outside Counsel Expenses and Expert Costs, as Approved by the Corporation Counsel",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 4500,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Legal Expenses",
+     "amount": 7534600,
+     "items": [
+      {
+       "account": "Legal Expenses",
+       "fund": "Corporate Fund",
+       "amount": 3657600,
+       "internal_transfer": false
+      },
+      {
+       "account": "Legal Expenses",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 3030000,
+       "internal_transfer": false
+      },
+      {
+       "account": "Legal Expenses",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 847000,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Consent Decree",
+     "amount": 5520000,
+     "items": [
+      {
+       "account": "Consent Decree",
+       "fund": "Corporate Fund",
+       "amount": 5520000,
+       "internal_transfer": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Insurance",
+   "amount": 38326782,
+   "internal_transfer": false,
+   "children": [
+    {
+     "name": "For the Cost of Insurance Premiums and Expenses",
+     "amount": 38326782,
+     "items": [
+      {
+       "account": "For the Cost of Insurance Premiums and Expenses",
+       "fund": "Chicago O'Hare Airport Fund",
+       "amount": 22692918,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Insurance Premiums and Expenses",
+       "fund": "Corporate Fund",
+       "amount": 5157907,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Insurance Premiums and Expenses",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 4854717,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Insurance Premiums and Expenses",
+       "fund": "Water Fund",
+       "amount": 2864080,
+       "internal_transfer": false
+      },
+      {
+       "account": "For the Cost of Insurance Premiums and Expenses",
+       "fund": "Sewer Fund",
+       "amount": 2757160,
+       "internal_transfer": false
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "total_net": 6669789000
+}
