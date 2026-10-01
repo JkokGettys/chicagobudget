@@ -1,0 +1,1238 @@
+{
+ "meta": {
+  "generated_by": "scripts/people_build_parks.py",
+  "names": false,
+  "source": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf?VersionId=4S4MZxZ1Cut5r1bdwmTOgGBFF4mHJbmq",
+  "basis": "BUDGET: budgeted positions and salary dollars in the 2026 Budget Appropriations, not actual pay. The Park District publishes no names, individual salaries, overtime or payroll data that we could find.",
+  "small_group_rule": "titles with fewer than 5 budgeted FTE district-wide are rolled into \"Other titles\". Budgeted dollars per FTE is a budget rate, not an individual salary.",
+  "ties": "rows in data/parks_2026.json sum to 3,212.4 FTE and $220,590,509. research/park_district.md section 3.5 reports 3,212.7 FTE and $220,590,557 from the raw parse. Printed total is 3,213.0 FTE."
+ },
+ "totals": {
+  "position_rows": 2180,
+  "fte2026": 3212.4,
+  "budget2026": 220590509,
+  "distinct_titles": 317,
+  "titles_shown": 85
+ },
+ "by_function": [
+  {
+   "function": "Neighborhood Parks by Region",
+   "fte2026": 1682.5,
+   "budget2026": 98725175
+  },
+  {
+   "function": "Operations & Maintenance",
+   "fte2026": 935.2,
+   "budget2026": 76908159
+  },
+  {
+   "function": "Recreation & Programming (Districtwide Programs)",
+   "fte2026": 379.0,
+   "budget2026": 23128255
+  },
+  {
+   "function": "Administration & Finance",
+   "fte2026": 215.7,
+   "budget2026": 21828920
+  }
+ ],
+ "by_title": [
+  {
+   "title": "Park Supervisor Of Recreation",
+   "job_codes": [
+    "3360"
+   ],
+   "budget_rows": 144,
+   "units": 144,
+   "fte2026": 143.0,
+   "fte2025": 143.0,
+   "budget2026": 13247309,
+   "budget2025": 12537407,
+   "budgeted_dollars_per_fte_2026": 92639,
+   "budgeted_dollars_per_fte_2025": 87674
+  },
+  {
+   "title": "Physical Instructor (M)",
+   "job_codes": [
+    "3326"
+   ],
+   "budget_rows": 128,
+   "units": 128,
+   "fte2026": 171.0,
+   "fte2025": 171.0,
+   "budget2026": 11909364,
+   "budget2025": 11429545,
+   "budgeted_dollars_per_fte_2026": 69645,
+   "budgeted_dollars_per_fte_2025": 66839
+  },
+  {
+   "title": "Laborer (Maintenance)",
+   "job_codes": [
+    "4367"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 187.0,
+   "fte2025": 187.0,
+   "budget2026": 10518809,
+   "budget2025": 10105619,
+   "budgeted_dollars_per_fte_2026": 56250,
+   "budgeted_dollars_per_fte_2025": 54041
+  },
+  {
+   "title": "Attendant (M)",
+   "job_codes": [
+    "4362"
+   ],
+   "budget_rows": 126,
+   "units": 126,
+   "fte2026": 185.0,
+   "fte2025": 185.0,
+   "budget2026": 10346043,
+   "budget2025": 9919025,
+   "budgeted_dollars_per_fte_2026": 55925,
+   "budgeted_dollars_per_fte_2025": 53616
+  },
+  {
+   "title": "Recreation Leader",
+   "job_codes": [
+    "3301"
+   ],
+   "budget_rows": 209,
+   "units": 209,
+   "fte2026": 199.3,
+   "fte2025": 197.2,
+   "budget2026": 9121619,
+   "budget2025": 8606744,
+   "budgeted_dollars_per_fte_2026": 45768,
+   "budgeted_dollars_per_fte_2025": 43645
+  },
+  {
+   "title": "Life Guard (H)",
+   "job_codes": [
+    "3201"
+   ],
+   "budget_rows": 39,
+   "units": 39,
+   "fte2026": 175.6,
+   "fte2025": 175.6,
+   "budget2026": 8421900,
+   "budget2025": 8049890,
+   "budgeted_dollars_per_fte_2026": 47961,
+   "budgeted_dollars_per_fte_2025": 45842
+  },
+  {
+   "title": "Attendant (H)",
+   "job_codes": [
+    "4361"
+   ],
+   "budget_rows": 144,
+   "units": 144,
+   "fte2026": 145.0,
+   "fte2025": 145.0,
+   "budget2026": 7080482,
+   "budget2025": 6779085,
+   "budgeted_dollars_per_fte_2026": 48831,
+   "budgeted_dollars_per_fte_2025": 46752
+  },
+  {
+   "title": "Recreation Leader (Daycamp)",
+   "job_codes": [
+    "3302"
+   ],
+   "budget_rows": 224,
+   "units": 224,
+   "fte2026": 164.2,
+   "fte2025": 169.2,
+   "budget2026": 6149386,
+   "budget2025": 6073188,
+   "budgeted_dollars_per_fte_2026": 37451,
+   "budgeted_dollars_per_fte_2025": 35894
+  },
+  {
+   "title": "Life Guard (S)",
+   "job_codes": [
+    "3207"
+   ],
+   "budget_rows": 76,
+   "units": 76,
+   "fte2026": 142.5,
+   "fte2025": 147.1,
+   "budget2026": 6038509,
+   "budget2025": 6007150,
+   "budgeted_dollars_per_fte_2026": 42376,
+   "budgeted_dollars_per_fte_2025": 40837
+  },
+  {
+   "title": "Playground Supervisor",
+   "job_codes": [
+    "3350"
+   ],
+   "budget_rows": 73,
+   "units": 73,
+   "fte2026": 73.0,
+   "fte2025": 73.0,
+   "budget2026": 5729077,
+   "budget2025": 5505410,
+   "budgeted_dollars_per_fte_2026": 78481,
+   "budgeted_dollars_per_fte_2025": 75417
+  },
+  {
+   "title": "Operating Engineer (M)",
+   "job_codes": [
+    "4415"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 44.0,
+   "fte2025": 44.0,
+   "budget2026": 5451846,
+   "budget2025": 5296262,
+   "budgeted_dollars_per_fte_2026": 123906,
+   "budgeted_dollars_per_fte_2025": 120370
+  },
+  {
+   "title": "Physical Instructor (H)",
+   "job_codes": [
+    "3325"
+   ],
+   "budget_rows": 136,
+   "units": 136,
+   "fte2026": 97.3,
+   "fte2025": 96.2,
+   "budget2026": 5386086,
+   "budget2025": 5129112,
+   "budgeted_dollars_per_fte_2026": 55355,
+   "budgeted_dollars_per_fte_2025": 53317
+  },
+  {
+   "title": "Plumber (M)",
+   "job_codes": [
+    "4589"
+   ],
+   "budget_rows": 2,
+   "units": 2,
+   "fte2026": 27.0,
+   "fte2025": 23.0,
+   "budget2026": 3389568,
+   "budget2025": 2717312,
+   "budgeted_dollars_per_fte_2026": 125540,
+   "budgeted_dollars_per_fte_2025": 118144
+  },
+  {
+   "title": "Security Officer",
+   "job_codes": [
+    "5201"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 54.3,
+   "fte2025": 54.3,
+   "budget2026": 3378637,
+   "budget2025": 3255044,
+   "budgeted_dollars_per_fte_2026": 62222,
+   "budgeted_dollars_per_fte_2025": 59946
+  },
+  {
+   "title": "Project Manager",
+   "job_codes": [
+    "4167"
+   ],
+   "budget_rows": 12,
+   "units": 12,
+   "fte2026": 37.0,
+   "fte2025": 34.0,
+   "budget2026": 3214461,
+   "budget2025": 2907114,
+   "budgeted_dollars_per_fte_2026": 86877,
+   "budgeted_dollars_per_fte_2025": 85503
+  },
+  {
+   "title": "Program & Event Coordinator",
+   "job_codes": [
+    "3525"
+   ],
+   "budget_rows": 11,
+   "units": 11,
+   "fte2026": 38.0,
+   "fte2025": 35.0,
+   "budget2026": 2948304,
+   "budget2025": 2648501,
+   "budgeted_dollars_per_fte_2026": 77587,
+   "budgeted_dollars_per_fte_2025": 75671
+  },
+  {
+   "title": "Laborer (S)",
+   "job_codes": [
+    "4366"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 58.3,
+   "fte2025": 58.3,
+   "budget2026": 2905537,
+   "budget2025": 2814589,
+   "budgeted_dollars_per_fte_2026": 49838,
+   "budgeted_dollars_per_fte_2025": 48278
+  },
+  {
+   "title": "Carpenter (M)",
+   "job_codes": [
+    "4310"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 22.0,
+   "fte2025": 22.0,
+   "budget2026": 2575082,
+   "budget2025": 2448618,
+   "budgeted_dollars_per_fte_2026": 117049,
+   "budgeted_dollars_per_fte_2025": 111301
+  },
+  {
+   "title": "Junior Tree Surgeon (M)",
+   "job_codes": [
+    "4209"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 31.0,
+   "fte2025": 31.0,
+   "budget2026": 2540128,
+   "budget2025": 2390274,
+   "budgeted_dollars_per_fte_2026": 81940,
+   "budgeted_dollars_per_fte_2025": 77106
+  },
+  {
+   "title": "Motor Truck Driver (M)",
+   "job_codes": [
+    "4314"
+   ],
+   "budget_rows": 3,
+   "units": 3,
+   "fte2026": 25.0,
+   "fte2025": 23.0,
+   "budget2026": 2458040,
+   "budget2025": 1997320,
+   "budgeted_dollars_per_fte_2026": 98322,
+   "budgeted_dollars_per_fte_2025": 86840
+  },
+  {
+   "title": "Electrician, Inside (M)",
+   "job_codes": [
+    "4408"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 20.0,
+   "fte2025": 20.0,
+   "budget2026": 2393248,
+   "budget2025": 2238080,
+   "budgeted_dollars_per_fte_2026": 119662,
+   "budgeted_dollars_per_fte_2025": 111904
+  },
+  {
+   "title": "Natatorium Instructor (M)",
+   "job_codes": [
+    "3208"
+   ],
+   "budget_rows": 29,
+   "units": 29,
+   "fte2026": 30.0,
+   "fte2025": 30.0,
+   "budget2026": 2335391,
+   "budget2025": 2237855,
+   "budgeted_dollars_per_fte_2026": 77846,
+   "budgeted_dollars_per_fte_2025": 74595
+  },
+  {
+   "title": "Area Manager",
+   "job_codes": [
+    "3370"
+   ],
+   "budget_rows": 4,
+   "units": 4,
+   "fte2026": 19.0,
+   "fte2025": 19.0,
+   "budget2026": 2239226,
+   "budget2025": 2174004,
+   "budgeted_dollars_per_fte_2026": 117854,
+   "budgeted_dollars_per_fte_2025": 114421
+  },
+  {
+   "title": "Natatorium Instructor (H)",
+   "job_codes": [
+    "3206"
+   ],
+   "budget_rows": 25,
+   "units": 25,
+   "fte2026": 38.6,
+   "fte2025": 38.6,
+   "budget2026": 2165795,
+   "budget2025": 2097433,
+   "budgeted_dollars_per_fte_2026": 56109,
+   "budgeted_dollars_per_fte_2025": 54338
+  },
+  {
+   "title": "Labor Foreman",
+   "job_codes": [
+    "4369"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 27.0,
+   "fte2025": 27.0,
+   "budget2026": 2128988,
+   "budget2025": 2045479,
+   "budgeted_dollars_per_fte_2026": 78851,
+   "budgeted_dollars_per_fte_2025": 75758
+  },
+  {
+   "title": "Rigger (M)",
+   "job_codes": [
+    "4459"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 21.0,
+   "fte2025": 21.0,
+   "budget2026": 1913621,
+   "budget2025": 1677749,
+   "budgeted_dollars_per_fte_2026": 91125,
+   "budgeted_dollars_per_fte_2025": 79893
+  },
+  {
+   "title": "Special Recreation Coordinator",
+   "job_codes": [
+    "3342"
+   ],
+   "budget_rows": 24,
+   "units": 24,
+   "fte2026": 23.0,
+   "fte2025": 23.0,
+   "budget2026": 1742847,
+   "budget2025": 1669013,
+   "budgeted_dollars_per_fte_2026": 75776,
+   "budgeted_dollars_per_fte_2025": 72566
+  },
+  {
+   "title": "Painter (M)",
+   "job_codes": [
+    "4449"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 15.0,
+   "fte2025": 15.0,
+   "budget2026": 1683760,
+   "budget2025": 1608360,
+   "budgeted_dollars_per_fte_2026": 112251,
+   "budgeted_dollars_per_fte_2025": 107224
+  },
+  {
+   "title": "Activities Instructor (H)",
+   "job_codes": [
+    "3318"
+   ],
+   "budget_rows": 39,
+   "units": 39,
+   "fte2026": 29.4,
+   "fte2025": 30.1,
+   "budget2026": 1633541,
+   "budget2025": 1608898,
+   "budgeted_dollars_per_fte_2026": 55563,
+   "budgeted_dollars_per_fte_2025": 53452
+  },
+  {
+   "title": "Activities Instructor (M)",
+   "job_codes": [
+    "3336"
+   ],
+   "budget_rows": 25,
+   "units": 25,
+   "fte2026": 23.0,
+   "fte2025": 23.0,
+   "budget2026": 1597077,
+   "budget2025": 1535284,
+   "budgeted_dollars_per_fte_2026": 69438,
+   "budgeted_dollars_per_fte_2025": 66751
+  },
+  {
+   "title": "Floriculturist, Class 2 (M)",
+   "job_codes": [
+    "4204"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 22.0,
+   "fte2025": 22.0,
+   "budget2026": 1594561,
+   "budget2025": 1528971,
+   "budgeted_dollars_per_fte_2026": 72480,
+   "budgeted_dollars_per_fte_2025": 69499
+  },
+  {
+   "title": "Security Officer (M)",
+   "job_codes": [
+    "5207"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 23.0,
+   "fte2025": 20.0,
+   "budget2026": 1559275,
+   "budget2025": 1301337,
+   "budgeted_dollars_per_fte_2026": 67795,
+   "budgeted_dollars_per_fte_2025": 65067
+  },
+  {
+   "title": "Special Recreation Instructor (H)",
+   "job_codes": [
+    "3335"
+   ],
+   "budget_rows": 25,
+   "units": 25,
+   "fte2026": 29.0,
+   "fte2025": 29.6,
+   "budget2026": 1556179,
+   "budget2025": 1531431,
+   "budgeted_dollars_per_fte_2026": 53661,
+   "budgeted_dollars_per_fte_2025": 51738
+  },
+  {
+   "title": "Building & Construction Laborer",
+   "job_codes": [
+    "4306"
+   ],
+   "budget_rows": 2,
+   "units": 2,
+   "fte2026": 14.0,
+   "fte2025": 10.0,
+   "budget2026": 1491568,
+   "budget2025": 1017120,
+   "budgeted_dollars_per_fte_2026": 106541,
+   "budgeted_dollars_per_fte_2025": 101712
+  },
+  {
+   "title": "Electrician, Outside (M)",
+   "job_codes": [
+    "4409"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 11.0,
+   "fte2025": 11.0,
+   "budget2026": 1477590,
+   "budget2025": 1376232,
+   "budgeted_dollars_per_fte_2026": 134326,
+   "budgeted_dollars_per_fte_2025": 125112
+  },
+  {
+   "title": "Gymnastics Instructor",
+   "job_codes": [
+    "3332"
+   ],
+   "budget_rows": 9,
+   "units": 9,
+   "fte2026": 21.0,
+   "fte2025": 21.0,
+   "budget2026": 1460093,
+   "budget2025": 1397079,
+   "budgeted_dollars_per_fte_2026": 69528,
+   "budgeted_dollars_per_fte_2025": 66528
+  },
+  {
+   "title": "Senior Project Manager",
+   "job_codes": [
+    "4162"
+   ],
+   "budget_rows": 8,
+   "units": 8,
+   "fte2026": 13.0,
+   "fte2025": 13.0,
+   "budget2026": 1410736,
+   "budget2025": 1396781,
+   "budgeted_dollars_per_fte_2026": 108518,
+   "budgeted_dollars_per_fte_2025": 107445
+  },
+  {
+   "title": "Attendant (S)",
+   "job_codes": [
+    "4363"
+   ],
+   "budget_rows": 87,
+   "units": 87,
+   "fte2026": 35.5,
+   "fte2025": 33.6,
+   "budget2026": 1308100,
+   "budget2025": 1185848,
+   "budgeted_dollars_per_fte_2026": 36848,
+   "budgeted_dollars_per_fte_2025": 35293
+  },
+  {
+   "title": "Junior Laborer (S)",
+   "job_codes": [
+    "4365"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 34.9,
+   "fte2025": 34.9,
+   "budget2026": 1288490,
+   "budget2025": 1234116,
+   "budgeted_dollars_per_fte_2026": 36919,
+   "budgeted_dollars_per_fte_2025": 35361
+  },
+  {
+   "title": "Senior Life Guard (S)",
+   "job_codes": [
+    "3209"
+   ],
+   "budget_rows": 54,
+   "units": 54,
+   "fte2026": 22.7,
+   "fte2025": 27.5,
+   "budget2026": 1222337,
+   "budget2025": 1409303,
+   "budgeted_dollars_per_fte_2026": 53847,
+   "budgeted_dollars_per_fte_2025": 51247
+  },
+  {
+   "title": "Inclusion Aide",
+   "job_codes": [
+    "3345"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 21.8,
+   "fte2025": 21.8,
+   "budget2026": 1131962,
+   "budget2025": 1086524,
+   "budgeted_dollars_per_fte_2026": 51925,
+   "budgeted_dollars_per_fte_2025": 49841
+  },
+  {
+   "title": "Steamfitter (M)",
+   "job_codes": [
+    "4423"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 9.0,
+   "fte2025": 9.0,
+   "budget2026": 1095120,
+   "budget2025": 1029600,
+   "budgeted_dollars_per_fte_2026": 121680,
+   "budgeted_dollars_per_fte_2025": 114400
+  },
+  {
+   "title": "Security Supervisor (H)",
+   "job_codes": [
+    "5206"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 15.1,
+   "fte2025": 15.8,
+   "budget2026": 1084546,
+   "budget2025": 1096374,
+   "budgeted_dollars_per_fte_2026": 71824,
+   "budgeted_dollars_per_fte_2025": 69391
+  },
+  {
+   "title": "Motor Truck Driver (S) (H)",
+   "job_codes": [
+    "4313"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 10.1,
+   "fte2025": 10.1,
+   "budget2026": 993548,
+   "budget2025": 877527,
+   "budgeted_dollars_per_fte_2026": 98371,
+   "budgeted_dollars_per_fte_2025": 86884
+  },
+  {
+   "title": "Center Director",
+   "job_codes": [
+    "5515"
+   ],
+   "budget_rows": 10,
+   "units": 10,
+   "fte2026": 11.0,
+   "fte2025": 11.0,
+   "budget2026": 990918,
+   "budget2025": 982338,
+   "budgeted_dollars_per_fte_2026": 90083,
+   "budgeted_dollars_per_fte_2025": 89303
+  },
+  {
+   "title": "Senior Program Specialist",
+   "job_codes": [
+    "1291"
+   ],
+   "budget_rows": 4,
+   "units": 4,
+   "fte2026": 11.0,
+   "fte2025": 11.0,
+   "budget2026": 901005,
+   "budget2025": 866555,
+   "budgeted_dollars_per_fte_2026": 81910,
+   "budgeted_dollars_per_fte_2025": 78778
+  },
+  {
+   "title": "Hoisting Engineer (M)",
+   "job_codes": [
+    "4373"
+   ],
+   "budget_rows": 2,
+   "units": 2,
+   "fte2026": 6.0,
+   "fte2025": 4.0,
+   "budget2026": 786240,
+   "budget2025": 455936,
+   "budgeted_dollars_per_fte_2026": 131040,
+   "budgeted_dollars_per_fte_2025": 113984
+  },
+  {
+   "title": "Artcraft Instructor (M)",
+   "job_codes": [
+    "3313"
+   ],
+   "budget_rows": 13,
+   "units": 13,
+   "fte2026": 11.0,
+   "fte2025": 11.0,
+   "budget2026": 774195,
+   "budget2025": 744736,
+   "budgeted_dollars_per_fte_2026": 70381,
+   "budgeted_dollars_per_fte_2025": 67703
+  },
+  {
+   "title": "Human Resources Manager",
+   "job_codes": [
+    "1740"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 7.0,
+   "fte2025": 7.0,
+   "budget2026": 697625,
+   "budget2025": 677306,
+   "budgeted_dollars_per_fte_2026": 99661,
+   "budgeted_dollars_per_fte_2025": 96758
+  },
+  {
+   "title": "Plumber Foreman",
+   "job_codes": [
+    "4383"
+   ],
+   "budget_rows": 2,
+   "units": 2,
+   "fte2026": 5.0,
+   "fte2025": 4.4,
+   "budget2026": 669656,
+   "budget2025": 550950,
+   "budgeted_dollars_per_fte_2026": 133931,
+   "budgeted_dollars_per_fte_2025": 125216
+  },
+  {
+   "title": "Special Project Assistant",
+   "job_codes": [
+    "1265"
+   ],
+   "budget_rows": 8,
+   "units": 8,
+   "fte2026": 9.0,
+   "fte2025": 8.0,
+   "budget2026": 636959,
+   "budget2025": 527511,
+   "budgeted_dollars_per_fte_2026": 70773,
+   "budgeted_dollars_per_fte_2025": 65939
+  },
+  {
+   "title": "Crafts Instructor (M)",
+   "job_codes": [
+    "3309"
+   ],
+   "budget_rows": 12,
+   "units": 12,
+   "fte2026": 9.0,
+   "fte2025": 9.0,
+   "budget2026": 626762,
+   "budget2025": 600747,
+   "budgeted_dollars_per_fte_2026": 69640,
+   "budgeted_dollars_per_fte_2025": 66750
+  },
+  {
+   "title": "Natural Areas Worker (M)",
+   "job_codes": [
+    "4275"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 11.0,
+   "fte2025": 11.0,
+   "budget2026": 616417,
+   "budget2025": 550372,
+   "budgeted_dollars_per_fte_2026": 56038,
+   "budgeted_dollars_per_fte_2025": 50034
+  },
+  {
+   "title": "Program & Event Facilitator",
+   "job_codes": [
+    "3504"
+   ],
+   "budget_rows": 5,
+   "units": 5,
+   "fte2026": 8.0,
+   "fte2025": 8.0,
+   "budget2026": 608183,
+   "budget2025": 626542,
+   "budgeted_dollars_per_fte_2026": 76023,
+   "budgeted_dollars_per_fte_2025": 78318
+  },
+  {
+   "title": "Special Recreation Leader",
+   "job_codes": [
+    "3303"
+   ],
+   "budget_rows": 17,
+   "units": 17,
+   "fte2026": 13.8,
+   "fte2025": 13.8,
+   "budget2026": 607992,
+   "budget2025": 581031,
+   "budgeted_dollars_per_fte_2026": 44057,
+   "budgeted_dollars_per_fte_2025": 42104
+  },
+  {
+   "title": "Senior Program & Event Coordinator",
+   "job_codes": [
+    "3526"
+   ],
+   "budget_rows": 5,
+   "units": 5,
+   "fte2026": 7.0,
+   "fte2025": 7.0,
+   "budget2026": 575979,
+   "budget2025": 556865,
+   "budgeted_dollars_per_fte_2026": 82283,
+   "budgeted_dollars_per_fte_2025": 79552
+  },
+  {
+   "title": "Natural Areas Worker (S)",
+   "job_codes": [
+    "4268"
+   ],
+   "budget_rows": 2,
+   "units": 2,
+   "fte2026": 11.2,
+   "fte2025": 9.9,
+   "budget2026": 568920,
+   "budget2025": 483898,
+   "budgeted_dollars_per_fte_2026": 50796,
+   "budgeted_dollars_per_fte_2025": 48879
+  },
+  {
+   "title": "Composition Roofer",
+   "job_codes": [
+    "4316"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 5.0,
+   "fte2025": 5.0,
+   "budget2026": 540800,
+   "budget2025": 509600,
+   "budgeted_dollars_per_fte_2026": 108160,
+   "budgeted_dollars_per_fte_2025": 101920
+  },
+  {
+   "title": "Activities Instructor Iii (S)",
+   "job_codes": [
+    "3352"
+   ],
+   "budget_rows": 5,
+   "units": 5,
+   "fte2026": 9.3,
+   "fte2025": 9.3,
+   "budget2026": 540172,
+   "budget2025": 525800,
+   "budgeted_dollars_per_fte_2026": 58083,
+   "budgeted_dollars_per_fte_2025": 56538
+  },
+  {
+   "title": "Floriculturist Apprentice (M)",
+   "job_codes": [
+    "4203"
+   ],
+   "budget_rows": 2,
+   "units": 2,
+   "fte2026": 8.0,
+   "fte2025": 8.0,
+   "budget2026": 524463,
+   "budget2025": 504082,
+   "budgeted_dollars_per_fte_2026": 65558,
+   "budgeted_dollars_per_fte_2025": 63010
+  },
+  {
+   "title": "Program Specialist",
+   "job_codes": [
+    "1290"
+   ],
+   "budget_rows": 4,
+   "units": 4,
+   "fte2026": 7.0,
+   "fte2025": 7.0,
+   "budget2026": 520198,
+   "budget2025": 498289,
+   "budgeted_dollars_per_fte_2026": 74314,
+   "budgeted_dollars_per_fte_2025": 71184
+  },
+  {
+   "title": "Camp Counselor (S)",
+   "job_codes": [
+    "3304"
+   ],
+   "budget_rows": 3,
+   "units": 3,
+   "fte2026": 10.8,
+   "fte2025": 10.8,
+   "budget2026": 517713,
+   "budget2025": 500770,
+   "budgeted_dollars_per_fte_2026": 47936,
+   "budgeted_dollars_per_fte_2025": 46368
+  },
+  {
+   "title": "Artcraft Instructor (H)",
+   "job_codes": [
+    "3312"
+   ],
+   "budget_rows": 19,
+   "units": 19,
+   "fte2026": 9.0,
+   "fte2025": 8.9,
+   "budget2026": 503536,
+   "budget2025": 476594,
+   "budgeted_dollars_per_fte_2026": 55948,
+   "budgeted_dollars_per_fte_2025": 53550
+  },
+  {
+   "title": "Region Security Manager",
+   "job_codes": [
+    "5232"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 5.0,
+   "fte2025": 4.0,
+   "budget2026": 497302,
+   "budget2025": 386264,
+   "budgeted_dollars_per_fte_2026": 99460,
+   "budgeted_dollars_per_fte_2025": 96566
+  },
+  {
+   "title": "Gymnastics Instructor (H)",
+   "job_codes": [
+    "3331"
+   ],
+   "budget_rows": 4,
+   "units": 4,
+   "fte2026": 7.3,
+   "fte2025": 7.3,
+   "budget2026": 492261,
+   "budget2025": 477302,
+   "budgeted_dollars_per_fte_2026": 67433,
+   "budgeted_dollars_per_fte_2025": 65384
+  },
+  {
+   "title": "Aquatic Coach",
+   "job_codes": [
+    "3307"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 9.3,
+   "fte2025": 9.3,
+   "budget2026": 483185,
+   "budget2025": 461812,
+   "budgeted_dollars_per_fte_2026": 51955,
+   "budgeted_dollars_per_fte_2025": 49657
+  },
+  {
+   "title": "Floriculturist Foreman",
+   "job_codes": [
+    "4206"
+   ],
+   "budget_rows": 2,
+   "units": 2,
+   "fte2026": 5.0,
+   "fte2025": 5.0,
+   "budget2026": 478839,
+   "budget2025": 458666,
+   "budgeted_dollars_per_fte_2026": 95768,
+   "budgeted_dollars_per_fte_2025": 91733
+  },
+  {
+   "title": "Administrative Secretary Iii",
+   "job_codes": [
+    "1115"
+   ],
+   "budget_rows": 6,
+   "units": 6,
+   "fte2026": 6.0,
+   "fte2025": 6.0,
+   "budget2026": 466561,
+   "budget2025": 448880,
+   "budgeted_dollars_per_fte_2026": 77760,
+   "budgeted_dollars_per_fte_2025": 74813
+  },
+  {
+   "title": "Special Project Manager",
+   "job_codes": [
+    "2169"
+   ],
+   "budget_rows": 5,
+   "units": 5,
+   "fte2026": 5.0,
+   "fte2025": 3.0,
+   "budget2026": 455287,
+   "budget2025": 266938,
+   "budgeted_dollars_per_fte_2026": 91057,
+   "budgeted_dollars_per_fte_2025": 88979
+  },
+  {
+   "title": "Floriculturist, Class I (M)",
+   "job_codes": [
+    "4205"
+   ],
+   "budget_rows": 2,
+   "units": 2,
+   "fte2026": 6.0,
+   "fte2025": 6.0,
+   "budget2026": 448461,
+   "budget2025": 430002,
+   "budgeted_dollars_per_fte_2026": 74744,
+   "budgeted_dollars_per_fte_2025": 71667
+  },
+  {
+   "title": "Floricultural Worker (H)",
+   "job_codes": [
+    "4266"
+   ],
+   "budget_rows": 2,
+   "units": 2,
+   "fte2026": 8.4,
+   "fte2025": 9.1,
+   "budget2026": 428267,
+   "budget2025": 443075,
+   "budgeted_dollars_per_fte_2026": 50984,
+   "budgeted_dollars_per_fte_2025": 48690
+  },
+  {
+   "title": "Finance Coordinator",
+   "job_codes": [
+    "2157"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 6.0,
+   "fte2025": 6.0,
+   "budget2026": 427284,
+   "budget2025": 394196,
+   "budgeted_dollars_per_fte_2026": 71214,
+   "budgeted_dollars_per_fte_2025": 65699
+  },
+  {
+   "title": "Staff Assistant To Chief",
+   "job_codes": [
+    "2637"
+   ],
+   "budget_rows": 3,
+   "units": 3,
+   "fte2026": 5.0,
+   "fte2025": 4.0,
+   "budget2026": 415199,
+   "budget2025": 304168,
+   "budgeted_dollars_per_fte_2026": 83040,
+   "budgeted_dollars_per_fte_2025": 76042
+  },
+  {
+   "title": "Gardener",
+   "job_codes": [
+    "4211"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 5.0,
+   "fte2025": 5.0,
+   "budget2026": 414775,
+   "budget2025": 397772,
+   "budgeted_dollars_per_fte_2026": 82955,
+   "budgeted_dollars_per_fte_2025": 79554
+  },
+  {
+   "title": "Administrative Secretary Ii",
+   "job_codes": [
+    "1114"
+   ],
+   "budget_rows": 6,
+   "units": 6,
+   "fte2026": 6.0,
+   "fte2025": 7.0,
+   "budget2026": 396801,
+   "budget2025": 442418,
+   "budgeted_dollars_per_fte_2026": 66134,
+   "budgeted_dollars_per_fte_2025": 63203
+  },
+  {
+   "title": "Human Resources Coordinator",
+   "job_codes": [
+    "1743"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 6.0,
+   "fte2025": 6.0,
+   "budget2026": 390418,
+   "budget2025": 373527,
+   "budgeted_dollars_per_fte_2026": 65070,
+   "budgeted_dollars_per_fte_2025": 62254
+  },
+  {
+   "title": "Natural Areas Technician (M)",
+   "job_codes": [
+    "4272"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 5.0,
+   "fte2025": 5.0,
+   "budget2026": 381558,
+   "budget2025": 366883,
+   "budgeted_dollars_per_fte_2026": 76312,
+   "budgeted_dollars_per_fte_2025": 73377
+  },
+  {
+   "title": "Special Recreation Instructor (M)",
+   "job_codes": [
+    "3341"
+   ],
+   "budget_rows": 2,
+   "units": 2,
+   "fte2026": 5.0,
+   "fte2025": 6.0,
+   "budget2026": 349395,
+   "budget2025": 400368,
+   "budgeted_dollars_per_fte_2026": 69879,
+   "budgeted_dollars_per_fte_2025": 66728
+  },
+  {
+   "title": "Drama Instructor (M)",
+   "job_codes": [
+    "3329"
+   ],
+   "budget_rows": 5,
+   "units": 5,
+   "fte2026": 5.0,
+   "fte2025": 4.0,
+   "budget2026": 347185,
+   "budget2025": 269015,
+   "budgeted_dollars_per_fte_2026": 69437,
+   "budgeted_dollars_per_fte_2025": 67254
+  },
+  {
+   "title": "Life Guard Captain (H)",
+   "job_codes": [
+    "3204"
+   ],
+   "budget_rows": 1,
+   "units": 1,
+   "fte2026": 6.0,
+   "fte2025": 1.4,
+   "budget2026": 334436,
+   "budget2025": 71994,
+   "budgeted_dollars_per_fte_2026": 55739,
+   "budgeted_dollars_per_fte_2025": 51424
+  },
+  {
+   "title": "Intern (H)",
+   "job_codes": [
+    "2601"
+   ],
+   "budget_rows": 12,
+   "units": 12,
+   "fte2026": 8.0,
+   "fte2025": 9.5,
+   "budget2026": 328616,
+   "budget2025": 355437,
+   "budgeted_dollars_per_fte_2026": 41077,
+   "budgeted_dollars_per_fte_2025": 37414
+  },
+  {
+   "title": "Shallow Water Attendant (S)",
+   "job_codes": [
+    "3212"
+   ],
+   "budget_rows": 15,
+   "units": 15,
+   "fte2026": 8.1,
+   "fte2025": 8.1,
+   "budget2026": 306969,
+   "budget2025": 293978,
+   "budgeted_dollars_per_fte_2026": 37897,
+   "budgeted_dollars_per_fte_2025": 36294
+  },
+  {
+   "title": "Administrative Secretary I",
+   "job_codes": [
+    "1113"
+   ],
+   "budget_rows": 4,
+   "units": 4,
+   "fte2026": 5.0,
+   "fte2025": 4.0,
+   "budget2026": 305465,
+   "budget2025": 238284,
+   "budgeted_dollars_per_fte_2026": 61093,
+   "budgeted_dollars_per_fte_2025": 59571
+  },
+  {
+   "title": "Special Recreation Leader (Day Camp) (S)",
+   "job_codes": [
+    "3257"
+   ],
+   "budget_rows": 2,
+   "units": 2,
+   "fte2026": 7.6,
+   "fte2025": 7.6,
+   "budget2026": 279504,
+   "budget2025": 267707,
+   "budgeted_dollars_per_fte_2026": 36777,
+   "budgeted_dollars_per_fte_2025": 35225
+  },
+  {
+   "title": "Program & Event Assistant (S)",
+   "job_codes": [
+    "5617"
+   ],
+   "budget_rows": 2,
+   "units": 2,
+   "fte2026": 5.3,
+   "fte2025": 3.2,
+   "budget2026": 224823,
+   "budget2025": 129973,
+   "budgeted_dollars_per_fte_2026": 42419,
+   "budgeted_dollars_per_fte_2025": 40617
+  }
+ ],
+ "other_titles": {
+  "fte2026": 360.7,
+  "fte2025": 364.1,
+  "budget2026": 38412399,
+  "budget2025": 36984952,
+  "titles": 232
+ }
+}
