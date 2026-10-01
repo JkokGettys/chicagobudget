@@ -437,6 +437,8 @@ def leaf_split(leaf, acct, c):
                 pieces.append({"key": lab, "name": f"{names.get(lab, lab)} ({p['count']:,} people)",
                                "amount": cents(p["contribution_share_proxy"]), "basis": "proxy",
                                "count": p["count"], "unit_label": "people paid by the pension fund",
+                               # levy share per person; the actual average yearly benefit is in extra
+                               "unit_amount": cents(p["contribution_share_proxy"] / p["count"]),
                                "source": fsrc, "extra": {"official_name": p["name"], "average_annual_benefit_cents": cents(p["average"]),
                                                         "annual_benefits_cents": cents(p["annual_benefits"])},
                                "note": "The levy is one payment by law. Its share is allocated by each group's share of benefit dollars (estimate).",
@@ -527,6 +529,11 @@ def add_account(parent, unit, acct, rows, force_flat=False):
                          extra={"fund": fund_desc.get(fg, fg), "fund_code": fg, "program": prog_desc.get(pg, pg),
                                 "program_code": pg, "money_comes_from": fund_parent.get(fg, "Other funds")})
             used += c
+            if node.unit_label == "students" and node.unit_amount and c > 0:
+                # same per-student rate as the whole tuition line, applied to this program's share
+                k.count = round(c / node.unit_amount, 1)
+                k.unit_amount = node.unit_amount
+                k.unit_label = "students (share of enrollment, estimate)"
             finish_leaf(k, unit, acct, c)
         rest = total - used
         if rest != 0 or len(big) < len(rows):
@@ -996,6 +1003,9 @@ except FileNotFoundError:
 _blob = json.dumps(to_rows(root)) + json.dumps(side_rows(root))
 if "NaN" in _blob or "nan" in re.findall(r'"([^"]*)"', _blob):
     problems.append("NaN found in output")
+from treelib import cleanup  # noqa: E402
+root.rollup()
+cleanup(root)
 problems += check(root, expected_total_cents=EXPECTED, verbose=True)
 
 dr = depth_report(root)

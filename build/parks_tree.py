@@ -873,6 +873,9 @@ if os.path.isdir(_sd):
 # ---------------------------------------------------------------------------------------
 # CHECKS
 # ---------------------------------------------------------------------------------------
+from treelib import cleanup  # noqa: E402
+root.rollup()
+cleanup(root)
 problems = check(root, expected_total_cents=EXPECTED)
 # top-level amounts that should tie to the printed function totals
 FUNC_TOT = {c["id"]: cents(c["amount2026"]) for c in tree["children"]}

@@ -240,7 +240,57 @@ def apply_split_file(path, resolve, log=print):
 
 
 # ---- structure cleanup -----------------------------------------------------
-COLLAPSIBLE = {"fund", "spend_type", "org_unit", "group"}
+COLLAPSIBLE = {"fund", "spend_type", "spending_type", "org_unit", "group"}
+FUND_KID_NAMES = {
+    "Corporate Fund": "City's main fund (Corporate Fund)",
+    "Federal Grant Fund": "Federal grants",
+    "State Grant Fund": "State grants",
+    "Chicago O'Hare Airport Fund": "O'Hare airport money",
+    "Chicago Midway Airport Fund": "Midway airport money",
+    "Water Fund": "Water bills",
+    "Sewer Fund": "Sewer bills",
+    "Vehicle Tax Fund": "Vehicle sticker money (Vehicle Tax Fund)",
+    "Motor Fuel Tax Fund": "Gas tax money (Motor Fuel Tax Fund)",
+    "Library Fund": "Library money (Library Fund)",
+    "Emergency Communication Fund": "911 phone fee money (Emergency Communication Fund)",
+}
+
+
+def friendly_fund_names(root):
+    """Fund boxes become 'paid from ...' labels a kid can read; the official name stays in extra."""
+    n_changed = 0
+    for n in root.walk():
+        if n.kind == "fund":
+            off = n.extra.get("official_name") or n.name
+            n.extra["official_name"] = off
+            new = FUND_KID_NAMES.get(off)
+            if new and n.name == off:
+                n.name = f"Paid from: {new}"
+                n_changed += 1
+            elif n.name == off and not n.name.startswith("Paid from"):
+                n.name = f"Paid from: {off}"
+                n_changed += 1
+    return n_changed
+
+
+def merge_rounding(root, max_abs_cents=1000):
+    """Merge tiny rounding boxes (|amount| <= $10, name contains 'Rounding') into one per parent."""
+    merged = 0
+    for n in list(root.walk()):
+        small = [c for c in n.children if not c.children and abs(c.amount) <= max_abs_cents and "ounding" in c.name]
+        if len(small) <= 1 and not (len(small) == 1 and len(n.children) > 1 and small[0].amount == 0):
+            continue
+        keep = small[0]
+        keep.amount = sum(c.amount for c in small)
+        keep.name = "Rounding in the printed budget"
+        keep.basis = "adjustment"
+        for c in small[1:]:
+            n.children.remove(c)
+            merged += 1
+        if keep.amount == 0 and len(n.children) > 1:
+            n.children.remove(keep)
+            merged += 1
+    return merged
 
 
 def collapse_single_children(root, kinds=COLLAPSIBLE):
@@ -271,13 +321,37 @@ def collapse_single_children(root, kinds=COLLAPSIBLE):
                 c.note = n.note
             removed += 1
             changed = True
-    # re-derive ids so they still follow the path
+    # re-derive ids so they still follow the path; keep the build-time id so split files and
+    # side info that reference it can still be traced. Lifting a child can make two siblings share
+    # a last id part (e.g. several "corporate-fund" boxes under one department): prefix the removed
+    # parent's key to keep ids unique.
     def reid(node):
+        seen = set()
         for ch in node.children:
-            ch.id = f"{node.id}.{ch.id.rsplit('.', 1)[-1]}"
+            last = ch.id.rsplit('.', 1)[-1]
+            if last in seen:
+                via = ch.extra.get("via") or []
+                pre = slug(via[0]["name"], 24) if via else "x"
+                last = f"{pre}-{last}"
+                k = 2
+                while last in seen:
+                    last = f"{pre}-{k}-{ch.id.rsplit('.', 1)[-1]}"; k += 1
+            seen.add(last)
+            new = f"{node.id}.{last}"
+            if new != ch.id:
+                ch.extra.setdefault("build_id", ch.id)
+                ch.id = new
             reid(ch)
     reid(root)
     return removed
+
+
+def cleanup(root, log=print):
+    """Run after all splits: kid-friendly fund labels, merged rounding, no pointless single-child clicks."""
+    a = friendly_fund_names(root)
+    b = merge_rounding(root)
+    c = collapse_single_children(root)
+    log(f"cleanup: {a} fund labels, {b} rounding boxes merged, {c} single-child boxes removed")
 
 
 # ---- checks ---------------------------------------------------------------

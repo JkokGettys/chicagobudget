@@ -364,6 +364,57 @@ WHY_BOND = "This is one bond's yearly payment to the people who lent the money, 
 WHY_BOND_REST = "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026."
 debt_lines = [n for n in FG["debt"].walk() if not n.children and n.kind == "line"]
 n_bond = 0
+# Funds where some series are printed only as principal + interest together (Midway, Sewer 1998A):
+# put that fund's bond interest and bond principal lines under one "Bonds" box and split the box,
+# so combined series are not forced into the interest line (which made negative "difference" boxes).
+for fund_name in sorted({f for (f, k) in by_fund_kind if k == "principal_and_interest"}):
+    li = [n for n in debt_lines if n.extra["fund_name"] == fund_name and n.extra["official_name"].startswith(("For Interest on Bonds", "For Payment of Bonds"))]
+    if len(li) != 2:
+        continue
+    grp = li[0].parent
+    box = Node(f"{grp.id}.bonds", "Bonds: interest and principal together", gov="city", kind="line",
+               amount=sum(n.amount for n in li), basis="budget", source=ORD,
+               note="The budget has one line for interest and one for principal. The bond papers print some bonds "
+                    "only as one yearly payment, so the two lines are shown together here.",
+               extra={"fund_name": fund_name, "official_name": "For Interest on Bonds + For Payment of Bonds",
+                      "merged_lines": [{"name": n.extra["official_name"], "amount_cents": n.amount, "account": n.extra["account"]} for n in li]})
+    for n in li:
+        grp.children.remove(n)
+        debt_lines.remove(n)
+    grp.adopt(box)
+    ser = by_fund_kind.get((fund_name, "interest"), []) + by_fund_kind.get((fund_name, "principal"), []) \
+        + by_fund_kind.get((fund_name, "principal_and_interest"), [])
+    # combine interest + principal of the same series into one box with two children
+    by_series = defaultdict(dict)
+    for s in ser:
+        by_series[s["series"]][s["kind"]] = s
+    pcs = []
+    for sname, parts in by_series.items():
+        if "principal_and_interest" in parts:
+            s = parts["principal_and_interest"]
+            pcs.append({"key": sname, "name": f"{sname} (principal and interest)", "amount": cents(s["amount"]),
+                        "basis": "tied", "kind": "bond_series", "source": dict(BOND_SRC, cite=s.get("cite")),
+                        "why": WHY_BOND if cents(s["amount"]) >= 1_000_000_000 else None})
+        else:
+            tot_s = sum(cents(p["amount"]) for p in parts.values())
+            pcs.append({"key": sname, "name": sname, "amount": tot_s, "basis": "tied", "kind": "bond_series",
+                        "source": BOND_SRC})
+    made = split(box, pcs, residual_name="Other bonds (not printed one by one)", residual_why=WHY_BOND_REST, allow_over=True)
+    for m in made:
+        if m.id.endswith(".difference"):
+            m.name = "Bond papers list more than the budget (older bonds paid off early)"
+            m.note = ("The bond papers were printed before some older bonds were paid off early in 2025 "
+                      "(research/bond_series.md), so the bonds listed add up to a bit more than the 2026 budget line. "
+                      "This negative box keeps the total equal to the budget.")
+        parts = by_series.get(m.name, {})
+        if m.kind == "bond_series" and "principal_and_interest" not in parts and len(parts) == 2:
+            for kk in ("principal", "interest"):
+                m.add(kk, kk.title(), amount=cents(parts[kk]["amount"]), basis="tied", kind="bond_part",
+                      source=dict(BOND_SRC, cite=parts[kk].get("cite")))
+    n_bond += 1
+    for k in list(by_fund_kind):
+        if k[0] == fund_name and k[1] in ("interest", "principal", "principal_and_interest"):
+            del by_fund_kind[k]
 for line in debt_lines:
     fund = line.extra["fund_name"]
     d = line.extra["official_name"]
@@ -563,10 +614,56 @@ DEFAULT_WHY = {
     "Other worker pay and benefits": "This is one budget amount for a kind of worker pay, and the City does not publish it split into smaller pieces.",
     "Programs and other costs": "The budget gives this program one amount and does not list what each piece of it buys.",
 }
+# Sentences chosen by what the line actually is (account name), checked before the generic ones.
+WHY_BY_ACCOUNT = [
+    (("Delegate Agencies",), "This money goes out as grants to many neighborhood nonprofits. The budget gives one total, and the list of which group gets what is decided during the year."),
+    (("Rehabilitation Loans and Grants", "Loans and Grants", "Loan"), "This money is lent or granted to many homeowners and builders during the year, so the budget can only give one total."),
+    (("Emergency Medical Transportation",), "This pays for ambulance trips and their billing for the whole year, so it is one total in the budget, not a list of trips."),
+    (("Scheduled Wage Adjustments",), "This is money set aside for raises and back pay in union contracts. Who gets how much is worked out when the contracts are settled, so the budget only shows one total."),
+    (("Professional and Technical Services",), "This pays outside experts and companies for many different jobs. The budget gives one amount, and the City does not publish which contract each dollar of this line pays for."),
+    (("Information Technology",), "This pays for computer systems and their upkeep. The budget gives one amount, and the City does not list each system's cost on this line."),
+    (("Electricity", "Natural Gas", "Water", "Fuel", "Gasoline", "Diesel"), "This is a utility or fuel bill for the whole year. It is paid as it is used, so the budget only gives one total."),
+    (("Material and Supplies", "Supplies"), "This buys supplies all year long in many small orders, so the budget only gives one total."),
+    (("Rental of Equipment", "Repair/Maintenance", "Repair or Maintenance", "Maintenance of Equipment"), "This pays for renting and fixing equipment and buildings as needs come up during the year, so the budget only gives one total."),
+    (("Construction of Buildings", "Construction"), "This is money for building projects. Payments so far this year do not match it to one company yet, and the City does not publish a project-by-project list with this line."),
+    (("For Payment of Bonds",), "This pays back the main amount of money the City borrowed through bonds this year. The bonds behind this line are not printed one by one in the public papers we found."),
+    (("For Interest on Bonds",), "This is the interest the City pays this year to the people who lent it money through bonds. The bonds behind this line are not printed one by one in the public papers we found."),
+    (("Claims", "Judgments"), "This pays legal claims and court judgments as they are settled during the year, so the budget only gives one total."),
+    (("Insurance",), "This pays insurance bills for the whole year, so the budget gives one total."),
+    (("Reserve Balance",), "The City has promises of grant money for this program, but it has not published which projects each dollar will pay for yet."),
+    (("Net Proceeds of the Real Property Transfer Tax - CTA",), "This is the CTA's share of a tax people pay when they sell a home or building. The City passes it straight to the CTA, so there is nothing smaller to show here."),
+    (("Salary Provision",), "This is pay set aside for jobs and pay changes that are not yet tied to a specific job title, so the budget only shows one total."),
+    (("Fire Stations and Training Facilities",), "This is one fund for fixing and improving fire stations and training buildings. The list of which station gets what is decided during the year."),
+    (("Property Maintenance Contract",), "This is one yearly contract to run and maintain the building. The contract does not split its price into smaller public pieces."),
+]
+WHY_BY_KIND = {
+    "bond_part": "This is one bond's yearly interest or principal payment, already as small as the bond itself.",
+}
+WHY_ADJ = {
+    "Budgeted turnover": "This is a planned saving: the budget expects some jobs to be empty for part of the year, so it subtracts the pay it will not need.",
+    "Adjustment the budget office": "The official total subtracts this much more than we could match to any budget line. We asked how it is figured and show it here so the boxes add up to the official total.",
+    "Budgeted vacancy savings": "This is this division's share of the planned saving from jobs that will be empty for part of the year.",
+    "Less Corporate Fund Savings": "This is a planned saving the budget subtracts from the City's main fund.",
+    "Bond papers list more": "The bond papers were printed before some older bonds were paid off early, so they list a little more than the budget. This box keeps the total equal to the budget.",
+}
+
+
+def why_for(n, st):
+    nm = (n.extra or {}).get("official_name") or n.name
+    for keys, sentence in WHY_BY_ACCOUNT:
+        if any(k.lower() in nm.lower() for k in keys):
+            return sentence
+    return DEFAULT_WHY.get(st)
+
+
 for n in city.walk():
-    if n.children or n.why or n.amount is None or abs(n.amount) < 1_000_000_000:
+    if n.children or n.amount is None or abs(n.amount) < 1_000_000_000:
         continue
     if n.eff("basis") == "adjustment":
+        if not n.why:
+            n.why = next((s for k, s in WHY_ADJ.items() if n.name.startswith(k)), None)
+        continue
+    if n.why:
         continue
     if n.kind in ("pay_rate", "job_title") and n.count:
         n.why = (f"These are {n.count:,.0f} {n.unit_label or 'positions'} paid the same rate. Each one is well under "
@@ -575,10 +672,27 @@ for n in city.walk():
     if n.kind == "bond_series":
         n.why = WHY_BOND
         continue
+    if n.kind in WHY_BY_KIND:
+        n.why = WHY_BY_KIND[n.kind]
+        continue
+    if n.name == "For Payment of Bonds" and n.extra.get("fund") == "0100":
+        n.why = ("This is money from the City's main fund that pays part of the City's general bonds. The same "
+                 "bonds are listed under the bond fund, so this line is the main fund's share.")
+        continue
+    if n.name.startswith("Less Corporate Fund Savings"):
+        n.why = WHY_ADJ["Less Corporate Fund Savings"]
+        continue
     st = n.parent.parent.name if n.parent is not None and n.parent.parent is not None else ""
-    n.why = why_by_path.get((n.extra or {}).get("inv_path", "")) \
-        or DEFAULT_WHY.get(st) \
-        or "The public budget lists this as one amount, and we could not find public records that split it further."
+    # specific-by-account sentences first; the inventory's sentence is used only when it was written
+    # for this same line, then generic ones.
+    inv = why_by_path.get((n.extra or {}).get("inv_path", ""))
+    n.why = why_for(n, st) if (n.kind == "line") else (inv or why_for(n, st))
+    n.why = n.why or inv or "The public budget lists this as one amount, and we could not find public records that split it further."
+
+# ---------------------------------------------------------------- cleanup (after all splits)
+from treelib import cleanup  # noqa: E402
+city.rollup()
+cleanup(city)
 
 # ---------------------------------------------------------------- checks + save
 twice.rollup()
