@@ -1,0 +1,170 @@
+{
+ "meta": {
+  "generated_by": "scripts/leaves_wages.py",
+  "sources_fetched": [
+   {
+    "url": "https://data.cityofchicago.org/resource/dawh-m56b.json (aggregate by appropriation, department, title)",
+    "http_status": "200 at round 2",
+    "note": "raw/leaves/payroll_2025_approp_dept_title.json"
+   },
+   {
+    "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026Mid-YearBudgetReport.pdf",
+    "http_status": 200,
+    "note": "overtime by department table p.45"
+   }
+  ]
+ },
+ "leaves": [
+  {
+   "match_path_contains": [
+    "Chicago Fire Department",
+    "0003"
+   ],
+   "amount": 97974157,
+   "proposed_status": "split_proxy",
+   "split_basis": "PROXY. 2025 actual pay on account 0003 for 39 Fire job titles (under Finance General, payroll costing dawh-m56b) was $208.9M. It was back pay and lump sums after the 2025 Fire contract, not scheduled raises. 2026 amounts are not yet paid out by title.",
+   "pieces": [
+    {
+     "name": "FIREFIGHTER-EMT",
+     "count": 1815,
+     "average": 37819,
+     "amount": 68640854,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "LIEUTENANT-EMT",
+     "count": 609,
+     "average": 48252,
+     "amount": 29385749,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "FIRE ENGINEER-EMT",
+     "count": 469,
+     "average": 45018,
+     "amount": 21113563,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "PARAMEDIC",
+     "count": 438,
+     "average": 29345,
+     "amount": 12853255,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "PARAMEDIC I/C",
+     "count": 313,
+     "average": 40996,
+     "amount": 12831903,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "FIREFIGHTER/PARAMEDIC",
+     "count": 293,
+     "average": 41961,
+     "amount": 12294470,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "CAPTAIN-EMT",
+     "count": 212,
+     "average": 57468,
+     "amount": 12183263,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "FIREFIGHTER-EMT (RECRUIT)",
+     "count": 494,
+     "average": 15856,
+     "amount": 7833093,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "31 other job titles",
+     "count": 728,
+     "amount": 31774007,
+     "basis": "count_x_average"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "This is money set aside for firefighter raises and back pay under a new contract, and nobody can say yet which firefighters will get how much."
+  },
+  {
+   "match_path_contains": [
+    "Chicago Police Department",
+    "0020",
+    "Overtime"
+   ],
+   "amount": 200000000,
+   "proposed_status": "split_proxy",
+   "split_basis": "PROXY. 2025 actual Police overtime was $236.3M over 51 job titles (payroll costing dawh-m56b). Count x average, e.g. 7,370 police officers x $19,005. 2026 mid-year report: CPD budget $203.9M, $59.5M spent through period 5 (29.2%).",
+   "pieces": [
+    {
+     "name": "POLICE OFFICER",
+     "count": 7370,
+     "average": 19005,
+     "amount": 140065095,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "SERGEANT",
+     "count": 1327,
+     "average": 26440,
+     "amount": 35085785,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "POLICE OFFICER (ASSIGNED AS DETECTIVE)",
+     "count": 1157,
+     "average": 23584,
+     "amount": 27287083,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "POLICE OFFICER / FLD TRNG OFFICER",
+     "count": 385,
+     "average": 19866,
+     "amount": 7648286,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "LIEUTENANT",
+     "count": 279,
+     "average": 26319,
+     "amount": 7342927,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "DETENTION AIDE",
+     "count": 155,
+     "average": 26451,
+     "amount": 4099845,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "POLICE OFFICER (ASSIGNED AS EVIDENCE TECHNICIAN)",
+     "count": 124,
+     "average": 25987,
+     "amount": 3222418,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "POLICE OFFICER (ASSIGNED AS (SWAT)",
+     "count": 64,
+     "average": 45207,
+     "amount": 2893235,
+     "basis": "count_x_average"
+    },
+    {
+     "name": "43 other job titles",
+     "count": 438,
+     "amount": 8614167,
+     "basis": "count_x_average"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "Officers earn overtime when extra work comes up, so the total depends on how many extra hours were worked, and the City reports totals by job, not by person."
+  }
+ ]
+}

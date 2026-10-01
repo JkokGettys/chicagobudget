@@ -1,0 +1,1906 @@
+{
+ "meta": {
+  "generated_by": "scripts/leaves_contracts.py",
+  "basis": "2025 Payments s4vu-giwb (raw/city_payments_2025.csv), a voucher is one check (sum of its lines). Revision history from Contracts rsxa-ify5.",
+  "sources_fetched": [
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=283596&%24limit=100",
+    "http_status": 200,
+    "revisions": 2
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=234083&%24limit=100",
+    "http_status": 200,
+    "revisions": 5
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=265292&%24limit=100",
+    "http_status": 200,
+    "revisions": 2
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=198906&%24limit=100",
+    "http_status": 200,
+    "revisions": 1
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=25743&%24limit=100",
+    "http_status": 200,
+    "revisions": 13
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=111685&%24limit=100",
+    "http_status": 200,
+    "revisions": 3
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=174908&%24limit=100",
+    "http_status": 200,
+    "revisions": 1
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=69568&%24limit=100",
+    "http_status": 200,
+    "revisions": 3
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=47314&%24limit=100",
+    "http_status": 200,
+    "revisions": 7
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=101451&%24limit=100",
+    "http_status": 200,
+    "revisions": 3
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=52685&%24limit=100",
+    "http_status": 200,
+    "revisions": 5
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=190841&%24limit=100",
+    "http_status": 200,
+    "revisions": 1
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=27075&%24limit=100",
+    "http_status": 200,
+    "revisions": 16
+   },
+   {
+    "url": "https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=176561&%24limit=100",
+    "http_status": 200,
+    "revisions": 5
+   }
+  ],
+  "vendor_contract_items_ge_10m": 122,
+  "vouchers_still_ge_10m": 52,
+  "vouchers_ge_10m_dollars": 1152099587,
+  "caveat": "Payments are 2025 checks, not 2026 budget. A voucher at or above $10M cannot be split further with public data."
+ },
+ "voucher_floor": {
+  "282009": {
+   "vendor": "NEW CITY REDEVELOPMENT, LP",
+   "paid_2025_item": 21066667,
+   "paid_2025_vouchers": 21066667,
+   "n_vouchers": 3,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PVCI25CI303025",
+     "amount": 11400000.0,
+     "check_date": "10/01/2025"
+    }
+   ],
+   "largest_voucher": 11400000.0
+  },
+  "233859": {
+   "vendor": "BLUE CROSS & BLUE SHIELD",
+   "paid_2025_item": 505793102,
+   "paid_2025_vouchers": 505793102,
+   "n_vouchers": 17,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PVCI25CI304067",
+     "amount": 43573595.08,
+     "check_date": "12/18/2025"
+    },
+    {
+     "voucher": "PVCI25CI302837",
+     "amount": 41605816.45,
+     "check_date": "09/19/2025"
+    },
+    {
+     "voucher": "PVCI24CI304897",
+     "amount": 41120709.94,
+     "check_date": "02/07/2025"
+    },
+    {
+     "voucher": "PVCI25CI302499",
+     "amount": 39612357.64,
+     "check_date": "08/26/2025"
+    },
+    {
+     "voucher": "PVCI25CI300311",
+     "amount": 38864008.85,
+     "check_date": "03/14/2025"
+    },
+    {
+     "voucher": "PVCI25CI300550",
+     "amount": 38585544.67,
+     "check_date": "04/08/2025"
+    },
+    {
+     "voucher": "PVCI25CI302243",
+     "amount": 37646681.99,
+     "check_date": "08/04/2025"
+    },
+    {
+     "voucher": "PVCI24CI304899",
+     "amount": 36304008.3,
+     "check_date": "02/07/2025"
+    },
+    {
+     "voucher": "PVCI25CI301605",
+     "amount": 35591088.06,
+     "check_date": "06/20/2025"
+    },
+    {
+     "voucher": "PVCI25CI301006",
+     "amount": 35514479.13,
+     "check_date": "05/02/2025"
+    },
+    {
+     "voucher": "PVCI25CI300668",
+     "amount": 34213466.07,
+     "check_date": "04/10/2025"
+    },
+    {
+     "voucher": "PVCI25CI301407",
+     "amount": 33783645.88,
+     "check_date": "06/03/2025"
+    },
+    {
+     "voucher": "PVCI24CI304898",
+     "amount": 28519910.91,
+     "check_date": "02/07/2025"
+    },
+    {
+     "voucher": "PVCI25CI303213",
+     "amount": 18979209.16,
+     "check_date": "10/20/2025"
+    }
+   ],
+   "largest_voucher": 43573595.08
+  },
+  "136811": {
+   "vendor": "CAREMARK INC",
+   "paid_2025_item": 129568901,
+   "paid_2025_vouchers": 129568901,
+   "n_vouchers": 42,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PVCI25CI300308",
+     "amount": 19890640.93,
+     "check_date": "03/13/2025"
+    },
+    {
+     "voucher": "PVCI25CI303990",
+     "amount": 15762555.42,
+     "check_date": "12/15/2025"
+    },
+    {
+     "voucher": "PVCI25CI304063",
+     "amount": 15024130.01,
+     "check_date": "12/18/2025"
+    }
+   ],
+   "largest_voucher": 19890640.93
+  },
+  "32227": {
+   "vendor": "BLUE CROSS & BLUE SHIELD",
+   "paid_2025_item": 85873818,
+   "paid_2025_vouchers": 85873818,
+   "n_vouchers": 13,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 7830781.88
+  },
+  "217753": {
+   "vendor": "BLUE CROSS & BLUE SHIELD",
+   "paid_2025_item": 18316826,
+   "paid_2025_vouchers": 18316826,
+   "n_vouchers": 25,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1501885.48
+  },
+  "89433": {
+   "vendor": "CONNECTYOURCARE, LLC",
+   "paid_2025_item": 10866224,
+   "paid_2025_vouchers": 10866224,
+   "n_vouchers": 43,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1795531.29
+  },
+  "167326": {
+   "vendor": "KYNDRYL, INC.",
+   "paid_2025_item": 25373985,
+   "paid_2025_vouchers": 25373985,
+   "n_vouchers": 31,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2522245.55
+  },
+  "29885": {
+   "vendor": "WORLDPAY HOLDING, LLC",
+   "paid_2025_item": 18709672,
+   "paid_2025_vouchers": 18709672,
+   "n_vouchers": 10,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 6297966.5
+  },
+  "26625": {
+   "vendor": "NTT DATA AMERICAS, INC",
+   "paid_2025_item": 10003696,
+   "paid_2025_vouchers": 10003696,
+   "n_vouchers": 29,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1932351.27
+  },
+  "DV|USI INSURANCE SERVICES LLC.": {
+   "vendor": "USI INSURANCE SERVICES LLC.",
+   "paid_2025_item": 16565014,
+   "paid_2025_vouchers": 31138883,
+   "n_vouchers": 23,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV31253100001",
+     "amount": 14095420.0,
+     "check_date": "01/24/2025"
+    },
+    {
+     "voucher": "PV27242780628",
+     "amount": 10942513.0,
+     "check_date": "02/05/2025"
+    }
+   ],
+   "largest_voucher": 14095420.0
+  },
+  "263110": {
+   "vendor": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC",
+   "paid_2025_item": 25396118,
+   "paid_2025_vouchers": 25396118,
+   "n_vouchers": 83,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2150466.14
+  },
+  "101191": {
+   "vendor": "SUTTON FORD, INC.",
+   "paid_2025_item": 25018157,
+   "paid_2025_vouchers": 25018157,
+   "n_vouchers": 109,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 5925829.54
+  },
+  "171184": {
+   "vendor": "FIRE SERVICE INC",
+   "paid_2025_item": 13162279,
+   "paid_2025_vouchers": 13162279,
+   "n_vouchers": 40,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2030987.0
+  },
+  "32877": {
+   "vendor": "REFUSE & RECYCLING NEEDS OF WI",
+   "paid_2025_item": 11501514,
+   "paid_2025_vouchers": 11501514,
+   "n_vouchers": 9,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3576660.0
+  },
+  "295220": {
+   "vendor": "SECURITAS SECURITY SERVICES, USA, INC.",
+   "paid_2025_item": 15461763,
+   "paid_2025_vouchers": 15461763,
+   "n_vouchers": 104,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 679098.29
+  },
+  "87516": {
+   "vendor": "ABM INDUSTRY GROUPS, LLC",
+   "paid_2025_item": 13631748,
+   "paid_2025_vouchers": 13631748,
+   "n_vouchers": 100,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 352654.71
+  },
+  "134953": {
+   "vendor": "TRANE U.S. INC",
+   "paid_2025_item": 10466180,
+   "paid_2025_vouchers": 10466180,
+   "n_vouchers": 264,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1614929.25
+  },
+  "129972": {
+   "vendor": "COLONIAL OIL INDUSTRIES, INC.",
+   "paid_2025_item": 16308457,
+   "paid_2025_vouchers": 16308457,
+   "n_vouchers": 201,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 362606.06
+  },
+  "129971": {
+   "vendor": "COLONIAL OIL INDUSTRIES, INC.",
+   "paid_2025_item": 12409840,
+   "paid_2025_vouchers": 12409840,
+   "n_vouchers": 162,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 294847.11
+  },
+  "173521": {
+   "vendor": "PUBLIC BUILDING COMMISSION CHICAGO",
+   "paid_2025_item": 23396612,
+   "paid_2025_vouchers": 23396612,
+   "n_vouchers": 2,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV38253800644",
+     "amount": 12588081.14,
+     "check_date": "09/24/2025"
+    },
+    {
+     "voucher": "PV38243801170",
+     "amount": 10808530.49,
+     "check_date": "01/15/2025"
+    }
+   ],
+   "largest_voucher": 12588081.14
+  },
+  "126170": {
+   "vendor": "ENTERPRISE FLEET MANAGEMENT, INC",
+   "paid_2025_item": 12313301,
+   "paid_2025_vouchers": 12313301,
+   "n_vouchers": 165,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 596774.17
+  },
+  "186191": {
+   "vendor": "GENUINE PARTS COMPANY",
+   "paid_2025_item": 38988134,
+   "paid_2025_vouchers": 38988134,
+   "n_vouchers": 265,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3206866.02
+  },
+  "33959": {
+   "vendor": "CBRE INC.",
+   "paid_2025_item": 25222661,
+   "paid_2025_vouchers": 25222661,
+   "n_vouchers": 23,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2091713.9
+  },
+  "224888": {
+   "vendor": "TRANSWESTERN COMMERCIAL SERVICES, LLC.",
+   "paid_2025_item": 19890075,
+   "paid_2025_vouchers": 19890075,
+   "n_vouchers": 178,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1889470.28
+  },
+  "198906": {
+   "vendor": "CONSTELLATION NEWENERGY INC",
+   "paid_2025_item": 92249309,
+   "paid_2025_vouchers": 92249309,
+   "n_vouchers": 26,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV38253800675",
+     "amount": 11411702.7,
+     "check_date": "10/09/2025"
+    },
+    {
+     "voucher": "PV38243801301",
+     "amount": 10692897.81,
+     "check_date": "02/27/2025"
+    }
+   ],
+   "largest_voucher": 11411702.7
+  },
+  "176561": {
+   "vendor": "MANSFIELD POWER & GAS, LLC",
+   "paid_2025_item": 25334628,
+   "paid_2025_vouchers": 25334628,
+   "n_vouchers": 23,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3380498.37
+  },
+  "296396": {
+   "vendor": "K.L.E.O. COMMUNITY FAMILY LIFE CENTER",
+   "paid_2025_item": 27621649,
+   "paid_2025_vouchers": 27621649,
+   "n_vouchers": 26,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2639365.48
+  },
+  "174551": {
+   "vendor": "OPEN KITCHENS, INC.",
+   "paid_2025_item": 19518970,
+   "paid_2025_vouchers": 19518970,
+   "n_vouchers": 56,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 450524.78
+  },
+  "174286": {
+   "vendor": "ALL CHICAGO MAKING HOMELESSNESS HISTORY",
+   "paid_2025_item": 17063967,
+   "paid_2025_vouchers": 17063967,
+   "n_vouchers": 84,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1368963.98
+  },
+  "296394": {
+   "vendor": "Equitable Social Solutions, LLC",
+   "paid_2025_item": 11552256,
+   "paid_2025_vouchers": 11552256,
+   "n_vouchers": 14,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1227580.76
+  },
+  "309139": {
+   "vendor": "AFTER-SCHOOL MATTERS, INC.",
+   "paid_2025_item": 10842081,
+   "paid_2025_vouchers": 10842081,
+   "n_vouchers": 66,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 656459.66
+  },
+  "246965": {
+   "vendor": "BELL HELICOPTER-TEXTRON",
+   "paid_2025_item": 11879683,
+   "paid_2025_vouchers": 11879683,
+   "n_vouchers": 1,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PVCI24CI706324",
+     "amount": 11879683.0,
+     "check_date": "02/03/2025"
+    }
+   ],
+   "largest_voucher": 11879683.0
+  },
+  "115455": {
+   "vendor": "CHICAGO TRANSITY AUTHORITY.",
+   "paid_2025_item": 41000000,
+   "paid_2025_vouchers": 41000000,
+   "n_vouchers": 1,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PVCI25CI300968",
+     "amount": 41000000.0,
+     "check_date": "04/29/2025"
+    }
+   ],
+   "largest_voucher": 41000000.0
+  },
+  "279963": {
+   "vendor": "BOARD OF EDUCATION OF THE CITY OF CHICAGO",
+   "paid_2025_item": 34140391,
+   "paid_2025_vouchers": 34140391,
+   "n_vouchers": 3,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PVCI25CI302164",
+     "amount": 19699801.65,
+     "check_date": "07/28/2025"
+    }
+   ],
+   "largest_voucher": 19699801.65
+  },
+  "232050": {
+   "vendor": "K.L.E.O. COMMUNITY FAMILY LIFE CENTER",
+   "paid_2025_item": 18000000,
+   "paid_2025_vouchers": 18000000,
+   "n_vouchers": 2,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 9000000.0
+  },
+  "3718": {
+   "vendor": "SOMERCOR 504, INC.",
+   "paid_2025_item": 15614897,
+   "paid_2025_vouchers": 15614897,
+   "n_vouchers": 79,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 863726.73
+  },
+  "312706": {
+   "vendor": "HEART OF UPTOWN APARTMENTS LLC",
+   "paid_2025_item": 13500000,
+   "paid_2025_vouchers": 13500000,
+   "n_vouchers": 3,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 4500000.0
+  },
+  "270585": {
+   "vendor": "YELLOW BANANA LLC.",
+   "paid_2025_item": 13492500,
+   "paid_2025_vouchers": 13492500,
+   "n_vouchers": 4,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 5653125.0
+  },
+  "176580": {
+   "vendor": "CHICAGO LOW-INCOME HOUSING TRUST FUND",
+   "paid_2025_item": 13447472,
+   "paid_2025_vouchers": 13447472,
+   "n_vouchers": 2,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 7718646.96
+  },
+  "299798": {
+   "vendor": "1237 N. California 9PCT HHDC, LP",
+   "paid_2025_item": 11909024,
+   "paid_2025_vouchers": 11909024,
+   "n_vouchers": 8,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 4934601.51
+  },
+  "192442": {
+   "vendor": "CHICAGO PARK DISTRICT",
+   "paid_2025_item": 10723443,
+   "paid_2025_vouchers": 10723443,
+   "n_vouchers": 2,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 7263443.3
+  },
+  "321207": {
+   "vendor": "TIMELINE THEATRE COMPANY",
+   "paid_2025_item": 10534053,
+   "paid_2025_vouchers": 10534053,
+   "n_vouchers": 2,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 6159485.5
+  },
+  "305561": {
+   "vendor": "EXECUTIVE CONSTRUCTION INC",
+   "paid_2025_item": 10461783,
+   "paid_2025_vouchers": 10461783,
+   "n_vouchers": 8,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3499247.64
+  },
+  "60663": {
+   "vendor": "AXON ENTERPRISE INC",
+   "paid_2025_item": 13236817,
+   "paid_2025_vouchers": 13236817,
+   "n_vouchers": 5,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 7828080.0
+  },
+  "66808": {
+   "vendor": "MOTOROLA SOLUTIONS INC",
+   "paid_2025_item": 17435429,
+   "paid_2025_vouchers": 17435429,
+   "n_vouchers": 33,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3016538.0
+  },
+  "33232": {
+   "vendor": "CDW GOVERNMENT, LLC.",
+   "paid_2025_item": 70074019,
+   "paid_2025_vouchers": 70074019,
+   "n_vouchers": 610,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV06250600001",
+     "amount": 11679750.87,
+     "check_date": "03/05/2025"
+    }
+   ],
+   "largest_voucher": 11679750.87
+  },
+  "93627": {
+   "vendor": "SDI PRESENCE LLC",
+   "paid_2025_item": 38538014,
+   "paid_2025_vouchers": 38538014,
+   "n_vouchers": 144,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1589221.58
+  },
+  "117688": {
+   "vendor": "VERIZON WIRELESS",
+   "paid_2025_item": 12909188,
+   "paid_2025_vouchers": 12909188,
+   "n_vouchers": 160,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2439445.78
+  },
+  "303489": {
+   "vendor": "AT&T Enterprises, LLC",
+   "paid_2025_item": 12456264,
+   "paid_2025_vouchers": 12456264,
+   "n_vouchers": 491,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1058987.5
+  },
+  "151329": {
+   "vendor": "LAKESHORE RECYCLING SYSTEMS",
+   "paid_2025_item": 29001596,
+   "paid_2025_vouchers": 29001596,
+   "n_vouchers": 12,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2417826.78
+  },
+  "247181": {
+   "vendor": "ALLIED WASTE TRANSPORTATION INC",
+   "paid_2025_item": 25279503,
+   "paid_2025_vouchers": 25279503,
+   "n_vouchers": 36,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1191645.37
+  },
+  "110168": {
+   "vendor": "ALLIED WASTE TRANSPORTATION INC",
+   "paid_2025_item": 20817544,
+   "paid_2025_vouchers": 20817544,
+   "n_vouchers": 12,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 7635934.67
+  },
+  "283596": {
+   "vendor": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC",
+   "paid_2025_item": 102144225,
+   "paid_2025_vouchers": 102144225,
+   "n_vouchers": 7,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV84258440420",
+     "amount": 90000000.0,
+     "check_date": "06/17/2025"
+    }
+   ],
+   "largest_voucher": 90000000.0
+  },
+  "234083": {
+   "vendor": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC",
+   "paid_2025_item": 28690588,
+   "paid_2025_vouchers": 28690588,
+   "n_vouchers": 12,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 6968691.3
+  },
+  "265292": {
+   "vendor": "BIGANE PAVING COMPANY",
+   "paid_2025_item": 23323216,
+   "paid_2025_vouchers": 23323216,
+   "n_vouchers": 60,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3651214.56
+  },
+  "310789": {
+   "vendor": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC",
+   "paid_2025_item": 22993921,
+   "paid_2025_vouchers": 22993921,
+   "n_vouchers": 3,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV84258440649",
+     "amount": 12816000.0,
+     "check_date": "06/25/2025"
+    }
+   ],
+   "largest_voucher": 12816000.0
+  },
+  "244632": {
+   "vendor": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC",
+   "paid_2025_item": 20859308,
+   "paid_2025_vouchers": 20859308,
+   "n_vouchers": 13,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3023664.18
+  },
+  "167516": {
+   "vendor": "M.Q. SEWER & WATER CONTRACTORS",
+   "paid_2025_item": 19799611,
+   "paid_2025_vouchers": 19799611,
+   "n_vouchers": 29,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2384235.82
+  },
+  "187342": {
+   "vendor": "BIGANE PAVING COMPANY",
+   "paid_2025_item": 17401589,
+   "paid_2025_vouchers": 17401589,
+   "n_vouchers": 25,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1888935.8
+  },
+  "170884": {
+   "vendor": "G & V CONSTRUCTION COMPANY, INC.",
+   "paid_2025_item": 15795964,
+   "paid_2025_vouchers": 15795964,
+   "n_vouchers": 34,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2418876.59
+  },
+  "169014": {
+   "vendor": "SUMIT CONSTRUCTION CO., INC.",
+   "paid_2025_item": 15547335,
+   "paid_2025_vouchers": 15547335,
+   "n_vouchers": 23,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3041087.13
+  },
+  "211302": {
+   "vendor": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC",
+   "paid_2025_item": 15526366,
+   "paid_2025_vouchers": 15526366,
+   "n_vouchers": 11,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 4688642.92
+  },
+  "265294": {
+   "vendor": "MAT CONSTRUCTION LEASING, INC.",
+   "paid_2025_item": 15502296,
+   "paid_2025_vouchers": 15502296,
+   "n_vouchers": 33,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 4038999.96
+  },
+  "257879": {
+   "vendor": "CAPITOL CEMENT CO INC 01",
+   "paid_2025_item": 15454223,
+   "paid_2025_vouchers": 15454223,
+   "n_vouchers": 12,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2474395.62
+  },
+  "265293": {
+   "vendor": "BIGANE PAVING COMPANY",
+   "paid_2025_item": 14443583,
+   "paid_2025_vouchers": 14443583,
+   "n_vouchers": 44,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1875296.04
+  },
+  "144546": {
+   "vendor": "CITY LIGHTS, LIMITED/ZSL ELECTRIC",
+   "paid_2025_item": 13757332,
+   "paid_2025_vouchers": 13757332,
+   "n_vouchers": 80,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 827112.74
+  },
+  "144545": {
+   "vendor": "JOHN BURNS CONSTRUCTION CO.",
+   "paid_2025_item": 13478344,
+   "paid_2025_vouchers": 13478344,
+   "n_vouchers": 87,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1103665.98
+  },
+  "265295": {
+   "vendor": "MAT CONSTRUCTION LEASING, INC.",
+   "paid_2025_item": 11836456,
+   "paid_2025_vouchers": 11836456,
+   "n_vouchers": 59,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1501440.19
+  },
+  "299159": {
+   "vendor": "GRANITE CONSTRUCTION COMPANY.",
+   "paid_2025_item": 10576040,
+   "paid_2025_vouchers": 10576040,
+   "n_vouchers": 4,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 7430640.0
+  },
+  "91165": {
+   "vendor": "OZINGA READY MIX CONCRETE INC",
+   "paid_2025_item": 16955283,
+   "paid_2025_vouchers": 16955283,
+   "n_vouchers": 207,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 374779.8
+  },
+  "224798": {
+   "vendor": "Ogden Avenue Materials, Inc",
+   "paid_2025_item": 11034077,
+   "paid_2025_vouchers": 11034077,
+   "n_vouchers": 13,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1857080.07
+  },
+  "224791": {
+   "vendor": "RELIABLE ASPHALT CORP.",
+   "paid_2025_item": 10731502,
+   "paid_2025_vouchers": 10731502,
+   "n_vouchers": 18,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2160986.95
+  },
+  "47314": {
+   "vendor": "TRANSYSTEMS CORPORATION",
+   "paid_2025_item": 37211775,
+   "paid_2025_vouchers": 37211775,
+   "n_vouchers": 36,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3971833.47
+  },
+  "52685": {
+   "vendor": "CNECT LLC",
+   "paid_2025_item": 34100144,
+   "paid_2025_vouchers": 34100144,
+   "n_vouchers": 58,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3223457.54
+  },
+  "98065": {
+   "vendor": "TURNER PASCHEN AVIATION PARTNERS",
+   "paid_2025_item": 122314824,
+   "paid_2025_vouchers": 122314824,
+   "n_vouchers": 74,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 8765378.22
+  },
+  "98447": {
+   "vendor": "AECOM HUNT / CLAYCO, A JOINT VENTURE",
+   "paid_2025_item": 121981274,
+   "paid_2025_vouchers": 121981274,
+   "n_vouchers": 47,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PVCI25CI404503",
+     "amount": 14287038.86,
+     "check_date": "12/19/2025"
+    },
+    {
+     "voucher": "PVCI25CI403147",
+     "amount": 11754616.91,
+     "check_date": "10/02/2025"
+    },
+    {
+     "voucher": "PVCI25CI404055",
+     "amount": 11083310.74,
+     "check_date": "11/20/2025"
+    }
+   ],
+   "largest_voucher": 14287038.86
+  },
+  "234140": {
+   "vendor": "CLARK-W.E. ONEIL JV",
+   "paid_2025_item": 105189358,
+   "paid_2025_vouchers": 105189358,
+   "n_vouchers": 51,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PVCI25CI401908",
+     "amount": 14047604.61,
+     "check_date": "07/17/2025"
+    },
+    {
+     "voucher": "PVCI25CI404422",
+     "amount": 10551254.79,
+     "check_date": "12/17/2025"
+    },
+    {
+     "voucher": "PVCI25CI404014",
+     "amount": 10497227.67,
+     "check_date": "11/19/2025"
+    },
+    {
+     "voucher": "PVCI25CI403194",
+     "amount": 10153613.14,
+     "check_date": "10/15/2025"
+    }
+   ],
+   "largest_voucher": 14047604.61
+  },
+  "263824": {
+   "vendor": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC",
+   "paid_2025_item": 103681185,
+   "paid_2025_vouchers": 103681185,
+   "n_vouchers": 15,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV85258597250",
+     "amount": 20832422.8,
+     "check_date": "10/16/2025"
+    },
+    {
+     "voucher": "PV85258599180",
+     "amount": 14308058.62,
+     "check_date": "11/10/2025"
+    },
+    {
+     "voucher": "PV85258524860",
+     "amount": 11856817.74,
+     "check_date": "11/24/2025"
+    }
+   ],
+   "largest_voucher": 20832422.8
+  },
+  "304043": {
+   "vendor": "K-FIVE CONSTRUCTION CORP./PLOTE CONSTRUCTION INC JV",
+   "paid_2025_item": 25009305,
+   "paid_2025_vouchers": 25009305,
+   "n_vouchers": 5,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV85258540200",
+     "amount": 11452724.48,
+     "check_date": "11/04/2025"
+    }
+   ],
+   "largest_voucher": 11452724.48
+  },
+  "96319": {
+   "vendor": "AUSTIN POWER PARTNERS",
+   "paid_2025_item": 16804828,
+   "paid_2025_vouchers": 16804828,
+   "n_vouchers": 29,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1648941.57
+  },
+  "87486": {
+   "vendor": "CHICAGO AIRLINES TERMINAL CONSORTIUM",
+   "paid_2025_item": 37061644,
+   "paid_2025_vouchers": 37061644,
+   "n_vouchers": 18,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3405400.58
+  },
+  "27905": {
+   "vendor": "MIDWAY AIRLINES' TERMINAL",
+   "paid_2025_item": 23724489,
+   "paid_2025_vouchers": 23724489,
+   "n_vouchers": 11,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3287815.34
+  },
+  "15304": {
+   "vendor": "DELAWARE CARS/T.R. HARMSEN CORP. J.V.",
+   "paid_2025_item": 20321056,
+   "paid_2025_vouchers": 20321056,
+   "n_vouchers": 24,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2466590.19
+  },
+  "102520": {
+   "vendor": "ROSSI CONTRACTORS, INC.",
+   "paid_2025_item": 14114561,
+   "paid_2025_vouchers": 14114561,
+   "n_vouchers": 24,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1953164.97
+  },
+  "194124": {
+   "vendor": "CONTINENTAL AIR TRANSPORT CHICAGO SCHOOL TRANSIT JV LLC",
+   "paid_2025_item": 10354843,
+   "paid_2025_vouchers": 10354843,
+   "n_vouchers": 32,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 412685.0
+  },
+  "251922": {
+   "vendor": "SPIRIT AIRLINES",
+   "paid_2025_item": 11196492,
+   "paid_2025_vouchers": 11196492,
+   "n_vouchers": 12,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1965235.37
+  },
+  "25743": {
+   "vendor": "AOR TRANSIT",
+   "paid_2025_item": 56302243,
+   "paid_2025_vouchers": 56302243,
+   "n_vouchers": 35,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 5644361.32
+  },
+  "111685": {
+   "vendor": "SKIDMORE,OWINGS & MERRILL LLP",
+   "paid_2025_item": 48244627,
+   "paid_2025_vouchers": 48244627,
+   "n_vouchers": 50,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3626108.79
+  },
+  "174908": {
+   "vendor": "STANDARD PARKING CORPORATION 01",
+   "paid_2025_item": 46009366,
+   "paid_2025_vouchers": 46009366,
+   "n_vouchers": 56,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3110072.4
+  },
+  "69568": {
+   "vendor": "CONNECT CHICAGO ALLIANCE JV",
+   "paid_2025_item": 38586120,
+   "paid_2025_vouchers": 38586120,
+   "n_vouchers": 252,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2085085.17
+  },
+  "101451": {
+   "vendor": "STUDIO ORD INC",
+   "paid_2025_item": 34706918,
+   "paid_2025_vouchers": 34706918,
+   "n_vouchers": 90,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3037902.7
+  },
+  "190841": {
+   "vendor": "ABM Aviation",
+   "paid_2025_item": 30891066,
+   "paid_2025_vouchers": 30891066,
+   "n_vouchers": 13,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2805018.72
+  },
+  "27075": {
+   "vendor": "SKYLINE MANAGEMENT GROUP O'HARE",
+   "paid_2025_item": 26736514,
+   "paid_2025_vouchers": 26736514,
+   "n_vouchers": 13,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2700404.86
+  },
+  "224479": {
+   "vendor": "Midway Management Group JV",
+   "paid_2025_item": 22995675,
+   "paid_2025_vouchers": 22995675,
+   "n_vouchers": 36,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1840868.37
+  },
+  "119983": {
+   "vendor": "HNTB CORPORATION",
+   "paid_2025_item": 21081503,
+   "paid_2025_vouchers": 21081503,
+   "n_vouchers": 188,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2053167.88
+  },
+  "191642": {
+   "vendor": "Lincoln Security Services, LLC.",
+   "paid_2025_item": 18401172,
+   "paid_2025_vouchers": 18401172,
+   "n_vouchers": 55,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 818967.33
+  },
+  "145306": {
+   "vendor": "RICONDO & ASSOCIATES, INC.",
+   "paid_2025_item": 17433038,
+   "paid_2025_vouchers": 17433038,
+   "n_vouchers": 226,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 580554.66
+  },
+  "26600": {
+   "vendor": "STANDARD PARKING-MIDWAY JV",
+   "paid_2025_item": 11976565,
+   "paid_2025_vouchers": 11976565,
+   "n_vouchers": 24,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1135794.25
+  },
+  "183280": {
+   "vendor": "DIVERSE FACILITY SOLUTION INC.",
+   "paid_2025_item": 10433019,
+   "paid_2025_vouchers": 10433019,
+   "n_vouchers": 12,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1092483.18
+  },
+  "DV|CITY OF CHICAGO DEPT OF WATER": {
+   "vendor": "CITY OF CHICAGO DEPT OF WATER",
+   "paid_2025_item": 12626159,
+   "paid_2025_vouchers": 12626786,
+   "n_vouchers": 74,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1114863.62
+  },
+  "DV|COMED EXELON ENERGY DELIVERY": {
+   "vendor": "COMED EXELON ENERGY DELIVERY",
+   "paid_2025_item": 10558384,
+   "paid_2025_vouchers": 10643844,
+   "n_vouchers": 36,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3549808.26
+  },
+  "232078": {
+   "vendor": "RELIABLE CONTRACTING & EQUIPMENT COMPANY",
+   "paid_2025_item": 16307644,
+   "paid_2025_vouchers": 16307644,
+   "n_vouchers": 12,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2042444.82
+  },
+  "230561": {
+   "vendor": "PAN-OCEANIC ENGINEERING CO INC",
+   "paid_2025_item": 16250596,
+   "paid_2025_vouchers": 16250596,
+   "n_vouchers": 14,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1977198.85
+  },
+  "238222": {
+   "vendor": "JOHN BURNS CONSTRUCTION CO.",
+   "paid_2025_item": 15010235,
+   "paid_2025_vouchers": 15010235,
+   "n_vouchers": 11,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3030046.28
+  },
+  "230737": {
+   "vendor": "PAN-OCEANIC ENGINEERING CO INC",
+   "paid_2025_item": 14946454,
+   "paid_2025_vouchers": 14946454,
+   "n_vouchers": 13,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1652281.98
+  },
+  "99820": {
+   "vendor": "IHC CONSTRUCTION CO., LLC.",
+   "paid_2025_item": 14200158,
+   "paid_2025_vouchers": 14200158,
+   "n_vouchers": 12,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2462666.22
+  },
+  "232081": {
+   "vendor": "RELIABLE CONTRACTING & EQUIPMENT COMPANY",
+   "paid_2025_item": 12475978,
+   "paid_2025_vouchers": 12475978,
+   "n_vouchers": 12,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1678695.16
+  },
+  "232082": {
+   "vendor": "RELIABLE CONTRACTING & EQUIPMENT COMPANY",
+   "paid_2025_item": 11296057,
+   "paid_2025_vouchers": 11296057,
+   "n_vouchers": 13,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1612481.41
+  },
+  "272860": {
+   "vendor": "SUMIT CONSTRUCTION CO., INC.",
+   "paid_2025_item": 10161961,
+   "paid_2025_vouchers": 10161961,
+   "n_vouchers": 12,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1549876.01
+  },
+  "248018": {
+   "vendor": "CCS - NU VETERANS JOINT VENTURE LLC",
+   "paid_2025_item": 18736175,
+   "paid_2025_vouchers": 18736175,
+   "n_vouchers": 141,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 828512.54
+  },
+  "84271": {
+   "vendor": "RELIABLE ASPHALT CORP.",
+   "paid_2025_item": 20129054,
+   "paid_2025_vouchers": 20129054,
+   "n_vouchers": 41,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 1859634.21
+  },
+  "211620": {
+   "vendor": "AECOM-DBS",
+   "paid_2025_item": 42075479,
+   "paid_2025_vouchers": 42075479,
+   "n_vouchers": 12,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 4251105.36
+  },
+  "225463": {
+   "vendor": "PCWP, LLC",
+   "paid_2025_item": 31584133,
+   "paid_2025_vouchers": 31584133,
+   "n_vouchers": 13,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 3290312.35
+  },
+  "194860": {
+   "vendor": "MOUNT TRANSIT INC",
+   "paid_2025_item": 15083705,
+   "paid_2025_vouchers": 15083705,
+   "n_vouchers": 38,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 696439.45
+  },
+  "DV|ARTHUR J GALLAGHER RISK MANAGEMENT SERVICES LLC": {
+   "vendor": "Arthur J Gallagher Risk Management Services LLC",
+   "paid_2025_item": 10268786,
+   "paid_2025_vouchers": 10770820,
+   "n_vouchers": 21,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 4700000.0
+  },
+  "DV|LOEVY & LOEVY ATTORNEYS AT LAW": {
+   "vendor": "LOEVY & LOEVY ATTORNEYS AT LAW",
+   "paid_2025_item": 134450911,
+   "paid_2025_vouchers": 134450911,
+   "n_vouchers": 43,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV27252720375",
+     "amount": 20000000.0,
+     "check_date": "07/22/2025"
+    },
+    {
+     "voucher": "PV27252720371",
+     "amount": 20000000.0,
+     "check_date": "07/22/2025"
+    },
+    {
+     "voucher": "PV27252720708",
+     "amount": 18500000.0,
+     "check_date": "12/12/2025"
+    },
+    {
+     "voucher": "PV27252720166",
+     "amount": 17500000.0,
+     "check_date": "03/17/2025"
+    },
+    {
+     "voucher": "PV27252720458",
+     "amount": 14986793.04,
+     "check_date": "10/29/2025"
+    },
+    {
+     "voucher": "PV27252720526",
+     "amount": 12681874.6,
+     "check_date": "10/07/2025"
+    }
+   ],
+   "largest_voucher": 20000000.0
+  },
+  "DV|POWER ROGERS, LLP": {
+   "vendor": "POWER ROGERS, LLP",
+   "paid_2025_item": 33534968,
+   "paid_2025_vouchers": 33534968,
+   "n_vouchers": 5,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV27252720266",
+     "amount": 20000000.0,
+     "check_date": "05/15/2025"
+    }
+   ],
+   "largest_voucher": 20000000.0
+  },
+  "DV|USAA LIFE INSURANCE COMPANY": {
+   "vendor": "USAA LIFE INSURANCE COMPANY",
+   "paid_2025_item": 19000000,
+   "paid_2025_vouchers": 19000000,
+   "n_vouchers": 1,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV27252720196",
+     "amount": 19000000.0,
+     "check_date": "03/21/2025"
+    }
+   ],
+   "largest_voucher": 19000000.0
+  },
+  "DV|BONJEAN LAW GROUP PLLC": {
+   "vendor": "BONJEAN LAW GROUP PLLC",
+   "paid_2025_item": 17000000,
+   "paid_2025_vouchers": 17000000,
+   "n_vouchers": 1,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV27252720524",
+     "amount": 17000000.0,
+     "check_date": "10/01/2025"
+    }
+   ],
+   "largest_voucher": 17000000.0
+  },
+  "DV|MCNABOLA & ASSOCIATES, INC.": {
+   "vendor": "MCNABOLA & ASSOCIATES, INC.",
+   "paid_2025_item": 12500000,
+   "paid_2025_vouchers": 12500000,
+   "n_vouchers": 1,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV27252720225",
+     "amount": 12500000.0,
+     "check_date": "04/30/2025"
+    }
+   ],
+   "largest_voucher": 12500000.0
+  },
+  "DV|DEPARTMENT OF FINANCE": {
+   "vendor": "DEPARTMENT OF FINANCE",
+   "paid_2025_item": 34991532,
+   "paid_2025_vouchers": 35019524,
+   "n_vouchers": 33,
+   "vouchers_ge_10m": [],
+   "largest_voucher": 2694106.62
+  },
+  "DV|CHICAGO PARKING METERS LLC": {
+   "vendor": "CHICAGO PARKING METERS LLC",
+   "paid_2025_item": 26634655,
+   "paid_2025_vouchers": 26634655,
+   "n_vouchers": 5,
+   "vouchers_ge_10m": [
+    {
+     "voucher": "PV27252720322",
+     "amount": 15500000.0,
+     "check_date": "06/16/2025"
+    }
+   ],
+   "largest_voucher": 15500000.0
+  }
+ },
+ "contracts": [
+  {
+   "contract": "283596",
+   "vendor": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC",
+   "description": "1269715: STATE/LAKE LOOP ELEVATED STATION",
+   "department": "CHICAGO DEPARTMENT OF TRANSPORTATION",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 444347400.0,
+     "approval_date": "2025-01-15"
+    },
+    {
+     "revision_number": "2",
+     "award_amount": 103868160.0,
+     "approval_date": "2026-06-30"
+    }
+   ],
+   "total_award_all_revisions": 548215560.0,
+   "paid_all_years_payments_all": 176734830,
+   "vouchers_all_years": 16,
+   "paid_2025": 102144225,
+   "vouchers_2025": 7,
+   "largest_voucher_2025": 90000000.0,
+   "vouchers_2025_ge_10m": [
+    {
+     "voucher": "PV84258440420",
+     "amount": 90000000.0,
+     "check_date": "06/17/2025"
+    }
+   ]
+  },
+  {
+   "contract": "234083",
+   "vendor": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC",
+   "description": "1251436: Canal Street Viaduct Rehabilitation: Jackson Blvd. to Harrison St.",
+   "department": "CHICAGO DEPARTMENT OF TRANSPORTATION",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 20248642.4,
+     "approval_date": "2023-08-03"
+    },
+    {
+     "revision_number": "2",
+     "award_amount": 363000.0,
+     "approval_date": "2025-05-02"
+    },
+    {
+     "revision_number": "3",
+     "award_amount": 2227000.0,
+     "approval_date": "2025-07-15"
+    },
+    {
+     "revision_number": "4",
+     "award_amount": 215197.5,
+     "approval_date": "2025-09-29"
+    },
+    {
+     "revision_number": "5",
+     "award_amount": 890140.2,
+     "approval_date": "2026-06-04"
+    }
+   ],
+   "total_award_all_revisions": 23943980.099999998,
+   "paid_all_years_payments_all": 44056456,
+   "vouchers_all_years": 22,
+   "paid_2025": 28690588,
+   "vouchers_2025": 12,
+   "largest_voucher_2025": 6968691.3,
+   "vouchers_2025_ge_10m": []
+  },
+  {
+   "contract": "265292",
+   "vendor": "BIGANE PAVING COMPANY/O PLOTE CONSTRUCTION INC JV",
+   "description": "1233224: ARTERIAL RESURFACING TERM AGREEMENT-NORTH AREA",
+   "department": "CHICAGO DEPARTMENT OF TRANSPORTATION",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 41697878.2,
+     "approval_date": "2024-04-19"
+    },
+    {
+     "revision_number": "2",
+     "award_amount": 30000000.0,
+     "approval_date": "2025-06-25"
+    }
+   ],
+   "total_award_all_revisions": 71697878.2,
+   "paid_all_years_payments_all": 46439482,
+   "vouchers_all_years": 94,
+   "paid_2025": 23323216,
+   "vouchers_2025": 60,
+   "largest_voucher_2025": 3651214.56,
+   "vouchers_2025_ge_10m": []
+  },
+  {
+   "contract": "198906",
+   "vendor": "CONSTELLATION NEWENERGY INC",
+   "description": "City of Chicago Municipal Electricity Supply, including Renewable Generation",
+   "department": "DEPT OF ASSETS INFORMATION AND SERVICES",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 422200000.0,
+     "approval_date": "2022-08-05"
+    }
+   ],
+   "total_award_all_revisions": 422200000.0,
+   "paid_all_years_payments_all": 290583159,
+   "vouchers_all_years": 65,
+   "paid_2025": 92249309,
+   "vouchers_2025": 26,
+   "largest_voucher_2025": 11411702.7,
+   "vouchers_2025_ge_10m": [
+    {
+     "voucher": "PV38253800675",
+     "amount": 11411702.7,
+     "check_date": "10/09/2025"
+    },
+    {
+     "voucher": "PV38243801301",
+     "amount": 10692897.81,
+     "check_date": "02/27/2025"
+    }
+   ]
+  },
+  {
+   "contract": "25743",
+   "vendor": "AOR TRANSIT",
+   "description": "OPERATION AND MAINTENANCE OF AIRPORT TRANSIT SYSTEM (ATS) at O'HARE, Spec# 92543, Req# 550",
+   "department": "CHICAGO DEPARTMENT OF AVIATION",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 115000000.0,
+     "approval_date": "2011-12-22"
+    },
+    {
+     "revision_number": "1",
+     "award_amount": 35000000.0,
+     "approval_date": "2016-02-16"
+    },
+    {
+     "revision_number": "2",
+     "award_amount": 0.0,
+     "approval_date": "2016-12-29"
+    },
+    {
+     "revision_number": "3",
+     "award_amount": 3000000.0,
+     "approval_date": "2017-05-18"
+    },
+    {
+     "revision_number": "4",
+     "award_amount": 7000000.0,
+     "approval_date": "2017-06-28"
+    },
+    {
+     "revision_number": "5",
+     "award_amount": 14479321.0,
+     "approval_date": "2017-08-25"
+    },
+    {
+     "revision_number": "6",
+     "award_amount": 0.0,
+     "approval_date": "2017-12-21"
+    },
+    {
+     "revision_number": "7",
+     "award_amount": 15000000.0,
+     "approval_date": "2018-05-02"
+    },
+    {
+     "revision_number": "8",
+     "award_amount": 115300000.0,
+     "approval_date": "2018-10-02"
+    },
+    {
+     "revision_number": "9",
+     "award_amount": 112000000.0,
+     "approval_date": "2020-12-28"
+    },
+    {
+     "revision_number": "10",
+     "award_amount": 55000000.0,
+     "approval_date": "2023-12-05"
+    },
+    {
+     "revision_number": "11",
+     "award_amount": 85819813.2,
+     "approval_date": "2024-05-31"
+    },
+    {
+     "revision_number": "12",
+     "award_amount": 86400000.0,
+     "approval_date": "2025-12-05"
+    }
+   ],
+   "total_award_all_revisions": 643999134.2,
+   "paid_all_years_payments_all": 553587293,
+   "vouchers_all_years": 57,
+   "paid_2025": 56302243,
+   "vouchers_2025": 35,
+   "largest_voucher_2025": 5644361.32,
+   "vouchers_2025_ge_10m": []
+  },
+  {
+   "contract": "111685",
+   "vendor": "SKIDMORE,OWINGS & MERRILL LLP",
+   "description": "LEAD ARCHITECTURAL DESIGN SERVICES - TERMINAL AREA PLAN - FOR THE O'HARE 21 PROGRAM AT O'H",
+   "department": "CHICAGO DEPARTMENT OF AVIATION",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 140000000.0,
+     "approval_date": "2020-01-23"
+    },
+    {
+     "revision_number": "1",
+     "award_amount": 0.0,
+     "approval_date": "2024-01-10"
+    },
+    {
+     "revision_number": "2",
+     "award_amount": 43000000.0,
+     "approval_date": "2025-05-22"
+    }
+   ],
+   "total_award_all_revisions": 183000000.0,
+   "paid_all_years_payments_all": 155289427,
+   "vouchers_all_years": 99,
+   "paid_2025": 48244627,
+   "vouchers_2025": 50,
+   "largest_voucher_2025": 3626108.79,
+   "vouchers_2025_ge_10m": []
+  },
+  {
+   "contract": "174908",
+   "vendor": "STANDARD PARKING CORPORATION 01",
+   "description": "MANAGEMENT OF PUBLIC PARKING FACILITIES AND GROUND TRANSPORTATION AT CHICAGO O'HARE INTL A",
+   "department": "CHICAGO DEPARTMENT OF AVIATION",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 200000000.0,
+     "approval_date": "2022-01-04"
+    }
+   ],
+   "total_award_all_revisions": 200000000.0,
+   "paid_all_years_payments_all": 179403621,
+   "vouchers_all_years": 82,
+   "paid_2025": 46009366,
+   "vouchers_2025": 56,
+   "largest_voucher_2025": 3110072.4,
+   "vouchers_2025_ge_10m": []
+  },
+  {
+   "contract": "69568",
+   "vendor": "CONNECT CHICAGO ALLIANCE JV",
+   "description": "PROGRAM MANAGEMENT SERVICES FOR O'HARE AND MIDWAY INTERNATIONAL AIRPORTS (SPEC #348988)",
+   "department": "CHICAGO DEPARTMENT OF AVIATION",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 210000000.0,
+     "approval_date": "2017-12-21"
+    },
+    {
+     "revision_number": "1",
+     "award_amount": 30000000.0,
+     "approval_date": "2025-07-25"
+    },
+    {
+     "revision_number": "2",
+     "award_amount": 92000000.0,
+     "approval_date": "2025-09-30"
+    }
+   ],
+   "total_award_all_revisions": 332000000.0,
+   "paid_all_years_payments_all": 239873280,
+   "vouchers_all_years": 490,
+   "paid_2025": 38586120,
+   "vouchers_2025": 252,
+   "largest_voucher_2025": 2085085.17,
+   "vouchers_2025_ge_10m": []
+  },
+  {
+   "contract": "47314",
+   "vendor": "TRANSYSTEMS CORPORATION",
+   "description": "PROFESSIONAL QUALITY CONTROL AND QUALITY ASSURANCE CONSTRUCTION INSPECTION ENGINEERING SER",
+   "department": "CHICAGO DEPARTMENT OF TRANSPORTATION",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 22485402.8,
+     "approval_date": "2016-12-27"
+    },
+    {
+     "revision_number": "1",
+     "award_amount": 6937448.3,
+     "approval_date": "2021-01-15"
+    },
+    {
+     "revision_number": "2",
+     "award_amount": 49995000.0,
+     "approval_date": "2021-09-01"
+    },
+    {
+     "revision_number": "3",
+     "award_amount": 0.0,
+     "approval_date": "2021-09-09"
+    },
+    {
+     "revision_number": "4",
+     "award_amount": 0.0,
+     "approval_date": "2023-04-28"
+    },
+    {
+     "revision_number": "5",
+     "award_amount": 0.0,
+     "approval_date": "2025-01-02"
+    },
+    {
+     "revision_number": "6",
+     "award_amount": 0.0,
+     "approval_date": "2026-03-13"
+    }
+   ],
+   "total_award_all_revisions": 79417851.1,
+   "paid_all_years_payments_all": 106982847,
+   "vouchers_all_years": 56,
+   "paid_2025": 37211775,
+   "vouchers_2025": 36,
+   "largest_voucher_2025": 3971833.47,
+   "vouchers_2025_ge_10m": []
+  },
+  {
+   "contract": "101451",
+   "vendor": "STUDIO ORD INC",
+   "description": "LEAD ARCHITECTURAL DESIGN SERVICES - TERMINAL AREA PLAN - FOR THE O'HARE 21 PROGRAM (SPEC ",
+   "department": "CHICAGO DEPARTMENT OF AVIATION",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 160000000.0,
+     "approval_date": "2019-05-29"
+    },
+    {
+     "revision_number": "1",
+     "award_amount": 0.0,
+     "approval_date": "2024-01-10"
+    },
+    {
+     "revision_number": "2",
+     "award_amount": 120000000.0,
+     "approval_date": "2025-02-27"
+    }
+   ],
+   "total_award_all_revisions": 280000000.0,
+   "paid_all_years_payments_all": 174384525,
+   "vouchers_all_years": 175,
+   "paid_2025": 34706918,
+   "vouchers_2025": 90,
+   "largest_voucher_2025": 3037902.7,
+   "vouchers_2025_ge_10m": []
+  },
+  {
+   "contract": "52685",
+   "vendor": "CNECT LLC",
+   "description": "PROGRAM MANAGEMENT CONSULTANT FOR CAPITAL IMPROVEMENT PROJECTS",
+   "department": "CHICAGO DEPARTMENT OF TRANSPORTATION",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 60000000.0,
+     "approval_date": "2017-05-09"
+    },
+    {
+     "revision_number": "1",
+     "award_amount": 30000000.0,
+     "approval_date": "2020-12-09"
+    },
+    {
+     "revision_number": "2",
+     "award_amount": 9000000.0,
+     "approval_date": "2021-09-21"
+    },
+    {
+     "revision_number": "3",
+     "award_amount": 60000000.0,
+     "approval_date": "2022-03-23"
+    },
+    {
+     "revision_number": "4",
+     "award_amount": 100000000.0,
+     "approval_date": "2024-02-23"
+    }
+   ],
+   "total_award_all_revisions": 259000000.0,
+   "paid_all_years_payments_all": 222976610,
+   "vouchers_all_years": 105,
+   "paid_2025": 34100144,
+   "vouchers_2025": 58,
+   "largest_voucher_2025": 3223457.54,
+   "vouchers_2025_ge_10m": []
+  },
+  {
+   "contract": "190841",
+   "vendor": "ABM Aviation",
+   "description": "COMPREHENSIVE CUSTODIAL/WINDOW CLEANING AND RELATED HYGIENE DISPOSAL SERVICES FOR AIRSIDE ",
+   "department": "CHICAGO DEPARTMENT OF AVIATION",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 141500000.0,
+     "approval_date": "2022-07-08"
+    }
+   ],
+   "total_award_all_revisions": 141500000.0,
+   "paid_all_years_payments_all": 141342304,
+   "vouchers_all_years": 23,
+   "paid_2025": 30891066,
+   "vouchers_2025": 13,
+   "largest_voucher_2025": 2805018.72,
+   "vouchers_2025_ge_10m": []
+  },
+  {
+   "contract": "27075",
+   "vendor": "SKYLINE MANAGEMENT GROUP O'HARE",
+   "description": "PROPERTY MANAGEMENT SERVICES FOR TERMINAL 5 AT O'HARE INTERNATIONAL AIRPORT",
+   "department": "CHICAGO DEPARTMENT OF AVIATION",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 37510218.4,
+     "approval_date": "2012-11-15"
+    },
+    {
+     "revision_number": "1",
+     "award_amount": 2000000.0,
+     "approval_date": "2016-06-01"
+    },
+    {
+     "revision_number": "2",
+     "award_amount": 4000000.0,
+     "approval_date": "2016-07-26"
+    },
+    {
+     "revision_number": "3",
+     "award_amount": 18224294.6,
+     "approval_date": "2016-08-17"
+    },
+    {
+     "revision_number": "4",
+     "award_amount": 0.0,
+     "approval_date": "2017-11-21"
+    },
+    {
+     "revision_number": "5",
+     "award_amount": 6000000.0,
+     "approval_date": "2018-02-26"
+    },
+    {
+     "revision_number": "6",
+     "award_amount": 0.0,
+     "approval_date": "2018-05-22"
+    },
+    {
+     "revision_number": "7",
+     "award_amount": 9500000.0,
+     "approval_date": "2018-09-11"
+    },
+    {
+     "revision_number": "8",
+     "award_amount": 0.0,
+     "approval_date": "2019-05-28"
+    },
+    {
+     "revision_number": "9",
+     "award_amount": 12800000.0,
+     "approval_date": "2019-09-25"
+    },
+    {
+     "revision_number": "10",
+     "award_amount": -3524294.6,
+     "approval_date": "2019-10-04"
+    },
+    {
+     "revision_number": "11",
+     "award_amount": 26349991.0,
+     "approval_date": "2020-04-30"
+    },
+    {
+     "revision_number": "12",
+     "award_amount": 24033854.4,
+     "approval_date": "2021-06-01"
+    },
+    {
+     "revision_number": "13",
+     "award_amount": 33311988.0,
+     "approval_date": "2023-11-17"
+    },
+    {
+     "revision_number": "14",
+     "award_amount": 32500000.0,
+     "approval_date": "2025-02-14"
+    },
+    {
+     "revision_number": "15",
+     "award_amount": 37000000.0,
+     "approval_date": "2026-01-14"
+    }
+   ],
+   "total_award_all_revisions": 239706051.8,
+   "paid_all_years_payments_all": 207337854,
+   "vouchers_all_years": 25,
+   "paid_2025": 26736514,
+   "vouchers_2025": 13,
+   "largest_voucher_2025": 2700404.86,
+   "vouchers_2025_ge_10m": []
+  },
+  {
+   "contract": "176561",
+   "vendor": "MANSFIELD POWER & GAS, LLC",
+   "description": "Natural Gas Supply",
+   "department": "DEPT OF GENERAL SERVICES",
+   "revisions": [
+    {
+     "revision_number": "0",
+     "award_amount": 100000000.0,
+     "approval_date": "2021-12-13"
+    },
+    {
+     "revision_number": "1",
+     "award_amount": 0.0,
+     "approval_date": "2023-03-21"
+    },
+    {
+     "revision_number": "2",
+     "award_amount": 0.0,
+     "approval_date": "2024-08-02"
+    },
+    {
+     "revision_number": "3",
+     "award_amount": 27043000.0,
+     "approval_date": "2026-04-01"
+    },
+    {
+     "revision_number": "4",
+     "award_amount": 7505064.4,
+     "approval_date": "2026-09-16"
+    }
+   ],
+   "total_award_all_revisions": 134548064.4,
+   "paid_all_years_payments_all": 94795266,
+   "vouchers_all_years": 57,
+   "paid_2025": 25334628,
+   "vouchers_2025": 23,
+   "largest_voucher_2025": 3380498.37,
+   "vouchers_2025_ge_10m": []
+  }
+ ]
+}

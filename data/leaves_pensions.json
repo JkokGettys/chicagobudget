@@ -1,0 +1,467 @@
+{
+ "meta": {
+  "generated_by": "scripts/leaves_pensions.py",
+  "sources_fetched": [
+   {
+    "url": "local files (fetched in rounds 1 and 2, see data/pensions_2026.json cites)",
+    "http_status": "200 at fetch time",
+    "note": "valuations PABF, MEABF, FABF, LABF; PABF and LABF financial statements; City ACFR 2025"
+   }
+  ],
+  "tied_check": {
+   "PABF": 1040273100,
+   "MEABF": 965001553,
+   "FABF": 441746521,
+   "LABF": 136573560
+  },
+  "note": "Contributions are levy-year 2026 amounts paid in 2027 (data/pensions_2026.json timing_note)."
+ },
+ "leaves": [
+  {
+   "match_path_contains": [
+    "Policemen's Annuity",
+    "0976"
+   ],
+   "amount": 1040273100,
+   "proposed_status": "split_proxy",
+   "split_basis": "Component split is derived arithmetic (net normal cost is printed, remainder = statutory minus normal cost). Benefit-type split is a PROXY allocation by benefit-dollar share, because the City contribution is not the benefit payment.",
+   "components": {
+    "statutory_contribution_levy_year_2026": 1040273100,
+    "net_employer_normal_cost": 222445185,
+    "total_normal_cost": 348426849,
+    "expected_member_contributions": 125981664,
+    "remainder_toward_unfunded_liability_derived": 817827915,
+    "actuarially_determined_contribution_2026_plan_year": 1416650276,
+    "payment_on_unfunded_in_adc": 1142871201,
+    "shortfall_vs_adc_derived": 376377176,
+    "unfunded_liability_actuarial": 13845585000
+   },
+   "pieces": [
+    {
+     "name": "Net employer normal cost (cost of benefits earned this year, after member contributions, includes admin)",
+     "amount": 222445185,
+     "basis": "tied",
+     "source": "raw/pensions_debt/funds/PABF_20251231_Final.txt (Table 1C 'Net Normal Cost' line (8); Table 4 lines (1) to (6))"
+    },
+    {
+     "name": "Remainder toward the unfunded liability, derived: statutory contribution minus net normal cost",
+     "amount": 817827915,
+     "basis": "derived",
+     "source": "raw/pensions_debt/funds/PABF_20251231_Final.txt (Table 1C 'Net Normal Cost' line (8); Table 4 lines (1) to (6))"
+    }
+   ],
+   "benefit_type_pieces": [
+    {
+     "name": "Service retirement annuities",
+     "count": 11271,
+     "average": 81154,
+     "annual_benefit_dollars": 914686734,
+     "basis": "count_x_average",
+     "source": "PABF valuation Exhibit B (counts, p.44), Exhibit E (service retirees $914,683,048), Exhibit G (misc annuities $23,328,809)",
+     "contribution_share_proxy": 921955309
+    },
+    {
+     "name": "Children's annuities",
+     "count": 166,
+     "average": 8682,
+     "annual_benefit_dollars": 1441283,
+     "basis": "count_x_average",
+     "source": "PABF valuation Exhibit B (counts, p.44), Exhibit E (service retirees $914,683,048), Exhibit G (misc annuities $23,328,809)",
+     "contribution_share_proxy": 1452736
+    },
+    {
+     "name": "Widows' compensation annuities",
+     "count": 65,
+     "average": 74405,
+     "annual_benefit_dollars": 4836294,
+     "basis": "count_x_average",
+     "source": "PABF valuation Exhibit B (counts, p.44), Exhibit E (service retirees $914,683,048), Exhibit G (misc annuities $23,328,809)",
+     "contribution_share_proxy": 4874726
+    },
+    {
+     "name": "Ordinary disability",
+     "count": 29,
+     "average": 56800,
+     "annual_benefit_dollars": 1647209,
+     "basis": "count_x_average",
+     "source": "PABF valuation Exhibit B (counts, p.44), Exhibit E (service retirees $914,683,048), Exhibit G (misc annuities $23,328,809)",
+     "contribution_share_proxy": 1660299
+    },
+    {
+     "name": "Occupational disease disability",
+     "count": 18,
+     "average": 70390,
+     "annual_benefit_dollars": 1267015,
+     "basis": "count_x_average",
+     "source": "PABF valuation Exhibit B (counts, p.44), Exhibit E (service retirees $914,683,048), Exhibit G (misc annuities $23,328,809)",
+     "contribution_share_proxy": 1277083
+    },
+    {
+     "name": "Duty disability",
+     "count": 177,
+     "average": 79185,
+     "annual_benefit_dollars": 14015808,
+     "basis": "count_x_average",
+     "source": "PABF valuation Exhibit B (counts, p.44), Exhibit E (service retirees $914,683,048), Exhibit G (misc annuities $23,328,809)",
+     "contribution_share_proxy": 14127185
+    },
+    {
+     "name": "Children's disability",
+     "count": 101,
+     "average": 1200,
+     "annual_benefit_dollars": 121200,
+     "basis": "count_x_average",
+     "source": "PABF valuation Exhibit B (counts, p.44), Exhibit E (service retirees $914,683,048), Exhibit G (misc annuities $23,328,809)",
+     "contribution_share_proxy": 122163
+    },
+    {
+     "name": "Widow annuities (derived: total minus others)",
+     "count": 3068,
+     "average": 30657,
+     "annual_benefit_dollars": 94056180,
+     "basis": "derived",
+     "source": "PABF valuation Exhibit B (counts, p.44), Exhibit E (service retirees $914,683,048), Exhibit G (misc annuities $23,328,809)",
+     "contribution_share_proxy": 94803599
+    }
+   ],
+   "benefit_total_annual_valuation": 1032071723,
+   "acfr_benefits_paid_2025": {
+    "pension_and_disability": 1035953513,
+    "death": 1991600,
+    "refunds": 11718221
+   },
+   "acfr_source": "raw/pensions_debt/funds/PABF_FS_2025.txt lines 730 to 732 (2025 statement of changes)",
+   "pieces_over_10m_after": [],
+   "pieces_note": "The remainder toward the unfunded liability is still >= $10M as dollars. It is the debt the City is paying down, set by law, so the explorer shows it as 'paying for past promises' across the retirees below (count x average).",
+   "why_cant_go_deeper": "The City sends one payment set by law to the retirement fund, and the fund then pays thousands of retirees, so the public records stop at how many retirees there are and what the average one gets."
+  },
+  {
+   "match_path_contains": [
+    "Policemen's Annuity",
+    "097A"
+   ],
+   "amount": 72249824,
+   "proposed_status": "split_proxy",
+   "split_basis": "One voluntary payment above the statutory minimum, sent to the same fund. Shown with the same retiree count x average as the statutory line.",
+   "pieces": [
+    {
+     "name": "Advance (above statute) payment, one payment to the fund",
+     "amount": 72249824,
+     "basis": "tied",
+     "source": "data/pensions_2026.json budget_2026.advance_contribution"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "This is one extra payment the City chose to make to the retirement fund on top of what the law requires."
+  },
+  {
+   "match_path_contains": [
+    "Municipal Employees' Annuity",
+    "0976"
+   ],
+   "amount": 965001553,
+   "proposed_status": "split_proxy",
+   "split_basis": "Component split is derived arithmetic (net normal cost is printed, remainder = statutory minus normal cost). Benefit-type split is a PROXY allocation by benefit-dollar share, because the City contribution is not the benefit payment.",
+   "components": {
+    "statutory_contribution_levy_year_2026": 965001553,
+    "net_employer_normal_cost": 146922858,
+    "total_normal_cost": 409399589,
+    "expected_member_contributions": 269321729,
+    "remainder_toward_unfunded_liability_derived": 818078695,
+    "actuarially_determined_contribution_2026_plan_year": 1350383529,
+    "payment_on_unfunded_in_adc": 1198582991,
+    "shortfall_vs_adc_derived": 385381976,
+    "unfunded_liability_actuarial": 14927708891
+   },
+   "pieces": [
+    {
+     "name": "Net employer normal cost (cost of benefits earned this year, after member contributions, includes admin)",
+     "amount": 146922858,
+     "basis": "tied",
+     "source": "raw/pensions_debt/funds/MEABF_val_2025.txt (ADC table lines 1 to 10, p.27; includes $6.84M administrative expenses in employer normal cost)"
+    },
+    {
+     "name": "Remainder toward the unfunded liability, derived: statutory contribution minus net normal cost",
+     "amount": 818078695,
+     "basis": "derived",
+     "source": "raw/pensions_debt/funds/MEABF_val_2025.txt (ADC table lines 1 to 10, p.27; includes $6.84M administrative expenses in employer normal cost)"
+    }
+   ],
+   "benefit_type_pieces": [
+    {
+     "name": "Retired members",
+     "count": 21874,
+     "average": 49104,
+     "annual_benefit_dollars": 1074100896,
+     "basis": "count_x_average",
+     "source": "MEABF valuation Section 2 (counts, monthly benefits $95,618,668 x 12) and Section 3 (average monthly: 4,092 / 1,628 / 411)",
+     "contribution_share_proxy": 903335662
+    },
+    {
+     "name": "Surviving spouses",
+     "count": 3714,
+     "average": 19536,
+     "annual_benefit_dollars": 72556704,
+     "basis": "count_x_average",
+     "source": "MEABF valuation Section 2 (counts, monthly benefits $95,618,668 x 12) and Section 3 (average monthly: 4,092 / 1,628 / 411)",
+     "contribution_share_proxy": 61021323
+    },
+    {
+     "name": "Reversionary annuitants",
+     "count": 119,
+     "average": 4932,
+     "annual_benefit_dollars": 586908,
+     "basis": "count_x_average",
+     "source": "MEABF valuation Section 2 (counts, monthly benefits $95,618,668 x 12) and Section 3 (average monthly: 4,092 / 1,628 / 411)",
+     "contribution_share_proxy": 493599
+    },
+    {
+     "name": "Children (derived remainder)",
+     "count": 64,
+     "average": 2805,
+     "annual_benefit_dollars": 179508,
+     "basis": "derived",
+     "source": "MEABF valuation Section 2 (counts, monthly benefits $95,618,668 x 12) and Section 3 (average monthly: 4,092 / 1,628 / 411)",
+     "contribution_share_proxy": 150969
+    }
+   ],
+   "benefit_total_annual_valuation": 1147424016,
+   "acfr_benefits_paid_2025": {
+    "benefits_and_refunds": 1173302782
+   },
+   "acfr_source": "raw/pensions_debt/funds/MEABF_val_2025.txt line 4134 (benefit payments including refunds, FY2025)",
+   "pieces_over_10m_after": [],
+   "pieces_note": "The remainder toward the unfunded liability is still >= $10M as dollars. It is the debt the City is paying down, set by law, so the explorer shows it as 'paying for past promises' across the retirees below (count x average).",
+   "why_cant_go_deeper": "The City sends one payment set by law to the retirement fund, and the fund then pays thousands of retirees, so the public records stop at how many retirees there are and what the average one gets."
+  },
+  {
+   "match_path_contains": [
+    "Municipal Employees' Annuity",
+    "097A"
+   ],
+   "amount": 161218894,
+   "proposed_status": "split_proxy",
+   "split_basis": "One voluntary payment above the statutory minimum, sent to the same fund. Shown with the same retiree count x average as the statutory line.",
+   "pieces": [
+    {
+     "name": "Advance (above statute) payment, one payment to the fund",
+     "amount": 161218894,
+     "basis": "tied",
+     "source": "data/pensions_2026.json budget_2026.advance_contribution"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "This is one extra payment the City chose to make to the retirement fund on top of what the law requires."
+  },
+  {
+   "match_path_contains": [
+    "Firemen's Annuity",
+    "0976"
+   ],
+   "amount": 441746521,
+   "proposed_status": "split_proxy",
+   "split_basis": "Component split is derived arithmetic (net normal cost is printed, remainder = statutory minus normal cost). Benefit-type split is a PROXY allocation by benefit-dollar share, because the City contribution is not the benefit payment.",
+   "components": {
+    "statutory_contribution_levy_year_2026": 441746521,
+    "net_employer_normal_cost": 93011790,
+    "total_normal_cost": 147242696,
+    "expected_member_contributions": 58147816,
+    "remainder_toward_unfunded_liability_derived": 348734731,
+    "actuarially_determined_contribution_2026_plan_year": 588720377,
+    "payment_on_unfunded_in_adc": 554483168,
+    "shortfall_vs_adc_derived": 146973856,
+    "unfunded_liability_actuarial": 6048701965
+   },
+   "pieces": [
+    {
+     "name": "Net employer normal cost (cost of benefits earned this year, after member contributions, includes admin)",
+     "amount": 93011790,
+     "basis": "tied",
+     "source": "raw/pensions_debt/funds/FABF_val_2025.txt (ADC table lines 1 to 10, p.24; includes $3.92M administrative expenses)"
+    },
+    {
+     "name": "Remainder toward the unfunded liability, derived: statutory contribution minus net normal cost",
+     "amount": 348734731,
+     "basis": "derived",
+     "source": "raw/pensions_debt/funds/FABF_val_2025.txt (ADC table lines 1 to 10, p.24; includes $3.92M administrative expenses)"
+    }
+   ],
+   "benefit_type_pieces": [
+    {
+     "name": "Employee annuitants",
+     "count": 4006,
+     "average": 96516,
+     "annual_benefit_dollars": 386643096,
+     "basis": "count_x_average",
+     "source": "FABF valuation Section 2 (4,006 / 1,191 / 202 duty / 73 occupational / 3 ordinary / 82 children; monthly benefits $37,836,455 x 12; averages $8,043 and $3,107 per month)",
+     "contribution_share_proxy": 376176544
+    },
+    {
+     "name": "Spouse annuitants",
+     "count": 1191,
+     "average": 37284,
+     "annual_benefit_dollars": 44405244,
+     "basis": "count_x_average",
+     "source": "FABF valuation Section 2 (4,006 / 1,191 / 202 duty / 73 occupational / 3 ordinary / 82 children; monthly benefits $37,836,455 x 12; averages $8,043 and $3,107 per month)",
+     "contribution_share_proxy": 43203180
+    },
+    {
+     "name": "Duty, occupational, ordinary disability and children (derived remainder)",
+     "count": 358,
+     "average": 64215,
+     "annual_benefit_dollars": 22989120,
+     "basis": "derived",
+     "source": "FABF valuation Section 2 (4,006 / 1,191 / 202 duty / 73 occupational / 3 ordinary / 82 children; monthly benefits $37,836,455 x 12; averages $8,043 and $3,107 per month)",
+     "contribution_share_proxy": 22366797
+    }
+   ],
+   "benefit_total_annual_valuation": 454037460,
+   "acfr_benefits_paid_2025": {
+    "benefits_and_refunds": 452300000
+   },
+   "acfr_source": "data/pensions_2026.json acfr_fy2025.benefit_payments_incl_refunds_2025_thousands 452,300",
+   "pieces_over_10m_after": [],
+   "pieces_note": "The remainder toward the unfunded liability is still >= $10M as dollars. It is the debt the City is paying down, set by law, so the explorer shows it as 'paying for past promises' across the retirees below (count x average).",
+   "why_cant_go_deeper": "The City sends one payment set by law to the retirement fund, and the fund then pays thousands of retirees, so the public records stop at how many retirees there are and what the average one gets."
+  },
+  {
+   "match_path_contains": [
+    "Firemen's Annuity",
+    "097A"
+   ],
+   "amount": 11583144,
+   "proposed_status": "split_proxy",
+   "split_basis": "One voluntary payment above the statutory minimum, sent to the same fund. Shown with the same retiree count x average as the statutory line.",
+   "pieces": [
+    {
+     "name": "Advance (above statute) payment, one payment to the fund",
+     "amount": 11583144,
+     "basis": "tied",
+     "source": "data/pensions_2026.json budget_2026.advance_contribution"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "This is one extra payment the City chose to make to the retirement fund on top of what the law requires."
+  },
+  {
+   "match_path_contains": [
+    "Laborers' and Retirement",
+    "0976"
+   ],
+   "amount": 136573560,
+   "proposed_status": "split_proxy",
+   "split_basis": "Component split is derived arithmetic (net normal cost is printed, remainder = statutory minus normal cost). Benefit-type split is a PROXY allocation by benefit-dollar share, because the City contribution is not the benefit payment.",
+   "components": {
+    "statutory_contribution_levy_year_2026": 136573560,
+    "net_employer_normal_cost": 26624056,
+    "total_normal_cost": 50190191,
+    "expected_member_contributions": 23566135,
+    "remainder_toward_unfunded_liability_derived": 109949504,
+    "actuarially_determined_contribution_2026_plan_year": 170342684,
+    "payment_on_unfunded_in_adc": 134694224,
+    "shortfall_vs_adc_derived": 33769124,
+    "unfunded_liability_actuarial": 1771186323
+   },
+   "pieces": [
+    {
+     "name": "Net employer normal cost (cost of benefits earned this year, after member contributions, includes admin)",
+     "amount": 26624056,
+     "basis": "tied",
+     "source": "raw/pensions_debt/funds/LABF_GRS_2025_Val.txt (Table 3 ADC lines (1) to (9), Table 1B net employer normal cost line (11))"
+    },
+    {
+     "name": "Remainder toward the unfunded liability, derived: statutory contribution minus net normal cost",
+     "amount": 109949504,
+     "basis": "derived",
+     "source": "raw/pensions_debt/funds/LABF_GRS_2025_Val.txt (Table 3 ADC lines (1) to (9), Table 1B net employer normal cost line (11))"
+    }
+   ],
+   "benefit_type_pieces": [
+    {
+     "name": "Retirees",
+     "count": 2506,
+     "average": 65230,
+     "annual_benefit_dollars": 163466380,
+     "basis": "count_x_average",
+     "source": "LABF valuation Plan Membership (counts, averages) and summary page (annual benefits $187,086,435)",
+     "contribution_share_proxy": 119330861
+    },
+    {
+     "name": "Surviving spouses",
+     "count": 934,
+     "average": 21301,
+     "annual_benefit_dollars": 19895134,
+     "basis": "count_x_average",
+     "source": "LABF valuation Plan Membership (counts, averages) and summary page (annual benefits $187,086,435)",
+     "contribution_share_proxy": 14523497
+    },
+    {
+     "name": "Disability, reversionary annuitants and children (derived remainder)",
+     "count": 105,
+     "average": 35475,
+     "annual_benefit_dollars": 3724921,
+     "basis": "derived",
+     "source": "LABF valuation Plan Membership (counts, averages) and summary page (annual benefits $187,086,435)",
+     "contribution_share_proxy": 2719202
+    }
+   ],
+   "benefit_total_annual_valuation": 187086435,
+   "acfr_benefits_paid_2025": {
+    "benefits_and_refunds": 189963742
+   },
+   "acfr_source": "raw/pensions_debt/funds/LABF_FS_2025.txt line 381 (benefits and refunds 2025)",
+   "pieces_over_10m_after": [],
+   "pieces_note": "The remainder toward the unfunded liability is still >= $10M as dollars. It is the debt the City is paying down, set by law, so the explorer shows it as 'paying for past promises' across the retirees below (count x average).",
+   "why_cant_go_deeper": "The City sends one payment set by law to the retirement fund, and the fund then pays thousands of retirees, so the public records stop at how many retirees there are and what the average one gets."
+  },
+  {
+   "match_path_contains": [
+    "Laborers' and Retirement",
+    "097A"
+   ],
+   "amount": 14574818,
+   "proposed_status": "split_proxy",
+   "split_basis": "One voluntary payment above the statutory minimum, sent to the same fund. Shown with the same retiree count x average as the statutory line.",
+   "pieces": [
+    {
+     "name": "Advance (above statute) payment, one payment to the fund",
+     "amount": 14574818,
+     "basis": "tied",
+     "source": "data/pensions_2026.json budget_2026.advance_contribution"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "This is one extra payment the City chose to make to the retirement fund on top of what the law requires."
+  },
+  {
+   "match_path_contains": [
+    "Parks",
+    "625020"
+   ],
+   "amount": 63332412,
+   "proposed_status": "split_proxy",
+   "split_basis": "Segal valuation 12/31/2025 (raw/parks/pension_valuation_text.json page 10): employer normal cost incl. admin $9,419,176; total normal cost incl. admin $28,131,361; ADC (board policy) $88,904,199; expected employer contribution $63,332,412. Remainder toward unfunded liability is derived.",
+   "components": {
+    "employer_normal_cost": 9419176,
+    "remainder_toward_unfunded_liability_derived": 53913236,
+    "adc_board_policy": 88904199
+   },
+   "pieces": [
+    {
+     "name": "Employer normal cost",
+     "amount": 9419176,
+     "basis": "tied",
+     "source": "raw/parks/pension_valuation_text.json p.10"
+    },
+    {
+     "name": "Remainder toward unfunded liability (derived)",
+     "amount": 53913236,
+     "basis": "derived",
+     "source": "same"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "The Park District sends one payment set by law to its pension fund, and the fund pays about 2,700 retirees."
+  }
+ ]
+}

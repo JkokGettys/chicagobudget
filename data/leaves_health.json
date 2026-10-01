@@ -1,0 +1,162 @@
+{
+ "meta": {
+  "generated_by": "scripts/leaves_health.py",
+  "sources_fetched": [
+   {
+    "url": "raw/leaves/ey_reform_published.pdf (https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf)",
+    "http_status": "200 (round 2)",
+    "note": "p.46 demographics and enrollment by bargaining unit; p.43 to 45 savings ideas, no claims by plan"
+   },
+   {
+    "url": "https://www.chicago.gov/city/en/depts/dhr/provdrs/benefits.html and 3 variants",
+    "http_status": "404",
+    "note": "no public DHR rate sheet found at these URLs (probed 2026-10-01)"
+   },
+   {
+    "url": "raw/pensions_debt/acfr2025.txt note 12 p.104",
+    "http_status": "local",
+    "note": "PPO self-insured, HMO partially insured"
+   }
+  ],
+  "not_found": "A published rate sheet with enrolled counts per plan, dental/vision/prescription spend by plan, and covered lives by unit. EY p.43 says the savings columns are redacted."
+ },
+ "leaves": [
+  {
+   "match_path_contains": [
+    "0042",
+    "Hospital"
+   ],
+   "amount": 408653865,
+   "proposed_status": "split_proxy",
+   "split_basis": "PPO and other medical (self-insured plan): enrolled employees by bargaining unit (EY p.46, rounded percentages) x equal average per enrollee. PROXY. Counts cover employees only, not dependents (39% family coverage means covered lives are higher). The line is citywide across funds.",
+   "pieces": [
+    {
+     "name": "Fire: 4,008 enrolled employees x $16,530",
+     "count": 4008,
+     "average": 16530,
+     "amount": 66252111,
+     "basis": "count_x_average",
+     "source": "EY report p.46 enrollment shares x active workforce; average = line / enrolled (proxy, equal per enrollee)"
+    },
+    {
+     "name": "Police: 8,275 enrolled employees x $16,530",
+     "count": 8275,
+     "average": 16530,
+     "amount": 136785484,
+     "basis": "count_x_average",
+     "source": "EY report p.46 enrollment shares x active workforce; average = line / enrolled (proxy, equal per enrollee)"
+    },
+    {
+     "name": "Other union: 9,960 enrolled employees x $16,530",
+     "count": 9960,
+     "average": 16530,
+     "amount": 164638480,
+     "basis": "count_x_average",
+     "source": "EY report p.46 enrollment shares x active workforce; average = line / enrolled (proxy, equal per enrollee)"
+    },
+    {
+     "name": "Non-union: 2,479 enrolled employees x $16,530",
+     "count": 2479,
+     "average": 16530,
+     "amount": 40977790,
+     "basis": "count_x_average",
+     "source": "EY report p.46 enrollment shares x active workforce; average = line / enrolled (proxy, equal per enrollee)"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "enrolled_total": 24722,
+   "average_per_enrollee": 16530,
+   "by_vendor_2025_payments": {
+    "DAVIS VISION INC": {
+     "paid": 2921048,
+     "checks": 12,
+     "largest_check": 246060
+    },
+    "BLUE CROSS & BLUE SHIELD": {
+     "paid": 609983746,
+     "checks": 68,
+     "largest_check": 43242337
+    },
+    "BLUE CROSS BLUE SHIELD OF ILL": {
+     "paid": 650026,
+     "checks": 8,
+     "largest_check": 132617
+    },
+    "CAREMARK INC": {
+     "paid": 129568901,
+     "checks": 53,
+     "largest_check": 13441920
+    },
+    "UNITED HEALTHCARE": {
+     "paid": 36221,
+     "checks": 7,
+     "largest_check": 11307
+    },
+    "AETNA": {
+     "paid": 368531,
+     "checks": 9,
+     "largest_check": 101550
+    },
+    "CIGNA HEALTHCARE": {
+     "paid": 28992,
+     "checks": 7,
+     "largest_check": 6490
+    },
+    "METLIFE ASSIGNMENT COMPANY, INC.": {
+     "paid": 868449,
+     "checks": 3,
+     "largest_check": 309225
+    }
+   },
+   "why_cant_go_deeper": "The City pays hospital and doctor bills for thousands of workers as the bills come in, and it does not publish who each worker is or what each claim cost.",
+   "note": "2025 payments: Blue Cross $610.0M in 68 checks (14 checks of $10M or more, largest $43.6M) and Caremark (pharmacy) $129.6M in 53 checks. Dental, vision and life premium vendors (Delta Dental, Davis Vision, MetLife) are small or not in this line. These payments are all funds, 2025, so they do not tie to the $408.7M Corporate Fund line."
+  },
+  {
+   "match_path_contains": [
+    "0029",
+    "Health Maintenance"
+   ],
+   "amount": 85169477,
+   "proposed_status": "split_proxy",
+   "split_basis": "HMO premiums (partially insured plan): enrolled employees by bargaining unit (EY p.46, rounded percentages) x equal average per enrollee. PROXY. Counts cover employees only, not dependents (39% family coverage means covered lives are higher). The line is citywide across funds.",
+   "pieces": [
+    {
+     "name": "Fire: 424 enrolled employees x $21,432",
+     "count": 424,
+     "average": 21432,
+     "amount": 9087030,
+     "basis": "count_x_average",
+     "source": "EY report p.46 enrollment shares x active workforce; average = line / enrolled (proxy, equal per enrollee)"
+    },
+    {
+     "name": "Police: 1,196 enrolled employees x $21,432",
+     "count": 1196,
+     "average": 21432,
+     "amount": 25632283,
+     "basis": "count_x_average",
+     "source": "EY report p.46 enrollment shares x active workforce; average = line / enrolled (proxy, equal per enrollee)"
+    },
+    {
+     "name": "Other union: 2,075 enrolled employees x $21,432",
+     "count": 2075,
+     "average": 21432,
+     "amount": 44470726,
+     "basis": "count_x_average",
+     "source": "EY report p.46 enrollment shares x active workforce; average = line / enrolled (proxy, equal per enrollee)"
+    },
+    {
+     "name": "Non-union: 279 enrolled employees x $21,432",
+     "count": 279,
+     "average": 21432,
+     "amount": 5979437,
+     "basis": "count_x_average",
+     "source": "EY report p.46 enrollment shares x active workforce; average = line / enrolled (proxy, equal per enrollee)"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "enrolled_total": 3974,
+   "average_per_enrollee": 21432,
+   "why_cant_go_deeper": "The City pays one monthly price per worker to the health plan, and the price list is not published."
+  }
+ ]
+}

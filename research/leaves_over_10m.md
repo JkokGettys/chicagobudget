@@ -166,3 +166,67 @@ For the site, per kind of leaf. These are also stored per leaf in `data/leaves_o
 | `scripts/leaves_hunt.py` | Payment floor numbers (`raw/leaves/leaves_payment_floor.json`) |
 | `data/leaves_over_10m.json` | 332 leaves with split source, status, remaining pieces and the one-sentence reason |
 | `raw/leaves/` (gitignored) | Payroll aggregate, EY report text, CPS ACFR text, O'Hare document pages, OBM page |
+
+---
+
+# Round 3 (2026-10-01): decisions applied, more splits, what is left
+
+Reproduce: `python3 scripts/leaves_usa_sub.py; for s in pensions health grants cps wages parks contracts; do python3 scripts/leaves_$s.py; done; python3 scripts/leaves_inventory.py`. Add `LEAVES_NO_OVERRIDES=1` to the last command to print the step 1 numbers (writes `raw/leaves/leaves_step1.json`, not the data file). New split files: `data/leaves_pensions.json`, `leaves_health.json`, `leaves_grants.json`, `leaves_cps.json`, `leaves_wages.json`, `leaves_parks.json`, `leaves_contracts.json`. Each record names its leaf with `match_path_contains`, and `scripts/leaves_inventory.py` ingests them. Work was done by one agent (the swarm tool refused sub-agents for a worker), so no parallel workers were used.
+
+## R3.1 Before and after
+
+Rules now in the inventory: (1) one bond series x principal or interest, or one loan, is `accepted_single_obligation` even when over $10M. (2) The City base now also removes the named pieces of OBM's printed deduction that `research/transfer_residual.md` and `reconciliation.md` can reproduce: Library term notes $125.9M, matching grant funds, Finance General "Transfer ..." lines and Appendix A/B "For Services Provided by" lines, 66 lines and $180.6M of leaves. The unexplained $117.0M is not attributable to any line, so it is not removed. City base moves from $17.14B to $16.96B. (3) Park capital and vendor files and the budget PDF were used. (4) `data/city_bond_series_2026.json` did not exist when this ran. The inventory ingests it when present, using an assumed schema (`series` or `rows`, each with fund, kind and amount), so a different schema needs a small edit in the "City bond series" block.
+
+| Stage | City leaves >= $10M | CPS | Parks | Total count | Total dollars |
+|---|---:|---:|---:|---:|---:|
+| Round 2 (team splits) | 184 / $6.61B | 91 / $3.53B | 7 / $0.14B | 282 | $10.29B |
+| Step 1: decisions, residual pieces, parks files, no new splits | 181 / $6.46B | 61 / $2.55B | 6 / $0.12B | 248 | $9.13B |
+| **Step 2: with the Round 3 splits** | **177 / $6.29B** | **53 / $2.06B** | **4 / $0.08B** | **234** | **$8.44B** |
+| Step 2, tied-only column | 165 / $11.72B | 87 / $4.15B | 6 / $0.18B | 258 | $16.05B |
+
+Step 1 drops CPS by $0.98B because the 30 single-series bond leaves are accepted. The step 2 drop of $0.7B is mostly proxy splits (count x average, labelled), so read it as "explained at a person or project level, with a proxy", not "tied to the dollar". The tied-only column barely moves because pension, health and wage splits are proxies by nature. Park museums (11 institutions, ties exactly) and the capital transfer (named uses and a derived residual) are tied.
+
+Where the $8.44B sits now (234 pieces):
+
+| Kind | Pieces | $M |
+|---|---:|---:|
+| City grant reserves and grant-funded construction | 76 | 2,290 |
+| City bonds and loans (O'Hare, Water, Sewer, Midway, older GO, term notes: waiting on the bond agent) | 15 | 1,824 |
+| City professional services, utilities, judgments (single contracts, vouchers) | 38 | 1,356 |
+| CPS reserves, vacancy factor, contingency | 23 | 1,162 |
+| City other lines (taxes not collected, Medicare, workers' comp, IT, etc.) | 48 | 823 |
+| CPS contracts, tuition, other | 21 | 609 |
+| CPS capital (programs, central IT, emergency repairs) | 9 | 287 |
+| Park District | 4 | 84 |
+
+The 15 bond pieces ($1.82B) become `accepted_single_obligation` leaves once the bond agent's file lands, which would take the total to about $6.6B and about 219 pieces. Nothing was done to those lines here.
+
+## R3.2 What each attack found
+
+**a. City pensions ($2.84B, 8 lines, `scripts/leaves_pensions.py`).** Per fund the valuation prints total normal cost, member contributions and net employer normal cost, and the ADC with its amortization payment. Statutory contribution minus net employer normal cost is the part that pays down the unfunded liability. Derived: PABF $1,040.3M = $222.4M net normal cost + $817.8M toward the $13.8B unfunded liability. MEABF $965.0M = $146.9M + $818.1M. FABF $441.7M = $93.0M + $348.7M. LABF $136.6M = $26.6M + $109.9M. All four statutory amounts are far below the ADC (PABF short $376.4M, MEABF $385.4M, FABF $147.0M, LABF $33.8M, derived). The advance (097A) lines are one voluntary payment each. Benefit types are counts x averages: PABF 11,271 service annuities x $81,154, 3,068 widows, 166 children, 177 duty disability, plus refunds $11.7M and death benefits $2.0M from the fund's 2025 statements. MEABF 21,874 retired x $49,104, 3,714 spouses x $19,536, 119 reversionary x $4,932. FABF 4,006 x $96,516, 1,191 spouses x $37,284. LABF 2,506 x $65,230, 934 spouses x $21,301. **The contribution is not the benefit payment**, so benefit-type dollars are a proxy allocation by share of benefit dollars and the status is `split_proxy`. The $818M "remainder" is still a big number as dollars and is not smaller than $10M. It is the debt payment set by state law. Parks pension: employer normal cost $9.4M, remainder $53.9M (Segal valuation, ADC policy $88.9M).
+
+**b. City health care (`scripts/leaves_health.py`).** No public document splits claims by plan, covered lives or bargaining unit. What exists: EY p.46 enrollment shares by unit (Fire 4,715 staff, 85% PPO, 9% HMO, 7% waive; Police 9,970, 83/12/6; other union 13,834, 72/15/13; non-union 3,492, 71/8/21), City ACFR note 12 (PPO self-insured, HMO partially insured), and Payments. The $408.7M line is shown as 24,722 PPO enrollees x $16,530 by unit, the $85.2M HMO line as 3,974 enrollees x $21,432 (equal per enrollee, rounded shares, employees not dependents, so proxy). Payments to Blue Cross in 2025 were $610.0M in 68 checks and 14 of those are $10M or more (largest $43.6M), Caremark $129.6M in 53 checks. Probed 4 chicago.gov DHR benefits URLs, all 404, so no rate sheet.
+
+**c. Grants (`scripts/leaves_grants.py`).** Fetched and used: FAA FY2025 AIP grant list (HTTP 200): 9 of 9 O'Hare FAINs match the named awards and give the project type (runway, taxiway, terminal, service road). USASpending sub-awards to the City for ALN 20.205 and 20.507: 200 but 0 rows (IDOT passes money through without City-level sub-awards). USASpending prime awards to CDOT: only IL-2016-002 State/Lake Loop Elevated Station ($414.6M obligated, $84.8M outlays) is large. Mid-Year Grants (2025-06-01 extract): the FTA reserve is one project funded from four sources (STP $102.1M, CMAQ $59.5M, STP $18.2M, carbon reduction $15.0M unspent, caps). That moves $261M "not attributable" in the FTA reserve down to $32.9M above the one award. FHWA reserve: 50 projects, four of them $10M or more (Columbus Ave grade separation $36.2M, Canal Street viaduct $19.4M, Montrose Harbor underpasses $10.9M, Columbus Ave second record $10.0M). CDBG-DR Action Plan: the six stormwater lines sum to $390,279,000 against the plan's $390,277,600 program (Table 38), a $1,400 gap. Local sewer line construction $221.3M becomes about 26 miles x the plan's $8.5M per mile (proxy, no street list). Permeable alleys ($67.1M) and wing storage ($62.1M) have no unit costs, so they stay unsplit. Not reachable: flychicago.com O'Hare 21 pages (403, 404), CDOT capital list (404), FAA FY2026 list (404). The O'Hare unattributed remainder stays $193.5M, FHWA unattributed $40.9M, Midway unattributed $72.7M. All attributed amounts are caps, not exact splits.
+
+**d. Wages and overtime (`scripts/leaves_wages.py`).** Police overtime $200M (budget): 2025 actual by title, 7,370 police officers x $19,005, 1,327 sergeants x $26,440, 1,157 detectives x $23,584, 51 titles. Mid-Year report: CPD overtime budget $203.9M and $59.5M spent through period 5 (29.2%). Fire 0003 $98.0M: Fire titles in the 2025 Finance General 0003 account totalled $208.9M, firefighter-EMT 1,815 x $37,820 and so on, which was contract back pay and lump sums. Status proxy. The $262.3M Finance General line already had a payroll-costing proxy.
+
+**e. CPS (`scripts/leaves_cps.py`).** Pension levy $602.3M: CTPF valuation Table 11 counts x averages (23,350 retirees x $64,860, 408 disabled x $47,128, 3,399 beneficiaries x $29,749) and the FY26 required contribution components ($646.2M Board, $17.3M additional Board, $16.3M additional State, $346.8M State normal cost). ESP pension $202.8M: MEABF counts x averages, with the finding that the budget book makes a $175M reimbursement to the City contingent on new revenue (bb26 p.15). Hospitalization $161.7M: shares by FY26 vendor payments (HCSC $550.0M, Caremark $174.7M, Delta Dental $20.8M, Standard $16.0M), proxy. Special education transportation $146.7M: about 1,200 routes, 14,000 students, 20 vendors from the budget book, so about $122K per route, proxy. PBC O&M $146.6M: one Jones Lang LaSalle contract, 803 buildings, about $183K per building (equal share, proxy), Board Report 26-0319-PR5 authorizes $328.87M for 2026 to 2028. **Not split:** the three contingency lines ($120M, $100M, $52.9M), no Board Report names a spend. Preschool for All $88.1M, no provider awards found. Budget-only A58115 reserve $120.6M. Vacancy factor $143.3M.
+
+**f. Single large contracts (`scripts/leaves_contracts.py`, `data/leaves_contracts.json`).** For every 2025 vendor x contract total of $10M or more (122 items), vouchers (checks) were summed and listed. **52 single vouchers are still $10M or more, $1.15B in total**: Blue Cross 14 checks, Loevy & Loevy 6, Paschen contracts 5, Clark-O'Neil 4, AECOM/Hunt/Clayco 3, Caremark 3 and others. Revision history from Contracts rsxa-ify5 (HTTP 200 for all 14): contract 283596 State/Lake station is $444.3M at revision 0 plus $103.9M at revision 2 (2026-06-30), total $548.2M, with $176.7M paid across all years in 32 vouchers and one $90.0M check on 2025-06-17. Other revision histories: 69568 Connect Chicago $210M + $30M + $92M, 25743 AOR Transit 13 revisions $644.0M, 27075 Skyline 16 revisions $239.7M, 52685 CNECT 5 revisions $259.0M. A voucher is the lowest public level, and no task-order or project field exists in Payments, so these cannot go below the check.
+
+## R3.3 Remaining leaf reasons
+
+Every remaining leaf carries a one-sentence `why_cant_go_deeper` in `data/leaves_over_10m.json`, and the same sentences are in `remaining_pieces_over_10m`. Round 3 added sentences for pensions, health, grant reserves, stormwater, CPS reserves, buses, building contracts, Soldier Field, harbors and utilities. Examples:
+
+* Soldier Field: "One company runs Soldier Field for the Park District, and the District does not publish what it pays that company for each job."
+* Pensions: "The City sends one payment set by law to the retirement fund, and the fund then pays thousands of retirees, so the public records stop at how many retirees there are and what the average one gets."
+* Health: "The City pays hospital and doctor bills for thousands of workers as the bills come in, and it does not publish who each worker is or what each claim cost."
+* Stormwater: "The plan says how many miles of sewer it hopes to fix and what a mile costs, but the streets have not been picked yet."
+
+## R3.4 Honest limits
+
+* Without FOIA the biggest remaining gaps ($8.4B) are 76 grant pieces with no project list, single vouchers and contracts, bond series (waiting on the other agent), CPS reserves and a handful of Finance General lines with no public detail. The $10M goal is not reachable from public data on these.
+* "Team" counts treat count x average proxies as resolved. If you want only exact splits, use the tied-only row ($16.05B across 258 leaves).
+* Park Museum remittance and the capital transfer are the only new dollar-for-dollar ties. Pension, health, transport and PBC splits are equal-share or share-of-dollars proxies, each labelled in its JSON.
+* New files: `scripts/leaves_{pensions,health,grants,cps,wages,parks,contracts,usa_sub}.py`, `data/leaves_{pensions,health,grants,cps,wages,parks,contracts}.json`. Raw in `raw/leaves/` and `raw/leaves/r3/` (gitignored).

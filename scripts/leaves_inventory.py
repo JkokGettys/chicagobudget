@@ -14,6 +14,10 @@ Output: data/leaves_over_10m.json  plus totals printed to the screen.
   split_proxy   count x average or vendor/award list from a different basis (2025 pay, benefit rolls, 2025 payments)
   split_partial some pieces are still >= $10M, those pieces are counted as the remaining leaves
   unsplit_*     nothing usable yet
+Round 3 additions:
+  accepted_single_obligation  one bond series (or one loan) x principal or interest: already the lowest level, accepted even if >= $10M
+  data/leaves_*.json          override files written by scripts/leaves_*.py (each record names its leaf with match_path_contains)
+  data/city_bond_series_2026.json (other agent) is ingested when present
 """
 import csv, json, os, re, sys
 from collections import defaultdict
@@ -78,12 +82,22 @@ for _, d in vend["departments"].items():
             items_by[(num, fam)].append(it)
 budget_by = defaultdict(float)
 rows = []
+deducted = []
 for r in ords:
     a = int(r["_ordinance_amount_"])
     tr = False
     if r["department_description"] == "Finance General":
         tr = classify(r["appropriation_account_description"], r["fund_description"])[2]
     if tr:
+        continue
+    # Round 3: remove the OTHER named pieces of OBM's printed deduction (research/reconciliation.md section 3, research/transfer_residual.md):
+    #  Library term notes (proceeds of debt, printed separately), matching grant funds (ordinance p.557 says inside the deduction),
+    #  Finance General "Transfer ..." lines, Appendix A and B "For Services Provided by ..." lines. The remaining $116,988,502 is NOT attributable to any line.
+    desc = r["appropriation_account_description"]
+    if (r["appropriation_account"] == "0961" and "Library" in r["fund_description"]) or desc.startswith("To Provide for Matching and Supplementary Grant") \
+       or (r["department_description"] == "Finance General" and desc.startswith("Transfer")) \
+       or (r["department_description"] != "Finance General" and desc.startswith("For Services Provided by")):
+        deducted.append((a, r["fund_description"], r["department_description"], desc[:60]))
         continue
     kind, fam = account_family(r["appropriation_account"])
     rows.append((a, r, kind, fam))
@@ -175,7 +189,7 @@ for a, r, kind, fam in sorted(big, key=lambda x: -x[0]):
             add("City", path, a, src, "split_partial", remaining=[{"name": "GO series with 2026 interest known (6 groups)", "amount": got},
                 {"name": "older GO series, schedule not usable", "amount": a - got}],
                 note=f"${got/1e6:.1f}M of ${a/1e6:.1f}M sits in 6 series groups, the rest is older series. Source to try: GO series debt-service tables per series on cityofchicagoinvestors.com / EMMA.",
-                explain="")
+                explain="This is the yearly bill for many separate bonds, and the budget lists the total but not each bond's share.")
         else:
             add("City", path, a, src, "unsplit_source_known",
                 note="Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
@@ -261,7 +275,7 @@ for r in cps_rows:
             note="the 4 capital fund lines are replaced jointly by the 131 projects; projects >= $10M are listed once, on the first of the 4 lines",
             explain="" if not first_cap else "Several big programs (like fixing fire alarms in many schools) are one budgeted amount, and CPS does not publish the dollars for each school.")
     elif c in ("A57805", "A57810"):
-        add("CPS", path, a, "data/cps_debt_by_series_fy26.csv (already one bond series x principal or interest)", "unsplit_source_known",
+        add("CPS", path, a, "data/cps_debt_by_series_fy26.csv (already one bond series x principal or interest)", "accepted_single_obligation",
             explain="This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.")
     elif c == "A54320" and u.get("Unit") in ("",) or c == "A54320" and r["unit"][1:] in {k[1:] for k in charter}:
         ch = charter.get(r["unit"])
@@ -319,10 +333,10 @@ for l in parks["leaves_at_or_above_1M"]:
             note="benefits paid by the fund to retirees, not the District contribution", explain="The District makes one legal payment to its pension fund, and the fund pays about 2,700 retirees.")
     elif n == "Interest Expense":
         add("Parks", path, a, "Park District ordinance Appendix M by bond series (26 series)",
-            "split_tied" if not in_over and sum_in == a else "split_partial", remaining=in_over, note=f"series interest sums to ${sum_in:,} vs line ${a:,}")
+            "split_tied" if not in_over and sum_in == a else ("accepted_single_obligation" if sum_in == a else "split_partial"), remaining=[] if sum_in == a else in_over, note=f"series interest sums to ${sum_in:,} vs line ${a:,}; each remaining piece is one bond series", explain="This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.")
     elif n.startswith("Principal"):
         add("Parks", path, a, "Park District ordinance Appendix M by bond series (26 series)",
-            "split_tied" if not pr_over and sum_pr == a else "split_partial", remaining=pr_over, note=f"series principal sums to ${sum_pr:,} vs line ${a:,}")
+            "split_tied" if not pr_over and sum_pr == a else ("accepted_single_obligation" if sum_pr == a else "split_partial"), remaining=[] if sum_pr == a else pr_over, note=f"series principal sums to ${sum_pr:,} vs line ${a:,}; each remaining piece is one bond series", explain="This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.")
     elif "Laborer" in n:
         add("Parks", path, a, "Park District Appropriations PDF position tables (187 FTE)", "split_tied", note="187 FTE x about $56,250 average")
     elif "Soldier Field" in n or "Harbor" in n or "Utility" in n:
@@ -336,11 +350,88 @@ for l in parks["leaves_at_or_above_1M"]:
     else:
         add("Parks", path, a, "none", "unsplit_no_source")
 
+# ------------------------------------------------------------------ Round 3: newly landed data and per-leaf overrides
+import glob
+STATUS_MAP = {"split_tied": "split_tied", "split_proxy": "split_proxy", "split_partial": "split_partial", "accepted_single_obligation": "accepted_single_obligation",
+              "unsplit": "unsplit_no_source"}
+round3_log = {"overrides": [], "bond_series": None, "parks_inputs": [], "deducted_from_city_base": {"count": len(deducted), "dollars": sum(d[0] for d in deducted)}}
+
+def find(match, amount=None):
+    out = []
+    for l in leaves:
+        if all(m in l["path"] for m in match) and (amount is None or abs(abs(l["amount"]) - amount) < 1):
+            out.append(l)
+    return out
+
+def apply_override(l, rec, src):
+    new = STATUS_MAP[rec["proposed_status"]]
+    old = l["status"]
+    l["status"] = new
+    l["split_source"] = src + ": " + rec.get("split_basis", "")[:400]
+    l["remaining_pieces_over_10m"] = rec.get("pieces_over_10m_after", [])
+    if new == "unsplit_no_source" and not l["remaining_pieces_over_10m"]:
+        l["remaining_pieces_over_10m"] = []
+    if "why_cant_go_deeper" in rec: l["why_cant_go_deeper"] = rec["why_cant_go_deeper"]
+    l["note"] = (rec.get("split_basis", "") if not l.get("note") or new != old else l["note"])[:700]
+    l["round3_pieces"] = rec.get("pieces", [])
+    l["group_cap"] = abs(l["amount"])
+    for k in ("components", "benefit_type_pieces", "benefit_total_annual_valuation", "acfr_benefits_paid_2025", "by_vendor_2025_payments", "enrolled_total", "average_per_enrollee", "move_from_unattributed"):
+        if k in rec: l["round3_" + k] = rec[k]
+    round3_log["overrides"].append({"path_tail": l["path"][-80:], "amount": l["amount"], "from": old, "to": new})
+
+for fn in sorted(glob.glob(f"{ROOT}/data/leaves_*.json")):
+    if fn.endswith("leaves_over_10m.json") or os.environ.get("LEAVES_NO_OVERRIDES"): continue  # LEAVES_NO_OVERRIDES=1 gives the "step 1" numbers
+    d = json.load(open(fn)); src = "data/" + os.path.basename(fn)
+    for rec in d.get("leaves", []):
+        if "match_path_contains" not in rec: continue
+        for l in find(rec["match_path_contains"], rec.get("amount")):
+            if abs(l["amount"]) < T: continue
+            if rec.get("amount") is None and l["status"] not in ("unsplit_no_source", "unsplit_source_known", "split_partial", "split_proxy"): continue
+            apply_override(l, rec, src)
+
+# Park District: capital and vendor files landed (round 3), reported only, the Parks overrides above come from scripts/leaves_parks.py
+for l in leaves:
+    if l["budget"] == "Parks" and l["status"] == "other_agent":
+        l["status"] = "unsplit_no_source"; l["split_source"] = "data/parks_vendors.json: one payee per group (round 3 check)"
+round3_log["parks_inputs"] = ["data/parks_capital_projects.json", "data/parks_vendors.json"]
+
+# City bond series (other agent): data/city_bond_series_2026.json. ASSUMED schema (tolerant): top-level list under "series" or "rows", each row
+# {fund | fund_description, kind | type ("interest"|"principal"|"loan"), amount | amount_2026 | total_2026, series}. A single series is accepted as a leaf even if >= $10M.
+bp = f"{ROOT}/data/city_bond_series_2026.json"
+if os.path.exists(bp):
+    B = json.load(open(bp)); rows_ = B.get("series") or B.get("rows") or (B if isinstance(B, list) else [])
+    FUND_KEY = {"O'Hare": "Chicago O'Hare Airport Fund", "Midway": "Chicago Midway Airport Fund", "Water": "Water Fund", "Sewer": "Sewer Fund", "GO": "Bond Redemption and Interest Series Fund"}
+    ACC = {"0902": "interest", "0912": "principal", "0944": "loan"}
+    got = defaultdict(list)
+    for r_ in rows_:
+        f_ = r_.get("fund") or r_.get("fund_description") or ""; k_ = (r_.get("kind") or r_.get("type") or "").lower()
+        a_ = r_.get("amount") or r_.get("amount_2026") or r_.get("total_2026") or 0
+        for key, fd in FUND_KEY.items():
+            if key.lower() in f_.lower() or fd.lower() in f_.lower():
+                got[(fd, "interest" if "int" in k_ else "principal" if "prin" in k_ else "loan" if "loan" in k_ else k_)].append((r_.get("series", "series"), a_))
+    used = 0
+    for l in leaves:
+        if l["budget"] != "City": continue
+        for ac, kind in ACC.items():
+            if f"> {ac} " in l["path"]:
+                for (fd, k_), ser in got.items():
+                    if k_ == kind and f"> {fd} >" in l["path"]:
+                        tot_ = sum(a for _, a in ser)
+                        l["status"] = "accepted_single_obligation" if abs(tot_ - abs(l["amount"])) < max(1000, 0.002 * abs(l["amount"])) else "split_partial"
+                        l["remaining_pieces_over_10m"] = [] if l["status"] == "accepted_single_obligation" else [{"name": "bond series not in data/city_bond_series_2026.json", "amount": round(abs(l["amount"]) - tot_)}]
+                        l["split_source"] = "data/city_bond_series_2026.json (other agent): %d series, $%.1fM of $%.1fM" % (len(ser), tot_ / 1e6, abs(l["amount"]) / 1e6)
+                        l["round3_pieces"] = [{"name": n, "amount": a} for n, a in ser]
+                        l["why_cant_go_deeper"] = "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+                        used += 1
+    round3_log["bond_series"] = {"file": "data/city_bond_series_2026.json", "rows": len(rows_), "leaves_updated": used}
+else:
+    round3_log["bond_series"] = "file not present yet; inventory will pick it up on the next run"
+
 # ------------------------------------------------------------------ totals
 def over_after(l, mode):
     """dollars and count still >= $10M after splits. mode 'strict' resolves split_tied only, 'team' resolves tied+proxy and replaces partial by remaining pieces."""
     s = l["status"]; amt = abs(l["amount"])
-    if s == "split_tied": return []
+    if s in ("split_tied", "accepted_single_obligation"): return []
     if mode == "team":
         if s == "split_proxy": return []
         if s == "split_partial":
@@ -361,8 +452,22 @@ for b in ("City", "CPS", "Parks"):
                       for st in sorted({l["status"] for l in ls})}
     summary[b] = s
 summary["bases"] = {"city_net_total": city_before_total, "cps_total": cps_total, "parks_total": parks["meta"]["grand_total_2026"]}
-json.dump({"threshold": T, "summary": summary, "leaves": sorted(leaves, key=lambda l: (l["budget"], -abs(l["amount"])))},
-          open(f"{ROOT}/data/leaves_over_10m.json", "w"), indent=1)
+# remaining pieces >= $10M after team splits (what is left), largest first
+remaining = []
+for l in leaves:
+    pcs = over_after(l, "team")
+    names = [p["name"] for p in l["remaining_pieces_over_10m"]] if l["status"] == "split_partial" else [None] * len(pcs)
+    for n, x in zip(names or [None] * len(pcs), pcs):
+        remaining.append({"budget": l["budget"], "amount": round(x), "status": l["status"], "leaf_path": l["path"], "piece": n, "why_cant_go_deeper": l["why_cant_go_deeper"]})
+remaining.sort(key=lambda r: -r["amount"])
+summary["remaining_over_10m"] = {"count": len(remaining), "dollars": sum(r["amount"] for r in remaining)}
+round3_log["remaining_top"] = remaining[:40]
+if os.environ.get("LEAVES_NO_OVERRIDES"):
+    OUT = f"{ROOT}/raw/leaves/leaves_step1.json"
+else:
+    OUT = f"{ROOT}/data/leaves_over_10m.json"
+json.dump({"threshold": T, "summary": summary, "round3": round3_log, "remaining_pieces_over_10m": remaining, "leaves": sorted(leaves, key=lambda l: (l["budget"], -abs(l["amount"])))},
+          open(OUT, "w"), indent=1)
 
 print(f"{'budget':6} {'before':>18} {'after: tied only':>22} {'after: team splits':>22}")
 for b in ("City", "CPS", "Parks"):

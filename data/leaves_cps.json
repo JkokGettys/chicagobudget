@@ -1,0 +1,187 @@
+{
+ "meta": {
+  "generated_by": "scripts/leaves_cps.py",
+  "sources_fetched": [
+   {
+    "url": "local: data/cps_ctpf_valuation_2025.csv (https://www.ctpf.org/sites/files/2025-10/CTPF_FundingVal_2025_Final.pdf)",
+    "http_status": "200 at round 2",
+    "note": "valuation numbers"
+   },
+   {
+    "url": "local: raw/pensions_debt/funds/MEABF_val_2025.txt",
+    "http_status": "200 at round 2",
+    "note": "member counts and average monthly benefits"
+   },
+   {
+    "url": "local: raw/cps/bb26.pdf.txt (CPS FY2026 budget book)",
+    "http_status": "200 at round 1",
+    "note": "routes, students, 803 buildings, MEABF $175M contingent reimbursement"
+   },
+   {
+    "url": "local: data/cps_supplier_payments_fy2026_over1m.csv (https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026)",
+    "http_status": "200 at round 2",
+    "note": "vendor totals only, no budget line"
+   }
+  ],
+  "not_found": "Contingency lines (A57915 $120M, $100M, $52.9M): no Board Report names a purchase from them, so they stay unsplit. Preschool for All A54125 $88.1M: provider awards not found. Budget-only A58115 reserve $120.6M: no source beyond CTPF totals."
+ },
+ "leaves": [
+  {
+   "match_path_contains": [
+    "CTPF Pension Levy",
+    "A58115"
+   ],
+   "amount": 602309665,
+   "proposed_status": "split_proxy",
+   "split_basis": "PROXY. The Board levy (budget book p.35) is a contribution, not a benefit payment. Shown as the CTPF benefit types it helps pay (count x average, valuation 6/30/2025 Table 11 p.44), each allocated levy x share of annual benefit dollars. Statutory components of FY2026 required employer contributions (valuation p.1): Board required $646,234,000, additional Board $17,332,000, additional State $16,256,000, State normal cost $346,838,000, total $1,026,660,000. Employer normal cost incl. admin $278,649,630 of total normal cost $538,756,738.",
+   "pieces": [
+    {
+     "name": "Retirees: 23,350 x $64,860",
+     "count": 23350,
+     "average": 64860,
+     "annual_benefits": 1514469736,
+     "contribution_share_proxy": 557970850,
+     "basis": "count_x_average",
+     "source": "data/cps_ctpf_valuation_2025.csv (Table 11 p.44)"
+    },
+    {
+     "name": "Disabled retirees: 408 x $47,128",
+     "count": 408,
+     "average": 47128,
+     "annual_benefits": 19228116,
+     "contribution_share_proxy": 7084148,
+     "basis": "count_x_average",
+     "source": "data/cps_ctpf_valuation_2025.csv (Table 11 p.44)"
+    },
+    {
+     "name": "Beneficiaries: 3,399 x $29,749",
+     "count": 3399,
+     "average": 29749,
+     "annual_benefits": 101118302,
+     "contribution_share_proxy": 37254666,
+     "basis": "count_x_average",
+     "source": "data/cps_ctpf_valuation_2025.csv (Table 11 p.44)"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "The school board sends one pension payment set by state law, and the teachers' pension fund then pays more than 27,000 retired teachers and families."
+  },
+  {
+   "match_path_contains": [
+    "A58275"
+   ],
+   "amount": 202791171.06,
+   "proposed_status": "split_proxy",
+   "split_basis": "PROXY. MEABF valuation 12/31/2025: 21,874 retired members x $4,092 a month, 3,714 surviving spouses x $1,628, 119 reversionary x $411, 64 children (derived remainder); total annual benefits $1,147,424,016 (all City and CPS members). CPS employees are about 64% of active members and drive about 49% of the statutory contribution (Forecast 2027 p.22, via data/pensions_2026.json meabf_cps_share). The budget line is a reserve ($202.8M) and the budget book also says a $175M reimbursement to the City is contingent on new revenue (bb26 p.15).",
+   "pieces": [
+    {
+     "name": "Retired members: 21,874 x $49,104",
+     "count": 21874,
+     "average": 49104,
+     "basis": "count_x_average",
+     "source": "raw/pensions_debt/funds/MEABF_val_2025.txt"
+    },
+    {
+     "name": "Surviving spouses: 3,714 x $19,536",
+     "count": 3714,
+     "average": 19536,
+     "basis": "count_x_average",
+     "source": "same"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "This is money set aside in case the school district has to repay the City for the pensions of non-teacher staff, and nobody has decided yet if it will be paid."
+  },
+  {
+   "match_path_contains": [
+    "A58195"
+   ],
+   "amount": 161666402.4,
+   "proposed_status": "split_partial",
+   "split_basis": "PROXY by plan. FY26 CPS supplier payments: HCSC (medical) $550.0M, CVS Caremark (prescription) $174.7M, Delta Dental $20.8M, Standard Insurance (life/disability) $16.0M. The reserve is allocated by those shares (labelled proxy). FY25 ACFR Note 11: self-insured medical claims paid $703.1M, claims reserve $116.3M. Covered lives are not published.",
+   "pieces": [
+    {
+     "name": "Medical (HCSC) share",
+     "amount": 116763979,
+     "basis": "proxy",
+     "source": "data/cps_supplier_payments_fy2026_over1m.csv"
+    },
+    {
+     "name": "Prescription (Caremark) share",
+     "amount": 37091220,
+     "basis": "proxy",
+     "source": "data/cps_supplier_payments_fy2026_over1m.csv"
+    },
+    {
+     "name": "Dental share",
+     "amount": 4419966,
+     "basis": "proxy",
+     "source": "data/cps_supplier_payments_fy2026_over1m.csv"
+    },
+    {
+     "name": "Life and disability share",
+     "amount": 3391237,
+     "basis": "proxy",
+     "source": "data/cps_supplier_payments_fy2026_over1m.csv"
+    }
+   ],
+   "pieces_over_10m_after": [
+    {
+     "name": "Medical (HCSC) share of reserve, proxy",
+     "amount": 116763979
+    },
+    {
+     "name": "Prescription (Caremark) share of reserve, proxy",
+     "amount": 37091220
+    }
+   ],
+   "why_cant_go_deeper": "CPS pays most health bills as they come in, so this reserve is a guess at bills that have not arrived yet, and the insurers do not publish who each claim was for."
+  },
+  {
+   "match_path_contains": [
+    "A54210"
+   ],
+   "amount": 146700000,
+   "proposed_status": "split_proxy",
+   "split_basis": "PROXY count x average from the budget book: about 1,200 routes for students with disabilities run by 20 vendors, more than 14,000 students (bb26 Student Transportation Services). $146.7M / 1,200 routes = $122,250 per route, or $10,479 per student. The three largest bus companies are named in cps_deep.md from FY26 supplier payments (Illinois Central $29.1M, Sunrise $26.2M, Alltown $22.3M). Those are district-wide totals and may include general education routes.",
+   "pieces": [
+    {
+     "name": "about 1,200 routes x about $122K",
+     "count": 1200,
+     "average": 122250,
+     "basis": "count_x_average",
+     "source": "raw/cps/bb26.pdf.txt Student Transportation Services"
+    },
+    {
+     "name": "about 14,000 students x about $10.5K",
+     "count": 14000,
+     "average": 10479,
+     "basis": "count_x_average",
+     "source": "same"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "CPS pays bus companies by contract, so the public can see how many routes and students there are but not what each route cost."
+  },
+  {
+   "match_path_contains": [
+    "Public Building Commission O & M",
+    "A54105"
+   ],
+   "amount": 146634377,
+   "proposed_status": "split_proxy",
+   "split_basis": "PROXY. Facility management is one contract with Jones Lang LaSalle: FY26 payments $139.4M (CPS procurement API), Board Report 26-0319-PR5 authorizes $328.87M for 7/1/2026 to 6/30/2028 and 26-0226-PR3 authorized $299.57M for the prior term. The budget book says the portfolio is 522 campuses and 803 buildings. $146,634,377 / 803 buildings = about $183K per building (equal share, not a real per-building cost).",
+   "pieces": [
+    {
+     "name": "803 buildings x about $183K",
+     "count": 803,
+     "average": 182608,
+     "basis": "count_x_average",
+     "source": "raw/cps/bb26.pdf.txt p.? portfolio sentence; data/cps_contract_awards_fy21_27.csv"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "One company runs the repairs and building engineering for all school buildings under one contract, and CPS does not publish what each building cost."
+  }
+ ]
+}

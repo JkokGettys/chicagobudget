@@ -1,0 +1,186 @@
+{
+ "meta": {
+  "generated_by": "scripts/leaves_parks.py",
+  "sources_fetched": [
+   {
+    "url": "local: raw/parks/txt/p252.txt (https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf)",
+    "http_status": "200 at round 1",
+    "note": "Appropriation F"
+   }
+  ]
+ },
+ "leaves": [
+  {
+   "match_path_contains": [
+    "625010"
+   ],
+   "amount": 29617600,
+   "proposed_status": "split_tied",
+   "split_basis": "Park District 2026 Appropriations p.246 Appropriation F: 11 named institutions, each = tax levy less loss in collection plus personal property replacement tax. Sum ties to $29,617,600 exactly.",
+   "pieces": [
+    {
+     "name": "Museum of Science and Industry",
+     "amount": 4625406,
+     "basis": "tied",
+     "source": "raw/parks/txt/p252.txt"
+    },
+    {
+     "name": "Field Museum of Natural History",
+     "amount": 4625406,
+     "basis": "tied",
+     "source": "raw/parks/txt/p252.txt"
+    },
+    {
+     "name": "Art Institute of Chicago",
+     "amount": 4625406,
+     "basis": "tied",
+     "source": "raw/parks/txt/p252.txt"
+    },
+    {
+     "name": "John G. Shedd Aquarium",
+     "amount": 3853338,
+     "basis": "tied",
+     "source": "raw/parks/txt/p252.txt"
+    },
+    {
+     "name": "Chicago History Museum",
+     "amount": 1698292,
+     "basis": "tied",
+     "source": "raw/parks/txt/p252.txt"
+    },
+    {
+     "name": "Peggy Notebaert Nature Museum (Chicago Academy of Sciences)",
+     "amount": 1698292,
+     "basis": "tied",
+     "source": "raw/parks/txt/p252.txt"
+    },
+    {
+     "name": "Adler Planetarium",
+     "amount": 1698292,
+     "basis": "tied",
+     "source": "raw/parks/txt/p252.txt"
+    },
+    {
+     "name": "DuSable Museum of African American History",
+     "amount": 1698292,
+     "basis": "tied",
+     "source": "raw/parks/txt/p252.txt"
+    },
+    {
+     "name": "National Museum of Mexican Art",
+     "amount": 1698292,
+     "basis": "tied",
+     "source": "raw/parks/txt/p252.txt"
+    },
+    {
+     "name": "Museum of Contemporary Art",
+     "amount": 1698292,
+     "basis": "tied",
+     "source": "raw/parks/txt/p252.txt"
+    },
+    {
+     "name": "Institute of Puerto Rican Arts and Culture (IPRAC)",
+     "amount": 1698292,
+     "basis": "tied",
+     "source": "raw/parks/txt/p252.txt"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "State law sets one payment for each of 11 museums, and the largest is $4.6M, so there is nothing smaller to show."
+  },
+  {
+   "match_path_contains": [
+    "625065"
+   ],
+   "amount": 10523042,
+   "proposed_status": "split_tied",
+   "split_basis": "Ordinance footnote (p.246): Other Expense includes $10M of TIF surplus capital. Budget message (p.7): $5M funds Chicago Grows Together (16 parks, $200K to $500K each, total $5,000,000, data/parks_capital_projects.json) and $5M funds priority infrastructure (fieldhouse air conditioning, lead service line replacement, ADA upgrades for polling sites; no dollars per item). Residual $523,042 is derived.",
+   "pieces": [
+    {
+     "name": "Chicago Grows Together: 16 parks x $200K to $500K",
+     "amount": 5000000,
+     "basis": "tied",
+     "source": "data/parks_capital_projects.json; raw/parks/txt/p007.txt"
+    },
+    {
+     "name": "Priority infrastructure (AC, lead lines, ADA), no per-item dollars",
+     "amount": 5000000,
+     "basis": "tied",
+     "source": "raw/parks/txt/p007.txt"
+    },
+    {
+     "name": "Remaining operating transfer to capital (derived)",
+     "amount": 523042,
+     "basis": "derived",
+     "source": "10,523,042 minus the two named $5M items"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "The District moved this money into its building fund, and the public plan names two $5M uses without a price for each repair."
+  },
+  {
+   "match_path_contains": [
+    "626045"
+   ],
+   "amount": 36292135,
+   "proposed_status": "unsplit",
+   "split_basis": "parks_vendors.json: SMG (ASM Global) holds P-12035 Soldier Field and McFetridge, P-15018 Beverly/Morgan Park. The ERP payee list gives one SMG total ($40.6M in 2022 for accounts 626045, 626055, 626065), not by facility. The 2026 budget line is $36.3M for Soldier Field alone. No fee schedule is attached to the Legistar matters.",
+   "pieces": [],
+   "pieces_over_10m_after": [
+    {
+     "name": "SMG management of Soldier Field (one contract P-12035)",
+     "amount": 36292135
+    }
+   ],
+   "why_cant_go_deeper": "One company runs Soldier Field for the Park District, and the District does not publish what it pays that company for each job."
+  },
+  {
+   "match_path_contains": [
+    "626040"
+   ],
+   "amount": 16580506,
+   "proposed_status": "unsplit",
+   "split_basis": "parks_vendors.json: Westrec Marinas (P-14010) is the only payee mapped to harbor management ($11.5M in 2022). One contract.",
+   "pieces": [],
+   "pieces_over_10m_after": [
+    {
+     "name": "Westrec harbor management (one contract P-14010)",
+     "amount": 16580506
+    }
+   ],
+   "why_cant_go_deeper": "One company runs all the boat harbors, and the District does not publish what it pays for each harbor."
+  },
+  {
+   "match_path_contains": [
+    "623080"
+   ],
+   "amount": 16707439,
+   "proposed_status": "unsplit",
+   "split_basis": "parks_vendors.json: water and sewer payee not identified (probably the City of Chicago, 2022 list shows $18.9M to unmapped City of Chicago payees).",
+   "pieces": [],
+   "pieces_over_10m_after": [
+    {
+     "name": "Water and sewer bills (payee not identified)",
+     "amount": 16707439
+    }
+   ],
+   "why_cant_go_deeper": "This is the water bill for all the parks, and the public list does not show how much each park used."
+  },
+  {
+   "match_path_contains": [
+    "623075"
+   ],
+   "amount": 14805112,
+   "proposed_status": "unsplit",
+   "split_basis": "parks_vendors.json: electric and gas suppliers by name (Direct Energy, CenterPoint, Symmetry, ComEd) in 2019 to 2022 only. No 2026 supplier split.",
+   "pieces": [],
+   "pieces_over_10m_after": [
+    {
+     "name": "Electric bills (several suppliers, 2019 to 2022 lists only)",
+     "amount": 14805112
+    }
+   ],
+   "why_cant_go_deeper": "This is the electric bill for all the parks, paid to a few power companies, and the public list does not show each park."
+  }
+ ]
+}

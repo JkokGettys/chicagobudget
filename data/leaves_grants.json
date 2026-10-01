@@ -1,0 +1,404 @@
+{
+ "meta": {
+  "generated_by": "scripts/leaves_grants.py",
+  "sources_fetched": [
+   {
+    "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/ (subawards:true, ALN 20.205 and 20.507, recipient City of Chicago)",
+    "http_status": 200,
+    "note": "0 sub-awards to the City, dead end (raw/leaves/usa_sub.json)"
+   },
+   {
+    "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/ (prime awards, recipient CDOT, ALN 20.507/20.205/20.500/20.934)",
+    "http_status": 200,
+    "note": "only IL-2016-002 State/Lake is large; no ALN 20.205 prime awards to CDOT because 20.205 passes through IDOT"
+   },
+   {
+    "url": "https://www.faa.gov/sites/faa.gov/files/2025-11/FY_2025_AIP_Grants.xlsx",
+    "http_status": 200,
+    "note": "9 O'Hare and 2 Midway FY2025 grants, 9 of 9 O'Hare FAINs match the named awards"
+   },
+   {
+    "url": "https://www.faa.gov/airports/aip/grant_histories/2026",
+    "http_status": 404,
+    "note": "FY2026 list not yet published"
+   },
+   {
+    "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/CDBG/cdbg-dr/CoC%20CDBG-DR%20Action%20Plan_Website.pdf",
+    "http_status": 200,
+    "note": "Table 25 unit cost, Table 38 program $390,277,600"
+   },
+   {
+    "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026Mid-YearBudgetReport.pdf",
+    "http_status": 200,
+    "note": "grant tables list project, not carryover by award"
+   },
+   {
+    "url": "https://www.flychicago.com/ohare/ohare21 and 2 variants",
+    "http_status": "403 or 404",
+    "note": "O'Hare 21 project list not reachable by script"
+   },
+   {
+    "url": "https://www.chicago.gov/city/en/depts/cdot/provdrs/infrastructure.html",
+    "http_status": 404,
+    "note": "CDOT capital list not found"
+   }
+  ],
+  "caveat": "All attributed amounts are caps (unspent obligation), not exact splits. Mid-Year Grants is the 2025-06-01 extract."
+ },
+ "leaves": [
+  {
+   "match_path_contains": [
+    "DOT - FHWA - IDOT - CTY",
+    "909A"
+   ],
+   "amount": 162040000,
+   "proposed_status": "split_partial",
+   "split_basis": "Mid-Year Grants (extract 2025-06-01) projects with ALN 20.205 in CDOT: 46 projects, unspent budget sums to $121.1M (cap); 42 of them are under $10M ($44.5M together).",
+   "pieces": [
+    {
+     "name": "named projects, unspent budget",
+     "amount": 121122530,
+     "basis": "cap_unspent_obligation",
+     "source": "raw/contracts/midyear_grants.csv"
+    }
+   ],
+   "pieces_over_10m_after": [
+    {
+     "name": "CREATE GS11 COLUMBUS AVENUE AT BRC GRADE SEPARATION (unspent, Mid-Year Grants)",
+     "amount": 36249288
+    },
+    {
+     "name": "CANAL STREET VIADUCT - FROM MADISON STREET TO ADAMS STREET (unspent, Mid-Year Grants)",
+     "amount": 19435702
+    },
+    {
+     "name": "MONTROSE HARBOR PEDESTRIAN UNDERPASSES (unspent, Mid-Year Grants)",
+     "amount": 10936676
+    },
+    {
+     "name": "COLUMBUS AVE. AT BRC GRADE SEPARATION \u00bf CREATE GS11 (unspent, Mid-Year Grants)",
+     "amount": 10000000
+    },
+    {
+     "name": "reserve not covered by any Mid-Year project (unattributed)",
+     "amount": 40917470
+    }
+   ],
+   "why_cant_go_deeper": "This is money the federal government promised for road and bridge jobs, and a few big jobs hold most of it while the rest has no job picked yet."
+  },
+  {
+   "match_path_contains": [
+    "DOT - FTA - Federal Transit Formula",
+    "909A"
+   ],
+   "amount": 362703000,
+   "proposed_status": "split_partial",
+   "split_basis": "USASpending prime award IL-2016-002 (State/Lake Loop Elevated Station): obligation $414.6M minus outlays $84.8M = $329.8M unspent (cap). Mid-Year Grants shows the same project in 4 funding sources (STP, CMAQ, CRP). USASpending sub-awards to the City for ALN 20.507 and 20.205: 0 rows (HTTP 200).",
+   "pieces": [
+    {
+     "name": "State/Lake Loop Elevated Station (one named project)",
+     "amount": 329801213,
+     "basis": "cap_unspent_obligation",
+     "source": "USASpending award IL-2016-002"
+    }
+   ],
+   "pieces_over_10m_after": [
+    {
+     "name": "State/Lake Loop Elevated Station, STP - FEDERAL - CONSTRUCTION (Mid-Year unspent)",
+     "amount": 102140573
+    },
+    {
+     "name": "State/Lake Loop Elevated Station, CONGESTION MITIGATION AIR QUALITY - FED (Mid-Year unspent)",
+     "amount": 59516918
+    },
+    {
+     "name": "State/Lake Loop Elevated Station, STP - FEDERAL - CONSTRUCTION (Mid-Year unspent)",
+     "amount": 18190500
+    },
+    {
+     "name": "State/Lake Loop Elevated Station, CARBON REDUCTION PROGRAM (Mid-Year unspent)",
+     "amount": 15000000
+    },
+    {
+     "name": "State/Lake Loop Elevated Station: rest of FTA award IL-2016-002 not shown by funding source in Mid-Year Grants (cap, USASpending obligation minus outlays)",
+     "amount": 126118674
+    },
+    {
+     "name": "reserve above the one USASpending award (unattributed)",
+     "amount": 32901787
+    }
+   ],
+   "move_from_unattributed": 228298213,
+   "why_cant_go_deeper": "Almost all of this money is for one big train station rebuild, and the public lists show it by where the money came from, not by what each dollar buys."
+  },
+  {
+   "match_path_contains": [
+    "Airport Improvement Program - O'Hare (20.106)",
+    "909A"
+   ],
+   "amount": 411790000,
+   "proposed_status": "split_partial",
+   "split_basis": "26 named FAA awards (USASpending, place of performance O'Hare). 9 of them verified against the FAA FY2025 AIP grant list (project type and amount). Unspent obligation caps.",
+   "pieces": [
+    {
+     "award": "31700222092026",
+     "unspent": 47891414,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700221992025",
+     "unspent": 29971297,
+     "faa_project_summary": "Reconstruct Service Road",
+     "faa_list_amount": 29971297
+    },
+    {
+     "award": "31700222072026",
+     "unspent": 21422826,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700222062026",
+     "unspent": 20000000,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700222032025",
+     "unspent": 20000000,
+     "faa_project_summary": "Expand Terminal",
+     "faa_list_amount": 20000000
+    },
+    {
+     "award": "31700221972025",
+     "unspent": 15743737,
+     "faa_project_summary": "Extend/Expand Taxiway, Extend/Expand Taxiway",
+     "faa_list_amount": 15743737
+    },
+    {
+     "award": "31700222102026",
+     "unspent": 14000000,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700221932024",
+     "unspent": 13995713,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700222012025",
+     "unspent": 12358946,
+     "faa_project_summary": "Noise Mitigation Measures for Residences within 65-69 DNL",
+     "faa_list_amount": 12520494
+    },
+    {
+     "award": "31700222022025",
+     "unspent": 10448503,
+     "faa_project_summary": "Expand Terminal",
+     "faa_list_amount": 10448503
+    },
+    {
+     "award": "31700221952024",
+     "unspent": 5826221,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700221922023",
+     "unspent": 2605663,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700222042025",
+     "unspent": 1257426,
+     "faa_project_summary": "Reconstruct Taxiway",
+     "faa_list_amount": 1857143
+    },
+    {
+     "award": "3170022TDP2025",
+     "unspent": 1000000,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700222052025",
+     "unspent": 987518,
+     "faa_project_summary": "Reconstruct Service Road",
+     "faa_list_amount": 3119958
+    },
+    {
+     "award": "31700222112026",
+     "unspent": 499999,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700222002025",
+     "unspent": 247319,
+     "faa_project_summary": "Rehabilitate Taxilane, Rehabilitate Taxiway",
+     "faa_list_amount": 1786110
+    },
+    {
+     "award": "31700221892022",
+     "unspent": 35963,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700221842022",
+     "unspent": 0,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700221982025",
+     "unspent": 0,
+     "faa_project_summary": "Extend/Expand Runway",
+     "faa_list_amount": 30000000
+    },
+    {
+     "award": "31700221942024",
+     "unspent": 0,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700221912023",
+     "unspent": 0,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700221852022",
+     "unspent": 0,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700221962024",
+     "unspent": 0,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700251022022",
+     "unspent": 0,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    },
+    {
+     "award": "31700221902022",
+     "unspent": 0,
+     "faa_project_summary": null,
+     "faa_list_amount": null
+    }
+   ],
+   "pieces_over_10m_after": [
+    {
+     "name": "FAA grant 31700222092026: see USASpending description (unspent obligation)",
+     "amount": 47891414
+    },
+    {
+     "name": "FAA grant 31700221992025: Reconstruct Service Road (unspent obligation)",
+     "amount": 29971297
+    },
+    {
+     "name": "FAA grant 31700222072026: see USASpending description (unspent obligation)",
+     "amount": 21422826
+    },
+    {
+     "name": "FAA grant 31700222062026: see USASpending description (unspent obligation)",
+     "amount": 20000000
+    },
+    {
+     "name": "FAA grant 31700222032025: Expand Terminal (unspent obligation)",
+     "amount": 20000000
+    },
+    {
+     "name": "FAA grant 31700221972025: Extend/Expand Taxiway, Extend/Expand Taxiway (unspent obligation)",
+     "amount": 15743737
+    },
+    {
+     "name": "FAA grant 31700222102026: see USASpending description (unspent obligation)",
+     "amount": 14000000
+    },
+    {
+     "name": "FAA grant 31700221932024: see USASpending description (unspent obligation)",
+     "amount": 13995713
+    },
+    {
+     "name": "FAA grant 31700222012025: Noise Mitigation Measures for Residences within 65-69 DNL (unspent obligation)",
+     "amount": 12358946
+    },
+    {
+     "name": "FAA grant 31700222022025: Expand Terminal (unspent obligation)",
+     "amount": 10448503
+    },
+    {
+     "name": "reserve not covered by any named FAA award (unattributed)",
+     "amount": 193497455
+    }
+   ],
+   "why_cant_go_deeper": "The airport has promises of federal money for runways and terminals, but not enough named jobs yet to explain the rest."
+  },
+  {
+   "match_path_contains": [
+    "CDBG-DR - Stormwater Infrastructure - Local Sewer Line Construction",
+    "0540"
+   ],
+   "amount": 221342000,
+   "proposed_status": "split_proxy",
+   "split_basis": "CDBG-DR Action Plan (HTTP 200, PDF p.50 Table 25) estimates local sewer rehab at $8,500,000 per mile. $221,342,000 / $8.5M = 26.0 miles x $8.5M (count derived from the plan's own unit cost, PROXY). The plan names no street list. The six stormwater lines in the ordinance sum to $390,279,000 against the plan's $390,277,600 Infrastructure and Mitigation Program (Table 38, p.73), a $1,400 difference.",
+   "pieces": [
+    {
+     "name": "about 26.0 miles of local sewer x $8.5M per mile",
+     "count": 26.0,
+     "average": 8500000,
+     "amount": 221342000,
+     "basis": "count_x_average",
+     "source": "CDBG-DR Action Plan Table 25 p.50"
+    }
+   ],
+   "pieces_over_10m_after": [],
+   "why_cant_go_deeper": "The plan says how many miles of sewer it hopes to fix and what a mile costs, but the streets have not been picked yet."
+  },
+  {
+   "match_path_contains": [
+    "CDBG-DR - Stormwater Infrastructure - Permeable Alleys",
+    "0540"
+   ],
+   "amount": 67104000,
+   "proposed_status": "unsplit",
+   "split_basis": "CDBG-DR Action Plan (Table 38 p.73) names the program and the project types but gives no per-project budget or unit cost for this type. No split made.",
+   "pieces": [],
+   "pieces_over_10m_after": [
+    {
+     "name": "Permeable Alleys (no project list)",
+     "amount": 67104000
+    }
+   ],
+   "why_cant_go_deeper": "The city wants to make alleys soak up rain, but no list of which alleys has been published."
+  },
+  {
+   "match_path_contains": [
+    "CDBG-DR - Stormwater Infrastructure - Wing Storage",
+    "0540"
+   ],
+   "amount": 62097000,
+   "proposed_status": "unsplit",
+   "split_basis": "CDBG-DR Action Plan (Table 38 p.73) names the program and the project types but gives no per-project budget or unit cost for this type. No split made.",
+   "pieces": [],
+   "pieces_over_10m_after": [
+    {
+     "name": "Wing Storage (no project list)",
+     "amount": 62097000
+    }
+   ],
+   "why_cant_go_deeper": "Wing storage means big underground water tanks, and the plan does not say how many or where."
+  }
+ ]
+}
