@@ -24,6 +24,8 @@ BASES = {
     "proxy",       # an estimate: count x average, share of dollars from another year
     "residual",    # budget line minus the itemised pieces ("other / not itemised")
     "adjustment",  # budgeted offsets: turnover, savings, the unexplained OBM deduction
+    "paid_to_date",  # money actually paid so far this year (partial year), shown inside its budget line
+    "gov_estimate",  # an estimate published by the government itself (e.g. a projection in an official report)
 }
 TEN_M = 10_000_000_00  # $10M in cents
 
@@ -161,6 +163,121 @@ def split(line, pieces, residual_name="Other / not itemised", residual_note=None
                              name, amount=diff, basis=residual_basis if diff > 0 else "adjustment",
                              note=residual_note, why=residual_why))
     return made
+
+
+# ---- generic split files ---------------------------------------------------
+def _add_piece(parent, p, default_basis, src):
+    """Add one piece (dict, dollars) and its nested children under parent. Returns the node."""
+    kids = p.get("children") or []
+    n = parent.add(p.get("key") or p["name"], p["name"], amount=cents(p["amount"]),
+                   basis=p.get("basis") or default_basis, kind=p.get("kind") or "piece",
+                   count=p.get("count"), unit_amount=cents(p["unit_amount"]) if p.get("unit_amount") is not None else None,
+                   unit_label=p.get("unit_label"), why=p.get("why"), note=p.get("note"),
+                   source=p.get("source") or src, extra=p.get("extra"))
+    if kids:
+        for k in kids:
+            _add_piece(n, k, p.get("basis") or default_basis, p.get("source") or src)
+        s = sum(c.amount for c in n.children)
+        if s < n.amount:
+            n.add("other", p.get("children_residual_name", "Other / not itemised"), amount=n.amount - s,
+                  basis="residual", why=p.get("children_residual_why"))
+        elif s > n.amount:
+            raise ValueError(f"children exceed piece {n.id}: {s/100:,.2f} > {n.amount/100:,.2f}")
+    return n
+
+
+def apply_split_file(path, resolve, log=print):
+    """Apply a split file (format in build/SPLITS.md).
+
+    resolve(target_dict) -> Node or None. Each split's pieces must fit inside the target
+    (mode budget_split) or are shown with a visible not-yet-spent / over-budget box (mode paid_to_date).
+    Returns (applied, skipped) counts. Nothing is ever scaled to fit.
+    """
+    data = json.load(open(path))
+    applied = skipped = 0
+    for sp in data.get("splits", []):
+        line = resolve(sp["target"])
+        tag = f"{path.split('/')[-1]} {sp['target']}"
+        if line is None:
+            log(f"  skip {tag}: target not found"); skipped += 1; continue
+        if line.children:
+            log(f"  skip {tag}: target already split ({line.id})"); skipped += 1; continue
+        if sp.get("expect_amount") is not None and cents(sp["expect_amount"]) != line.amount:
+            log(f"  skip {tag}: expect {sp['expect_amount']:,} but line is {line.amount/100:,.2f}"); skipped += 1; continue
+        mode = sp.get("mode", "budget_split")
+        src = sp.get("source") or line.source
+        pieces = sp["pieces"]
+        tot = sum(cents(p["amount"]) for p in pieces)
+        if mode == "budget_split" and tot > line.amount:
+            log(f"  skip {tag}: pieces {tot/100:,.2f} exceed line {line.amount/100:,.2f}"); skipped += 1; continue
+        try:
+            for p in pieces:
+                _add_piece(line, p, "paid_to_date" if mode == "paid_to_date" else "tied", src)
+        except ValueError as e:
+            line.children = []
+            log(f"  skip {tag}: {e}"); skipped += 1; continue
+        diff = line.amount - tot
+        if diff > 0:
+            r = sp.get("residual") or {}
+            default = ("Budgeted but not spent yet" if mode == "paid_to_date" else "Other / not itemised")
+            line.add("not-spent-yet" if mode == "paid_to_date" else "other-not-itemised", r.get("name", default),
+                     amount=diff, basis="residual", why=r.get("why"), note=r.get("note"), kind="residual")
+        elif diff < 0:
+            o = sp.get("over") or {}
+            line.add("over-budget-so-far", o.get("name", "Already spent more than the budget for this line"),
+                     amount=diff, basis="adjustment", kind="adjustment",
+                     note=o.get("note", "Payments so far are larger than the full-year budget line. This negative box "
+                                        "keeps the boxes adding up to the budget."))
+        if sp.get("note"):
+            line.note = (line.note + " " if line.note else "") + sp["note"]
+        for s in sp.get("side", []) or []:
+            s = dict(s)
+            if "amount" in s and s["amount"] is not None:
+                s["amount"] = cents(s["amount"])
+            line.side.append(s)
+        applied += 1
+    return applied, skipped
+
+
+# ---- structure cleanup -----------------------------------------------------
+COLLAPSIBLE = {"fund", "spend_type", "org_unit", "group"}
+
+
+def collapse_single_children(root, kinds=COLLAPSIBLE):
+    """Remove pointless clicks: a structural box (fund, spend type, org unit, group) with exactly one
+    child is replaced by that child. The child keeps its own name unless the parent was a spend type
+    (kid-friendly), in which case the child takes the parent's name and keeps its own in extra."""
+    removed = 0
+    changed = True
+    while changed:
+        changed = False
+        for n in list(root.walk()):
+            if n is root or n.parent is None or n.kind not in kinds or len(n.children) != 1:
+                continue
+            c = n.children[0]
+            if c.amount != n.amount:
+                continue
+            par = n.parent
+            idx = par.children.index(n)
+            c.parent = par
+            par.children[idx] = c
+            via = c.extra.setdefault("via", [])
+            via.insert(0, {"kind": n.kind, "name": n.name})
+            if n.kind == "spend_type":
+                c.extra.setdefault("official_name", c.name)
+                c.name = n.name
+            c.side.extend(n.side)
+            if n.note and not c.note:
+                c.note = n.note
+            removed += 1
+            changed = True
+    # re-derive ids so they still follow the path
+    def reid(node):
+        for ch in node.children:
+            ch.id = f"{node.id}.{ch.id.rsplit('.', 1)[-1]}"
+            reid(ch)
+    reid(root)
+    return removed
 
 
 # ---- checks ---------------------------------------------------------------

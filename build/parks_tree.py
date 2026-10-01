@@ -846,6 +846,31 @@ for n in root.walk():
                        "amount": A25[n.id], "period": "2025", "basis": "budget", "source": SRC_2025})
 
 # ---------------------------------------------------------------------------------------
+# detail from split files (build/SPLITS.md), data/splits/parks/*.json
+# ---------------------------------------------------------------------------------------
+from treelib import apply_split_file  # noqa: E402
+
+
+def _resolve_parks(t):
+    if t.get("by") == "id":
+        return next((n for n in root.walk() if n.id == t["id"]), None)
+    if t.get("by") == "match":
+        want = cents(t["amount"]) if t.get("amount") is not None else None
+        hits = [n for n in root.walk() if not n.children
+                and all(c.lower() in (n.id + " " + n.name + " " + json.dumps(n.extra)).lower() for c in t["contains"])
+                and (want is None or n.amount == want)]
+        return hits[0] if len(hits) == 1 else None
+    return None
+
+
+_sd = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "splits", "parks")
+if os.path.isdir(_sd):
+    for _fn in sorted(os.listdir(_sd)):
+        if _fn.endswith(".json"):
+            _a, _s = apply_split_file(os.path.join(_sd, _fn), _resolve_parks)
+            print(f"split file {_fn}: {_a} applied, {_s} skipped")
+
+# ---------------------------------------------------------------------------------------
 # CHECKS
 # ---------------------------------------------------------------------------------------
 problems = check(root, expected_total_cents=EXPECTED)

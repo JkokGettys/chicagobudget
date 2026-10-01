@@ -913,6 +913,29 @@ for c in root.children:
     order_kids(c)
 root.children.sort(key=lambda c: TOP.index(c.id.split(".")[-1]))
 
+# -- detail from split files (build/SPLITS.md), data/splits/cps/*.json
+from treelib import apply_split_file  # noqa: E402
+
+
+def _resolve_generic(t, root_node):
+    if t.get("by") == "id":
+        return next((n for n in root_node.walk() if n.id == t["id"]), None)
+    if t.get("by") == "match":
+        want = cents(t["amount"]) if t.get("amount") is not None else None
+        hits = [n for n in root_node.walk() if not n.children
+                and all(c.lower() in (n.id + " " + n.name + " " + json.dumps(n.extra)).lower() for c in t["contains"])
+                and (want is None or n.amount == want)]
+        return hits[0] if len(hits) == 1 else None
+    return None
+
+
+_sd = os.path.join(os.path.dirname(__file__), "..", "data", "splits", "cps")
+if os.path.isdir(_sd):
+    for _fn in sorted(os.listdir(_sd)):
+        if _fn.endswith(".json"):
+            _a, _s = apply_split_file(os.path.join(_sd, _fn), lambda t: _resolve_generic(t, root))
+            print(f"split file {_fn}: {_a} applied, {_s} skipped")
+
 # -- tie-outs not covered by check()
 if root.amount != EXPECTED:
     problems.append(f"root {root.amount} != {EXPECTED}")

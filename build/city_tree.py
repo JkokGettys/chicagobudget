@@ -433,6 +433,30 @@ apply_proxy("data/leaves_health.json", "health_plan")
 apply_proxy("data/leaves_wages.json", "job_title")
 apply_proxy("data/leaves_grants.json", "grant_project")
 
+# ---------------------------------------------------------------- detail from split files (build/SPLITS.md)
+from treelib import apply_split_file  # noqa: E402
+_by_id = None
+
+
+def resolve_city(t):
+    global _by_id
+    if t.get("by") == "ordinance_line":
+        return ordline.get((t["fund"], str(t["dept"]).lstrip("0"), t["authority"], t["account"]))
+    if t.get("by") == "id":
+        if _by_id is None:
+            _by_id = {n.id: n for n in city.walk()}
+        return _by_id.get(t["id"])
+    return None
+
+
+SPLIT_DIR = P("data/splits/city")
+if os.path.isdir(SPLIT_DIR):
+    for fn in sorted(os.listdir(SPLIT_DIR)):
+        if fn.endswith(".json"):
+            a, s = apply_split_file(os.path.join(SPLIT_DIR, fn), resolve_city)
+            _by_id = None
+            print(f"split file {fn}: {a} applied, {s} skipped")
+
 # ---------------------------------------------------------------- side info: vendors paid 2026 YTD
 # Every payment row is kept. Payees that are individual people (refunds, reimbursements, small
 # grants, jurors, sole practitioners) keep their amount, contract, family and payment count,
