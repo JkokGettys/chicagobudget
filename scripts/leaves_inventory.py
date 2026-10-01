@@ -42,8 +42,12 @@ def add(budget, path, amount, source, status, remaining=None, note="", explain="
 # ------------------------------------------------------------------ City
 ords = D("raw/city_appropriations_2026.json")
 pers = D("data/city_personnel_2026.json")
-vend = D("data/city_vendors_items_2025.json")
-cov = D("data/city_vendors_coverage_2026.json")
+# Vendor basis: default is 2026 year to date (deduplicated, partial year, not annualized). VENDOR_BASIS=2025 reproduces the 2025 view.
+VENDOR_BASIS = os.environ.get("VENDOR_BASIS", "2026ytd")
+vend = D(f"data/city_vendors_items_{VENDOR_BASIS}.json")
+cov = D("data/city_vendors_coverage_2026.json" if VENDOR_BASIS == "2026ytd" else "data/city_vendors_coverage_2026_on_2025pay.json")
+PAYLABEL = vend["meta"]["label"]                                        # e.g. "paid Jan 1 to 09/28/2026, partial year"
+PAYSHORT = "2026 YTD payments" if VENDOR_BASIS == "2026ytd" else "2025 payments"
 grants = D("data/city_grants_2026.json")
 debt = D("data/debt_2026.json")
 pens = D("data/pensions_2026.json")
@@ -212,7 +216,7 @@ for a, r, kind, fam in sorted(big, key=lambda x: -x[0]):
             continue
         its, B = (pooled(fam) if pool else (items_by.get(gkey, []), budget_by[gkey]))
         if not its or B == 0:
-            add("City", path, a, "no matching 2025 payments for this department and account family", "unsplit_no_source",
+            add("City", path, a, f"no matching {PAYSHORT} for this department and account family", "unsplit_no_source",
                 explain="Nobody has published who gets paid from this line yet.")
             continue
         pending[("POOL:" + fam) if pool else gkey].append((a, path, ac, B, its))
@@ -226,20 +230,20 @@ for a, r, kind, fam in sorted(big, key=lambda x: -x[0]):
     }.get(fam, "Public records stop at this level.")
     add("City", path, a, "none found", "unsplit_no_source", explain=why)
 
-# vendor groups: each (department, account family) is listed ONCE, vendor amounts are unscaled 2025 payments
+# vendor groups: each (department, account family) is listed ONCE, vendor amounts are unscaled payments of the vendor basis (PAYLABEL)
 for gk, lines in pending.items():
     lines.sort(key=lambda x: -x[0])
     B, its = lines[0][3], lines[0][4]
     paid = sum(i[2] for i in its)
     big_budget = sum(x[0] for x in lines)
-    pieces = [{"name": f"{i[0][:48]} (contract {i[1] or 'direct voucher'}), 2025 payments", "amount": round(i[2])} for i in sorted(its, key=lambda i: -i[2]) if i[2] >= T]
+    pieces = [{"name": f"{i[0][:48]} (contract {i[1] or 'direct voucher'}), {PAYSHORT}", "amount": round(i[2])} for i in sorted(its, key=lambda i: -i[2]) if i[2] >= T]
     resid = max(0.0, big_budget * (1 - min(B, paid) / B))
     if resid >= T: pieces.append({"name": "budget with no matched 2025 payee (group residual)", "amount": round(resid)})
     for n, (a, path, ac, _, _) in enumerate(lines):
         first = n == 0
-        add("City", path, a, "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)", "split_partial",
+        add("City", path, a, f"payments s4vu-giwb {PAYLABEL}, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_{VENDOR_BASIS}.json)", "split_partial",
             remaining=pieces if first else [], group_cap=big_budget if first else None,
-            note=(f"group {gk}: 2025 named payments ${paid/1e6:.0f}M vs 2026 budget ${B/1e6:.0f}M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled"
+            note=(f"group {gk}: named payments ({PAYLABEL}) ${paid/1e6:.0f}M vs 2026 budget ${B/1e6:.0f}M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized"
                   if first else "vendor items for this department and account family are listed on the largest line of the group"),
             explain="" if not pieces else "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.")
 

@@ -6,12 +6,12 @@
    "before_dollars": 14920851346,
    "after_strict_count": 165,
    "after_strict_dollars": 11717502814,
-   "after_team_count": 175,
-   "after_team_dollars": 5194586593.0,
+   "after_team_count": 159,
+   "after_team_dollars": 5103521974.0,
    "by_status": {
     "split_partial": {
-     "count": 96,
-     "dollars": 6014850422
+     "count": 95,
+     "dollars": 5950083721
     },
     "split_proxy": {
      "count": 33,
@@ -22,8 +22,8 @@
      "dollars": 3203348532
     },
     "unsplit_no_source": {
-     "count": 31,
-     "dollars": 922320688
+     "count": 32,
+     "dollars": 987087389
     },
     "unsplit_source_known": {
      "count": 5,
@@ -97,8 +97,8 @@
    "parks_total": 637580350
   },
   "remaining_over_10m": {
-   "count": 232,
-   "dollars": 7336316242
+   "count": 216,
+   "dollars": 7245251622
   }
  },
  "round3": {
@@ -300,19 +300,19 @@
   "remaining_top": [
    {
     "budget": "City",
+    "amount": 256090385,
+    "status": "split_partial",
+    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
+    "piece": "budget with no matched 2025 payee (group residual)",
+    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   },
+   {
+    "budget": "City",
     "amount": 193497455,
     "status": "split_partial",
     "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Aviation > DOT - FAA - Airport Improvement Program - O'Hare (20.106) > 909A Reserve Balance",
     "piece": "reserve not covered by any named FAA award (unattributed)",
     "why_cant_go_deeper": "The airport has promises of federal money for runways and terminals, but not enough named jobs yet to explain the rest."
-   },
-   {
-    "budget": "City",
-    "amount": 173259751,
-    "status": "split_partial",
-    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-    "piece": "budget with no matched 2025 payee (group residual)",
-    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
    },
    {
     "budget": "CPS",
@@ -337,6 +337,14 @@
     "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FTA - Federal Transit Formula Grants (20.507) > 909A Reserve Balance",
     "piece": "State/Lake Loop Elevated Station: rest of FTA award IL-2016-002 not shown by funding source in Mid-Year Grants (cap, USASpending obligation minus outlays)",
     "why_cant_go_deeper": "Almost all of this money is for one big train station rebuild, and the public lists show it by where the money came from, not by what each dollar buys."
+   },
+   {
+    "budget": "City",
+    "amount": 121871617,
+    "status": "split_partial",
+    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
+    "piece": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC (contract 310789), 2026 YTD payments",
+    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
    },
    {
     "budget": "CPS",
@@ -380,14 +388,6 @@
    },
    {
     "budget": "City",
-    "amount": 102144225,
-    "status": "split_partial",
-    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-    "piece": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC (contract 283596), 2025 payments",
-    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-   },
-   {
-    "budget": "City",
     "amount": 102140573,
     "status": "split_partial",
     "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FTA - Federal Transit Formula Grants (20.507) > 909A Reserve Balance",
@@ -427,22 +427,6 @@
     "why_cant_go_deeper": "The money goes to a few large companies, and CPS publishes what each was paid but not which budget line it came from."
    },
    {
-    "budget": "City",
-    "amount": 84056483,
-    "status": "split_partial",
-    "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
-    "piece": "LOEVY & LOEVY ATTORNEYS AT LAW (contract direct voucher), 2025 payments",
-    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-   },
-   {
-    "budget": "City",
-    "amount": 83757709,
-    "status": "split_partial",
-    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
-    "piece": "CONSTELLATION NEWENERGY INC (contract 198906), 2025 payments",
-    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-   },
-   {
     "budget": "CPS",
     "amount": 80000000,
     "status": "split_partial",
@@ -460,11 +444,35 @@
    },
    {
     "budget": "City",
+    "amount": 78327121,
+    "status": "split_partial",
+    "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
+    "piece": "LOEVY & LOEVY ATTORNEYS AT LAW (contract direct voucher), 2026 YTD payments",
+    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   },
+   {
+    "budget": "City",
     "amount": 75010000,
     "status": "split_partial",
     "leaf_path": "City > Local > Water Fund > Finance General > Finance General > 0912 For Payment of Bonds",
     "piece": "bond series not in data/city_bond_series_2026.json",
     "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+   },
+   {
+    "budget": "City",
+    "amount": 74590605,
+    "status": "split_partial",
+    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
+    "piece": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC (contract 283596), 2026 YTD payments",
+    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   },
+   {
+    "budget": "City",
+    "amount": 73272100,
+    "status": "split_partial",
+    "leaf_path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
+    "piece": "CHICAGO TRANSITY AUTHORITY. (contract 115455), 2026 YTD payments",
+    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
    },
    {
     "budget": "City",
@@ -476,9 +484,17 @@
    },
    {
     "budget": "City",
-    "amount": 70348032,
+    "amount": 71282664,
     "status": "split_partial",
     "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0138 For Professional Services for Information Technology Mainten",
+    "piece": "budget with no matched 2025 payee (group residual)",
+    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   },
+   {
+    "budget": "City",
+    "amount": 69064834,
+    "status": "split_partial",
+    "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
     "piece": "budget with no matched 2025 payee (group residual)",
     "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
    },
@@ -500,19 +516,19 @@
    },
    {
     "budget": "City",
-    "amount": 64765201,
+    "amount": 64951014,
     "status": "split_partial",
-    "leaf_path": "City > Local > Corporate Fund > Finance General > Finance General > 0138 For Professional Services for Information Technology Mainten",
+    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
     "piece": "budget with no matched 2025 payee (group residual)",
     "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
    },
    {
     "budget": "City",
-    "amount": 63380300,
-    "status": "split_partial",
-    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0161 Operation, Repair or Maintenance of Facilities",
-    "piece": "budget with no matched 2025 payee (group residual)",
-    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+    "amount": 64766701,
+    "status": "unsplit_no_source",
+    "leaf_path": "City > Local > Corporate Fund > Finance General > Finance General > 0138 For Professional Services for Information Technology Mainten",
+    "piece": null,
+    "why_cant_go_deeper": "Nobody has published who gets paid from this line yet."
    },
    {
     "budget": "City",
@@ -521,6 +537,14 @@
     "leaf_path": "City > Local > CTA Real Property Transfer Tax Fund > Finance General > Finance General > 9205 For Distribution of the Net Proceeds of the Real Property Tr",
     "piece": null,
     "why_cant_go_deeper": "The City collects this tax and hands the whole amount to another agency in one payment."
+   },
+   {
+    "budget": "City",
+    "amount": 62613693,
+    "status": "split_partial",
+    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0161 Operation, Repair or Maintenance of Facilities",
+    "piece": "budget with no matched 2025 payee (group residual)",
+    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
    },
    {
     "budget": "City",
@@ -572,15 +596,7 @@
    },
    {
     "budget": "City",
-    "amount": 56302243,
-    "status": "split_partial",
-    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-    "piece": "AOR TRANSIT (contract 25743), 2025 payments",
-    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-   },
-   {
-    "budget": "City",
-    "amount": 55276024,
+    "amount": 55723575,
     "status": "split_partial",
     "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0157 Rental of Equipment and Services",
     "piece": "budget with no matched 2025 payee (group residual)",
@@ -595,32 +611,24 @@
     "why_cant_go_deeper": "Nobody has published who gets paid from this line yet."
    },
    {
-    "budget": "CPS",
-    "amount": 52894514,
-    "status": "unsplit_no_source",
-    "leaf_path": "CPS > Chief Executive Officer Total > Education General - City Wide > General Education Fund > Other Instr Purposes Misc > A57915 Miscellaneous - Contingent Projects",
-    "piece": null,
-    "why_cant_go_deeper": "This is a planned cut that offsets spending counted elsewhere, so there is nothing to itemize."
-   },
-   {
     "budget": "City",
-    "amount": 52414653,
-    "status": "unsplit_no_source",
-    "leaf_path": "City > Local > Sewer Fund > Finance General > Finance General > 9097 For Capital Construction",
-    "piece": null,
-    "why_cant_go_deeper": "Nobody has published who gets paid from this line yet."
-   },
-   {
-    "budget": "CPS",
-    "amount": 50396605,
-    "status": "unsplit_no_source",
-    "leaf_path": "CPS > Chief Executive Officer Total > Education General - City Wide > Contingency for Grant Expansion > Contingency For Project Expansion > A57915 Miscellaneous - Contingent Projects",
-    "piece": null,
-    "why_cant_go_deeper": "This is money held back for things that have not been decided yet, so it has no purchases to list."
+    "amount": 52977817,
+    "status": "split_partial",
+    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
+    "piece": "CONSTELLATION NEWENERGY INC (contract 198906), 2026 YTD payments",
+    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
    }
   ]
  },
  "remaining_pieces_over_10m": [
+  {
+   "budget": "City",
+   "amount": 256090385,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
+   "piece": "budget with no matched 2025 payee (group residual)",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
   {
    "budget": "City",
    "amount": 193497455,
@@ -628,14 +636,6 @@
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Aviation > DOT - FAA - Airport Improvement Program - O'Hare (20.106) > 909A Reserve Balance",
    "piece": "reserve not covered by any named FAA award (unattributed)",
    "why_cant_go_deeper": "The airport has promises of federal money for runways and terminals, but not enough named jobs yet to explain the rest."
-  },
-  {
-   "budget": "City",
-   "amount": 173259751,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "CPS",
@@ -660,6 +660,14 @@
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FTA - Federal Transit Formula Grants (20.507) > 909A Reserve Balance",
    "piece": "State/Lake Loop Elevated Station: rest of FTA award IL-2016-002 not shown by funding source in Mid-Year Grants (cap, USASpending obligation minus outlays)",
    "why_cant_go_deeper": "Almost all of this money is for one big train station rebuild, and the public lists show it by where the money came from, not by what each dollar buys."
+  },
+  {
+   "budget": "City",
+   "amount": 121871617,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
+   "piece": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC (contract 310789), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "CPS",
@@ -703,14 +711,6 @@
   },
   {
    "budget": "City",
-   "amount": 102144225,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC (contract 283596), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
    "amount": 102140573,
    "status": "split_partial",
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FTA - Federal Transit Formula Grants (20.507) > 909A Reserve Balance",
@@ -750,22 +750,6 @@
    "why_cant_go_deeper": "The money goes to a few large companies, and CPS publishes what each was paid but not which budget line it came from."
   },
   {
-   "budget": "City",
-   "amount": 84056483,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
-   "piece": "LOEVY & LOEVY ATTORNEYS AT LAW (contract direct voucher), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 83757709,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
-   "piece": "CONSTELLATION NEWENERGY INC (contract 198906), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
    "budget": "CPS",
    "amount": 80000000,
    "status": "split_partial",
@@ -783,11 +767,35 @@
   },
   {
    "budget": "City",
+   "amount": 78327121,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
+   "piece": "LOEVY & LOEVY ATTORNEYS AT LAW (contract direct voucher), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
    "amount": 75010000,
    "status": "split_partial",
    "leaf_path": "City > Local > Water Fund > Finance General > Finance General > 0912 For Payment of Bonds",
    "piece": "bond series not in data/city_bond_series_2026.json",
    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+  },
+  {
+   "budget": "City",
+   "amount": 74590605,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
+   "piece": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC (contract 283596), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 73272100,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
+   "piece": "CHICAGO TRANSITY AUTHORITY. (contract 115455), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -799,9 +807,17 @@
   },
   {
    "budget": "City",
-   "amount": 70348032,
+   "amount": 71282664,
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0138 For Professional Services for Information Technology Mainten",
+   "piece": "budget with no matched 2025 payee (group residual)",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 69064834,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
    "piece": "budget with no matched 2025 payee (group residual)",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
@@ -823,19 +839,19 @@
   },
   {
    "budget": "City",
-   "amount": 64765201,
+   "amount": 64951014,
    "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Finance General > Finance General > 0138 For Professional Services for Information Technology Mainten",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
    "piece": "budget with no matched 2025 payee (group residual)",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
-   "amount": 63380300,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0161 Operation, Repair or Maintenance of Facilities",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+   "amount": 64766701,
+   "status": "unsplit_no_source",
+   "leaf_path": "City > Local > Corporate Fund > Finance General > Finance General > 0138 For Professional Services for Information Technology Mainten",
+   "piece": null,
+   "why_cant_go_deeper": "Nobody has published who gets paid from this line yet."
   },
   {
    "budget": "City",
@@ -844,6 +860,14 @@
    "leaf_path": "City > Local > CTA Real Property Transfer Tax Fund > Finance General > Finance General > 9205 For Distribution of the Net Proceeds of the Real Property Tr",
    "piece": null,
    "why_cant_go_deeper": "The City collects this tax and hands the whole amount to another agency in one payment."
+  },
+  {
+   "budget": "City",
+   "amount": 62613693,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0161 Operation, Repair or Maintenance of Facilities",
+   "piece": "budget with no matched 2025 payee (group residual)",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -895,15 +919,7 @@
   },
   {
    "budget": "City",
-   "amount": 56302243,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "AOR TRANSIT (contract 25743), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 55276024,
+   "amount": 55723575,
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0157 Rental of Equipment and Services",
    "piece": "budget with no matched 2025 payee (group residual)",
@@ -918,12 +934,28 @@
    "why_cant_go_deeper": "Nobody has published who gets paid from this line yet."
   },
   {
+   "budget": "City",
+   "amount": 52977817,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
+   "piece": "CONSTELLATION NEWENERGY INC (contract 198906), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
    "budget": "CPS",
    "amount": 52894514,
    "status": "unsplit_no_source",
    "leaf_path": "CPS > Chief Executive Officer Total > Education General - City Wide > General Education Fund > Other Instr Purposes Misc > A57915 Miscellaneous - Contingent Projects",
    "piece": null,
    "why_cant_go_deeper": "This is a planned cut that offsets spending counted elsewhere, so there is nothing to itemize."
+  },
+  {
+   "budget": "City",
+   "amount": 52702859,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "budget with no matched 2025 payee (group residual)",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -951,22 +983,6 @@
   },
   {
    "budget": "City",
-   "amount": 48251800,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 48244627,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "SKIDMORE,OWINGS & MERRILL LLP (contract 111685), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
    "amount": 47891414,
    "status": "split_partial",
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Aviation > DOT - FAA - Airport Improvement Program - O'Hare (20.106) > 909A Reserve Balance",
@@ -983,10 +999,10 @@
   },
   {
    "budget": "City",
-   "amount": 46009366,
+   "amount": 44926379,
    "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "STANDARD PARKING CORPORATION 01 (contract 174908), 2025 payments",
+   "leaf_path": "City > Local > Corporate Fund > Finance General > Finance General > 9222 Emergency Medical Transportation",
+   "piece": "budget with no matched 2025 payee (group residual)",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -1047,14 +1063,6 @@
   },
   {
    "budget": "City",
-   "amount": 40872146,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Finance General > Finance General > 9222 Emergency Medical Transportation",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
    "amount": 39667255,
    "status": "unsplit_source_known",
    "leaf_path": "City > Local > Water Fund > Finance General > Finance General > 0944 For Payment on Loans",
@@ -1071,10 +1079,10 @@
   },
   {
    "budget": "City",
-   "amount": 38586120,
+   "amount": 39033490,
    "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "CONNECT CHICAGO ALLIANCE JV (contract 69568), 2025 payments",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0161 Operation, Repair or Maintenance of Facilities",
+   "piece": "BOSCHUNG AMERICA, LLC (contract 341673), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -1087,10 +1095,10 @@
   },
   {
    "budget": "City",
-   "amount": 37211775,
+   "amount": 38169946,
    "status": "split_partial",
-   "leaf_path": "City > Grants > Local Public and Private Grant Fund > Chicago Department of Transportation > SISTER AGENCY / PVT - Infrastructure Planning and Construction > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "TRANSYSTEMS CORPORATION (contract 47314), 2025 payments",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
+   "piece": "budget with no matched 2025 payee (group residual)",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -1142,36 +1150,12 @@
    "why_cant_go_deeper": "The money goes to a few large companies, and CPS publishes what each was paid but not which budget line it came from."
   },
   {
-   "budget": "City",
-   "amount": 34991532,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Finance General > Finance General > 9222 Emergency Medical Transportation",
-   "piece": "DEPARTMENT OF FINANCE (contract direct voucher), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 34706918,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "STUDIO ORD INC (contract 101451), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
    "budget": "CPS",
    "amount": 34567160,
    "status": "unsplit_no_source",
    "leaf_path": "CPS > Chief Executive Officer Total > Pension & Liability Insurance - City Wide > Workers'& Unemployment Compensation/Tort > All Other > A58190 Budget Only - Workers Compensation",
    "piece": null,
    "why_cant_go_deeper": "This is a planned cut that offsets spending counted elsewhere, so there is nothing to itemize."
-  },
-  {
-   "budget": "City",
-   "amount": 34100144,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Local Public and Private Grant Fund > Chicago Department of Transportation > SISTER AGENCY / PVT - Infrastructure Planning and Construction > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "CNECT LLC (contract 52685), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "CPS",
@@ -1223,6 +1207,14 @@
   },
   {
    "budget": "City",
+   "amount": 31142937,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
+   "piece": "GRANITE CONSTRUCTION COMPANY. (contract 299159), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
    "amount": 31000000,
    "status": "unsplit_no_source",
    "leaf_path": "City > Local > Protecting CARE Fund > Finance General > Finance General > 909A Reserve Balance",
@@ -1239,14 +1231,6 @@
   },
   {
    "budget": "City",
-   "amount": 30891066,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "ABM Aviation (contract 190841), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
    "amount": 30776547,
    "status": "split_partial",
    "leaf_path": "City > Local > Water Fund > Finance General > Finance General > 0902 For Interest on Bonds",
@@ -1260,6 +1244,14 @@
    "leaf_path": "City > Grants > State Grant Fund > Chicago Department of Transportation > IDOT - Rebuild Illinois > 909A Reserve Balance",
    "piece": "CHICAGO AVE BRIDGE OVER CHICAGO RIVER AND CHICAGO/HALSTED VIADUCT",
    "why_cant_go_deeper": "Some named projects are single big construction jobs, and the rest of the grant has no public project list yet."
+  },
+  {
+   "budget": "City",
+   "amount": 30337941,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "AOR TRANSIT (contract 25743), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "CPS",
@@ -1279,10 +1271,10 @@
   },
   {
    "budget": "City",
-   "amount": 28690588,
+   "amount": 28504829,
    "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC (contract 234083), 2025 payments",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "STUDIO ORD INC (contract 101451), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -1295,31 +1287,23 @@
   },
   {
    "budget": "City",
-   "amount": 27621649,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
-   "piece": "K.L.E.O. COMMUNITY FAMILY LIFE CENTER (contract 296396), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 26736514,
+   "amount": 27835817,
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "SKYLINE MANAGEMENT GROUP O'HARE (contract 27075), 2025 payments",
+   "piece": "CONNECT CHICAGO ALLIANCE JV (contract 69568), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
-   "amount": 26634655,
+   "amount": 27256554,
    "status": "split_partial",
    "leaf_path": "City > Local > Corporate Fund > Finance General > Finance General > 9222 Emergency Medical Transportation",
-   "piece": "CHICAGO PARKING METERS LLC (contract direct voucher), 2025 payments",
+   "piece": "DEPARTMENT OF FINANCE (contract direct voucher), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
-   "amount": 25703759,
+   "amount": 27124654,
    "status": "split_partial",
    "leaf_path": "City > Local > Corporate Fund > Department of Streets and Sanitation > Bureau of Sanitation > 0140 For Professional and Technical Services and Other Third Part",
    "piece": "budget with no matched 2025 payee (group residual)",
@@ -1327,9 +1311,9 @@
   },
   {
    "budget": "City",
-   "amount": 25671949,
+   "amount": 25242078,
    "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Department of Housing > HUD - CPD - Home Investment Partnerships Program (14.239) > 9103 Rehabilitation Loans and Grants",
+   "leaf_path": "City > Local > Corporate Fund > Department of Finance > Revenue Services and Operations > 0138 For Professional Services for Information Technology Mainten",
    "piece": "budget with no matched 2025 payee (group residual)",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
@@ -1367,18 +1351,10 @@
   },
   {
    "budget": "City",
-   "amount": 24918576,
+   "amount": 24829559,
    "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Department of Finance > Revenue Services and Operations > 0138 For Professional Services for Information Technology Mainten",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 24751529,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
-   "piece": "CHICAGO TRANSITY AUTHORITY. (contract 115455), 2025 payments",
+   "leaf_path": "City > Grants > Local Public and Private Grant Fund > Chicago Department of Transportation > SISTER AGENCY / PVT - Infrastructure Planning and Construction > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "CNECT LLC (contract 52685), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -1388,22 +1364,6 @@
    "leaf_path": "City > Grants > Federal Grant Fund > Department of Family and Support Services > HHS - ACF - Head Start (93.600) > 0006 Salary Provision",
    "piece": null,
    "why_cant_go_deeper": "This is money set aside for union raises that are not settled yet, so nobody can say yet which workers will get how much."
-  },
-  {
-   "budget": "City",
-   "amount": 23323216,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "BIGANE PAVING COMPANY (contract 265292), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 23002562,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
-   "piece": "MANSFIELD POWER & GAS, LLC (contract 176561), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "CPS",
@@ -1423,27 +1383,19 @@
   },
   {
    "budget": "City",
-   "amount": 22995675,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "Midway Management Group JV (contract 224479), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 22993921,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC (contract 310789), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
    "amount": 22833000,
    "status": "unsplit_no_source",
    "leaf_path": "City > Grants > State Grant Fund > Chicago Department of Aviation > IDOT - Aviation Fuel Tax Program - Midway > 909A Reserve Balance",
    "piece": null,
    "why_cant_go_deeper": "This is money from one grant that the City has been promised but has not yet decided how to spend."
+  },
+  {
+   "budget": "City",
+   "amount": 22705743,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "STANDARD PARKING CORPORATION 01 (contract 174908), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -1455,11 +1407,43 @@
   },
   {
    "budget": "City",
+   "amount": 22677984,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "ABM Aviation (contract 190841), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 22571061,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Fleet Operations > 0360 Repair Parts and Material",
+   "piece": "budget with no matched 2025 payee (group residual)",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 22549941,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "SKIDMORE,OWINGS & MERRILL LLP (contract 111685), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
    "amount": 22059266,
    "status": "split_partial",
    "leaf_path": "City > Grants > COVID-19 Grant Fund > Chicago Department of Public Health > HHS - CDC - Collaboration with Academia to Strengthen Public Health (93.967) > 909A Reserve Balance",
    "piece": "STRENGTHENING U.S. PUBLIC HEALTH INFRASTRUCTURE, WORKFORCE AND DATA SY",
    "why_cant_go_deeper": "Some named projects are single big construction jobs, and the rest of the grant has no public project list yet."
+  },
+  {
+   "budget": "City",
+   "amount": 21586742,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Corporate Fund > Department of Streets and Sanitation > Bureau of Sanitation > 0185 Waste Disposal Services",
+   "piece": "LAKESHORE RECYCLING SYSTEMS (contract 151329), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -1471,50 +1455,26 @@
   },
   {
    "budget": "City",
-   "amount": 21081503,
+   "amount": 21274046,
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "HNTB CORPORATION (contract 119983), 2025 payments",
+   "piece": "SKYLINE MANAGEMENT GROUP O'HARE (contract 27075), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
-   "amount": 20996349,
+   "amount": 20524326,
    "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Department of Streets and Sanitation > Bureau of Sanitation > 0185 Waste Disposal Services",
-   "piece": "LAKESHORE RECYCLING SYSTEMS (contract 151329), 2025 payments",
+   "leaf_path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Facility Management > 0125 Office and Building Services",
+   "piece": "SECURITAS SECURITY SERVICES, USA, INC. (contract 325205), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
-   "amount": 20965507,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
-   "piece": "POWER ROGERS, LLP (contract direct voucher), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 20859308,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC (contract 244632), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 20610412,
+   "amount": 20516188,
    "status": "split_partial",
    "leaf_path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
-   "piece": "BOARD OF EDUCATION OF THE CITY OF CHICAGO (contract 279963), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 20321056,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0161 Operation, Repair or Maintenance of Facilities",
-   "piece": "DELAWARE CARS/T.R. HARMSEN CORP. J.V. (contract 15304), 2025 payments",
+   "piece": "BROWN DERBY LLC (contract 345718), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -1524,14 +1484,6 @@
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Fire Department > DHS - FEMA - IEMA - Homeland Security Grant Program (UASI) (97.076) > 909A Reserve Balance",
    "piece": null,
    "why_cant_go_deeper": "This is money from one grant that the City has been promised but has not yet decided how to spend."
-  },
-  {
-   "budget": "City",
-   "amount": 20129054,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Water Fund > Department of Water Management > Bureau of Water Supply > 0342 Drugs, Medicine and Chemical Materials",
-   "piece": "RELIABLE ASPHALT CORP. (contract 84271), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -1567,43 +1519,11 @@
   },
   {
    "budget": "City",
-   "amount": 19799611,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "M.Q. SEWER & WATER CONTRACTORS (contract 167516), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
    "amount": 19711810,
    "status": "split_partial",
    "leaf_path": "City > Grants > State Grant Fund > Chicago Department of Transportation > IDOT - Highway Planning and Construction > 909A Reserve Balance",
    "piece": "ARCHER AVENUE AT KENTON AVE - CREATE GS09",
    "why_cant_go_deeper": "Some named projects are single big construction jobs, and the rest of the grant has no public project list yet."
-  },
-  {
-   "budget": "City",
-   "amount": 19641027,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Fleet Operations > 0360 Repair Parts and Material",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 19518970,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
-   "piece": "OPEN KITCHENS, INC. (contract 174551), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 19507053,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Disaster Recovery Fund > Office of Budget and Management > HUD - CPD - CDBG-DR - Planning and Administration (14.218) > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "budget with no matched 2025 payee (group residual)",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -1631,6 +1551,22 @@
   },
   {
    "budget": "City",
+   "amount": 18925064,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
+   "piece": "SALVI, SCHOSTOK & PRITCHARD, P.C. (contract direct voucher), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 18892795,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Corporate Fund > Department of Streets and Sanitation > Bureau of Sanitation > 0185 Waste Disposal Services",
+   "piece": "ALLIED WASTE TRANSPORTATION INC (contract 247181), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
    "amount": 18569642,
    "status": "split_partial",
    "leaf_path": "City > Grants > Federal Grant Fund > Department of Housing > HUD - CPD - Home Investment Partnerships Program (14.239) > 909A Reserve Balance",
@@ -1639,18 +1575,26 @@
   },
   {
    "budget": "City",
-   "amount": 18401172,
+   "amount": 18562609,
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "Lincoln Security Services, LLC. (contract 191642), 2025 payments",
+   "piece": "Midway Management Group JV (contract 224479), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
-   "amount": 18301657,
+   "amount": 18507566,
    "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Department of Streets and Sanitation > Bureau of Sanitation > 0185 Waste Disposal Services",
-   "piece": "ALLIED WASTE TRANSPORTATION INC (contract 247181), 2025 payments",
+   "leaf_path": "City > Grants > Disaster Recovery Fund > Office of Budget and Management > HUD - CPD - CDBG-DR - Planning and Administration (14.218) > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "budget with no matched 2025 payee (group residual)",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 18317305,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > Disaster Recovery Fund > Department of Water Management > HUD - CPD - CDBG-DR - Stormwater Infrastructure - Local Sewer Line Cleaning (14.218) > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "AECOM-DBS (contract 211620), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -1671,6 +1615,14 @@
   },
   {
    "budget": "City",
+   "amount": 17963536,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
+   "piece": "OPEN KITCHENS, INC. (contract 319256), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
    "amount": 17510774,
    "status": "split_partial",
    "leaf_path": "City > Grants > State Grant Fund > Chicago Department of Transportation > IDOT - Rebuild Illinois > 909A Reserve Balance",
@@ -1679,34 +1631,18 @@
   },
   {
    "budget": "City",
-   "amount": 17433038,
+   "amount": 17379376,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Water Fund > Department of Water Management > Bureau of Water Supply > 0342 Drugs, Medicine and Chemical Materials",
+   "piece": "RELIABLE ASPHALT CORP. (contract 84271), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 16960850,
    "status": "split_partial",
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "RICONDO & ASSOCIATES, INC. (contract 145306), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 17401589,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "BIGANE PAVING COMPANY (contract 187342), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 17063967,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
-   "piece": "ALL CHICAGO MAKING HOMELESSNESS HISTORY (contract 174286), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 16985651,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Disaster Recovery Fund > Department of Water Management > HUD - CPD - CDBG-DR - Stormwater Infrastructure - Local Sewer Line Cleaning (14.218) > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "AECOM-DBS (contract 211620), 2025 payments",
+   "piece": "AOR TRANSIT (contract 356057), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -1735,14 +1671,6 @@
   },
   {
    "budget": "City",
-   "amount": 16201104,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Department of Technology and Innovation > Bureau of Centralized Information Technology > 0149 For Software Maintenance and Licensing",
-   "piece": "CDW GOVERNMENT, LLC. (contract 33232), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
    "amount": 16000000,
    "status": "unsplit_no_source",
    "leaf_path": "City > Local > Water Fund > Finance General > Finance General > 0049 Claims and Costs of Administration Pursuant to the Workers' ",
@@ -1759,14 +1687,6 @@
   },
   {
    "budget": "City",
-   "amount": 15795964,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "G & V CONSTRUCTION COMPANY, INC. (contract 170884), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
    "amount": 15743737,
    "status": "split_partial",
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Aviation > DOT - FAA - Airport Improvement Program - O'Hare (20.106) > 909A Reserve Balance",
@@ -1775,34 +1695,26 @@
   },
   {
    "budget": "City",
-   "amount": 15547335,
+   "amount": 15612508,
    "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "SUMIT CONSTRUCTION CO., INC. (contract 169014), 2025 payments",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
+   "piece": "MANSFIELD POWER & GAS, LLC (contract 176561), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
-   "amount": 15526366,
+   "amount": 15425708,
    "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC (contract 211302), 2025 payments",
+   "leaf_path": "City > Local > Corporate Fund > Department of Technology and Innovation > Bureau of Centralized Information Technology > 0149 For Software Maintenance and Licensing",
+   "piece": "CDW GOVERNMENT, LLC. (contract 33232), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
-   "amount": 15502296,
+   "amount": 15383291,
    "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "MAT CONSTRUCTION LEASING, INC. (contract 265294), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 15454223,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "CAPITOL CEMENT CO INC 01 (contract 257879), 2025 payments",
+   "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
+   "piece": "BONJEAN LAW GROUP PLLC (contract direct voucher), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -1831,14 +1743,6 @@
   },
   {
    "budget": "City",
-   "amount": 15071323,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Department of Streets and Sanitation > Bureau of Sanitation > 0185 Waste Disposal Services",
-   "piece": "ALLIED WASTE TRANSPORTATION INC (contract 110168), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
    "amount": 15000000,
    "status": "split_partial",
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FTA - Federal Transit Formula Grants (20.507) > 909A Reserve Balance",
@@ -1854,6 +1758,14 @@
    "why_cant_go_deeper": "The money goes to a few large companies, and CPS publishes what each was paid but not which budget line it came from."
   },
   {
+   "budget": "City",
+   "amount": 14862437,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Corporate Fund > Finance General > Finance General > 9222 Emergency Medical Transportation",
+   "piece": "CHICAGO CONVENTION & TOURISM BUREAU, INC. (contract direct voucher), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
    "budget": "Parks",
    "amount": 14805112,
    "status": "unsplit_no_source",
@@ -1863,19 +1775,19 @@
   },
   {
    "budget": "City",
+   "amount": 14780371,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "Lincoln Security Services, LLC. (contract 191642), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
    "amount": 14679000,
    "status": "unsplit_no_source",
    "leaf_path": "City > Local > Firemen's Annuity and Benefit Fund > Finance General > Finance General > 0960 For Loss in Collection of Taxes",
    "piece": null,
    "why_cant_go_deeper": "The City sets aside this money because some property taxes are never paid, and nobody knows in advance whose."
-  },
-  {
-   "budget": "City",
-   "amount": 14443583,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "BIGANE PAVING COMPANY (contract 265293), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -1895,14 +1807,6 @@
   },
   {
    "budget": "City",
-   "amount": 14114561,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0161 Operation, Repair or Maintenance of Facilities",
-   "piece": "ROSSI CONTRACTORS, INC. (contract 102520), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
    "amount": 14000000,
    "status": "split_partial",
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Aviation > DOT - FAA - Airport Improvement Program - O'Hare (20.106) > 909A Reserve Balance",
@@ -1919,10 +1823,18 @@
   },
   {
    "budget": "City",
-   "amount": 13757332,
+   "amount": 13889791,
    "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "CITY LIGHTS, LIMITED/ZSL ELECTRIC (contract 144546), 2025 payments",
+   "leaf_path": "City > Local > Corporate Fund > Department of Streets and Sanitation > Bureau of Sanitation > 0185 Waste Disposal Services",
+   "piece": "ALLIED WASTE TRANSPORTATION INC (contract 110168), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 13610031,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
+   "piece": "KENNETH N FLAXMAN, P.C. WILLIE ADAMS (contract direct voucher), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -1932,14 +1844,6 @@
    "leaf_path": "CPS > Chief Executive Officer Total > Pension & Liability Insurance - City Wide > Workers'& Unemployment Compensation/Tort > All Other > A58185 Budget Only - Unemployment Compensation",
    "piece": null,
    "why_cant_go_deeper": "This is a planned cut that offsets spending counted elsewhere, so there is nothing to itemize."
-  },
-  {
-   "budget": "City",
-   "amount": 13478344,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "JOHN BURNS CONSTRUCTION CO. (contract 144545), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -1959,6 +1863,22 @@
   },
   {
    "budget": "City",
+   "amount": 13126712,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Corporate Fund > Office of Public Safety Administration > Office of Public Safety Administration > 0138 For Professional Services for Information Technology Mainten",
+   "piece": "MOTOROLA SOLUTIONS INC (contract 311043), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 12787063,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
+   "piece": "BIGANE PAVING COMPANY (contract 265292), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
    "amount": 12763682,
    "status": "split_partial",
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Aviation > DOT - FAA - Airport Improvement Program - Midway (20.106) > 909A Reserve Balance",
@@ -1972,14 +1892,6 @@
    "leaf_path": "CPS > Chief Executive Officer Total > Student Assessment & MTSS > General Education Fund > Assessments/Standards > A54125 Services - Professional/Administrative",
    "piece": null,
    "why_cant_go_deeper": "The money goes to a few large companies, and CPS publishes what each was paid but not which budget line it came from."
-  },
-  {
-   "budget": "City",
-   "amount": 12750349,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Disaster Recovery Fund > Department of Water Management > HUD - CPD - CDBG-DR - Stormwater Infrastructure - Local Sewer Line Cleaning (14.218) > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "PCWP, LLC (contract 225463), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "CPS",
@@ -1999,6 +1911,14 @@
   },
   {
    "budget": "City",
+   "amount": 12578198,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "RICONDO & ASSOCIATES, INC. (contract 145306), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
    "amount": 12362400,
    "status": "unsplit_no_source",
    "leaf_path": "City > Local > Vehicle Tax Fund > Finance General > Finance General > 0049 Claims and Costs of Administration Pursuant to the Workers' ",
@@ -2014,14 +1934,6 @@
    "why_cant_go_deeper": "The airport has promises of federal money for runways and terminals, but not enough named jobs yet to explain the rest."
   },
   {
-   "budget": "City",
-   "amount": 12282840,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Facility Management > 0125 Office and Building Services",
-   "piece": "SECURITAS SECURITY SERVICES, USA, INC. (contract 295220), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
    "budget": "CPS",
    "amount": 12270527,
    "status": "unsplit_source_known",
@@ -2030,36 +1942,20 @@
    "why_cant_go_deeper": "The money goes to a few large companies, and CPS publishes what each was paid but not which budget line it came from."
   },
   {
+   "budget": "City",
+   "amount": 12202108,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Corporate Fund > Chicago Department of Public Health > Department of Public Health > 9254 Violence Reduction Program",
+   "piece": "budget with no matched 2025 payee (group residual)",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
    "budget": "CPS",
    "amount": 12000000,
    "status": "unsplit_source_known",
    "leaf_path": "CPS > Chief Executive Officer Total > Facility Opers & Maint - City Wide > Public Building Commission O & M > Custodial Services > A53405 Commodities - Supplies",
    "piece": null,
    "why_cant_go_deeper": "The money goes to a few large companies, and CPS publishes what each was paid but not which budget line it came from."
-  },
-  {
-   "budget": "City",
-   "amount": 11976565,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "STANDARD PARKING-MIDWAY JV (contract 26600), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 11878485,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
-   "piece": "USAA LIFE INSURANCE COMPANY (contract direct voucher), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 11836456,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "MAT CONSTRUCTION LEASING, INC. (contract 265295), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -2095,18 +1991,26 @@
   },
   {
    "budget": "City",
-   "amount": 11552256,
+   "amount": 11637740,
    "status": "split_partial",
-   "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
-   "piece": "Equitable Social Solutions, LLC (contract 296394), 2025 payments",
+   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
+   "piece": "JOHN BURNS CONSTRUCTION CO. (contract 301915), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
-   "amount": 11169540,
+   "amount": 11615509,
    "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Office of Public Safety Administration > Office of Public Safety Administration > 0138 For Professional Services for Information Technology Mainten",
-   "piece": "budget with no matched 2025 payee (group residual)",
+   "leaf_path": "City > Local > Corporate Fund > Finance General > Finance General > 9222 Emergency Medical Transportation",
+   "piece": "CHICAGO PARKING METERS LLC (contract direct voucher), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 11418695,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > Disaster Recovery Fund > Department of Water Management > HUD - CPD - CDBG-DR - Stormwater Infrastructure - Local Sewer Line Cleaning (14.218) > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "PCWP, LLC (contract 225463), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -2142,36 +2046,36 @@
    "why_cant_go_deeper": "This is money the federal government promised for road and bridge jobs, and a few big jobs hold most of it while the rest has no job picked yet."
   },
   {
+   "budget": "City",
+   "amount": 10931834,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0161 Operation, Repair or Maintenance of Facilities",
+   "piece": "DELAWARE CARS/T.R. HARMSEN CORP. J.V. (contract 15304), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 10884828,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
+   "piece": "CITY LIGHTS, LIMITED/ZSL ELECTRIC (contract 144546), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 10879457,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Motor Fuel Tax Fund > Department of Streets and Sanitation > Bureau of Street Operations > 0340 Material and Supplies",
+   "piece": "MORTON SALT, INC. (contract 209593), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
    "budget": "CPS",
    "amount": 10873333,
    "status": "unsplit_source_known",
    "leaf_path": "CPS > Chief Executive Officer Total > KIPP Academy Chicago Campus > Charter Core Instructional Funding > Charter/Contract Per Pupil Revenue K-12 Tuition > A54320 Student Tuition - Charter Schools",
    "piece": null,
    "why_cant_go_deeper": "One charter campus gets one tuition payment that depends on its student count."
-  },
-  {
-   "budget": "City",
-   "amount": 10866525,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
-   "piece": "K.L.E.O. COMMUNITY FAMILY LIFE CENTER (contract 232050), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 10842081,
-   "status": "split_partial",
-   "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
-   "piece": "AFTER-SCHOOL MATTERS, INC. (contract 309139), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 10829074,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Facility Management > 0125 Office and Building Services",
-   "piece": "ABM INDUSTRY GROUPS, LLC (contract 87516), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -2190,14 +2094,6 @@
    "why_cant_go_deeper": "One charter campus gets one tuition payment that depends on its student count."
   },
   {
-   "budget": "City",
-   "amount": 10628119,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
-   "piece": "BONJEAN LAW GROUP PLLC (contract direct voucher), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
    "budget": "CPS",
    "amount": 10600000,
    "status": "split_partial",
@@ -2207,10 +2103,18 @@
   },
   {
    "budget": "City",
-   "amount": 10576040,
+   "amount": 10586833,
    "status": "split_partial",
-   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
-   "piece": "GRANITE CONSTRUCTION COMPANY. (contract 299159), 2025 payments",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "HNTB CORPORATION (contract 119983), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 10548919,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "SDI PRESENCE LLC (contract 46733), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -2223,6 +2127,14 @@
   },
   {
    "budget": "City",
+   "amount": 10500000,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > Federal Grant Fund > Department of Housing > HUD - CPD - Home Investment Partnerships Program (14.239) > 9103 Rehabilitation Loans and Grants",
+   "piece": "TRP LENDING, LLC (contract 352345), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
    "amount": 10448503,
    "status": "split_partial",
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Aviation > DOT - FAA - Airport Improvement Program - O'Hare (20.106) > 909A Reserve Balance",
@@ -2231,10 +2143,10 @@
   },
   {
    "budget": "City",
-   "amount": 10433019,
+   "amount": 10441279,
    "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
-   "piece": "DIVERSE FACILITY SOLUTION INC. (contract 183280), 2025 payments",
+   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Public Health > HHS - HRSA - HIV Emergency Relief Project Grants (Ryan White) (93.914) > 0140 For Professional and Technical Services and Other Third Part",
+   "piece": "budget with no matched 2025 payee (group residual)",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -2247,10 +2159,34 @@
   },
   {
    "budget": "City",
-   "amount": 10354843,
+   "amount": 10228509,
    "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0161 Operation, Repair or Maintenance of Facilities",
-   "piece": "CONTINENTAL AIR TRANSPORT CHICAGO SCHOOL TRANSIT (contract 194124), 2025 payments",
+   "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
+   "piece": "ALL CHICAGO MAKING HOMELESSNESS HISTORY (contract 332123), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 10165752,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0340 Material and Supplies",
+   "piece": "CRYOTECH DEICING TECHNOLOGY (contract 86020), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 10160908,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
+   "piece": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC (contract 244632), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 10159160,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Special Events and Municipal Hotel Operators' Occupation Tax Fund > Department of Fleet and Facility Management > Bureau of Facility Management > 9188 For Expenses Related to the Operation of Millennium Park",
+   "piece": "GH CHICAGO IL, LLC (contract direct voucher), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -2268,6 +2204,14 @@
    "leaf_path": "City > Grants > State Grant Fund > Chicago Public Library > SOS - Capital Construction Program > 909A Reserve Balance",
    "piece": null,
    "why_cant_go_deeper": "This is money from one grant that the City has been promised but has not yet decided how to spend."
+  },
+  {
+   "budget": "City",
+   "amount": 10023883,
+   "status": "split_partial",
+   "leaf_path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
+   "piece": "AFTER-SCHOOL MATTERS, INC. (contract 309139), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -2327,82 +2271,34 @@
   },
   {
    "budget": "City",
-   "amount": 9627328,
+   "amount": 9943394,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
+   "piece": "BOARD OF EDUCATION OF THE CITY OF CHICAGO (contract 333958), 2026 YTD payments",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 9150356,
    "status": "split_partial",
    "leaf_path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0320 Gasoline",
-   "piece": "COLONIAL OIL INDUSTRIES, INC. (contract 129972), 2025 payments",
+   "piece": "COLONIAL OIL INDUSTRIES, INC. (contract 129972), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
-   "amount": 9426648,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
-   "piece": "SOMERCOR 504, INC. (contract 3718), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 8909984,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Department of Technology and Innovation > Bureau of Centralized Information Technology > 0149 For Software Maintenance and Licensing",
-   "piece": "SDI PRESENCE LLC (contract 93627), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 8314344,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Facility Management > 0125 Office and Building Services",
-   "piece": "TRANE U.S. INC (contract 134953), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 8149894,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
-   "piece": "HEART OF UPTOWN APARTMENTS LLC (contract 312706), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 8145366,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
-   "piece": "YELLOW BANANA LLC. (contract 270585), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 8118183,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
-   "piece": "CHICAGO LOW-INCOME HOUSING TRUST FUND (contract 176580), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 7814793,
+   "amount": 9097881,
    "status": "split_partial",
    "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
-   "piece": "MCNABOLA & ASSOCIATES, INC. (contract direct voucher), 2025 payments",
+   "piece": "Chanen & Olstein, LLP (contract direct voucher), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
-   "amount": 7325867,
+   "amount": 7802839,
    "status": "split_partial",
    "leaf_path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0320 Gasoline",
-   "piece": "COLONIAL OIL INDUSTRIES, INC. (contract 129971), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 7189428,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
-   "piece": "1237 N. California 9PCT HHDC, LP (contract 299798), 2025 payments",
+   "piece": "COLONIAL OIL INDUSTRIES, INC. (contract 129971), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -2423,14 +2319,6 @@
   },
   {
    "budget": "City",
-   "amount": 6656133,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Special Events and Municipal Hotel Operators' Occupation Tax Fund > Department of Fleet and Facility Management > Bureau of Facility Management > 9188 For Expenses Related to the Operation of Millennium Park",
-   "piece": "PUBLIC BUILDING COMMISSION CHICAGO (contract 173521), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
    "amount": 6571315,
    "status": "split_partial",
    "leaf_path": "City > Grants > COVID-19 Grant Fund > Department of Housing > HUD - CPD - Home Investment Partnerships Program (14.239) > 909A Reserve Balance",
@@ -2439,26 +2327,10 @@
   },
   {
    "budget": "City",
-   "amount": 6535126,
+   "amount": 6343478,
    "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0183 Water",
-   "piece": "CITY OF CHICAGO DEPT OF WATER (contract direct voucher), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 6473698,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
-   "piece": "CHICAGO PARK DISTRICT (contract 192442), 2025 payments",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 5464874,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0183 Water",
-   "piece": "COMED EXELON ENERGY DELIVERY (contract direct voucher), 2025 payments",
+   "leaf_path": "City > Local > Corporate Fund > Department of Technology and Innovation > Bureau of Centralized Information Technology > 0149 For Software Maintenance and Licensing",
+   "piece": "SDI PRESENCE LLC (contract 93627), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
@@ -2471,10 +2343,10 @@
   },
   {
    "budget": "City",
-   "amount": 3503027,
+   "amount": 3341902,
    "status": "split_partial",
-   "leaf_path": "City > Local > Special Events and Municipal Hotel Operators' Occupation Tax Fund > Department of Fleet and Facility Management > Bureau of Facility Management > 9188 For Expenses Related to the Operation of Millennium Park",
-   "piece": "ENTERPRISE FLEET MANAGEMENT, INC (contract 126170), 2025 payments",
+   "leaf_path": "City > Local > Corporate Fund > Department of Technology and Innovation > Bureau of Centralized Information Technology > 0149 For Software Maintenance and Licensing",
+   "piece": "DELL MARKETING LP. (contract 313535), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   }
  ],
@@ -4156,83 +4028,43 @@
    "budget": "City",
    "path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
    "amount": 451646229,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC (contract 283596), 2025 payments",
-     "amount": 102144225
+     "name": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC (contract 310789), 2026 YTD payments",
+     "amount": 121871617
     },
     {
-     "name": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC (contract 234083), 2025 payments",
-     "amount": 28690588
+     "name": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC (contract 283596), 2026 YTD payments",
+     "amount": 74590605
     },
     {
-     "name": "BIGANE PAVING COMPANY (contract 265292), 2025 payments",
-     "amount": 23323216
+     "name": "GRANITE CONSTRUCTION COMPANY. (contract 299159), 2026 YTD payments",
+     "amount": 31142937
     },
     {
-     "name": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC (contract 310789), 2025 payments",
-     "amount": 22993921
+     "name": "BIGANE PAVING COMPANY (contract 265292), 2026 YTD payments",
+     "amount": 12787063
     },
     {
-     "name": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC (contract 244632), 2025 payments",
-     "amount": 20859308
+     "name": "JOHN BURNS CONSTRUCTION CO. (contract 301915), 2026 YTD payments",
+     "amount": 11637740
     },
     {
-     "name": "M.Q. SEWER & WATER CONTRACTORS (contract 167516), 2025 payments",
-     "amount": 19799611
+     "name": "CITY LIGHTS, LIMITED/ZSL ELECTRIC (contract 144546), 2026 YTD payments",
+     "amount": 10884828
     },
     {
-     "name": "BIGANE PAVING COMPANY (contract 187342), 2025 payments",
-     "amount": 17401589
-    },
-    {
-     "name": "G & V CONSTRUCTION COMPANY, INC. (contract 170884), 2025 payments",
-     "amount": 15795964
-    },
-    {
-     "name": "SUMIT CONSTRUCTION CO., INC. (contract 169014), 2025 payments",
-     "amount": 15547335
-    },
-    {
-     "name": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC (contract 211302), 2025 payments",
-     "amount": 15526366
-    },
-    {
-     "name": "MAT CONSTRUCTION LEASING, INC. (contract 265294), 2025 payments",
-     "amount": 15502296
-    },
-    {
-     "name": "CAPITOL CEMENT CO INC 01 (contract 257879), 2025 payments",
-     "amount": 15454223
-    },
-    {
-     "name": "BIGANE PAVING COMPANY (contract 265293), 2025 payments",
-     "amount": 14443583
-    },
-    {
-     "name": "CITY LIGHTS, LIMITED/ZSL ELECTRIC (contract 144546), 2025 payments",
-     "amount": 13757332
-    },
-    {
-     "name": "JOHN BURNS CONSTRUCTION CO. (contract 144545), 2025 payments",
-     "amount": 13478344
-    },
-    {
-     "name": "MAT CONSTRUCTION LEASING, INC. (contract 265295), 2025 payments",
-     "amount": 11836456
-    },
-    {
-     "name": "GRANITE CONSTRUCTION COMPANY. (contract 299159), 2025 payments",
-     "amount": 10576040
+     "name": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC (contract 244632), 2026 YTD payments",
+     "amount": 10160908
     },
     {
      "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 173259751
+     "amount": 256090385
     }
    ],
-   "note": "group ('84', 'CONSTR'): 2025 named payments $505M vs 2026 budget $681M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('84', 'CONSTR'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $421M vs 2026 budget $681M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 669718229
   },
@@ -4853,63 +4685,67 @@
    "budget": "City",
    "path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 234139900,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "AOR TRANSIT (contract 25743), 2025 payments",
-     "amount": 56302243
+     "name": "AOR TRANSIT (contract 25743), 2026 YTD payments",
+     "amount": 30337941
     },
     {
-     "name": "SKIDMORE,OWINGS & MERRILL LLP (contract 111685), 2025 payments",
-     "amount": 48244627
+     "name": "STUDIO ORD INC (contract 101451), 2026 YTD payments",
+     "amount": 28504829
     },
     {
-     "name": "STANDARD PARKING CORPORATION 01 (contract 174908), 2025 payments",
-     "amount": 46009366
+     "name": "CONNECT CHICAGO ALLIANCE JV (contract 69568), 2026 YTD payments",
+     "amount": 27835817
     },
     {
-     "name": "CONNECT CHICAGO ALLIANCE JV (contract 69568), 2025 payments",
-     "amount": 38586120
+     "name": "STANDARD PARKING CORPORATION 01 (contract 174908), 2026 YTD payments",
+     "amount": 22705743
     },
     {
-     "name": "STUDIO ORD INC (contract 101451), 2025 payments",
-     "amount": 34706918
+     "name": "ABM Aviation (contract 190841), 2026 YTD payments",
+     "amount": 22677984
     },
     {
-     "name": "ABM Aviation (contract 190841), 2025 payments",
-     "amount": 30891066
+     "name": "SKIDMORE,OWINGS & MERRILL LLP (contract 111685), 2026 YTD payments",
+     "amount": 22549941
     },
     {
-     "name": "SKYLINE MANAGEMENT GROUP O'HARE (contract 27075), 2025 payments",
-     "amount": 26736514
+     "name": "SKYLINE MANAGEMENT GROUP O'HARE (contract 27075), 2026 YTD payments",
+     "amount": 21274046
     },
     {
-     "name": "Midway Management Group JV (contract 224479), 2025 payments",
-     "amount": 22995675
+     "name": "Midway Management Group JV (contract 224479), 2026 YTD payments",
+     "amount": 18562609
     },
     {
-     "name": "HNTB CORPORATION (contract 119983), 2025 payments",
-     "amount": 21081503
+     "name": "AOR TRANSIT (contract 356057), 2026 YTD payments",
+     "amount": 16960850
     },
     {
-     "name": "Lincoln Security Services, LLC. (contract 191642), 2025 payments",
-     "amount": 18401172
+     "name": "Lincoln Security Services, LLC. (contract 191642), 2026 YTD payments",
+     "amount": 14780371
     },
     {
-     "name": "RICONDO & ASSOCIATES, INC. (contract 145306), 2025 payments",
-     "amount": 17433038
+     "name": "RICONDO & ASSOCIATES, INC. (contract 145306), 2026 YTD payments",
+     "amount": 12578198
     },
     {
-     "name": "STANDARD PARKING-MIDWAY JV (contract 26600), 2025 payments",
-     "amount": 11976565
+     "name": "HNTB CORPORATION (contract 119983), 2026 YTD payments",
+     "amount": 10586833
     },
     {
-     "name": "DIVERSE FACILITY SOLUTION INC. (contract 183280), 2025 payments",
-     "amount": 10433019
+     "name": "SDI PRESENCE LLC (contract 46733), 2026 YTD payments",
+     "amount": 10548919
+    },
+    {
+     "name": "budget with no matched 2025 payee (group residual)",
+     "amount": 64951014
     }
    ],
-   "note": "group ('85', 'PROF'): 2025 named payments $489M vs 2026 budget $422M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('85', 'PROF'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $355M vs 2026 budget $422M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 410893100
   },
@@ -5172,23 +5008,27 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Finance General > Finance General > 9222 Emergency Medical Transportation",
    "amount": 124725187,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "DEPARTMENT OF FINANCE (contract direct voucher), 2025 payments",
-     "amount": 34991532
+     "name": "DEPARTMENT OF FINANCE (contract direct voucher), 2026 YTD payments",
+     "amount": 27256554
     },
     {
-     "name": "CHICAGO PARKING METERS LLC (contract direct voucher), 2025 payments",
-     "amount": 26634655
+     "name": "CHICAGO CONVENTION & TOURISM BUREAU, INC. (contract direct voucher), 2026 YTD payments",
+     "amount": 14862437
+    },
+    {
+     "name": "CHICAGO PARKING METERS LLC (contract direct voucher), 2026 YTD payments",
+     "amount": 11615509
     },
     {
      "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 40872146
+     "amount": 44926379
     }
    ],
-   "note": "group ('99', 'OTHER_VENDOR'): 2025 named payments $94M vs 2026 budget $140M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('99', 'OTHER_VENDOR'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $89M vs 2026 budget $140M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 124725187
   },
@@ -5265,7 +5105,7 @@
    "budget": "City",
    "path": "City > Grants > State Grant Fund > Chicago Department of Transportation > IDOT - Highway Planning and Construction > 0540 Construction of Buildings and Other Structures",
    "amount": 117368000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -5275,7 +5115,7 @@
    "budget": "City",
    "path": "City > Grants > Federal Grant Fund > Chicago Department of Aviation > DOT - FAA - Airport Improvement Program - O'Hare (20.106) > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 112740000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -5403,7 +5243,7 @@
    "budget": "City",
    "path": "City > Local > Chicago O'Hare Airport Fund > Finance General > Finance General > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 92222410,
-   "split_source": "no matching 2025 payments for this department and account family",
+   "split_source": "no matching 2026 YTD payments for this department and account family",
    "status": "unsplit_no_source",
    "remaining_pieces_over_10m": [],
    "note": "",
@@ -5513,31 +5353,31 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
    "amount": 82558000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "LOEVY & LOEVY ATTORNEYS AT LAW (contract direct voucher), 2025 payments",
-     "amount": 134450911
+     "name": "LOEVY & LOEVY ATTORNEYS AT LAW (contract direct voucher), 2026 YTD payments",
+     "amount": 132384232
     },
     {
-     "name": "POWER ROGERS, LLP (contract direct voucher), 2025 payments",
-     "amount": 33534968
+     "name": "SALVI, SCHOSTOK & PRITCHARD, P.C. (contract direct voucher), 2026 YTD payments",
+     "amount": 31986112
     },
     {
-     "name": "USAA LIFE INSURANCE COMPANY (contract direct voucher), 2025 payments",
-     "amount": 19000000
+     "name": "BONJEAN LAW GROUP PLLC (contract direct voucher), 2026 YTD payments",
+     "amount": 26000000
     },
     {
-     "name": "BONJEAN LAW GROUP PLLC (contract direct voucher), 2025 payments",
-     "amount": 17000000
+     "name": "KENNETH N FLAXMAN, P.C. WILLIE ADAMS (contract direct voucher), 2026 YTD payments",
+     "amount": 23002932
     },
     {
-     "name": "MCNABOLA & ASSOCIATES, INC. (contract direct voucher), 2025 payments",
-     "amount": 12500000
+     "name": "Chanen & Olstein, LLP (contract direct voucher), 2026 YTD payments",
+     "amount": 15376742
     }
    ],
-   "note": "group POOL:LEGAL: 2025 named payments $337M vs 2026 budget $154M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group POOL:LEGAL: named payments (paid Jan 1 to 09/28/2026 2026, partial year) $321M vs 2026 budget $154M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 135343387
   },
@@ -5664,47 +5504,23 @@
    "budget": "City",
    "path": "City > Local > Neighborhoods Opportunity Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
    "amount": 65630650,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "CHICAGO TRANSITY AUTHORITY. (contract 115455), 2025 payments",
-     "amount": 41000000
+     "name": "CHICAGO TRANSITY AUTHORITY. (contract 115455), 2026 YTD payments",
+     "amount": 75000000
     },
     {
-     "name": "BOARD OF EDUCATION OF THE CITY OF CHICAGO (contract 279963), 2025 payments",
-     "amount": 34140391
+     "name": "BROWN DERBY LLC (contract 345718), 2026 YTD payments",
+     "amount": 21000000
     },
     {
-     "name": "K.L.E.O. COMMUNITY FAMILY LIFE CENTER (contract 232050), 2025 payments",
-     "amount": 18000000
-    },
-    {
-     "name": "SOMERCOR 504, INC. (contract 3718), 2025 payments",
-     "amount": 15614897
-    },
-    {
-     "name": "HEART OF UPTOWN APARTMENTS LLC (contract 312706), 2025 payments",
-     "amount": 13500000
-    },
-    {
-     "name": "YELLOW BANANA LLC. (contract 270585), 2025 payments",
-     "amount": 13492500
-    },
-    {
-     "name": "CHICAGO LOW-INCOME HOUSING TRUST FUND (contract 176580), 2025 payments",
-     "amount": 13447472
-    },
-    {
-     "name": "1237 N. California 9PCT HHDC, LP (contract 299798), 2025 payments",
-     "amount": 11909024
-    },
-    {
-     "name": "CHICAGO PARK DISTRICT (contract 192442), 2025 payments",
-     "amount": 10723443
+     "name": "BOARD OF EDUCATION OF THE CITY OF CHICAGO (contract 333958), 2026 YTD payments",
+     "amount": 10177879
     }
    ],
-   "note": "group ('54', 'DEVLOAN'): 2025 named payments $389M vs 2026 budget $113M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('54', 'DEVLOAN'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $235M vs 2026 budget $113M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 103731682
   },
@@ -5712,47 +5528,37 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Finance General > Finance General > 0138 For Professional Services for Information Technology Mainten",
    "amount": 64766701,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
-   "status": "split_partial",
-   "remaining_pieces_over_10m": [
-    {
-     "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 64765201
-    }
-   ],
-   "note": "group ('99', 'IT'): 2025 named payments $0M vs 2026 budget $93M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
-   "group_cap": 64766701
+   "split_source": "no matching 2026 YTD payments for this department and account family",
+   "status": "unsplit_no_source",
+   "remaining_pieces_over_10m": [],
+   "note": "",
+   "why_cant_go_deeper": "Nobody has published who gets paid from this line yet."
   },
   {
    "budget": "City",
    "path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0135 For Delegate Agencies",
    "amount": 63664481,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "K.L.E.O. COMMUNITY FAMILY LIFE CENTER (contract 296396), 2025 payments",
-     "amount": 27621649
+     "name": "OPEN KITCHENS, INC. (contract 319256), 2026 YTD payments",
+     "amount": 17963536
     },
     {
-     "name": "OPEN KITCHENS, INC. (contract 174551), 2025 payments",
-     "amount": 19518970
+     "name": "ALL CHICAGO MAKING HOMELESSNESS HISTORY (contract 332123), 2026 YTD payments",
+     "amount": 10228509
     },
     {
-     "name": "ALL CHICAGO MAKING HOMELESSNESS HISTORY (contract 174286), 2025 payments",
-     "amount": 17063967
+     "name": "AFTER-SCHOOL MATTERS, INC. (contract 309139), 2026 YTD payments",
+     "amount": 10023883
     },
     {
-     "name": "Equitable Social Solutions, LLC (contract 296394), 2025 payments",
-     "amount": 11552256
-    },
-    {
-     "name": "AFTER-SCHOOL MATTERS, INC. (contract 309139), 2025 payments",
-     "amount": 10842081
+     "name": "budget with no matched 2025 payee (group residual)",
+     "amount": 69064834
     }
    ],
-   "note": "group ('50', 'DELEGATE'): 2025 named payments $467M vs 2026 budget $429M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('50', 'DELEGATE'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $340M vs 2026 budget $429M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 332356432
   },
@@ -5787,27 +5593,23 @@
    "budget": "City",
    "path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0161 Operation, Repair or Maintenance of Facilities",
    "amount": 61340400,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "DELAWARE CARS/T.R. HARMSEN CORP. J.V. (contract 15304), 2025 payments",
-     "amount": 20321056
+     "name": "BOSCHUNG AMERICA, LLC (contract 341673), 2026 YTD payments",
+     "amount": 39033490
     },
     {
-     "name": "ROSSI CONTRACTORS, INC. (contract 102520), 2025 payments",
-     "amount": 14114561
-    },
-    {
-     "name": "CONTINENTAL AIR TRANSPORT CHICAGO SCHOOL TRANSIT (contract 194124), 2025 payments",
-     "amount": 10354843
+     "name": "DELAWARE CARS/T.R. HARMSEN CORP. J.V. (contract 15304), 2026 YTD payments",
+     "amount": 10931834
     },
     {
      "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 63380300
+     "amount": 62613693
     }
    ],
-   "note": "group ('85', 'FACILITY'): 2025 named payments $110M vs 2026 budget $177M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('85', 'FACILITY'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $111M vs 2026 budget $177M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 166956000
   },
@@ -5890,19 +5692,15 @@
    "budget": "City",
    "path": "City > Grants > Local Public and Private Grant Fund > Chicago Department of Transportation > SISTER AGENCY / PVT - Infrastructure Planning and Construction > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 58864000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "TRANSYSTEMS CORPORATION (contract 47314), 2025 payments",
-     "amount": 37211775
-    },
-    {
-     "name": "CNECT LLC (contract 52685), 2025 payments",
-     "amount": 34100144
+     "name": "CNECT LLC (contract 52685), 2026 YTD payments",
+     "amount": 24829559
     }
    ],
-   "note": "group ('84', 'PROF'): 2025 named payments $168M vs 2026 budget $105M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('84', 'PROF'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $110M vs 2026 budget $105M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 79792000
   },
@@ -5920,7 +5718,7 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Finance General > Finance General > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 55183120,
-   "split_source": "no matching 2025 payments for this department and account family",
+   "split_source": "no matching 2026 YTD payments for this department and account family",
    "status": "unsplit_no_source",
    "remaining_pieces_over_10m": [],
    "note": "",
@@ -5930,7 +5728,7 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Family and Support Services > Department of Family and Support Services > 9263 Homeless Services",
    "amount": 55035497,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -5940,15 +5738,15 @@
    "budget": "City",
    "path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0138 For Professional Services for Information Technology Mainten",
    "amount": 55012600,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
      "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 70348032
+     "amount": 71282664
     }
    ],
-   "note": "group ('85', 'IT'): 2025 named payments $5M vs 2026 budget $91M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('85', 'IT'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $4M vs 2026 budget $91M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 74689200
   },
@@ -5956,23 +5754,23 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Streets and Sanitation > Bureau of Sanitation > 0185 Waste Disposal Services",
    "amount": 54369328,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "LAKESHORE RECYCLING SYSTEMS (contract 151329), 2025 payments",
-     "amount": 29001596
+     "name": "LAKESHORE RECYCLING SYSTEMS (contract 151329), 2026 YTD payments",
+     "amount": 23037281
     },
     {
-     "name": "ALLIED WASTE TRANSPORTATION INC (contract 247181), 2025 payments",
-     "amount": 25279503
+     "name": "ALLIED WASTE TRANSPORTATION INC (contract 247181), 2026 YTD payments",
+     "amount": 20162312
     },
     {
-     "name": "ALLIED WASTE TRANSPORTATION INC (contract 110168), 2025 payments",
-     "amount": 20817544
+     "name": "ALLIED WASTE TRANSPORTATION INC (contract 110168), 2026 YTD payments",
+     "amount": 14823127
     }
    ],
-   "note": "group ('81', 'WASTE'): 2025 named payments $78M vs 2026 budget $55M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('81', 'WASTE'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $60M vs 2026 budget $55M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 54369328
   },
@@ -5980,7 +5778,7 @@
    "budget": "City",
    "path": "City > Local > Sewer Fund > Finance General > Finance General > 9097 For Capital Construction",
    "amount": 52414653,
-   "split_source": "no matching 2025 payments for this department and account family",
+   "split_source": "no matching 2026 YTD payments for this department and account family",
    "status": "unsplit_no_source",
    "remaining_pieces_over_10m": [],
    "note": "",
@@ -6000,7 +5798,7 @@
    "budget": "City",
    "path": "City > Grants > State Grant Fund > Department of Family and Support Services > IDHS - Emergency and Transitional Housing > 0135 For Delegate Agencies",
    "amount": 48939991,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6010,7 +5808,7 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Family and Support Services > Department of Family and Support Services > 9259 Youth Employment",
    "amount": 48915715,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6087,7 +5885,7 @@
    "budget": "City",
    "path": "City > Grants > Federal Grant Fund > Department of Family and Support Services > HHS - ACF - Head Start (93.600) > 0135 For Delegate Agencies",
    "amount": 42016340,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6097,15 +5895,15 @@
    "budget": "City",
    "path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0157 Rental of Equipment and Services",
    "amount": 41763901,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
      "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 55276024
+     "amount": 55723575
     }
    ],
-   "note": "group ('85', 'RENTAL'): 2025 named payments $2M vs 2026 budget $63M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('85', 'RENTAL'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $1M vs 2026 budget $63M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 56638901
   },
@@ -6113,7 +5911,7 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Finance General > Finance General > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
    "amount": 40785387,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6231,7 +6029,7 @@
    "budget": "City",
    "path": "City > Grants > Federal Grant Fund > Chicago Department of Aviation > DOT - FAA - Airport Improvement Program - Midway (20.106) > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 36199000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6261,15 +6059,15 @@
    "budget": "City",
    "path": "City > Grants > State Grant Fund > Department of Family and Support Services > ISBE - CPS - Early Childhood Block Grant > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 35000000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
      "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 48251800
+     "amount": 52702859
     }
    ],
-   "note": "group ('50', 'PROF'): 2025 named payments $5M vs 2026 budget $61M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('50', 'PROF'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $0M vs 2026 budget $61M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 52916297
   },
@@ -6307,18 +6105,23 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Chicago Department of Public Health > Department of Public Health > 9254 Violence Reduction Program",
    "amount": 32163251,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
-   "remaining_pieces_over_10m": [],
-   "note": "group ('41', 'DELEGATE'): 2025 named payments $114M vs 2026 budget $105M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
-   "why_cant_go_deeper": "",
+   "remaining_pieces_over_10m": [
+    {
+     "name": "budget with no matched 2025 payee (group residual)",
+     "amount": 12202108
+    }
+   ],
+   "note": "group ('41', 'DELEGATE'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $89M vs 2026 budget $105M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 78285743
   },
   {
    "budget": "City",
    "path": "City > Local > Chicago Midway Airport Fund > Chicago Department of Aviation > Chicago Midway Airport > 0162 Repair/Maintenance of Equipment",
    "amount": 32082000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6328,19 +6131,23 @@
    "budget": "City",
    "path": "City > Local > Chicago O'Hare Airport Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
    "amount": 31831750,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "CONSTELLATION NEWENERGY INC (contract 198906), 2025 payments",
-     "amount": 92249309
+     "name": "CONSTELLATION NEWENERGY INC (contract 198906), 2026 YTD payments",
+     "amount": 55172862
     },
     {
-     "name": "MANSFIELD POWER & GAS, LLC (contract 176561), 2025 payments",
-     "amount": 25334628
+     "name": "MANSFIELD POWER & GAS, LLC (contract 176561), 2026 YTD payments",
+     "amount": 16259385
+    },
+    {
+     "name": "budget with no matched 2025 payee (group residual)",
+     "amount": 39751452
     }
    ],
-   "note": "group ('38', 'UTIL'): 2025 named payments $139M vs 2026 budget $139M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('38', 'UTIL'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $87M vs 2026 budget $139M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 106760271
   },
@@ -6348,15 +6155,15 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Streets and Sanitation > Bureau of Sanitation > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 31803340,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
      "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 25703759
+     "amount": 27124654
     }
    ],
-   "note": "group ('81', 'PROF'): 2025 named payments $8M vs 2026 budget $43M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('81', 'PROF'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $6M vs 2026 budget $43M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 31803340
   },
@@ -6394,7 +6201,7 @@
    "budget": "City",
    "path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0162 Repair/Maintenance of Equipment",
    "amount": 29763700,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6404,19 +6211,19 @@
    "budget": "City",
    "path": "City > Grants > Disaster Recovery Fund > Department of Water Management > HUD - CPD - CDBG-DR - Stormwater Infrastructure - Local Sewer Line Cleaning (14.218) > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 29736000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "AECOM-DBS (contract 211620), 2025 payments",
-     "amount": 42075479
+     "name": "AECOM-DBS (contract 211620), 2026 YTD payments",
+     "amount": 31395303
     },
     {
-     "name": "PCWP, LLC (contract 225463), 2025 payments",
-     "amount": 31584133
+     "name": "PCWP, LLC (contract 225463), 2026 YTD payments",
+     "amount": 19571296
     }
    ],
-   "note": "group ('88', 'PROF'): 2025 named payments $103M vs 2026 budget $61M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('88', 'PROF'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $78M vs 2026 budget $61M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 29736000
   },
@@ -6424,7 +6231,7 @@
    "budget": "City",
    "path": "City > Local > Chicago Midway Airport Fund > Chicago Department of Aviation > Chicago Midway Airport > 0161 Operation, Repair or Maintenance of Facilities",
    "amount": 29374400,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6481,7 +6288,7 @@
    "budget": "City",
    "path": "City > Local > Chicago Midway Airport Fund > Chicago Department of Aviation > Chicago Midway Airport > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 27814200,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6501,15 +6308,15 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Fleet Operations > 0360 Repair Parts and Material",
    "amount": 27397749,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
      "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 19641027
+     "amount": 22571061
     }
    ],
-   "note": "group ('38', 'MATERIALS'): 2025 named payments $14M vs 2026 budget $49M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('38', 'MATERIALS'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $9M vs 2026 budget $49M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 27397749
   },
@@ -6537,15 +6344,15 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Finance > Revenue Services and Operations > 0138 For Professional Services for Information Technology Mainten",
    "amount": 25928030,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
      "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 24918576
+     "amount": 25242078
     }
    ],
-   "note": "group ('27', 'IT'): 2025 named payments $1M vs 2026 budget $33M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('27', 'IT'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $1M vs 2026 budget $33M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 25928030
   },
@@ -6563,7 +6370,7 @@
    "budget": "City",
    "path": "City > Grants > Entitlement Fund > Department of Planning and Development > HUD - CPD - CDBG - Congress Theater Section 108 Loan (14.218) > 9103 Rehabilitation Loans and Grants",
    "amount": 25250000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6593,15 +6400,15 @@
    "budget": "City",
    "path": "City > Local > Water Fund > Department of Water Management > Bureau of Water Supply > 0342 Drugs, Medicine and Chemical Materials",
    "amount": 23918041,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "RELIABLE ASPHALT CORP. (contract 84271), 2025 payments",
-     "amount": 20129054
+     "name": "RELIABLE ASPHALT CORP. (contract 84271), 2026 YTD payments",
+     "amount": 17379376
     }
    ],
-   "note": "group ('88', 'MATERIALS'): 2025 named payments $66M vs 2026 budget $48M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('88', 'MATERIALS'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $57M vs 2026 budget $48M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 23918041
   },
@@ -6619,7 +6426,7 @@
    "budget": "City",
    "path": "City > Grants > State Grant Fund > Chicago Department of Transportation > DCEO - Highway Planning and Construction > 0540 Construction of Buildings and Other Structures",
    "amount": 23600000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6659,10 +6466,10 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0155 Rental of Property",
    "amount": 22807498,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
-   "note": "group ('38', 'RENTAL'): 2025 named payments $43M vs 2026 budget $34M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('38', 'RENTAL'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $30M vs 2026 budget $34M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "",
    "group_cap": 22807498
   },
@@ -6670,7 +6477,7 @@
    "budget": "City",
    "path": "City > Local > Water Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
    "amount": 22740589,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6690,7 +6497,7 @@
    "budget": "City",
    "path": "City > Local > Motor Fuel Tax Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0332 Electricity - Street Lighting",
    "amount": 22269908,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6725,11 +6532,11 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Chicago Department of Public Health > Department of Public Health > 0135 For Delegate Agencies",
    "amount": 21521382,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
-   "why_cant_go_deeper": ""
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
@@ -6745,7 +6552,7 @@
    "budget": "City",
    "path": "City > Grants > State Grant Fund > Department of Family and Support Services > HHS - ACL - IDOA -CTY - Area Plan on Aging  (93.041-93.045; 93.052-93.053) > 0135 For Delegate Agencies",
    "amount": 21112813,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6755,7 +6562,7 @@
    "budget": "City",
    "path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - OST - Safe Streets and Roads for All (20.939) > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 20928000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6815,7 +6622,7 @@
    "budget": "City",
    "path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0446 For the Purchase of IT and Data Communication Hardware",
    "amount": 19676600,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6825,15 +6632,15 @@
    "budget": "City",
    "path": "City > Grants > Disaster Recovery Fund > Office of Budget and Management > HUD - CPD - CDBG-DR - Planning and Administration (14.218) > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 19553758,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
      "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 19507053
+     "amount": 18507566
     }
    ],
-   "note": "group ('5', 'PROF'): 2025 named payments $0M vs 2026 budget $21M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('5', 'PROF'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $1M vs 2026 budget $21M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 19553758
   },
@@ -6876,7 +6683,7 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
    "amount": 18959492,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6896,23 +6703,15 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Facility Management > 0125 Office and Building Services",
    "amount": 18501258,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "SECURITAS SECURITY SERVICES, USA, INC. (contract 295220), 2025 payments",
-     "amount": 15461763
-    },
-    {
-     "name": "ABM INDUSTRY GROUPS, LLC (contract 87516), 2025 payments",
-     "amount": 13631748
-    },
-    {
-     "name": "TRANE U.S. INC (contract 134953), 2025 payments",
-     "amount": 10466180
+     "name": "SECURITAS SECURITY SERVICES, USA, INC. (contract 325205), 2026 YTD payments",
+     "amount": 20524326
     }
    ],
-   "note": "group ('38', 'FACILITY'): 2025 named payments $81M vs 2026 budget $60M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('38', 'FACILITY'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $46M vs 2026 budget $60M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 31426258
   },
@@ -6920,10 +6719,10 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Chicago Department of Transportation > Division of Traffic Safety > 0162 Repair/Maintenance of Equipment",
    "amount": 18209728,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
-   "note": "group ('84', 'FACILITY'): 2025 named payments $21M vs 2026 budget $18M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('84', 'FACILITY'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $13M vs 2026 budget $18M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "",
    "group_cap": 18209728
   },
@@ -6951,7 +6750,7 @@
    "budget": "City",
    "path": "City > Grants > Federal Grant Fund > Department of Family and Support Services > HHS - ACF - Head Start (93.600) > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 17916297,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -6981,19 +6780,19 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0320 Gasoline",
    "amount": 16953195,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "COLONIAL OIL INDUSTRIES, INC. (contract 129972), 2025 payments",
-     "amount": 16308457
+     "name": "COLONIAL OIL INDUSTRIES, INC. (contract 129972), 2026 YTD payments",
+     "amount": 12881980
     },
     {
-     "name": "COLONIAL OIL INDUSTRIES, INC. (contract 129971), 2025 payments",
-     "amount": 12409840
+     "name": "COLONIAL OIL INDUSTRIES, INC. (contract 129971), 2026 YTD payments",
+     "amount": 10984930
     }
    ],
-   "note": "group ('38', 'FUEL'): 2025 named payments $35M vs 2026 budget $41M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('38', 'FUEL'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $34M vs 2026 budget $41M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 16953195
   },
@@ -7001,7 +6800,7 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Family and Support Services > Department of Family and Support Services > 9260 After School Programs",
    "amount": 16755318,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -7051,11 +6850,16 @@
    "budget": "City",
    "path": "City > Local > Motor Fuel Tax Fund > Department of Streets and Sanitation > Bureau of Street Operations > 0340 Material and Supplies",
    "amount": 15805345,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
-   "remaining_pieces_over_10m": [],
-   "note": "group ('81', 'MATERIALS'): 2025 named payments $10M vs 2026 budget $18M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
-   "why_cant_go_deeper": "",
+   "remaining_pieces_over_10m": [
+    {
+     "name": "MORTON SALT, INC. (contract 209593), 2026 YTD payments",
+     "amount": 10879457
+    }
+   ],
+   "note": "group ('81', 'MATERIALS'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $11M vs 2026 budget $18M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 15805345
   },
   {
@@ -7082,15 +6886,15 @@
    "budget": "City",
    "path": "City > Grants > Federal Grant Fund > Department of Housing > HUD - CPD - Home Investment Partnerships Program (14.239) > 9103 Rehabilitation Loans and Grants",
    "amount": 15504317,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 25671949
+     "name": "TRP LENDING, LLC (contract 352345), 2026 YTD payments",
+     "amount": 10500000
     }
    ],
-   "note": "group ('21', 'DEVLOAN'): 2025 named payments $2M vs 2026 budget $28M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('21', 'DEVLOAN'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $20M vs 2026 budget $28M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 27214317
   },
@@ -7118,15 +6922,15 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Office of Public Safety Administration > Office of Public Safety Administration > 0138 For Professional Services for Information Technology Mainten",
    "amount": 15091199,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "budget with no matched 2025 payee (group residual)",
-     "amount": 11169540
+     "name": "MOTOROLA SOLUTIONS INC (contract 311043), 2026 YTD payments",
+     "amount": 13126712
     }
    ],
-   "note": "group ('51', 'IT'): 2025 named payments $10M vs 2026 budget $37M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('51', 'IT'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $16M vs 2026 budget $37M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 15091199
   },
@@ -7134,7 +6938,7 @@
    "budget": "City",
    "path": "City > Local > Foreign Fire Insurance Tax Fund > Finance General > Finance General > 0526 For the Maintenance, Use, Benefit, or Enhancement of Fire St",
    "amount": 15072100,
-   "split_source": "no matching 2025 payments for this department and account family",
+   "split_source": "no matching 2026 YTD payments for this department and account family",
    "status": "unsplit_no_source",
    "remaining_pieces_over_10m": [],
    "note": "",
@@ -7144,19 +6948,23 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Technology and Innovation > Bureau of Centralized Information Technology > 0149 For Software Maintenance and Licensing",
    "amount": 14942252,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "CDW GOVERNMENT, LLC. (contract 33232), 2025 payments",
-     "amount": 70074019
+     "name": "CDW GOVERNMENT, LLC. (contract 33232), 2026 YTD payments",
+     "amount": 69501575
     },
     {
-     "name": "SDI PRESENCE LLC (contract 93627), 2025 payments",
-     "amount": 38538014
+     "name": "SDI PRESENCE LLC (contract 93627), 2026 YTD payments",
+     "amount": 28580969
+    },
+    {
+     "name": "DELL MARKETING LP. (contract 313535), 2026 YTD payments",
+     "amount": 15057167
     }
    ],
-   "note": "group ('6', 'IT'): 2025 named payments $140M vs 2026 budget $30M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('6', 'IT'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $137M vs 2026 budget $30M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 25111088
   },
@@ -7164,7 +6972,7 @@
    "budget": "City",
    "path": "City > Local > Chicago Midway Airport Fund > Chicago Department of Aviation > Chicago Midway Airport > 0157 Rental of Equipment and Services",
    "amount": 14875000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -7213,7 +7021,7 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Family and Support Services > Department of Family and Support Services > 9299 Gender Based Violence Services",
    "amount": 14500000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -7223,7 +7031,7 @@
    "budget": "City",
    "path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0163 Repair/Maintenance of Streets and Pavements",
    "amount": 14395500,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -7293,39 +7101,49 @@
    "budget": "City",
    "path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0340 Material and Supplies",
    "amount": 13296700,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
-   "remaining_pieces_over_10m": [],
-   "note": "group ('85', 'MATERIALS'): 2025 named payments $19M vs 2026 budget $28M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
-   "why_cant_go_deeper": "",
+   "remaining_pieces_over_10m": [
+    {
+     "name": "CRYOTECH DEICING TECHNOLOGY (contract 86020), 2026 YTD payments",
+     "amount": 10165752
+    }
+   ],
+   "note": "group ('85', 'MATERIALS'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $16M vs 2026 budget $28M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 13296700
   },
   {
    "budget": "City",
    "path": "City > Grants > Federal Grant Fund > Chicago Department of Public Health > HHS - HRSA - HIV Emergency Relief Project Grants (Ryan White) (93.914) > 0135 For Delegate Agencies",
    "amount": 13278987,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
-   "why_cant_go_deeper": ""
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
    "path": "City > Grants > Federal Grant Fund > Chicago Department of Public Health > HHS - HRSA - HIV Emergency Relief Project Grants (Ryan White) (93.914) > 0140 For Professional and Technical Services and Other Third Part",
    "amount": 13278987,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
-   "remaining_pieces_over_10m": [],
-   "note": "group ('41', 'PROF'): 2025 named payments $14M vs 2026 budget $38M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
-   "why_cant_go_deeper": "",
+   "remaining_pieces_over_10m": [
+    {
+     "name": "budget with no matched 2025 payee (group residual)",
+     "amount": 10441279
+    }
+   ],
+   "note": "group ('41', 'PROF'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $8M vs 2026 budget $38M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 13278987
   },
   {
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Fleet and Facility Management > Bureau of Fleet Operations > 0176 Maintenance and Operation of City Owned Vehicles",
    "amount": 12925000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -7335,7 +7153,7 @@
    "budget": "City",
    "path": "City > Local > Local Impact Fund > Department of Planning and Development > Department of Planning and Development > 9103 Rehabilitation Loans and Grants",
    "amount": 12851032,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -7375,7 +7193,7 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Chicago Fire Department > Chicago Fire Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
    "amount": 12000000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -7385,20 +7203,11 @@
    "budget": "City",
    "path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0183 Water",
    "amount": 12000000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
-   "remaining_pieces_over_10m": [
-    {
-     "name": "CITY OF CHICAGO DEPT OF WATER (contract direct voucher), 2025 payments",
-     "amount": 12626159
-    },
-    {
-     "name": "COMED EXELON ENERGY DELIVERY (contract direct voucher), 2025 payments",
-     "amount": 10558384
-    }
-   ],
-   "note": "group ('85', 'UTIL'): 2025 named payments $27M vs 2026 budget $14M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
-   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
+   "remaining_pieces_over_10m": [],
+   "note": "group ('85', 'UTIL'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $23M vs 2026 budget $14M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
+   "why_cant_go_deeper": "",
    "group_cap": 12000000
   },
   {
@@ -7435,7 +7244,7 @@
    "budget": "City",
    "path": "City > Grants > Program Income Fund > Department of Housing > HUD - CPD - Home Investment Partnerships Program (14.239) > 9103 Rehabilitation Loans and Grants",
    "amount": 11710000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -7484,20 +7293,20 @@
    "budget": "City",
    "path": "City > Grants > Coronavirus Local Fiscal Recovery Fund > Chicago Department of Public Health > TREAS - SLFRF - American Rescue Plan Fiscal Recovery (ARPA) (21.027) > 0135 For Delegate Agencies",
    "amount": 11322123,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
-   "why_cant_go_deeper": ""
+   "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
   },
   {
    "budget": "City",
    "path": "City > Local > Special Events and Municipal Hotel Operators' Occupation Tax Fund > Department of Cultural Affairs and Special Events > Department of Cultural Affairs and Special Events > 9805 For Festival Production",
    "amount": 11222900,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
-   "note": "group ('23', 'OTHER_VENDOR'): 2025 named payments $17M vs 2026 budget $21M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('23', 'OTHER_VENDOR'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $20M vs 2026 budget $21M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "",
    "group_cap": 11222900
   },
@@ -7505,7 +7314,7 @@
    "budget": "City",
    "path": "City > Local > Houseshare Surcharge - Homeless Services Fund > Department of Family and Support Services > Department of Family and Support Services > 9263 Homeless Services",
    "amount": 11192277,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -7535,7 +7344,7 @@
    "budget": "City",
    "path": "City > Local > Water Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0322 Natural Gas",
    "amount": 10958532,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -7575,7 +7384,7 @@
    "budget": "City",
    "path": "City > Local > Library Fund > Finance General > Finance General > 9112 Property Maintenance Contract for the Harold Washington Libr",
    "amount": 10374209,
-   "split_source": "no matching 2025 payments for this department and account family",
+   "split_source": "no matching 2026 YTD payments for this department and account family",
    "status": "unsplit_no_source",
    "remaining_pieces_over_10m": [],
    "note": "",
@@ -7585,7 +7394,7 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Family and Support Services > Department of Family and Support Services > 9204 Youth Mentoring Programs",
    "amount": 10224000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -7595,7 +7404,7 @@
    "budget": "City",
    "path": "City > Local > Corporate Fund > Department of Technology and Innovation > Bureau of Centralized Information Technology > 0138 For Professional Services for Information Technology Mainten",
    "amount": 10168836,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",
@@ -7605,19 +7414,15 @@
    "budget": "City",
    "path": "City > Local > Special Events and Municipal Hotel Operators' Occupation Tax Fund > Department of Fleet and Facility Management > Bureau of Facility Management > 9188 For Expenses Related to the Operation of Millennium Park",
    "amount": 10159160,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "PUBLIC BUILDING COMMISSION CHICAGO (contract 173521), 2025 payments",
-     "amount": 23396612
-    },
-    {
-     "name": "ENTERPRISE FLEET MANAGEMENT, INC (contract 126170), 2025 payments",
-     "amount": 12313301
+     "name": "GH CHICAGO IL, LLC (contract direct voucher), 2026 YTD payments",
+     "amount": 19109791
     }
    ],
-   "note": "group ('38', 'OTHER_VENDOR'): 2025 named payments $58M vs 2026 budget $16M; vendor items listed once on the largest line of the group, amounts are 2025 payments, not scaled",
+   "note": "group ('38', 'OTHER_VENDOR'): named payments (paid Jan 1 to 09/28/2026 2026, partial year) $56M vs 2026 budget $16M; vendor items listed once on the largest line of the group, amounts are actual payments of that basis, not scaled or annualized",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract.",
    "group_cap": 10159160
   },
@@ -7645,7 +7450,7 @@
    "budget": "City",
    "path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FTA - Federal Transit Formula Grants (20.507) > 0540 Construction of Buildings and Other Structures",
    "amount": 10000000,
-   "split_source": "payments s4vu-giwb 2025 joined to contracts rsxa-ify5 (data/city_vendors_items_2025.json)",
+   "split_source": "payments s4vu-giwb paid Jan 1 to 09/28/2026 2026, partial year, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_2026ytd.json)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [],
    "note": "vendor items for this department and account family are listed on the largest line of the group",

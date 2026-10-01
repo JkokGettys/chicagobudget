@@ -1,22 +1,34 @@
 #!/usr/bin/env python3
 """Round 3, item 2f: split single large City contracts and big vendor payments to the lowest public level, the check (voucher).
 
-Reads  data/city_vendors_items_2025.json (vendor x contract totals, 2025), raw/city_payments_2025.csv (Payments s4vu-giwb),
+Reads  data/city_vendors_items_<basis>.json (vendor x contract totals), the deduplicated payments file for the same basis
+       (raw/contracts/payments_2026ytd_dedup.csv or payments_2025_dedup.csv, made by scripts/payments_dedupe.py),
        raw/contracts/contracts_all.csv (Contracts rsxa-ify5, one row per revision_number).
+Basis: default 2026ytd (Jan 1 to the latest 2026 check date, partial year, not annualized). Run with --basis 2025 for the 2025 view.
+       The output keys keep their old names (paid_2025_item, paid_2025, vouchers_2025 ...) and hold the dollars of the chosen basis, see meta.basis.
 Fetches (cached in raw/leaves/r3/) https://data.cityofchicago.org/resource/rsxa-ify5.json?purchase_order_contract_number=N for the named contracts to
 confirm every revision, and records the HTTP status.
 Writes data/leaves_contracts.json:
   voucher_floor : for every 2025 vendor x contract total >= $10M, the single vouchers (checks) that are still >= $10M
   contracts     : revision history (award amount per revision_number), 2025 and all-years paid, largest voucher, vouchers >= $10M
 A voucher is the sum of its payment lines (one check). Payments stop at the voucher, so a voucher >= $10M is the floor."""
-import csv, json, os, re, urllib.request, urllib.parse
+import argparse, csv, json, os, re, sys, urllib.request, urllib.parse
 from collections import defaultdict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(ROOT, "scripts"))
+from payments_dedupe import dedupe_rows  # noqa: E402
+ap = argparse.ArgumentParser()
+ap.add_argument("--basis", choices=["2026ytd", "2025"], default="2026ytd")
+ARGS = ap.parse_args()
+BASIS = ARGS.basis
+ITEMS_FILE = {"2026ytd": "data/city_vendors_items_2026ytd.json", "2025": "data/city_vendors_items_2025.json"}[BASIS]
+PAY_FILE = {"2026ytd": "raw/contracts/payments_2026ytd_dedup.csv", "2025": "raw/contracts/payments_2025_dedup.csv"}[BASIS]
+OUT_FILE = {"2026ytd": "data/leaves_contracts.json", "2025": "data/leaves_contracts_2025basis.json"}[BASIS]
 T = 10_000_000
 os.makedirs(f"{ROOT}/raw/leaves/r3", exist_ok=True)
-items = json.load(open(f"{ROOT}/data/city_vendors_items_2025.json"))
-pays = list(csv.DictReader(open(f"{ROOT}/raw/city_payments_2025.csv")))
-allp = list(csv.DictReader(open(f"{ROOT}/raw/contracts/payments_all.csv")))
+items = json.load(open(f"{ROOT}/{ITEMS_FILE}"))
+pays = list(csv.DictReader(open(f"{ROOT}/{PAY_FILE}")))
+allp, _dropped_all = dedupe_rows(list(csv.DictReader(open(f"{ROOT}/raw/contracts/payments_all.csv"))))  # all-years totals use the same dedupe rule
 contracts = list(csv.DictReader(open(f"{ROOT}/raw/contracts/contracts_all.csv")))
 
 def vouchers(rows):
@@ -73,11 +85,12 @@ for num in NAMED:
                   "largest_voucher_2025": round(max([x["amount"] for x in p25.values()] or [0]), 2),
                   "vouchers_2025_ge_10m": sorted([{"voucher": k, "amount": round(x["amount"], 2), "check_date": x["date"]} for k, x in p25.items() if x["amount"] >= T], key=lambda z: -z["amount"])})
 n_pc = len(floor); n_big = sum(len(v["vouchers_ge_10m"]) for v in floor.values())
-res = {"meta": {"generated_by": "scripts/leaves_contracts.py", "basis": "2025 Payments s4vu-giwb (raw/city_payments_2025.csv), a voucher is one check (sum of its lines). Revision history from Contracts rsxa-ify5.",
+LABEL = items.get("meta", {}).get("label", BASIS)
+res = {"meta": {"generated_by": "scripts/leaves_contracts.py", "basis": f"{LABEL}. Payments s4vu-giwb, duplicates removed (scripts/payments_dedupe.py), file {PAY_FILE}. A voucher is one check (sum of its lines). Revision history from Contracts rsxa-ify5. Keys named *_2025 hold this basis's dollars.", "basis_id": BASIS, "payments_deduplicated": True,
                 "sources_fetched": log, "vendor_contract_items_ge_10m": n_pc, "vouchers_still_ge_10m": n_big,
                 "vouchers_ge_10m_dollars": round(sum(v["amount"] for f in floor.values() for v in f["vouchers_ge_10m"])),
-                "caveat": "Payments are 2025 checks, not 2026 budget. A voucher at or above $10M cannot be split further with public data."},
+                "caveat": ("Payments are 2026 checks Jan 1 to the latest check date (partial year, not annualized), matched to the 2026 budget. " if BASIS == "2026ytd" else "Payments are 2025 checks, not 2026 budget. ") + "A voucher at or above $10M cannot be split further with public data."},
        "voucher_floor": floor, "contracts": out_c}
-json.dump(res, open(f"{ROOT}/data/leaves_contracts.json", "w"), indent=1)
+json.dump(res, open(f"{ROOT}/{OUT_FILE}", "w"), indent=1)
 print(json.dumps(res["meta"], indent=1)[:900])
 for c in out_c: print(c["contract"], c["vendor"][:28], "revs", len(c["revisions"]), "award", round(c["total_award_all_revisions"]/1e6,1), "paid25", round(c["paid_2025"]/1e6,1), "v>=10M", len(c["vouchers_2025_ge_10m"]))

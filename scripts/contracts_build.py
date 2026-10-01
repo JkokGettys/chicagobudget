@@ -2,27 +2,35 @@
 
 Inputs (all public Chicago Open Data, see scripts/contracts_fetch.py):
   raw/city_appropriations_2026.json   2026 Budget Ordinance (6694-f78c), 3,268 lines
-  raw/city_payments_2025.csv          Payments (s4vu-giwb) for check year 2025, 115,810 rows
+  raw/contracts/payments_2025_dedup.csv, payments_2026ytd_dedup.csv   Payments (s4vu-giwb) after scripts/payments_dedupe.py (DEFAULT input)
+  raw/city_payments_2025.csv          Payments (s4vu-giwb) for check year 2025, 115,810 rows (used with --raw)
   raw/contracts/contracts_all.csv     Contracts (rsxa-ify5), one row per contract revision
   raw/contracts/payments_all.csv      Payments (s4vu-giwb) all years (used only for cross checks)
   raw/contracts/ijrh-ktm6.csv, 72uz-ikdv.csv   TIF annual report vendors / projects
   raw/contracts/midyear_grants.csv    Mid-year grants report (iyu8-jkf8)
   raw/contracts/payroll_costing_2025.csv   Payroll costing aggregates (dawh-m56b), 2025
 
-Outputs:
-  data/city_vendors_items_2025.json   every (department, family, vendor, contract) with 2025 dollars
-  data/city_vendors_coverage_2026.json   department x account family coverage vs the 2026 budget
-  data/city_vendors_findings_2025.json   top vendors, sole source, consulting, delegate agencies
+Outputs (names depend on --basis, see BASES below):
+  data/city_vendors_items_<basis>.json   every (department, family, vendor, contract) with that basis's dollars
+  data/city_vendors_coverage_2026.json   department x account family coverage vs the 2026 budget (primary, 2026ytd basis)
+  data/city_vendors_findings_<basis>.json   top vendors, sole source, consulting, delegate agencies
   raw/contracts/report_tables.md      markdown tables pasted into research/contracts_vendors.md
 
-Run: python3 scripts/contracts_build.py
+Run: python3 scripts/contracts_build.py                 # default: --basis 2026ytd, deduplicated payments
+     python3 scripts/contracts_build.py --basis 2025    # full-year 2025 comparison view (deduplicated)
+     python3 scripts/contracts_build.py --basis 2025samedates   # 2025 Jan 1 to the same month/day as the 2026 cutoff
+     add --raw to read the original rows without removing duplicates (the pre-dedupe behaviour)
+Dedupe rule: scripts/payments_dedupe.py, research/payments_dedupe.md.
+Note: JSON keys named paid_2025... keep their historical names on every basis, they hold the dollars of the chosen basis (see "basis" in each file).
 Every number is computed from the files above. Nothing is typed in by hand except the
 mapping tables below (department aliases, contract type to account family rules), which are
 the "mapping approach" and are documented in research/contracts_vendors.md.
 """
+import argparse
 import json
 import os
 import re
+import sys
 from collections import defaultdict
 
 import pandas as pd
@@ -35,6 +43,21 @@ DATA = os.path.join(ROOT, "data")
 os.makedirs(DATA, exist_ok=True)
 
 M = 1_000_000.0
+
+# Payment bases. "csv_dedup" is the output of scripts/payments_dedupe.py. "raw" reads the undeduped rows.
+BASES = {
+    "2026ytd": {"year": "2026", "csv_dedup": "payments_2026ytd_dedup.csv", "raw_src": "payments_all", "through": None,
+                "items": "city_vendors_items_2026ytd.json", "coverage": "city_vendors_coverage_2026.json",
+                "findings": "city_vendors_findings_2026ytd.json", "tables": "report_tables.md",
+                "title": "2026 year to date"},
+    "2025": {"year": "2025", "csv_dedup": "payments_2025_dedup.csv", "raw_src": "city_payments_2025", "through": None,
+             "items": "city_vendors_items_2025.json", "coverage": "city_vendors_coverage_2026_on_2025pay.json",
+             "findings": "city_vendors_findings_2025.json", "tables": "report_tables_2025.md", "title": "2025 full year"},
+    "2025samedates": {"year": "2025", "csv_dedup": "payments_2025_dedup.csv", "raw_src": "city_payments_2025", "through": "same_as_2026ytd",
+                      "items": "city_vendors_items_2025_samedates.json", "coverage": "city_vendors_coverage_2026_on_2025samedates.json",
+                      "findings": "city_vendors_findings_2025_samedates.json", "tables": "report_tables_2025_samedates.md",
+                      "title": "2025 same dates as the 2026 year to date"},
+}
 
 # ---------------------------------------------------------------------------
 # 1. Department normalization: names used in Contracts / Payments -> 2026 budget dept number
@@ -338,7 +361,50 @@ def fb(x):
 
 
 # ---------------------------------------------------------------------------
+def mmdd_key(s):
+    """'09/28/2026' -> (9, 28)"""
+    return (int(s[:2]), int(s[3:5]))
+
+
+def load_payments(basis, raw):
+    """Return (dataframe of payment rows for the basis, human label, latest check date string)."""
+    cfg = BASES[basis]
+    if raw:
+        if cfg["raw_src"] == "city_payments_2025":
+            df = pd.read_csv(os.path.join(RAW, "city_payments_2025.csv"), dtype=str)
+        else:
+            df = pd.read_csv(os.path.join(RC, "payments_all.csv"), dtype=str)
+            df = df[df.check_date.str[-4:] == cfg["year"]].copy()
+    else:
+        path = os.path.join(RC, cfg["csv_dedup"])
+        if not os.path.exists(path):
+            sys.exit("missing {}: run python3 scripts/payments_dedupe.py first (or pass --raw)".format(path))
+        df = pd.read_csv(path, dtype=str)
+    # latest 2026 check date defines the year-to-date cutoff, and the same month/day cuts 2025 for the comparison
+    full26 = pd.read_csv(os.path.join(RC, "payments_all.csv"), dtype=str, usecols=["check_date"])
+    d26 = full26[full26.check_date.str[-4:] == "2026"].check_date
+    cutoff = max(d26, key=lambda x: (int(x[:2]), int(x[3:5])))
+    if cfg["through"]:
+        keep = df.check_date.map(lambda x: mmdd_key(x) <= mmdd_key(cutoff))
+        df = df[keep].copy()
+    if basis == "2026ytd":
+        label = "paid Jan 1 to {} 2026, partial year".format(cutoff)
+        latest = cutoff
+    elif basis == "2025samedates":
+        label = "paid Jan 1 to {}/2025, same dates as the 2026 year to date".format(cutoff[:5])
+        latest = cutoff[:5] + "/2025"
+    else:
+        label = "paid in calendar 2025, full year"
+        latest = "12/31/2025"
+    return df, label, latest
+
+
 def main():
+    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    ap.add_argument("--basis", choices=sorted(BASES), default="2026ytd", help="which payments to use (default 2026ytd)")
+    ap.add_argument("--raw", action="store_true", help="do not use the deduplicated payment files")
+    args = ap.parse_args()
+    cfg = BASES[args.basis]
     out_md = []
 
     # ---- budget -----------------------------------------------------------
@@ -375,8 +441,11 @@ def main():
     cm["cdept"] = cm.cdept_raw.map(norm_dept_name)
     cm["family"] = [classify_contract(t, d) for t, d in zip(cm.ctype, cm.desc)]
 
-    # ---- payments 2025 ----------------------------------------------------
-    p = pd.read_csv(os.path.join(RAW, "city_payments_2025.csv"), dtype=str)
+    # ---- payments (basis chosen on the command line, deduplicated by default) -------
+    p, basis_label, latest_check = load_payments(args.basis, args.raw)
+    basis_meta = {"basis": args.basis, "title": cfg["title"], "label": basis_label, "latest_check_date": latest_check,
+                  "deduplicated": not args.raw, "payment_rows": int(len(p)),
+                  "note": "JSON keys named paid_2025... keep their historical names on every basis and hold this basis's dollars. No annualizing or extrapolation."}
     p["amount"] = pd.to_numeric(p.amount)
     total_paid = p.amount.sum()
     p["is_dv"] = p.contract_number == "DV"
@@ -761,21 +830,23 @@ def main():
                r.proc if isinstance(r.proc, str) and r.proc else None]
         fam.append(rec)
     json.dump({
-        "source": "Payments s4vu-giwb (check year 2025) joined to Contracts rsxa-ify5; budget dept numbers from 6694-f78c",
-        "record_fields": ["vendor", "contract_number (null = direct voucher)", "paid_2025", "payments", "contract_description", "contract_type", "procurement_type"],
-        "families": FAMILIES, "departments": tree}, open(os.path.join(DATA, "city_vendors_items_2025.json"), "w"),
+        "source": "Payments s4vu-giwb ({}) joined to Contracts rsxa-ify5; budget dept numbers from 6694-f78c".format(basis_label + (", duplicates removed by scripts/payments_dedupe.py" if not args.raw else ", raw rows")),
+        "meta": basis_meta,
+        "record_fields": ["vendor", "contract_number (null = direct voucher)", "paid_" + ("2025" if args.basis.startswith("2025") else "2026ytd"), "payments", "contract_description", "contract_type", "procurement_type"],
+        "families": FAMILIES, "departments": tree}, open(os.path.join(DATA, cfg["items"]), "w"),
         separators=(",", ":"))
 
     budget_by_kind = {}
     for (k_, f_), g_ in a.groupby(["kind", "family"]):
         budget_by_kind["{}:{}".format(k_, f_)] = float(g_.amt.sum())
     cov_out = {
+        "meta": basis_meta,
         "budget_by_kind_family": budget_by_kind,
-        "source": "2026 Budget Ordinance 6694-f78c vs 2025 Payments s4vu-giwb + Contracts rsxa-ify5",
+        "source": "2026 Budget Ordinance 6694-f78c vs Payments s4vu-giwb ({}) + Contracts rsxa-ify5".format(basis_label),
         "definitions": {
             "budget_vendor_payable": "2026 appropriation lines whose account maps to a vendor-facing family (see families). Excludes personnel, pensions, debt, internal transfers, reserves, tax distributions.",
-            "paid_2025_vendor": "2025 payments resolved to the department, excluding pension / bank / tax / pass-through direct vouchers and payments on contracts missing from the Contracts dataset",
-            "covered_capped_by_family": "sum over families of min(2026 budget, 2025 paid) so over-payment in one family cannot hide a gap in another",
+            "paid_2025_vendor": "payments of the chosen basis (see meta.label) resolved to the department, excluding pension / bank / tax / pass-through direct vouchers and payments on contracts missing from the Contracts dataset",
+            "covered_capped_by_family": "sum over families of min(2026 budget, 2025 paid) so over-payment in one family cannot hide a gap in another. With a partial year basis, paid is NOT annualized, so coverage is understated",
         },
         "families": FAMILIES, "nonvendor_kinds": NONVENDOR,
         "departments": cov.to_dict(orient="records"),
@@ -789,15 +860,15 @@ def main():
         "active_contracts_2026_by_dept": {dept_names.get(d, d): {"contracts": int(r.contracts), "award_total": round(float(r.award_total), 2)} for d, r in active_by_dept.iterrows()},
         "dept_aliases": {dept_names.get(d, d): v for d, v in DEPT_ALIASES.items()},
     }
-    json.dump(cov_out, open(os.path.join(DATA, "city_vendors_coverage_2026.json"), "w"), indent=1)
-    findings.update({"tif": tif_summary, "mid_year_grants": grants_summary, "overtime": overtime,
+    json.dump(cov_out, open(os.path.join(DATA, cfg["coverage"]), "w"), indent=1)
+    findings.update({"meta": basis_meta, "tif": tif_summary, "mid_year_grants": grants_summary, "overtime": overtime,
                      "payment_routing_all": {k: {"amount": round(float(r["sum"]), 2), "rows": int(r["count"])} for k, r in route_tab.iterrows()},
                      "payment_routing_blank_dept": {k: {"amount": round(float(r["sum"]), 2), "rows": int(r["count"])} for k, r in blank_route.iterrows()},
                      "unmapped_payment_dept_names": {k: round(float(v), 2) for k, v in unm.items()},
                      "unmapped_contract_dept_names_contracts": {k: int(v) for k, v in cunm.items()},
                      "budget_depts_missing_alias": missing_alias,
                      "voucher_prefix_vs_dept_name_agreement": {"rows_pct": 100 * prefix_agree, "dollars_pct": 100 * prefix_agree_amt}})
-    json.dump(findings, open(os.path.join(DATA, "city_vendors_findings_2025.json"), "w"), indent=1)
+    json.dump(findings, open(os.path.join(DATA, cfg["findings"]), "w"), indent=1)
 
     # ---- markdown fragments ---------------------------------------------------------
     L = out_md.append
@@ -906,10 +977,11 @@ def main():
     L("\n## T15 procurement type paid\n")
     for k, v in findings["procurement_type_paid_breakdown"].items():
         L("| {} | {} |".format(k, fm(v)))
-    open(os.path.join(RC, "report_tables.md"), "w").write("\n".join(out_md))
+    open(os.path.join(RC, cfg["tables"]), "w").write("\n".join(["Basis: " + basis_label + ("" if not args.raw else " (raw rows)") + "\n"] + out_md))
 
     # ---- stdout summary -------------------------------------------------------
-    print("budget total", total_budget, "paid 2025", total_paid)
+    print("basis", args.basis, basis_label, "deduplicated", not args.raw)
+    print("budget total", total_budget, "paid (basis)", total_paid)
     print("vendor-payable budget", float(a[a.kind == "vendor"].amt.sum()))
     print("paid vendors resolved", float(vendor_pay[vendor_pay.dept.notna()].amount.sum()),
           "unresolved dept vendor", float(vendor_pay[vendor_pay.dept.isna()].amount.sum()))

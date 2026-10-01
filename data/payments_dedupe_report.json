@@ -1,0 +1,682 @@
+{
+ "generated_by": "scripts/payments_dedupe.py",
+ "rule": "Same payment line = equal voucher_number + amount + check_date + vendor_name + contract_number. department_name is ignored (the dataset lists many payments twice, once with the department and once blank). Keep one row per key (prefer the row with a department). Rows of $99,000,000 or more are never dropped: the City splits large wires into checks capped at $99M, so identical $99M lines in one voucher are tranches. Only rows with a voucher number are considered.",
+ "check_cap_exemption_amount": 99000000.0,
+ "latest_2026_check_date": "09/28/2026",
+ "label_2026ytd": "paid Jan 1 to 09/28/2026 2026, partial year",
+ "by_year": {
+  "2025": {
+   "output_file": "raw/contracts/payments_2025_dedup.csv",
+   "rows_before": 115810,
+   "rows_after": 112771,
+   "rows_removed": 3039,
+   "dollars_before": 10662957407.92,
+   "dollars_after": 10502246535.82,
+   "dollars_removed": 160710872.1,
+   "negative_rows_removed": 8,
+   "rows_of_99M_or_more_kept_by_exemption": 8,
+   "dollars_of_99M_or_more_rows_that_the_loose_key_would_drop_without_exemption": 297000000.0,
+   "rules_compared": {
+    "exact_full_row": {
+     "rows_removed": 1056,
+     "dollars_removed": 371011925.85
+    },
+    "exact_full_row_with_99M_exemption": {
+     "rows_removed": 1053,
+     "dollars_removed": 74011925.85
+    },
+    "loose_key_ignoring_department": {
+     "rows_removed": 3042,
+     "dollars_removed": 457710872.1
+    },
+    "CHOSEN_loose_key_with_99M_exemption": {
+     "rows_removed": 3039,
+     "dollars_removed": 160710872.1
+    }
+   },
+   "top20_vendors_by_dollars_removed": [
+    {
+     "vendor_name": "K.L.E.O. COMMUNITY FAMILY LIFE CENTER",
+     "rows_removed": 70,
+     "dollars_removed": 29731370.61,
+     "paid_before": 59462741.22,
+     "paid_after": 29731370.61
+    },
+    {
+     "vendor_name": "TRANSYSTEMS CORPORATION",
+     "rows_removed": 44,
+     "dollars_removed": 25124530.44,
+     "paid_before": 43249972.93,
+     "paid_after": 18125442.49
+    },
+    {
+     "vendor_name": "CBRE INC.",
+     "rows_removed": 35,
+     "dollars_removed": 13528646.02,
+     "paid_before": 27057292.04,
+     "paid_after": 13528646.02
+    },
+    {
+     "vendor_name": "OZINGA READY MIX CONCRETE INC",
+     "rows_removed": 226,
+     "dollars_removed": 8477641.66,
+     "paid_before": 16955283.32,
+     "paid_after": 8477641.66
+    },
+    {
+     "vendor_name": "VERIZON WIRELESS",
+     "rows_removed": 186,
+     "dollars_removed": 6454594.04,
+     "paid_before": 14020471.47,
+     "paid_after": 7565877.43
+    },
+    {
+     "vendor_name": "SGA YOUTH & FAMILY SERVICES, NFP",
+     "rows_removed": 250,
+     "dollars_removed": 6328542.6,
+     "paid_before": 12657085.2,
+     "paid_after": 6328542.6
+    },
+    {
+     "vendor_name": "LANDRUM & BROWN, INC",
+     "rows_removed": 152,
+     "dollars_removed": 5899621.82,
+     "paid_before": 11799243.64,
+     "paid_after": 5899621.82
+    },
+    {
+     "vendor_name": "NEW CITY REDEVELOPMENT, LP",
+     "rows_removed": 1,
+     "dollars_removed": 5700000.0,
+     "paid_before": 21066666.66,
+     "paid_after": 15366666.66
+    },
+    {
+     "vendor_name": "RS Affordable I, LLC.",
+     "rows_removed": 1,
+     "dollars_removed": 4250000.0,
+     "paid_before": 8500000.0,
+     "paid_after": 4250000.0
+    },
+    {
+     "vendor_name": "1237 N. California 9PCT HHDC, LP",
+     "rows_removed": 2,
+     "dollars_removed": 3289734.34,
+     "paid_before": 11909024.34,
+     "paid_after": 8619290.0
+    },
+    {
+     "vendor_name": "PUERTO RICAN CULTURAL CENTER",
+     "rows_removed": 191,
+     "dollars_removed": 3287694.08,
+     "paid_before": 6623388.16,
+     "paid_after": 3335694.08
+    },
+    {
+     "vendor_name": "DELAWARE CARS/T.R. HARMSEN CORP. J.V.",
+     "rows_removed": 7,
+     "dollars_removed": 3010746.92,
+     "paid_before": 20321055.7,
+     "paid_after": 17310308.78
+    },
+    {
+     "vendor_name": "TCB DEVELOPMENT SERVICES LLC",
+     "rows_removed": 1,
+     "dollars_removed": 2982483.0,
+     "paid_before": 5964966.0,
+     "paid_after": 2982483.0
+    },
+    {
+     "vendor_name": "Sacred Apartments Owner LLC",
+     "rows_removed": 3,
+     "dollars_removed": 2739959.46,
+     "paid_before": 5479918.92,
+     "paid_after": 2739959.46
+    },
+    {
+     "vendor_name": "EXTENDED HOME LIVING SERVICES",
+     "rows_removed": 75,
+     "dollars_removed": 2573187.86,
+     "paid_before": 5146375.72,
+     "paid_after": 2573187.86
+    },
+    {
+     "vendor_name": "EXECUTIVE CONSTRUCTION INC",
+     "rows_removed": 2,
+     "dollars_removed": 2332831.76,
+     "paid_before": 10461783.1,
+     "paid_after": 8128951.34
+    },
+    {
+     "vendor_name": "BROADWAY ELECTRIC INC",
+     "rows_removed": 71,
+     "dollars_removed": 2295105.2,
+     "paid_before": 4590210.4,
+     "paid_after": 2295105.2
+    },
+    {
+     "vendor_name": "NTT DATA AMERICAS, INC",
+     "rows_removed": 5,
+     "dollars_removed": 2167531.66,
+     "paid_before": 10003695.58,
+     "paid_after": 7836163.92
+    },
+    {
+     "vendor_name": "HEARTLAND HUMAN CARE SERVICES, INC.",
+     "rows_removed": 75,
+     "dollars_removed": 2124341.22,
+     "paid_before": 4248682.44,
+     "paid_after": 2124341.22
+    },
+    {
+     "vendor_name": "WHEATLAND TITLE GUARANTY CO.",
+     "rows_removed": 1,
+     "dollars_removed": 2034067.0,
+     "paid_before": 4547614.75,
+     "paid_after": 2513547.75
+    }
+   ],
+   "top20_contracts_by_dollars_removed": [
+    {
+     "contract_number": "47314",
+     "rows_removed": 43,
+     "dollars_removed": 25098753.16,
+     "paid_before": 37211775.26,
+     "paid_after": 12113022.1
+    },
+    {
+     "contract_number": "296396",
+     "rows_removed": 26,
+     "dollars_removed": 13810824.63,
+     "paid_before": 27621649.26,
+     "paid_after": 13810824.63
+    },
+    {
+     "contract_number": "33959",
+     "rows_removed": 23,
+     "dollars_removed": 12611330.62,
+     "paid_before": 25222661.24,
+     "paid_after": 12611330.62
+    },
+    {
+     "contract_number": "232050",
+     "rows_removed": 2,
+     "dollars_removed": 9000000.0,
+     "paid_before": 18000000.0,
+     "paid_after": 9000000.0
+    },
+    {
+     "contract_number": "91165",
+     "rows_removed": 226,
+     "dollars_removed": 8477641.66,
+     "paid_before": 16955283.32,
+     "paid_after": 8477641.66
+    },
+    {
+     "contract_number": "117688",
+     "rows_removed": 186,
+     "dollars_removed": 6454594.04,
+     "paid_before": 12909188.08,
+     "paid_after": 6454594.04
+    },
+    {
+     "contract_number": "282009",
+     "rows_removed": 1,
+     "dollars_removed": 5700000.0,
+     "paid_before": 21066666.66,
+     "paid_after": 15366666.66
+    },
+    {
+     "contract_number": "270229",
+     "rows_removed": 1,
+     "dollars_removed": 4250000.0,
+     "paid_before": 8500000.0,
+     "paid_after": 4250000.0
+    },
+    {
+     "contract_number": "239765",
+     "rows_removed": 93,
+     "dollars_removed": 3804445.82,
+     "paid_before": 7608891.64,
+     "paid_after": 3804445.82
+    },
+    {
+     "contract_number": "299798",
+     "rows_removed": 2,
+     "dollars_removed": 3289734.34,
+     "paid_before": 11909024.34,
+     "paid_after": 8619290.0
+    },
+    {
+     "contract_number": "15304",
+     "rows_removed": 7,
+     "dollars_removed": 3010746.92,
+     "paid_before": 20321055.7,
+     "paid_after": 17310308.78
+    },
+    {
+     "contract_number": "242031",
+     "rows_removed": 1,
+     "dollars_removed": 2982483.0,
+     "paid_before": 5964966.0,
+     "paid_after": 2982483.0
+    },
+    {
+     "contract_number": "332942",
+     "rows_removed": 3,
+     "dollars_removed": 2739959.46,
+     "paid_before": 5479918.92,
+     "paid_after": 2739959.46
+    },
+    {
+     "contract_number": "295279",
+     "rows_removed": 11,
+     "dollars_removed": 2610692.02,
+     "paid_before": 5221384.04,
+     "paid_after": 2610692.02
+    },
+    {
+     "contract_number": "DV",
+     "rows_removed": 149,
+     "dollars_removed": 2397841.25,
+     "paid_before": 4944993303.85,
+     "paid_after": 4942595462.6
+    },
+    {
+     "contract_number": "316167",
+     "rows_removed": 9,
+     "dollars_removed": 2348587.64,
+     "paid_before": 4697175.28,
+     "paid_after": 2348587.64
+    },
+    {
+     "contract_number": "305561",
+     "rows_removed": 2,
+     "dollars_removed": 2332831.76,
+     "paid_before": 10461783.1,
+     "paid_after": 8128951.34
+    },
+    {
+     "contract_number": "208751",
+     "rows_removed": 71,
+     "dollars_removed": 2295105.2,
+     "paid_before": 4590210.4,
+     "paid_after": 2295105.2
+    },
+    {
+     "contract_number": "175898",
+     "rows_removed": 45,
+     "dollars_removed": 2211240.31,
+     "paid_before": 4422480.62,
+     "paid_after": 2211240.31
+    },
+    {
+     "contract_number": "26625",
+     "rows_removed": 5,
+     "dollars_removed": 2167531.66,
+     "paid_before": 10003695.58,
+     "paid_after": 7836163.92
+    }
+   ]
+  },
+  "2026ytd": {
+   "output_file": "raw/contracts/payments_2026ytd_dedup.csv",
+   "rows_before": 85720,
+   "rows_after": 83438,
+   "rows_removed": 2282,
+   "dollars_before": 8056126578.99,
+   "dollars_after": 7967095919.71,
+   "dollars_removed": 89030659.28,
+   "negative_rows_removed": 5,
+   "rows_of_99M_or_more_kept_by_exemption": 8,
+   "dollars_of_99M_or_more_rows_that_the_loose_key_would_drop_without_exemption": 396000000.0,
+   "rules_compared": {
+    "exact_full_row": {
+     "rows_removed": 819,
+     "dollars_removed": 433278519.91
+    },
+    "exact_full_row_with_99M_exemption": {
+     "rows_removed": 815,
+     "dollars_removed": 37278519.91
+    },
+    "loose_key_ignoring_department": {
+     "rows_removed": 2286,
+     "dollars_removed": 485030659.28
+    },
+    "CHOSEN_loose_key_with_99M_exemption": {
+     "rows_removed": 2282,
+     "dollars_removed": 89030659.28
+    }
+   },
+   "top20_vendors_by_dollars_removed": [
+    {
+     "vendor_name": "TRANSYSTEMS CORPORATION",
+     "rows_removed": 22,
+     "dollars_removed": 11872949.98,
+     "paid_before": 23147139.97,
+     "paid_after": 11274189.99
+    },
+    {
+     "vendor_name": "VERIZON WIRELESS",
+     "rows_removed": 258,
+     "dollars_removed": 9349253.17,
+     "paid_before": 19653432.79,
+     "paid_after": 10304179.62
+    },
+    {
+     "vendor_name": "K.L.E.O. COMMUNITY FAMILY LIFE CENTER",
+     "rows_removed": 39,
+     "dollars_removed": 8814300.08,
+     "paid_before": 17628600.16,
+     "paid_after": 8814300.08
+    },
+    {
+     "vendor_name": "CBRE INC.",
+     "rows_removed": 26,
+     "dollars_removed": 6959962.05,
+     "paid_before": 13372760.1,
+     "paid_after": 6412798.05
+    },
+    {
+     "vendor_name": "OZINGA READY MIX CONCRETE INC",
+     "rows_removed": 111,
+     "dollars_removed": 6695141.03,
+     "paid_before": 13390282.06,
+     "paid_after": 6695141.03
+    },
+    {
+     "vendor_name": "Sacred Apartments Owner LLC",
+     "rows_removed": 7,
+     "dollars_removed": 6238309.12,
+     "paid_before": 13757968.06,
+     "paid_after": 7519658.94
+    },
+    {
+     "vendor_name": "CLIHTF",
+     "rows_removed": 1,
+     "dollars_removed": 5500000.0,
+     "paid_before": 11000000.0,
+     "paid_after": 5500000.0
+    },
+    {
+     "vendor_name": "SGA YOUTH & FAMILY SERVICES, NFP",
+     "rows_removed": 171,
+     "dollars_removed": 4813095.02,
+     "paid_before": 9626190.04,
+     "paid_after": 4813095.02
+    },
+    {
+     "vendor_name": "LANDRUM & BROWN, INC",
+     "rows_removed": 88,
+     "dollars_removed": 2983328.03,
+     "paid_before": 5966656.06,
+     "paid_after": 2983328.03
+    },
+    {
+     "vendor_name": "DELAWARE CARS/T.R. HARMSEN CORP. J.V.",
+     "rows_removed": 6,
+     "dollars_removed": 2586709.9,
+     "paid_before": 16794671.21,
+     "paid_after": 14207961.31
+    },
+    {
+     "vendor_name": "HEARTLAND HUMAN CARE SERVICES, INC.",
+     "rows_removed": 76,
+     "dollars_removed": 2332178.94,
+     "paid_before": 4664357.88,
+     "paid_after": 2332178.94
+    },
+    {
+     "vendor_name": "BROADWAY ELECTRIC INC",
+     "rows_removed": 47,
+     "dollars_removed": 1875440.05,
+     "paid_before": 3750880.1,
+     "paid_after": 1875440.05
+    },
+    {
+     "vendor_name": "PUERTO RICAN CULTURAL CENTER",
+     "rows_removed": 103,
+     "dollars_removed": 1731796.78,
+     "paid_before": 3473593.56,
+     "paid_after": 1741796.78
+    },
+    {
+     "vendor_name": "EXTENDED HOME LIVING SERVICES",
+     "rows_removed": 64,
+     "dollars_removed": 1684056.56,
+     "paid_before": 3368113.12,
+     "paid_after": 1684056.56
+    },
+    {
+     "vendor_name": "SCHINDLER ELEVATOR CORPORATION",
+     "rows_removed": 5,
+     "dollars_removed": 1349205.5,
+     "paid_before": 2596967.79,
+     "paid_after": 1247762.29
+    },
+    {
+     "vendor_name": "CHICAGO CONVENTION & TOURISM BUREAU, INC.",
+     "rows_removed": 2,
+     "dollars_removed": 800000.0,
+     "paid_before": 21373164.67,
+     "paid_after": 20573164.67
+    },
+    {
+     "vendor_name": "HERC RENTALS INC",
+     "rows_removed": 250,
+     "dollars_removed": 778515.02,
+     "paid_before": 13341902.5,
+     "paid_after": 12563387.48
+    },
+    {
+     "vendor_name": "GALLAGHER BASSETT",
+     "rows_removed": 2,
+     "dollars_removed": 751460.0,
+     "paid_before": 3436372.0,
+     "paid_after": 2684912.0
+    },
+    {
+     "vendor_name": "CAMBRIDGE SYSTEMATICS, INC.",
+     "rows_removed": 10,
+     "dollars_removed": 749176.24,
+     "paid_before": 1498352.48,
+     "paid_after": 749176.24
+    },
+    {
+     "vendor_name": "COLONIAL OIL INDUSTRIES, INC.",
+     "rows_removed": 25,
+     "dollars_removed": 739224.43,
+     "paid_before": 24606133.66,
+     "paid_after": 23866909.23
+    }
+   ],
+   "top20_contracts_by_dollars_removed": [
+    {
+     "contract_number": "47314",
+     "rows_removed": 22,
+     "dollars_removed": 11872949.98,
+     "paid_before": 17981551.43,
+     "paid_after": 6108601.45
+    },
+    {
+     "contract_number": "117688",
+     "rows_removed": 258,
+     "dollars_removed": 9349253.17,
+     "paid_before": 18698506.34,
+     "paid_after": 9349253.17
+    },
+    {
+     "contract_number": "91165",
+     "rows_removed": 111,
+     "dollars_removed": 6695141.03,
+     "paid_before": 13390282.06,
+     "paid_after": 6695141.03
+    },
+    {
+     "contract_number": "332942",
+     "rows_removed": 7,
+     "dollars_removed": 6238309.12,
+     "paid_before": 13757968.06,
+     "paid_after": 7519658.94
+    },
+    {
+     "contract_number": "33959",
+     "rows_removed": 14,
+     "dollars_removed": 5689603.05,
+     "paid_before": 11379206.1,
+     "paid_after": 5689603.05
+    },
+    {
+     "contract_number": "355798",
+     "rows_removed": 1,
+     "dollars_removed": 5500000.0,
+     "paid_before": 11000000.0,
+     "paid_after": 5500000.0
+    },
+    {
+     "contract_number": "296396",
+     "rows_removed": 7,
+     "dollars_removed": 4843881.31,
+     "paid_before": 9687762.62,
+     "paid_after": 4843881.31
+    },
+    {
+     "contract_number": "316167",
+     "rows_removed": 9,
+     "dollars_removed": 3169030.4,
+     "paid_before": 6338060.8,
+     "paid_after": 3169030.4
+    },
+    {
+     "contract_number": "15304",
+     "rows_removed": 6,
+     "dollars_removed": 2586709.9,
+     "paid_before": 13518544.3,
+     "paid_after": 10931834.4
+    },
+    {
+     "contract_number": "239765",
+     "rows_removed": 53,
+     "dollars_removed": 1915343.35,
+     "paid_before": 3830686.7,
+     "paid_after": 1915343.35
+    },
+    {
+     "contract_number": "208751",
+     "rows_removed": 47,
+     "dollars_removed": 1875440.05,
+     "paid_before": 3750880.1,
+     "paid_after": 1875440.05
+    },
+    {
+     "contract_number": "DV",
+     "rows_removed": 79,
+     "dollars_removed": 1556343.46,
+     "paid_before": 3540288026.61,
+     "paid_after": 3538731683.15
+    },
+    {
+     "contract_number": "114022",
+     "rows_removed": 9,
+     "dollars_removed": 1379905.85,
+     "paid_before": 2759811.7,
+     "paid_after": 1379905.85
+    },
+    {
+     "contract_number": "76213",
+     "rows_removed": 12,
+     "dollars_removed": 1270359.0,
+     "paid_before": 1993554.0,
+     "paid_after": 723195.0
+    },
+    {
+     "contract_number": "148384",
+     "rows_removed": 34,
+     "dollars_removed": 1063635.26,
+     "paid_before": 2127270.52,
+     "paid_after": 1063635.26
+    },
+    {
+     "contract_number": "354061",
+     "rows_removed": 2,
+     "dollars_removed": 800000.0,
+     "paid_before": 3785050.0,
+     "paid_after": 2985050.0
+    },
+    {
+     "contract_number": "334178",
+     "rows_removed": 16,
+     "dollars_removed": 773402.28,
+     "paid_before": 1546804.56,
+     "paid_after": 773402.28
+    },
+    {
+     "contract_number": "309160",
+     "rows_removed": 8,
+     "dollars_removed": 771588.8,
+     "paid_before": 1543177.6,
+     "paid_after": 771588.8
+    },
+    {
+     "contract_number": "298911",
+     "rows_removed": 10,
+     "dollars_removed": 752639.43,
+     "paid_before": 1505278.86,
+     "paid_after": 752639.43
+    },
+    {
+     "contract_number": "108929",
+     "rows_removed": 2,
+     "dollars_removed": 751460.0,
+     "paid_before": 3433533.0,
+     "paid_after": 2682073.0
+    }
+   ]
+  }
+ },
+ "diagnostics": {
+  "award_cap_test": {
+   "what": "share of contracts whose payments since 2022 exceed the contract's total award (all revisions summed, 0.1% tolerance). Contracts that started on or after 2022-06-01 with award > 0 and no rolled-up (voucher-less) payment rows.",
+   "contracts_tested": 2345,
+   "contracts_with_no_repeat_rows": 2248,
+   "contracts_with_repeat_rows": 97,
+   "share_over_award_contracts_without_repeats_(baseline)": 0.0062,
+   "share_over_award_contracts_with_repeats_raw": 0.299,
+   "share_over_award_after_exact_full_row": 0.2268,
+   "share_over_award_after_loose_key": 0.0,
+   "share_over_award_after_chosen_rule": 0.0,
+   "contracts_whose_only_repeats_differ_by_department": 73,
+   "share_over_award_those_raw": 0.3014,
+   "share_over_award_those_after_loose_key": 0.0
+  },
+  "transystems_47314": {
+   "award_all_revisions": 79417851.1,
+   "paid_all_years_raw": 106982846.66,
+   "paid_all_years_after_chosen_rule": 70011143.52
+  },
+  "meabf_cross_check": {
+   "what": "central Finance (PV27) direct vouchers to MEABF compared with what the City reports contributing (ACFR FY2025) and budgets (2026 ordinance). If the repeated $99M lines were duplicates, payments would fall well below the reported contribution.",
+   "acfr_fy2025_city_contribution_to_meabf": 1123999000,
+   "budget_2026_statutory_contribution": 965001553,
+   "budget_2026_advance_contribution": 161218894,
+   "by_check_year": {
+    "2025": {
+     "pv27_paid_raw": 945502017.14,
+     "pv27_paid_if_99M_checks_were_dropped": 648502017.14,
+     "pv27_paid_chosen_rule": 945502017.14,
+     "rows_of_99M": 7
+    },
+    "2026": {
+     "pv27_paid_raw": 967328309.55,
+     "pv27_paid_if_99M_checks_were_dropped": 571328309.55,
+     "pv27_paid_chosen_rule": 967328309.55,
+     "rows_of_99M": 6
+    }
+   }
+  },
+  "shape_of_repeats_2025_extra_rows": {
+   "one blank department + one filled (same payment listed twice)": 1986,
+   "all copies identical including department": 1056
+  }
+ }
+}
