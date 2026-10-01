@@ -1,0 +1,137 @@
+{
+  "generated_by": "scripts/context_resident.py",
+  "population": {
+    "chicago_population": 2721326,
+    "margin_of_error_90pct": 60,
+    "median_household_income": 80613,
+    "households": 1172455,
+    "median_home_value": 341200,
+    "source": "American Community Survey ACS 2024 1-year",
+    "source_url": "https://api.censusreporter.org/1.0/data/show/latest?table_ids=B01003,B19013,B11001,B25077&geo_ids=16000US1714000",
+    "census_table_ids": [
+      "B01003",
+      "B19013",
+      "B11001",
+      "B25077"
+    ],
+    "geoid": "16000US1714000",
+    "note": "The Census API now requires a free key, so this reads the same ACS table through Census Reporter (https://censusreporter.org)."
+  },
+  "cps_enrollment": {
+    "sy2025_26_20th_day": 316224,
+    "sy2026_27_20th_day": 304687,
+    "change_pct": -3.65,
+    "source_urls": [
+      "https://www.cps.edu/globalassets/cps-pages/about-cps/district-data/demographics/demographics_racialethnic_20thday_sy2026_forweb.xlsx",
+      "https://www.cps.edu/globalassets/cps-pages/about-cps/district-data/demographics/2026-27-demographics-racial-ethnic-20th-day-report.xlsx",
+      "https://www.cps.edu/about/stats-facts/"
+    ],
+    "note": "20th-day counts include district-run, charter and contract schools (CPS 'enrollment'). FY2026 budget (Jul 2025 to Jun 2026) lines up with SY2025-26."
+  },
+  "per_resident_divisors": {
+    "per_resident": 2721326,
+    "per_household": 1172455,
+    "per_cps_student_fy2026": 316224,
+    "per_cps_student_latest": 304687
+  },
+  "tax_bill": {
+    "tax_year": 2025,
+    "note_timing": "Tax year 2025 rates, collected in calendar 2026 (Treasurer convention: tax year N is billed in N+1). Overlaps the City FY2026 budget year.",
+    "source_url": "https://www.cookcountyclerkil.gov/publication/2025-tax-rate-report",
+    "source_also": "https://www.cookcountyclerkil.gov/publication/2024-tax-rate-report",
+    "total_composite_rate_pct": 6.853152,
+    "printed_composite_rate_pct": 6.853152,
+    "rates_pct_by_agency": {
+      "Cook County (and Consolidated Elections)": 0.355954,
+      "Forest Preserve District": 0.067048,
+      "City of Chicago (corporate levy)": 1.545946,
+      "City of Chicago Library Fund": 0.120653,
+      "City of Chicago School Building and Improvement Fund": 0.131255,
+      "City Colleges (District 508)": 0.157263,
+      "Chicago Board of Education (CPS)": 3.832979,
+      "Chicago Park District": 0.305498,
+      "Metropolitan Water Reclamation District": 0.336556
+    },
+    "tax_year_2024_rates_pct_by_agency": {
+      "Cook County (and Consolidated Elections)": 0.390469,
+      "Forest Preserve District": 0.068588,
+      "City of Chicago (corporate levy)": 1.49578,
+      "City of Chicago Library Fund": 0.119102,
+      "City of Chicago School Building and Improvement Fund": 0.129569,
+      "City Colleges (District 508)": 0.14948,
+      "Chicago Board of Education (CPS)": 3.630964,
+      "Chicago Park District": 0.294209,
+      "Metropolitan Water Reclamation District": 0.340445
+    },
+    "share_of_rate_by_agency": {
+      "Cook County (and Consolidated Elections)": 0.05194018752247141,
+      "Forest Preserve District": 0.00978352734624885,
+      "City of Chicago (corporate levy)": 0.225581746910035,
+      "City of Chicago Library Fund": 0.01760547555343877,
+      "City of Chicago School Building and Improvement Fund": 0.019152500922203393,
+      "City Colleges (District 508)": 0.022947542970008544,
+      "Chicago Board of Education (CPS)": 0.5593016177081729,
+      "Chicago Park District": 0.04457773590896569,
+      "Metropolitan Water Reclamation District": 0.04910966515845556
+    },
+    "groups_rate_pct": {
+      "Chicago Public Schools (Board of Education)": 3.832979,
+      "City of Chicago (corporate levy plus library fund)": 1.666599,
+      "City of Chicago School Building and Improvement Fund (separate City levy, listed apart)": 0.131255,
+      "Cook County (county + forest preserve)": 0.423002,
+      "Chicago Park District": 0.305498,
+      "City Colleges": 0.157263,
+      "Water Reclamation District (stormwater and sewage treatment)": 0.336556
+    },
+    "group_share_of_bill": {
+      "Chicago Public Schools (Board of Education)": 0.5593016177081729,
+      "City of Chicago (corporate levy plus library fund)": 0.24318722246347374,
+      "City of Chicago School Building and Improvement Fund (separate City levy, listed apart)": 0.019152500922203393,
+      "Cook County (county + forest preserve)": 0.06172371486872026,
+      "Chicago Park District": 0.04457773590896569,
+      "City Colleges": 0.022947542970008544,
+      "Water Reclamation District (stormwater and sewage treatment)": 0.04910966515845556
+    },
+    "total_tax_billed_in_chicago_2025": 9065506164,
+    "total_tax_billed_in_cook_county_2025": 19929053944,
+    "extension_cps_2025": 4155097113,
+    "extension_city_2025": 1948943098,
+    "extension_cook_county_2025": 815555377,
+    "extension_share_of_total_billed_in_chicago": {
+      "cps": 0.4583414359697081,
+      "city_incl_library_and_school_bldg": 0.2149844766240898,
+      "cook_county_and_elections": 0.08996247559112024,
+      "note": "Dollar shares of the $9.07B billed in Chicago. They are lower than the rate shares (CPS 55.9%) mostly because the billed total includes tax on property inside TIF districts, which goes to the TIF fund and not to these governments. Check: CPS extension $4.155B divided by ($9.066B billed minus about $1.59B TIF) = 55.6%, close to the 55.9% rate share. The $1.59B is the Clerk's tax year 2024 TIF total as reported by WTTW (https://news.wttw.com/2026/01/22/share-chicago-property-tax-revenues-claimed-tif-funds-grew-166-2024-report). It is NOT the tax year 2025 TIF total, so treat this as an approximate check. Parks, City Colleges, Water Reclamation and Forest Preserve are also in the billed total but not in these three lines. For 'what does a typical home's bill pay for', use group_share_of_bill. For 'how many dollars does each government levy', use the extension numbers.",
+      "approx_check_cps_share_ex_tif_using_tax_year_2024_tif": 0.5558281970269539
+    },
+    "chicago_eav_2025": 108403858025,
+    "equalization_factor_2025": 3.03,
+    "worked_example": {
+      "market_value": 250000,
+      "method": "(market value x 10% assessment x equalization factor - $10,000 homeowner exemption) x total tax rate. Same method as the Clerk's sample bill.",
+      "taxable_value_after_exemption": 65750.0,
+      "total_bill": 4505.95,
+      "split": {
+        "Chicago Public Schools (Board of Education)": 2520.18,
+        "City of Chicago (corporate levy plus library fund)": 1095.79,
+        "City of Chicago School Building and Improvement Fund (separate City levy, listed apart)": 86.3,
+        "Cook County (county + forest preserve)": 278.12,
+        "Chicago Park District": 200.86,
+        "City Colleges": 103.4,
+        "Water Reclamation District (stormwater and sewage treatment)": 221.29
+      },
+      "caveat": "Illustration only. Real bills depend on the home's assessed value, exemptions, and any special districts (mosquito, SSAs, etc.). This example uses the general composite rate, not a sample of real homes."
+    },
+    "caveats": [
+      "Share of the bill = agency tax rate divided by total rate. Typical Chicago bill excludes special service areas and other special districts (Clerk's 'typical taxpayer').",
+      "The Clerk lists the School Building and Improvement Fund as a City of Chicago levy (and the Clerk's own 'City of Chicago' extension total of $1.95B includes it plus the Library Fund). We show it on its own line so the City operating share is not overstated. The City's pension and debt levies are inside the corporate rate. Budget Overview p.59 says the City's portion is about one-fifth of the bill.",
+      "Property tax is only part of City revenue. See data/context_revenue_2026.json."
+    ]
+  },
+  "treasurer_median_bill_tax_year_2024": {
+    "chicago_median_residential_bill": 4457,
+    "increase_pct": 16.7,
+    "source_url": "https://www.cookcountytreasurer.com/pdfs/taxbillanalysisandstatistics/taxyear2024analysisenglishversion.pdf",
+    "note": "Cook County Treasurer tax bill analysis, tax year 2024. A median is the bill in the middle, so half of homes pay more."
+  }
+}

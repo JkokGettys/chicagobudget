@@ -1,0 +1,275 @@
+{
+  "source": "https://data.cityofchicago.org/resource/nydj-5nax.json",
+  "source_page": "https://data.cityofchicago.org/d/nydj-5nax",
+  "catalog_search": "https://api.us.socrata.com/api/catalog/v1?domains=data.cityofchicago.org&q=revenue",
+  "scope": "LOCAL funds only. Grants (federal/state/other, ~$3.87B in the appropriations) are not in this dataset.",
+  "total_local_revenue": 14623624011.0,
+  "total_local_appropriations": 14798710460.0,
+  "gap_revenue_minus_appropriations": -175086449.0,
+  "note_gap": "Revenue estimate and appropriations differ by this amount. Do not force them to match. Appropriations include prior-year balances, and revenue includes some transfers.",
+  "corporate_fund_total": 6246181617.0,
+  "bucket_totals_all_local_funds": {
+    "Other City taxes (sales, utility, hotel, parking, amusement, etc.)": 3451701448.0,
+    "Airport fees and airline charges": 2491602400.0,
+    "Property tax (City's share)": 1862339928.0,
+    "Water and sewer bills": 1495128265.0,
+    "Fines, fees, permits, licenses, charges": 1446214263.0,
+    "Moved between city funds (pension payments)": 1216174110.0,
+    "State money (income tax share, replacement tax)": 753734813.0,
+    "Sales tax (City's share)": 587355205.0,
+    "Other dedicated-fund revenue": 504099957.0,
+    "Moved between city funds (reimbursements and subsidies)": 491580101.0,
+    "Borrowing and one-time transfers": 323693521.0
+  },
+  "bucket_is_interfund_transfer": {
+    "State money (income tax share, replacement tax)": false,
+    "Fines, fees, permits, licenses, charges": false,
+    "Moved between city funds (reimbursements and subsidies)": true,
+    "Other City taxes (sales, utility, hotel, parking, amusement, etc.)": false,
+    "Sales tax (City's share)": false,
+    "Borrowing and one-time transfers": false,
+    "Other dedicated-fund revenue": false,
+    "Water and sewer bills": false,
+    "Property tax (City's share)": false,
+    "Airport fees and airline charges": false,
+    "Moved between city funds (pension payments)": true
+  },
+  "interfund_transfer_total": 1707754211.0,
+  "total_excluding_interfund": 12915869800.0,
+  "property_tax_levy_net_abatement_total": 1862339928.0,
+  "property_tax_levy_by_fund": {
+    "Bond Redemption and Interest Series Fund": 314610000.0,
+    "Library Property Tax Levy Fund": 131172928.0,
+    "Municipal Employees' Annuity and Benefit Fund": 181410000.0,
+    "Laborers' and Retirement Board Annuity and Benefit Fund": 54661000.0,
+    "Policemen's Annuity and Benefit Fund": 813518000.0,
+    "Firemen's Annuity and Benefit Fund": 366968000.0
+  },
+  "property_tax_levy_note": "Budget Overview p.59: base levy $1.8B funds $2.7B of pensions and $534.7M of debt service and library. https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+  "corporate_fund_by_group": {
+    "Local Tax": 3002058781.0,
+    "Local Non-Tax Revenue": 1803689929.0,
+    "Intergovernmental Revenue": 753734813.0,
+    "Proceeds and Transfers In": 686698094.0
+  },
+  "corporate_fund_top_sources": [
+    {
+      "group": "Local Tax",
+      "category": "Transaction Taxes",
+      "source": "Lease of Personal Property",
+      "amount": 1234139380.0,
+      "share_of_corporate_fund": 0.19758301241851323
+    },
+    {
+      "group": "Intergovernmental Revenue",
+      "category": "State Income Tax",
+      "source": "State Income Tax",
+      "amount": 545129731.0,
+      "share_of_corporate_fund": 0.08727407629588302
+    },
+    {
+      "group": "Proceeds and Transfers In",
+      "category": "Proceeds and Transfers In",
+      "source": "Sales Tax Securitization Corporation Residual",
+      "amount": 492698094.0,
+      "share_of_corporate_fund": 0.07887988601853041
+    },
+    {
+      "group": "Local Non-Tax Revenue",
+      "category": "Fines, Forfeitures and Penalties",
+      "source": "Fines, Forfeitures and Penalties",
+      "amount": 481667969.0,
+      "share_of_corporate_fund": 0.07711398715802023
+    },
+    {
+      "group": "Local Non-Tax Revenue",
+      "category": "Charges for Services",
+      "source": "Safety",
+      "amount": 354868887.0,
+      "share_of_corporate_fund": 0.05681373177401159
+    },
+    {
+      "group": "Local Tax",
+      "category": "Recreation Taxes",
+      "source": "Amusement Tax",
+      "amount": 303821608.0,
+      "share_of_corporate_fund": 0.048641174181214976
+    },
+    {
+      "group": "Local Non-Tax Revenue",
+      "category": "Other Revenue",
+      "source": "Other Revenue",
+      "amount": 255834804.0,
+      "share_of_corporate_fund": 0.04095859193458351
+    },
+    {
+      "group": "Local Tax",
+      "category": "Transportation Taxes",
+      "source": "Ground Transportation Tax",
+      "amount": 244625934.0,
+      "share_of_corporate_fund": 0.03916407639096031
+    },
+    {
+      "group": "Local Non-Tax Revenue",
+      "category": "Internal Service Earnings",
+      "source": "Enterprise Funds",
+      "amount": 202689118.0,
+      "share_of_corporate_fund": 0.03245008397584031
+    },
+    {
+      "group": "Intergovernmental Revenue",
+      "category": "Personal Property Replacement Tax",
+      "source": "Personal Property Replacement Tax",
+      "amount": 202567148.0,
+      "share_of_corporate_fund": 0.032430556845910556
+    },
+    {
+      "group": "Proceeds and Transfers In",
+      "category": "Proceeds and Transfers In",
+      "source": "Proceeds and Transfers in - Other",
+      "amount": 194000000.0,
+      "share_of_corporate_fund": 0.03105897521007033
+    },
+    {
+      "group": "Local Tax",
+      "category": "Transportation Taxes",
+      "source": "Parking Tax",
+      "amount": 189390362.0,
+      "share_of_corporate_fund": 0.030320982259712605
+    },
+    {
+      "group": "Local Tax",
+      "category": "Transaction Taxes",
+      "source": "Real Property Transfer",
+      "amount": 158558215.0,
+      "share_of_corporate_fund": 0.025384823036278356
+    },
+    {
+      "group": "Local Tax",
+      "category": "Business Taxes",
+      "source": "Hotel Tax",
+      "amount": 156849696.0,
+      "share_of_corporate_fund": 0.02511129288541787
+    },
+    {
+      "group": "Local Tax",
+      "category": "Municipal Public Utility Tax",
+      "source": "Gas",
+      "amount": 117384201.0,
+      "share_of_corporate_fund": 0.018792953551097488
+    },
+    {
+      "group": "Local Tax",
+      "category": "Municipal Public Utility Tax",
+      "source": "Electric",
+      "amount": 96582895.0,
+      "share_of_corporate_fund": 0.01546271000784446
+    },
+    {
+      "group": "Local Tax",
+      "category": "Chicago Sales Tax / Home Rule Retailers' Occupation Tax",
+      "source": "Chicago Sales Tax / HROT",
+      "amount": 94657111.0,
+      "share_of_corporate_fund": 0.015154396206215852
+    },
+    {
+      "group": "Local Non-Tax Revenue",
+      "category": "Internal Service Earnings",
+      "source": "Special Revenue Funds",
+      "amount": 93416483.0,
+      "share_of_corporate_fund": 0.014955774379943073
+    },
+    {
+      "group": "Local Tax",
+      "category": "Municipal Public Utility Tax",
+      "source": "Electricity IMF",
+      "amount": 85328759.0,
+      "share_of_corporate_fund": 0.013660947476737451
+    },
+    {
+      "group": "Local Tax",
+      "category": "Transportation Taxes",
+      "source": "Vehicle Fuel Tax",
+      "amount": 63839110.0,
+      "share_of_corporate_fund": 0.010220501726406973
+    },
+    {
+      "group": "Local Non-Tax Revenue",
+      "category": "Interest Income",
+      "source": "Interest Income",
+      "amount": 55500000.0,
+      "share_of_corporate_fund": 0.008885428475045892
+    },
+    {
+      "group": "Local Tax",
+      "category": "Municipal Public Utility Tax",
+      "source": "Telecommunications",
+      "amount": 52678826.0,
+      "share_of_corporate_fund": 0.008433764694997981
+    },
+    {
+      "group": "Local Non-Tax Revenue",
+      "category": "Internal Service Earnings",
+      "source": "Intergovernmental Funds",
+      "amount": 50500000.0,
+      "share_of_corporate_fund": 0.008084939423239956
+    },
+    {
+      "group": "Local Non-Tax Revenue",
+      "category": "Licenses, Permits, and Certificates",
+      "source": "Other Permits and Certificates",
+      "amount": 47354503.0,
+      "share_of_corporate_fund": 0.007581352241042273
+    },
+    {
+      "group": "Local Non-Tax Revenue",
+      "category": "Charges for Services",
+      "source": "Other Charges",
+      "amount": 38422575.0,
+      "share_of_corporate_fund": 0.006151370125938495
+    }
+  ],
+  "by_fund": {
+    "Corporate Fund": 6246181617.0,
+    "Chicago O'Hare Airport Fund": 2060334876.0,
+    "Policemen's Annuity and Benefit Fund": 1145063924.0,
+    "Municipal Employees' Annuity and Benefit Fund": 1133290524.0,
+    "Water Fund": 921572538.0,
+    "Firemen's Annuity and Benefit Fund": 468008665.0,
+    "Sewer Fund": 437646334.0,
+    "Chicago Midway Airport Fund": 431267524.0,
+    "Bond Redemption and Interest Series Fund": 430103270.0,
+    "Vehicle Tax Fund": 276873145.0,
+    "Emergency Communication Fund": 168460413.0,
+    "Laborers' and Retirement Board Annuity and Benefit Fund": 153335378.0,
+    "Library Fund": 145227176.0,
+    "Library Property Tax Levy Fund": 131172928.0,
+    "Motor Fuel Tax Fund": 129995559.0,
+    "Special Events and Municipal Hotel Operators' Occupation Tax Fund": 72853842.0,
+    "Garbage Collection Fund": 64382994.0,
+    "CTA Real Property Transfer Tax Fund": 63423286.0,
+    "Protecting CARE Fund": 31000000.0,
+    "Chicago Police CTA Detail Fund": 30000000.0,
+    "Tax Increment Financing Administration Fund": 23421859.0,
+    "Opioid Settlement Fund": 8400000.0,
+    "Houseshare Surcharge - Homeless Services Fund": 8365518.0,
+    "Neighborhoods Opportunity Fund": 8349694.0,
+    "Foreign Fire Insurance Tax Fund": 8230000.0,
+    "Wheelchair Accessible Vehicle Fund": 8085650.0,
+    "Chicago Parking Meters Fund": 6500000.0,
+    "Cannabis Regulation Tax": 4667417.0,
+    "Houseshare Surcharge - Domestic Violence Fund": 4182759.0,
+    "Affordable Housing Opportunity Fund": 1377845.0,
+    "Cable Local Origination Fund": 500000.0,
+    "Citywide Adopt-a-landmark Fund": 395145.0,
+    "Local Impact Fund": 395145.0,
+    "Construction and Demolition Debris Management Fund": 387751.0,
+    "Vaping Settlement Fund": 108675.0,
+    "Controlled Substances Fund": 62560.0
+  },
+  "caveats": [
+    "Interfund transfers (pension allocations, reimbursements) are counted in the dataset total and are the same money counted twice. See research/finance_general.md ($1.80B).",
+    "Corporate Fund 'Sales Tax Securitization Corporation Residual' is the City's share of the Chicago sales tax after bond payments (see Budget Overview).",
+    "Property tax shown is the City levy net of abatement, not the whole property tax bill. CPS, Parks, County, etc. are separate governments. See data/context_resident_2026.json for the tax bill split."
+  ]
+}
