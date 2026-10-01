@@ -70,14 +70,14 @@ The site will show the City, Chicago Public Schools, and the Chicago Park Distri
 
 | Agency | 2026 size | Best data source | Format |
 |---|---|---|---|
-| City of Chicago | $16.6B net ($18.67B gross) | Open Data API `6694-f78c` | Clean API |
+| City of Chicago | $16.84B net per passed ordinance ($18.67B gross; $16.55B was the Mayor's proposal) | Open Data API `6694-f78c` | Clean API |
 | Chicago Public Schools | $10.25B | FY2026 Budget Book PDF + CPS interactive budget reports (biportal.cps.edu, has school-level data) | PDF / BI portal |
 | Chicago Park District | ~$0.6B operating | 2026 Budget Appropriations PDF (274 pages, line items by account, region, and park) | PDF, text extracts cleanly |
 
 CPS and the Park District have no open data API, so we'll build PDF parsers and check them against the PDF's printed totals.
 
 ## Rule: remove double counting
-City funds move money to each other (pension allocations, reimbursements). The site has to subtract these ($1.80B) so totals match the official $16.6B. See `research/finance_general.md`.
+City funds move money to each other (pension allocations, reimbursements). The passed ordinance deducts $1.826B (transfers $1.700B + debt proceeds $0.126B) to reach its printed net of $16,842,553,003. Our rule reproduces $1.529B plus named lines; $117.0M of OBM's single deduction figure is not reproducible from line items. See `research/reconciliation.md`. Grants were amended +$72.2M mid-year (now $3.94B).
 
 ## Open questions for you
 1. ~~Sister agencies?~~ Decided: City + CPS + Park District.

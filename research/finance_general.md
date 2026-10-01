@@ -3,6 +3,8 @@
 Data: 2026 Budget Ordinance, data.cityofchicago.org dataset `6694-f78c`. Reproduce with `python3 scripts/finance_general.py`.
 Checked against: [2026 Budget Overview](https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf), pp. 33 and 183-184.
 
+> **Correction (2026-10-01):** the $16.6B below is the Mayor's *proposed* net total. The ordinance City Council passed prints **$16.84B** net, after deducting $1.826B. Our rule now also removes $7.8M of "Transfer..." lines, so the Finance General net is $6.662B. See `research/reconciliation.md`.
+
 ## The main finding: about $1.5B of it is counted twice
 
 The city moves money between its own accounts. For example, the Corporate Fund sends $400M to the Municipal pension fund, and then the pension fund pays it out. The raw data lists both steps. The city's official totals remove these internal transfers ($1.80B citywide), which is why:

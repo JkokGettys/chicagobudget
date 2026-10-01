@@ -216,7 +216,7 @@
   },
   {
    "name": "Internal transfers (double counted)",
-   "amount": 1521146451,
+   "amount": 1528907883,
    "internal_transfer": true,
    "children": [
     {
@@ -557,6 +557,102 @@
        "account": "To Reimburse the Corporate Fund for Indirect Costs Chargeable to Fund",
        "fund": "Affordable Housing Opportunity Fund",
        "amount": 29000,
+       "internal_transfer": true
+      }
+     ]
+    },
+    {
+     "name": "Transfers between city funds",
+     "amount": 7761432,
+     "items": [
+      {
+       "account": "Transfer to O'Hare Fund for Administrative Salaries",
+       "fund": "Chicago Midway Airport Fund",
+       "amount": 3000000,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer for Services Provided by the Department of Police",
+       "fund": "Water Fund",
+       "amount": 1470301,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer to Specified Operating Funds for Administration",
+       "fund": "Houseshare Surcharge - Homeless Services Fund",
+       "amount": 973241,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer for Contractual Services",
+       "fund": "Water Fund",
+       "amount": 625000,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer to Specified Operating Funds for Administration",
+       "fund": "Houseshare Surcharge - Domestic Violence Fund",
+       "amount": 494621,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfers Out",
+       "fund": "Wheelchair Accessible Vehicle Fund",
+       "amount": 389069,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+       "fund": "Water Fund",
+       "amount": 325000,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer for Services Provided by the Department of Assets, Information, and Services",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 134400,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+       "fund": "Sewer Fund",
+       "amount": 120000,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer for Services Provided by the Department of Police",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 120000,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer for Services Provided by the Chicago Department of Aviation",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 35000,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 34800,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer for Services Provided by the Fire Department",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 21000,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
+       "fund": "Vehicle Tax Fund",
+       "amount": 10000,
+       "internal_transfer": true
+      },
+      {
+       "account": "Transfer for Services Provided by the Department of Streets and Sanitation",
+       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
+       "amount": 9000,
        "internal_transfer": true
       }
      ]
@@ -1437,8 +1533,27 @@
    ]
   },
   {
+   "name": "Emergency medical transportation (ambulance)",
+   "amount": 124725187,
+   "internal_transfer": false,
+   "children": [
+    {
+     "name": "Emergency Medical Transportation",
+     "amount": 124725187,
+     "items": [
+      {
+       "account": "Emergency Medical Transportation",
+       "fund": "Corporate Fund",
+       "amount": 124725187,
+       "internal_transfer": false
+      }
+     ]
+    }
+   ]
+  },
+  {
    "name": "Other citywide costs",
-   "amount": 131780680,
+   "amount": 124019248,
    "internal_transfer": false,
    "children": [
     {
@@ -1730,18 +1845,6 @@
      ]
     },
     {
-     "name": "Transfer to O'Hare Fund for Administrative Salaries",
-     "amount": 3000000,
-     "items": [
-      {
-       "account": "Transfer to O'Hare Fund for Administrative Salaries",
-       "fund": "Chicago Midway Airport Fund",
-       "amount": 3000000,
-       "internal_transfer": false
-      }
-     ]
-    },
-    {
      "name": "Interest on Library Financing",
      "amount": 2200000,
      "items": [
@@ -1827,42 +1930,6 @@
        "account": "For World Business Chicago Program",
        "fund": "Corporate Fund",
        "amount": 1600000,
-       "internal_transfer": false
-      }
-     ]
-    },
-    {
-     "name": "Transfer for Services Provided by the Department of Police",
-     "amount": 1590301,
-     "items": [
-      {
-       "account": "Transfer for Services Provided by the Department of Police",
-       "fund": "Water Fund",
-       "amount": 1470301,
-       "internal_transfer": false
-      },
-      {
-       "account": "Transfer for Services Provided by the Department of Police",
-       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
-       "amount": 120000,
-       "internal_transfer": false
-      }
-     ]
-    },
-    {
-     "name": "Transfer to Specified Operating Funds for Administration",
-     "amount": 1467862,
-     "items": [
-      {
-       "account": "Transfer to Specified Operating Funds for Administration",
-       "fund": "Houseshare Surcharge - Homeless Services Fund",
-       "amount": 973241,
-       "internal_transfer": false
-      },
-      {
-       "account": "Transfer to Specified Operating Funds for Administration",
-       "fund": "Houseshare Surcharge - Domestic Violence Fund",
-       "amount": 494621,
        "internal_transfer": false
       }
      ]
@@ -1964,36 +2031,6 @@
      ]
     },
     {
-     "name": "Transfers Out",
-     "amount": 739069,
-     "items": [
-      {
-       "account": "Transfers Out",
-       "fund": "Wheelchair Accessible Vehicle Fund",
-       "amount": 389069,
-       "internal_transfer": false
-      },
-      {
-       "account": "Transfers Out",
-       "fund": "Corporate Fund",
-       "amount": 350000,
-       "internal_transfer": false
-      }
-     ]
-    },
-    {
-     "name": "Transfer for Contractual Services",
-     "amount": 625000,
-     "items": [
-      {
-       "account": "Transfer for Contractual Services",
-       "fund": "Water Fund",
-       "amount": 625000,
-       "internal_transfer": false
-      }
-     ]
-    },
-    {
      "name": "Claims for Damages and Liabilities Against the City When Ordered Paid by the City Council",
      "amount": 615000,
      "items": [
@@ -2090,36 +2127,6 @@
      ]
     },
     {
-     "name": "Transfer for Services Provided by the Office of Emergency Management and Communication",
-     "amount": 489800,
-     "items": [
-      {
-       "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
-       "fund": "Water Fund",
-       "amount": 325000,
-       "internal_transfer": false
-      },
-      {
-       "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
-       "fund": "Sewer Fund",
-       "amount": 120000,
-       "internal_transfer": false
-      },
-      {
-       "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
-       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
-       "amount": 34800,
-       "internal_transfer": false
-      },
-      {
-       "account": "Transfer for Services Provided by the Office of Emergency Management and Communication",
-       "fund": "Vehicle Tax Fund",
-       "amount": 10000,
-       "internal_transfer": false
-      }
-     ]
-    },
-    {
      "name": "Postage",
      "amount": 449635,
      "items": [
@@ -2139,6 +2146,18 @@
        "account": "Postage",
        "fund": "Water Fund",
        "amount": 29877,
+       "internal_transfer": false
+      }
+     ]
+    },
+    {
+     "name": "Transfers Out",
+     "amount": 350000,
+     "items": [
+      {
+       "account": "Transfers Out",
+       "fund": "Corporate Fund",
+       "amount": 350000,
        "internal_transfer": false
       }
      ]
@@ -2223,18 +2242,6 @@
        "account": "Reimbursement to Travelers",
        "fund": "Corporate Fund",
        "amount": 150000,
-       "internal_transfer": false
-      }
-     ]
-    },
-    {
-     "name": "Transfer for Services Provided by the Department of Assets, Information, and Services",
-     "amount": 134400,
-     "items": [
-      {
-       "account": "Transfer for Services Provided by the Department of Assets, Information, and Services",
-       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
-       "amount": 134400,
        "internal_transfer": false
       }
      ]
@@ -2336,42 +2343,6 @@
      ]
     },
     {
-     "name": "Transfer for Services Provided by the Chicago Department of Aviation",
-     "amount": 35000,
-     "items": [
-      {
-       "account": "Transfer for Services Provided by the Chicago Department of Aviation",
-       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
-       "amount": 35000,
-       "internal_transfer": false
-      }
-     ]
-    },
-    {
-     "name": "Transfer for Services Provided by the Fire Department",
-     "amount": 21000,
-     "items": [
-      {
-       "account": "Transfer for Services Provided by the Fire Department",
-       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
-       "amount": 21000,
-       "internal_transfer": false
-      }
-     ]
-    },
-    {
-     "name": "Transfer for Services Provided by the Department of Streets and Sanitation",
-     "amount": 9000,
-     "items": [
-      {
-       "account": "Transfer for Services Provided by the Department of Streets and Sanitation",
-       "fund": "Special Events and Municipal Hotel Operators' Occupation Tax Fund",
-       "amount": 9000,
-       "internal_transfer": false
-      }
-     ]
-    },
-    {
      "name": "Less Corporate Fund Savings",
      "amount": -56600000,
      "items": [
@@ -2379,25 +2350,6 @@
        "account": "Less Corporate Fund Savings",
        "fund": "Corporate Fund",
        "amount": -56600000,
-       "internal_transfer": false
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "name": "Emergency medical transportation (ambulance)",
-   "amount": 124725187,
-   "internal_transfer": false,
-   "children": [
-    {
-     "name": "Emergency Medical Transportation",
-     "amount": 124725187,
-     "items": [
-      {
-       "account": "Emergency Medical Transportation",
-       "fund": "Corporate Fund",
-       "amount": 124725187,
        "internal_transfer": false
       }
      ]
@@ -2613,5 +2565,5 @@
    ]
   }
  ],
- "total_net": 6669789000
+ "total_net": 6662027568
 }

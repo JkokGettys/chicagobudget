@@ -18,6 +18,10 @@ RULES = [
      lambda a: "Pension Allocation" in a or "Advance Pension Payment" in a),
     ("Internal transfers (double counted)", "Reimbursements to the Corporate Fund", True,
      lambda a: a.startswith("To Reimburse")),
+    # Fund-to-fund "Transfer ..." lines (see research/reconciliation.md). OBM keeps the
+    # Corporate Fund's own $350,000 "Transfers Out" line, handled in classify().
+    ("Internal transfers (double counted)", "Transfers between city funds", True,
+     lambda a: a.startswith("Transfer")),
     ("Pensions", None, False, lambda a: "Annuity and Benefit Fund" in a),
     ("Debt payments", "Interest", False, lambda a: a.startswith("For Interest")),
     ("Debt payments", "Paying back principal", False,
@@ -49,7 +53,9 @@ def fetch():
     return json.load(urllib.request.urlopen(f"{DATASET}?{q}"))
 
 
-def classify(acct):
+def classify(acct, fund=""):
+    if acct.startswith("Transfer") and fund == "Corporate Fund":
+        return "Other citywide costs", None, False
     for cat, sub, transfer, match in RULES:
         if match(acct):
             return cat, sub, transfer
@@ -61,7 +67,7 @@ def main():
     tree = defaultdict(lambda: defaultdict(list))
     for r in rows:
         acct = r["appropriation_account_description"]
-        cat, sub, transfer = classify(acct)
+        cat, sub, transfer = classify(acct, r["fund_description"])
         tree[cat][sub or acct].append({
             "account": acct, "fund": r["fund_description"],
             "amount": int(r["_ordinance_amount_"]), "internal_transfer": transfer,
