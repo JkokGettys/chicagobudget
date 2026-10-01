@@ -80,6 +80,6 @@ CPS and the Park District have no open data API, so we'll build PDF parsers and 
 City funds move money to each other (pension allocations, reimbursements). The site has to subtract these ($1.80B) so totals match the official $16.6B. See `research/finance_general.md`.
 
 ## Open questions for you
-1. Should sister agencies (CPS, CTA, Parks) be included? They make up much of what Chicagoans pay.
+1. ~~Sister agencies?~~ Decided: City + CPS + Park District.
 2. Should we start with the 2026 budget only and add history later?
 3. Planned budget first, or actual spending first?
