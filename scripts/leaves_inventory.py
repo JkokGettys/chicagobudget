@@ -407,8 +407,12 @@ if os.path.exists(bp):
         f_ = r_.get("fund") or r_.get("fund_description") or ""; k_ = (r_.get("kind") or r_.get("type") or "").lower()
         a_ = r_.get("amount") or r_.get("amount_2026") or r_.get("total_2026") or 0
         for key, fd in FUND_KEY.items():
-            if key.lower() in f_.lower() or fd.lower() in f_.lower():
-                got[(fd, "interest" if "int" in k_ else "principal" if "prin" in k_ else "loan" if "loan" in k_ else k_)].append((r_.get("series", "series"), a_))
+            # AUDIT FIX: exact fund match. The old test `key in fund` matched "GO" inside "Chicago O'Hare" and "Chicago Midway",
+            # so O'Hare and Midway rows were also counted as GO bonds (GO leaf showed $571M of series against a $285M line).
+            if fd.lower() == f_.lower():
+                # AUDIT FIX: "principal_and_interest" (Midway) contains both "int" and "prin": check it first so it is not read as interest only.
+                kk_ = "pi" if ("prin" in k_ and "int" in k_) else "interest" if "int" in k_ else "principal" if "prin" in k_ else "loan" if "loan" in k_ else k_
+                got[(fd, kk_)].append((r_.get("series", "series"), a_))
     used = 0
     for l in leaves:
         if l["budget"] != "City": continue
@@ -416,13 +420,36 @@ if os.path.exists(bp):
             if f"> {ac} " in l["path"]:
                 for (fd, k_), ser in got.items():
                     if k_ == kind and f"> {fd} >" in l["path"]:
+                        ser = list(ser)
+                        # AUDIT FIX: the 6 GO series groups already in data/debt_2026.json per_series_2026 (GO 2023AB to 2026AB) were dropped when the bond file replaced
+                        # the older split. Add them back so GO interest does not look $143M less explained than it is. They do not overlap with GO 2021AB in the bond file.
+                        if fd == "Bond Redemption and Interest Series Fund":
+                            for s_ in debt["per_series_2026"]["series"]:
+                                if s_["type"] == "General Obligation":
+                                    v_ = s_["interest_2026"] if kind == "interest" else s_["principal_2026"]
+                                    if v_: ser.append((s_["series"], v_))
                         tot_ = sum(a for _, a in ser)
                         l["status"] = "accepted_single_obligation" if abs(tot_ - abs(l["amount"])) < max(1000, 0.002 * abs(l["amount"])) else "split_partial"
-                        l["remaining_pieces_over_10m"] = [] if l["status"] == "accepted_single_obligation" else [{"name": "bond series not in data/city_bond_series_2026.json", "amount": round(abs(l["amount"]) - tot_)}]
+                        # AUDIT FIX: only carry the unmatched remainder if it is itself >= $10M (a smaller remainder is not a leaf of interest here)
+                        _rest = abs(l["amount"]) - tot_
+                        l["remaining_pieces_over_10m"] = [] if (l["status"] == "accepted_single_obligation" or _rest < T) else [{"name": "bond series not in data/city_bond_series_2026.json", "amount": round(_rest)}]
+                        if l["status"] != "accepted_single_obligation" and _rest < T: l["status"] = "accepted_single_obligation"
                         l["split_source"] = "data/city_bond_series_2026.json (other agent): %d series, $%.1fM of $%.1fM" % (len(ser), tot_ / 1e6, abs(l["amount"]) / 1e6)
                         l["round3_pieces"] = [{"name": n, "amount": a} for n, a in ser]
                         l["why_cant_go_deeper"] = "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
                         used += 1
+    # AUDIT FIX: Midway publishes one combined principal+interest figure per series. Compare it with the sum of the Midway interest and principal leaves.
+    for (fd, k_), ser in got.items():
+        if k_ != "pi": continue
+        ml = [l for l in leaves if l["budget"] == "City" and f"> {fd} >" in l["path"] and any(f"> {a} " in l["path"] for a in ("0902", "0912"))]
+        tot_ = sum(a for _, a in ser); line_tot = sum(abs(l["amount"]) for l in ml); rest = line_tot - tot_
+        for i, l in enumerate(sorted(ml, key=lambda l: l["path"])):
+            l["status"] = "accepted_single_obligation" if rest < T else "split_partial"
+            l["remaining_pieces_over_10m"] = [] if (rest < T or i) else [{"name": "Midway series not in file (2014B, 2014C, 2018A) plus ordinance gap, shared by principal and interest lines", "amount": round(rest)}]
+            l["split_source"] = "data/city_bond_series_2026.json: %d Midway series, combined principal+interest $%.1fM of $%.1fM (both lines)" % (len(ser), tot_ / 1e6, line_tot / 1e6)
+            l["round3_pieces"] = [{"name": n, "amount": a} for n, a in ser]
+            l["why_cant_go_deeper"] = "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+            used += 1
     round3_log["bond_series"] = {"file": "data/city_bond_series_2026.json", "rows": len(rows_), "leaves_updated": used}
 else:
     round3_log["bond_series"] = "file not present yet; inventory will pick it up on the next run"
