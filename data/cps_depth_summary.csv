@@ -1,0 +1,14 @@
+item,dollars,pct_of_total,note
+BEFORE: share of $ in leaves < $1M,4433001380.64,43.23,same as row A
+A. Leaves < $1M today (unit x fund x program x account),4433001380.64,43.23,158891 of 159589 rows
+B. + capital projects < $1M and project phases < $1M,75766789.0,0.74,capital-fund leaves $555.9M replaced by 131 projects; project list sums to $555941447 vs fund lines $555945321
+"C. + big salary leaves covered by BI job-title rows < $1M (upper bound, unit level)",345093706.95,3.37,"positions file is by unit x job title, not by fund, so this is a bound not a tie"
+D. + remaining big salary and employer-benefit leaves via public roster (person level),766307433.13,7.47,"roster max FTE salary $335,000; roster date 12/31/2025 so approximate, not a reconciled tie"
+AFTER: A + B + C + D,5620169309.72,54.81,upper bound: C and D assume the public positions and roster files can be allocated to each leaf
+"Leaves >= $1M: other contracts, utilities, food, transport, contingency",1521857818.06,14.84,139 rows
+Leaves >= $1M: central pension/insurance/health set-aside,1149071498.46,11.21,13 rows
+"Leaves >= $1M: salary/benefits (see C, D)",1111401140.08,10.84,367 rows
+"Leaves >= $1M: debt series (named bond, principal or interest)",1039842455.26,10.14,44 rows
+Leaves >= $1M: charter tuition (per school),911939436.11,8.89,119 rows
+Leaves >= $1M: capital (see B),555945321.0,5.42,4 rows
+"Leaves >= $1M: negative offset lines (budget-only reductions, e.g. U12670, U12470)",-469731585.94,-4.58,12 rows

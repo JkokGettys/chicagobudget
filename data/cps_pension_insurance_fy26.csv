@@ -1,0 +1,38 @@
+unit,fund_grant,fund,program,account,account_description,fy26_budget
+U12470,FG129-000000,CTPF Pension Levy,Other General Charges,A58115,Budget Only - Pensions,602309665.0
+U12470,FG115-000000,General Education Fund,Other General Charges,A58275,Budget Only - Pension - ESP,202791171.06
+U12470,FG115-000000,General Education Fund,All Other,A58195,Budget Only - Hospitalization,161666402.4
+U12470,FG115-000000,General Education Fund,Other General Charges,A58115,Budget Only - Pensions,120570340.0
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,Other General Charges,A58190,Budget Only - Workers Compensation,23000000.0
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,Other General Charges,A58185,Budget Only - Unemployment Compensation,8000000.0
+U12470,FG115-000000,General Education Fund,Other General Charges,A51140,Termination Payout of Sick & Vacation Days - Teachers,6500000.0
+U12470,FG115-000000,General Education Fund,Non-Tort Claims: Major Settlement,A54535,Services - Insurance - General Liability - Claims,5700000.0
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,Non-Tort Claims: Major Settlement,A54535,Services - Insurance - General Liability - Claims,5472620.0
+U12470,FG115-000000,General Education Fund,Healthcare and Benefits Management,A58195,Budget Only - Hospitalization,5159300.0
+U12470,FG115-000000,General Education Fund,Temporary Transfer To District,A51100,Teacher Salaries - Regular,4000000.0
+U12470,FG115-000000,General Education Fund,Other General Charges,A52150,Termination Payout of Sick & Vacation Days - ESPs,2700000.0
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,Other General Charges,A54125,Services - Professional/Administrative,1202000.0
+U12470,FG115-000000,General Education Fund,Other General Charges,A52100,Career Service Salaries - Regular,700004.0
+U12470,FG115-000000,General Education Fund,Other General Charges,A51100,Teacher Salaries - Regular,550012.0
+U12470,FG115-000000,General Education Fund,Other General Charges,A51130,Teacher Salaries - Extended Day,250000.0
+U12470,FG115-000000,General Education Fund,Other General Charges,A57405,Medicare,145290.03
+U12470,FG115-000000,General Education Fund,Other General Charges,A52130,Career Service Salaries - Extended Day,100000.0
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,Absence & Disability Management,A52100,Career Service Salaries - Regular,29938.44
+U12470,FG115-000000,General Education Fund,Other General Charges,A51500,Teacher Salaries - Substitutes,20000.0
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,Absence & Disability Management,A57210,Pensions - ESP Employer,3182.46
+U12470,FG115-000000,General Education Fund,Other General Charges,A57105,Pensions - Employer Teacher,2232.0
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,Absence & Disability Management,A57205,Pensions - Employee ESP,2095.69
+U12470,FG115-000000,General Education Fund,Other General Charges,A57135,Pensions - Employee Teacher,1400.0
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,Absence & Disability Management,A57405,Medicare,434.11
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,Absence & Disability Management,A57605,Workers Compensation,281.42
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,Absence & Disability Management,A52150,Termination Payout of Sick & Vacation Days - ESPs,257.47
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,Absence & Disability Management,A57505,Unemployment Compensation,110.77
+U12470,FG115-000000,General Education Fund,General Charges - Other Staff Services,A51140,Termination Payout of Sick & Vacation Days - Teachers,2.0
+U12470,FG115-000000,General Education Fund,General Charges - Other Staff Services,A52150,Termination Payout of Sick & Vacation Days - ESPs,2.0
+U12470,FG115-000004,AMERICAN DISABILITIES ACT(ADA),Employee Engagement,A52130,Career Service Salaries - Extended Day,2.0
+U12470,FG115-000004,AMERICAN DISABILITIES ACT(ADA),Employee Engagement,A57210,Pensions - ESP Employer,0.21
+U12470,FG115-000004,AMERICAN DISABILITIES ACT(ADA),Employee Engagement,A57205,Pensions - Employee ESP,0.1
+U12470,FG115-000000,General Education Fund,General Charges - Other Staff Services,A57405,Medicare,0.06
+U12470,FG115-000004,AMERICAN DISABILITIES ACT(ADA),Employee Engagement,A57405,Medicare,0.03
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,All Other,A58185,Budget Only - Unemployment Compensation,-13606222.62
+U12470,FG210-000000,Workers'& Unemployment Compensation/Tort,All Other,A58190,Budget Only - Workers Compensation,-34567160.16
