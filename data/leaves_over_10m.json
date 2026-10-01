@@ -6,8 +6,8 @@
    "before_dollars": 14920851346,
    "after_strict_count": 165,
    "after_strict_dollars": 11717502814,
-   "after_team_count": 159,
-   "after_team_dollars": 5034995394.0,
+   "after_team_count": 158,
+   "after_team_dollars": 5047134729.0,
    "by_status": {
     "split_partial": {
      "count": 95,
@@ -97,8 +97,8 @@
    "parks_total": 637580350
   },
   "remaining_over_10m": {
-   "count": 216,
-   "dollars": 7176725042
+   "count": 215,
+   "dollars": 7188864377
   }
  },
  "round3": {
@@ -286,8 +286,8 @@
   ],
   "bond_series": {
    "file": "data/city_bond_series_2026.json",
-   "rows": 97,
-   "leaves_updated": 10
+   "rows": 104,
+   "leaves_updated": 12
   },
   "parks_inputs": [
    "data/parks_capital_projects.json",
@@ -452,6 +452,14 @@
    },
    {
     "budget": "City",
+    "amount": 77313314,
+    "status": "split_partial",
+    "leaf_path": "City > Local > Sewer Fund > Finance General > Finance General > 0902 For Interest on Bonds",
+    "piece": "Midway series not in file (2014B, 2014C, 2018A) plus ordinance gap, shared by principal and interest lines",
+    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+   },
+   {
+    "budget": "City",
     "amount": 74590605,
     "status": "split_partial",
     "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FHWA - IDOT - CTY - Highway Planning and Construction (20.205) > 0540 Construction of Buildings and Other Structures",
@@ -609,14 +617,6 @@
     "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Department of Fleet and Facility Management > Bureau of Asset Management > 0331 Electricity",
     "piece": "CONSTELLATION NEWENERGY INC (contract 198906), 2026 YTD payments",
     "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-   },
-   {
-    "budget": "CPS",
-    "amount": 52894514,
-    "status": "unsplit_no_source",
-    "leaf_path": "CPS > Chief Executive Officer Total > Education General - City Wide > General Education Fund > Other Instr Purposes Misc > A57915 Miscellaneous - Contingent Projects",
-    "piece": null,
-    "why_cant_go_deeper": "This is a planned cut that offsets spending counted elsewhere, so there is nothing to itemize."
    }
   ]
  },
@@ -772,6 +772,14 @@
    "leaf_path": "City > Local > Corporate Fund > Chicago Police Department > Chicago Police Department > 0931 For the Payment of Tort and Non-Tort Judgments, Outside Coun",
    "piece": "LOEVY & LOEVY ATTORNEYS AT LAW (contract direct voucher), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
+  },
+  {
+   "budget": "City",
+   "amount": 77313314,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Sewer Fund > Finance General > Finance General > 0902 For Interest on Bonds",
+   "piece": "Midway series not in file (2014B, 2014C, 2018A) plus ordinance gap, shared by principal and interest lines",
+   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
   },
   {
    "budget": "City",
@@ -1110,14 +1118,6 @@
    "why_cant_go_deeper": "CPS pays most health bills as they come in, so this reserve is a guess at bills that have not arrived yet, and the insurers do not publish who each claim was for."
   },
   {
-   "budget": "City",
-   "amount": 36790174,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Sewer Fund > Finance General > Finance General > 0902 For Interest on Bonds",
-   "piece": "bond series not in data/city_bond_series_2026.json",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
-  },
-  {
    "budget": "Parks",
    "amount": 36292135,
    "status": "unsplit_no_source",
@@ -1268,14 +1268,6 @@
    "leaf_path": "City > Local > Chicago O'Hare Airport Fund > Chicago Department of Aviation > Chicago-O'Hare International Airport > 0140 For Professional and Technical Services and Other Third Part",
    "piece": "STUDIO ORD INC (contract 101451), 2026 YTD payments",
    "why_cant_go_deeper": "A few big companies each get one large contract payment, and the City does not publish smaller pieces of one contract."
-  },
-  {
-   "budget": "City",
-   "amount": 28383805,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Sewer Fund > Finance General > Finance General > 0912 For Payment of Bonds",
-   "piece": "bond series not in data/city_bond_series_2026.json",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
   },
   {
    "budget": "City",
@@ -5475,32 +5467,20 @@
    "budget": "City",
    "path": "City > Local > Sewer Fund > Finance General > Finance General > 0902 For Interest on Bonds",
    "amount": 77313314,
-   "split_source": "data/city_bond_series_2026.json (other agent): 4 series, $40.5M of $77.3M",
+   "split_source": "data/city_bond_series_2026.json: 1 Midway series, combined principal+interest $24.7M of $114.1M (both lines)",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
-     "name": "bond series not in data/city_bond_series_2026.json",
-     "amount": 36790174
+     "name": "Midway series not in file (2014B, 2014C, 2018A) plus ordinance gap, shared by principal and interest lines",
+     "amount": 89387119
     }
    ],
    "note": "Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
    "round3_pieces": [
     {
-     "name": "Sewer 2024B",
-     "amount": 6584250
-    },
-    {
-     "name": "Sewer 2024A",
-     "amount": 10566000
-    },
-    {
-     "name": "Sewer 2023A",
-     "amount": 13749390
-    },
-    {
-     "name": "Sewer 2023B",
-     "amount": 9623500
+     "name": "Sewer 1998A (senior lien)",
+     "amount": 24680000
     }
    ]
   },
@@ -6026,32 +6006,15 @@
    "budget": "City",
    "path": "City > Local > Sewer Fund > Finance General > Finance General > 0912 For Payment of Bonds",
    "amount": 36753805,
-   "split_source": "data/city_bond_series_2026.json (other agent): 4 series, $8.4M of $36.8M",
+   "split_source": "data/city_bond_series_2026.json: 1 Midway series, combined principal+interest $24.7M of $114.1M (both lines)",
    "status": "split_partial",
-   "remaining_pieces_over_10m": [
-    {
-     "name": "bond series not in data/city_bond_series_2026.json",
-     "amount": 28383805
-    }
-   ],
+   "remaining_pieces_over_10m": [],
    "note": "Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
    "round3_pieces": [
     {
-     "name": "Sewer 2024B",
-     "amount": 1145000
-    },
-    {
-     "name": "Sewer 2024A",
-     "amount": 7225000
-    },
-    {
-     "name": "Sewer 2023A",
-     "amount": 0
-    },
-    {
-     "name": "Sewer 2023B",
-     "amount": 0
+     "name": "Sewer 1998A (senior lien)",
+     "amount": 24680000
     }
    ]
   },

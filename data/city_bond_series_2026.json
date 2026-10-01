@@ -1164,10 +1164,61 @@
    }
   },
   {
-   "series": "Sewer residual: second-lien series outstanding other than 2023A/B and 2024A/B",
+   "series": "Sewer 2017A",
    "credit": "wastewater",
    "window": "payments Jan 2 2026 through Jan 1 2027",
-   "total_pi": 59748907,
+   "total_pi": 10873213,
+   "principal": 3170000,
+   "interest": 7703213,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in table",
+   "status": "current",
+   "note": "Fiscal 2026 (July 1 2026 and Jan 1 2027 payments). Principal and interest columns printed. Balances tie to wastewater_2024B_OS p.23 and sewer_FS2025 p.41, so no later refunding.",
+   "cite": {
+    "doc": "Wastewater_2017AB_OS.OZLaywqK.pdf",
+    "pdf_page": 28,
+    "row": "2026 24,680,000 85,841,863 3,170,000 7,703,213 10,873,213 9,545,000 6,509,250 16,054,250 112,769,326 137,449,326"
+   }
+  },
+  {
+   "series": "Sewer 2017B",
+   "credit": "wastewater",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 16054250,
+   "principal": 9545000,
+   "interest": 6509250,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in table",
+   "status": "current",
+   "note": "Fiscal 2026. Principal and interest columns printed. Balances tie to wastewater_2024B_OS p.23 and sewer_FS2025 p.41, so no later refunding.",
+   "cite": {
+    "doc": "Wastewater_2017AB_OS.OZLaywqK.pdf",
+    "pdf_page": 28,
+    "row": "2026 24,680,000 85,841,863 3,170,000 7,703,213 10,873,213 9,545,000 6,509,250 16,054,250 112,769,326 137,449,326"
+   }
+  },
+  {
+   "series": "Sewer 2010B (Build America Bonds, taxable)",
+   "credit": "wastewater",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 17250000,
+   "principal": 0,
+   "interest": 17250000,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "no principal due until 2029",
+   "status": "current",
+   "note": "Term bond due 1/1/2040, interest only until 2029: $250,000,000 x 6.9% = $17,250,000 (printed column equals it). Gross of the federal subsidy. $250,000,000 still outstanding per wastewater_2024B_OS p.23 and sewer_FS2025 p.41.",
+   "cite": {
+    "doc": "Wastewater_2010A&B_2nd_Lien_OS.1xoaBAlZQO.pdf",
+    "pdf_page": 32,
+    "row": "2026 24,680,000 40,347,763 17,250,000 17,250,000 82,277,763"
+   }
+  },
+  {
+   "series": "Sewer residual: second-lien 2001, 2015 and any 2008C remnant (2008C defeased)",
+   "credit": "wastewater",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 15571444,
    "principal": null,
    "interest": null,
    "interest_is_derived_as_total_minus_principal": false,
@@ -1177,11 +1228,11 @@
    "cite": {
     "doc": "wastewater_2024B_OS.pdf",
     "pdf_page": 24,
-    "row": "outstanding second-lien column $100912797 minus 2024A, 2023A, 2023B"
+    "row": "outstanding second-lien column $100912797 minus 2024A, 2023A, 2023B, 2010B, 2017A, 2017B"
    }
   },
   {
-   "series": "Sewer senior-lien bonds (aggregate)",
+   "series": "Sewer 1998A (senior lien)",
    "credit": "wastewater",
    "window": "payments Jan 2 2026 through Jan 1 2027",
    "total_pi": 24680000,
@@ -1189,8 +1240,8 @@
    "interest": null,
    "interest_is_derived_as_total_minus_principal": false,
    "principal_basis": "not printed",
-   "status": "aggregate",
-   "note": "The OS column heading is 'Outstanding Senior Lien Bonds' and does not name the series.",
+   "status": "current",
+   "note": "The only senior lien series in the 2024B OS (p.23), balance $16,401,899 at 1/1/2028 final maturity. The column is $24,680,000 in each of fiscal 2025, 2026 and 2027 and $595,000 in 2024, which add to the printed senior total $74,635,000. Principal and interest are not split in the table. The annual $24,680,000 exceeds the $16,401,899 balance, so the column must include accreted interest (inference, not stated in the table). Fiscal 2026 = July 1 2026 and Jan 1 2027 payments.",
    "cite": {
     "doc": "wastewater_2024B_OS.pdf",
     "pdf_page": 24,
@@ -2640,6 +2691,98 @@
    "amount": 9623500
   },
   {
+   "series": "Sewer 2017A",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "Wastewater_2017AB_OS.OZLaywqK.pdf",
+    "pdf_page": 28,
+    "row": "2026 24,680,000 85,841,863 3,170,000 7,703,213 10,873,213 9,545,000 6,509,250 16,054,250 112,769,326 137,449,326"
+   },
+   "kind": "principal",
+   "amount": 3170000
+  },
+  {
+   "series": "Sewer 2017A",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "Wastewater_2017AB_OS.OZLaywqK.pdf",
+    "pdf_page": 28,
+    "row": "2026 24,680,000 85,841,863 3,170,000 7,703,213 10,873,213 9,545,000 6,509,250 16,054,250 112,769,326 137,449,326"
+   },
+   "kind": "interest",
+   "amount": 7703213
+  },
+  {
+   "series": "Sewer 2017B",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "Wastewater_2017AB_OS.OZLaywqK.pdf",
+    "pdf_page": 28,
+    "row": "2026 24,680,000 85,841,863 3,170,000 7,703,213 10,873,213 9,545,000 6,509,250 16,054,250 112,769,326 137,449,326"
+   },
+   "kind": "principal",
+   "amount": 9545000
+  },
+  {
+   "series": "Sewer 2017B",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "Wastewater_2017AB_OS.OZLaywqK.pdf",
+    "pdf_page": 28,
+    "row": "2026 24,680,000 85,841,863 3,170,000 7,703,213 10,873,213 9,545,000 6,509,250 16,054,250 112,769,326 137,449,326"
+   },
+   "kind": "interest",
+   "amount": 6509250
+  },
+  {
+   "series": "Sewer 2010B (Build America Bonds, taxable)",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "Wastewater_2010A&B_2nd_Lien_OS.1xoaBAlZQO.pdf",
+    "pdf_page": 32,
+    "row": "2026 24,680,000 40,347,763 17,250,000 17,250,000 82,277,763"
+   },
+   "kind": "principal",
+   "amount": 0
+  },
+  {
+   "series": "Sewer 2010B (Build America Bonds, taxable)",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "Wastewater_2010A&B_2nd_Lien_OS.1xoaBAlZQO.pdf",
+    "pdf_page": 32,
+    "row": "2026 24,680,000 40,347,763 17,250,000 17,250,000 82,277,763"
+   },
+   "kind": "interest",
+   "amount": 17250000
+  },
+  {
+   "series": "Sewer 1998A (senior lien)",
+   "fund": "Sewer Fund",
+   "credit": "wastewater",
+   "status": "current",
+   "cite": {
+    "doc": "wastewater_2024B_OS.pdf",
+    "pdf_page": 24,
+    "row": "2026 24,680,000 100,912,797 1,145,000 6,584,250 7,729,250 108,642,047 133,322,047 32,533,630 165,855,677"
+   },
+   "kind": "principal_and_interest",
+   "amount": 24680000,
+   "split_note": "principal/interest split not extracted for this series"
+  },
+  {
    "series": "GO 2021A and 2021B",
    "fund": "Bond Redemption and Interest Series Fund",
    "credit": "go",
@@ -2722,7 +2865,7 @@
   "ohare": 672899919,
   "midway": 125242814,
   "water": 122917940,
-  "wastewater": 48893140,
+  "wastewater": 117750603,
   "go": 54506741
  }
 }

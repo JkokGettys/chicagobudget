@@ -394,6 +394,44 @@ def parse_water_round2():
     return {"doc2010": pdf10, "pg2010": 34, "row2010": line, "printed_2010": printed, "b_int": b_int,
             "c_tot": c_int + c_prin, "c_prin": c_prin, "doc2017": pdf17, "pg2017": 31, "row2017": l17, "p2017": t17[4]}
 
+
+def parse_sewer_round2():
+    """Sewer 2017A, 2017B (2017AB OS p.28) and 2010B (2010AB OS p.32), fiscal 2026 rows. The 2017AB
+    fiscal-year convention (July 1 of the year and January 1 of the following year) is the same as the
+    2024B OS table, which is proven by balances: 2017A principal from fiscal 2024 on sums to $168,135,000
+    and 2017B to $153,340,000, the balances printed in wastewater_2024B_OS p.23; and sewer_FS2025 p.41
+    shows $165,260K and $139,270K at 12/31/2025, i.e. only the Jan 1 2025 payment less. So no refunding
+    since. The 2015 OS table uses a different year label (its 2026 principal is the Jan 1 2026 cover
+    maturity), so 2015 is deliberately not used here."""
+    pdf = find_pdf("Wastewater_2017AB")
+    pg = pdf_text(pdf)
+    toks, line = row_tokens(pg[28], 2026)
+    if len(toks) != 10:
+        raise SystemExit("sewer 2017AB tokens: %r" % toks)
+    sen, outst, ap, ai, at, bp_, bi, bt, sec, tot = toks
+    if abs(ap + ai - at) > 5 or abs(bp_ + bi - bt) > 5 or abs(outst + at + bt - sec) > 5 or abs(sen + sec - tot) > 5:
+        raise SystemExit("sewer 2017AB row does not sum: %r" % toks)
+    # balance tie: principal from fiscal 2024 on
+    sums = {"A": 0, "B": 0}
+    for l in pg[28].split("\n") + pg[29].split("\n"):
+        m = re.match(r"^(20\d\d)\s+(.*)$", l.strip())
+        if m and int(m.group(1)) >= 2024:
+            t = [to_num(x) for x in TOK.findall(m.group(2).replace("$ ", "$"))]
+            if len(t) == 10:
+                sums["A"] += t[2]; sums["B"] += t[5]
+    if sums != {"A": 168135000, "B": 153340000}:
+        raise SystemExit("2017AB principal balances do not tie to 2024B OS: %r" % sums)
+    pdf10 = find_pdf("Wastewater_2010A&B")
+    p10 = pdf_text(pdf10)
+    t10, l10 = row_tokens(p10[32], 2026)
+    # printed: senior, outstanding second lien, 2010B interest, 2010B total, total (2010A matured, 2010B principal blank)
+    if len(t10) != 5 or t10[2] != t10[3] or abs(t10[0] + t10[1] + t10[3] - t10[4]) > 5:
+        raise SystemExit("sewer 2010 row: %r" % t10)
+    b_int = t10[2]
+    if b_int != 17250000 or round(250000000 * 0.069) != b_int:
+        raise SystemExit("2010B interest %r != 250,000,000 x 6.9%%" % b_int)
+    return {"doc17": pdf, "row17": line, "a": (ap, ai), "b": (bp_, bi), "doc10": pdf10, "row10": l10, "b2010": b_int}
+
 # ---------------------------------------------------------------- build
 ORD = {  # 2026 ordinance, Finance General, dataset 6694 / raw/city_appropriations_2026.json
     "ohare": {"interest": 496066181, "principal": 303172911, "fees": 3231068},
@@ -520,12 +558,27 @@ def build():
     leaves.append(leaf("Sewer 2023A", "wastewater", t[4], 0, oth["sewer_2023AB"]["doc"], 30, oth["sewer_2023AB"]["row"], "current",
                        "Interest $%d less capitalized interest $%d." % (t[2], -t[3] if t[3] < 0 else t[3]), "no principal column value printed for 2026"))
     leaves.append(leaf("Sewer 2023B", "wastewater", t[5], 0, oth["sewer_2023AB"]["doc"], 30, oth["sewer_2023AB"]["row"], "current", "Fiscal year 2026.", "no principal column value printed for 2026"))
-    s_res = s24b["second_outstanding"] - s24a["A_total"] - t[4] - t[5]
-    leaves.append(leaf("Sewer residual: second-lien series outstanding other than 2023A/B and 2024A/B", "wastewater", s_res, None,
-                       "wastewater_2024B_OS.pdf", 24, "outstanding second-lien column $%d minus 2024A, 2023A, 2023B" % s24b["second_outstanding"],
+    s2 = parse_sewer_round2()
+    leaves.append(leaf("Sewer 2017A", "wastewater", sum(s2["a"]), s2["a"][0], s2["doc17"], 28, s2["row17"], "current",
+                       "Fiscal 2026 (July 1 2026 and Jan 1 2027 payments). Principal and interest columns printed. Balances tie to wastewater_2024B_OS p.23 and sewer_FS2025 p.41, so no later refunding.", "printed in table"))
+    leaves.append(leaf("Sewer 2017B", "wastewater", sum(s2["b"]), s2["b"][0], s2["doc17"], 28, s2["row17"], "current",
+                       "Fiscal 2026. Principal and interest columns printed. Balances tie to wastewater_2024B_OS p.23 and sewer_FS2025 p.41, so no later refunding.", "printed in table"))
+    leaves.append(leaf("Sewer 2010B (Build America Bonds, taxable)", "wastewater", s2["b2010"], 0, s2["doc10"], 32, s2["row10"], "current",
+                       "Term bond due 1/1/2040, interest only until 2029: $250,000,000 x 6.9% = $17,250,000 (printed column equals it). Gross of the federal subsidy. $250,000,000 still outstanding per wastewater_2024B_OS p.23 and sewer_FS2025 p.41.", "no principal due until 2029"))
+    s_res = s24b["second_outstanding"] - s24a["A_total"] - t[4] - t[5] - s2["b2010"] - sum(s2["a"]) - sum(s2["b"])
+    leaves.append(leaf("Sewer residual: second-lien 2001, 2015 and any 2008C remnant (2008C defeased)", "wastewater", s_res, None,
+                       "wastewater_2024B_OS.pdf", 24, "outstanding second-lien column $%d minus 2024A, 2023A, 2023B, 2010B, 2017A, 2017B" % s24b["second_outstanding"],
                        "residual_by_subtraction", "Series not named in the fetched documents. The 2008C variable-rate bonds were defeased in 2025 (sewer_FS2025.pdf p.44), so this line is overstated by that series' 2026 debt service."))
-    leaves.append(leaf("Sewer senior-lien bonds (aggregate)", "wastewater", s24b["senior"], None, "wastewater_2024B_OS.pdf", 24, oth["sewer_2024B"]["row"], "aggregate",
-                       "The OS column heading is 'Outstanding Senior Lien Bonds' and does not name the series.", "not printed"))
+    # Senior lien: wastewater_2024B_OS p.23 lists exactly one senior lien series, 1998A ($16,401,899, final 1/1/2028), so the whole column is 1998A.
+    # Check: the printed senior column total $74,635,000 = fiscal 2024 $595,000 + 3 x $24,680,000 (fiscal 2025, 2026, 2027).
+    sp = pdf_text(find_pdf("wastewater_2024B_OS"))
+    if "1998A 1/1/2028 $16,401,899 $16,401,899\nSubtotal $16,401,899" not in sp[23]:
+        raise SystemExit("senior lien table in 2024B OS p.23 no longer lists only 1998A")
+    if 595000 + 3 * s24b["senior"] != 74635000:
+        raise SystemExit("senior lien column does not tie to printed total")
+    leaves.append(leaf("Sewer 1998A (senior lien)", "wastewater", s24b["senior"], None, "wastewater_2024B_OS.pdf", 24, oth["sewer_2024B"]["row"], "current",
+                       "The only senior lien series in the 2024B OS (p.23), balance $16,401,899 at 1/1/2028 final maturity. The column is $24,680,000 in each of fiscal 2025, 2026 and 2027 and $595,000 in 2024, which add to the printed senior total $74,635,000. Principal and interest are not split in the table. The annual $24,680,000 exceeds the $16,401,899 balance, so the column must include accreted interest (inference, not stated in the table). Fiscal 2026 = July 1 2026 and Jan 1 2027 payments.",
+                       "not printed"))
     leaves.append(leaf("Sewer IEPA subordinate-lien loans (aggregate)", "wastewater", s24b["subordinate_iepa"], None, "wastewater_2024B_OS.pdf", 24, oth["sewer_2024B"]["row"], "loan_aggregate", "Loans, not bonds.", "not printed"))
     # ---- GO older
     go_out = []
