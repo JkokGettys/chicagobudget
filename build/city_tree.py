@@ -434,54 +434,61 @@ apply_proxy("data/leaves_wages.json", "job_title")
 apply_proxy("data/leaves_grants.json", "grant_project")
 
 # ---------------------------------------------------------------- side info: vendors paid 2026 YTD
-# Payments to individual people (refunds, reimbursements, small grants) carry personal names.
-# Per the no-names decision they are pooled into one line per department and family.
+# Every payment row is kept. Payees that are individual people (refunds, reimbursements, small
+# grants, jurors, sole practitioners) keep their amount, contract, family and payment count,
+# but their name is replaced with a placeholder. Business and organization names are shown.
+from payee import is_business  # noqa: E402
 ven = json.load(open(P("data/city_vendors_items_2026ytd.json")))
 VEN_LABEL = ven["meta"]["label"]
 _pp = json.load(open(P("data/people/city_employees_2026.json"))) if os.path.exists(P("data/people/city_employees_2026.json")) else {"current_employees": []}
 EMP_NAMES = {e["name"].upper().strip() for e in _pp["current_employees"] if e.get("name")}
-ORG_WORDS = ("INC", "LLC", "CORP", "CO.", "COMPANY", "LTD", "LLP", "BANK", "FUND", "CITY", "COUNTY", "STATE",
-             "ASSOC", "UNIVERSITY", "COLLEGE", "SCHOOL", "CHURCH", "CENTER", "SERVICES", "GROUP", "TRUST",
-             "AUTHORITY", "DEPARTMENT", "BOARD", "FOUNDATION", "PARTNERS", "& ", " AND ", "JOINT VENTURE",
-             "TREASURER", "COMMISSION", "INSTITUTE", "HOSPITAL", "CLINIC", "AGENCY", "COUNCIL", "SOCIETY", "LP")
+HIDDEN = "Individual (name hidden)"
 
 
-def looks_like_person(v):
-    u = (v or "").upper().strip()
-    if u in EMP_NAMES:
-        return True
-    if any(w in u for w in ORG_WORDS):
-        return False
-    # "LAST, FIRST M" pattern
-    return bool(re.match(r"^[A-Z' .-]+, [A-Z' .-]+$", u))
+def scrub(text, name):
+    """Remove any word of a hidden person's name from a contract description."""
+    if not text:
+        return text
+    out = text
+    for w in re.findall(r"[A-Za-z']{3,}", name or ""):
+        out = re.sub(rf"\b{re.escape(w)}\b", "[name hidden]", out, flags=re.I)
+    return out
 
 
-
-n_pooled = 0
+n_hidden = 0
+HIDDEN_NAMES = set()   # used by the leak check below
+# Decide once per payee name: a payee with a City contract anywhere is a business everywhere.
+_has_contract = defaultdict(bool)
+for dd in ven["departments"].values():
+    for rows in dd["families"].values():
+        for v in rows:
+            _has_contract[(v[0] or "").upper().strip()] |= bool(v[1])
+IS_BIZ = {nm: is_business(nm, hc, EMP_NAMES) for nm, hc in _has_contract.items()}
 for dnum, dd in ven["departments"].items():
-    dn = dept_nodes.get(dnum.lstrip("0"))
+    # Finance General payments (pensions, health insurer, banks...) and the rare voucher prefix with
+    # no budget department (e.g. one $4,725 row under "29") go on the City root so every row is reachable.
+    dn = dept_nodes.get(dnum.lstrip("0")) or city
     if not dn:
+        print(f"  vendor payments for department {dnum} not attached (no department box)")
         continue
     items = []
-    pooled = defaultdict(lambda: [0, 0, 0])
     for fam, rows in dd["families"].items():
         for v in rows:
-            if looks_like_person(v[0]):
-                p = pooled[fam]
-                p[0] += cents(v[2]); p[1] += v[3]; p[2] += 1
-                n_pooled += 1
-                continue
-            items.append({"family": fam, "vendor": v[0], "contract": v[1], "amount": cents(v[2]),
-                          "payments": v[3], "description": v[4]})
-    for fam, (amt, npay, npeople) in pooled.items():
-        items.append({"family": fam, "vendor": f"Payments to {npeople:,} individual people (names not shown)",
-                      "contract": None, "amount": amt, "payments": npay, "description": ""})
+            biz = IS_BIZ[(v[0] or "").upper().strip()]
+            if not biz:
+                n_hidden += 1
+                HIDDEN_NAMES.add((v[0] or "").upper().strip())
+            items.append({"family": fam, "vendor": v[0] if biz else HIDDEN, "is_individual": not biz,
+                          "contract": v[1], "amount": cents(v[2]), "payments": v[3],
+                          "description": v[4] if biz else scrub(v[4], v[0])})
     items.sort(key=lambda x: -x["amount"])
     dn.side.append({"kind": "vendors_paid", "label": VEN_LABEL, "period": VEN_LABEL, "basis": "actual",
                     "amount": sum(i["amount"] for i in items),
-                    "source": {"dataset": "s4vu-giwb", "note": "deduplicated, research/payments_dedupe.md"},
-                    "items": items[:500], "n_items": len(items)})
-print(f"vendor rows pooled as individual people: {n_pooled:,}")
+                    "source": {"dataset": "s4vu-giwb", "note": "deduplicated, research/payments_dedupe.md. "
+                               "Names of individual people are hidden (build/payee.py)."},
+                    "items": items, "n_items": len(items),
+                    "n_individuals": sum(1 for i in items if i["is_individual"])})
+print(f"vendor rows with name hidden (individual people): {n_hidden:,}")
 
 # ---------------------------------------------------------------- side info: 2025 pay and vacancies by title
 comp = json.load(open(P("data/comp_city_2025.json")))
@@ -570,7 +577,7 @@ for row in to_rows(city) + side_rows(city) + to_rows(twice):
             for m in re.findall(r'"([^"]{6,80})"', v):
                 blob_strings.add(m.upper().strip())
             blob_strings.add(v.upper().strip())
-leak = sorted(nm for nm in EMP_NAMES if len(nm) > 8 and nm in blob_strings)
+leak = sorted(nm for nm in (EMP_NAMES | HIDDEN_NAMES) if len(nm) > 8 and nm in blob_strings)
 if leak:
     problems.append(f"{len(leak)} employee names in output, e.g. {leak[:3]}")
 
