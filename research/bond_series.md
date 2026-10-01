@@ -101,3 +101,70 @@ These are the leaves with status `current`, `current_group` or `current_with_cav
 8. Variable rate assumptions: Midway 3.00% (p.60 note 5). The O'Hare financial statement imputes variable rates at the 12/31/2025 effective rate (FS p.51). The O'Hare OS table does not state a variable rate assumption in the notes I read.
 9. PFC and CFC: 2016F, 2017B, 2020C, 2020E, 2024E, 2024F and 2025D carry a PFC pledge (ohare_2026CD_OS p.190 note 19), 2026D a subordinate PFC pledge. The airport consultant shows PFCs of $111,658K applied to 2026 GARB debt service (Table B-4, p.320), so a part of the O'Hare ordinance line is paid with PFCs and not airline rates. This was not allocated by series.
 10. Numbers from `raw/` are not committed (gitignored); rerun the fetch to rebuild.
+
+## 6. Round 2: more series split out of GO, Water and Sewer
+
+Same method and checks as above (`scripts/bonds_parse.py`, `parse_go_2026ab`, `parse_water_round2`, `parse_sewer_round2`). Each parser stops if a printed column does not add to its printed total within $5. New rows are in the flat `series` list of `data/city_bond_series_2026.json` (104 rows, up from 87).
+
+### GO (newest statement go_2026AB_OS.pdf, p.24 and p.26)
+
+Table 4 (p.26) prints debt service on ALL outstanding GO bonds, but only by type (Series 2026, Tax Levy, Alternate Revenue), not by series. Table 3 (p.24) lists balances by series. Two series can be isolated by matching the two tables:
+
+| Series | 2026 P+I | Basis |
+|---|---:|---|
+| 2010B MSAC (BAB) | 6,682,387 (principal 6,240,000, interest 442,387) | The Alternate Revenue column total principal ($8,480,000) equals the Table 3 balance of this one series. Row 2027, p.26. |
+| Taxable Project 2017B | 12,593,844 (principal 11,765,000, interest 828,844) | Table 3 balance $11,765,000 with final maturity 1/1/2027, so all of it is in the window. Interest is DERIVED (balance x 7.045% coupon from GO_2017A&B_OS cover), not printed. Status `current_with_caveat`. |
+
+Moved into series: **$19,276,231**. Columns on p.26 add to the printed row total within $5 (Series 2026 + Tax Levy + Alternate Revenue = GO total, and principal + interest = total).
+
+Tax Levy Bonds ($247.0M interest and $88.7M principal in the 2027 row) are not split by series. No statement in `raw/` prints a current per-series column for 2012B, 2014B, 2015B, 2015C, 2017A, 2019A, 2020A (the old tables are stale after the 2025 tenders and refundings, see section 3, and the 2012B and 2014B layouts also differ). GO coverage after this round: file $54,506,741 plus the 6 groups in `debt_2026.json` $142,966,800 equals $197,473,541 of the $417,519,137 ordinance line. **$220,045,596 is not split.**
+
+### Water (W26 OS, which is water_2026ABC_OS.pdf and also raw/pensions_debt/os/ILChicago04a-FIN)
+
+The 2026 OS prints only one combined "outstanding" column (p.36) and a series list with balances (p.33), not a per-series schedule. It does not split by series. The series were recovered from the older statements that created them:
+
+| Series | 2026 | Basis |
+|---|---:|---|
+| 2010B (BAB) | 16,855,000 | Term bond, interest only until 2031. $250,000,000 x 6.742% (cover). |
+| 2010C (QECB) | 12,970,349 | Principal $11,000,000 (sinking fund, 2010 OS p.22) plus interest $29,665,000 x 6.642% (cover). |
+| 2017 (principal only) | 19,425,000 | 2017 OS table and cover. The 2026 tender removed only 2029 to 2036 maturities (Appendix I, p.170). |
+
+2010B plus 2010C equals the printed "Series 2010 Bonds" column in the 2010 OS (p.34, row 2026, $29,825,349) within $5. Neither series is in the 2026 refunded or tendered lists. Gross of the federal subsidies. Moved into series: **$49,250,349**. The Water residual falls from $118,062,905 to **$68,812,556**, now holding 2001, 2004, 2016A-1, 2017 interest ($7.0M printed in the 2017 OS, not used because the May 2026 tender changed it by an unstated amount), 2017-2 and the 2023C WIFIA loan. Not split: 2017-2 and 2016A-1 and 2004 changed in the 2026 tender and refunding, so their old statements are upper bounds only. The 2000 Series is refunded in November 2026 and appears in no 2026 outstanding column.
+
+Reconciliation: the sum of all Water lines still equals the OS total debt service requirement $233,775,541, which is $519,099 (0.2%) above the ordinance $233,256,442. Unchanged.
+
+### Sewer (newest Wastewater OS on 1345 is 2024B, already local as wastewater_2024B_OS.pdf)
+
+`bonds_fetch.py list wastewater` shows no later OS than 2024-11-20 (Refunding Series 2024B). The 2024B OS p.23 lists the outstanding series: senior 1998A only, second lien 2001, 2008C, 2010B, 2015, 2017A, 2017B, 2023A, 2023B, 2024A, 2024B.
+
+| Series | 2026 | Basis |
+|---|---:|---|
+| 2017A | 10,873,213 (principal 3,170,000) | 2017AB OS p.28, row 2026. |
+| 2017B | 16,054,250 (principal 9,545,000) | Same row. |
+| 2010B (BAB) | 17,250,000 (interest only) | 2010AB OS p.32 printed column, equals $250,000,000 x 6.9%. |
+| 1998A (senior lien) | 24,680,000 | The senior column in the 2024B OS (p.24) is the only senior series (p.23). $595,000 + 3 x $24,680,000 equals the printed senior total $74,635,000. Principal and interest are not split. The annual amount exceeds the $16.4M balance, so the column includes accreted interest (an inference). |
+
+Checks: the 2017AB row adds across (17A + 17B + outstanding = second lien total, plus senior = total). The 2017A and 2017B principal columns from fiscal 2024 on sum to $168,135,000 and $153,340,000, the balances in the 2024B OS p.23, and sewer_FS2025 p.41 shows the later $165,260K and $139,270K. So neither was refunded since. Moved into series: **$68,857,463** ($44,177,463 from the second lien residual and $24,680,000 from the senior aggregate). The Sewer residual falls from $59,748,907 to **$15,571,444**, now holding 2001, 2015 and any 2008C remnant.
+
+2008C defeasance: 2008C had $25,835,000 left after the 2024B refunding and $182,475K was defeased in 2025 (sewer_FS2025 p.44). It is not extracted as a series here. It can only sit in the $15.6M residual, which is therefore overstated by an unknown 2008C amount. Series 2015 was not split out: its OS labels rows by payment calendar year (the row 2026 holds the January 1 2026 maturity of $3,200,000), which does not match the fiscal convention of the 2024B table, so a clean fiscal 2026 figure is not printed. 2001 has no debt service table in its OS text.
+
+Reconciliation: sum of all Sewer lines still equals the OS total $165,855,677. The ordinance is $158,428,680, so the OS is $7,426,997 (4.7%) higher. This gap probably comes from 2008C debt service in the OS table, but that is not shown by any document.
+
+### Dollars moved in Round 2
+
+| Credit | Moved into series | Series-level total now | Residual or unsplit |
+|---|---:|---:|---:|
+| GO | 19,276,231 | 54,506,741 (+142,966,800 in debt_2026.json) | 220,045,596 |
+| Water | 49,250,349 | 122,917,940 | 68,812,556 + 42,045,045 IEPA |
+| Sewer | 68,857,463 | 117,750,603 | 15,571,444 + 32,533,630 IEPA |
+| **Total** | **137,384,043** | | |
+
+Total series-level dollars in the file: $1,093,318,017 (was $955,933,974).
+
+### Round 2 gaps
+
+1. GO Tax Levy Bonds (about $336M of the 2027 row) are not split by series. No usable current per-series column exists in `raw/`.
+2. GO 2017B interest is derived (balance x coupon), not printed.
+3. Water 2017-2, 2016A-1, 2004 and 2001, and the WIFIA loan, are still in the residual.
+4. Sewer 2008C defeasance is not resolved. Sewer 2015 and 2001 are not split.
+5. Sewer 1998A principal and interest are not split.
