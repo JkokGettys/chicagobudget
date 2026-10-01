@@ -238,7 +238,7 @@ for gk, lines in pending.items():
     big_budget = sum(x[0] for x in lines)
     pieces = [{"name": f"{i[0][:48]} (contract {i[1] or 'direct voucher'}), {PAYSHORT}", "amount": round(i[2])} for i in sorted(its, key=lambda i: -i[2]) if i[2] >= T]
     resid = max(0.0, big_budget * (1 - min(B, paid) / B))
-    if resid >= T: pieces.append({"name": "budget with no matched 2025 payee (group residual)", "amount": round(resid)})
+    if resid >= T: pieces.append({"name": f"budget with no matched payee in {PAYSHORT} (group residual)", "amount": round(resid)})
     for n, (a, path, ac, _, _) in enumerate(lines):
         first = n == 0
         add("City", path, a, f"payments s4vu-giwb {PAYLABEL}, duplicates removed, joined to contracts rsxa-ify5 (data/city_vendors_items_{VENDOR_BASIS}.json)", "split_partial",
@@ -440,19 +440,25 @@ if os.path.exists(bp):
                         if l["status"] != "accepted_single_obligation" and _rest < T: l["status"] = "accepted_single_obligation"
                         l["split_source"] = "data/city_bond_series_2026.json (other agent): %d series, $%.1fM of $%.1fM" % (len(ser), tot_ / 1e6, abs(l["amount"]) / 1e6)
                         l["round3_pieces"] = [{"name": n, "amount": a} for n, a in ser]
-                        l["why_cant_go_deeper"] = "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+                        l["why_cant_go_deeper"] = ("This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself." if l["status"] == "accepted_single_obligation"
+                                                   else "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026.")
                         used += 1
     # AUDIT FIX: Midway publishes one combined principal+interest figure per series. Compare it with the sum of the Midway interest and principal leaves.
-    for (fd, k_), ser in got.items():
-        if k_ != "pi": continue
+    # AUDIT FIX 2 (re-audit 2026-10-01): bond round 2 added Sewer 1998A as a combined "principal_and_interest" row, and this block then overwrote the two
+    # Sewer leaves with that one series (Sewer 2017A/2017B/2023/2024 pieces vanished, remainder showed $89.4M). The comparison now uses ALL series of the fund
+    # (interest + principal + combined rows) against the sum of the fund's interest and principal lines.
+    for fd in sorted({fd for (fd, k_) in got if k_ == "pi"}):
+        ser = [x for (f2, k_), v in got.items() if f2 == fd and k_ in ("pi", "interest", "principal") for x in v]
         ml = [l for l in leaves if l["budget"] == "City" and f"> {fd} >" in l["path"] and any(f"> {a} " in l["path"] for a in ("0902", "0912"))]
         tot_ = sum(a for _, a in ser); line_tot = sum(abs(l["amount"]) for l in ml); rest = line_tot - tot_
+        short = {"Chicago Midway Airport Fund": "Midway"}.get(fd, fd.replace(" Fund", ""))
         for i, l in enumerate(sorted(ml, key=lambda l: l["path"])):
             l["status"] = "accepted_single_obligation" if rest < T else "split_partial"
-            l["remaining_pieces_over_10m"] = [] if (rest < T or i) else [{"name": "Midway series not in file (2014B, 2014C, 2018A) plus ordinance gap, shared by principal and interest lines", "amount": round(rest)}]
-            l["split_source"] = "data/city_bond_series_2026.json: %d Midway series, combined principal+interest $%.1fM of $%.1fM (both lines)" % (len(ser), tot_ / 1e6, line_tot / 1e6)
+            l["remaining_pieces_over_10m"] = [] if (rest < T or i) else [{"name": "%s series not in file%s, shared by principal and interest lines" % (short, " (2014B, 2014C, 2018A) plus ordinance gap" if short == "Midway" else ""), "amount": round(rest)}]
+            l["split_source"] = "data/city_bond_series_2026.json: %d %s series, combined principal+interest $%.1fM of $%.1fM (both lines)" % (len(ser), short, tot_ / 1e6, line_tot / 1e6)
             l["round3_pieces"] = [{"name": n, "amount": a} for n, a in ser]
-            l["why_cant_go_deeper"] = "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+            l["why_cant_go_deeper"] = ("This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself." if l["status"] == "accepted_single_obligation"
+                                       else "Several older bonds share this line, and the public statements we found do not print each bond's share for 2026.")
             used += 1
     round3_log["bond_series"] = {"file": "data/city_bond_series_2026.json", "rows": len(rows_), "leaves_updated": used}
 else:
@@ -489,7 +495,11 @@ for l in leaves:
     pcs = over_after(l, "team")
     names = [p["name"] for p in l["remaining_pieces_over_10m"]] if l["status"] == "split_partial" else [None] * len(pcs)
     for n, x in zip(names or [None] * len(pcs), pcs):
-        remaining.append({"budget": l["budget"], "amount": round(x), "status": l["status"], "leaf_path": l["path"], "piece": n, "why_cant_go_deeper": l["why_cant_go_deeper"]})
+        # AUDIT FIX (re-audit 2026-10-01): the "no matched payee" residual shared the leaf's "a few big companies each get one large contract payment" sentence, which is wrong for
+        # money with no payments at all behind it. Give those pieces their own sentence.
+        why_ = l["why_cant_go_deeper"]
+        if n and "no matched payee" in n: why_ = "The City set this money aside for contracts, but no payment so far this year matches it to a company, so there is no one to name yet."
+        remaining.append({"budget": l["budget"], "amount": round(x), "status": l["status"], "leaf_path": l["path"], "piece": n, "why_cant_go_deeper": why_})
 remaining.sort(key=lambda r: -r["amount"])
 summary["remaining_over_10m"] = {"count": len(remaining), "dollars": sum(r["amount"] for r in remaining)}
 round3_log["remaining_top"] = remaining[:40]
