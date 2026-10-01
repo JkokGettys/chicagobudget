@@ -54,7 +54,7 @@ Share of dollars by the size of the box where clicking stops:
 2. Each root equals the official printed total.
 3. Every box has a basis and a source. Every leaf of $10M or more has a why-sentence.
 4. Actual payments are never inside budget amounts. They are only side info.
-5. **No individual names.** Vendor payments to individual people are pooled per department ("Payments to N individual people"). Job titles with fewer than 5 positions in a CPS unit are pooled. The build scans its output against the private name lists in `data/people/` (gitignored) and fails on any match.
+5. **No individual names.** Every vendor payment row is kept and visible. When the payee is an individual person (refunds, reimbursements, small grants, jurors, sole practitioners), the name is replaced by "Individual (name hidden)" and the person's name is scrubbed from the description, while the amount, contract, category and payment count stay. Business and organization names are shown. `build/payee.py` decides once per payee: names with business words (INC, LLC, SERVICES, CENTER...), a City contract anywhere, or a single trade-name word count as businesses. "LAST, FIRST" names and anyone on the City employee roster always count as people. When unsure, it hides the name. Job titles with fewer than 5 positions in a CPS unit are pooled. The build scans its output against the private name lists in `data/people/` (gitignored) and against every hidden payee name, and fails on any match.
 
 ## Known judgment calls
 
