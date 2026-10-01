@@ -1274,6 +1274,41 @@
    },
    "printed_upper_bound_principal": 11415000,
    "printed_upper_bound_interest": 6531000
+  },
+  {
+   "series": "GO Taxable Series 2010B (MSAC Program, BAB)",
+   "credit": "go",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 6682387,
+   "principal": 6240000,
+   "interest": 442387,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "printed in table",
+   "status": "current",
+   "note": "Alternate Revenue Bonds column of Table 4 is this one series: its total principal $8480000 equals the Table 3 balance. Row 'Year Ending January 1 2027' holds the June 1 and December 1 2026 payments (table note). Interest is gross of the federal BAB subsidy.",
+   "cite": {
+    "doc": "go_2026AB_OS.pdf",
+    "pdf_page": 26,
+    "row": "2027 -- $23,542,227 $ 88,692,000 $ 247,043,698 $6,240,000 $442,387 $94,932,000 $271,028,312 $365,960,312"
+   }
+  },
+  {
+   "series": "GO Taxable Project Series 2017B",
+   "credit": "go",
+   "window": "payments Jan 2 2026 through Jan 1 2027",
+   "total_pi": 12593844,
+   "principal": 11765000,
+   "interest": 828844,
+   "interest_is_derived_as_total_minus_principal": true,
+   "principal_basis": "Table 3 balance with final maturity 1/1/2027",
+   "status": "current_with_caveat",
+   "note": "Principal is the Table 3 balance, final maturity 1/1/2027, so all of it falls in the window. Interest is DERIVED, not printed: balance x 7.045% coupon (GO_2017A&B_OS cover, term bond due 1/1/2029) for two semiannual payments (Jul 1 2026 and Jan 1 2027), assuming no further tender. Ties to no printed interest figure.",
+   "cite": {
+    "doc": "go_2026AB_OS.pdf",
+    "pdf_page": 24,
+    "row": "Taxable Project Series 2017B 11,765,000 1/1/2027"
+   },
+   "interest_derived_from": "11,765,000 x 7.045%"
   }
  ],
  "ohare_parse_checks": [
@@ -2500,6 +2535,58 @@
    },
    "kind": "interest",
    "amount": 29585510
+  },
+  {
+   "series": "GO Taxable Series 2010B (MSAC Program, BAB)",
+   "fund": "Bond Redemption and Interest Series Fund",
+   "credit": "go",
+   "status": "current",
+   "cite": {
+    "doc": "go_2026AB_OS.pdf",
+    "pdf_page": 26,
+    "row": "2027 -- $23,542,227 $ 88,692,000 $ 247,043,698 $6,240,000 $442,387 $94,932,000 $271,028,312 $365,960,312"
+   },
+   "kind": "principal",
+   "amount": 6240000
+  },
+  {
+   "series": "GO Taxable Series 2010B (MSAC Program, BAB)",
+   "fund": "Bond Redemption and Interest Series Fund",
+   "credit": "go",
+   "status": "current",
+   "cite": {
+    "doc": "go_2026AB_OS.pdf",
+    "pdf_page": 26,
+    "row": "2027 -- $23,542,227 $ 88,692,000 $ 247,043,698 $6,240,000 $442,387 $94,932,000 $271,028,312 $365,960,312"
+   },
+   "kind": "interest",
+   "amount": 442387
+  },
+  {
+   "series": "GO Taxable Project Series 2017B",
+   "fund": "Bond Redemption and Interest Series Fund",
+   "credit": "go",
+   "status": "current_with_caveat",
+   "cite": {
+    "doc": "go_2026AB_OS.pdf",
+    "pdf_page": 24,
+    "row": "Taxable Project Series 2017B 11,765,000 1/1/2027"
+   },
+   "kind": "principal",
+   "amount": 11765000
+  },
+  {
+   "series": "GO Taxable Project Series 2017B",
+   "fund": "Bond Redemption and Interest Series Fund",
+   "credit": "go",
+   "status": "current_with_caveat",
+   "cite": {
+    "doc": "go_2026AB_OS.pdf",
+    "pdf_page": 24,
+    "row": "Taxable Project Series 2017B 11,765,000 1/1/2027"
+   },
+   "kind": "interest",
+   "amount": 828844
   }
  ],
  "series_total_by_credit": {
@@ -2507,6 +2594,6 @@
   "midway": 125242814,
   "water": 73667591,
   "wastewater": 48893140,
-  "go": 35230510
+  "go": 54506741
  }
 }

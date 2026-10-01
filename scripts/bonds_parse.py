@@ -257,6 +257,41 @@ def parse_go_older():
     return out
 
 
+
+# ---------------------------------------------------------------- GO 2026AB all-outstanding table
+def parse_go_2026ab():
+    """go_2026AB_OS Table 4 (p.26) prints debt service on ALL outstanding GO bonds, but by TYPE
+    (Series 2026, Tax Levy, Alternate Revenue), not by series. Table 3 (p.24) lists outstanding
+    principal by series. Two series can be isolated by matching the two:
+      - Alternate Revenue column = Series 2010B (MSAC) only: its total principal $8,480,000 equals
+        the Table 3 balance of that one series.
+      - Series 2017B is a term bond with final maturity 1/1/2027 (Table 3), so its whole $11,765,000
+        falls in the window. Its interest is not printed on its own: derived as balance x coupon.
+    """
+    pdf = "go_2026AB_OS.pdf"
+    pages = pdf_text(pdf)
+    toks, line = row_tokens(pages[26], 2027)
+    cols = ["s26_p", "s26_i", "tl_p", "tl_i", "ar_p", "ar_i", "go_p", "go_i", "total"]
+    if len(toks) != len(cols):
+        raise SystemExit("go_2026AB p26: %d tokens: %s" % (len(toks), line))
+    v = dict(zip(cols, toks))
+    if abs(v["s26_p"] + v["tl_p"] + v["ar_p"] - v["go_p"]) > 5 or abs(v["s26_i"] + v["tl_i"] + v["ar_i"] - v["go_i"]) > 5 \
+            or abs(v["go_p"] + v["go_i"] - v["total"]) > 5:
+        raise SystemExit("go_2026AB p26 columns do not sum: %r" % v)
+    tot = [l for l in pages[26].split("\n") if l.startswith("Total $")][0]
+    tt = [to_num(t) for t in TOK.findall(tot[5:].replace("$ ", "$"))]
+    # Alternate Revenue total principal (column 5) must equal Table 3 balance of the 2010B MSAC series
+    t3 = pages[24]
+    msac = [l for l in t3.split("\n") if "2010B (MSAC Program)" in l][0]
+    msac_bal = to_num(re.findall(r"[\d,]{9,}", msac)[0])
+    b17 = [l for l in t3.split("\n") if "Taxable Project Series 2017B" in l][0]
+    b17_bal = to_num(re.findall(r"[\d,]{9,}", b17)[0])
+    if tt[4] != msac_bal:
+        raise SystemExit("alt revenue total %d != MSAC balance %d" % (tt[4], msac_bal))
+    if not b17.rstrip().endswith("1/1/2027"):
+        raise SystemExit("2017B final maturity is not 1/1/2027: %s" % b17)
+    return {"doc": pdf, "row": line, "values": v, "totals": tt, "msac_balance": msac_bal, "b2017_balance": b17_bal}
+
 # ---------------------------------------------------------------- Midway, Water, Sewer
 def row_after(pdf_frag, page, year, cols, label, checks):
     """Parse one table row and verify each (parts, whole) identity within $5."""
@@ -461,6 +496,19 @@ def build():
                            "printed in table (row labelled 2026 holds payments due Jan 1 2027)",
                            None if clean else {"printed_upper_bound_principal": g["principal_2027"], "printed_upper_bound_interest": g["interest_2027"]}))
     leaves += go_out
+    # ---- GO series isolated from the 2026AB all-outstanding table (type columns tied to Table 3 balances)
+    g26 = parse_go_2026ab()
+    gv = g26["values"]
+    leaves.append(leaf("GO Taxable Series 2010B (MSAC Program, BAB)", "go", gv["ar_p"] + gv["ar_i"], gv["ar_p"], g26["doc"], 26,
+                       g26["row"], "current",
+                       "Alternate Revenue Bonds column of Table 4 is this one series: its total principal $%d equals the Table 3 balance. Row 'Year Ending January 1 2027' holds the June 1 and December 1 2026 payments (table note). Interest is gross of the federal BAB subsidy." % g26["msac_balance"],
+                       "printed in table"))
+    c17 = round(g26["b2017_balance"] * 0.07045)
+    leaves.append(leaf("GO Taxable Project Series 2017B", "go", g26["b2017_balance"] + c17, g26["b2017_balance"], g26["doc"], 24,
+                       "Taxable Project Series 2017B 11,765,000 1/1/2027", "current_with_caveat",
+                       "Principal is the Table 3 balance, final maturity 1/1/2027, so all of it falls in the window. Interest is DERIVED, not printed: balance x 7.045% coupon (GO_2017A&B_OS cover, term bond due 1/1/2029) for two semiannual payments (Jul 1 2026 and Jan 1 2027), assuming no further tender. Ties to no printed interest figure.",
+                       "Table 3 balance with final maturity 1/1/2027",
+                       {"interest_derived_from": "11,765,000 x 7.045%"}))
     # ---- reconciliations
     cur = lambda c: sum(l["total_pi"] for l in leaves if l["credit"] == c and l.get("total_pi") is not None and l["status"] in ("current", "current_group", "current_with_caveat"))
     allc = lambda c: sum(l["total_pi"] for l in leaves if l["credit"] == c and l.get("total_pi") is not None)

@@ -7,7 +7,7 @@
    "after_strict_count": 165,
    "after_strict_dollars": 11717502814,
    "after_team_count": 159,
-   "after_team_dollars": 5103521974.0,
+   "after_team_dollars": 5084245743.0,
    "by_status": {
     "split_partial": {
      "count": 95,
@@ -98,7 +98,7 @@
   },
   "remaining_over_10m": {
    "count": 216,
-   "dollars": 7245251622
+   "dollars": 7225975391
   }
  },
  "round3": {
@@ -286,7 +286,7 @@
   ],
   "bond_series": {
    "file": "data/city_bond_series_2026.json",
-   "rows": 87,
+   "rows": 91,
    "leaves_updated": 10
   },
   "parks_inputs": [
@@ -321,14 +321,6 @@
     "leaf_path": "CPS > Chief Executive Officer Total > Education General - City Wide > General Education Fund > Vacancy Factor > A58110 Budget Only - Teacher Salaries - Regular",
     "piece": null,
     "why_cant_go_deeper": "This is a planned cut that offsets spending counted elsewhere, so there is nothing to itemize."
-   },
-   {
-    "budget": "City",
-    "amount": 126445000,
-    "status": "split_partial",
-    "leaf_path": "City > Local > Bond Redemption and Interest Series Fund > Finance General > Finance General > 0912 For Payment of Bonds",
-    "piece": "bond series not in data/city_bond_series_2026.json",
-    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
    },
    {
     "budget": "City",
@@ -372,9 +364,17 @@
    },
    {
     "budget": "City",
-    "amount": 112876827,
+    "amount": 111605596,
     "status": "split_partial",
     "leaf_path": "City > Local > Bond Redemption and Interest Series Fund > Finance General > Finance General > 0902 For Interest on Bonds",
+    "piece": "bond series not in data/city_bond_series_2026.json",
+    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+   },
+   {
+    "budget": "City",
+    "amount": 108440000,
+    "status": "split_partial",
+    "leaf_path": "City > Local > Bond Redemption and Interest Series Fund > Finance General > Finance General > 0912 For Payment of Bonds",
     "piece": "bond series not in data/city_bond_series_2026.json",
     "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
    },
@@ -647,14 +647,6 @@
   },
   {
    "budget": "City",
-   "amount": 126445000,
-   "status": "split_partial",
-   "leaf_path": "City > Local > Bond Redemption and Interest Series Fund > Finance General > Finance General > 0912 For Payment of Bonds",
-   "piece": "bond series not in data/city_bond_series_2026.json",
-   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
-  },
-  {
-   "budget": "City",
    "amount": 126118674,
    "status": "split_partial",
    "leaf_path": "City > Grants > Federal Grant Fund > Chicago Department of Transportation > DOT - FTA - Federal Transit Formula Grants (20.507) > 909A Reserve Balance",
@@ -695,9 +687,17 @@
   },
   {
    "budget": "City",
-   "amount": 112876827,
+   "amount": 111605596,
    "status": "split_partial",
    "leaf_path": "City > Local > Bond Redemption and Interest Series Fund > Finance General > Finance General > 0902 For Interest on Bonds",
+   "piece": "bond series not in data/city_bond_series_2026.json",
+   "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
+  },
+  {
+   "budget": "City",
+   "amount": 108440000,
+   "status": "split_partial",
+   "leaf_path": "City > Local > Bond Redemption and Interest Series Fund > Finance General > Finance General > 0912 For Payment of Bonds",
    "piece": "bond series not in data/city_bond_series_2026.json",
    "why_cant_go_deeper": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself."
   },
@@ -4630,12 +4630,12 @@
    "budget": "City",
    "path": "City > Local > Bond Redemption and Interest Series Fund > Finance General > Finance General > 0902 For Interest on Bonds",
    "amount": 285429137,
-   "split_source": "data/city_bond_series_2026.json (other agent): 7 series, $172.6M of $285.4M",
+   "split_source": "data/city_bond_series_2026.json (other agent): 9 series, $173.8M of $285.4M",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
      "name": "bond series not in data/city_bond_series_2026.json",
-     "amount": 112876827
+     "amount": 111605596
     }
    ],
    "note": "$143.0M of $285.4M sits in 6 series groups, the rest is older series. Source to try: GO series debt-service tables per series on cityofchicagoinvestors.com / EMMA.",
@@ -4644,6 +4644,14 @@
     {
      "name": "GO 2021A and 2021B",
      "amount": 29585510
+    },
+    {
+     "name": "GO Taxable Series 2010B (MSAC Program, BAB)",
+     "amount": 442387
+    },
+    {
+     "name": "GO Taxable Project Series 2017B",
+     "amount": 828844
     },
     {
      "name": "GO Taxable 2026A and 2026B",
@@ -4987,12 +4995,12 @@
    "budget": "City",
    "path": "City > Local > Bond Redemption and Interest Series Fund > Finance General > Finance General > 0912 For Payment of Bonds",
    "amount": 132090000,
-   "split_source": "data/city_bond_series_2026.json (other agent): 1 series, $5.6M of $132.1M",
+   "split_source": "data/city_bond_series_2026.json (other agent): 3 series, $23.6M of $132.1M",
    "status": "split_partial",
    "remaining_pieces_over_10m": [
     {
      "name": "bond series not in data/city_bond_series_2026.json",
-     "amount": 126445000
+     "amount": 108440000
     }
    ],
    "note": "Series-level debt service for O'Hare, Midway, Water and Sewer series is on EMMA (msrb.org), not reachable by script.",
@@ -5001,6 +5009,14 @@
     {
      "name": "GO 2021A and 2021B",
      "amount": 5645000
+    },
+    {
+     "name": "GO Taxable Series 2010B (MSAC Program, BAB)",
+     "amount": 6240000
+    },
+    {
+     "name": "GO Taxable Project Series 2017B",
+     "amount": 11765000
     }
    ]
   },
