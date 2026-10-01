@@ -1,0 +1,1947 @@
+{
+ "generated_by": "scripts/pensions_debt_build.py",
+ "scope": "City of Chicago contributions to its four pension funds, 2026 budget, with 12/31/2025 actuarial valuation data",
+ "units": "US dollars unless noted",
+ "timing_note": "The City budgets each year's contribution in the same year as the property tax levy and pays it the following year (ACFR p.92). So the 2026 budget line is 'levy year 2026', paid to the funds in 2027. What the funds receive in calendar 2026 is levy year 2025 (see each valuation's 'statutory_contribution_payable_2026').",
+ "totals": {
+  "budget_2026_total": 2843221414,
+  "statutory": 2583594734,
+  "advance": 259626680,
+  "loss_in_collection_reserve_for_pension_levies": 56477077,
+  "retirees_and_beneficiaries_all_funds": 49768,
+  "active_members_all_funds": 58472,
+  "cite_budget": {
+   "doc": "ORDINANCE2026",
+   "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+   "pdf_page": 13
+  }
+ },
+ "funding_by_source_all_funds": {
+  "total_revenue_before_loss_reserve": 2899698491,
+  "by_source": {
+   "property tax levy": 1416557000,
+   "Corporate Fund (general revenue)": 907784727,
+   "water-sewer utility tax": 222357381,
+   "O'Hare Airport Fund": 125212586,
+   "Water Fund (water rates)": 91887492,
+   "casino gaming tax": 44610000,
+   "Sewer Fund (sewer charges)": 33532950,
+   "911 surcharge fund": 28985604,
+   "Midway Airport Fund": 28770751
+  },
+  "note": "Includes the allocation of each city fund to the pension funds. Corporate Fund $907,784,727 matches 'Pension Costs $907.8M' in the Budget Forecast 2027 (p.14) and the Corporate Fund pension column in ordinance Summary C. Casino revenue goes to PABF/FABF only.",
+  "cite": {
+   "doc": "ORDINANCE2026",
+   "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+   "pdf_page": 35
+  }
+ },
+ "meabf_cps_share": {
+  "share_of_statutory_employer_contribution_pct": 49,
+  "share_of_active_members_pct": 64,
+  "city_budget_assumes_cps_reimbursement_2026": 0,
+  "note": "CPS non-teacher employees are about 64% of active MEABF members. The Forecast estimates CPS employees drive ~49% of the MEABF statutory employer contribution. The City's 2026 budget assumes NO CPS reimbursement (Overview p.36), so the City carries that share in the $965.0M statutory line.",
+  "cite": [
+   {
+    "doc": "FORECAST2027",
+    "url": "https://www.chicago.gov/content/dam/city/depts/obm/2027_Budget/Budget_Forecast/2027_Chicago_Budget_Forecast.pdf",
+    "pdf_page": 22
+   },
+   {
+    "doc": "OVERVIEW2026",
+    "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+    "pdf_page": 36,
+    "note": "No Board of Education reimbursement budgeted in 2026"
+   }
+  ]
+ },
+ "funds": {
+  "PABF": {
+   "name": "Policemen's Annuity and Benefit Fund",
+   "actuary": "Gabriel, Roeder, Smith & Company",
+   "budget_2026": {
+    "statutory_contribution": 1040273100,
+    "advance_contribution": 72249824,
+    "total": 1112522924,
+    "cite_lines": {
+     "doc": "ORDINANCE2026",
+     "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+     "pdf_page": 534,
+     "note": "appropriation lines 0976 and 097A, Finance General"
+    },
+    "loss_in_collection_reserve_in_levy": 32541000,
+    "cite": {
+     "doc": "ORDINANCE2026",
+     "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+     "pdf_page": 13,
+     "note": "Summary C pension funds column; dataset 6694-f78c"
+    },
+    "funding_sources_adopted_ordinance": {
+     "items": [
+      {
+       "source": "Property Tax Levy (Net Abatement)",
+       "amount": 813518000
+      },
+      {
+       "source": "Corporate Fund Pension Allocation",
+       "amount": 206083096
+      },
+      {
+       "source": "Midway Fund Pension Allocation",
+       "amount": 5323264
+      },
+      {
+       "source": "O'Hare Fund Pension Allocation",
+       "amount": 16155269
+      },
+      {
+       "source": "Casino Public Safety Pension Fund",
+       "amount": 31734471
+      },
+      {
+       "source": "Corporate Fund Advance Pension Payment",
+       "amount": 70717328
+      },
+      {
+       "source": "Midway Fund Advance Pension Payment",
+       "amount": 371816
+      },
+      {
+       "source": "O'Hare Fund Advance Pension Payment",
+       "amount": 1160680
+      }
+     ],
+     "total_revenue": 1145063924,
+     "cite": {
+      "doc": "ORDINANCE2026",
+      "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+      "pdf_page": 36,
+      "note": "Detail of Revenue Estimates"
+     }
+    }
+   },
+   "valuation_12_31_2025": {
+    "report": {
+     "doc": "PABF_VAL2025",
+     "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+     "pdf_page": 1,
+     "note": "Actuarial Valuation Report for the Year Ending December 31, 2025, dated May 22, 2026"
+    },
+    "retirees_and_beneficiaries": {
+     "total": 14895,
+     "by_type": {
+      "Service Retirement Annuities": 11271,
+      "Widow Annuities": 3068,
+      "Children's Annuities": 166,
+      "Ordinary Disability Benefit": 29,
+      "Occupational Disease Disability Benefit": 18,
+      "Duty Disability Benefit": 177,
+      "Children's Disability Benefit": 101,
+      "Widows' Compensation Annuities": 65
+     },
+     "annual_benefits": 1032071723,
+     "avg_annual_benefit_all_derived": 69290,
+     "cite": {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 44,
+      "note": "Exhibit B"
+     }
+    },
+    "service_retirees": {
+     "count": 11271,
+     "annual_payments": 914683048,
+     "avg_annual_benefit_derived": 81154,
+     "avg_annual_benefit_as_printed_exhibit_N": 81154,
+     "cite": [
+      {
+       "doc": "PABF_VAL2025",
+       "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+       "pdf_page": 50,
+       "note": "Exhibit E"
+      },
+      {
+       "doc": "PABF_VAL2025",
+       "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+       "pdf_page": 62,
+       "note": "Exhibit N"
+      }
+     ]
+    },
+    "active_members": {
+     "count": 11639,
+     "inactive_members": 1214,
+     "avg_annual_salary": 119934,
+     "cite": [
+      {
+       "doc": "PABF_VAL2025",
+       "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+       "pdf_page": 43,
+       "note": "Exhibit A"
+      },
+      {
+       "doc": "PABF_VAL2025",
+       "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+       "pdf_page": 59,
+       "note": "Exhibit K"
+      }
+     ]
+    },
+    "funded_ratio_actuarial_value": 0.2608,
+    "funded_ratio_market_value": 0.2666,
+    "actuarial_accrued_liability": 18729636000,
+    "market_value_of_assets": 4993425000,
+    "actuarial_value_of_assets": 4884050000,
+    "unfunded_liability_actuarial_value": 13845585000,
+    "unfunded_liability_market_value": 13736211000,
+    "cite_funded": [
+     {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 12,
+      "note": "Summary of Actuarial Valuation Results"
+     },
+     {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 31,
+      "note": "Table 5 / funding history"
+     }
+    ],
+    "statutory_contribution_levy_year_2026": {
+     "amount": 1040273100,
+     "payable_year": 2027,
+     "cite": {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 12
+     }
+    },
+    "statutory_contribution_levy_year_2027": {
+     "amount": 989061006,
+     "payable_year": 2028,
+     "cite": {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 12
+     }
+    },
+    "statutory_contribution_payable_2026": {
+     "amount": 1042582000,
+     "levy_year": 2025,
+     "cite": {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 13
+     }
+    },
+    "actuarially_determined_contribution_plan_year_2026": {
+     "amount": 1416650000,
+     "cite": {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 12
+     },
+     "shortfall_vs_statute": 376376900
+    },
+    "supplemental_payments_note": "City paid above-statute amounts: $89.5M (2023), $79.8M (2024), $67.4M (2025), $36.1M (2026 to date)",
+    "service_retirees_by_age": {
+     "cite": {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 50,
+      "note": "Exhibit E"
+     },
+     "rows": [
+      {
+       "age": "Under 50",
+       "male_n": 3,
+       "male_payments": 56113,
+       "female_n": 2,
+       "female_payments": 32163,
+       "total_n": 5,
+       "total_payments": 88276
+      },
+      {
+       "age": "50",
+       "male_n": 28,
+       "male_payments": 1827055,
+       "female_n": 7,
+       "female_payments": 530643,
+       "total_n": 35,
+       "total_payments": 2357698
+      },
+      {
+       "age": "51",
+       "male_n": 39,
+       "male_payments": 2403225,
+       "female_n": 13,
+       "female_payments": 827430,
+       "total_n": 52,
+       "total_payments": 3230655
+      },
+      {
+       "age": "52",
+       "male_n": 75,
+       "male_payments": 5365120,
+       "female_n": 19,
+       "female_payments": 1313993,
+       "total_n": 94,
+       "total_payments": 6679113
+      },
+      {
+       "age": "53",
+       "male_n": 65,
+       "male_payments": 4555370,
+       "female_n": 18,
+       "female_payments": 1199630,
+       "total_n": 83,
+       "total_payments": 5755000
+      },
+      {
+       "age": "54",
+       "male_n": 99,
+       "male_payments": 6753871,
+       "female_n": 25,
+       "female_payments": 1518946,
+       "total_n": 124,
+       "total_payments": 8272817
+      },
+      {
+       "age": "55",
+       "male_n": 251,
+       "male_payments": 21383406,
+       "female_n": 69,
+       "female_payments": 5252730,
+       "total_n": 320,
+       "total_payments": 26636136
+      },
+      {
+       "age": "56",
+       "male_n": 291,
+       "male_payments": 23768532,
+       "female_n": 75,
+       "female_payments": 5984297,
+       "total_n": 366,
+       "total_payments": 29752829
+      },
+      {
+       "age": "57",
+       "male_n": 252,
+       "male_payments": 21055486,
+       "female_n": 92,
+       "female_payments": 7671793,
+       "total_n": 344,
+       "total_payments": 28727279
+      },
+      {
+       "age": "58",
+       "male_n": 307,
+       "male_payments": 25832590,
+       "female_n": 69,
+       "female_payments": 5500076,
+       "total_n": 376,
+       "total_payments": 31332666
+      },
+      {
+       "age": "59",
+       "male_n": 277,
+       "male_payments": 22947025,
+       "female_n": 97,
+       "female_payments": 7554451,
+       "total_n": 374,
+       "total_payments": 30501476
+      },
+      {
+       "age": "60",
+       "male_n": 275,
+       "male_payments": 23735628,
+       "female_n": 87,
+       "female_payments": 6854811,
+       "total_n": 362,
+       "total_payments": 30590439
+      },
+      {
+       "age": "61",
+       "male_n": 318,
+       "male_payments": 27199809,
+       "female_n": 111,
+       "female_payments": 9237580,
+       "total_n": 429,
+       "total_payments": 36437389
+      },
+      {
+       "age": "62",
+       "male_n": 300,
+       "male_payments": 26230789,
+       "female_n": 101,
+       "female_payments": 7873007,
+       "total_n": 401,
+       "total_payments": 34103796
+      },
+      {
+       "age": "63",
+       "male_n": 258,
+       "male_payments": 21758478,
+       "female_n": 108,
+       "female_payments": 8707289,
+       "total_n": 366,
+       "total_payments": 30465767
+      },
+      {
+       "age": "64",
+       "male_n": 253,
+       "male_payments": 21596605,
+       "female_n": 106,
+       "female_payments": 8670519,
+       "total_n": 359,
+       "total_payments": 30267124
+      },
+      {
+       "age": "65",
+       "male_n": 269,
+       "male_payments": 23283600,
+       "female_n": 106,
+       "female_payments": 8733890,
+       "total_n": 375,
+       "total_payments": 32017490
+      },
+      {
+       "age": "66",
+       "male_n": 247,
+       "male_payments": 21373805,
+       "female_n": 101,
+       "female_payments": 7948753,
+       "total_n": 348,
+       "total_payments": 29322558
+      },
+      {
+       "age": "67",
+       "male_n": 204,
+       "male_payments": 17671388,
+       "female_n": 120,
+       "female_payments": 9924105,
+       "total_n": 324,
+       "total_payments": 27595493
+      },
+      {
+       "age": "68",
+       "male_n": 225,
+       "male_payments": 19173781,
+       "female_n": 123,
+       "female_payments": 9793083,
+       "total_n": 348,
+       "total_payments": 28966864
+      },
+      {
+       "age": "69",
+       "male_n": 189,
+       "male_payments": 15778760,
+       "female_n": 107,
+       "female_payments": 7928561,
+       "total_n": 296,
+       "total_payments": 23707321
+      },
+      {
+       "age": "70",
+       "male_n": 190,
+       "male_payments": 16510202,
+       "female_n": 80,
+       "female_payments": 5822598,
+       "total_n": 270,
+       "total_payments": 22332800
+      },
+      {
+       "age": "71",
+       "male_n": 210,
+       "male_payments": 18785652,
+       "female_n": 87,
+       "female_payments": 6476013,
+       "total_n": 297,
+       "total_payments": 25261665
+      },
+      {
+       "age": "72",
+       "male_n": 219,
+       "male_payments": 18800246,
+       "female_n": 79,
+       "female_payments": 6101733,
+       "total_n": 298,
+       "total_payments": 24901979
+      },
+      {
+       "age": "73",
+       "male_n": 237,
+       "male_payments": 20016415,
+       "female_n": 89,
+       "female_payments": 6789755,
+       "total_n": 326,
+       "total_payments": 26806170
+      },
+      {
+       "age": "74",
+       "male_n": 319,
+       "male_payments": 28263228,
+       "female_n": 81,
+       "female_payments": 6204976,
+       "total_n": 400,
+       "total_payments": 34468204
+      },
+      {
+       "age": "75",
+       "male_n": 334,
+       "male_payments": 29701480,
+       "female_n": 96,
+       "female_payments": 6898554,
+       "total_n": 430,
+       "total_payments": 36600034
+      },
+      {
+       "age": "76",
+       "male_n": 355,
+       "male_payments": 30294281,
+       "female_n": 66,
+       "female_payments": 4866626,
+       "total_n": 421,
+       "total_payments": 35160907
+      },
+      {
+       "age": "77",
+       "male_n": 391,
+       "male_payments": 33174695,
+       "female_n": 84,
+       "female_payments": 5652785,
+       "total_n": 475,
+       "total_payments": 38827480
+      },
+      {
+       "age": "78",
+       "male_n": 384,
+       "male_payments": 32300098,
+       "female_n": 56,
+       "female_payments": 3809637,
+       "total_n": 440,
+       "total_payments": 36109735
+      },
+      {
+       "age": "79",
+       "male_n": 376,
+       "male_payments": 30533380,
+       "female_n": 32,
+       "female_payments": 1909439,
+       "total_n": 408,
+       "total_payments": 32442819
+      },
+      {
+       "age": "80",
+       "male_n": 229,
+       "male_payments": 18151470,
+       "female_n": 28,
+       "female_payments": 1721417,
+       "total_n": 257,
+       "total_payments": 19872887
+      },
+      {
+       "age": "81",
+       "male_n": 215,
+       "male_payments": 16903512,
+       "female_n": 30,
+       "female_payments": 1916970,
+       "total_n": 245,
+       "total_payments": 18820482
+      },
+      {
+       "age": "82",
+       "male_n": 220,
+       "male_payments": 17021157,
+       "female_n": 24,
+       "female_payments": 1273937,
+       "total_n": 244,
+       "total_payments": 18295094
+      },
+      {
+       "age": "83",
+       "male_n": 188,
+       "male_payments": 14078576,
+       "female_n": 14,
+       "female_payments": 839905,
+       "total_n": 202,
+       "total_payments": 14918481
+      },
+      {
+       "age": "84",
+       "male_n": 154,
+       "male_payments": 10690568,
+       "female_n": 11,
+       "female_payments": 737494,
+       "total_n": 165,
+       "total_payments": 11428062
+      },
+      {
+       "age": "85 to 89",
+       "male_n": 436,
+       "male_payments": 30389550,
+       "female_n": 17,
+       "female_payments": 996797,
+       "total_n": 453,
+       "total_payments": 31386347
+      },
+      {
+       "age": "90 to 94",
+       "male_n": 122,
+       "male_payments": 7986535,
+       "female_n": 1,
+       "female_payments": 50897,
+       "total_n": 123,
+       "total_payments": 8037432
+      },
+      {
+       "age": "95 to 99",
+       "male_n": 32,
+       "male_payments": 2004278,
+       "female_n": 0,
+       "female_payments": 0,
+       "total_n": 32,
+       "total_payments": 2004278
+      },
+      {
+       "age": "100+",
+       "male_n": 4,
+       "male_payments": 200006,
+       "female_n": 0,
+       "female_payments": 0,
+       "total_n": 4,
+       "total_payments": 200006
+      }
+     ]
+    }
+   },
+   "acfr_fy2025": {
+    "net_pension_liability_thousands": 13893194,
+    "total_pension_liability_thousands": 18886619,
+    "fiduciary_net_position_thousands": 4993425,
+    "funded_ratio_gasb": 0.2644,
+    "benefit_payments_incl_refunds_2025_thousands": 1049663,
+    "city_contributions_2025_thousands": 1112515,
+    "receiving_benefits_acfr": 14895,
+    "inactive_not_receiving": 1214,
+    "active": 11639,
+    "cite": [
+     {
+      "doc": "ACFR2025",
+      "url": "https://www.chicago.gov/content/dam/city/depts/fin/supp_info/CAFR/2025CAFR/2025%20ANNUAL%20COMPREHENSIVE%20FINANCIAL%20REPORT__v2.pdf",
+      "pdf_page": 97,
+      "note": "Changes in the Net Pension Liability, FY2025"
+     },
+     {
+      "doc": "ACFR2025",
+      "url": "https://www.chicago.gov/content/dam/city/depts/fin/supp_info/CAFR/2025CAFR/2025%20ANNUAL%20COMPREHENSIVE%20FINANCIAL%20REPORT__v2.pdf",
+      "pdf_page": 92,
+      "note": "Employees covered by benefit terms"
+     }
+    ]
+   },
+   "summary": {
+    "city_contribution_2026_ordinance": 1112522924,
+    "city_contribution_2026_statutory": 1040273100,
+    "city_contribution_2026_advance": 72249824,
+    "city_contribution_cite": {
+     "doc": "ORDINANCE2026",
+     "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+     "pdf_page": 534,
+     "note": "appropriation lines 0976 and 097A, Finance General"
+    },
+    "retirees_and_beneficiaries": 14895,
+    "retirees_cite": {
+     "doc": "PABF_VAL2025",
+     "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+     "pdf_page": 44,
+     "note": "Exhibit B"
+    },
+    "active_members": 11639,
+    "active_cite": [
+     {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 43,
+      "note": "Exhibit A"
+     },
+     {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 59,
+      "note": "Exhibit K"
+     }
+    ],
+    "avg_annual_benefit_service_retirees": 81154,
+    "avg_annual_benefit_service_retirees_basis": "service retiree annual payments / count (matches printed Exhibit N)",
+    "avg_annual_benefit_service_retirees_cite": [
+     {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 50,
+      "note": "Exhibit E"
+     },
+     {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 62,
+      "note": "Exhibit N"
+     }
+    ],
+    "avg_annual_benefit_all_beneficiaries_derived": 69290,
+    "total_annual_benefits_all_beneficiaries": 1032071723,
+    "funded_ratio_actuarial_value_of_assets": 0.2608,
+    "funded_ratio_market_value_of_assets": 0.2666,
+    "funded_ratio_gasb_acfr": 0.2644,
+    "unfunded_liability_actuarial_value": 13845585000,
+    "unfunded_liability_market_value": 13736211000,
+    "funded_cite": [
+     {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 12,
+      "note": "Summary of Actuarial Valuation Results"
+     },
+     {
+      "doc": "PABF_VAL2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "pdf_page": 31,
+      "note": "Table 5 / funding history"
+     }
+    ],
+    "valuation_date": "2025-12-31"
+   }
+  },
+  "FABF": {
+   "name": "Firemen's Annuity and Benefit Fund",
+   "actuary": "Segal",
+   "budget_2026": {
+    "statutory_contribution": 441746521,
+    "advance_contribution": 11583144,
+    "total": 453329665,
+    "cite_lines": {
+     "doc": "ORDINANCE2026",
+     "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+     "pdf_page": 535,
+     "note": "appropriation lines 0976 and 097A, Finance General"
+    },
+    "loss_in_collection_reserve_in_levy": 14679000,
+    "cite": {
+     "doc": "ORDINANCE2026",
+     "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+     "pdf_page": 13,
+     "note": "Summary C pension funds column; dataset 6694-f78c"
+    },
+    "funding_sources_adopted_ordinance": {
+     "items": [
+      {
+       "source": "Property Tax Levy (Net Abatement)",
+       "amount": 366968000
+      },
+      {
+       "source": "Corporate Fund Pension Allocation",
+       "amount": 48914587
+      },
+      {
+       "source": "Midway Fund Pension Allocation",
+       "amount": 5975758
+      },
+      {
+       "source": "O'Hare Fund Pension Allocation",
+       "amount": 21691647
+      },
+      {
+       "source": "Casino Public Safety Pension Fund",
+       "amount": 12875529
+      },
+      {
+       "source": "Corporate Fund Advance Pension Payment",
+       "amount": 10841632
+      },
+      {
+       "source": "Midway Fund Advance Pension Payment",
+       "amount": 159364
+      },
+      {
+       "source": "O'Hare Fund Advance Pension Payment",
+       "amount": 582148
+      }
+     ],
+     "total_revenue": 468008665,
+     "cite": {
+      "doc": "ORDINANCE2026",
+      "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+      "pdf_page": 36,
+      "note": "Detail of Revenue Estimates"
+     }
+    }
+   },
+   "valuation_12_31_2025": {
+    "report": {
+     "doc": "FABF_VAL2025",
+     "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+     "pdf_page": 2,
+     "note": "Segal Actuarial Valuation and Review as of December 31, 2025, dated June 12, 2026"
+    },
+    "retirees_and_beneficiaries": {
+     "total": 5557,
+     "by_type": {
+      "employee_annuitants": 4006,
+      "spouse_annuitants": 1191,
+      "duty_disability": 202,
+      "occupational_disability": 73,
+      "ordinary_disability": 3,
+      "children": 82
+     },
+     "annual_benefits_derived_from_monthly": 454037460,
+     "monthly_benefits": 37836455,
+     "avg_annual_benefit_all_derived": 81705,
+     "cite": {
+      "doc": "FABF_VAL2025",
+      "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+      "pdf_page": 18,
+      "note": "Section 2, retired members and survivors"
+     }
+    },
+    "service_retirees": {
+     "count": 4006,
+     "avg_monthly_benefit": 8043,
+     "avg_annual_benefit": 96516,
+     "spouse_avg_monthly_benefit": 3107,
+     "cite": {
+      "doc": "FABF_VAL2025",
+      "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+      "pdf_page": 35,
+      "note": "demographic summary"
+     }
+    },
+    "active_members": {
+     "count": 4674,
+     "inactive_members": 176,
+     "avg_annual_salary": 129269,
+     "cite": {
+      "doc": "FABF_VAL2025",
+      "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+      "pdf_page": 12,
+      "note": "Summary of key valuation results"
+     }
+    },
+    "funded_ratio_actuarial_value": 0.2467,
+    "funded_ratio_market_value": 0.2525,
+    "actuarial_accrued_liability": 8029795014,
+    "market_value_of_assets": 2027244092,
+    "actuarial_value_of_assets": 1981093049,
+    "unfunded_liability_actuarial_value": 6048701965,
+    "unfunded_liability_market_value": 6002550922,
+    "cite_funded": {
+     "doc": "FABF_VAL2025",
+     "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+     "pdf_page": 12,
+     "note": "Summary of key valuation results"
+    },
+    "statutory_contribution_levy_year_2026": {
+     "amount": 441746521,
+     "payable_year": 2027,
+     "cite": {
+      "doc": "FABF_VAL2025",
+      "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+      "pdf_page": 12
+     }
+    },
+    "statutory_contribution_levy_year_2027": {
+     "amount": 458991616,
+     "payable_year": 2028,
+     "cite": {
+      "doc": "FABF_VAL2025",
+      "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+      "pdf_page": 12
+     }
+    },
+    "statutory_contribution_payable_2026": {
+     "amount": 443683274,
+     "levy_year": 2025,
+     "cite": {
+      "doc": "FABF_VAL2025",
+      "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+      "pdf_page": 12
+     }
+    },
+    "actuarially_determined_contribution_plan_year_2026": {
+     "amount": 588720377,
+     "cite": {
+      "doc": "FABF_VAL2025",
+      "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+      "pdf_page": 12
+     },
+     "shortfall_vs_statute": 146973856
+    },
+    "supplemental_payment_jan_2026": {
+     "amount": 5791572,
+     "cite": {
+      "doc": "FABF_VAL2025",
+      "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+      "pdf_page": 10
+     },
+     "note": "City expected another supplemental payment in June 2026 (not in the projection)"
+    },
+    "retro_pay_note": "Oct 2025 Fire contract granted raises retroactive to 2021. Retiree benefit recalculations were not in the 12/31/2025 data, so benefits and the AAL are expected to rise (valuation p.6, $25.8M AAL estimate included).",
+    "service_retirees_by_age": {
+     "cite": {
+      "doc": "FABF_VAL2025",
+      "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+      "pdf_page": 41
+     },
+     "columns": "male_n, male_annual_payments, female_n, female_annual_payments (None = none)",
+     "rows": [
+      {
+       "age": "Under 50",
+       "values": [
+        1,
+        9845,
+        null,
+        null
+       ]
+      },
+      {
+       "age": "50 \u2013 54",
+       "values": [
+        44,
+        3281547,
+        4,
+        300293
+       ]
+      },
+      {
+       "age": "55 \u2013 59",
+       "values": [
+        194,
+        16905563,
+        29,
+        2391467
+       ]
+      },
+      {
+       "age": "60 \u2013 64",
+       "values": [
+        874,
+        84771794,
+        77,
+        7155906
+       ]
+      },
+      {
+       "age": "65 \u2013 69",
+       "values": [
+        1013,
+        100719107,
+        67,
+        6396276
+       ]
+      },
+      {
+       "age": "70 \u2013 74",
+       "values": [
+        764,
+        77644677,
+        37,
+        3472610
+       ]
+      },
+      {
+       "age": "75 \u2013 79",
+       "values": [
+        379,
+        37406291,
+        9,
+        848754
+       ]
+      },
+      {
+       "age": "80 \u2013 84",
+       "values": [
+        274,
+        26145834,
+        4,
+        255258
+       ]
+      },
+      {
+       "age": "85 \u2013 89",
+       "values": [
+        154,
+        12700778,
+        1,
+        111975
+       ]
+      },
+      {
+       "age": "90 \u2013 94",
+       "values": [
+        61,
+        4839114,
+        null,
+        null
+       ]
+      },
+      {
+       "age": "95 \u2013 99",
+       "values": [
+        20,
+        1296204,
+        null,
+        null
+       ]
+      },
+      {
+       "age": "100 & over",
+       "values": [
+        null,
+        null,
+        null,
+        null
+       ]
+      },
+      {
+       "age": "Total",
+       "values": [
+        3778,
+        365720753,
+        228,
+        20932539
+       ]
+      }
+     ]
+    },
+    "spouse_annuitants_by_age": {
+     "cite": {
+      "doc": "FABF_VAL2025",
+      "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+      "pdf_page": 42
+     },
+     "columns": "male_n, male_annual_payments, female_n, female_annual_payments (None = none)",
+     "rows": [
+      {
+       "age": "Under 45",
+       "values": [
+        null,
+        null,
+        6,
+        235254
+       ]
+      },
+      {
+       "age": "45 \u2013 49",
+       "values": [
+        1,
+        35627,
+        5,
+        156739
+       ]
+      },
+      {
+       "age": "50 \u2013 54",
+       "values": [
+        null,
+        null,
+        21,
+        1034804
+       ]
+      },
+      {
+       "age": "55 \u2013 59",
+       "values": [
+        1,
+        31103,
+        31,
+        1320837
+       ]
+      },
+      {
+       "age": "60 \u2013 64",
+       "values": [
+        2,
+        80416,
+        81,
+        3179579
+       ]
+      },
+      {
+       "age": "65 \u2013 69",
+       "values": [
+        4,
+        173888,
+        125,
+        5199299
+       ]
+      },
+      {
+       "age": "70 \u2013 74",
+       "values": [
+        5,
+        172373,
+        126,
+        5330219
+       ]
+      },
+      {
+       "age": "75 \u2013 79",
+       "values": [
+        3,
+        106116,
+        177,
+        6571387
+       ]
+      },
+      {
+       "age": "80 \u2013 84",
+       "values": [
+        2,
+        86526,
+        219,
+        8028502
+       ]
+      },
+      {
+       "age": "85 \u2013 89",
+       "values": [
+        2,
+        69094,
+        196,
+        6759886
+       ]
+      },
+      {
+       "age": "90 \u2013 94",
+       "values": [
+        null,
+        null,
+        125,
+        4323112
+       ]
+      },
+      {
+       "age": "95 \u2013 99",
+       "values": [
+        null,
+        null,
+        50,
+        1287412
+       ]
+      },
+      {
+       "age": "100 & over",
+       "values": [
+        null,
+        null,
+        9,
+        222481
+       ]
+      },
+      {
+       "age": "Total",
+       "values": [
+        20,
+        755144,
+        1171,
+        43649510
+       ]
+      }
+     ]
+    }
+   },
+   "acfr_fy2025": {
+    "net_pension_liability_thousands": 6002550,
+    "total_pension_liability_thousands": 8029795,
+    "fiduciary_net_position_thousands": 2027245,
+    "funded_ratio_gasb": 0.2525,
+    "benefit_payments_incl_refunds_2025_thousands": 452300,
+    "city_contributions_2025_thousands": 460268,
+    "receiving_benefits_acfr": 5557,
+    "inactive_not_receiving": 176,
+    "active": 4674,
+    "cite": [
+     {
+      "doc": "ACFR2025",
+      "url": "https://www.chicago.gov/content/dam/city/depts/fin/supp_info/CAFR/2025CAFR/2025%20ANNUAL%20COMPREHENSIVE%20FINANCIAL%20REPORT__v2.pdf",
+      "pdf_page": 97,
+      "note": "Changes in the Net Pension Liability, FY2025"
+     },
+     {
+      "doc": "ACFR2025",
+      "url": "https://www.chicago.gov/content/dam/city/depts/fin/supp_info/CAFR/2025CAFR/2025%20ANNUAL%20COMPREHENSIVE%20FINANCIAL%20REPORT__v2.pdf",
+      "pdf_page": 92,
+      "note": "Employees covered by benefit terms"
+     }
+    ]
+   },
+   "summary": {
+    "city_contribution_2026_ordinance": 453329665,
+    "city_contribution_2026_statutory": 441746521,
+    "city_contribution_2026_advance": 11583144,
+    "city_contribution_cite": {
+     "doc": "ORDINANCE2026",
+     "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+     "pdf_page": 535,
+     "note": "appropriation lines 0976 and 097A, Finance General"
+    },
+    "retirees_and_beneficiaries": 5557,
+    "retirees_cite": {
+     "doc": "FABF_VAL2025",
+     "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+     "pdf_page": 18,
+     "note": "Section 2, retired members and survivors"
+    },
+    "active_members": 4674,
+    "active_cite": {
+     "doc": "FABF_VAL2025",
+     "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+     "pdf_page": 12,
+     "note": "Summary of key valuation results"
+    },
+    "avg_annual_benefit_service_retirees": 96516,
+    "avg_annual_benefit_service_retirees_basis": "printed average monthly benefit x 12",
+    "avg_annual_benefit_service_retirees_cite": {
+     "doc": "FABF_VAL2025",
+     "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+     "pdf_page": 35,
+     "note": "demographic summary"
+    },
+    "avg_annual_benefit_all_beneficiaries_derived": 81705,
+    "total_annual_benefits_all_beneficiaries": 454037460,
+    "funded_ratio_actuarial_value_of_assets": 0.2467,
+    "funded_ratio_market_value_of_assets": 0.2525,
+    "funded_ratio_gasb_acfr": 0.2525,
+    "unfunded_liability_actuarial_value": 6048701965,
+    "unfunded_liability_market_value": 6002550922,
+    "funded_cite": {
+     "doc": "FABF_VAL2025",
+     "url": "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0",
+     "pdf_page": 12,
+     "note": "Summary of key valuation results"
+    },
+    "valuation_date": "2025-12-31"
+   }
+  },
+  "MEABF": {
+   "name": "Municipal Employees' Annuity and Benefit Fund",
+   "actuary": "Segal",
+   "budget_2026": {
+    "statutory_contribution": 965001553,
+    "advance_contribution": 161218894,
+    "total": 1126220447,
+    "cite_lines": {
+     "doc": "ORDINANCE2026",
+     "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+     "pdf_page": 532,
+     "note": "appropriation lines 0976 and 097A, Finance General"
+    },
+    "loss_in_collection_reserve_in_levy": 7070077,
+    "cite": {
+     "doc": "ORDINANCE2026",
+     "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+     "pdf_page": 13,
+     "note": "Summary C pension funds column; dataset 6694-f78c"
+    },
+    "funding_sources_adopted_ordinance": {
+     "items": [
+      {
+       "source": "Property Tax Levy (Net Abatement)",
+       "amount": 167938000
+      },
+      {
+       "source": "Library Property Tax Levy",
+       "amount": 8780000
+      },
+      {
+       "source": "Water and Sewer Utility Tax",
+       "amount": 222357381
+      },
+      {
+       "source": "Corporate Fund Pension Allocation",
+       "amount": 400059421
+      },
+      {
+       "source": "Water Fund Pension Allocation",
+       "amount": 56388124
+      },
+      {
+       "source": "Sewer Fund Pension Allocation",
+       "amount": 14449821
+      },
+      {
+       "source": "Midway Fund Pension Allocation",
+       "amount": 11280153
+      },
+      {
+       "source": "O'Hare Fund Pension Allocation",
+       "amount": 61910204
+      },
+      {
+       "source": "Library Pension Residual Allocation After Property Tax Levy",
+       "amount": 4692000
+      },
+      {
+       "source": "Emergency Communication Pension Allocation",
+       "amount": 24216526
+      },
+      {
+       "source": "Corporate Fund Advance Pension Payment",
+       "amount": 128823928
+      },
+      {
+       "source": "Water Fund Advance Pension Payment",
+       "amount": 11269072
+      },
+      {
+       "source": "Sewer Fund Advance Pension Payment",
+       "amount": 2877924
+      },
+      {
+       "source": "Midway Fund Advance Pension Payment",
+       "amount": 1954526
+      },
+      {
+       "source": "O'Hare Fund Advance Pension Payment",
+       "amount": 11524366
+      },
+      {
+       "source": "Emergency Communication Advance Pension Payment",
+       "amount": 4769078
+      }
+     ],
+     "total_revenue": 1133290524,
+     "cite": {
+      "doc": "ORDINANCE2026",
+      "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+      "pdf_page": 35,
+      "note": "Detail of Revenue Estimates"
+     }
+    }
+   },
+   "valuation_12_31_2025": {
+    "report": {
+     "doc": "MEABF_VAL2025",
+     "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+     "pdf_page": 1,
+     "note": "Segal Actuarial Valuation and Review as of December 31, 2025 (posted June 26, 2026)"
+    },
+    "retirees_and_beneficiaries": {
+     "total": 25771,
+     "by_type": {
+      "retired_members": 21874,
+      "surviving_spouses": 3714,
+      "reversionary_annuitants": 119,
+      "children": 64
+     },
+     "monthly_benefits": 95618668,
+     "annual_benefits_derived_from_monthly": 1147424016,
+     "avg_annual_benefit_all_derived": 44524,
+     "cite": {
+      "doc": "MEABF_VAL2025",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "pdf_page": 18,
+      "note": "Section 2"
+     }
+    },
+    "service_retirees": {
+     "count": 21874,
+     "avg_monthly_benefit": 4092,
+     "avg_annual_benefit": 49104,
+     "surviving_spouse_avg_monthly_benefit": 1628,
+     "reversionary_avg_monthly_benefit": 411,
+     "cite": {
+      "doc": "MEABF_VAL2025",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "pdf_page": 33,
+      "note": "Section 3, participant summary"
+     }
+    },
+    "active_members": {
+     "count": 39379,
+     "inactive_members": 28888,
+     "avg_annual_salary": 70392,
+     "cite": {
+      "doc": "MEABF_VAL2025",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "pdf_page": 33
+     }
+    },
+    "funded_ratio_actuarial_value": 0.2742,
+    "funded_ratio_market_value": 0.2817,
+    "actuarial_accrued_liability": 20567596211,
+    "market_value_of_assets": 5794678834,
+    "actuarial_value_of_assets": 5639887320,
+    "unfunded_liability_actuarial_value": 14927708891,
+    "unfunded_liability_market_value": 14772917377,
+    "cite_funded": {
+     "doc": "MEABF_VAL2025",
+     "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+     "pdf_page": 11
+    },
+    "statutory_contribution_levy_year_2026": {
+     "amount": 965001553,
+     "payable_year": 2027,
+     "cite": {
+      "doc": "MEABF_VAL2025",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "pdf_page": 11
+     }
+    },
+    "statutory_contribution_levy_year_2027": {
+     "amount": 995157403,
+     "payable_year": 2028,
+     "cite": {
+      "doc": "MEABF_VAL2025",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "pdf_page": 11
+     }
+    },
+    "statutory_contribution_payable_2026": {
+     "amount": 955738601,
+     "levy_year": 2025,
+     "cite": {
+      "doc": "MEABF_VAL2025",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "pdf_page": 11
+     }
+    },
+    "actuarially_determined_contribution_plan_year_2026": {
+     "amount": 1350383529,
+     "cite": {
+      "doc": "MEABF_VAL2025",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "pdf_page": 11
+     },
+     "shortfall_vs_statute": 385381976
+    },
+    "supplemental_payment_2026": {
+     "amount": 80609447,
+     "cite": {
+      "doc": "MEABF_VAL2025",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "pdf_page": 10
+     }
+    },
+    "retirees_by_monthly_benefit_band": {
+     "cite": {
+      "doc": "MEABF_VAL2025",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "pdf_page": 43,
+      "note": "Exhibit D.4"
+     },
+     "columns": "employee, spouse, reversionary, child, total",
+     "rows": [
+      {
+       "band": "Under $500",
+       "employee": 636,
+       "spouse": 193,
+       "reversionary": 83,
+       "child": 64,
+       "total": 976
+      },
+      {
+       "band": "$500 - $999",
+       "employee": 1111,
+       "spouse": 1350,
+       "reversionary": 27,
+       "child": 0,
+       "total": 2488
+      },
+      {
+       "band": "$1,000 - $1,499",
+       "employee": 2443,
+       "spouse": 550,
+       "reversionary": 5,
+       "child": 0,
+       "total": 2998
+      },
+      {
+       "band": "$1,500 - $1,999",
+       "employee": 2114,
+       "spouse": 472,
+       "reversionary": 3,
+       "child": 0,
+       "total": 2589
+      },
+      {
+       "band": "$2,000 - $2,499",
+       "employee": 1411,
+       "spouse": 361,
+       "reversionary": 1,
+       "child": 0,
+       "total": 1773
+      },
+      {
+       "band": "$2,500 - $2,999",
+       "employee": 1460,
+       "spouse": 343,
+       "reversionary": 0,
+       "child": 0,
+       "total": 1803
+      },
+      {
+       "band": "$3,000 - $3,499",
+       "employee": 1567,
+       "spouse": 206,
+       "reversionary": 0,
+       "child": 0,
+       "total": 1773
+      },
+      {
+       "band": "$3,500 - $3,999",
+       "employee": 1376,
+       "spouse": 139,
+       "reversionary": 0,
+       "child": 0,
+       "total": 1515
+      },
+      {
+       "band": "$4,000 - $4,499",
+       "employee": 1164,
+       "spouse": 46,
+       "reversionary": 0,
+       "child": 0,
+       "total": 1210
+      },
+      {
+       "band": "$4,500 - $4,999",
+       "employee": 1066,
+       "spouse": 24,
+       "reversionary": 0,
+       "child": 0,
+       "total": 1090
+      },
+      {
+       "band": "$5,000 - $5,499",
+       "employee": 1091,
+       "spouse": 19,
+       "reversionary": 0,
+       "child": 0,
+       "total": 1110
+      },
+      {
+       "band": "$5,500 - $5,999",
+       "employee": 1017,
+       "spouse": 7,
+       "reversionary": 0,
+       "child": 0,
+       "total": 1024
+      },
+      {
+       "band": "$6,000 - $6,499",
+       "employee": 975,
+       "spouse": 3,
+       "reversionary": 0,
+       "child": 0,
+       "total": 978
+      },
+      {
+       "band": "$6,500 - $6,999",
+       "employee": 877,
+       "spouse": 1,
+       "reversionary": 0,
+       "child": 0,
+       "total": 878
+      },
+      {
+       "band": "$7,000 & over",
+       "employee": 3566,
+       "spouse": 0,
+       "reversionary": 0,
+       "child": 0,
+       "total": 3566
+      }
+     ]
+    },
+    "note_includes_opeb": "Actuarial accrued liability includes a small retiree health premium subsidy (OPEB), valuation p.10"
+   },
+   "acfr_fy2025": {
+    "net_pension_liability_thousands": 14769878,
+    "total_pension_liability_thousands": 20564556,
+    "fiduciary_net_position_thousands": 5794678,
+    "funded_ratio_gasb": 0.2818,
+    "benefit_payments_incl_refunds_2025_thousands": 1173303,
+    "city_contributions_2025_thousands": 1123999,
+    "receiving_benefits_acfr": 25771,
+    "inactive_not_receiving": 28888,
+    "active": 39379,
+    "cite": [
+     {
+      "doc": "ACFR2025",
+      "url": "https://www.chicago.gov/content/dam/city/depts/fin/supp_info/CAFR/2025CAFR/2025%20ANNUAL%20COMPREHENSIVE%20FINANCIAL%20REPORT__v2.pdf",
+      "pdf_page": 97,
+      "note": "Changes in the Net Pension Liability, FY2025"
+     },
+     {
+      "doc": "ACFR2025",
+      "url": "https://www.chicago.gov/content/dam/city/depts/fin/supp_info/CAFR/2025CAFR/2025%20ANNUAL%20COMPREHENSIVE%20FINANCIAL%20REPORT__v2.pdf",
+      "pdf_page": 92,
+      "note": "Employees covered by benefit terms"
+     }
+    ]
+   },
+   "summary": {
+    "city_contribution_2026_ordinance": 1126220447,
+    "city_contribution_2026_statutory": 965001553,
+    "city_contribution_2026_advance": 161218894,
+    "city_contribution_cite": {
+     "doc": "ORDINANCE2026",
+     "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+     "pdf_page": 532,
+     "note": "appropriation lines 0976 and 097A, Finance General"
+    },
+    "retirees_and_beneficiaries": 25771,
+    "retirees_cite": {
+     "doc": "MEABF_VAL2025",
+     "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+     "pdf_page": 18,
+     "note": "Section 2"
+    },
+    "active_members": 39379,
+    "active_cite": {
+     "doc": "MEABF_VAL2025",
+     "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+     "pdf_page": 33
+    },
+    "avg_annual_benefit_service_retirees": 49104,
+    "avg_annual_benefit_service_retirees_basis": "printed average monthly benefit x 12",
+    "avg_annual_benefit_service_retirees_cite": {
+     "doc": "MEABF_VAL2025",
+     "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+     "pdf_page": 33,
+     "note": "Section 3, participant summary"
+    },
+    "avg_annual_benefit_all_beneficiaries_derived": 44524,
+    "total_annual_benefits_all_beneficiaries": 1147424016,
+    "funded_ratio_actuarial_value_of_assets": 0.2742,
+    "funded_ratio_market_value_of_assets": 0.2817,
+    "funded_ratio_gasb_acfr": 0.2818,
+    "unfunded_liability_actuarial_value": 14927708891,
+    "unfunded_liability_market_value": 14772917377,
+    "funded_cite": {
+     "doc": "MEABF_VAL2025",
+     "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+     "pdf_page": 11
+    },
+    "valuation_date": "2025-12-31"
+   }
+  },
+  "LABF": {
+   "name": "Laborers' and Retirement Board Employees' Annuity and Benefit Fund",
+   "actuary": "Gabriel, Roeder, Smith & Company",
+   "budget_2026": {
+    "statutory_contribution": 136573560,
+    "advance_contribution": 14574818,
+    "total": 151148378,
+    "cite_lines": {
+     "doc": "ORDINANCE2026",
+     "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+     "pdf_page": 533,
+     "note": "appropriation lines 0976 and 097A, Finance General"
+    },
+    "loss_in_collection_reserve_in_levy": 2187000,
+    "cite": {
+     "doc": "ORDINANCE2026",
+     "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+     "pdf_page": 13,
+     "note": "Summary C pension funds column; dataset 6694-f78c"
+    },
+    "funding_sources_adopted_ordinance": {
+     "items": [
+      {
+       "source": "Property Tax Levy (Net Abatement)",
+       "amount": 54661000
+      },
+      {
+       "source": "Corporate Fund Pension Allocation",
+       "amount": 33338197
+      },
+      {
+       "source": "Water Fund Pension Allocation",
+       "amount": 21643898
+      },
+      {
+       "source": "Sewer Fund Pension Allocation",
+       "amount": 14491447
+      },
+      {
+       "source": "Midway Fund Pension Allocation",
+       "amount": 3440782
+      },
+      {
+       "source": "O'Hare Fund Pension Allocation",
+       "amount": 11185236
+      },
+      {
+       "source": "Corporate Fund Advance Pension Payment",
+       "amount": 9006538
+      },
+      {
+       "source": "Water Fund Advance Pension Payment",
+       "amount": 2586398
+      },
+      {
+       "source": "Sewer Fund Advance Pension Payment",
+       "amount": 1713758
+      },
+      {
+       "source": "Midway Fund Advance Pension Payment",
+       "amount": 265088
+      },
+      {
+       "source": "O'Hare Fund Advance Pension Payment",
+       "amount": 1003036
+      }
+     ],
+     "total_revenue": 153335378,
+     "cite": {
+      "doc": "ORDINANCE2026",
+      "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+      "pdf_page": 36,
+      "note": "Detail of Revenue Estimates"
+     }
+    }
+   },
+   "valuation_12_31_2025": {
+    "report": {
+     "doc": "LABF_VAL2025",
+     "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+     "pdf_page": 1,
+     "note": "GRS Actuarial Valuation Report as of December 31, 2025, letter dated April 21, 2026"
+    },
+    "retirees_and_beneficiaries": {
+     "total": 3545,
+     "by_type": {
+      "retirees": 2506,
+      "surviving_spouses": 934,
+      "reversionary_annuitants": 31,
+      "disabilities": 57,
+      "children": 17
+     },
+     "annual_benefits": 187086435,
+     "avg_annual_benefit_all_derived": 52775,
+     "cite": {
+      "doc": "LABF_VAL2025",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "pdf_page": 11,
+      "note": "Summary of Actuarial Valuation, member counts and annual payments"
+     },
+     "note": "ACFR p.92 reports 3,488 receiving benefits because it counts the 57 disabled as active; this report counts them as receiving benefits."
+    },
+    "service_retirees": {
+     "count": 2506,
+     "avg_annual_benefit": 65230,
+     "surviving_spouse_avg_annual_benefit": 21301,
+     "cite": {
+      "doc": "LABF_VAL2025",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "pdf_page": 16,
+      "note": "Plan Membership"
+     }
+    },
+    "active_members": {
+     "count": 2780,
+     "inactive_members": 1408,
+     "avg_annual_salary": 95139,
+     "cite": {
+      "doc": "LABF_VAL2025",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "pdf_page": 16
+     }
+    },
+    "funded_ratio_actuarial_value": 0.4348,
+    "funded_ratio_market_value": 0.4433,
+    "actuarial_accrued_liability": 3133831641,
+    "market_value_of_assets": 1389298384,
+    "actuarial_value_of_assets": 1362645318,
+    "unfunded_liability_actuarial_value": 1771186323,
+    "unfunded_liability_market_value": 1744533257,
+    "cite_funded": {
+     "doc": "LABF_VAL2025",
+     "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+     "pdf_page": 9
+    },
+    "statutory_contribution_levy_year_2026": {
+     "amount": 136573560,
+     "payable_year": 2027,
+     "cite": {
+      "doc": "LABF_VAL2025",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "pdf_page": 29,
+      "note": "Table 1 line (9), fiscal year 2026"
+     }
+    },
+    "statutory_contribution_levy_year_2027": {
+     "amount": 132514232,
+     "payable_year": 2028,
+     "cite": {
+      "doc": "LABF_VAL2025",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "pdf_page": 30,
+      "note": "Table 1A"
+     }
+    },
+    "statutory_contribution_payable_2026": {
+     "amount": 136089914,
+     "levy_year": 2025,
+     "cite": {
+      "doc": "LABF_VAL2025",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "pdf_page": 29,
+      "note": "Table 1 line (9), fiscal year 2025"
+     }
+    },
+    "actuarially_determined_contribution_plan_year_2026": {
+     "amount": 170342684,
+     "cite": {
+      "doc": "LABF_VAL2025",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "pdf_page": 9
+     },
+     "shortfall_vs_statute": 33769124
+    },
+    "supplemental_note": "City paid $12.1M (2023), $20.3M (2024), $20.2M (2025) above statute (valuation p.17)"
+   },
+   "acfr_fy2025": {
+    "net_pension_liability_thousands": 1760939,
+    "total_pension_liability_thousands": 3150237,
+    "fiduciary_net_position_thousands": 1389298,
+    "funded_ratio_gasb": 0.441,
+    "benefit_payments_incl_refunds_2025_thousands": 189964,
+    "city_contributions_2025_thousands": 155996,
+    "receiving_benefits_acfr": 3488,
+    "inactive_not_receiving": 1408,
+    "active": 2780,
+    "cite": [
+     {
+      "doc": "ACFR2025",
+      "url": "https://www.chicago.gov/content/dam/city/depts/fin/supp_info/CAFR/2025CAFR/2025%20ANNUAL%20COMPREHENSIVE%20FINANCIAL%20REPORT__v2.pdf",
+      "pdf_page": 97,
+      "note": "Changes in the Net Pension Liability, FY2025"
+     },
+     {
+      "doc": "ACFR2025",
+      "url": "https://www.chicago.gov/content/dam/city/depts/fin/supp_info/CAFR/2025CAFR/2025%20ANNUAL%20COMPREHENSIVE%20FINANCIAL%20REPORT__v2.pdf",
+      "pdf_page": 92,
+      "note": "Employees covered by benefit terms"
+     }
+    ]
+   },
+   "summary": {
+    "city_contribution_2026_ordinance": 151148378,
+    "city_contribution_2026_statutory": 136573560,
+    "city_contribution_2026_advance": 14574818,
+    "city_contribution_cite": {
+     "doc": "ORDINANCE2026",
+     "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+     "pdf_page": 533,
+     "note": "appropriation lines 0976 and 097A, Finance General"
+    },
+    "retirees_and_beneficiaries": 3545,
+    "retirees_cite": {
+     "doc": "LABF_VAL2025",
+     "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+     "pdf_page": 11,
+     "note": "Summary of Actuarial Valuation, member counts and annual payments"
+    },
+    "active_members": 2780,
+    "active_cite": {
+     "doc": "LABF_VAL2025",
+     "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+     "pdf_page": 16
+    },
+    "avg_annual_benefit_service_retirees": 65230,
+    "avg_annual_benefit_service_retirees_basis": "printed average annual benefit",
+    "avg_annual_benefit_service_retirees_cite": {
+     "doc": "LABF_VAL2025",
+     "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+     "pdf_page": 16,
+     "note": "Plan Membership"
+    },
+    "avg_annual_benefit_all_beneficiaries_derived": 52775,
+    "total_annual_benefits_all_beneficiaries": 187086435,
+    "funded_ratio_actuarial_value_of_assets": 0.4348,
+    "funded_ratio_market_value_of_assets": 0.4433,
+    "funded_ratio_gasb_acfr": 0.441,
+    "unfunded_liability_actuarial_value": 1771186323,
+    "unfunded_liability_market_value": 1744533257,
+    "funded_cite": {
+     "doc": "LABF_VAL2025",
+     "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+     "pdf_page": 9
+    },
+    "valuation_date": "2025-12-31"
+   }
+  }
+ },
+ "reconciliation": [
+  {
+   "check": "Four-fund pension contributions: Finance General lines vs ordinance Summary C",
+   "a": 2843221414,
+   "b": 2843221414,
+   "difference": 0,
+   "ok": true,
+   "cite": {
+    "doc": "ORDINANCE2026",
+    "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+    "pdf_page": 13
+   }
+  },
+  {
+   "check": "Advance (supplemental) payments in Finance General vs Budget Forecast 2027 ($259.6M)",
+   "a": 259626680,
+   "b": 259600000,
+   "difference": 26680,
+   "ok": true,
+   "cite": {
+    "doc": "FORECAST2027",
+    "url": "https://www.chicago.gov/content/dam/city/depts/obm/2027_Budget/Budget_Forecast/2027_Chicago_Budget_Forecast.pdf",
+    "pdf_page": 23
+   }
+  },
+  {
+   "check": "Pension fund revenue (all sources) minus loss-in-collection reserve vs contributions",
+   "a": 2843221414,
+   "b": 2843221414,
+   "difference": 0,
+   "ok": true,
+   "cite": {
+    "doc": "ORDINANCE2026",
+    "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+    "pdf_page": 35
+   }
+  },
+  {
+   "check": "Overview 'Pension Funds' program (proposed, p.185) vs adopted ordinance",
+   "a": 2760267271,
+   "b": 2843221414,
+   "difference": -82954143,
+   "ok": false,
+   "cite": {
+    "doc": "OVERVIEW2026",
+    "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Overview.pdf",
+    "pdf_page": 185
+   },
+   "note": "Not equal. Overview is the Oct 2025 proposal ($120.2M advance payment). Adopted ordinance has $259.6M advance. Forecast 2027 p.23 confirms $2.843B for 2026."
+  },
+  {
+   "check": "Pension allocation + advance lines in non-pension funds (internal transfers) vs ordinance non-property-tax pension column",
+   "a": 1220866110,
+   "b": 1220866110,
+   "difference": 0,
+   "ok": true,
+   "cite": {
+    "doc": "ORDINANCE2026",
+    "url": "https://bondlink-cdn.com/1338/FY2026-Annual-Appropriation-Ordinance.Vsr9wxc2u.pdf",
+    "pdf_page": 14
+   }
+  }
+ ],
+ "gaps": [
+  "Overview 'Pension Funds' $2,760.3M (proposed Oct 2025) vs adopted ordinance $2,843.2M: difference $82.95M follows Council changes to the advance payment, but no public document itemizes the change fund by fund.",
+  "Individual retiree data is not public. The deepest public level is counts and dollars by age or monthly-benefit band (valuation exhibits), included for PABF, FABF and MEABF.",
+  "Average annual benefit is not printed for every group in every report. Where marked 'derived', it is total annual benefits divided by the count in the same report.",
+  "Pension fund audited 2025 financial statements for FABF and MEABF were not parsed (valuations and the City ACFR already give benefit payments)."
+ ]
+}
