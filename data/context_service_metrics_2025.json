@@ -10,10 +10,10 @@
     "Days to close is closed_date minus created_date, the City's own clock. Same-day closes (for example info calls) are common for some types.",
     "Status 'Completed' is the City's label. This does not measure quality.",
     "311 counts are service requests (duplicates removed), not all work a department does.",
-    "Aviation, 311 City Services and Finance owner departments are excluded from the by-type table because their requests are mostly not field services.",
+    "Aviation, 311 City Services and Finance owner departments are excluded from the by-type table because their requests are not field services (Aviation: aircraft noise complaints, Finance: parking ticket reviews, 311 City Services: information calls).",
     "Data pulled on the date in the file's generated_at. 311 data keeps updating, so numbers move a little between pulls.",
     "Rows marked partial_year=true cover only part of the year. Do not compare them with full years.",
-    "avg_days_to_close of 0.0 for '311 City Services', 'Aviation' and 'Finance' means the requests are information calls or are closed at creation. It does not mean fast service."
+    "avg_days_to_close of 0.0 for '311 City Services', 'Aviation' and 'Finance' means the requests are closed when created. Checked: Aviation's 364,926 requests in 2025 are all 'Aircraft Noise Complaint', and Finance's 20,377 are all 'Finance Parking Code Enforcement Review' (parking ticket reviews). They are not a measure of fast service."
   ],
   "owner_department_to_budget_department": {
     "Streets and Sanitation": "Department of Streets and Sanitation",

@@ -132,7 +132,7 @@ GUIDE = {
     "Office of Budget and Management": ("none", "No outcome measure. COFA and the Civic Federation are the outside check on its budget forecasts."),
     "Department of Technology and Innovation": ("none", "311 site availability datasets exist but are old (2011). No current outcome measure found."),
     "Office of City Clerk": ("partial", "City sticker violation 311 requests are available (4,510 in 2025). No outcome measure for the clerk's other work."),
-    "Department of Finance": ("partial", "OIG audits on debt ($8.1B owed to the City) and vendor payment timeliness. Revenue collected is a result measure we did not find."),
+    "Department of Finance": ("partial", "OIG audits on debt ($8.1B owed to the City) and vendor payment timeliness. 311 shows 20,377 parking ticket review requests in 2025. Revenue collected is a result measure we did not find."),
     "City Treasurer's Office": ("none", "No outcome measure found in this pass."),
     "Department of Administrative Hearings": ("none", "No outcome measure found in this pass. The Budget Overview describes it as adjudicating ordinance violations."),
     "Department of Law": ("partial", "Cost side only: police settlement and outside-counsel totals from the Law Department's CPD litigation reports. No measure of how well the department does its work. An all-City payout total is not published in one place."),
@@ -165,7 +165,7 @@ GUIDE = {
     "Board of Ethics": ("none", "Old performance datasets exist (2012). No current outcome measure found."),
     "Department of Streets and Sanitation": ("have", "311 volume and speed for graffiti, rats, carts, abandoned cars. Two OIG audits (rats, auto pounds). Peer garbage spending per resident."),
     "Chicago Department of Transportation": ("have", "Potholes patched per year and days to patch, 311 street light, signal and pothole speed, peer streets spending."),
-    "Chicago Department of Aviation": ("none", "311 volume is mostly information calls. No outcome measure found. Airport costs are paid by airline and passenger fees."),
+    "Chicago Department of Aviation": ("none", "All 364,926 311 requests in 2025 are aircraft noise complaints, not a measure of airport service. No outcome measure found. Airport costs are paid by airline and passenger fees (see revenue file)."),
     "Department of Water Management": ("partial", "OIG water billing audit. 311 water complaints and speed. Peer water and sewer per resident."),
     "Finance General": ("partial", "Not a service department. See research/finance_general.md. Pension and debt costs have no service outcome. Civic Federation and COFA comment on its savings options."),
 }
@@ -307,7 +307,7 @@ def main():
                     for r in within.get(owner, [])],
                 "top_request_types": [{k: r[k] for k in ("sr_type", "requests", "completed", "open", "canceled", "share_completed")}
                                       for r in top_types.get(owner, [])[:8]],
-                "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure.",
+                "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure.",
             }
         if d == "Chicago Department of Transportation":
             entry["potholes"] = {

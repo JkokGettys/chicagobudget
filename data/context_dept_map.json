@@ -244,7 +244,7 @@
         "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
         "focus_types_completed_speed": [],
         "top_request_types": [],
-        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+        "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure."
       },
       "peer_comparison_census_2024": {
         "census_item": "E50",
@@ -329,7 +329,7 @@
         "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
         "focus_types_completed_speed": [],
         "top_request_types": [],
-        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+        "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure."
       },
       "oversight_finding_ids": [],
       "value_metric_coverage": "partial",
@@ -368,7 +368,7 @@
         "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
         "focus_types_completed_speed": [],
         "top_request_types": [],
-        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+        "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure."
       },
       "oversight_finding_ids": [
         "oig-water-billing-2026",
@@ -377,7 +377,7 @@
         "oig-workers-comp-2024"
       ],
       "value_metric_coverage": "partial",
-      "what_a_resident_can_check": "OIG audits on debt ($8.1B owed to the City) and vendor payment timeliness. Revenue collected is a result measure we did not find.",
+      "what_a_resident_can_check": "OIG audits on debt ($8.1B owed to the City) and vendor payment timeliness. 311 shows 20,377 parking ticket review requests in 2025. Revenue collected is a result measure we did not find.",
       "missing": null
     },
     {
@@ -627,7 +627,7 @@
         "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
         "focus_types_completed_speed": [],
         "top_request_types": [],
-        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+        "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure."
       },
       "food_inspections_by_year": [
         {
@@ -999,7 +999,7 @@
         "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
         "focus_types_completed_speed": [],
         "top_request_types": [],
-        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+        "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure."
       },
       "peer_comparison_census_2024": {
         "census_item": "E24",
@@ -1151,7 +1151,7 @@
             "share_completed": 0.9991
           }
         ],
-        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+        "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure."
       },
       "permits_issued_by_year": [
         {
@@ -1251,7 +1251,7 @@
         "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
         "focus_types_completed_speed": [],
         "top_request_types": [],
-        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+        "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure."
       },
       "oversight_finding_ids": [],
       "value_metric_coverage": "partial",
@@ -1360,7 +1360,7 @@
             "share_completed": 0.9804
           }
         ],
-        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+        "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure."
       },
       "oversight_finding_ids": [],
       "value_metric_coverage": "partial",
@@ -1579,7 +1579,7 @@
             "share_completed": 0.9816
           }
         ],
-        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+        "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure."
       },
       "peer_comparison_census_2024": {
         "census_item": "E81",
@@ -1735,7 +1735,7 @@
             "share_completed": 0.9995
           }
         ],
-        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+        "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure."
       },
       "potholes": {
         "patched_by_year": [
@@ -1845,11 +1845,11 @@
         "requests_per_budget_dollar_note": "Not computed. Requests are a tiny part of what a department does.",
         "focus_types_completed_speed": [],
         "top_request_types": [],
-        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+        "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure."
       },
       "oversight_finding_ids": [],
       "value_metric_coverage": "none",
-      "what_a_resident_can_check": "311 volume is mostly information calls. No outcome measure found. Airport costs are paid by airline and passenger fees.",
+      "what_a_resident_can_check": "All 364,926 311 requests in 2025 are aircraft noise complaints, not a measure of airport service. No outcome measure found. Airport costs are paid by airline and passenger fees (see revenue file).",
       "missing": null
     },
     {
@@ -1933,7 +1933,7 @@
             "share_completed": 0.9156
           }
         ],
-        "caveat": "Average days to close of 0.0 means the request is closed on creation (info calls). Not a speed measure."
+        "caveat": "Average days to close of 0.0 means the request is closed when created. For Aviation these are all aircraft noise complaints, for Finance all parking ticket reviews. Not a speed measure."
       },
       "peer_comparison_census_2024": {
         "census_item": "E91",

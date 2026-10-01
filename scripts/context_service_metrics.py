@@ -131,7 +131,7 @@ def main():
             "Days to close is closed_date minus created_date, the City's own clock. Same-day closes (for example info calls) are common for some types.",
             "Status 'Completed' is the City's label. This does not measure quality.",
             "311 counts are service requests (duplicates removed), not all work a department does.",
-            "Aviation, 311 City Services and Finance owner departments are excluded from the by-type table because their requests are mostly not field services.",
+            "Aviation, 311 City Services and Finance owner departments are excluded from the by-type table because their requests are not field services (Aviation: aircraft noise complaints, Finance: parking ticket reviews, 311 City Services: information calls).",
             "Data pulled on the date in the file's generated_at. 311 data keeps updating, so numbers move a little between pulls.",
         ],
         "owner_department_to_budget_department": OWNER_TO_BUDGET,
@@ -165,7 +165,7 @@ def main():
     out["food_inspections_by_year"] = flag(out["food_inspections_by_year"], "year")
     out["building_permits_issued_by_year"] = flag(out["building_permits_issued_by_year"], "year")
     out["limits"].append("Rows marked partial_year=true cover only part of the year. Do not compare them with full years.")
-    out["limits"].append("avg_days_to_close of 0.0 for '311 City Services', 'Aviation' and 'Finance' means the requests are information calls or are closed at creation. It does not mean fast service.")
+    out["limits"].append("avg_days_to_close of 0.0 for '311 City Services', 'Aviation' and 'Finance' means the requests are closed when created. Checked: Aviation's 364,926 requests in 2025 are all 'Aircraft Noise Complaint', and Finance's 20,377 are all 'Finance Parking Code Enforcement Review' (parking ticket reviews). They are not a measure of fast service.")
     out["generated_at"] = today.isoformat()
     write_json("context_service_metrics_%d.json" % YEAR, out)
     print("owner depts:", len(out["requests_by_owner_department"]), "types:", len(out["top_request_types"]))

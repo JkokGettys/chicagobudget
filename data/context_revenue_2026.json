@@ -11,10 +11,10 @@
   "bucket_totals_all_local_funds": {
     "Other City taxes (sales, utility, hotel, parking, amusement, etc.)": 3451701448.0,
     "Airport fees and airline charges": 2491602400.0,
-    "Property tax (City's share)": 1862339928.0,
+    "Property tax (City's share)": 1857647928.0,
     "Water and sewer bills": 1495128265.0,
     "Fines, fees, permits, licenses, charges": 1446214263.0,
-    "Moved between city funds (pension payments)": 1216174110.0,
+    "Moved between city funds (pension payments)": 1220866110.0,
     "State money (income tax share, replacement tax)": 753734813.0,
     "Sales tax (City's share)": 587355205.0,
     "Other dedicated-fund revenue": 504099957.0,
@@ -34,13 +34,13 @@
     "Airport fees and airline charges": false,
     "Moved between city funds (pension payments)": true
   },
-  "interfund_transfer_total": 1707754211.0,
-  "total_excluding_interfund": 12915869800.0,
-  "property_tax_levy_net_abatement_total": 1862339928.0,
+  "interfund_transfer_total": 1712446211.0,
+  "total_excluding_interfund": 12911177800.0,
+  "property_tax_levy_net_abatement_total": 1857647928.0,
   "property_tax_levy_by_fund": {
     "Bond Redemption and Interest Series Fund": 314610000.0,
     "Library Property Tax Levy Fund": 131172928.0,
-    "Municipal Employees' Annuity and Benefit Fund": 181410000.0,
+    "Municipal Employees' Annuity and Benefit Fund": 176718000.0,
     "Laborers' and Retirement Board Annuity and Benefit Fund": 54661000.0,
     "Policemen's Annuity and Benefit Fund": 813518000.0,
     "Firemen's Annuity and Benefit Fund": 366968000.0

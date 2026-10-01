@@ -24,11 +24,11 @@ def bucket(r):
     fund = r["fund_name"]
     grp = r.get("revenue_group_type")
     cat = r.get("revenue_category")
-    if "Pension Allocation" in src or "Advance Pension Payment" in src:
+    if "Pension Allocation" in src or "Advance Pension Payment" in src or "Pension Residual Allocation" in src:
         return "Moved between city funds (pension payments)", True
     if src in ("Corporate Fund Subsidy", "Transfers In") or cat == "Internal Service Earnings":
         return "Moved between city funds (reimbursements and subsidies)", True
-    if "Property Tax Levy" in src or "Library Property Tax Levy" in src:
+    if src in ("Property Tax Levy (Net Abatement)", "Library Property Tax Levy"):
         return "Property tax (City's share)", False
     if "Sales Tax Securitization" in src or "Chicago Sales Tax" in src:
         return "Sales tax (City's share)", False
@@ -72,12 +72,11 @@ def main():
             corp_by_cat[(r.get("revenue_group_type"), r.get("revenue_category"), r["revenue_source"])] += v
 
     corp_total = by_fund["Corporate Fund"]
-    prop_tax = sum(money(r["estimated_revenue"]) for r in rows
-                   if "Property Tax Levy" in r["revenue_source"] or "Library Property Tax Levy" in r["revenue_source"])
+    prop_rows = [r for r in rows if r["revenue_source"] in ("Property Tax Levy (Net Abatement)", "Library Property Tax Levy")]
+    prop_tax = sum(money(r["estimated_revenue"]) for r in prop_rows)
     prop_by_use = defaultdict(float)
-    for r in rows:
-        if "Property Tax Levy" in r["revenue_source"]:
-            prop_by_use[r["fund_name"]] += money(r["estimated_revenue"])
+    for r in prop_rows:
+        prop_by_use[r["fund_name"]] += money(r["estimated_revenue"])
 
     # Appropriation totals for context (same Local scope)
     approps = json.load(open(os.path.join(os.path.dirname(__file__), "..", "raw", "city_appropriations_2026.json")))
