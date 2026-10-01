@@ -1,0 +1,682 @@
+{
+  "source": "U.S. Census Bureau, 2024 Annual Survey of State and Local Government Finances, Individual Unit Files",
+  "source_url": "https://www2.census.gov/programs-surveys/gov-finances/tables/2024/2024_Individual_Unit_Files.zip",
+  "technical_documentation": "Inside the zip: '2024 S&L Public Use Files Technical Documentation.pdf' (item codes E62 police, E24 fire, E81 solid waste, etc.)",
+  "dollar_year": "Fiscal year ending in 2024 (Chicago: Dec 2024. NYC, LA, Houston, Philadelphia: June 2024).",
+  "comparability_limits": [
+    "City government only. NYC's city government also runs schools, hospitals and welfare, Chicago's does not, so never compare all-in totals.",
+    "Current operation only: excludes construction and debt interest. NOT VERIFIED: whether each city's police and fire pension payments land inside or outside the police and fire lines. Chicago budgets them in Finance General, not CPD, so Chicago police per resident may look lower than a city that books pensions inside police. Treat police and fire gaps as approximate.",
+    "Chicago's population in the Census file (2,665,039) is an older estimate than the ACS 2024 figure (2,721,326) used elsewhere, so per-resident numbers here would be about 2% lower with the ACS figure. We use the Census file's own population for all five cities for a fair comparison.",
+    "These are 2024 numbers, not FY2026.",
+    "Philadelphia is a combined city-county, so health and welfare include county-type services.",
+    "Items E23 (financial administration), E29 (central staff) and E89 (general, not elsewhere classified) are catch-alls. Chicago's E23 is $4.46B, about 3x the peer average per resident. That is an inference, not a Census statement: Chicago's Finance General costs (pensions, benefits, debt-related) are probably coded there. We keep them per city but do NOT compare them (comparable=false).",
+    "Each city's budget books define 'police' differently. Census uses one definition for all, but it still cannot see whether a city pays police pensions inside or outside the police line.",
+    "Census marks each value with a flag, R means reported. The flag is saved on every number in cities.*.items.*.census_flag."
+  ],
+  "footnotes": {
+    "E94": "Transit utilities: NYC and LA run transit; Chicago's CTA is a separate government.",
+    "E36": "Hospitals: NYC runs public hospitals; Chicago does not."
+  },
+  "cities": {
+    "Chicago": {
+      "census_unit_id": "172031162236",
+      "census_name": "CHICAGO CITY",
+      "population_census_file": 2665039,
+      "fiscal_year_end_mmdd_2024": "1231",
+      "items": {
+        "E62": {
+          "label": "Police protection",
+          "dollars": 2238483000,
+          "per_resident": 839.94,
+          "census_flag": "R"
+        },
+        "E24": {
+          "label": "Fire protection",
+          "dollars": 697062000,
+          "per_resident": 261.56,
+          "census_flag": "R"
+        },
+        "E81": {
+          "label": "Garbage and solid waste (sanitation)",
+          "dollars": 184055000,
+          "per_resident": 69.06,
+          "census_flag": "R"
+        },
+        "E80": {
+          "label": "Sewerage",
+          "dollars": 98340000,
+          "per_resident": 36.9,
+          "census_flag": "R"
+        },
+        "E91": {
+          "label": "Water utility",
+          "dollars": 414208000,
+          "per_resident": 155.42,
+          "census_flag": "R"
+        },
+        "E44": {
+          "label": "Streets and highways (regular highways)",
+          "dollars": 420667000,
+          "per_resident": 157.85,
+          "census_flag": "R"
+        },
+        "E61": {
+          "label": "Parks and recreation",
+          "dollars": 58537000,
+          "per_resident": 21.96,
+          "census_flag": "R"
+        },
+        "E52": {
+          "label": "Libraries",
+          "dollars": 120931000,
+          "per_resident": 45.38,
+          "census_flag": "R"
+        },
+        "E32": {
+          "label": "Public health",
+          "dollars": 305157000,
+          "per_resident": 114.5,
+          "census_flag": "R"
+        },
+        "E50": {
+          "label": "Housing and community development",
+          "dollars": 11058000,
+          "per_resident": 4.15,
+          "census_flag": "R"
+        },
+        "E79": {
+          "label": "Public welfare (other)",
+          "dollars": 623796000,
+          "per_resident": 234.07,
+          "census_flag": "R"
+        },
+        "E01": {
+          "label": "Airports",
+          "dollars": 1211614000,
+          "per_resident": 454.63,
+          "census_flag": "R"
+        },
+        "E23": {
+          "label": "Financial administration",
+          "dollars": 4464522000,
+          "per_resident": 1675.22,
+          "census_flag": "R"
+        },
+        "E29": {
+          "label": "Central staff services",
+          "dollars": 72516000,
+          "per_resident": 27.21,
+          "census_flag": "R"
+        },
+        "E66": {
+          "label": "Protective inspection and regulation (permits, inspections)",
+          "dollars": 42901000,
+          "per_resident": 16.1,
+          "census_flag": "R"
+        },
+        "E25": {
+          "label": "Judicial and legal",
+          "dollars": 30694000,
+          "per_resident": 11.52,
+          "census_flag": "R"
+        },
+        "E89": {
+          "label": "General expenditure not elsewhere classified",
+          "dollars": 1425802000,
+          "per_resident": 535.0,
+          "census_flag": "R"
+        }
+      }
+    },
+    "New York City": {
+      "census_unit_id": "362061194805",
+      "census_name": "NEW YORK CITY",
+      "population_census_file": 8335897,
+      "fiscal_year_end_mmdd_2024": "0630",
+      "items": {
+        "E62": {
+          "label": "Police protection",
+          "dollars": 6425147000,
+          "per_resident": 770.78,
+          "census_flag": "R"
+        },
+        "E24": {
+          "label": "Fire protection",
+          "dollars": 2711353000,
+          "per_resident": 325.26,
+          "census_flag": "R"
+        },
+        "E81": {
+          "label": "Garbage and solid waste (sanitation)",
+          "dollars": 1961032000,
+          "per_resident": 235.25,
+          "census_flag": "R"
+        },
+        "E80": {
+          "label": "Sewerage",
+          "dollars": 616284000,
+          "per_resident": 73.93,
+          "census_flag": "R"
+        },
+        "E91": {
+          "label": "Water utility",
+          "dollars": 592593000,
+          "per_resident": 71.09,
+          "census_flag": "R"
+        },
+        "E44": {
+          "label": "Streets and highways (regular highways)",
+          "dollars": 459036000,
+          "per_resident": 55.07,
+          "census_flag": "R"
+        },
+        "E61": {
+          "label": "Parks and recreation",
+          "dollars": 805028000,
+          "per_resident": 96.57,
+          "census_flag": "R"
+        },
+        "E52": {
+          "label": "Libraries",
+          "dollars": 356361000,
+          "per_resident": 42.75,
+          "census_flag": "R"
+        },
+        "E32": {
+          "label": "Public health",
+          "dollars": 2344290000,
+          "per_resident": 281.23,
+          "census_flag": "R"
+        },
+        "E50": {
+          "label": "Housing and community development",
+          "dollars": 6645944000,
+          "per_resident": 797.27,
+          "census_flag": "R"
+        },
+        "E79": {
+          "label": "Public welfare (other)",
+          "dollars": 10549866000,
+          "per_resident": 1265.59,
+          "census_flag": "R"
+        },
+        "E01": {
+          "label": "Airports",
+          "dollars": null,
+          "per_resident": null,
+          "census_flag": "not reported"
+        },
+        "E23": {
+          "label": "Financial administration",
+          "dollars": 9807267000,
+          "per_resident": 1176.51,
+          "census_flag": "R"
+        },
+        "E29": {
+          "label": "Central staff services",
+          "dollars": 418197000,
+          "per_resident": 50.17,
+          "census_flag": "R"
+        },
+        "E66": {
+          "label": "Protective inspection and regulation (permits, inspections)",
+          "dollars": 282326000,
+          "per_resident": 33.87,
+          "census_flag": "R"
+        },
+        "E25": {
+          "label": "Judicial and legal",
+          "dollars": 1552534000,
+          "per_resident": 186.25,
+          "census_flag": "R"
+        },
+        "E89": {
+          "label": "General expenditure not elsewhere classified",
+          "dollars": 14158702000,
+          "per_resident": 1698.52,
+          "census_flag": "R"
+        }
+      }
+    },
+    "Los Angeles": {
+      "census_unit_id": "062037161174",
+      "census_name": "LOS ANGELES CITY",
+      "population_census_file": 3822238,
+      "fiscal_year_end_mmdd_2024": "0630",
+      "items": {
+        "E62": {
+          "label": "Police protection",
+          "dollars": 3260624000,
+          "per_resident": 853.07,
+          "census_flag": "R"
+        },
+        "E24": {
+          "label": "Fire protection",
+          "dollars": 846784000,
+          "per_resident": 221.54,
+          "census_flag": "R"
+        },
+        "E81": {
+          "label": "Garbage and solid waste (sanitation)",
+          "dollars": 669900000,
+          "per_resident": 175.26,
+          "census_flag": "R"
+        },
+        "E80": {
+          "label": "Sewerage",
+          "dollars": 571349000,
+          "per_resident": 149.48,
+          "census_flag": "R"
+        },
+        "E91": {
+          "label": "Water utility",
+          "dollars": 976403000,
+          "per_resident": 255.45,
+          "census_flag": "R"
+        },
+        "E44": {
+          "label": "Streets and highways (regular highways)",
+          "dollars": 970852000,
+          "per_resident": 254.0,
+          "census_flag": "R"
+        },
+        "E61": {
+          "label": "Parks and recreation",
+          "dollars": 652643000,
+          "per_resident": 170.75,
+          "census_flag": "R"
+        },
+        "E52": {
+          "label": "Libraries",
+          "dollars": 261052000,
+          "per_resident": 68.3,
+          "census_flag": "R"
+        },
+        "E32": {
+          "label": "Public health",
+          "dollars": 518277000,
+          "per_resident": 135.6,
+          "census_flag": "R"
+        },
+        "E50": {
+          "label": "Housing and community development",
+          "dollars": 1749121000,
+          "per_resident": 457.62,
+          "census_flag": "R"
+        },
+        "E79": {
+          "label": "Public welfare (other)",
+          "dollars": null,
+          "per_resident": null,
+          "census_flag": "not reported"
+        },
+        "E01": {
+          "label": "Airports",
+          "dollars": 1007013000,
+          "per_resident": 263.46,
+          "census_flag": "R"
+        },
+        "E23": {
+          "label": "Financial administration",
+          "dollars": 543249000,
+          "per_resident": 142.13,
+          "census_flag": "R"
+        },
+        "E29": {
+          "label": "Central staff services",
+          "dollars": 851093000,
+          "per_resident": 222.67,
+          "census_flag": "R"
+        },
+        "E66": {
+          "label": "Protective inspection and regulation (permits, inspections)",
+          "dollars": 339922000,
+          "per_resident": 88.93,
+          "census_flag": "R"
+        },
+        "E25": {
+          "label": "Judicial and legal",
+          "dollars": 221837000,
+          "per_resident": 58.04,
+          "census_flag": "R"
+        },
+        "E89": {
+          "label": "General expenditure not elsewhere classified",
+          "dollars": 202750000,
+          "per_resident": 53.04,
+          "census_flag": "R"
+        }
+      }
+    },
+    "Houston": {
+      "census_unit_id": "482201176169",
+      "census_name": "HOUSTON CITY",
+      "population_census_file": 2302878,
+      "fiscal_year_end_mmdd_2024": "0630",
+      "items": {
+        "E62": {
+          "label": "Police protection",
+          "dollars": 1012596000,
+          "per_resident": 439.71,
+          "census_flag": "R"
+        },
+        "E24": {
+          "label": "Fire protection",
+          "dollars": 1189565000,
+          "per_resident": 516.56,
+          "census_flag": "R"
+        },
+        "E81": {
+          "label": "Garbage and solid waste (sanitation)",
+          "dollars": 113351000,
+          "per_resident": 49.22,
+          "census_flag": "R"
+        },
+        "E80": {
+          "label": "Sewerage",
+          "dollars": 298687000,
+          "per_resident": 129.7,
+          "census_flag": "R"
+        },
+        "E91": {
+          "label": "Water utility",
+          "dollars": 247699000,
+          "per_resident": 107.56,
+          "census_flag": "R"
+        },
+        "E44": {
+          "label": "Streets and highways (regular highways)",
+          "dollars": 140261000,
+          "per_resident": 60.91,
+          "census_flag": "R"
+        },
+        "E61": {
+          "label": "Parks and recreation",
+          "dollars": 94278000,
+          "per_resident": 40.94,
+          "census_flag": "R"
+        },
+        "E52": {
+          "label": "Libraries",
+          "dollars": 47179000,
+          "per_resident": 20.49,
+          "census_flag": "R"
+        },
+        "E32": {
+          "label": "Public health",
+          "dollars": 171553000,
+          "per_resident": 74.5,
+          "census_flag": "R"
+        },
+        "E50": {
+          "label": "Housing and community development",
+          "dollars": 135423000,
+          "per_resident": 58.81,
+          "census_flag": "R"
+        },
+        "E79": {
+          "label": "Public welfare (other)",
+          "dollars": null,
+          "per_resident": null,
+          "census_flag": "not reported"
+        },
+        "E01": {
+          "label": "Airports",
+          "dollars": 296411000,
+          "per_resident": 128.71,
+          "census_flag": "R"
+        },
+        "E23": {
+          "label": "Financial administration",
+          "dollars": 76405000,
+          "per_resident": 33.18,
+          "census_flag": "R"
+        },
+        "E29": {
+          "label": "Central staff services",
+          "dollars": 414120000,
+          "per_resident": 179.83,
+          "census_flag": "R"
+        },
+        "E66": {
+          "label": "Protective inspection and regulation (permits, inspections)",
+          "dollars": 91725000,
+          "per_resident": 39.83,
+          "census_flag": "R"
+        },
+        "E25": {
+          "label": "Judicial and legal",
+          "dollars": 68552000,
+          "per_resident": 29.77,
+          "census_flag": "R"
+        },
+        "E89": {
+          "label": "General expenditure not elsewhere classified",
+          "dollars": 256920000,
+          "per_resident": 111.56,
+          "census_flag": "R"
+        }
+      }
+    },
+    "Philadelphia": {
+      "census_unit_id": "422101133602",
+      "census_name": "PHILADELPHIA CITY",
+      "population_census_file": 1567258,
+      "fiscal_year_end_mmdd_2024": "0630",
+      "items": {
+        "E62": {
+          "label": "Police protection",
+          "dollars": 834838000,
+          "per_resident": 532.67,
+          "census_flag": "R"
+        },
+        "E24": {
+          "label": "Fire protection",
+          "dollars": 400740000,
+          "per_resident": 255.69,
+          "census_flag": "R"
+        },
+        "E81": {
+          "label": "Garbage and solid waste (sanitation)",
+          "dollars": 233602000,
+          "per_resident": 149.05,
+          "census_flag": "R"
+        },
+        "E80": {
+          "label": "Sewerage",
+          "dollars": 358286000,
+          "per_resident": 228.61,
+          "census_flag": "R"
+        },
+        "E91": {
+          "label": "Water utility",
+          "dollars": 167634000,
+          "per_resident": 106.96,
+          "census_flag": "R"
+        },
+        "E44": {
+          "label": "Streets and highways (regular highways)",
+          "dollars": 275118000,
+          "per_resident": 175.54,
+          "census_flag": "R"
+        },
+        "E61": {
+          "label": "Parks and recreation",
+          "dollars": 99973000,
+          "per_resident": 63.79,
+          "census_flag": "R"
+        },
+        "E52": {
+          "label": "Libraries",
+          "dollars": 59571000,
+          "per_resident": 38.01,
+          "census_flag": "R"
+        },
+        "E32": {
+          "label": "Public health",
+          "dollars": 3070281000,
+          "per_resident": 1959.01,
+          "census_flag": "R"
+        },
+        "E50": {
+          "label": "Housing and community development",
+          "dollars": 628342000,
+          "per_resident": 400.92,
+          "census_flag": "R"
+        },
+        "E79": {
+          "label": "Public welfare (other)",
+          "dollars": 357615000,
+          "per_resident": 228.18,
+          "census_flag": "R"
+        },
+        "E01": {
+          "label": "Airports",
+          "dollars": 282194000,
+          "per_resident": 180.06,
+          "census_flag": "R"
+        },
+        "E23": {
+          "label": "Financial administration",
+          "dollars": 1302460000,
+          "per_resident": 831.04,
+          "census_flag": "R"
+        },
+        "E29": {
+          "label": "Central staff services",
+          "dollars": 412218000,
+          "per_resident": 263.02,
+          "census_flag": "R"
+        },
+        "E66": {
+          "label": "Protective inspection and regulation (permits, inspections)",
+          "dollars": 73940000,
+          "per_resident": 47.18,
+          "census_flag": "R"
+        },
+        "E25": {
+          "label": "Judicial and legal",
+          "dollars": 446804000,
+          "per_resident": 285.09,
+          "census_flag": "R"
+        },
+        "E89": {
+          "label": "General expenditure not elsewhere classified",
+          "dollars": 1269716000,
+          "per_resident": 810.15,
+          "census_flag": "R"
+        }
+      }
+    }
+  },
+  "chicago_vs_peers": {
+    "E62": {
+      "label": "Police protection",
+      "chicago_per_resident": 839.94,
+      "peer_average_per_resident": 649.06,
+      "peer_min": 439.71,
+      "peer_max": 853.07,
+      "chicago_vs_peer_average_pct": 29.4,
+      "rank_among_5_highest_first": 2
+    },
+    "E24": {
+      "label": "Fire protection",
+      "chicago_per_resident": 261.56,
+      "peer_average_per_resident": 329.76,
+      "peer_min": 221.54,
+      "peer_max": 516.56,
+      "chicago_vs_peer_average_pct": -20.7,
+      "rank_among_5_highest_first": 3
+    },
+    "E81": {
+      "label": "Garbage and solid waste (sanitation)",
+      "chicago_per_resident": 69.06,
+      "peer_average_per_resident": 152.19,
+      "peer_min": 49.22,
+      "peer_max": 235.25,
+      "chicago_vs_peer_average_pct": -54.6,
+      "rank_among_5_highest_first": 4
+    },
+    "E80": {
+      "label": "Sewerage",
+      "chicago_per_resident": 36.9,
+      "peer_average_per_resident": 145.43,
+      "peer_min": 73.93,
+      "peer_max": 228.61,
+      "chicago_vs_peer_average_pct": -74.6,
+      "rank_among_5_highest_first": 5
+    },
+    "E91": {
+      "label": "Water utility",
+      "chicago_per_resident": 155.42,
+      "peer_average_per_resident": 135.26,
+      "peer_min": 71.09,
+      "peer_max": 255.45,
+      "chicago_vs_peer_average_pct": 14.9,
+      "rank_among_5_highest_first": 2
+    },
+    "E44": {
+      "label": "Streets and highways (regular highways)",
+      "chicago_per_resident": 157.85,
+      "peer_average_per_resident": 136.38,
+      "peer_min": 55.07,
+      "peer_max": 254.0,
+      "chicago_vs_peer_average_pct": 15.7,
+      "rank_among_5_highest_first": 3
+    },
+    "E61": {
+      "label": "Parks and recreation",
+      "chicago_per_resident": 21.96,
+      "peer_average_per_resident": 93.01,
+      "peer_min": 40.94,
+      "peer_max": 170.75,
+      "chicago_vs_peer_average_pct": -76.4,
+      "rank_among_5_highest_first": 5
+    },
+    "E52": {
+      "label": "Libraries",
+      "chicago_per_resident": 45.38,
+      "peer_average_per_resident": 42.39,
+      "peer_min": 20.49,
+      "peer_max": 68.3,
+      "chicago_vs_peer_average_pct": 7.1,
+      "rank_among_5_highest_first": 2
+    },
+    "E32": {
+      "label": "Public health",
+      "chicago_per_resident": 114.5,
+      "peer_average_per_resident": 612.59,
+      "peer_min": 74.5,
+      "peer_max": 1959.01,
+      "chicago_vs_peer_average_pct": -81.3,
+      "rank_among_5_highest_first": 4
+    },
+    "E50": {
+      "label": "Housing and community development",
+      "chicago_per_resident": 4.15,
+      "peer_average_per_resident": 428.65,
+      "peer_min": 58.81,
+      "peer_max": 797.27,
+      "chicago_vs_peer_average_pct": -99.0,
+      "rank_among_5_highest_first": 5
+    },
+    "E66": {
+      "label": "Protective inspection and regulation (permits, inspections)",
+      "chicago_per_resident": 16.1,
+      "peer_average_per_resident": 52.45,
+      "peer_min": 33.87,
+      "peer_max": 88.93,
+      "chicago_vs_peer_average_pct": -69.3,
+      "rank_among_5_highest_first": 5
+    },
+    "E25": {
+      "label": "Judicial and legal",
+      "chicago_per_resident": 11.52,
+      "peer_average_per_resident": 139.79,
+      "peer_min": 29.77,
+      "peer_max": 285.09,
+      "chicago_vs_peer_average_pct": -91.8,
+      "rank_among_5_highest_first": 5
+    }
+  }
+}

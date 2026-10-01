@@ -1,0 +1,122 @@
+{
+  "generated_by": "scripts/context_settlements.py",
+  "index_page": "https://www.chicago.gov/city/en/depts/dol/supp_info/CPDAnnLitReports.html",
+  "what_this_covers": [
+    "Only lawsuits that name CPD conduct (civil rights cases and police vehicle pursuit crashes) that closed in that year.",
+    "A case counts in the year it closes, not the year the harm happened. Wrongful conviction payouts can come 20 to 40 years after the event.",
+    "Payout = settlements + judgments + fees and costs awarded (the Law Department's definition).",
+    "This is NOT every payout by the City. Other claims (ordinary crashes, slip and fall, claims in other departments) are not in these reports.",
+    "The Law Department changed definitions between years, so the series is approximate. Example: the 2021 report says $122.5M, the 2022 report restates 2021 to $126.1M after adding one more case. The 2021 figure used here is the amended 2021 report posted in Nov 2025."
+  ],
+  "by_year": {
+    "2019": {
+      "report_url": "https://www.chicago.gov/content/dam/city/depts/dol/CPDLitigationReports/City%20of%20Chicago%20Report%20on%202019%20CPD%20Litigation.pdf",
+      "total_payout": 46800000.0,
+      "cases_with_payout": 116,
+      "total_payout_precision": "rounded to $0.1M in the report",
+      "evidence_total": "e dispositions in blue represent cases that the City won. B. Financial Payouts for Settled and Litigated Cases In 2019, the City paid plaintiffs a total of $46.8 million in 116 cases. This consisted of 110 Settled Cases representing 95% of all lawsuits with a payout, and six Litigated Cases with jury ",
+      "outside_counsel_fees": 25500000.0,
+      "evidence_outside_counsel": "the concluded cases listed in the appendices of this Report. According to the City's Department of Law (\"DOL\"), in 2019 the City paid outside counsel $25.5 million for legal services to defend active, pending, and concluded federal civil rights cases.2 During the same time period, t"
+    },
+    "2020": {
+      "report_url": "https://www.chicago.gov/content/dam/city/depts/dol/CPDLitigationReports/City%20of%20Chicago%20Report%20on%202020%20CPD%20Litigation.pdf",
+      "settlement_payouts": 20673840.0,
+      "settled_cases_paid": 90,
+      "jury_award_and_judgment_payouts": 19786586.0,
+      "litigated_cases_paid": 2,
+      "total_payout": 40460426.0,
+      "cases_with_payout": 92,
+      "evidence_total": "ted Cases in 2020. The remaining 41 Litigated Cases concluded in 2020 without any payouts required of the City: Table 2 Settlements and Jury Awards Paid, 2020 Type Payouts % of Total Payouts # of Cases % of Payout Cases Settlements $20,673,840* 51% 90 98% Plaintiffs' Verdicts & Satisfactions of Judgment $19,786,586 49% 2 2% Total: $40,460,426 100% 92 100% *In two Settled Cases, the plaintiffs accepted the City's Rule 68 Offer of Judgment which included an allo"
+    },
+    "2021": {
+      "report_url": "https://www.chicago.gov/content/dam/city/depts/dol/CPDLitigationReports/2025-11-6%20amended%20City%20of%20Chicago%20Report%20on%202021%20CPD%20Litigation.pdf",
+      "settlement_payouts": 53002650.99,
+      "settled_cases_paid": 131,
+      "jury_award_and_judgment_payouts": 69506734.0,
+      "litigated_cases_paid": 10,
+      "total_payout": 122509384.0,
+      "cases_with_payout": 141,
+      "evidence_total": "21. The remaining 71 Litigated Cases concluded in 2021 without any payouts required of the City. (See Table 2). Table 2 Settlements and Jury Awards Paid, 2021 Type Payouts % of Total Payouts # of Cases % of Payout Cases Settlements $53,002,650.99 43% 131 93% Plaintiffs' Verdicts & Satisfactions of Judgment $69,506,734 57% 10 7% Total: $122,509,384 100% 141 100% Settled Cases 62% Litigated Cases 38% Settled and Litigated Cases, 2021 =====PAGE===== 8 Together, the te",
+      "outside_counsel_fees": 24082510.31,
+      "evidence_outside_counsel": "ministratively closed. =====PAGE===== 36 PAYMENTS TO OUTSIDE COUNSEL According to the City's Department of Law (\"DOL\"), in 2021 the City paid outside counsel $24,082,510.31 for legal services to defend active, pending, and concluded federal civil rights cases.21 During the same time, the City did not engage ou"
+    },
+    "2022": {
+      "report_url": "https://www.chicago.gov/content/dam/city/depts/dol/CPDLitigationReports/City%20of%20Chicago%20Report%20on%202022%20CPD%20Litigation.pdf",
+      "total_payout": 86289703.35,
+      "evidence_total": "e the result of the 107 settled cases as well as the 8 litigated cases that resulted in judgments against the City. The total amount of all payouts by the City in 2022 was $ 86,289,703.35.These payouts are further broken down by case type inFi g ur e3below. Fi g ur e3-P ay outs b y C as eTy p e C A SE TY P ",
+      "restates_2021_total_payout_to": 126099384.95,
+      "evidence_2021_restatement": "ecember 15,2021. Including this settlement into the 2021 case totals brings the number of 2021 reportable cases to 141, the total 2021 settlement amount to $53,002,650.00, and the total 2021 payout amount to $126,099,384.95.20 The 2021 report did not include similar classification and corresponding payouts, making any direct comparison to 2022 data challenging"
+    },
+    "2023": {
+      "report_url": "https://www.chicago.gov/content/dam/city/depts/dol/CPDLitigationReports/City%20of%20Chicago%20Report%20on%202023%20CPD%20Litigation.pdf",
+      "total_payout": 81423909.2,
+      "evidence_total": "s were the result of the 80 settled cases as well as 4 litigated cases that resulted in judgments against the City. The total amount of all payouts by the City for the 2023 reportable cases was $81,423,909.20. These payouts are further broken down by case type in Figure 3 below. 6 As noted above, paragraph 548 requires the repo",
+      "outside_counsel_fees": 28600000.0,
+      "outside_counsel_precision": "rounded to $0.1M in the report; federal civil rights cases only",
+      "evidence_outside_counsel": "efending the City or its employees or agents in civil rights and vehicle pursuit - related litigation According to DOL, in 202 3 the City paid outside counsel $ 28.6 million for legal services to defend active, pending, and concluded federal civil rights cases that would otherwise be handled "
+    },
+    "2024": {
+      "report_url": "https://www.chicago.gov/content/dam/city/depts/dol/CPDLitigationReports/11.7.25%20updated%20City%20of%20Chicago%20Report%20on%202024%20CPD%20Litigation.pdf",
+      "total_payout": 84033439.0,
+      "evidence_total": " result of the 76 settled cases as well as 1 litigated case that resulted in an Offer of Judgment against the City. The total amount of all payouts by the City for the 2024 reportable cases was $84,033,439.00. These payouts are further broken down by case type in Figure 4 below. Figure 4 - 2024 Reportable Case Payouts Case Type",
+      "outside_counsel_fees": 34767711.13,
+      "outside_counsel_note": "The report prints '$34,767,711.13 million', which is a typo for dollars. We read it as $34.77 million.",
+      "evidence_outside_counsel": "defending the City or its employees or agents in civil rights and vehicle pursuit-related litigation. According to DOL, in 2024 the City paid outside counsel $ 34,767,711.13 million for legal services to defend active, pending, and concluded federal civil rights cases that would otherwise be handled by FCRL and Mass To"
+    },
+    "2025": {
+      "report_url": "https://www.chicago.gov/content/dam/city/depts/dol/CPDLitigationReports/2025/2025%20Annual%20Litigation%20Report%206.30.26.pdf",
+      "total_payout": 258956775.56,
+      "evidence_total": "settled cases as well as 2 litigated cases that resulted =====PAGE===== 9 in an Offer of Judgment against the City. The total amount of all payouts by the City for the 202 5 reportable cases was $258,956,775.56. These payouts are further broken down by case type in Figure 4 below. Figure 4 - 2025 Reportable Case Payouts Case Type",
+      "watts_cases": 184,
+      "watts_settlements_approved_in_2025_mostly_paid_2026": 101300000.0,
+      "evidence_watts": "a Vehicle Pursuit case, 2023L10164. The settlements are further broken down by case type in Figure 5 below. 11 The City also settled 184 Reversed Conviction \"Watts\" Cases for $101,300,000.00 (Appendix C). The combined total payout for the City's 199 Reversed Conviction settlements is $294,644,242.37. Includin",
+      "total_payout_including_watts": 360256775.56,
+      "evidence_total_with_watts": "0,000.00 (Appendix C). The combined total payout for the City's 199 Reversed Conviction settlements is $294,644,242.37. Including the \"Watts Cases,\" the 2025 total reportable payout is $360,256,775.56, and Reversed Conviction cases accounted for 81.8% of all payouts incurred by the City in 2025. See Also Figure 13 below",
+      "watts_note": "The report text says City Council approved a resolution settling 176 Watts lawsuits (Sept 2025). Its footnote (and Appendix C, which we did not parse) counts 184 settled Watts cases for $101.3M. Both numbers appear in the report, we keep the footnote's 184 and flag the difference.",
+      "outside_counsel_fees": 36081682.68,
+      "evidence_outside_counsel": "defending the City or its employees or agents in civil rights and vehicle pursuit-related litigation. According to DOL, in 2025 the City paid outside counsel a total of $36,081,682.68 for legal services to defend active, pending, and concluded federal civil rights cases that would otherwise be handled by FCR, Mass Torts,",
+      "wrongful_conviction_cases": 15,
+      "wrongful_conviction_payout": 193344242.37,
+      "evidence_wrongful_conviction": "Figure 4 below. Figure 4 - 2025 Reportable Case Payouts Case Type Number of Cases Total Amount % Of Total Payout Amount Reversed Conviction 15 $193,344,242.37 74.7% Use of Force 20 $1,844,206.81 .7% Vehicle Pursuit 9 $54,378,000.00 21% Other 2 $49,500.00 .01% Unlawful Pretrial ",
+      "vehicle_pursuit_cases": 9,
+      "vehicle_pursuit_payout": 54378000.0,
+      "evidence_pursuit": "es Total Amount % Of Total Payout Amount Reversed Conviction 15 $193,344,242.37 74.7% Use of Force 20 $1,844,206.81 .7% Vehicle Pursuit 9 $54,378,000.00 21% Other 2 $49,500.00 .01% Unlawful Pretrial Detention 6 $380,000.00 .1% Unlawful Search/Seizure 18 $8,425,326.38 3.2%",
+      "use_of_force_cases": 20,
+      "use_of_force_payout": 1844206.81,
+      "reportable_cases": 167,
+      "cases_with_payout": 82,
+      "pending_civil_rights_lawsuits_dec_31_2025": 363
+    }
+  },
+  "five_year_total_2021_2025_sum_of_report_totals": 633213211.11,
+  "five_year_note": "Our sum of the 'total_payout' in each year's Law Department report, 2021 to 2025, with 2025 excluding the $101.3M Watts settlements. UNRESOLVED DISCREPANCY: WTTW reports $472.4M for 2021 to 2025 (https://news.wttw.com/2026/07/10/chicago-taxpayers-spent-259m-resolve-police-misconduct-lawsuits-2025-city-analysis). Our sum is higher by the amount in five_year_difference_vs_wttw. We tried: 2021 as restated in the 2022 report ($126.1M instead of $122.5M), and settlements-only totals. Neither reproduces $472.4M. Likely cause is that WTTW or the Law Department counts 2021 differently (the 2021 report lists $53.0M settlements and $122.5M with jury awards). Not confirmed. Until resolved, use the single-year totals, which are each stated in the Law Department's own report, and do not publish the 5-year sum.",
+  "five_year_wttw_reported": 472400000.0,
+  "five_year_difference_vs_wttw": 160813211.11,
+  "five_year_total_matches_wttw": false,
+  "per_resident_2025_total_payout_excluding_watts": 95.16,
+  "per_resident_2025_total_payout_including_watts": 132.38,
+  "per_household_2025_total_payout_excluding_watts": 220.87,
+  "population_used": 2721326,
+  "households_used": 1172455,
+  "budget_2026_money_set_aside_for_judgments_by_department": {
+    "Chicago Police Department": 82558000.0,
+    "Finance General": 47992820.0,
+    "Chicago Fire Department": 12000000.0
+  },
+  "budget_note": "Appropriation line 'For the Payment of Tort and Non-Tort Judgments, Outside Counsel Expenses and Expert Costs, as Approved by the Corporation Counsel' in dataset 6694-f78c. CPD's line is for CPD judgments plus outside counsel and experts.",
+  "budget_2026_department_of_law_total": 47954637.0,
+  "secondary_reporting": [
+    {
+      "claim": "CPD spent $131.1M on police misconduct lawsuits in 2025 per the City's audited annual financial report, and CPD overspent its total 2025 budget by $162.5M. The remaining ~$127.8M of the $258.96M is unexplained in public reports.",
+      "source": "WTTW News, Jul 10 2026, citing the City's 2025 Annual Comprehensive Financial Report",
+      "url": "https://news.wttw.com/2026/07/10/chicago-taxpayers-spent-259m-resolve-police-misconduct-lawsuits-2025-city-analysis",
+      "status": "NOT checked against the ACFR itself. Use as 'reported by WTTW'."
+    },
+    {
+      "claim": "Civic Federation: the FY2026 adopted budget uses debt, not operating revenue, to cover the cost of legal police settlements and retroactive salaries for firefighters.",
+      "source": "Civic Federation, Chicago's FY2026 Adopted Budget: Still Short of the Mark",
+      "url": "https://www.civicfed.org/chicagos-fy2026-adopted-budget",
+      "status": "Quote verified in downloaded page text (see data/context_oversight_findings.json)."
+    }
+  ]
+}

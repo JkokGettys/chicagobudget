@@ -1,0 +1,741 @@
+{
+  "year": 2025,
+  "datasets": {
+    "311 Service Requests": "https://data.cityofchicago.org/d/v6vf-nfxy",
+    "Potholes Patched": "https://data.cityofchicago.org/d/wqdh-9gek",
+    "Food Inspections": "https://data.cityofchicago.org/d/4ijn-s7e5",
+    "Building Permits": "https://data.cityofchicago.org/d/ydr8-5enu"
+  },
+  "limits": [
+    "Days to close is closed_date minus created_date, the City's own clock. Same-day closes (for example info calls) are common for some types.",
+    "Status 'Completed' is the City's label. This does not measure quality.",
+    "311 counts are service requests (duplicates removed), not all work a department does.",
+    "Aviation, 311 City Services and Finance owner departments are excluded from the by-type table because their requests are mostly not field services.",
+    "Data pulled on the date in the file's generated_at. 311 data keeps updating, so numbers move a little between pulls.",
+    "Rows marked partial_year=true cover only part of the year. Do not compare them with full years.",
+    "avg_days_to_close of 0.0 for '311 City Services', 'Aviation' and 'Finance' means the requests are information calls or are closed at creation. It does not mean fast service."
+  ],
+  "owner_department_to_budget_department": {
+    "Streets and Sanitation": "Department of Streets and Sanitation",
+    "CDOT - Department of Transportation": "Chicago Department of Transportation",
+    "DWM - Department of Water Management": "Department of Water Management",
+    "Animal Care and Control": "Chicago Animal Care and Control",
+    "DOB - Buildings": "Department of Buildings",
+    "BACP - Business Affairs and Consumer Protection": "Department of Business Affairs and Consumer Protection",
+    "City Clerk's Office": "Office of City Clerk",
+    "Health": "Chicago Department of Public Health",
+    "Fire": "Chicago Fire Department",
+    "Department of Housing": "Department of Housing",
+    "Finance": "Department of Finance",
+    "Aviation": "Chicago Department of Aviation",
+    "311 City Services": null,
+    "Outside Agencies": null
+  },
+  "requests_by_owner_department": [
+    {
+      "owner_department": "311 City Services",
+      "budget_department": null,
+      "requests": 691301,
+      "avg_days_to_close": 0.0
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "budget_department": "Department of Streets and Sanitation",
+      "requests": 483252,
+      "avg_days_to_close": 17.3
+    },
+    {
+      "owner_department": "Aviation",
+      "budget_department": "Chicago Department of Aviation",
+      "requests": 364926,
+      "avg_days_to_close": 0.0
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "budget_department": "Chicago Department of Transportation",
+      "requests": 144702,
+      "avg_days_to_close": 38.8
+    },
+    {
+      "owner_department": "DWM - Department of Water Management",
+      "budget_department": "Department of Water Management",
+      "requests": 77565,
+      "avg_days_to_close": 29.9
+    },
+    {
+      "owner_department": "Animal Care and Control",
+      "budget_department": "Chicago Animal Care and Control",
+      "requests": 38736,
+      "avg_days_to_close": 9.8
+    },
+    {
+      "owner_department": "DOB - Buildings",
+      "budget_department": "Department of Buildings",
+      "requests": 37578,
+      "avg_days_to_close": 47.7
+    },
+    {
+      "owner_department": "Finance",
+      "budget_department": "Department of Finance",
+      "requests": 20377,
+      "avg_days_to_close": 0.0
+    },
+    {
+      "owner_department": "BACP - Business Affairs and Consumer Protection",
+      "budget_department": "Department of Business Affairs and Consumer Protection",
+      "requests": 11852,
+      "avg_days_to_close": 34.9
+    },
+    {
+      "owner_department": "Outside Agencies",
+      "budget_department": null,
+      "requests": 8750,
+      "avg_days_to_close": 3.2
+    },
+    {
+      "owner_department": "City Clerk's Office",
+      "budget_department": "Office of City Clerk",
+      "requests": 4510,
+      "avg_days_to_close": 9.1
+    },
+    {
+      "owner_department": "Health",
+      "budget_department": "Chicago Department of Public Health",
+      "requests": 3532,
+      "avg_days_to_close": 27.7
+    },
+    {
+      "owner_department": "Fire",
+      "budget_department": "Chicago Fire Department",
+      "requests": 282,
+      "avg_days_to_close": 16.0
+    },
+    {
+      "owner_department": "Department of Housing",
+      "budget_department": "Department of Housing",
+      "requests": 169,
+      "avg_days_to_close": 6.4
+    }
+  ],
+  "top_request_types": [
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Graffiti Removal Request",
+      "requests": 90857,
+      "completed": 89034,
+      "open": 1000,
+      "canceled": 823,
+      "share_completed": 0.9799
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Abandoned Vehicle Complaint",
+      "requests": 52937,
+      "completed": 52601,
+      "open": 336,
+      "canceled": 0,
+      "share_completed": 0.9937
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Garbage Cart Maintenance",
+      "requests": 48744,
+      "completed": 47681,
+      "open": 286,
+      "canceled": 777,
+      "share_completed": 0.9782
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Rodent Baiting/Rat Complaint",
+      "requests": 43083,
+      "completed": 43053,
+      "open": 0,
+      "canceled": 30,
+      "share_completed": 0.9993
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Tree Trim Request (NO LONGER BEING ACCEPTED)",
+      "requests": 42858,
+      "completed": 42852,
+      "open": 6,
+      "canceled": 0,
+      "share_completed": 0.9999
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Street Light Out Complaint",
+      "requests": 31810,
+      "completed": 31368,
+      "open": 428,
+      "canceled": 14,
+      "share_completed": 0.9861
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Pothole in Street Complaint",
+      "requests": 28300,
+      "completed": 28230,
+      "open": 62,
+      "canceled": 8,
+      "share_completed": 0.9975
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Tree Debris Clean-Up Request",
+      "requests": 27043,
+      "completed": 23120,
+      "open": 12,
+      "canceled": 3911,
+      "share_completed": 0.8549
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Tree Emergency",
+      "requests": 25862,
+      "completed": 25330,
+      "open": 157,
+      "canceled": 375,
+      "share_completed": 0.9794
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Traffic Signal Out Complaint",
+      "requests": 24258,
+      "completed": 23751,
+      "open": 368,
+      "canceled": 139,
+      "share_completed": 0.9791
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Blue Recycling Cart",
+      "requests": 21115,
+      "completed": 20726,
+      "open": 115,
+      "canceled": 274,
+      "share_completed": 0.9816
+    },
+    {
+      "owner_department": "DWM - Department of Water Management",
+      "sr_type": "Water in Basement Complaint",
+      "requests": 18639,
+      "completed": 17739,
+      "open": 38,
+      "canceled": 862,
+      "share_completed": 0.9517
+    },
+    {
+      "owner_department": "DOB - Buildings",
+      "sr_type": "Building Violation",
+      "requests": 18481,
+      "completed": 18477,
+      "open": 3,
+      "canceled": 1,
+      "share_completed": 0.9998
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Tree Removal Inspection",
+      "requests": 17672,
+      "completed": 11761,
+      "open": 3079,
+      "canceled": 2832,
+      "share_completed": 0.6655
+    },
+    {
+      "owner_department": "DWM - Department of Water Management",
+      "sr_type": "Water Lead Test Kit Request",
+      "requests": 16360,
+      "completed": 6632,
+      "open": 8834,
+      "canceled": 894,
+      "share_completed": 0.4054
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Yard Waste Pick-Up Request",
+      "requests": 16118,
+      "completed": 16113,
+      "open": 0,
+      "canceled": 5,
+      "share_completed": 0.9997
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Fly Dumping Complaint",
+      "requests": 14602,
+      "completed": 14561,
+      "open": 26,
+      "canceled": 15,
+      "share_completed": 0.9972
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Dead Animal Pick-Up Request",
+      "requests": 14390,
+      "completed": 14361,
+      "open": 0,
+      "canceled": 29,
+      "share_completed": 0.998
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Sanitation Code Violation",
+      "requests": 14150,
+      "completed": 14098,
+      "open": 14,
+      "canceled": 38,
+      "share_completed": 0.9963
+    },
+    {
+      "owner_department": "Animal Care and Control",
+      "sr_type": "Stray Animal Complaint",
+      "requests": 11694,
+      "completed": 1870,
+      "open": 24,
+      "canceled": 9800,
+      "share_completed": 0.1599
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Tree Planting Request",
+      "requests": 10006,
+      "completed": 4176,
+      "open": 5830,
+      "canceled": 0,
+      "share_completed": 0.4173
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Sign Repair Request - All Other Signs",
+      "requests": 9828,
+      "completed": 9043,
+      "open": 641,
+      "canceled": 144,
+      "share_completed": 0.9201
+    },
+    {
+      "owner_department": "Animal Care and Control",
+      "sr_type": "Report an Injured Animal",
+      "requests": 9455,
+      "completed": 8194,
+      "open": 0,
+      "canceled": 1261,
+      "share_completed": 0.8666
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Missed Garbage Pick-Up Complaint",
+      "requests": 9106,
+      "completed": 9088,
+      "open": 3,
+      "canceled": 15,
+      "share_completed": 0.998
+    },
+    {
+      "owner_department": "DWM - Department of Water Management",
+      "sr_type": "Check for Leak",
+      "requests": 8601,
+      "completed": 7387,
+      "open": 105,
+      "canceled": 1109,
+      "share_completed": 0.8589
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Snow – Uncleared Sidewalk Complaint",
+      "requests": 8567,
+      "completed": 8432,
+      "open": 34,
+      "canceled": 101,
+      "share_completed": 0.9842
+    },
+    {
+      "owner_department": "DOB - Buildings",
+      "sr_type": "Buildings - Plumbing Violation",
+      "requests": 8485,
+      "completed": 8477,
+      "open": 8,
+      "canceled": 0,
+      "share_completed": 0.9991
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Inspect Public Way Request",
+      "requests": 8193,
+      "completed": 7261,
+      "open": 916,
+      "canceled": 16,
+      "share_completed": 0.8862
+    },
+    {
+      "owner_department": "DWM - Department of Water Management",
+      "sr_type": "Water On Street Complaint",
+      "requests": 8186,
+      "completed": 7432,
+      "open": 136,
+      "canceled": 618,
+      "share_completed": 0.9079
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Weed Removal Request",
+      "requests": 7479,
+      "completed": 7456,
+      "open": 6,
+      "canceled": 17,
+      "share_completed": 0.9969
+    },
+    {
+      "owner_department": "DWM - Department of Water Management",
+      "sr_type": "Sewer Cleaning Inspection Request",
+      "requests": 7333,
+      "completed": 6714,
+      "open": 136,
+      "canceled": 483,
+      "share_completed": 0.9156
+    },
+    {
+      "owner_department": "Outside Agencies",
+      "sr_type": "E-Scooter Parking Complaint",
+      "requests": 6778,
+      "completed": 6777,
+      "open": 0,
+      "canceled": 1,
+      "share_completed": 0.9999
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Ice and Snow Removal Request",
+      "requests": 6591,
+      "completed": 6591,
+      "open": 0,
+      "canceled": 0,
+      "share_completed": 1.0
+    },
+    {
+      "owner_department": "Animal Care and Control",
+      "sr_type": "Vicious Animal Complaint",
+      "requests": 6011,
+      "completed": 5399,
+      "open": 0,
+      "canceled": 612,
+      "share_completed": 0.8982
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Alley Light Out Complaint",
+      "requests": 5753,
+      "completed": 5727,
+      "open": 24,
+      "canceled": 2,
+      "share_completed": 0.9955
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Alley Pothole Complaint",
+      "requests": 5559,
+      "completed": 5556,
+      "open": 2,
+      "canceled": 1,
+      "share_completed": 0.9995
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Sidewalk Inspection Request",
+      "requests": 5512,
+      "completed": 3659,
+      "open": 1840,
+      "canceled": 13,
+      "share_completed": 0.6638
+    },
+    {
+      "owner_department": "Animal Care and Control",
+      "sr_type": "Nuisance Animal Complaint",
+      "requests": 5499,
+      "completed": 5391,
+      "open": 8,
+      "canceled": 100,
+      "share_completed": 0.9804
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Street Cleaning Request",
+      "requests": 5156,
+      "completed": 5116,
+      "open": 11,
+      "canceled": 29,
+      "share_completed": 0.9922
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Recycling Pick Up",
+      "requests": 5128,
+      "completed": 5123,
+      "open": 5,
+      "canceled": 0,
+      "share_completed": 0.999
+    }
+  ],
+  "completed_within_7_days_focus_types": [
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Graffiti Removal Request",
+      "completed_requests": 89034,
+      "completed_within_7_days": 88760,
+      "share_within_7_days": 0.9969,
+      "avg_days_to_close": 1.1
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Abandoned Vehicle Complaint",
+      "completed_requests": 52601,
+      "completed_within_7_days": 22101,
+      "share_within_7_days": 0.4202,
+      "avg_days_to_close": 19.7
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Garbage Cart Maintenance",
+      "completed_requests": 47681,
+      "completed_within_7_days": 10676,
+      "share_within_7_days": 0.2239,
+      "avg_days_to_close": 24.2
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Rodent Baiting/Rat Complaint",
+      "completed_requests": 43053,
+      "completed_within_7_days": 34316,
+      "share_within_7_days": 0.7971,
+      "avg_days_to_close": 4.1
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Street Light Out Complaint",
+      "completed_requests": 31368,
+      "completed_within_7_days": 27039,
+      "share_within_7_days": 0.862,
+      "avg_days_to_close": 7.6
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Pothole in Street Complaint",
+      "completed_requests": 28230,
+      "completed_within_7_days": 15040,
+      "share_within_7_days": 0.5328,
+      "avg_days_to_close": 26.5
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Tree Emergency",
+      "completed_requests": 25330,
+      "completed_within_7_days": 23968,
+      "share_within_7_days": 0.9462,
+      "avg_days_to_close": 2.9
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Traffic Signal Out Complaint",
+      "completed_requests": 23751,
+      "completed_within_7_days": 20647,
+      "share_within_7_days": 0.8693,
+      "avg_days_to_close": 8.1
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Blue Recycling Cart",
+      "completed_requests": 20726,
+      "completed_within_7_days": 849,
+      "share_within_7_days": 0.041,
+      "avg_days_to_close": 34.6
+    },
+    {
+      "owner_department": "DOB - Buildings",
+      "sr_type": "Building Violation",
+      "completed_requests": 18477,
+      "completed_within_7_days": 5731,
+      "share_within_7_days": 0.3102,
+      "avg_days_to_close": 46.6
+    },
+    {
+      "owner_department": "DWM - Department of Water Management",
+      "sr_type": "Water in Basement Complaint",
+      "completed_requests": 17739,
+      "completed_within_7_days": 17490,
+      "share_within_7_days": 0.986,
+      "avg_days_to_close": 1.3
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Fly Dumping Complaint",
+      "completed_requests": 14561,
+      "completed_within_7_days": 8979,
+      "share_within_7_days": 0.6166,
+      "avg_days_to_close": 16.3
+    },
+    {
+      "owner_department": "Streets and Sanitation",
+      "sr_type": "Missed Garbage Pick-Up Complaint",
+      "completed_requests": 9088,
+      "completed_within_7_days": 7743,
+      "share_within_7_days": 0.852,
+      "avg_days_to_close": 4.7
+    },
+    {
+      "owner_department": "CDOT - Department of Transportation",
+      "sr_type": "Alley Pothole Complaint",
+      "completed_requests": 5556,
+      "completed_within_7_days": 1568,
+      "share_within_7_days": 0.2822,
+      "avg_days_to_close": 52.6
+    },
+    {
+      "owner_department": "Animal Care and Control",
+      "sr_type": "Stray Animal Complaint",
+      "completed_requests": 1870,
+      "completed_within_7_days": 1473,
+      "share_within_7_days": 0.7877,
+      "avg_days_to_close": 17.9
+    }
+  ],
+  "potholes_patched_by_year": [
+    {
+      "year": 2019,
+      "blocks_patched": 30579,
+      "potholes_filled": 434689,
+      "partial_year": false
+    },
+    {
+      "year": 2020,
+      "blocks_patched": 31795,
+      "potholes_filled": 371877,
+      "partial_year": false
+    },
+    {
+      "year": 2021,
+      "blocks_patched": 24908,
+      "potholes_filled": 274918,
+      "partial_year": false
+    },
+    {
+      "year": 2022,
+      "blocks_patched": 39649,
+      "potholes_filled": 489943,
+      "partial_year": false
+    },
+    {
+      "year": 2023,
+      "blocks_patched": 34885,
+      "potholes_filled": 366510,
+      "partial_year": false
+    },
+    {
+      "year": 2024,
+      "blocks_patched": 30262,
+      "potholes_filled": 319240,
+      "partial_year": false
+    },
+    {
+      "year": 2025,
+      "blocks_patched": 25633,
+      "potholes_filled": 248541,
+      "partial_year": false
+    },
+    {
+      "year": 2026,
+      "blocks_patched": 24005,
+      "potholes_filled": 266366,
+      "partial_year": true
+    }
+  ],
+  "potholes_avg_days_request_to_patch_2025": 35.2,
+  "potholes_rows_with_completion_2025": 25633,
+  "food_inspections_by_year": [
+    {
+      "year": 2019,
+      "inspections": 19052,
+      "partial_year": false
+    },
+    {
+      "year": 2020,
+      "inspections": 15123,
+      "partial_year": false
+    },
+    {
+      "year": 2021,
+      "inspections": 15868,
+      "partial_year": false
+    },
+    {
+      "year": 2022,
+      "inspections": 16936,
+      "partial_year": false
+    },
+    {
+      "year": 2023,
+      "inspections": 18261,
+      "partial_year": false
+    },
+    {
+      "year": 2024,
+      "inspections": 19228,
+      "partial_year": false
+    },
+    {
+      "year": 2025,
+      "inspections": 19205,
+      "partial_year": false
+    },
+    {
+      "year": 2026,
+      "inspections": 12061,
+      "partial_year": true
+    }
+  ],
+  "building_permits_issued_by_year": [
+    {
+      "year": 2019,
+      "permits": 48544,
+      "partial_year": false
+    },
+    {
+      "year": 2020,
+      "permits": 38513,
+      "partial_year": false
+    },
+    {
+      "year": 2021,
+      "permits": 39119,
+      "partial_year": false
+    },
+    {
+      "year": 2022,
+      "permits": 38337,
+      "partial_year": false
+    },
+    {
+      "year": 2023,
+      "permits": 34389,
+      "partial_year": false
+    },
+    {
+      "year": 2024,
+      "permits": 33440,
+      "partial_year": false
+    },
+    {
+      "year": 2025,
+      "permits": 32032,
+      "partial_year": false
+    },
+    {
+      "year": 2026,
+      "permits": 24021,
+      "partial_year": true
+    }
+  ],
+  "generated_at": "2026-09-30"
+}

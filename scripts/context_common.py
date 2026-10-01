@@ -108,5 +108,6 @@ def load_json(name):
 
 
 def money(s):
-    """'$1,234,567.89' or '1234567' -> float."""
-    return float(re.sub(r"[^0-9.\-]", "", str(s)))
+    """'$1,234,567.89' or '1234567' -> float. Trailing sentence periods are dropped."""
+    t = re.sub(r"[^0-9.\-]", "", str(s)).rstrip(".")
+    return float(t)
