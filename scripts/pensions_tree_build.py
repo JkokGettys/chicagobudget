@@ -55,7 +55,7 @@ def fund_splits(c):
     # ---- normal cost box
     pcs = []
     for t in c["tiers"]:
-        p = {"name": f"{t['name']}: {fmt(t['count'])} active members", "amount": t["net_nc"], "basis": "gov_estimate",
+        p = {"name": f"{t['name']}: {fmt(t['count'])} active members", "amount": t["net_nc"], "basis": t.get("basis", "gov_estimate"),
              "source": {"doc": c["val_doc"], "url": c["val_url"], "page": t["page"], "note": t["src_note"]},
              "count": t["count"], "unit_amount": round(t["net_nc"] / t["count"], 2),
              "unit_label": "active members (net normal cost each)",

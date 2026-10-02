@@ -90,5 +90,79 @@ add_fund(dict(
 ))
 
 
+# ======================================================================= FABF (Fire)
+FU = "https://fabf.org/LinkClick.aspx?fileticket=G_bIYnMR31w%3d&portalid=0"
+FD = "FABF Actuarial Valuation as of 12/31/2025 (Segal)"
+_t1, _t2, _n = 76515423, 74644183, 93011790
+_f1 = round(_n * _t1 / (_t1 + _t2), 2)
+_f2 = round(_n - _f1, 2)
+add_fund(dict(
+    ids=dict(
+        short="city.retirement.firemen-s-annuity-and-benefit-fund.0684-2005-0976.paying-down-the-shortfall-money-promised-but-nev",
+        nc="city.retirement.firemen-s-annuity-and-benefit-fund.0684-2005-0976.cost-of-pensions-workers-earn-this-year",
+        adv="city.retirement.firemen-s-annuity-and-benefit-fund.0684-2005-097a.extra-payment-above-what-the-law-requires"),
+    val_doc=FD + ", Exhibits D.1, D.2, E and Section 2",
+    val_url=FU, val_pages="35, 41-43, 52",
+    src_note="Annual benefits in payment at 12/31/2025: service retirees Exhibit D.1 (p.41), spouses Exhibit D.2 (p.42, includes widows' "
+             "compensation per its footnote 14, so the 63 widows' compensation annuities from Exhibit E are taken out of the spouse line), "
+             "other groups Exhibit E (p.43). Refunds of contributions $3,702,355 are 2025 cash from the fund's income statement (p.52).",
+    short_amt=348734731,
+    ben_label="$457,739,817 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds of contributions)",
+    groups=[
+        ("Retired firefighters", "retirees", 4006, 386653292, "Exhibit D.1 (p.41): 3,778 men $365,720,753 and 228 women $20,932,539."),
+        ("Surviving spouses", "spouses", 1128, 39109604, "Exhibit D.2 (p.42) total $44,404,654 for 1,191 spouses, minus the 63 widows' compensation annuities shown in Exhibit E (p.43)."),
+        ("Duty disability", "disabled firefighters", 202, 16229924, "Exhibit E (p.43)."),
+        ("Widows' compensation (service-connected death)", "widows", 63, 5295050, "Exhibit E (p.43)."),
+        ("Occupational disease disability", "disabled firefighters", 73, 5549312, "Exhibit E (p.43)."),
+        ("Refunds to people who left", "", 0, 3702355, "2025 refunds of contributions, income statement p.52. The count of refunds is not printed."),
+        ("Children's annuities", "children", 82, 1067391, "Exhibit E (p.43)."),
+        ("Ordinary disability", "disabled firefighters", 3, 132889, "Exhibit E (p.43)."),
+    ],
+    short_note="The valuation says the statutory funding policy 'systematically underfunds' the fund, aiming for 90% funded by 2055. "
+               "Funded ratio is 24.7% and the unfunded liability is about $6.0 billion.",
+    short_side=[
+        S("unfunded_liability", "Unfunded actuarial accrued liability (promised pensions not yet saved for), 12/31/2025", 6048701965, "12/31/2025", "actual", FD, FU, 12),
+        S("funded_ratio", "Funded ratio, actuarial value of assets $1,981,093,049 vs liability $8,029,795,014: 24.67%", None, "12/31/2025", "actual", FD, FU, 12, ratio=0.2467),
+        S("amortization_target", "State law aims for 90% funded by the end of 2055. The statutory payment would take 34 years to pay off the unfunded liability (32 years for the next levy year).", None, "2055 target", "actual", FD, FU, 12, target_year=2055),
+        S("amortization_payment", "Payment on the unfunded liability in the actuary's recommended 2026 contribution (layered closed 20-year bases)", 554483168, "plan year 2026", "gov_estimate", FD, FU, 28),
+        S("recommended_contribution", "Actuarially determined contribution for 2026 (92.61% of payroll)", 588720377, "plan year 2026", "gov_estimate", FD, FU, 28),
+        S("benefits_paid", "Benefits and refunds paid in 2025 (annuities $448,598,205, refunds $3,702,355)", 452300560, "2025", "actual", FD, FU, 52),
+        S("annual_benefits_in_force", "Annual benefits in payment at 12/31/2025 to 5,557 retirees, survivors, disabled members and children (monthly $37,836,455)", 454037460, "12/31/2025", "actual", FD, FU, 12, members=5557),
+    ],
+    tiers=[
+        dict(name="Tier 1 (hired before 2011)", count=1966, net_nc=_f1, page=62, basis="proxy",
+             src_note="Table of normal cost components (p.62): Tier 1 total normal cost incl. admin $76,515,423. The valuation prints member contributions only for both tiers together ($58,147,816), so the employer cost is split by each tier's share of total normal cost.",
+             note=f"Proxy: employer normal cost $93,011,790 shared by Tier 1's {_t1 / (_t1 + _t2) * 100:.1f}% of total normal cost incl. admin ($76,515,423 of $151,159,606). "
+                  "The fund prints this only for both tiers together. 1,966 Tier 1 active members (p.35)."),
+        dict(name="Tier 2 (hired 2011 or later)", count=2708, net_nc=_f2, page=62, basis="proxy",
+             src_note="Table of normal cost components (p.62): Tier 2 total normal cost incl. admin $74,644,183. Employer cost split by share of total normal cost.",
+             note=f"Proxy: employer normal cost $93,011,790 shared by Tier 2's {_t2 / (_t1 + _t2) * 100:.1f}% of total normal cost incl. admin ($74,644,183 of $151,159,606). "
+                  "2,708 Tier 2 active members (p.35)."),
+    ],
+    nc_amt=93011790,
+    nc_note="Employer normal cost is the actuary's estimate of what this year of work by 4,674 active firefighters adds to the pension promise, "
+            "after firefighters' own contributions (p.28 and p.62). The tier split is our proxy.",
+    nc_side=[
+        S("active_payroll", "Total pensionable salary of 4,674 active members at 12/31/2025 (average $129,269)", 604204092, "12/31/2025", "actual", FD, FU, 12),
+        S("projected_payroll", "Projected payroll for 2026", 635699685, "2026", "gov_estimate", FD, FU, 28),
+        S("total_normal_cost", "Total normal cost before member contributions (23.16% of pay)", 147242696, "2026", "gov_estimate", FD, FU, 28),
+        S("member_contributions", "Expected contributions by active firefighters themselves (9.15% of pay)", 58147816, "2026", "gov_estimate", FD, FU, 28),
+        S("admin_expenses", "Administrative expenses included in the normal cost line", 3916910, "2026", "gov_estimate", FD, FU, 28),
+    ],
+    adv_amt=11583144,
+    adv_name="One extra payment into the fund's savings",
+    adv_doc=FD + " pp.10, 52",
+    adv_page=10,
+    adv_note="Under the City's Pension Management Policy the City budgets extra ('advance') payments on top of the State-law minimum so the "
+             "shortfall does not grow. The valuation counts the January 2026 payment of $5,791,572 in its 2026 projections and says "
+             "another is expected in June 2026 that it does not count.",
+    adv_side=[
+        S("advance_history", "Advance pension payment received in 2024", 28274000, "2024", "actual", FD, FU, 52),
+        S("advance_history", "Advance pension payment received in 2025", 15640948, "2025", "actual", FD, FU, 52),
+        S("advance_payment_2026", "Advance payment made January 2026 (the only 2026 payment the actuary counts)", 5791572, "2026", "actual", FD, FU, 10),
+    ],
+))
+
+
 if __name__ == "__main__":
     write()
