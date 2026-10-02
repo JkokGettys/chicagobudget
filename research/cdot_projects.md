@@ -1,6 +1,6 @@
 # CDOT project-level detail for the grant construction and reserve lines
 
-Date of research: 2026-10-02. Build: `python3 scripts/cdot_build.py` writes `data/splits/city/cdot_projects.json` (48 splits: 26 box splits and 22 side-only, all applied, 0 skipped by `python3 build/city_tree.py`, city check 0 problems, total unchanged at $16,842,553,003.00). Raw cache (gitignored): `raw/cdot/`. Refresh the CMAP data with `python3 scripts/cdot_etip_fetch.py 3488 16811 cdot`.
+Date of research: 2026-10-02. Build: `python3 scripts/cdot_build.py` writes `data/splits/city/cdot_projects.json` (51 splits, all applied, 0 skipped by `python3 build/city_tree.py`, city check 0 problems, total unchanged at $16,842,553,003.00). Raw cache (gitignored): `raw/cdot/`. Refresh the CMAP data with `python3 scripts/cdot_etip_fetch.py 3488 16811 cdot`.
 
 ## Bottom line: dollars now attached to a named project, per line
 
@@ -72,18 +72,38 @@ Duplicate-name caution: Columbus Ave GS11, Canal Street viaduct, Archer at Kento
 3. The TIP lists far more state-type money in FFY2026 ($200.7M) than the $117.4M state construction line. Only Calumet River Bridges ($112.2M, State Match, FFY2026) fits inside. The rest is a side fact. Matching is by fund type and could be wrong.
 4. The federal 0540 line ($451.6M) is $218.1M above what the TIP programs for federal-highway funds in FFY2026. That gap is the realistic maximum of what the TIP can explain. Candidates for the rest are the carryover of multi-year awards, other federal funds (Safe Streets, Reconnecting Communities, Bridge Investment Program), and phases the TIP shows as prior-year costs.
 
-## Gaps, not done
+## Gaps: what was tried in the second pass, and what is still open
 
-- **Not placed:** 925F 281U 0540 FTA formula construction $10M, 925S 280M 0540 DCEO $23.6M, 925F 281N and 280G $1M each, 925F 281K Safe Streets $20.9M (a professional services line, TIP has no SS4A money in FFY2026). The TIP's CTA projects (60, including Red Line Extension and Brown Line capacity) are not CDOT-led, so they were not matched to these lines.
-- IDOT district project lists (public.powerdms.com/IDOT/documents/3179143 and the District 1 documents) were not fetched. The annual program covers the same fiscal year for Chicago local projects.
-- USASpending sub-awards: an earlier pull (`raw/leaves/usa_sub.json`) found 0 rows to the City for ALN 20.205 and 20.507, so none were used.
-- TIP "Local Funds" ($368.5M in FFY2026, including Division Street $70.0M, Elston-Armitage right of way $75.3M, Burley Avenue $30.0M) is City money and sits in capital and bond lines, not on these grant lines. It is not shown in the tree here.
+**Federal highway money with no 2026 TIP project, $218,126,886 (925F 281S 0540). Still not itemised.** Three public views of 2026 federal road money for Chicago exist and none adds to the line:
+
+| View | Amount |
+|---|---:|
+| City ordinance line (Summary G anticipated 2026 grant $452,121,000, p. 606) | $451,646,229 |
+| CMAP TIP, federal-highway funds programmed in FFY2026 (the 14 boxes) | $233,519,343 |
+| IDOT FY2026 annual program, 19 Chicago local-system projects with federal-type funds | $291,533,000 |
+
+The IDOT figure includes $143,000,000 for two Calumet River bridges (Ewing Ave $100.0M, 95th St $43.0M, IDOT PDF pp. 73 and 76) that IDOT labels discretionary grant. They fit the federal Bridge Investment Program grant 693JJ22440000Y17FILJ498286, which USASpending shows awarded to **IDOT** ($144,000,000 federal, $145,500,000 match, $289,500,000 total, $34,274 spent, signed 2024-08-29). The grant text names exactly those four Calumet bridges. We cannot tell how much of it runs through the City's 925F line, so it is a side fact and not a box. A box would assume the City books money that IDOT holds. IDOT's multi-year program (October 2025, PDF pp. 336 to 361, file identical to the IDOT publication) adds Chicago local projects in 2027 to 2031 (for example Jeffrey Dr $60.0M, 100th St bridge $39.2M, California Ave bridge $26.7M, Ogden Ave $19.9M). They are side facts, labelled as later years. The multi-year program lists IDOT's own project numbers, so the $218.1M cannot be tied to named jobs from it either. I also checked the City's budget book text (660 pages cached): it has no narrative on what the $452.1M pays for.
+
+**The rest of the State/Lake award, $127,618,674. Still not itemised, and no better split exists in public data.** What was added this pass: the award's obligation history by FTA fiscal year (USASpending, total $408,620,572 in account-level records against $414,620,572 on the award page), which shows the $102,140,573 record that exists only in the 2025 ledger extract is a real obligation posted in March 2025. FTA then de-obligated $55,300,000 and $9,774,524 and obligated new amounts in April and November 2025, so the older ledger record may be a superseded slice of the newer ones. Corrected earlier statement: the bid book **does** contain a Schedule of Prices (PDF pp. 22 and 23). Four of 15 items are City-fixed allowances (track flagging $3.5M, track access $3.5M, regulated-substance disposal $0.25M, utility service $0.25M, together $7.5M) and are posted as side facts. The other 11 items (mobilization, civil, structural, architectural, plumbing, mechanical, electrical, communications, track, traction power, signal and train control) are bidder lump sums. The City's bid-tabulation search (https://webapps1.chicago.gov/vcsearch/bidtabs, driven with its CSRF form) returned "No Records Found" for the specification number, description, bidder and date window, and the bid book has no engineer's estimate. So the $444M cannot be split by trade from public files.
+
+**Unplaced lines, resolved this pass.**
+- **925F 281K 0140 Safe Streets and Roads for All, $20,928,000: now a box.** The TIP programs $20,927,748 of Safe Streets money for Ogden Avenue, Pulaski to Roosevelt (project 01-22-0043), $252 below the line. It is the only Safe Streets grant in the ordinance. The TIP puts the money in FFY2027 (Oct 2026 to Sep 2027) while the City budgets it in 2026. The TIP's other Safe Streets project, North Avenue Kostner to Kedzie, $20,010,000 (01-23-0005), is a side fact. The USASpending award for this grant could not be found by name or ALN 20.939 (no award to the City, only to CMAP and East Chicago), so the match rests on the amount.
+- **925F 281U 0540 FTA formula, $10,000,000: stays one box, with a note.** No project list is public. The Pedway job ($3,236,583 of CMAQ) is posted as a fact only.
+- **925S 280M 0540 DCEO, $23,600,000: stays one box, with a note.** The ledger shows DCEO road projects only as small ward-level jobs ($16.2M budget in total) and the TIP has no DCEO fund source.
+- Still unplaced and small: 925F 281N and 280G ($1,000,000 each, NHTSA safety).
+
+**IDOT District 1 project lists.** The District 1 local project list is inside the multi-year program PDF already cached (pages 336 to 361 for Chicago local highways), and the annual program covers IDOT's fiscal year 2026. Both are used as side facts. The separate PowerDMS copies (public.powerdms.com/IDOT/documents/3179143 and the District 1 documents) were not fetched because they carry the same project list. State-system projects in Chicago (I-290 bridges, Kennedy, I-55, I-94) are IDOT's own spending and are not City appropriations, so they were not matched to City lines.
+
+**Other open items**
+- TIP "Local Funds" ($368.5M in FFY2026, including Division Street $70.0M, Elston-Armitage right of way $75.3M, Burley Avenue $30.0M) is City money and sits in capital and bond lines, not on these grant lines.
 - The TIP FY2026 column is the program as adopted, not obligations. Obligated and spent amounts by TIP project are in IDOT's e-Project and FHWA FMIS and were not available.
+- USASpending sub-awards: an earlier pull (`raw/leaves/usa_sub.json`) found 0 rows to the City for ALN 20.205 and 20.507.
+- Search engines were blocked for part of this pass (anti-bot page), so a search for FTA grant line-item data (TrAMS) and CTA board documents was not completed. The FTA TrAMS activity line items for IL-2016-002 would be the best remaining source for a station, track and utility split.
 
 ## Reproduce
 
 ```
 python3 scripts/cdot_etip_fetch.py 3488 16811 cdot   # about 4 minutes, 108 project JSON files
 python3 scripts/cdot_build.py
-python3 build/city_tree.py                            # expect: cdot_projects.json 48 applied, 0 skipped, OK
+python3 build/city_tree.py                            # expect: cdot_projects.json 51 applied, 0 skipped, OK
 ```
