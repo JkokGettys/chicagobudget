@@ -6,9 +6,8 @@ Run:  python3 scripts/bond_series_round4_build.py     (then build/build_all.sh; 
 Method (research/emma_bonds.md): for each of 2016D, 2016E, 2017A, 2017C and 2018C, take the maturity table on the series' own
 official statement cover (raw/bonds), remove what the Dec 2025 tender (2025CD OS Appendix H) and the Jan 1 2027 refunding
 (2026CD OS Appendix H) took out, and check that the rest equals the balance the 2026CD OS prints on p.64 (to the dollar,
-all five tie). Interest for the bond year (Jan 2 2026 to Jan 1 2027) is then balance x coupon, because every remaining
-bond is outstanding for the whole year. Interest is DERIVED, not printed. Series 2016G is not done (a Nov 2025 refunding
-by 2025G took out an amount whose list is not in a document we hold, so its balance does not tie).
+all six tie). Interest for the bond year (Jan 2 2026 to Jan 1 2027) is then balance x coupon, because every remaining
+bond is outstanding for the whole year. Interest is DERIVED, not printed. Series 2016G is included, its balance tying only after BOTH the 2026B refunding (2026B OS Appendix H p.329) and the 2026CD refunding are taken off.
 
 The O'Hare principal box is NOT split: the same series' Jan 1 2027 maturities come to more than that box (see the note).
 """
@@ -47,6 +46,9 @@ c18 = txt("ORD_2018ABC_OS")
 must(cd, "Series 2016D (Non-AMT) 598,730,000 392,740,000", "2016D balance")
 must(cd, "Series 2016E (Non-AMT) 61,540,000 34,900,000", "2016E balance")
 must(cd, "Series 2017A (Non-AMT) 39,345,000 13,010,000", "2017A balance")
+must(cd, "Series 2016G (AMT) 58,675,000 37,075,000", "2016G balance")
+must(txt("ohare_2026B_OS"), "Series 2016G (AMT) 61,800,000 58,675,000", "2016G balance before 2026CD")
+must(txt("ohare_2026B_OS"), "Total $3,125,000", "2016G 2026B refunded total")
 must(cd, "Series 2017C (Non-AMT) 61,985,000 34,380,000", "2017C balance")
 must(cd, "Series 2018C (Taxable) 710,130,000 710,130,000", "2018C balance")
 # covers
@@ -76,6 +78,13 @@ SER["2016D"] = dict(
 SER["2016E"] = dict(
     cover={2027: (34900000, "5"), 2028: (26640000, "5.25")}, tender={}, refunded={2028: 26640000},
     balance=34900000, cover_doc="O'Hare_2016D-G_Sr._Lien_GARB_OS.bW9YWx6Cu3.pdf p.3", official="General Airport Senior Lien Revenue Bonds, Series 2016E (Non-AMT)")
+SER["2016G"] = dict(
+    cover={2027: (590000, "5"), 2028: (620000, "5.25"), 2029: (1350000, "5.25"), 2030: (1425000, "5.25"), 2031: (1500000, "5.25"),
+           2037: (10720000, "5"), 2042: (11680000, "5"), 2047: (14895000, "5"), 2052: (19020000, "5")},
+    tender={},
+    # 2026B refunding (2026B OS Appendix H p.329: 3,125,000) plus 2026CD refunding (2026CD OS Appendix H p.341: 21,600,000)
+    refunded={2028: 540000 + 80000, 2029: 1180000 + 170000, 2030: 1245000 + 180000, 2031: 1310000 + 190000, 2037: 9365000 + 1355000, 2042: 7960000 + 1150000},
+    balance=37075000, cover_doc="O'Hare_2016D-G_Sr._Lien_GARB_OS.bW9YWx6Cu3.pdf p.5 (also refunded in part by the 2026B deal, ohare_2026B_OS.pdf Appendix H p.329)", official="General Airport Senior Lien Revenue Bonds, Series 2016G (AMT)")
 SER["2017A"] = dict(
     cover={2027: (7135000, "5"), 2028: (7480000, "5"), 2029: (7875000, "5"), 2030: (8260000, "5"), 2031: (8665000, "5"), 2032: (710000, "3.125"),
            2033: (730000, "5"), 2034: (770000, "3.25"), 2035: (795000, "3.25"), 2036: (825000, "3.375"), 2037: (850000, "5"), 2040: (2775000, "4")},
@@ -126,11 +135,11 @@ sum_prin = sum(p["principal_due_1_1_2027_after_refunding"] for p in principal_si
 
 splits = [{
     "target": {"by": "id", "id": BOX_ID}, "expect_amount": BOX_AMT, "mode": "budget_split", "pieces": pieces,
-    "residual": {"name": "Rest of the older bonds' interest (2016G and rounding)",
-                 "why": "Series 2016G and small differences share this leftover. A 2025 refunding changed 2016G by an amount whose list we do not hold, so its balance does not tie and we do not guess."},
-    "note": (f"Five older bonds were taken out of the leftover, each balance times its interest rates, with the balance checked against the airport's own 2026 bond table. "
+    "residual": {"name": "Rest of the older bonds' interest (other older series and rounding)",
+                 "why": "The 2026 budget line was written before the October 2026 refunding, so it still holds interest on bonds that were refunded, and the bond papers do not say how much. It also holds the small remaining older series. We do not guess."},
+    "note": (f"Six older bonds were taken out of the leftover, each balance times its interest rates, with the balance checked against the airport's own 2026 bond table. "
              f"Their January 1 2027 principal (not placed in any box) is ${sum_prin:,}; the principal box for these older bonds is $46,676,911, so it cannot hold them all and was left alone."),
-    "side": [{"kind": "derived_principal", "label": "Principal due 1/1/2027 after the 2026 refunding, by series (2016D, 2016E, 2017A, 2017C; 2018C has none until 2049). Not placed in the principal box because the sum is larger than that box.",
+    "side": [{"kind": "derived_principal", "label": "Principal due 1/1/2027 after the 2026 refunding, by series (2016D, 2016E, 2016G, 2017A, 2017C; 2018C has none until 2049). Not placed in the principal box because the sum is larger than that box.",
               "amount": sum_prin, "period": "bond year ending 1/1/2027", "basis": "proxy", "source": SRC, "items": principal_side}],
 }]
 json.dump({"meta": {"author": "bonds round 4 (O'Hare older interest)", "built_by": "scripts/bond_series_round4_build.py",

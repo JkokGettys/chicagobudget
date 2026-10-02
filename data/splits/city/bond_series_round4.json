@@ -48,6 +48,23 @@
      }
     },
     {
+     "key": "ohare-2016g-interest",
+     "name": "O'Hare 2016G (interest)",
+     "amount": 1853750,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": null,
+     "source": {
+      "doc": "O'Hare 2026CD official statement p.64 (balances) and Appendix H p.339-343 (refunded); 2025CD official statement Appendix H p.391-394 (tendered); each series' own statement cover (coupons)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf"
+     },
+     "note": "Derived, not printed: balance after the 2026 refunding $37,075,000 x each maturity's coupon = $1,853,750 for the bond year Jan 2 2026 to Jan 1 2027. The balance ties to the 2026CD OS p.64 to the dollar after taking the Dec 2025 tender and the Jan 1 2027 refunding off the cover list (O'Hare_2016D-G_Sr._Lien_GARB_OS.bW9YWx6Cu3.pdf p.5 (also refunded in part by the 2026B deal, ohare_2026B_OS.pdf Appendix H p.329)). Series: General Airport Senior Lien Revenue Bonds, Series 2016G (AMT). Fixed rate. Gross of any federal subsidy or pledged passenger/customer charges. The 2026 budget line was written before the 2026 refunding, so it may hold slightly more interest on bonds that were refunded in October 2026.",
+     "extra": {
+      "balance_dollars": 37075000,
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
      "key": "ohare-2017a-interest",
      "name": "O'Hare 2017A (interest)",
      "amount": 568644,
@@ -100,15 +117,15 @@
     }
    ],
    "residual": {
-    "name": "Rest of the older bonds' interest (2016G and rounding)",
-    "why": "Series 2016G and small differences share this leftover. A 2025 refunding changed 2016G by an amount whose list we do not hold, so its balance does not tie and we do not guess."
+    "name": "Rest of the older bonds' interest (other older series and rounding)",
+    "why": "The 2026 budget line was written before the October 2026 refunding, so it still holds interest on bonds that were refunded, and the bond papers do not say how much. It also holds the small remaining older series. We do not guess."
    },
-   "note": "Five older bonds were taken out of the leftover, each balance times its interest rates, with the balance checked against the airport's own 2026 bond table. Their January 1 2027 principal (not placed in any box) is $54,310,000; the principal box for these older bonds is $46,676,911, so it cannot hold them all and was left alone.",
+   "note": "Six older bonds were taken out of the leftover, each balance times its interest rates, with the balance checked against the airport's own 2026 bond table. Their January 1 2027 principal (not placed in any box) is $54,900,000; the principal box for these older bonds is $46,676,911, so it cannot hold them all and was left alone.",
    "side": [
     {
      "kind": "derived_principal",
-     "label": "Principal due 1/1/2027 after the 2026 refunding, by series (2016D, 2016E, 2017A, 2017C; 2018C has none until 2049). Not placed in the principal box because the sum is larger than that box.",
-     "amount": 54310000,
+     "label": "Principal due 1/1/2027 after the 2026 refunding, by series (2016D, 2016E, 2016G, 2017A, 2017C; 2018C has none until 2049). Not placed in the principal box because the sum is larger than that box.",
+     "amount": 54900000,
      "period": "bond year ending 1/1/2027",
      "basis": "proxy",
      "source": {
@@ -123,6 +140,10 @@
       {
        "series": "2016E",
        "principal_due_1_1_2027_after_refunding": 34900000
+      },
+      {
+       "series": "2016G",
+       "principal_due_1_1_2027_after_refunding": 590000
       },
       {
        "series": "2017A",
