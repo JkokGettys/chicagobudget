@@ -29,8 +29,32 @@ ORG_TOKENS = {
     "NEIGHBORHOOD", "COMMUNITY", "FAMILY", "YOUTH", "SENIOR", "SENIORS", "MUSEUM", "THEATER", "THEATRE",
     "PROGRAM", "PROJECT", "INITIATIVE", "OUTREACH", "RECOVERY", "PARTNERSHIPS", "CONSORTIUM", "ESTATE",
     "TRUSTEE", "ESCROW", "TITLE", "ATTORNEYS", "LAW", "LEGAL", "OFFICES",
+    # nonprofit and shop words seen on person-named organizations (CHRISTOPHER HOUSE, OLIVE BRANCH MISSION)
+    "HOUSE", "MISSION", "LANDSCAPES", "SCIENTIFIC", "BANCORP", "CHEESE", "GALLERY", "MUSIC", "CHORALE",
 }
 ORG_PHRASES = re.compile(r"(\bD/?B/?A\b|\s&\s|&|\bAND\b|^THE\b|\bOF\b|\bFOR\b)")
+
+
+def _load_given_names():
+    """First names seen on the City and CPS rosters (local, gitignored data/people/). Used only to
+    decide whether a two-word payee looks like a person; nothing from these files is written out."""
+    import json, os
+    out = set()
+    base = os.path.join(os.path.dirname(__file__), "..", "data", "people")
+    for fn, key in (("city_employees_2026.json", "current_employees"),):
+        try:
+            for e in json.load(open(os.path.join(base, fn))).get(key, []):
+                nm = (e.get("name") or "").upper()
+                if "," in nm:
+                    first = nm.split(",", 1)[1].strip().split(" ")[0]
+                    if len(first) >= 3:
+                        out.add(first)
+        except (FileNotFoundError, ValueError):
+            pass
+    return out
+
+
+GIVEN_NAMES = _load_given_names()
 
 
 def tokens(u):
@@ -49,6 +73,19 @@ def is_business(name, has_contract=False, known_people=None):
     # so drop trailing digits before testing. Addresses ("1237 N. CALIFORNIA") start with a number.
     u = re.sub(r"\s*\d+$", "", u).strip()
     toks = tokens(u)
+    # Couples ("MARY & JOHN SMITH", "JOHN AND MARY SMITH") are private people, even though "&" is
+    # usually a business sign. Only when no business word appears and there is no City contract.
+    if not has_contract and re.search(r"\s(&|AND)\s", u) and 3 <= len(toks) <= 6 \
+            and all(re.fullmatch(r"[A-Z'.-]+", t) for t in toks if t not in ("&", "AND")) \
+            and sum(1 for t in toks if t in GIVEN_NAMES) >= 2 \
+            and not any(t in ORG_TOKENS for t in toks):
+        return False
+    # "FIRST LAST" (two or three plain words, no business word) is a person even with a contract:
+    # some individuals hold City contracts (development loans, small grants). Only when the first
+    # word is a common given name, so two-word business names (ABM AVIATION, AOR TRANSIT) stay shown.
+    if 2 <= len(toks) <= 3 and toks[0] in GIVEN_NAMES and all(re.fullmatch(r"[A-Z'.-]+", t) for t in toks) \
+            and not any(t in ORG_TOKENS for t in toks):
+        return False
     if any(t in ORG_TOKENS for t in toks):
         return True
     if ORG_PHRASES.search(u):
