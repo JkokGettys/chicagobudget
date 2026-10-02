@@ -513,7 +513,7 @@ if os.path.isdir(SPLIT_DIR):
 # Every payment row is kept. Payees that are individual people (refunds, reimbursements, small
 # grants, jurors, sole practitioners) keep their amount, contract, family and payment count,
 # but their name is replaced with a placeholder. Business and organization names are shown.
-from payee import is_business  # noqa: E402
+from payee import is_business, people_by_description  # noqa: E402
 ven = json.load(open(P("data/city_vendors_items_2026ytd.json")))
 VEN_LABEL = ven["meta"]["label"]
 _pp = json.load(open(P("data/people/city_employees_2026.json"))) if os.path.exists(P("data/people/city_employees_2026.json")) else {"current_employees": []}
@@ -539,6 +539,8 @@ for dd in ven["departments"].values():
     for rows in dd["families"].values():
         for v in rows:
             _has_contract[(v[0] or "").upper().strip()] |= bool(v[1])
+EMP_NAMES = EMP_NAMES | people_by_description(
+    (v[0], v[4]) for dd in ven["departments"].values() for rows in dd["families"].values() for v in rows)
 IS_BIZ = {nm: is_business(nm, hc, EMP_NAMES) for nm, hc in _has_contract.items()}
 for dnum, dd in ven["departments"].items():
     # Finance General payments (pensions, health insurer, banks...) and the rare voucher prefix with
@@ -617,6 +619,7 @@ DEFAULT_WHY = {
 }
 # Sentences chosen by what the line actually is (account name), checked before the generic ones.
 WHY_BY_ACCOUNT = [
+    (("For Interest on Loans", "For Payment on Loans"), "This repays low-interest loans the City took from the State of Illinois (Illinois EPA) to fix water and sewer pipes. The State publishes each loan's rate and balance, which are shown beside this box, but not how much of each loan is paid this year, so it stays one total."),
     (("Delegate Agencies",), "This money goes out as grants to many neighborhood nonprofits. The budget gives one total, and the list of which group gets what is decided during the year."),
     (("Rehabilitation Loans and Grants", "Loans and Grants", "Loan"), "This money is lent or granted to many homeowners and builders during the year, so the budget can only give one total."),
     (("Emergency Medical Transportation",), "This pays for ambulance trips and their billing for the whole year, so it is one total in the budget, not a list of trips."),

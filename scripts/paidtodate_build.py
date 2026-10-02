@@ -47,7 +47,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.insert(0, os.path.join(ROOT, "build"))
 sys.path.insert(0, os.path.join(ROOT, "scripts"))
 import contracts_build as cb  # noqa: E402  (account_family, vendor_key; main() is guarded)
-from payee import is_business  # noqa: E402
+from payee import is_business, people_by_description  # noqa: E402
 
 P = lambda *a: os.path.join(ROOT, *a)  # noqa: E731
 BASELINE = P("raw/paidtodate/baseline_city_tree.json")
@@ -234,6 +234,8 @@ def main():
         for rows in dd["families"].values():
             for v in rows:
                 has_contract[(v[0] or "").upper().strip()] |= bool(v[1])
+    emp = emp | people_by_description(
+        (v[0], v[4]) for dd in ven["departments"].values() for rows in dd["families"].values() for v in rows)
     biz = {nm: is_business(nm, hc, emp) for nm, hc in has_contract.items()}
 
     lines = load_lines()

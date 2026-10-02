@@ -8457,51 +8457,13 @@
    "mode": "paid_to_date",
    "pieces": [
     {
-     "name": "Other vendors (2)",
-     "amount": 12000.0,
-     "basis": "paid_to_date",
-     "kind": "vendor_group",
-     "children": [
-      {
-       "name": "BRIL BARRETT",
-       "amount": 6000.0,
-       "basis": "paid_to_date",
-       "kind": "vendor",
-       "note": "Contract 329866: Grant Agreement, IAP (1 payments) Matched to this line using how the City coded this contract's 2025 invoices.",
-       "extra": {
-        "contract": "329866",
-        "payments": 1,
-        "midyear_contract": true
-       }
-      },
-      {
-       "name": "IDRIS DANIEL",
-       "amount": 6000.0,
-       "basis": "paid_to_date",
-       "kind": "vendor",
-       "note": "Contract 330102: Grant Agreement, IAP (1 payments) Matched to this line using how the City coded this contract's 2025 invoices.",
-       "extra": {
-        "contract": "330102",
-        "payments": 1,
-        "midyear_contract": true
-       }
-      }
-     ],
-     "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
-    },
-    {
-     "name": "Payments to 2 individuals (names hidden)",
-     "amount": 6000.0,
+     "name": "Payments to 4 individuals (names hidden)",
+     "amount": 18000.0,
      "basis": "paid_to_date",
      "kind": "individuals",
-     "count": 2,
+     "count": 4,
      "unit_label": "individuals",
-     "note": "2 payments to people, refunds, small grants or sole practitioners. Names are hidden to protect privacy. Matched to this line using how the City coded this contract's 2025 invoices.",
+     "note": "4 payments to people, refunds, small grants or sole practitioners. Names are hidden to protect privacy. Matched to this line using how the City coded this contract's 2025 invoices.",
      "extra": {
       "midyear_contract": true
      }

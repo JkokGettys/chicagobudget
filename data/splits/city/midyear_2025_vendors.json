@@ -2612,7 +2612,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 11 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 10 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 87709.82,
      "period": "2025 invoices",
      "basis": "actual",
@@ -2621,7 +2621,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9926,
+     "top_share": 1.0,
      "items": [
       {
        "vendor": "RIDER CONSULTING GROUP",
@@ -2670,12 +2670,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 2087223,
-       "vouchers": 21,
+       "amount": 2152223,
+       "vouchers": 22,
        "people": 1
       }
      ],
-     "n_payees": 11
+     "n_payees": 10
     }
    ]
   },
@@ -2982,7 +2982,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 13 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 12 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 116966.37,
      "period": "2025 invoices",
      "basis": "actual",
@@ -2991,7 +2991,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9849,
+     "top_share": 0.992,
      "items": [
       {
        "vendor": "Boyce Possley Communications, LLC",
@@ -3029,23 +3029,23 @@
        "vouchers": 19
       },
       {
-       "vendor": "MMLJ SANSTORM AND SODABLAST",
-       "amount": 168525,
-       "vouchers": 1
-      },
-      {
        "vendor": "THE PEOPLES GAS LIGHT & COKE CO",
        "amount": 159552,
        "vouchers": 10
       },
       {
+       "vendor": "SCHROEDER MATERIAL INC",
+       "amount": 82686,
+       "vouchers": 3
+      },
+      {
        "vendor": "Individual (name hidden)",
-       "amount": 2296805,
-       "vouchers": 10,
+       "amount": 2465330,
+       "vouchers": 11,
        "people": 1
       }
      ],
-     "n_payees": 13
+     "n_payees": 12
     }
    ]
   },
@@ -3302,7 +3302,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 15 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 14 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 49644.33,
      "period": "2025 invoices",
      "basis": "actual",
@@ -3311,13 +3311,8 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9504,
+     "top_share": 0.9705,
      "items": [
-      {
-       "vendor": "AT & T 09",
-       "amount": 423596,
-       "vouchers": 10
-      },
       {
        "vendor": "STAPLES BUSINESS CREDIT",
        "amount": 317675,
@@ -3359,13 +3354,18 @@
        "vouchers": 2
       },
       {
+       "vendor": "DEMETRIUS THORNTON dba D  SQUARE MEDIA GROUP",
+       "amount": 100000,
+       "vouchers": 2
+      },
+      {
        "vendor": "Individual (name hidden)",
-       "amount": 2801950,
-       "vouchers": 9,
+       "amount": 3225546,
+       "vouchers": 19,
        "people": 1
       }
      ],
-     "n_payees": 15
+     "n_payees": 14
     }
    ]
   },
@@ -3786,7 +3786,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 12 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 11 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 79263.96,
      "period": "2025 invoices",
      "basis": "actual",
@@ -3795,7 +3795,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9672,
+     "top_share": 0.9886,
      "items": [
       {
        "vendor": "HOME RUN INN FROZEN FOODS CORP",
@@ -3828,11 +3828,6 @@
        "vouchers": 21
       },
       {
-       "vendor": "AT & T 09",
-       "amount": 225933,
-       "vouchers": 23
-      },
-      {
        "vendor": "THE PEOPLES GAS LIGHT & COKE CO",
        "amount": 197287,
        "vouchers": 11
@@ -3843,13 +3838,18 @@
        "vouchers": 1
       },
       {
+       "vendor": "QUILL CORPORATION",
+       "amount": 170134,
+       "vouchers": 16
+      },
+      {
        "vendor": "Individual (name hidden)",
-       "amount": 184000,
-       "vouchers": 1,
+       "amount": 409933,
+       "vouchers": 24,
        "people": 1
       }
      ],
-     "n_payees": 12
+     "n_payees": 11
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -5109,7 +5109,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 18 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 11 of 18 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 65228.92,
      "period": "2025 invoices",
      "basis": "actual",
@@ -5169,6 +5169,12 @@
        "vendor": "FLOOD BROTHERS DISPOSAL COMPANY",
        "amount": 191868,
        "vouchers": 12
+      },
+      {
+       "vendor": "Individual (name hidden)",
+       "amount": 20000,
+       "vouchers": 2,
+       "people": 1
       }
      ],
      "n_payees": 18
@@ -5426,7 +5432,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 30 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 28 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 81894.95,
      "period": "2025 invoices",
      "basis": "actual",
@@ -5435,7 +5441,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.8139,
+     "top_share": 0.8548,
      "items": [
       {
        "vendor": "STAPLES BUSINESS CREDIT",
@@ -5468,28 +5474,28 @@
        "vouchers": 2
       },
       {
-       "vendor": "STARS & STRIPES SILK SCREENING",
-       "amount": 297000,
-       "vouchers": 1
-      },
-      {
-       "vendor": "OSHANA AND SON PRINTING",
-       "amount": 180300,
-       "vouchers": 3
-      },
-      {
        "vendor": "THE PEOPLES GAS LIGHT & COKE CO",
        "amount": 169787,
        "vouchers": 12
       },
       {
+       "vendor": "GRAINGER",
+       "amount": 169202,
+       "vouchers": 3
+      },
+      {
+       "vendor": "RUSSO HARDWARE INC D/B/A/ RUSSO POWER EQUIPMENT",
+       "amount": 165047,
+       "vouchers": 2
+      },
+      {
        "vendor": "Individual (name hidden)",
-       "amount": 2789320,
-       "vouchers": 19,
+       "amount": 3266620,
+       "vouchers": 23,
        "people": 1
       }
      ],
-     "n_payees": 30
+     "n_payees": 28
     }
    ]
   },
@@ -9662,7 +9668,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 13 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 14 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 2960283.27,
      "period": "2025 invoices",
      "basis": "actual",
@@ -9671,7 +9677,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9983,
+     "top_share": 0.9965,
      "items": [
       {
        "vendor": "Law Office of James M. Reilly",
@@ -9691,6 +9697,11 @@
       {
        "vendor": "MICHELLE M MONTGOMERY & ASSOCIATES, LLC",
        "amount": 2210000,
+       "vouchers": 12
+      },
+      {
+       "vendor": "BARBARA J. BELL ",
+       "amount": 1887000,
        "vouchers": 12
       },
       {
@@ -9714,18 +9725,13 @@
        "vouchers": 4
       },
       {
-       "vendor": "CDW GOVERNMENT, LLC.",
-       "amount": 517780,
-       "vouchers": 1
-      },
-      {
        "vendor": "Individual (name hidden)",
-       "amount": 277381883,
-       "vouchers": 555,
+       "amount": 275494883,
+       "vouchers": 543,
        "people": 1
       }
      ],
-     "n_payees": 13
+     "n_payees": 14
     }
    ]
   },
@@ -10118,7 +10124,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 40 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 41 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 1318490.58,
      "period": "2025 invoices",
      "basis": "actual",
@@ -10127,7 +10133,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9721,
+     "top_share": 0.9717,
      "items": [
       {
        "vendor": "NEWMARK MANAGEMENT",
@@ -10176,12 +10182,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 17423717,
-       "vouchers": 73,
+       "amount": 17367937,
+       "vouchers": 68,
        "people": 1
       }
      ],
-     "n_payees": 40
+     "n_payees": 41
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -10276,7 +10282,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 61 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 65 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 749449.25,
      "period": "2025 invoices",
      "basis": "actual",
@@ -10285,7 +10291,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.8158,
+     "top_share": 0.7804,
      "items": [
       {
        "vendor": "U.S. Legal Support, Inc.",
@@ -10328,18 +10334,18 @@
        "vouchers": 7
       },
       {
-       "vendor": "ROYAL REPORTING SERVICES",
-       "amount": 1730713,
-       "vouchers": 25
+       "vendor": "Paszkiewicz Court Reporting",
+       "amount": 1786565,
+       "vouchers": 2
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 5131846,
-       "vouchers": 128,
+       "amount": 2423857,
+       "vouchers": 110,
        "people": 1
       }
      ],
-     "n_payees": 61
+     "n_payees": 65
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -10936,6 +10942,11 @@
        "vouchers": 20
       },
       {
+       "vendor": "FEDERAL EXPRESS",
+       "amount": 183628,
+       "vouchers": 25
+      },
+      {
        "vendor": "PACER SERVICE CENTER",
        "amount": 167434,
        "vouchers": 1
@@ -10954,12 +10965,6 @@
        "vendor": "FEDEX FREIGHT INC.",
        "amount": 2212,
        "vouchers": 1
-      },
-      {
-       "vendor": "Individual (name hidden)",
-       "amount": 183628,
-       "vouchers": 25,
-       "people": 1
       }
      ],
      "n_payees": 6
@@ -11828,7 +11833,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 21 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 20 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 523797.61,
      "period": "2025 invoices",
      "basis": "actual",
@@ -11837,13 +11842,8 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9679,
+     "top_share": 0.9729,
      "items": [
-      {
-       "vendor": "PRADO & RENTERIA CPA'S D/B/A",
-       "amount": 22723000,
-       "vouchers": 17
-      },
       {
        "vendor": "COLETTE HOLT & ASSOCIATES",
        "amount": 17800000,
@@ -11885,13 +11885,18 @@
        "vouchers": 1
       },
       {
+       "vendor": "NFBPA",
+       "amount": 265000,
+       "vouchers": 1
+      },
+      {
        "vendor": "Individual (name hidden)",
-       "amount": 2133394,
-       "vouchers": 1,
+       "amount": 24856394,
+       "vouchers": 18,
        "people": 1
       }
      ],
-     "n_payees": 21
+     "n_payees": 20
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -14618,7 +14623,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 15 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 16 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 182721.92,
      "period": "2025 invoices",
      "basis": "actual",
@@ -14627,7 +14632,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9805,
+     "top_share": 0.9688,
      "items": [
       {
        "vendor": "Mosaico Interpreting Company",
@@ -14665,23 +14670,23 @@
        "vouchers": 11
       },
       {
+       "vendor": "EFFICIENCY REPORTING",
+       "amount": 267550,
+       "vouchers": 5
+      },
+      {
        "vendor": "First Choice Interpreting Service, LLC",
        "amount": 259200,
        "vouchers": 3
       },
       {
-       "vendor": "CHICAGO HEARING SOCIETY/A",
-       "amount": 212750,
-       "vouchers": 7
-      },
-      {
        "vendor": "Individual (name hidden)",
-       "amount": 707550,
-       "vouchers": 9,
+       "amount": 440000,
+       "vouchers": 4,
        "people": 1
       }
      ],
-     "n_payees": 15
+     "n_payees": 16
     }
    ]
   },
@@ -15794,7 +15799,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 4 of 4 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 5 of 5 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 143437.01,
      "period": "2025 invoices",
      "basis": "actual",
@@ -15821,13 +15826,18 @@
        "vouchers": 1
       },
       {
+       "vendor": "FEDERAL EXPRESS",
+       "amount": 70631,
+       "vouchers": 7
+      },
+      {
        "vendor": "Individual (name hidden)",
-       "amount": 451512,
-       "vouchers": 19,
+       "amount": 380881,
+       "vouchers": 12,
        "people": 1
       }
      ],
-     "n_payees": 4
+     "n_payees": 5
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -18345,7 +18355,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 12 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 13 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 24159.74,
      "period": "2025 invoices",
      "basis": "actual",
@@ -18354,7 +18364,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9767,
+     "top_share": 0.9585,
      "items": [
       {
        "vendor": "ATTORNEY REGISTRATION AND",
@@ -18403,12 +18413,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 398384,
-       "vouchers": 5,
+       "amount": 354384,
+       "vouchers": 3,
        "people": 1
       }
      ],
-     "n_payees": 12
+     "n_payees": 13
     }
    ]
   },
@@ -18486,11 +18496,6 @@
        "vouchers": 1
       },
       {
-       "vendor": "DRURY INN AND SUITES-HUNTSVILLE",
-       "amount": 624400,
-       "vouchers": 1
-      },
-      {
        "vendor": "MORAINE VALLEY COMMUNITY COLLE",
        "amount": 145900,
        "vouchers": 1
@@ -18499,6 +18504,12 @@
        "vendor": "American Flyers, Inc.",
        "amount": 25790,
        "vouchers": 2
+      },
+      {
+       "vendor": "Individual (name hidden)",
+       "amount": 624400,
+       "vouchers": 1,
+       "people": 1
       }
      ],
      "n_payees": 5
@@ -19167,7 +19178,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 53 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 54 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 5027713.64,
      "period": "2025 invoices",
      "basis": "actual",
@@ -19176,7 +19187,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.7597,
+     "top_share": 0.7596,
      "items": [
       {
        "vendor": "CDW GOVERNMENT, LLC.",
@@ -19225,12 +19236,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 26601522,
-       "vouchers": 63,
+       "amount": 26529522,
+       "vouchers": 61,
        "people": 1
       }
      ],
-     "n_payees": 53
+     "n_payees": 54
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -20190,10 +20201,9 @@
        "vouchers": 2
       },
       {
-       "vendor": "Individual (name hidden)",
+       "vendor": "FIRE PROTECTION PUBLICATIONS",
        "amount": 367000,
-       "vouchers": 2,
-       "people": 1
+       "vouchers": 2
       }
      ],
      "n_payees": 2
@@ -30094,7 +30104,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 30 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 11 of 34 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 151021.11,
      "period": "2025 invoices",
      "basis": "actual",
@@ -30103,7 +30113,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.8631,
+     "top_share": 0.8324,
      "items": [
       {
        "vendor": "VERITEXT",
@@ -30151,13 +30161,18 @@
        "vouchers": 3
       },
       {
+       "vendor": "ROYAL REPORTING SERVICES",
+       "amount": 477955,
+       "vouchers": 5
+      },
+      {
        "vendor": "Individual (name hidden)",
-       "amount": 941647,
-       "vouchers": 48,
+       "amount": 446405,
+       "vouchers": 43,
        "people": 1
       }
      ],
-     "n_payees": 30
+     "n_payees": 34
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -30193,7 +30208,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 44 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 45 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 1583309.02,
      "period": "2025 invoices",
      "basis": "actual",
@@ -30202,7 +30217,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.8585,
+     "top_share": 0.8562,
      "items": [
       {
        "vendor": "INNOVATIVE DISCOVERY LLC",
@@ -30251,12 +30266,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 23295004,
-       "vouchers": 66,
+       "amount": 22944109,
+       "vouchers": 61,
        "people": 1
       }
      ],
-     "n_payees": 44
+     "n_payees": 45
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -30411,10 +30426,9 @@
        "vouchers": 8
       },
       {
-       "vendor": "Individual (name hidden)",
+       "vendor": "Federal Motor Carrier Safety Administration",
        "amount": 937500,
-       "vouchers": 1,
-       "people": 1
+       "vouchers": 1
       }
      ],
      "n_payees": 2
@@ -31541,7 +31555,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 21 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 22 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 44369.96,
      "period": "2025 invoices",
      "basis": "actual",
@@ -31550,7 +31564,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9872,
+     "top_share": 0.986,
      "items": [
       {
        "vendor": "NEWMARK MANAGEMENT",
@@ -31599,12 +31613,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 929607,
-       "vouchers": 58,
+       "amount": 924227,
+       "vouchers": 53,
        "people": 1
       }
      ],
-     "n_payees": 21
+     "n_payees": 22
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -31684,7 +31698,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 23 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 24 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 48538.88,
      "period": "2025 invoices",
      "basis": "actual",
@@ -31693,7 +31707,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9657,
+     "top_share": 0.9559,
      "items": [
       {
        "vendor": "U.S. Legal Support, Inc.",
@@ -31731,23 +31745,23 @@
        "vouchers": 3
       },
       {
+       "vendor": "IN DEMAND ELECTRONIC COURT REPORTING",
+       "amount": 94296,
+       "vouchers": 2
+      },
+      {
        "vendor": " LAW ENFORCEMENT RISK MANAGEMENT GROUP INC",
        "amount": 60000,
        "vouchers": 1
       },
       {
-       "vendor": "EXHIBIT 5",
-       "amount": 47669,
-       "vouchers": 1
-      },
-      {
        "vendor": "Individual (name hidden)",
-       "amount": 156438,
-       "vouchers": 17,
+       "amount": 62142,
+       "vouchers": 15,
        "people": 1
       }
      ],
-     "n_payees": 23
+     "n_payees": 24
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -32159,10 +32173,9 @@
      "top_share": 1.0,
      "items": [
       {
-       "vendor": "Individual (name hidden)",
+       "vendor": "FEDERAL EXPRESS",
        "amount": 6503,
-       "vouchers": 2,
-       "people": 1
+       "vouchers": 2
       }
      ],
      "n_payees": 1
@@ -37194,7 +37207,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 18 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 19 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 51097.33,
      "period": "2025 invoices",
      "basis": "actual",
@@ -37203,7 +37216,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.998,
+     "top_share": 0.9974,
      "items": [
       {
        "vendor": "NEWMARK MANAGEMENT",
@@ -37241,23 +37254,23 @@
        "vouchers": 10
       },
       {
+       "vendor": "Arizona Quick Serve",
+       "amount": 4360,
+       "vouchers": 5
+      },
+      {
        "vendor": "Everquick Legal Services LLC",
        "amount": 4290,
        "vouchers": 6
       },
       {
-       "vendor": "Front Range Legal Process Service Inc",
-       "amount": 3240,
-       "vouchers": 11
-      },
-      {
        "vendor": "Individual (name hidden)",
-       "amount": 1197599,
-       "vouchers": 59,
+       "amount": 1193239,
+       "vouchers": 54,
        "people": 1
       }
      ],
-     "n_payees": 18
+     "n_payees": 19
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -37337,7 +37350,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 27 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 28 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 26743.99,
      "period": "2025 invoices",
      "basis": "actual",
@@ -37346,7 +37359,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.8987,
+     "top_share": 0.8876,
      "items": [
       {
        "vendor": "U.S. Legal Support, Inc.",
@@ -37395,12 +37408,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 88738,
-       "vouchers": 17,
+       "amount": 59118,
+       "vouchers": 15,
        "people": 1
       }
      ],
-     "n_payees": 27
+     "n_payees": 28
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -37822,10 +37835,9 @@
      "top_share": 1.0,
      "items": [
       {
-       "vendor": "Individual (name hidden)",
+       "vendor": "FEDERAL EXPRESS",
        "amount": 6409,
-       "vouchers": 2,
-       "people": 1
+       "vouchers": 2
       }
      ],
      "n_payees": 1
@@ -42391,7 +42403,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 17 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 18 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 29070.89,
      "period": "2025 invoices",
      "basis": "actual",
@@ -42400,7 +42412,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9973,
+     "top_share": 0.9962,
      "items": [
       {
        "vendor": "NEWMARK MANAGEMENT",
@@ -42449,12 +42461,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 593595,
-       "vouchers": 58,
+       "amount": 590515,
+       "vouchers": 53,
        "people": 1
       }
      ],
-     "n_payees": 17
+     "n_payees": 18
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -42534,7 +42546,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 25 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 27 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 20946.91,
      "period": "2025 invoices",
      "basis": "actual",
@@ -42543,7 +42555,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9475,
+     "top_share": 0.9338,
      "items": [
       {
        "vendor": "U.S. Legal Support, Inc.",
@@ -42581,23 +42593,23 @@
        "vouchers": 4
       },
       {
+       "vendor": "IN DEMAND ELECTRONIC COURT REPORTING",
+       "amount": 26540,
+       "vouchers": 2
+      },
+      {
        "vendor": " LAW ENFORCEMENT RISK MANAGEMENT GROUP INC",
        "amount": 24000,
        "vouchers": 1
       },
       {
-       "vendor": "VIDEO INSTANTER, INC",
-       "amount": 20839,
-       "vouchers": 2
-      },
-      {
        "vendor": "Individual (name hidden)",
-       "amount": 103324,
-       "vouchers": 20,
+       "amount": 69066,
+       "vouchers": 17,
        "people": 1
       }
      ],
-     "n_payees": 25
+     "n_payees": 27
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -42985,10 +42997,9 @@
      "top_share": 1.0,
      "items": [
       {
-       "vendor": "Individual (name hidden)",
+       "vendor": "FEDERAL EXPRESS",
        "amount": 5077,
-       "vouchers": 2,
-       "people": 1
+       "vouchers": 2
       }
      ],
      "n_payees": 1
@@ -45092,11 +45103,6 @@
        "vouchers": 1
       },
       {
-       "vendor": "ARLINGTON GLASS & MIRROR",
-       "amount": 339198,
-       "vouchers": 1
-      },
-      {
        "vendor": "RIDDIFORD ROOFING CO.",
        "amount": 269588,
        "vouchers": 1
@@ -45105,6 +45111,12 @@
        "vendor": "SET ENVIRONMENTAL INC",
        "amount": 230658,
        "vouchers": 1
+      },
+      {
+       "vendor": "Individual (name hidden)",
+       "amount": 339198,
+       "vouchers": 1,
+       "people": 1
       }
      ],
      "n_payees": 8
@@ -45209,11 +45221,6 @@
        "vouchers": 44
       },
       {
-       "vendor": "ARLINGTON GLASS & MIRROR",
-       "amount": 6586415,
-       "vouchers": 14
-      },
-      {
        "vendor": "GRAYBAR ELECTRIC CO INC",
        "amount": 5827364,
        "vouchers": 13
@@ -45242,6 +45249,12 @@
        "vendor": "AGAE CONTRACTORS, INC.",
        "amount": 2484141,
        "vouchers": 4
+      },
+      {
+       "vendor": "Individual (name hidden)",
+       "amount": 6586415,
+       "vouchers": 14,
+       "people": 1
       }
      ],
      "n_payees": 15
@@ -46073,7 +46086,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 18 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 19 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 24324.3,
      "period": "2025 invoices",
      "basis": "actual",
@@ -46082,7 +46095,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9517,
+     "top_share": 0.9496,
      "items": [
       {
        "vendor": "ILLINOIS LIBRARY ASSN",
@@ -46131,12 +46144,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 201200,
-       "vouchers": 9,
+       "amount": 196200,
+       "vouchers": 8,
        "people": 1
       }
      ],
-     "n_payees": 18
+     "n_payees": 19
     }
    ]
   },
@@ -46750,7 +46763,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 73 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 82 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 9325100.42,
      "period": "2025 invoices",
      "basis": "actual",
@@ -46759,7 +46772,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9327,
+     "top_share": 0.9314,
      "items": [
       {
        "vendor": "INGRAM LIBRARY SERVICES, INC",
@@ -46808,12 +46821,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 16760471,
-       "vouchers": 53,
+       "amount": 15502196,
+       "vouchers": 35,
        "people": 1
       }
      ],
-     "n_payees": 73
+     "n_payees": 82
     }
    ]
   },
@@ -49926,7 +49939,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 41 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 40 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 1740369.97,
      "period": "2025 invoices",
      "basis": "actual",
@@ -49935,7 +49948,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.6178,
+     "top_share": 0.6309,
      "items": [
       {
        "vendor": "THE ELI'S CHEESECAKE COMPANY",
@@ -49984,12 +49997,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 60118903,
-       "vouchers": 18,
+       "amount": 62401464,
+       "vouchers": 19,
        "people": 1
       }
      ],
-     "n_payees": 41
+     "n_payees": 40
     }
    ]
   },
@@ -51009,7 +51022,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 17 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 18 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 17111.74,
      "period": "2025 invoices",
      "basis": "actual",
@@ -51018,7 +51031,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9972,
+     "top_share": 0.9965,
      "items": [
       {
        "vendor": "NEWMARK MANAGEMENT",
@@ -51061,18 +51074,18 @@
        "vouchers": 1
       },
       {
-       "vendor": "THE PROCESS SERVER LLC",
-       "amount": 1216,
-       "vouchers": 4
+       "vendor": "Arizona Quick Serve",
+       "amount": 1260,
+       "vouchers": 5
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 396386,
-       "vouchers": 57,
+       "amount": 395126,
+       "vouchers": 52,
        "people": 1
       }
      ],
-     "n_payees": 17
+     "n_payees": 18
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -51147,7 +51160,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 21 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 23 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 6702.62,
      "period": "2025 invoices",
      "basis": "actual",
@@ -51156,7 +51169,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9635,
+     "top_share": 0.9338,
      "items": [
       {
        "vendor": "U.S. Legal Support, Inc.",
@@ -51172,6 +51185,11 @@
        "vendor": "VERITEXT",
        "amount": 55756,
        "vouchers": 7
+      },
+      {
+       "vendor": "IN DEMAND ELECTRONIC COURT REPORTING",
+       "amount": 25770,
+       "vouchers": 2
       },
       {
        "vendor": "MCCORKLE LITIGATION SERVICES INC",
@@ -51199,18 +51217,13 @@
        "vouchers": 1
       },
       {
-       "vendor": "ACVENTURE REPORTING INC",
-       "amount": 10682,
-       "vouchers": 3
-      },
-      {
        "vendor": "Individual (name hidden)",
-       "amount": 97824,
-       "vouchers": 20,
+       "amount": 62847,
+       "vouchers": 17,
        "people": 1
       }
      ],
-     "n_payees": 21
+     "n_payees": 23
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -51589,10 +51602,9 @@
      "top_share": 1.0,
      "items": [
       {
-       "vendor": "Individual (name hidden)",
+       "vendor": "FEDERAL EXPRESS",
        "amount": 1998,
-       "vouchers": 1,
-       "people": 1
+       "vouchers": 1
       }
      ],
      "n_payees": 1
@@ -51697,9 +51709,10 @@
      "top_share": 1.0,
      "items": [
       {
-       "vendor": "PRADO & RENTERIA CPA'S D/B/A",
+       "vendor": "Individual (name hidden)",
        "amount": 705000,
-       "vouchers": 2
+       "vouchers": 2,
+       "people": 1
       }
      ],
      "n_payees": 1
@@ -52801,14 +52814,15 @@
        "vouchers": 1
       },
       {
-       "vendor": "MCFARLANE DOUGLASS & COMPANIES",
-       "amount": 125902,
-       "vouchers": 1
-      },
-      {
        "vendor": "AIR ONE EQUIPMENT INC",
        "amount": 97693,
        "vouchers": 1
+      },
+      {
+       "vendor": "Individual (name hidden)",
+       "amount": 125902,
+       "vouchers": 1,
+       "people": 1
       }
      ],
      "n_payees": 7
@@ -55663,7 +55677,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 18 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 19 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 57851.81,
      "period": "2025 invoices",
      "basis": "actual",
@@ -55672,7 +55686,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9967,
+     "top_share": 0.9957,
      "items": [
       {
        "vendor": "NEWMARK MANAGEMENT",
@@ -55721,12 +55735,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 986675,
-       "vouchers": 59,
+       "amount": 980535,
+       "vouchers": 54,
        "people": 1
       }
      ],
-     "n_payees": 18
+     "n_payees": 19
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -55801,7 +55815,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 24 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 26 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 11027.86,
      "period": "2025 invoices",
      "basis": "actual",
@@ -55810,7 +55824,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.912,
+     "top_share": 0.8872,
      "items": [
       {
        "vendor": "U.S. Legal Support, Inc.",
@@ -55853,18 +55867,18 @@
        "vouchers": 2
       },
       {
-       "vendor": "MCCORKLE LITIGATION SERVICES INC",
-       "amount": 26580,
-       "vouchers": 3
+       "vendor": "CK REPORTING",
+       "amount": 33106,
+       "vouchers": 2
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 80420,
-       "vouchers": 20,
+       "amount": 46545,
+       "vouchers": 17,
        "people": 1
       }
      ],
-     "n_payees": 24
+     "n_payees": 26
     },
     {
      "kind": "estimate_2026_multi_line_contracts",
@@ -56267,10 +56281,9 @@
      "top_share": 1.0,
      "items": [
       {
-       "vendor": "Individual (name hidden)",
+       "vendor": "FEDERAL EXPRESS",
        "amount": 2663,
-       "vouchers": 1,
-       "people": 1
+       "vouchers": 1
       }
      ],
      "n_payees": 1
@@ -56404,9 +56417,10 @@
      "top_share": 1.0,
      "items": [
       {
-       "vendor": "PRADO & RENTERIA CPA'S D/B/A",
+       "vendor": "Individual (name hidden)",
        "amount": 2679000,
-       "vouchers": 3
+       "vouchers": 3,
+       "people": 1
       }
      ],
      "n_payees": 1
@@ -57752,11 +57766,6 @@
        "vouchers": 17
       },
       {
-       "vendor": "MCFARLANE DOUGLASS & COMPANIES",
-       "amount": 11826150,
-       "vouchers": 6
-      },
-      {
        "vendor": "ADB SAFEGATE AMERICAS LLC",
        "amount": 8545129,
        "vouchers": 1
@@ -57765,6 +57774,12 @@
        "vendor": "MICHELS TRENCHLESS, INC.",
        "amount": 2888938,
        "vouchers": 1
+      },
+      {
+       "vendor": "Individual (name hidden)",
+       "amount": 11826150,
+       "vouchers": 6,
+       "people": 1
       }
      ],
      "n_payees": 4
@@ -57886,7 +57901,7 @@
    "side": [
     {
      "kind": "paid_2025_vendors",
-     "label": "In 2025 this line paid these companies (largest 10 of 30 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
+     "label": "In 2025 this line paid these companies (largest 10 of 29 payees). Invoices created in 2025 whose City accounting codes (fund, department, account) match this line, from the Department of Finance contracts data.",
      "amount": 606163.84,
      "period": "2025 invoices",
      "basis": "actual",
@@ -57895,7 +57910,7 @@
       "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html",
       "note": "research/midyear_contracts.md. Invoice amounts, not checks, so they can differ a little from the payments dataset. Names of individual people are hidden."
      },
-     "top_share": 0.9441,
+     "top_share": 0.9442,
      "items": [
       {
        "vendor": "Airports Council International-North America",
@@ -57944,12 +57959,12 @@
       },
       {
        "vendor": "Individual (name hidden)",
-       "amount": 5093644,
-       "vouchers": 5,
+       "amount": 5103061,
+       "vouchers": 6,
        "people": 1
       }
      ],
-     "n_payees": 30
+     "n_payees": 29
     }
    ]
   },

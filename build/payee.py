@@ -31,6 +31,15 @@ ORG_TOKENS = {
     "TRUSTEE", "ESCROW", "TITLE", "ATTORNEYS", "LAW", "LEGAL", "OFFICES",
     # nonprofit and shop words seen on person-named organizations (CHRISTOPHER HOUSE, OLIVE BRANCH MISSION)
     "HOUSE", "MISSION", "LANDSCAPES", "SCIENTIFIC", "BANCORP", "CHEESE", "GALLERY", "MUSIC", "CHORALE",
+    # shop and service words seen in "A & B" business names (so the couple rule does not hide them)
+    "MARKET", "BAKERY", "SPORTS", "UNIFORMS", "TOWING", "PHYSICIANS", "SURGEONS", "SERVE", "REHAB", "NURSING",
+    "LOUNGE", "BAR", "SOUPS", "SALADS", "SANDWICHES", "ZOO", "BOOKS", "CANDLE", "BATH", "ORTHOPAEDIC",
+    "CONFERENCE", "MEETINGS", "TRAFFIC", "PROTECTION", "NETWOR", "REPORTING", "DEPOSITION", "TRIAL",
+    "WOODCRAFT", "DESIGN", "HEALING", "SOUND", "ARTS", "UNIVERISTY", "MIRRORS", "SONS", "FEDERAL",
+    "MEMBERSHIP", "CONCRETE", "U-VERSE", "VOICES", "TALES", "MARCHING",
+    # law firms named "SURNAME & SURNAME" seen in the payments (kept visible)
+    "WAITE", "HINSHAW", "CULBERTSON", "BELL", "GOLDMAN", "THORNBURG", "MADDEN", "BERGSTROM", "HARTIGAN",
+    "KTSANES", "HOFELD", "SCHAFFNER", "LIBMAN", "ROLLAG", "DANIELS", "POOR'S",
 }
 ORG_PHRASES = re.compile(r"(\bD/?B/?A\b|\s&\s|&|\bAND\b|^THE\b|\bOF\b|\bFOR\b)")
 
@@ -41,7 +50,9 @@ def _load_given_names():
     import json, os
     out = set()
     base = os.path.join(os.path.dirname(__file__), "..", "data", "people")
-    for fn, key in (("city_employees_2026.json", "current_employees"),):
+    for fn, key in (("city_employees_2026.json", "current_employees"),
+                    ("city_employees_2026.json", "paid_2025_not_matched_to_current_roster"),
+                    ("cps_positions_2025q4.json", "positions")):
         try:
             for e in json.load(open(os.path.join(base, fn))).get(key, []):
                 nm = (e.get("name") or "").upper()
@@ -61,6 +72,24 @@ def tokens(u):
     return [t.strip(".,'\"") for t in re.split(r"[\s,/()]+", u) if t.strip(".,'\"")]
 
 
+ART_DESC = re.compile(r"individual artist|\bIAP\b|practitioner in residence|artist in residence|"
+                      r"exhibition agreement|fellowship|artist grant|\bresidency\b", re.I)
+
+
+def people_by_description(rows):
+    """rows: iterable of (payee name, contract description). Returns upper-case payee names that are a
+    person by what they were paid for: an individual artist grant, residency, exhibition or fellowship
+    paid to a 2 to 4 plain-word name with no business word. Pass the result in known_people."""
+    out = set()
+    for name, desc in rows:
+        u = re.sub(r"\s*\d+$", "", (name or "").upper().strip()).strip()
+        toks = tokens(u)
+        if desc and ART_DESC.search(desc) and 2 <= len(toks) <= 4 \
+                and all(re.fullmatch(r"[A-Z'.-]+", t) for t in toks) and not any(t in ORG_TOKENS for t in toks):
+            out.add((name or "").upper().strip())
+    return out
+
+
 def is_business(name, has_contract=False, known_people=None):
     """known_people: set of upper-case names of individuals (e.g. current City employees).
     A name in that set is always treated as a person."""
@@ -75,10 +104,15 @@ def is_business(name, has_contract=False, known_people=None):
     toks = tokens(u)
     # Couples ("MARY & JOHN SMITH", "JOHN AND MARY SMITH") are private people, even though "&" is
     # usually a business sign. Only when no business word appears and there is no City contract.
-    if not has_contract and re.search(r"\s(&|AND)\s", u) and 3 <= len(toks) <= 6 \
-            and all(re.fullmatch(r"[A-Z'.-]+", t) for t in toks if t not in ("&", "AND")) \
-            and sum(1 for t in toks if t in GIVEN_NAMES) >= 2 \
-            and not any(t in ORG_TOKENS for t in toks):
+    # Hiding a business by mistake is the safe failure, so any plain-word "A & B" / "A AND B" payee with no
+    # business word and no City contract is treated as a couple, as is a name cut off after "&" ("MARY SMITH &").
+    plain = all(re.fullmatch(r"[A-Z'.&-]+", t) for t in toks if t not in ("&", "AND")) \
+        and "," not in u and not re.search(r"\bP\.? ?[AC]\.?$", u)   # "SMITH, JONES & CO" / "... P C" are firms
+    if not has_contract and plain and not any(t in ORG_TOKENS for t in toks) and 2 <= len(toks) <= 7 \
+            and (any(p in GIVEN_NAMES for t in toks for p in re.split(r"&", t) if p)
+                 or (len(toks) >= 3 and re.search(r"\s(&|AND)\s", u))
+                 or re.search(r"\s?&$", u)) \
+            and (re.search(r"\s(&|AND)\s", u) or re.search(r"\w&\w|\w& | &\w", u) or re.search(r"\s?&$", u)):
         return False
     # "FIRST LAST" (two or three plain words, no business word) is a person even with a contract:
     # some individuals hold City contracts (development loans, small grants). Only when the first
