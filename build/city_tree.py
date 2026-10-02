@@ -691,8 +691,15 @@ for n in city.walk():
     n.why = n.why or inv or "The public budget lists this as one amount, and we could not find public records that split it further."
 
 # ---------------------------------------------------------------- cleanup (after all splits)
-from treelib import cleanup  # noqa: E402
+from treelib import cleanup, tag_projects_on_several_lines  # noqa: E402
 city.rollup()
+# Tag a project that is a box on several budget lines. The TIP project 01-24-0017 (Calumet River Bridges) covers four
+# bridges. The City's grant ledger has a record for one of them (106th Street, project E9293), matched by the name
+# in the TIP description, so the note says so.
+tag_projects_on_several_lines(city, same_project={"01-24-0017": (
+    "E9293", "The grant ledger record (project E9293) is for the 106th Street bridge only. The regional plan project "
+             "01-24-0017 covers four Calumet River bridges (92nd, 95th, 100th and 106th Streets), so the ledger amount is part "
+             "of the same bridge program, matched by name.")})
 cleanup(city)
 from treelib import disambiguate_siblings  # noqa: E402
 print(f"memo branch: {disambiguate_siblings(twice)} same-name siblings relabelled")

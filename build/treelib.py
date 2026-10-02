@@ -447,6 +447,81 @@ def disambiguate_siblings(root):
     return renamed
 
 
+# ---- same project on several budget lines -------------------------------------
+def _nearest_line(n):
+    while n is not None and n.kind != "line":
+        n = n.parent
+    return n
+
+
+def _line_label(line):
+    """Short kid-readable name of the budget line a project box sits on."""
+    # line.name already carries the program in brackets, e.g. "Reserve Balance (IDOT - Rebuild Illinois)"
+    nm = line.name
+    fund = line.extra.get("fund_name")
+    if fund:
+        return f"{nm}, paid from {FUND_KID_NAMES.get(fund, fund)}"
+    return nm
+
+
+def tag_projects_on_several_lines(root, same_project=None, log=print):
+    """A real project is often paid from several funds, so the same project shows up as a box on several
+    budget lines (for example a bridge with federal, state and local money). That is not double counting,
+    but a reader who adds the boxes by name gets the wrong cost. Tag every such box with a note that lists
+    the other lines. Boxes are matched by ledger project code (extra.grant_project_code) or TIP id
+    (extra.tip_id), never by name. `same_project` maps a TIP id to (ledger project code, caveat text) when a
+    source says the two are the same job or part of it. Amounts, parents and sums are not changed."""
+    same_project = same_project or {}
+    groups = {}
+    caveats = {}
+    for n in root.walk():
+        if n.kind not in ("piece", "project"):
+            continue
+        tip = n.extra.get("tip_id")
+        key = n.extra.get("grant_project_code")
+        if not key and tip:
+            if tip in same_project:
+                key, cav = same_project[tip]
+                caveats[key] = cav
+            else:
+                key = "tip:" + tip
+        if key:
+            groups.setdefault(key, []).append(n)
+    tagged = projects = 0
+    for key, members in groups.items():
+        lines = {}
+        for m in members:
+            ln = _nearest_line(m)
+            if ln is not None:
+                lines.setdefault(id(ln), (ln, []))[1].append(m)
+        if len(lines) < 2:
+            continue
+        projects += 1
+        kinds = {"ledger" if m.extra.get("grant_project_code") else "tip" for m in members}
+        for lid, (ln, mine) in lines.items():
+            others = []
+            for oid, (oln, omem) in lines.items():
+                if oid != lid:
+                    others.append(f"{_line_label(oln)}: ${sum(x.amount for x in omem)/100:,.0f}")
+            txt = "This project also gets money from other lines: " + "; ".join(others) + ". These are different pots of money, so nothing is counted twice. "
+            if kinds == {"ledger", "tip"}:
+                txt += ("The numbers are not the same kind (some are unspent grant budget from the City's grant ledger, some are amounts "
+                        "the regional plan programs for federal fiscal year 2026), so do not add them up as the project's cost.")
+            elif kinds == {"ledger"}:
+                txt += "Each amount is the unspent part of one grant, so do not add them up as the project's cost."
+            else:
+                txt += "Each amount is what the regional plan programs for one kind of money, so do not add them up as the project's cost."
+            if key in caveats:
+                txt += " " + caveats[key]
+            for m in mine:
+                m.note = (m.note + " " if m.note else "") + txt
+                m.extra["also_on_other_lines"] = [{"line": _line_label(oln), "cents": sum(x.amount for x in omem)}
+                                                  for oid, (oln, omem) in lines.items() if oid != lid]
+                tagged += 1
+    log(f"project tags: {projects} projects on several lines, {tagged} boxes tagged")
+    return projects, tagged
+
+
 # ---- checks ---------------------------------------------------------------
 def check(root, expected_total_cents=None, people_names=None, verbose=True):
     """Return list of problems (empty == pass)."""
