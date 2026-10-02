@@ -1,0 +1,393 @@
+{
+ "meta": {
+  "author": "bonds round 3 (local statements only, no EMMA)",
+  "built_by": "scripts/bond_series_round3_build.py",
+  "description": "Series taken out of the 'Other bonds (not printed one by one)' boxes of GO interest, Water principal and interest, and Midway, from City official statements in raw/bonds. See research/emma_bonds.md."
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.bond-redemption-and-interest-series-fund.0510-2005-0902.other-not-itemised"
+   },
+   "expect_amount": 111605596,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "go-2009b-interest",
+     "name": "GO Taxable Project and Refunding Series 2009B",
+     "amount": 7892201,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": null,
+     "note": "Derived, not printed: outstanding principal $127,150,000 x 6.207% = $7,892,201 (rounded to the dollar), interest for the payments Jul 1 2026 and Jan 1 2027. No principal falls due in the 2026 window (first sinking fund installment 2030), so the year's interest is exactly the balance times the coupon. Gross of any federal subsidy. Balance: 2026AB OS Table 3 (BondLink PDF p.24), which equals the ACFR Table 25 balance at 12/31/2025. Coupon and terms: GO_2009_A-D_OS.t1979RQA73.pdf p.2 (6.207% term bond due 1/1/2032) and p.15 (first sinking fund installment 2030).",
+     "source": {
+      "doc": "City of Chicago GO 2026AB official statement Table 3 (balance) and the series' own statement (coupon)",
+      "url": "https://bondlink-cdn.com/1338/ILChicago02a-FIN.D8Ebm0ZNE.pdf",
+      "page": "24 (balance)",
+      "cite": "GO_2009_A-D_OS.t1979RQA73.pdf p.2 (6.207% term bond due 1/1/2032) and p.15 (first sinking fund installment 2030)",
+      "acfr": "FY2025 ACFR Table 25, PDF p.252",
+      "acfr_url": "https://bondlink-cdn.com/1338/FY2025-ACFR---City-of-Chicago.0TRW97g9Y.pdf"
+     },
+     "extra": {
+      "balance_dollars": 127150000,
+      "coupon_percent": "6.207",
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "go-2009c-interest",
+     "name": "GO Taxable Project Series 2009C (Build America Bonds)",
+     "amount": 3440850,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": null,
+     "note": "Derived, not printed: outstanding principal $55,435,000 x 6.207% = $3,440,850 (rounded to the dollar), interest for the payments Jul 1 2026 and Jan 1 2027. No principal falls due in the 2026 window (first sinking fund installment 2032), so the year's interest is exactly the balance times the coupon. Gross of any federal subsidy. Balance: 2026AB OS Table 3 (BondLink PDF p.24), which equals the ACFR Table 25 balance at 12/31/2025. Coupon and terms: GO_2009_A-D_OS.t1979RQA73.pdf p.2 (6.207% term bond due 1/1/2036) and p.16 (first sinking fund installment 2032).",
+     "source": {
+      "doc": "City of Chicago GO 2026AB official statement Table 3 (balance) and the series' own statement (coupon)",
+      "url": "https://bondlink-cdn.com/1338/ILChicago02a-FIN.D8Ebm0ZNE.pdf",
+      "page": "24 (balance)",
+      "cite": "GO_2009_A-D_OS.t1979RQA73.pdf p.2 (6.207% term bond due 1/1/2036) and p.16 (first sinking fund installment 2032)",
+      "acfr": "FY2025 ACFR Table 25, PDF p.252",
+      "acfr_url": "https://bondlink-cdn.com/1338/FY2025-ACFR---City-of-Chicago.0TRW97g9Y.pdf"
+     },
+     "extra": {
+      "balance_dollars": 55435000,
+      "coupon_percent": "6.207",
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "go-2009d-interest",
+     "name": "GO Taxable Project Series 2009D (Recovery Zone Bonds)",
+     "amount": 8333073,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": null,
+     "note": "Derived, not printed: outstanding principal $133,180,000 x 6.257% = $8,333,073 (rounded to the dollar), interest for the payments Jul 1 2026 and Jan 1 2027. No principal falls due in the 2026 window (first sinking fund installment 2036), so the year's interest is exactly the balance times the coupon. Gross of any federal subsidy. Balance: 2026AB OS Table 3 (BondLink PDF p.24), which equals the ACFR Table 25 balance at 12/31/2025. Coupon and terms: GO_2009_A-D_OS.t1979RQA73.pdf p.2 (6.257% term bond due 1/1/2040) and p.16 (first sinking fund installment 2036).",
+     "source": {
+      "doc": "City of Chicago GO 2026AB official statement Table 3 (balance) and the series' own statement (coupon)",
+      "url": "https://bondlink-cdn.com/1338/ILChicago02a-FIN.D8Ebm0ZNE.pdf",
+      "page": "24 (balance)",
+      "cite": "GO_2009_A-D_OS.t1979RQA73.pdf p.2 (6.257% term bond due 1/1/2040) and p.16 (first sinking fund installment 2036)",
+      "acfr": "FY2025 ACFR Table 25, PDF p.252",
+      "acfr_url": "https://bondlink-cdn.com/1338/FY2025-ACFR---City-of-Chicago.0TRW97g9Y.pdf"
+     },
+     "extra": {
+      "balance_dollars": 133180000,
+      "coupon_percent": "6.257",
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "go-2010b-interest",
+     "name": "GO Taxable Project Series 2010B (Build America Bonds)",
+     "amount": 16052929,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
+     "note": "Derived, not printed: outstanding principal $213,555,000 x 7.517% = $16,052,929 (rounded to the dollar), interest for the payments Jul 1 2026 and Jan 1 2027. No principal falls due in the 2026 window (first sinking fund installment 2036), so the year's interest is exactly the balance times the coupon. Gross of any federal subsidy. Balance: 2026AB OS Table 3 (BondLink PDF p.24), which equals the ACFR Table 25 balance at 12/31/2025. Coupon and terms: GO_2010B_OS.OYfAEh411h.pdf p.1 (7.517% term bond due 1/1/2040), p.25 (first sinking fund installment 2036) and p.65 (the statement itself prints $16,052,929 of interest every year).",
+     "source": {
+      "doc": "City of Chicago GO 2026AB official statement Table 3 (balance) and the series' own statement (coupon)",
+      "url": "https://bondlink-cdn.com/1338/ILChicago02a-FIN.D8Ebm0ZNE.pdf",
+      "page": "24 (balance)",
+      "cite": "GO_2010B_OS.OYfAEh411h.pdf p.1 (7.517% term bond due 1/1/2040), p.25 (first sinking fund installment 2036) and p.65 (the statement itself prints $16,052,929 of interest every year)",
+      "acfr": "FY2025 ACFR Table 25, PDF p.252",
+      "acfr_url": "https://bondlink-cdn.com/1338/FY2025-ACFR---City-of-Chicago.0TRW97g9Y.pdf"
+     },
+     "extra": {
+      "balance_dollars": 213555000,
+      "coupon_percent": "7.517",
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "go-2010c1-interest",
+     "name": "GO Taxable Project Series 2010C-1",
+     "amount": 9747648,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": null,
+     "note": "Derived, not printed: outstanding principal $125,275,000 x 7.781% = $9,747,648 (rounded to the dollar), interest for the payments Jul 1 2026 and Jan 1 2027. No principal falls due in the 2026 window (first sinking fund installment 2031), so the year's interest is exactly the balance times the coupon. Gross of any federal subsidy. Balance: 2026AB OS Table 3 (BondLink PDF p.24), which equals the ACFR Table 25 balance at 12/31/2025. Coupon and terms: GO_2010C-1_OS.YUmIUrNL6B.pdf p.1 (7.781% term bond due 1/1/2035) and p.24 (first sinking fund installment 2031).",
+     "source": {
+      "doc": "City of Chicago GO 2026AB official statement Table 3 (balance) and the series' own statement (coupon)",
+      "url": "https://bondlink-cdn.com/1338/ILChicago02a-FIN.D8Ebm0ZNE.pdf",
+      "page": "24 (balance)",
+      "cite": "GO_2010C-1_OS.YUmIUrNL6B.pdf p.1 (7.781% term bond due 1/1/2035) and p.24 (first sinking fund installment 2031)",
+      "acfr": "FY2025 ACFR Table 25, PDF p.252",
+      "acfr_url": "https://bondlink-cdn.com/1338/FY2025-ACFR---City-of-Chicago.0TRW97g9Y.pdf"
+     },
+     "extra": {
+      "balance_dollars": 125275000,
+      "coupon_percent": "7.781",
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "go-2011b-interest",
+     "name": "GO Taxable Project Series 2011B",
+     "amount": 8560738,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": null,
+     "note": "Derived, not printed: outstanding principal $141,875,000 x 6.034% = $8,560,738 (rounded to the dollar), interest for the payments Jul 1 2026 and Jan 1 2027. No principal falls due in the 2026 window (first sinking fund installment 2041), so the year's interest is exactly the balance times the coupon. Gross of any federal subsidy. Balance: 2026AB OS Table 3 (BondLink PDF p.24), which equals the ACFR Table 25 balance at 12/31/2025. Coupon and terms: GO_2011A&B_OS.sIACMKzFVe.pdf p.2 (6.034% term bond due 1/1/2042) and p.17 (first sinking fund installment 2041).",
+     "source": {
+      "doc": "City of Chicago GO 2026AB official statement Table 3 (balance) and the series' own statement (coupon)",
+      "url": "https://bondlink-cdn.com/1338/ILChicago02a-FIN.D8Ebm0ZNE.pdf",
+      "page": "24 (balance)",
+      "cite": "GO_2011A&B_OS.sIACMKzFVe.pdf p.2 (6.034% term bond due 1/1/2042) and p.17 (first sinking fund installment 2041)",
+      "acfr": "FY2025 ACFR Table 25, PDF p.252",
+      "acfr_url": "https://bondlink-cdn.com/1338/FY2025-ACFR---City-of-Chicago.0TRW97g9Y.pdf"
+     },
+     "extra": {
+      "balance_dollars": 141875000,
+      "coupon_percent": "6.034",
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "go-2012b-interest",
+     "name": "GO Taxable Project and Refunding Series 2012B",
+     "amount": 8218616,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": null,
+     "note": "Derived, not printed: outstanding principal $151,300,000 x 5.432% = $8,218,616 (rounded to the dollar), interest for the payments Jul 1 2026 and Jan 1 2027. No principal falls due in the 2026 window (first sinking fund installment 2039), so the year's interest is exactly the balance times the coupon. Gross of any federal subsidy. Balance: 2026AB OS Table 3 (BondLink PDF p.24), which equals the ACFR Table 25 balance at 12/31/2025. Coupon and terms: GO_2012A-C_OS.rbfTOIypRd.pdf p.2 (5.432% term bond due 1/1/2042) and p.17 (first sinking fund installment 2039).",
+     "source": {
+      "doc": "City of Chicago GO 2026AB official statement Table 3 (balance) and the series' own statement (coupon)",
+      "url": "https://bondlink-cdn.com/1338/ILChicago02a-FIN.D8Ebm0ZNE.pdf",
+      "page": "24 (balance)",
+      "cite": "GO_2012A-C_OS.rbfTOIypRd.pdf p.2 (5.432% term bond due 1/1/2042) and p.17 (first sinking fund installment 2039)",
+      "acfr": "FY2025 ACFR Table 25, PDF p.252",
+      "acfr_url": "https://bondlink-cdn.com/1338/FY2025-ACFR---City-of-Chicago.0TRW97g9Y.pdf"
+     },
+     "extra": {
+      "balance_dollars": 151300000,
+      "coupon_percent": "5.432",
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "go-2014b-interest",
+     "name": "GO Taxable Project and Refunding Series 2014B",
+     "amount": 12358708,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
+     "note": "Derived, not printed: outstanding principal $195,735,000 x 6.314% = $12,358,708 (rounded to the dollar), interest for the payments Jul 1 2026 and Jan 1 2027. No principal falls due in the 2026 window (first sinking fund installment 2037), so the year's interest is exactly the balance times the coupon. Gross of any federal subsidy. Balance: 2026AB OS Table 3 (BondLink PDF p.24), which equals the ACFR Table 25 balance at 12/31/2025. Coupon and terms: GO_2014A&B_OS.tRtjeGigSX.pdf p.4 (6.314% term bond due 1/1/2044) and p.33 (first sinking fund installment 2037).",
+     "source": {
+      "doc": "City of Chicago GO 2026AB official statement Table 3 (balance) and the series' own statement (coupon)",
+      "url": "https://bondlink-cdn.com/1338/ILChicago02a-FIN.D8Ebm0ZNE.pdf",
+      "page": "24 (balance)",
+      "cite": "GO_2014A&B_OS.tRtjeGigSX.pdf p.4 (6.314% term bond due 1/1/2044) and p.33 (first sinking fund installment 2037)",
+      "acfr": "FY2025 ACFR Table 25, PDF p.252",
+      "acfr_url": "https://bondlink-cdn.com/1338/FY2025-ACFR---City-of-Chicago.0TRW97g9Y.pdf"
+     },
+     "extra": {
+      "balance_dollars": 195735000,
+      "coupon_percent": "6.314",
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "go-2015c-interest",
+     "name": "GO Refunding Series 2015C",
+     "amount": 2000750,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": null,
+     "note": "Derived, not printed: outstanding principal $40,015,000 x 5.000% = $2,000,750 (rounded to the dollar), interest for the payments Jul 1 2026 and Jan 1 2027. Every maturity of this series carries the same 5% coupon, so the year's interest is the balance times 5% whichever maturities remain. Gross of any federal subsidy. Balance: 2026AB OS Table 3 (BondLink PDF p.24), which equals the ACFR Table 25 balance at 12/31/2025. Coupon and terms: GO_2015C_OS.zT7gfsJPNw.pdf p.2 (every maturity and both term bonds are 5.000%).",
+     "source": {
+      "doc": "City of Chicago GO 2026AB official statement Table 3 (balance) and the series' own statement (coupon)",
+      "url": "https://bondlink-cdn.com/1338/ILChicago02a-FIN.D8Ebm0ZNE.pdf",
+      "page": "24 (balance)",
+      "cite": "GO_2015C_OS.zT7gfsJPNw.pdf p.2 (every maturity and both term bonds are 5.000%)",
+      "acfr": "FY2025 ACFR Table 25, PDF p.252",
+      "acfr_url": "https://bondlink-cdn.com/1338/FY2025-ACFR---City-of-Chicago.0TRW97g9Y.pdf"
+     },
+     "extra": {
+      "balance_dollars": 40015000,
+      "coupon_percent": "5.000",
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "go-2020a1-interest",
+     "name": "GO Refunding Series 2020A-1",
+     "amount": 14154500,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
+     "note": "Derived, not printed: outstanding principal $283,090,000 x 5.000% = $14,154,500 (rounded to the dollar), interest for the payments Jul 1 2026 and Jan 1 2027. Every maturity of this series carries the same 5% coupon, so the year's interest is the balance times 5% whichever maturities remain. Gross of any federal subsidy. Balance: 2026AB OS Table 3 (BondLink PDF p.24), which equals the ACFR Table 25 balance at 12/31/2025. Coupon and terms: GO_2020A_OS.0CmwMzPx.pdf p.2 (the 2020A maturities after 2026 are all 5.00%; the ACFR lists 2020 A-1 as 5.0%).",
+     "source": {
+      "doc": "City of Chicago GO 2026AB official statement Table 3 (balance) and the series' own statement (coupon)",
+      "url": "https://bondlink-cdn.com/1338/ILChicago02a-FIN.D8Ebm0ZNE.pdf",
+      "page": "24 (balance)",
+      "cite": "GO_2020A_OS.0CmwMzPx.pdf p.2 (the 2020A maturities after 2026 are all 5.00%; the ACFR lists 2020 A-1 as 5.0%)",
+      "acfr": "FY2025 ACFR Table 25, PDF p.252",
+      "acfr_url": "https://bondlink-cdn.com/1338/FY2025-ACFR---City-of-Chicago.0TRW97g9Y.pdf"
+     },
+     "extra": {
+      "balance_dollars": 283090000,
+      "coupon_percent": "5.000",
+      "status": "derived_balance_x_coupon"
+     }
+    }
+   ],
+   "residual": {
+    "name": "Rest of the property tax bonds (2015B, 2017A, 2019A and small older series)",
+    "why": "Several older bonds with mixed interest rates share this leftover. The bond papers we hold print their balances, but not what each pays in 2026, and the budget line is smaller than all of them at full interest."
+   },
+   "note": "Ten series with one clear interest rate were taken out of the leftover. Each is outstanding balance x stated coupon. The budget line is a smaller amount than every series at full scheduled interest (for example 2019A, 2017A and 2015B alone would use more than what is left), so the leftover is a plug and may be too small. See research/emma_bonds.md."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.water-fund.0200-2005-0912.other-not-itemised"
+   },
+   "expect_amount": 44585000,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "water-2004-principal",
+     "name": "Water Refunding Series 2004 (principal due Nov 1 2026)",
+     "amount": 31035000,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": "This is one bond's yearly payment to the people who lent the money, and it is already as small as the bond itself.",
+     "source": {
+      "doc": "Water 2016A-1 official statement (debt service table, PDF p.29) and Water 2026ABC official statement (PDF p.33 balances, p.169 Appendix I)",
+      "url": "https://bondlink-cdn.com/1344/Water_2016A-1_and_A-2__2nd_Lien_OS.3J2RMdP4p6.pdf",
+      "url2": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf"
+     },
+     "note": "Derived from printed numbers: 2004 bonds outstanding $64,380,000 before the 2026 deal, less the 2027 maturity ($32,700,000 refunded plus $645,000 tendered) = $31,035,000 left, which is the amount maturing Nov 1 2026. Check: with the 2000 bonds' $5,000,000 interest and 5% interest on $64,380,000, it reproduces the 2016 statement's printed 2026 column ($39,254,000) and 2027 column ($40,012,250) to the dollar. As scheduled BEFORE the 2026 refunding: the November 2026 refunding and May 2026 tender remove the 2027 and later maturities of this series from the 2026 official statement's totals, but the bonds still pay interest until they are redeemed on 11/1/2026 (paid from the refunding escrow). The 2025 budget ordinance was written before that deal."
+    },
+    {
+     "key": "water-2016a1-principal",
+     "name": "Water Series 2016A-1 (principal due Nov 1 2026)",
+     "amount": 6295000,
+     "basis": "tied",
+     "kind": "bond_series",
+     "source": {
+      "doc": "Water 2016A-1 official statement (debt service table, PDF p.29) and Water 2026ABC official statement (PDF p.33 balances, p.169 Appendix I)",
+      "url": "https://bondlink-cdn.com/1344/Water_2016A-1_and_A-2__2nd_Lien_OS.3J2RMdP4p6.pdf",
+      "url2": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf"
+     },
+     "note": "Printed on the 2016A-1 cover: the 2026 maturity is $6,295,000 at 4.00%. After the 2026 deal the series has exactly $6,295,000 left (2026 OS p.33), so this is all that remains. As scheduled BEFORE the 2026 refunding: the November 2026 refunding and May 2026 tender remove the 2027 and later maturities of this series from the 2026 official statement's totals, but the bonds still pay interest until they are redeemed on 11/1/2026 (paid from the refunding escrow). The 2025 budget ordinance was written before that deal."
+    }
+   ],
+   "residual": {
+    "name": "Rest of the older Water bonds (mostly Series 2001, not printed in our files)",
+    "why": "Water Series 2001 ($51,180,000 left, final maturity 2030) and the WIFIA loan share this leftover, and the 2001 statement with its yearly schedule is not on the City's bond pages."
+   }
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.water-fund.0200-2005-0902.other-not-itemised"
+   },
+   "expect_amount": 11951198,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "water-2004-interest",
+     "name": "Water Refunding Series 2004 (interest)",
+     "amount": 3219000,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "source": {
+      "doc": "Water 2016A-1 official statement (debt service table, PDF p.29) and Water 2026ABC official statement (PDF p.33 balances, p.169 Appendix I)",
+      "url": "https://bondlink-cdn.com/1344/Water_2016A-1_and_A-2__2nd_Lien_OS.3J2RMdP4p6.pdf",
+      "url2": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf"
+     },
+     "note": "Derived: 5.0% x $64,380,000 = $3,219,000 for the May 1 and Nov 1 2026 payments (the same figure the 2016 statement's table implies). As scheduled BEFORE the 2026 refunding: the November 2026 refunding and May 2026 tender remove the 2027 and later maturities of this series from the 2026 official statement's totals, but the bonds still pay interest until they are redeemed on 11/1/2026 (paid from the refunding escrow). The 2025 budget ordinance was written before that deal."
+    },
+    {
+     "key": "water-2016a1-interest",
+     "name": "Water Series 2016A-1 (interest)",
+     "amount": 2059800,
+     "basis": "tied",
+     "kind": "bond_series",
+     "source": {
+      "doc": "Water 2016A-1 official statement (debt service table, PDF p.29) and Water 2026ABC official statement (PDF p.33 balances, p.169 Appendix I)",
+      "url": "https://bondlink-cdn.com/1344/Water_2016A-1_and_A-2__2nd_Lien_OS.3J2RMdP4p6.pdf",
+      "url2": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf"
+     },
+     "note": "Printed: the 2016 statement's 2016A-1 column for 2026 is $8,354,800 (p.29), which is $6,295,000 principal plus $2,059,800 interest on $42,455,000 of bonds at 4% and 5%. As scheduled BEFORE the 2026 refunding: the November 2026 refunding and May 2026 tender remove the 2027 and later maturities of this series from the 2026 official statement's totals, but the bonds still pay interest until they are redeemed on 11/1/2026 (paid from the refunding escrow). The 2025 budget ordinance was written before that deal."
+    }
+   ],
+   "residual": {
+    "name": "Rest of the older Water bonds' interest (2001, 2017, 2017-2, WIFIA loan)",
+    "why": "These series together would cost more interest than the leftover, so the budget line cannot hold all of them at full scheduled interest. The yearly figures by series are not printed in our files."
+   },
+   "side": [
+    {
+     "kind": "not_allocated",
+     "label": "Series 2000 Water bonds: $100,000,000 at 5.0%, $5,000,000 interest a year, refunded 11/1/2026 (Appendix I p.169, 2016 OS table p.29). Not placed in any box because the budget line cannot be shown to include it.",
+     "amount": 5000000,
+     "period": "2026",
+     "basis": "published",
+     "source": {
+      "doc": "Water 2016A-1 official statement (debt service table, PDF p.29) and Water 2026ABC official statement (PDF p.33 balances, p.169 Appendix I)",
+      "url": "https://bondlink-cdn.com/1344/Water_2016A-1_and_A-2__2nd_Lien_OS.3J2RMdP4p6.pdf",
+      "url2": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.chicago-midway-airport-fund.bonds.other-not-itemised"
+   },
+   "expect_amount": 13312661,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "midway-2014b",
+     "name": "Midway 2014B (principal and interest)",
+     "amount": 25000,
+     "basis": "gov_estimate",
+     "kind": "bond_series",
+     "source": {
+      "doc": "Midway 2025AB official statement, Letter of the Airport Consultant, Table A-3 'Existing and Future Debt Service' (fiscal years ending Dec 31), PDF p.169",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "page": "169"
+     },
+     "note": "Printed in the airport consultant's table for fiscal 2026 (calendar year, estimate prepared with the Department of Aviation). Only $625,000 of this series is left, paid off in 2030."
+    },
+    {
+     "key": "midway-2014c",
+     "name": "Midway 2014C (principal and interest)",
+     "amount": 3741300,
+     "basis": "gov_estimate",
+     "kind": "bond_series",
+     "source": {
+      "doc": "Midway 2025AB official statement, Letter of the Airport Consultant, Table A-3 'Existing and Future Debt Service' (fiscal years ending Dec 31), PDF p.169",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "page": "169"
+     },
+     "note": "Printed in the airport consultant's table for fiscal 2026. VARIABLE RATE series ($124,710,000 held by PNC Bank until 7/10/2028): the table says debt service is subject to change with the rate, and the official statement assumes 3.00% for variable rate bonds (table note 5 of Table 3, OS p.60). Treat this as an estimate."
+    },
+    {
+     "key": "midway-2018a",
+     "name": "Midway 2018A (principal and interest)",
+     "amount": 5346763,
+     "basis": "gov_estimate",
+     "kind": "bond_series",
+     "source": {
+      "doc": "Midway 2025AB official statement, Letter of the Airport Consultant, Table A-3 'Existing and Future Debt Service' (fiscal years ending Dec 31), PDF p.169",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "page": "169"
+     },
+     "note": "Printed in the airport consultant's table for fiscal 2026. $18,235,000 is left, paid off 1/1/2029, and car rental customer facility charges are pledged to pay it."
+    }
+   ],
+   "residual": {
+    "name": "Midway bonds: budget is higher than the bond papers (not explained)",
+    "why": "The bond papers print $9,113,063 for these three bonds, and the budget line holds $4,199,598 more. No document we hold explains the difference."
+   },
+   "note": "The consultant's table is by calendar year, while the budget lines follow the January-to-January bond year, so a few dollars can differ from research/bond_series.md."
+  }
+ ]
+}
