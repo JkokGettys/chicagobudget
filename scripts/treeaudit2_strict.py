@@ -52,6 +52,14 @@ def main():
             est = sum(abs(r["amount_cents"]) for r in L if bucket(r) != "ge10m" and r["basis"] in ("proxy", "residual", "adjustment"))
             cells += [100*(pub+est)/T, 100*pub/T, 100*est/T]
         print(f"| {g} | {cells[0]:.1f}% | {cells[1]:.1f}% | {cells[2]:.1f}% | {cells[3]:.1f}% | {cells[4]:.1f}% | {cells[5]:.1f}% |")
+    print("\nCount x rate leaves of $1M or more that the build rule counts as small, by basis ($M, now)")
+    rows = load_nodes()
+    for g in GOVS:
+        d = collections.defaultdict(lambda: [0, 0])
+        for r in rows:
+            if r["is_leaf"] and root_of(r["id"]) == g and r["count"] and r["unit_amount_cents"] is not None and abs(r["unit_amount_cents"]) < M and abs(r["amount_cents"]) >= M:
+                d[r["basis"]][0] += 1; d[r["basis"]][1] += abs(r["amount_cents"])
+        print(f"  {g}: " + ", ".join(f"{b} {n} boxes ${a/1e8:,.0f}M" for b, (n, a) in sorted(d.items(), key=lambda kv: -kv[1][1])))
     print("\nsigned: ", {g: (round(now[g]['signed_total']/1e8), round(100*now[g]['signed_ge10m_rule']/now[g]['signed_total'], 1)) for g in GOVS})
 
 if __name__ == "__main__":

@@ -11,7 +11,7 @@ from treeaudit2_common import *
 # (regex on 'path | name', tag, short reason, source or next step)
 CITY = [
  (r"Carryover not tied to a named FAA|Still not tied to any FAA|2026 grant money not yet awarded", "b", "federal airport carryover no public record ties to a project", "Ask Aviation/OBM for the AIP grant ledger by award. FAA FY2026 grant history is not published yet"),
- (r"Paid beyond the budget line|Already spent more than", "c", "planned offset: payments so far exceed the line", "note on the box explains it"),
+ (r"Paid beyond the budget line|Already spent more than", "c", "payments so far are larger than the budget line, shown as a negative box", "note on the box explains it"),
  (r"obm-unexplained|no line explains", "b", "OBM deduction no line explains", "Ask OBM how the $117.0M is figured"),
  (r"Extra payment above what the law requires|One extra payment|Two extra payments|Advance payment", "c", "one extra payment into a pension fund", "none, it is one payment"),
  (r"Budgeted but not spent yet", "c", "money not spent yet, so no payment exists", "revisit when more of 2026 is paid"),
@@ -69,7 +69,49 @@ def tag(path_name, rules):
         if re.search(rx, path_name): return t, why, src, "rule"
     return "b", "no rule matched, treated as needing the budget office", "OBM", "default"
 
+LEADS = [  # (label, regex on the src text, tag it applies to)
+    ("OBM Mid-Year Data Directory extract (payments with funding line)", r"Data Directory", None),
+    ("Federal airport carryover with no award (Aviation/OBM)", r"AIP grant ledger", None),
+    ("CDBG-DR sewer and stormwater (HUD DRGR first)", r"DRGR", None),
+    ("Highway and state reserves with no project (CDOT/OBM)", r"FHWA FMIS", None),
+    ("State/Lake station cost breakdown (FTA TrAMS or CDOT)", r"TrAMS", None),
+    ("Union contract money not yet assigned (OBM)", r"contract settlement schedule", None),
+    ("CPS contingencies (CPS Budget Office)", r"contingency by program", None),
+    ("City claims and benefits totals (Finance/Risk)", r"claims by type", None),
+    ("Bond series not printed (EMMA, trustee schedules)", r"EMMA", None),
+    ("Grant reserve lines, project lists in the City ledger", r"Mid-Year Grants ledger", None),
+    ("Illinois EPA loan lists", r"Illinois EPA", None),
+    ("CPS utilities, four suppliers paid", r"Constellation \$37", None),
+    ("CPS preschool, pointer to City delegate agency boxes", r"Early Childhood Block Grant", None),
+]
+
+def leads(out):
+    print("\n#### leads (dollars of dead ends by next step)")
+    allr = [dict(r, gov=g) for g in out for r in out[g]]
+    res = []
+    for lab, rx, _ in LEADS:
+        m = [r for r in allr if re.search(rx, r["src"])]
+        res.append((lab, len(m), sum(abs(r["cents"]) for r in m)))
+        print(f"  {lab}: {len(m)} boxes ${sum(abs(r['cents']) for r in m)/1e8:,.0f}M")
+    return res
+
+def md_tables(out, n=30):
+    lines = []
+    for g in GOVS:
+        lines.append(f"**{ {'city':'City of Chicago','cps':'Chicago Public Schools','parks':'Chicago Park District'}[g] }** ({len(out[g])} dead ends of $10M or more, ${sum(abs(r['cents']) for r in out[g])/1e8:,.0f}M)\n")
+        lines.append("| # | $M | Box | Basis | Tag | Why it stops |\n|---:|---:|---|---|:-:|---|")
+        for r in out[g][:n]:
+            nm = r["path"].split(" > ")
+            nm = (" > ".join(nm[-2:]) if len(nm) > 1 else nm[0])
+            nm = re.sub(r"\s*\((?:[A-Za-z]+ - )+[^()]*(?:\([^()]*\))?[^()]*\)", "", nm)
+            nm = nm.replace("Construction of Buildings and Other Structures", "Construction").replace("For Professional and Technical Services and Other Third Party Benefit Agreements", "Professional services").replace("Paid from: ", "")
+            nm = nm if len(nm) <= 80 else nm[:77] + "..."
+            lines.append(f"| {r['rank']} | {r['cents']/1e8:,.1f} | {nm.replace('|','/')} | {r['basis'][:6]} | {r['tag']} | {r['why']} |")
+        lines.append("")
+    return "\n".join(lines)
+
 def main():
+    import sys
     out = {}
     rules = {"city": CITY, "cps": CPS, "parks": PARKS}
     summary = {}
@@ -95,7 +137,9 @@ def main():
         t30 = rows[:30]
         c30 = collections.Counter(r["tag"] for r in t30)
         print("  top 30:", dict(c30), f"${sum(abs(r['cents']) for r in t30)/1e8:,.0f}M")
-    json.dump({"rows": out, "summary": summary}, open(f"{OUT}/rank.json", "w"), indent=1)
+    lead_rows = leads(out)
+    json.dump({"rows": out, "summary": summary, "leads": lead_rows}, open(f"{OUT}/rank.json", "w"), indent=1)
+    open(f"{OUT}/top30_tables.md", "w").write(md_tables(out))
 
     print("\n#### markdown tables, top 30 per government")
     for g in GOVS:

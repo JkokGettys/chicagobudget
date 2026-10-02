@@ -205,6 +205,20 @@ def reconcile(rows, by, kids):
     # compare with the previous audit's equivalent for the Midway/Sewer difference boxes
     res["difference_boxes"] = [(r["gov"], r["name"][:60], r["amount_cents"]) for r in rows if r["name"].startswith("Difference") and abs(r["amount_cents"]) >= M]
     res["negative_ge1m_total"] = {g: sum(r["amount_cents"] for r in rows if r["gov"] == g and r["is_leaf"] and r["amount_cents"] <= -M) for g in GOVS}
+    # what the residual boxes of $1M or more are made of
+    def rkind(r):
+        n = r["name"].lower()
+        if "overtime" in n: return "police overtime beyond CPD targets"
+        if n.startswith("budgeted but not spent") or "not spent yet" in n or "not spent on" in n or "not matched to a payment" in n: return "money not spent or not matched to a payment yet"
+        if "bond" in n or "older bonds" in n: return "bonds not printed one by one"
+        if "faa" in n or "carryover" in n or "not yet awarded" in n: return "federal airport carryover"
+        if "reserve" in n or "project" in n or "not itemised" in n or "ledger" in n or "regional plan" in n or "federal award" in n: return "grant reserve beyond named projects"
+        return "other"
+    rk = collections.defaultdict(lambda: [0, 0])
+    for r in rows:
+        if r["is_leaf"] and (r["basis"] == "residual" or r["name"].startswith("Difference")) and abs(r["amount_cents"]) >= M and r["gov"] in GOVS:
+            k = (r["gov"], rkind(r)); rk[k][0] += 1; rk[k][1] += abs(r["amount_cents"])
+    res["residual_kinds"] = {f"{k[0]}|{k[1]}": v for k, v in rk.items()}
     # side info that exceeds its box (a payments total bigger than the line) is not a reconciliation gap; counted for transparency
     return res
 
