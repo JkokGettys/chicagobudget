@@ -164,5 +164,78 @@ add_fund(dict(
 ))
 
 
+# ======================================================================= MEABF (Municipal)
+MU = "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf"
+MD = "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)"
+_m = [("Tier 1", 11756, 186501439), ("Tier 2", 5761, 52431252), ("Tier 3", 21862, 177311896)]
+_mt = sum(x[2] for x in _m)
+_mn = 146922858
+_mc = [round(_mn * x[2] / _mt * 100) for x in _m]
+_mc[2] += _mn * 100 - sum(_mc)
+_mc = [c / 100 for c in _mc]
+_mdesc = {"Tier 1": "Tier 1 (hired before 2011)", "Tier 2": "Tier 2 (hired 2011 to July 5, 2017)", "Tier 3": "Tier 3 (hired July 6, 2017 or later)"}
+add_fund(dict(
+    ids=dict(
+        short="city.retirement.municipal-employees-annuity-and-benefit-fund.0681-2005-0976.paying-down-the-shortfall-money-promised-but-nev",
+        nc="city.retirement.municipal-employees-annuity-and-benefit-fund.0681-2005-0976.cost-of-pensions-workers-earn-this-year",
+        adv="city.retirement.municipal-employees-annuity-and-benefit-fund.0681-2005-097a.extra-payment-above-what-the-law-requires"),
+    val_doc=MD + ", Section 3 Exhibits D.1 to D.3, Section 2, income statement",
+    val_url=MU, val_pages="18, 40-43, 45",
+    src_note="Annual benefits in payment at 12/31/2025: retirees Exhibit D.1 (p.40, 8,286 men $529,458,309 and 13,588 women $544,640,079), "
+             "surviving spouses Exhibit D.2 (p.41), reversionary annuitants Exhibit D.3 (p.42). Children are the remainder of the printed "
+             "monthly total $95,618,668 x 12 (p.18), so that line is derived. Refunds $40,088,296 and disability payments $8,185,003 are 2025 cash (p.45).",
+    short_amt=818078695,
+    ben_label="$1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments)",
+    groups=[
+        ("Retired members", "retirees", 21874, 1074098388, "Exhibit D.1 (p.40)."),
+        ("Surviving spouses", "spouses", 3714, 72562411, "Exhibit D.2 (p.41)."),
+        ("Refunds to members who left", "", 0, 40088296, "2025 refunds of contributions, income statement p.45. The valuation prints 1,839 refunds in the member count roll-forward (p.44) but that counts a different set, so no average is shown."),
+        ("Disability payments to active members", "members on disability", 181, 8185003, "2025 disability payments, p.45. 93 ordinary and 88 duty disability members (p.17, p.33)."),
+        ("Reversionary annuitants", "annuitants", 119, 586827, "Exhibit D.3 (p.42)."),
+        ("Children's annuities (derived)", "children", 64, 176390, "Derived: printed monthly total of $95,618,668 x 12 minus the groups above (p.18)."),
+    ],
+    short_note="The valuation says the State-law policy aims for 90% funded by 2058 and 'systematically underfunds' the fund. "
+               "Funded ratio is 27.4% and the unfunded liability is about $14.9 billion.",
+    short_side=[
+        S("unfunded_liability", "Unfunded actuarial accrued liability (promised pensions not yet saved for), 12/31/2025", 14927708891, "12/31/2025", "actual", MD, MU, 11),
+        S("funded_ratio", "Funded ratio, actuarial value of assets $5,639,887,320 vs liability $20,567,596,211: 27.42%", None, "12/31/2025", "actual", MD, MU, 11, ratio=0.2742),
+        S("amortization_target", "State law (P.A. 100-0023) aims for 90% funded by the end of 2058. The statutory payment would take 34 years to pay off the unfunded liability (32 years for the next levy year).", None, "2058 target", "actual", MD, MU, 11, target_year=2058),
+        S("amortization_payment", "Payment on the unfunded liability in the actuary's recommended 2026 contribution", 1198582991, "plan year 2026", "gov_estimate", MD, MU, 27),
+        S("recommended_contribution", "Actuarially determined contribution for 2026 (46.28% of pay)", 1350383529, "plan year 2026", "gov_estimate", MD, MU, 27),
+        S("benefits_paid", "Benefits and refunds paid in 2025 (annuities $1,124,686,135, refunds $40,088,296, disability $8,185,003, health subsidies $343,348)", 1173302782, "2025", "actual", MD, MU, 45),
+        S("annual_benefits_in_force", "Annual benefits in payment at 12/31/2025 to 25,771 retirees and beneficiaries (monthly $95,618,668)", 1147424016, "12/31/2025", "actual", MD, MU, 18, members=25771),
+    ],
+    tiers=[
+        dict(name=_mdesc[x[0]], count=x[1], net_nc=c, page=55, basis="proxy",
+             src_note=f"Normal cost components (p.55): {x[0]} total normal cost incl. admin ${x[2]:,}. Member contributions are printed only for all tiers together ($269,321,729), so employer cost is split by each tier's share of total normal cost.",
+             note=f"Proxy: employer normal cost $146,922,858 shared by {x[0]}'s {x[2] / _mt * 100:.1f}% of total normal cost incl. admin (${x[2]:,} of ${_mt:,}). "
+                  f"The fund prints this only for all tiers together. {x[1]:,} {x[0]} active members (p.33).")
+        for x, c in zip(_m, _mc)],
+    nc_amt=146922858,
+    nc_note="Employer normal cost is the actuary's estimate of what this year of work by 39,379 active members adds to the pension promise, "
+            "after members' own contributions (p.55). The tier split is our proxy.",
+    nc_side=[
+        S("active_payroll", "Total pensionable salary of 39,379 active members at 12/31/2025 (average $70,392)", 2771982184, "12/31/2025", "actual", MD, MU, 33),
+        S("projected_payroll", "Projected payroll for 2026", 2917895225, "2026", "gov_estimate", MD, MU, 27),
+        S("total_normal_cost", "Total normal cost before member contributions (14.03% of pay)", 409399589, "2026", "gov_estimate", MD, MU, 55),
+        S("member_contributions", "Expected contributions by active members themselves (9.23% of pay)", 269321729, "2026", "gov_estimate", MD, MU, 55),
+        S("admin_expenses", "Administrative expenses included in the normal cost line", 6844998, "2026", "gov_estimate", MD, MU, 55),
+    ],
+    adv_amt=161218894,
+    adv_name="Two extra payments into the fund's savings (January and June 2026)",
+    adv_doc=MD + " pp.10, 32, 45",
+    adv_page=10,
+    adv_note="Under the City's Pension Management Policy the City budgets extra ('supplemental') payments on top of the State-law minimum so the "
+             "shortfall does not grow. The valuation counts the January 2026 payment of $80,609,447 and says another is expected in June 2026 "
+             "(the line is exactly twice $80,609,447). It estimates the January payment cuts total required contributions through 2058 by about $160.0 million.",
+    adv_side=[
+        S("advance_history", "Supplemental pension payment received in 2024", 178085000, "2024", "actual", MD, MU, 45),
+        S("advance_history", "Supplemental pension payment received in 2025", 168736173, "2025", "actual", MD, MU, 45),
+        S("advance_payment_2026", "Supplemental payment made January 2026 (the only 2026 payment the actuary counts)", 80609447, "2026", "actual", MD, MU, 10),
+        S("advance_savings", "Actuary's estimate of how much the January 2026 payment reduces total required contributions through 2058", 159998000, "through 2058", "gov_estimate", MD, MU, 32),
+    ],
+))
+
+
 if __name__ == "__main__":
     write()

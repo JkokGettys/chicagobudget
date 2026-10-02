@@ -848,6 +848,399 @@
      "amount": 5791572
     }
    ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.retirement.municipal-employees-annuity-and-benefit-fund.0681-2005-0976.paying-down-the-shortfall-money-promised-but-nev"
+   },
+   "expect_amount": 818078695,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Retired members: 21,874 retirees",
+     "amount": 734882479.52,
+     "basis": "proxy",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal), Section 3 Exhibits D.1 to D.3, Section 2, income statement",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": "18, 40-43, 45",
+      "note": "Annual benefits in payment at 12/31/2025: retirees Exhibit D.1 (p.40, 8,286 men $529,458,309 and 13,588 women $544,640,079), surviving spouses Exhibit D.2 (p.41), reversionary annuitants Exhibit D.3 (p.42). Children are the remainder of the printed monthly total $95,618,668 x 12 (p.18), so that line is derived. Refunds $40,088,296 and disability payments $8,185,003 are 2025 cash (p.45)."
+     },
+     "count": 21874,
+     "unit_amount": 33596.16,
+     "unit_label": "retirees (share of the City's payment each)",
+     "note": "Proxy: this group draws $1,074,098,388 a year in benefits, 89.83% of the $1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $49,104 a year per person. Exhibit D.1 (p.40). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+     "why": "The City's payment goes to the fund as one lump sum, and thousands of retirees in this group share it, so each person's share is far under $1M and no single person's benefit is bought by one payment."
+    },
+    {
+     "name": "Surviving spouses: 3,714 spouses",
+     "amount": 49646145.18,
+     "basis": "proxy",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal), Section 3 Exhibits D.1 to D.3, Section 2, income statement",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": "18, 40-43, 45",
+      "note": "Annual benefits in payment at 12/31/2025: retirees Exhibit D.1 (p.40, 8,286 men $529,458,309 and 13,588 women $544,640,079), surviving spouses Exhibit D.2 (p.41), reversionary annuitants Exhibit D.3 (p.42). Children are the remainder of the printed monthly total $95,618,668 x 12 (p.18), so that line is derived. Refunds $40,088,296 and disability payments $8,185,003 are 2025 cash (p.45)."
+     },
+     "count": 3714,
+     "unit_amount": 13367.3,
+     "unit_label": "spouses (share of the City's payment each)",
+     "note": "Proxy: this group draws $72,562,411 a year in benefits, 6.07% of the $1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $19,538 a year per person. Exhibit D.2 (p.41). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+     "why": "The City's payment goes to the fund as one lump sum, and thousands of retirees in this group share it, so each person's share is far under $1M and no single person's benefit is bought by one payment."
+    },
+    {
+     "name": "Refunds to members who left",
+     "amount": 27427828.48,
+     "basis": "proxy",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal), Section 3 Exhibits D.1 to D.3, Section 2, income statement",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": "18, 40-43, 45",
+      "note": "Annual benefits in payment at 12/31/2025: retirees Exhibit D.1 (p.40, 8,286 men $529,458,309 and 13,588 women $544,640,079), surviving spouses Exhibit D.2 (p.41), reversionary annuitants Exhibit D.3 (p.42). Children are the remainder of the printed monthly total $95,618,668 x 12 (p.18), so that line is derived. Refunds $40,088,296 and disability payments $8,185,003 are 2025 cash (p.45)."
+     },
+     "count": 0,
+     "unit_amount": null,
+     "unit_label": null,
+     "note": "Proxy: this group draws $40,088,296 a year in benefits, 3.35% of the $1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). 2025 refunds of contributions, income statement p.45. The valuation prints 1,839 refunds in the member count roll-forward (p.44) but that counts a different set, so no average is shown. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+     "why": "The City's payment goes to the fund as one lump sum, and thousands of retirees in this group share it, so each person's share is far under $1M and no single person's benefit is bought by one payment."
+    },
+    {
+     "name": "Disability payments to active members: 181 members on disability",
+     "amount": 5600059.88,
+     "basis": "proxy",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal), Section 3 Exhibits D.1 to D.3, Section 2, income statement",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": "18, 40-43, 45",
+      "note": "Annual benefits in payment at 12/31/2025: retirees Exhibit D.1 (p.40, 8,286 men $529,458,309 and 13,588 women $544,640,079), surviving spouses Exhibit D.2 (p.41), reversionary annuitants Exhibit D.3 (p.42). Children are the remainder of the printed monthly total $95,618,668 x 12 (p.18), so that line is derived. Refunds $40,088,296 and disability payments $8,185,003 are 2025 cash (p.45)."
+     },
+     "count": 181,
+     "unit_amount": 30939.56,
+     "unit_label": "members on disability (share of the City's payment each)",
+     "note": "Proxy: this group draws $8,185,003 a year in benefits, 0.68% of the $1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $45,221 a year per person. 2025 disability payments, p.45. 93 ordinary and 88 duty disability members (p.17, p.33). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    },
+    {
+     "name": "Reversionary annuitants: 119 annuitants",
+     "amount": 401498.48,
+     "basis": "proxy",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal), Section 3 Exhibits D.1 to D.3, Section 2, income statement",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": "18, 40-43, 45",
+      "note": "Annual benefits in payment at 12/31/2025: retirees Exhibit D.1 (p.40, 8,286 men $529,458,309 and 13,588 women $544,640,079), surviving spouses Exhibit D.2 (p.41), reversionary annuitants Exhibit D.3 (p.42). Children are the remainder of the printed monthly total $95,618,668 x 12 (p.18), so that line is derived. Refunds $40,088,296 and disability payments $8,185,003 are 2025 cash (p.45)."
+     },
+     "count": 119,
+     "unit_amount": 3373.94,
+     "unit_label": "annuitants (share of the City's payment each)",
+     "note": "Proxy: this group draws $586,827 a year in benefits, 0.05% of the $1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $4,931 a year per person. Exhibit D.3 (p.42). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    },
+    {
+     "name": "Children's annuities (derived): 64 children",
+     "amount": 120683.46,
+     "basis": "proxy",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal), Section 3 Exhibits D.1 to D.3, Section 2, income statement",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": "18, 40-43, 45",
+      "note": "Annual benefits in payment at 12/31/2025: retirees Exhibit D.1 (p.40, 8,286 men $529,458,309 and 13,588 women $544,640,079), surviving spouses Exhibit D.2 (p.41), reversionary annuitants Exhibit D.3 (p.42). Children are the remainder of the printed monthly total $95,618,668 x 12 (p.18), so that line is derived. Refunds $40,088,296 and disability payments $8,185,003 are 2025 cash (p.45)."
+     },
+     "count": 64,
+     "unit_amount": 1885.68,
+     "unit_label": "children (share of the City's payment each)",
+     "note": "Proxy: this group draws $176,390 a year in benefits, 0.01% of the $1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $2,756 a year per person. Derived: printed monthly total of $95,618,668 x 12 minus the groups above (p.18). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    }
+   ],
+   "residual": {
+    "name": "Rounding",
+    "why": null
+   },
+   "note": "The valuation says the State-law policy aims for 90% funded by 2058 and 'systematically underfunds' the fund. Funded ratio is 27.4% and the unfunded liability is about $14.9 billion. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+   "side": [
+    {
+     "kind": "unfunded_liability",
+     "label": "Unfunded actuarial accrued liability (promised pensions not yet saved for), 12/31/2025",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 11
+     },
+     "amount": 14927708891
+    },
+    {
+     "kind": "funded_ratio",
+     "label": "Funded ratio, actuarial value of assets $5,639,887,320 vs liability $20,567,596,211: 27.42%",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 11
+     },
+     "ratio": 0.2742
+    },
+    {
+     "kind": "amortization_target",
+     "label": "State law (P.A. 100-0023) aims for 90% funded by the end of 2058. The statutory payment would take 34 years to pay off the unfunded liability (32 years for the next levy year).",
+     "period": "2058 target",
+     "basis": "actual",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 11
+     },
+     "target_year": 2058
+    },
+    {
+     "kind": "amortization_payment",
+     "label": "Payment on the unfunded liability in the actuary's recommended 2026 contribution",
+     "period": "plan year 2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 27
+     },
+     "amount": 1198582991
+    },
+    {
+     "kind": "recommended_contribution",
+     "label": "Actuarially determined contribution for 2026 (46.28% of pay)",
+     "period": "plan year 2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 27
+     },
+     "amount": 1350383529
+    },
+    {
+     "kind": "benefits_paid",
+     "label": "Benefits and refunds paid in 2025 (annuities $1,124,686,135, refunds $40,088,296, disability $8,185,003, health subsidies $343,348)",
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 45
+     },
+     "amount": 1173302782
+    },
+    {
+     "kind": "annual_benefits_in_force",
+     "label": "Annual benefits in payment at 12/31/2025 to 25,771 retirees and beneficiaries (monthly $95,618,668)",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 18
+     },
+     "amount": 1147424016,
+     "members": 25771
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.retirement.municipal-employees-annuity-and-benefit-fund.0681-2005-0976.cost-of-pensions-workers-earn-this-year"
+   },
+   "expect_amount": 146922858,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Tier 1 (hired before 2011): 11,756 active members",
+     "amount": 65829863.73,
+     "basis": "proxy",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal), Section 3 Exhibits D.1 to D.3, Section 2, income statement",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 55,
+      "note": "Normal cost components (p.55): Tier 1 total normal cost incl. admin $186,501,439. Member contributions are printed only for all tiers together ($269,321,729), so employer cost is split by each tier's share of total normal cost."
+     },
+     "count": 11756,
+     "unit_amount": 5599.68,
+     "unit_label": "active members (net normal cost each)",
+     "note": "Proxy: employer normal cost $146,922,858 shared by Tier 1's 44.8% of total normal cost incl. admin ($186,501,439 of $416,244,587). The fund prints this only for all tiers together. 11,756 Tier 1 active members (p.33).",
+     "why": "The fund's actuary prints this cost for the whole group, and it is spread over thousands of working members, so each member's cost is far under $1M and the City does not publish it person by person."
+    },
+    {
+     "name": "Tier 2 (hired 2011 to July 5, 2017): 5,761 active members",
+     "amount": 18506785.75,
+     "basis": "proxy",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal), Section 3 Exhibits D.1 to D.3, Section 2, income statement",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 55,
+      "note": "Normal cost components (p.55): Tier 2 total normal cost incl. admin $52,431,252. Member contributions are printed only for all tiers together ($269,321,729), so employer cost is split by each tier's share of total normal cost."
+     },
+     "count": 5761,
+     "unit_amount": 3212.43,
+     "unit_label": "active members (net normal cost each)",
+     "note": "Proxy: employer normal cost $146,922,858 shared by Tier 2's 12.6% of total normal cost incl. admin ($52,431,252 of $416,244,587). The fund prints this only for all tiers together. 5,761 Tier 2 active members (p.33).",
+     "why": "The fund's actuary prints this cost for the whole group, and it is spread over thousands of working members, so each member's cost is far under $1M and the City does not publish it person by person."
+    },
+    {
+     "name": "Tier 3 (hired July 6, 2017 or later): 21,862 active members",
+     "amount": 62586208.52,
+     "basis": "proxy",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal), Section 3 Exhibits D.1 to D.3, Section 2, income statement",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 55,
+      "note": "Normal cost components (p.55): Tier 3 total normal cost incl. admin $177,311,896. Member contributions are printed only for all tiers together ($269,321,729), so employer cost is split by each tier's share of total normal cost."
+     },
+     "count": 21862,
+     "unit_amount": 2862.79,
+     "unit_label": "active members (net normal cost each)",
+     "note": "Proxy: employer normal cost $146,922,858 shared by Tier 3's 42.6% of total normal cost incl. admin ($177,311,896 of $416,244,587). The fund prints this only for all tiers together. 21,862 Tier 3 active members (p.33).",
+     "why": "The fund's actuary prints this cost for the whole group, and it is spread over thousands of working members, so each member's cost is far under $1M and the City does not publish it person by person."
+    }
+   ],
+   "residual": {
+    "name": "Rounding",
+    "why": null
+   },
+   "note": "Employer normal cost is the actuary's estimate of what this year of work by 39,379 active members adds to the pension promise, after members' own contributions (p.55). The tier split is our proxy.",
+   "side": [
+    {
+     "kind": "active_payroll",
+     "label": "Total pensionable salary of 39,379 active members at 12/31/2025 (average $70,392)",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 33
+     },
+     "amount": 2771982184
+    },
+    {
+     "kind": "projected_payroll",
+     "label": "Projected payroll for 2026",
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 27
+     },
+     "amount": 2917895225
+    },
+    {
+     "kind": "total_normal_cost",
+     "label": "Total normal cost before member contributions (14.03% of pay)",
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 55
+     },
+     "amount": 409399589
+    },
+    {
+     "kind": "member_contributions",
+     "label": "Expected contributions by active members themselves (9.23% of pay)",
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 55
+     },
+     "amount": 269321729
+    },
+    {
+     "kind": "admin_expenses",
+     "label": "Administrative expenses included in the normal cost line",
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 55
+     },
+     "amount": 6844998
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.retirement.municipal-employees-annuity-and-benefit-fund.0681-2005-097a.extra-payment-above-what-the-law-requires"
+   },
+   "expect_amount": 161218894,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Two extra payments into the fund's savings (January and June 2026)",
+     "amount": 161218894,
+     "basis": "tied",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal) pp.10, 32, 45",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 10
+     },
+     "why": "This is money the City chooses to pay on top of what the law requires, so the fund has more savings and the shortfall grows more slowly, and it goes into the fund as one payment.",
+     "note": "Under the City's Pension Management Policy the City budgets extra ('supplemental') payments on top of the State-law minimum so the shortfall does not grow. The valuation counts the January 2026 payment of $80,609,447 and says another is expected in June 2026 (the line is exactly twice $80,609,447). It estimates the January payment cuts total required contributions through 2058 by about $160.0 million."
+    }
+   ],
+   "note": "Under the City's Pension Management Policy the City budgets extra ('supplemental') payments on top of the State-law minimum so the shortfall does not grow. The valuation counts the January 2026 payment of $80,609,447 and says another is expected in June 2026 (the line is exactly twice $80,609,447). It estimates the January payment cuts total required contributions through 2058 by about $160.0 million.",
+   "side": [
+    {
+     "kind": "advance_history",
+     "label": "Supplemental pension payment received in 2024",
+     "period": "2024",
+     "basis": "actual",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 45
+     },
+     "amount": 178085000
+    },
+    {
+     "kind": "advance_history",
+     "label": "Supplemental pension payment received in 2025",
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 45
+     },
+     "amount": 168736173
+    },
+    {
+     "kind": "advance_payment_2026",
+     "label": "Supplemental payment made January 2026 (the only 2026 payment the actuary counts)",
+     "period": "2026",
+     "basis": "actual",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 10
+     },
+     "amount": 80609447
+    },
+    {
+     "kind": "advance_savings",
+     "label": "Actuary's estimate of how much the January 2026 payment reduces total required contributions through 2058",
+     "period": "through 2058",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "MEABF Actuarial Valuation and Review as of 12/31/2025 (Segal)",
+      "url": "https://www.meabf.org/wp-content/uploads/2026/06/MEABF_Actuarial-Valuation-Report-as-of-12.31.2025-06.26.2026.pdf",
+      "page": 32
+     },
+     "amount": 159998000
+    }
+   ]
   }
  ]
 }
