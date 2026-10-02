@@ -1,0 +1,144 @@
+{
+ "meta": {
+  "author": "bonds round 4 (O'Hare older interest)",
+  "built_by": "scripts/bond_series_round4_build.py",
+  "description": "O'Hare older-bond interest split by series from the City's own statements. See research/emma_bonds.md."
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.chicago-o-hare-airport-fund.0740-2005-0902.other-not-itemised.other-not-itemised"
+   },
+   "expect_amount": 58717912,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ohare-2016d-interest",
+     "name": "O'Hare 2016D (interest)",
+     "amount": 19637000,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": "This is one old airport bond's yearly interest to the people who lent the money, and it is already as small as the bond itself.",
+     "source": {
+      "doc": "O'Hare 2026CD official statement p.64 (balances) and Appendix H p.339-343 (refunded); 2025CD official statement Appendix H p.391-394 (tendered); each series' own statement cover (coupons)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf"
+     },
+     "note": "Derived, not printed: balance after the 2026 refunding $392,740,000 x each maturity's coupon = $19,637,000 for the bond year Jan 2 2026 to Jan 1 2027. The balance ties to the 2026CD OS p.64 to the dollar after taking the Dec 2025 tender and the Jan 1 2027 refunding off the cover list (O'Hare_2016D-G_Sr._Lien_GARB_OS.bW9YWx6Cu3.pdf p.2). Series: General Airport Senior Lien Revenue Bonds, Series 2016D (Non-AMT). Fixed rate. Gross of any federal subsidy or pledged passenger/customer charges. The 2026 budget line was written before the 2026 refunding, so it may hold slightly more interest on bonds that were refunded in October 2026.",
+     "extra": {
+      "balance_dollars": 392740000,
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "ohare-2016e-interest",
+     "name": "O'Hare 2016E (interest)",
+     "amount": 1745000,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": null,
+     "source": {
+      "doc": "O'Hare 2026CD official statement p.64 (balances) and Appendix H p.339-343 (refunded); 2025CD official statement Appendix H p.391-394 (tendered); each series' own statement cover (coupons)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf"
+     },
+     "note": "Derived, not printed: balance after the 2026 refunding $34,900,000 x each maturity's coupon = $1,745,000 for the bond year Jan 2 2026 to Jan 1 2027. The balance ties to the 2026CD OS p.64 to the dollar after taking the Dec 2025 tender and the Jan 1 2027 refunding off the cover list (O'Hare_2016D-G_Sr._Lien_GARB_OS.bW9YWx6Cu3.pdf p.3). Series: General Airport Senior Lien Revenue Bonds, Series 2016E (Non-AMT). Fixed rate. Gross of any federal subsidy or pledged passenger/customer charges. The 2026 budget line was written before the 2026 refunding, so it may hold slightly more interest on bonds that were refunded in October 2026.",
+     "extra": {
+      "balance_dollars": 34900000,
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "ohare-2017a-interest",
+     "name": "O'Hare 2017A (interest)",
+     "amount": 568644,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": null,
+     "source": {
+      "doc": "O'Hare 2026CD official statement p.64 (balances) and Appendix H p.339-343 (refunded); 2025CD official statement Appendix H p.391-394 (tendered); each series' own statement cover (coupons)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf"
+     },
+     "note": "Derived, not printed: balance after the 2026 refunding $13,010,000 x each maturity's coupon = $568,644 for the bond year Jan 2 2026 to Jan 1 2027. The balance ties to the 2026CD OS p.64 to the dollar after taking the Dec 2025 tender and the Jan 1 2027 refunding off the cover list (ORD_2017ABCD_OS.ugRRnIFv.pdf p.2). Series: General Airport Senior Lien Revenue Refunding Bonds, Series 2017A (Non-AMT). Fixed rate. Gross of any federal subsidy or pledged passenger/customer charges. The 2026 budget line was written before the 2026 refunding, so it may hold slightly more interest on bonds that were refunded in October 2026.",
+     "extra": {
+      "balance_dollars": 13010000,
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "ohare-2017c-interest",
+     "name": "O'Hare 2017C (interest)",
+     "amount": 1428850,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": null,
+     "source": {
+      "doc": "O'Hare 2026CD official statement p.64 (balances) and Appendix H p.339-343 (refunded); 2025CD official statement Appendix H p.391-394 (tendered); each series' own statement cover (coupons)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf"
+     },
+     "note": "Derived, not printed: balance after the 2026 refunding $34,380,000 x each maturity's coupon = $1,428,850 for the bond year Jan 2 2026 to Jan 1 2027. The balance ties to the 2026CD OS p.64 to the dollar after taking the Dec 2025 tender and the Jan 1 2027 refunding off the cover list (ORD_2017ABCD_OS.ugRRnIFv.pdf p.4). Series: General Airport Senior Lien Revenue Refunding Bonds, Series 2017C (Non-AMT). Fixed rate. Gross of any federal subsidy or pledged passenger/customer charges. The 2026 budget line was written before the 2026 refunding, so it may hold slightly more interest on bonds that were refunded in October 2026.",
+     "extra": {
+      "balance_dollars": 34380000,
+      "status": "derived_balance_x_coupon"
+     }
+    },
+    {
+     "key": "ohare-2018c-interest",
+     "name": "O'Hare 2018C (interest)",
+     "amount": 32112079,
+     "basis": "proxy",
+     "kind": "bond_series",
+     "why": "This is one old airport bond's yearly interest to the people who lent the money, and it is already as small as the bond itself.",
+     "source": {
+      "doc": "O'Hare 2026CD official statement p.64 (balances) and Appendix H p.339-343 (refunded); 2025CD official statement Appendix H p.391-394 (tendered); each series' own statement cover (coupons)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf"
+     },
+     "note": "Derived, not printed: balance after the 2026 refunding $710,130,000 x each maturity's coupon = $32,112,079 for the bond year Jan 2 2026 to Jan 1 2027. The balance ties to the 2026CD OS p.64 to the dollar after taking the Dec 2025 tender and the Jan 1 2027 refunding off the cover list (ORD_2018ABC_OS.vKd4ptjc.pdf p.4 (two $400,000,000 term bonds; the Dec 2025 tender took $44,935,000 from each)). Series: General Airport Senior Lien Revenue Bonds, Series 2018C (Taxable). Fixed rate. Gross of any federal subsidy or pledged passenger/customer charges. The 2026 budget line was written before the 2026 refunding, so it may hold slightly more interest on bonds that were refunded in October 2026.",
+     "extra": {
+      "balance_dollars": 710130000,
+      "status": "derived_balance_x_coupon"
+     }
+    }
+   ],
+   "residual": {
+    "name": "Rest of the older bonds' interest (2016G and rounding)",
+    "why": "Series 2016G and small differences share this leftover. A 2025 refunding changed 2016G by an amount whose list we do not hold, so its balance does not tie and we do not guess."
+   },
+   "note": "Five older bonds were taken out of the leftover, each balance times its interest rates, with the balance checked against the airport's own 2026 bond table. Their January 1 2027 principal (not placed in any box) is $54,310,000; the principal box for these older bonds is $46,676,911, so it cannot hold them all and was left alone.",
+   "side": [
+    {
+     "kind": "derived_principal",
+     "label": "Principal due 1/1/2027 after the 2026 refunding, by series (2016D, 2016E, 2017A, 2017C; 2018C has none until 2049). Not placed in the principal box because the sum is larger than that box.",
+     "amount": 54310000,
+     "period": "bond year ending 1/1/2027",
+     "basis": "proxy",
+     "source": {
+      "doc": "O'Hare 2026CD official statement p.64 (balances) and Appendix H p.339-343 (refunded); 2025CD official statement Appendix H p.391-394 (tendered); each series' own statement cover (coupons)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf"
+     },
+     "items": [
+      {
+       "series": "2016D",
+       "principal_due_1_1_2027_after_refunding": 6910000
+      },
+      {
+       "series": "2016E",
+       "principal_due_1_1_2027_after_refunding": 34900000
+      },
+      {
+       "series": "2017A",
+       "principal_due_1_1_2027_after_refunding": 7135000
+      },
+      {
+       "series": "2017C",
+       "principal_due_1_1_2027_after_refunding": 5365000
+      },
+      {
+       "series": "2018C",
+       "principal_due_1_1_2027_after_refunding": 0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
