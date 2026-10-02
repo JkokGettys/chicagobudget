@@ -8,7 +8,7 @@ Result: **no payment could be placed as a box**. Delivering zero boxes is the ho
 O'Hare (fund 0740, authority 2015) and Midway (fund 0610, authority 2010), department 85 Aviation, accounts:
 0138 IT maintenance ($55.0M O'Hare, $9.9M Midway), 0157 rental of equipment and services ($41.8M, $14.9M), 0161 operation, repair or maintenance of facilities ($61.3M, $29.4M),
 0162 repair or maintenance of equipment ($29.8M, $32.1M), 0163 streets and pavements ($14.4M, $6.1M), 0183 water ($12.0M, $1.7M).
-Lines 0340 and 0446 (supplies and IT hardware) were also looked at: no contract of the commodity type names an airport clearly and the payments have no account, so they are not touched.
+Lines 0340 and 0446 (supplies, IT hardware) were not worked: the commodity contracts paid in 2026 (Root Brothers, Cryotech deicer, Pace Systems cameras) mostly name both airports or neither, and payments carry no account. This was a quick scan, not a full test.
 The professional services lines (0140) belong to the other aviation files (`aviation.json`, `paid_to_date.json`) and are not touched.
 
 ## Data and joins
@@ -20,7 +20,7 @@ The professional services lines (0140) belong to the other aviation files (`avia
 ## Why nothing is placed (the rule, same as scripts/paidtodate_build.py)
 
 A payment is placed only if one line is left after every clue. Here:
-1. **Fund (airport).** The fund is the airport, and it must come from the contract text. In 2026, of $40.2M paid on maintenance-type Aviation contracts (snow, doors, roofing, landscape, repair, electrical, fire alarm), $11.4M is for contracts naming both O'Hare and Midway and $8.5M names neither (Preform, Terrazzo, Builders expansion joints, and others). Only $9.4M names O'Hare alone and $1.4M names Midway alone.
+1. **Fund (airport).** The fund is the airport, and it must come from the contract text. In 2026, of $30.7M paid on maintenance-type Aviation contracts (snow, doors, roofing, landscape, repair, electrical, fire alarm), $11.4M is for contracts naming both O'Hare and Midway and $8.5M names neither (Preform, Terrazzo, Builders expansion joints, and others). Only $9.4M names O'Hare alone and $1.4M names Midway alone.
 2. **Account.** Even when one airport is named, the family has several accounts (0160, 0161, 0162 for maintenance and repair, 0157 for rental). Nothing in the contract text says which. Example: O'Hare automatic doors maintenance (Builders Chicago Corporation, contract 102725, $4.6M), O'Hare airside snow removal (Plote 114934, J S Reimer 112501, Snow Systems 325581). They could be 0161 (facilities) or 0162 (equipment), or 0163 for the pavement part.
 3. **Shuttle buses.** The O'Hare shuttle buses (Delaware Cars/T.R. Harmsen 15304, $10.9M paid) and Midway shuttle (Continental Air Transport 194124, $6.0M) each name one airport, but the line is either 0157 rental of equipment and services or 0161. One airport and two plausible accounts: not placed.
 4. **Pavement.** Pavement contracts (Rossi 102520 and 102390, Sanchez 103256) name both airports. Preform striping (343540) names neither. Not placed.
@@ -42,4 +42,4 @@ Note this means a reader sees $11.4M and $8.5M of facility work "not divided" ne
 
 - The City's own Vendor, Contract and Payment Search (not the open data copy) may show the fund and the account for a payment. Nothing public does.
 - The Budget Book does not list contracts by account. A request to the Department of Aviation for the 2026 voucher distribution file would settle it.
-- Direct vouchers (contract DV) of $80M with blank department on PV85 vouchers carry no contract text. ComEd and Commonwealth Edison ($9.8M) are probably the electricity line (0331, which has no leaf of its own under Aviation in this tree: it belongs to Fleet and Facility Management's electricity line).
+- PV85 vouchers with a blank department total $80.2M. Most are direct vouchers (contract DV) with no contract text. ComEd and Commonwealth Edison ($9.8M) are probably the electricity line (0331, which has no leaf of its own under Aviation in this tree: it belongs to Fleet and Facility Management's electricity line).
