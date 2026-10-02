@@ -143,5 +143,168 @@ def bond_splits():
     return splits
 
 
+# ======================================================================================= 2. PENSION RESERVE, CONTINGENCIES, VACANCY
+BB_PENS = {"doc": "CPS FY2026 Budget Book, Pensions chapter (CPS' Employer Contribution Requirements)", "url": BB_URL, "page": "35-37 (printed)"}
+CTPF_SRC = {"doc": "CTPF Actuarial Valuation 6/30/2025, Executive Summary p.1", "url": "https://www.ctpf.org/sites/files/2025-10/CTPF_FundingVal_2025_Final.pdf",
+            "file": "data/cps_ctpf_valuation_2025.csv"}
+
+
+def reserve_splits():
+    # Teacher pension arithmetic (all inputs are published numbers):
+    board_required = 646_234_000 + 17_332_000      # CTPF valuation p.1: required + additional Board contribution
+    levy = 602_309_665                             # BI: CTPF Pension Levy line (budget book: $602.3M)
+    diversion = board_required - levy              # = 61,256,335 ; budget book p.36: "$61.3 million" operating diversion
+    state = 346_838_000 + 16_256_000               # State normal cost + additional State = $363.094M
+    school_level = 279_424_453.85 + 24_355_551.94  # BI A57105 + A57110 (teacher employer pension charged to schools and programs)
+    line = 120_570_340
+    piece1 = diversion
+    piece2 = line - piece1                         # remainder; equals state - school_level within $11
+    check = state - school_level
+    assert abs(piece2 - check) < 20, (piece2, check)
+    splits = [{
+        "target": {"by": "id", "id": "cps.pensions.pension.fg115-000000-p119004-a58115"},
+        "expect_amount": line, "mode": "budget_split",
+        "note": "Budget-only reserve line (it is not a payment to anyone). Official explanation: the budget book says CPS pays $663.6M of the teacher pension fund's required "
+                "$1,026.7M: $602.3M comes from the pension levy and $61.3M from the operating budget (p.36-37). The State pays the other $363.1M. The pieces below are our "
+                "arithmetic from those published numbers (see each piece), not a CPS-published split of this line.",
+        "pieces": [
+            {"name": "CPS operating money diverted to the teacher pension fund", "amount": piece1, "basis": "proxy", "source": BB_PENS,
+             "why": "The pension tax is not big enough to cover what CPS owes the teachers' pension fund, so CPS must add this much from its regular school money.",
+             "note": "Method: Board required contribution $646,234,000 plus additional Board contribution $17,332,000 (CTPF valuation p.1) = $663,566,000, minus the $602,309,665 levy = $61,256,335. "
+                     "The budget book reports this gap as '$61.3 million' (operating revenue diversion)."},
+            {"name": "State's share of the teacher pension that schools are not charged for", "amount": piece2, "basis": "proxy", "source": CTPF_SRC,
+             "why": "The State pays part of CPS teachers' pensions on CPS's behalf, and this part appears to be the matching cost in the budget (our reading of the numbers, not a CPS statement).",
+             "note": "Method: remainder of the line. It matches the State's FY2026 share $363,094,000 (normal cost $346,838,000 + additional $16,256,000, CTPF valuation p.1) minus the "
+                     f"$303,780,006 of teacher employer pension already charged to schools and programs (accounts A57105 + A57110), which is ${check:,.0f}, within $11 of the remainder. "
+                     "Whole teacher pension chain ties: $1,160.594M (research/cps_deep.md section 1)."},
+        ],
+        "side": [
+            {"kind": "official_explanation", "label": "Budget book: CPS contributes $663.6M for teacher pensions, $602.3M from the pension levy and $61.3M from operating revenue",
+             "amount": 61_300_000, "period": "FY2026", "basis": "gov_estimate", "source": BB_PENS},
+            {"kind": "official_explanation", "label": "Budget book: the operating diversion was $142.7M in FY2024 and $102.9M in FY2025", "period": "FY2024-FY2026", "basis": "gov_estimate", "source": BB_PENS},
+        ],
+    }]
+    return splits
+
+
+def reserve_side_splits():
+    """Contingencies and the vacancy factor: no itemised use exists, so add the official explanation and the matching revenue as side info."""
+    cont_src = {"doc": "CPS FY2026 Budget Book, 'Contingencies' in the operating budget summary", "url": BB_URL, "page": "15-16 (printed)"}
+    cont_txt = ("Budget book: contingencies are 'funding that has been budgeted but not yet allocated to specific accounts or units where it will eventually be spent'. "
+                "'Schools are not required to allocate all of their funds, but can hold some in contingency' and 'the District holds grant funds in contingency, particularly if the grant is not yet confirmed.' "
+                "The contingency budget fell $155M from FY2025, driven largely by the end of pandemic-era grants.")
+    items = [
+        ("cps.citywide.set-asides.u12670.reserves.a57915.fg324-041008-p600002-0", 120_000_000,
+         "Matching income line: 'Others' in fund 324 (Other Grants) is budgeted at $136,177,302. Money for state, local and private grants that may arrive during the year, held here until a grant is confirmed."),
+        ("cps.citywide.set-asides.u12670.reserves.a57915.fg367-041008-p600002-3", 50_396_605.49,
+         "Matching income line: federal Title I School Improvement grants (account A44331) are budgeted at $77,256,376 in fund 367. This contingency appears to be the part of that grant income not yet assigned to a school or program (same fund, our reading)."),
+        ("cps.citywide.set-asides.u12670.reserves.a57915.fg124-002239-p600005-4", 50_000_000,
+         "Matching income line: 'Payments From Schools' (A45124) of $50,000,000 in fund 124 (school-generated money, 'Internal Accounts Book Transfers'). Spending authority for school-raised money that moves through the central books."),
+        ("cps.citywide.set-asides.u12670.reserves.a57915.fg332-041008-p888888-5", 35_330_376,
+         "Federal grant fund 332 (NCLB / Title programs). Held back until federal grant awards are confirmed."),
+        ("cps.citywide.set-asides.u12670.reserves.a57915.fg124-150900-p600005-7", 30_000_000,
+         "School-generated fund 124, 'Grants - Supplemental'. Spending authority for grants and donations that schools secure during the year."),
+        ("cps.citywide.set-asides.u12670.reserves.a57915.fg332-041008-p600002-8", 25_000_000,
+         "Federal grant fund 332. Held back for federal grants expected to expand during the year."),
+        ("cps.citywide.set-asides.u12670.reserves.a57915.fg130-000000-p888888-9", 25_000_000,
+         "Matching income line: 'Fund Balance Appropriated' (A40001) of $25,000,000 in the CPS Blueprint Fund (fund 130). The budget book (p.10) says CPS used $25M of a 2023 philanthropic gift to help close the FY2026 deficit. The book does not name the fund, so this match is by amount only."),
+    ]
+    out = []
+    for nid, amt, extra in items:
+        out.append({"target": {"by": "id", "id": nid}, "expect_amount": amt, "mode": "side_only",
+                    "note": "Official explanation (budget book): money budgeted but not yet assigned. See side info.",
+                    "side": [{"kind": "official_explanation", "label": cont_txt, "period": "FY2026", "basis": "gov_estimate", "source": cont_src},
+                             {"kind": "official_explanation", "label": extra, "period": "FY2026", "basis": "gov_estimate",
+                              "source": {"doc": "CPS BI budget data (fund and account descriptions, revenue by fund)", "file": "raw/cps/cps_2026_rev_fund_account.csv"}}]})
+    vac_src = {"doc": "CPS FY2026 Budget Book, glossary 'Vacancy Savings' and Appendix B (school funding formula)", "url": BB_URL, "page": "256 and 285 (pdf)"}
+    vac_txt = ("Budget book glossary: vacancy savings are 'the anticipated savings resulting from the delay in staffing new and vacant positions.' "
+               "In the budget the vacancy factor is a single FY2026 program (Vacancy Factor, P109981) of -$200,000,000 in the General Education Fund: "
+               "-$143,275,556 against teacher salaries and -$56,724,444 against career service salaries. It is a budget-only offset: CPS plans for salary lines to come in lower because it expects not to fill every job all year.")
+    for nid, amt in (("cps.citywide.set-asides.u12670.salaries.a58110.fg115-000000-p109981-0", -143_275_556.0),
+                     ("cps.citywide.set-asides.u12670.salaries.a58210.fg115-000000-p109981-0", -56_724_444.44)):
+        out.append({"target": {"by": "id", "id": nid}, "expect_amount": amt, "mode": "side_only",
+                    "note": "Official explanation: planned savings because some jobs will sit empty for part of the year (vacancy savings).",
+                    "side": [{"kind": "official_explanation", "label": vac_txt, "period": "FY2026", "basis": "gov_estimate", "source": vac_src},
+                             {"kind": "prior_year_budget", "label": "FY2025 adopted vacancy factor in the same fund: -$123,275,556 teacher salaries and -$5,724,444 career service salaries",
+                              "period": "FY2025", "basis": "gov_estimate",
+                              "source": {"doc": "CPS BI actuals pull (adopted FY2025)", "file": "raw/cps/cps_2026_actuals_unit_fund_account.csv"}}]})
+    return out
+
+
+# ======================================================================================= 3. CAPITAL
+CAP_SRC = {"doc": "CPS FY2026 Capital Budget project sheets", "url": "http://schoolreports.cps.edu/capitalplan/", "file": "raw/cps/cps_2026_capital_projects_detail.csv"}
+
+
+def capital_splits():
+    ex = list(csv.DictReader(open(P("raw", "cps", "cps_2026_capital_expenditures.csv"))))
+    it = [r for r in ex if r["Unit"] == "12510"]
+    exp_src = {"doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures", "file": "raw/cps/cps_2026_capital_expenditures.csv",
+               "url": "https://biportal.cps.edu/analytics/", "note": "Expenditure by project, project fiscal year 2026, period year 2026"}
+    explain = {
+        "2026-12510-SFW": ("Program Bridge (new accounting, HR and purchasing system)",
+                           "CPS is replacing its old finance and HR computer systems with a new cloud system. The project sheet lists 'Bridge-ERP implementation' under this program."),
+        "2026-12510-SFW-1": ("Safari Montage (video and learning library software)", None),
+        "2026-12510-LAN": ("Data network upgrades in schools (LAN)", None),
+        "2026-12510-SFW-2": ("STREAM (software project)", None),
+    }
+    pieces = []
+    for r in sorted(it, key=lambda r: -float(r["expenditure"] or 0)):
+        amt = round(float(r["expenditure"] or 0), 2)
+        if amt <= 0:
+            continue
+        nm, why = explain.get(r["Project Number"], (r["Project Name"], None))
+        p = {"name": f"{nm}: spent so far", "amount": amt, "basis": "paid_to_date", "source": exp_src,
+             "note": f"Project {r['Project Number']}, category: {r['Project Type Description']}, paid for by: {r['Project Source']}."}
+        if amt >= 10_000_000:
+            p["why"] = why or "This is one IT project's spending so far this year."
+        pieces.append(p)
+    spent = sum(p["amount"] for p in pieces)
+    splits = [{
+        "target": {"by": "id", "id": "cps.capital.it-security-and-other-projects.tbd-15"},
+        "expect_amount": 108_000_000, "mode": "paid_to_date", "pieces": pieces,
+        "residual": {"name": "IT money budgeted but not spent on a named project yet",
+                     "why": "CPS has not yet charged this part of the IT money to a named project, so there is nothing to list."},
+        "note": "Official purpose (project sheet): 'improved cybersecurity, data warehouse upgrades, ITS roadmap development, generative AI pilot, digital curriculum, Bridge-ERP implementation, "
+                "upgrades to school network services to enhance network reliability and speed.' The IT program is $113,015,321 in all: this $108,000,000 from CPS funds plus $5,015,321 paid by "
+                "outside funds (E-Rate, a federal school internet subsidy). The project-level spending below cannot be separated by funding source, so it is shown here.",
+        "side": [
+            {"kind": "contract_authority", "label": "Board-approved FY26 spending authority, Sentinel Technologies, data network upgrades for schools (Board Report 25-0320-PR6): CPS funds $17,513,614 plus E-Rate $4,500,000",
+             "amount": 17_513_614, "period": "FY2026", "basis": "gov_estimate",
+             "source": {"doc": "Board Report 25-0320-PR6", "url": "https://www.cpsboe.org/content/actions/2025_03/25-0320-PR6.pdf"}},
+            {"kind": "contract_authority", "label": "Oracle America, ERP cloud platform (Board Report 24-0222-PR11): $9,000,000 in FY26, charged to Fund 115 (operating), so not part of this capital line",
+             "amount": 9_000_000, "period": "FY2026", "basis": "gov_estimate",
+             "source": {"doc": "Board Report 24-0222-PR11", "url": "https://www.cpsboe.org/content/actions/2024_02/24-0222-PR11.pdf"}},
+            {"kind": "contract_authority", "label": "IBM, ERP system integrator (Board Report 24-1212-PR5): $24,000,000 in FY26, charged to Fund 115 (operating), so not part of this capital line",
+             "amount": 24_000_000, "period": "FY2026", "basis": "gov_estimate",
+             "source": {"doc": "Board Report 24-1212-PR5", "url": "https://www.cpsboe.org/content/actions/2024_12/24-1212-PR5.pdf"}},
+        ],
+    }]
+    # Emergency repairs, state projects, support services: official purpose and matching revenue only
+    splits.append({
+        "target": {"by": "id", "id": "cps.capital.facility-needs.tbd-8"}, "expect_amount": 80_000_000, "mode": "side_only",
+        "note": "Official purpose (project sheet): 'funding for unanticipated/emergency projects throughout FY26.' Nothing is assigned to a school in advance, by design. "
+                "The sheet (7/14/2025) showed $0 spent.",
+        "side": [{"kind": "official_explanation", "label": "Project sheet: 'The purpose of this funding is for unanticipated/emergency projects throughout FY26.' Start and finish: 'Varies'",
+                  "amount": 80_000_000, "period": "FY2026", "basis": "gov_estimate", "source": CAP_SRC},
+                 {"kind": "spending_signal", "label": "CPS capital expenditure data lists 40 FY2026 jobs with 'emergency' in the name, $1,069,697 in all (leaks, sewers, roofs, boilers). They are paid from many different capital and repair lines, so they are not tied to this $80M",
+                  "amount": 1_069_696.81, "period": "FY2026", "basis": "paid_to_date",
+                  "source": {"doc": "CPS Capital Expenditures (Oracle BI)", "file": "raw/cps/cps_2026_capital_expenditures.csv"}}]})
+    splits.append({
+        "target": {"by": "id", "id": "cps.capital.facility-needs.tbd-13"}, "expect_amount": 25_000_000, "mode": "side_only",
+        "note": "This is the outside-funded part of a $30,000,000 program ($5,000,000 from CPS funds plus $25,000,000 State grants). Official purpose: 'targeted renovations based upon the parameters provided in awarded state grants.'",
+        "side": [{"kind": "revenue_that_pays", "label": "Budget book capital revenue table: State capital grants of $25.0M in FY2026. CPS spends this only if the State money is awarded",
+                  "amount": 25_000_000, "period": "FY2026", "basis": "gov_estimate",
+                  "source": {"doc": "CPS FY2026 Budget Book, Capital Budget, Table 2 (Summary of Capital Projects Funds)", "url": BB_URL, "page": "217 (printed)"}}]})
+    splits.append({
+        "target": {"by": "id", "id": "cps.capital.management-administrative.tbd-6"}, "expect_amount": 23_000_000, "mode": "side_only",
+        "note": "Official purpose (project sheet and budget book): 'facility condition assessments, capital planning, estimating, managing project and construction timelines, managing the capital budget, and ensuring the effective design, implementation, and construction of various capital projects.' The five-year plan keeps this at $23.0M a year.",
+        "side": [{"kind": "spending_signal", "label": "CPS capital expenditure data shows 17 'CIP Management' projects with $31,345,033 of FY2026 spending, mostly one citywide management project ($28,913,238). It is shared across capital funds, so it is not tied to this $23.0M line",
+                  "amount": 31_345_033.1, "period": "FY2026", "basis": "paid_to_date",
+                  "source": {"doc": "CPS Capital Expenditures (Oracle BI)", "file": "raw/cps/cps_2026_capital_expenditures.csv"}}]})
+    return splits
+
+
 if __name__ == "__main__":
     write("cpsdeep_bonds.json", "CPS bond series split into principal and interest (budget book Tables 2-3, official statements) with the revenue that pays each series", bond_splits())
+    write("cpsdeep_reserves.json", "CPS pension general-fund reserve split into the operating diversion and the State share; contingencies and vacancy factor explained from the budget book", reserve_splits() + reserve_side_splits())
+    write("cpsdeep_capital.json", "CPS capital: IT centralized program spent-so-far by project; emergency repairs, state projects and support services explained from project sheets", capital_splits())

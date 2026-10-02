@@ -1,0 +1,283 @@
+{
+ "meta": {
+  "author": "cps deep research",
+  "description": "CPS capital: IT centralized program spent-so-far by project; emergency repairs, state projects and support services explained from project sheets",
+  "built_by": "scripts/cpsdeep_build.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.capital.it-security-and-other-projects.tbd-15"
+   },
+   "expect_amount": 108000000,
+   "mode": "paid_to_date",
+   "pieces": [
+    {
+     "name": "Program Bridge (new accounting, HR and purchasing system): spent so far",
+     "amount": 17940751.98,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv",
+      "url": "https://biportal.cps.edu/analytics/",
+      "note": "Expenditure by project, project fiscal year 2026, period year 2026"
+     },
+     "note": "Project 2026-12510-SFW, category: ITS Software, paid for by: Needs Assessment.",
+     "why": "CPS is replacing its old finance and HR computer systems with a new cloud system. The project sheet lists 'Bridge-ERP implementation' under this program."
+    },
+    {
+     "name": "Safari Montage (video and learning library software): spent so far",
+     "amount": 6696271.0,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv",
+      "url": "https://biportal.cps.edu/analytics/",
+      "note": "Expenditure by project, project fiscal year 2026, period year 2026"
+     },
+     "note": "Project 2026-12510-SFW-1, category: ITS Software, paid for by: Needs Assessment."
+    },
+    {
+     "name": "Data network upgrades in schools (LAN): spent so far",
+     "amount": 4544412.55,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv",
+      "url": "https://biportal.cps.edu/analytics/",
+      "note": "Expenditure by project, project fiscal year 2026, period year 2026"
+     },
+     "note": "Project 2026-12510-LAN, category: Local Area Network, paid for by: District Priority."
+    },
+    {
+     "name": "STREAM (software project): spent so far",
+     "amount": 4423180.73,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv",
+      "url": "https://biportal.cps.edu/analytics/",
+      "note": "Expenditure by project, project fiscal year 2026, period year 2026"
+     },
+     "note": "Project 2026-12510-SFW-2, category: ITS Software, paid for by: Needs Assessment."
+    },
+    {
+     "name": "Student 1:1 Devices: spent so far",
+     "amount": 1559074.0,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv",
+      "url": "https://biportal.cps.edu/analytics/",
+      "note": "Expenditure by project, project fiscal year 2026, period year 2026"
+     },
+     "note": "Project 2026-12510-UAR, category: ITS Other, paid for by: District Priority."
+    },
+    {
+     "name": "Windows 11: spent so far",
+     "amount": 1099319.25,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv",
+      "url": "https://biportal.cps.edu/analytics/",
+      "note": "Expenditure by project, project fiscal year 2026, period year 2026"
+     },
+     "note": "Project 2026-12510-UAR-1, category: ITS Other, paid for by: District Priority."
+    },
+    {
+     "name": "Project Zero Trust: spent so far",
+     "amount": 603496.36,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv",
+      "url": "https://biportal.cps.edu/analytics/",
+      "note": "Expenditure by project, project fiscal year 2026, period year 2026"
+     },
+     "note": "Project 2026-12510-SFW-5, category: ITS Software, paid for by: Needs Assessment."
+    },
+    {
+     "name": "CIDT - Salesforce: spent so far",
+     "amount": 513283.72,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv",
+      "url": "https://biportal.cps.edu/analytics/",
+      "note": "Expenditure by project, project fiscal year 2026, period year 2026"
+     },
+     "note": "Project 2026-12510-SFW-4, category: ITS Software, paid for by: Needs Assessment."
+    },
+    {
+     "name": "WAN: spent so far",
+     "amount": 282477.0,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv",
+      "url": "https://biportal.cps.edu/analytics/",
+      "note": "Expenditure by project, project fiscal year 2026, period year 2026"
+     },
+     "note": "Project 2026-12510-WAN, category: ITS WAN, paid for by: District Priority."
+    },
+    {
+     "name": "Catalyst Center: spent so far",
+     "amount": 165225.46,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv",
+      "url": "https://biportal.cps.edu/analytics/",
+      "note": "Expenditure by project, project fiscal year 2026, period year 2026"
+     },
+     "note": "Project 2026-12510-INF, category: ITS Infrastructure, paid for by: District Priority."
+    },
+    {
+     "name": "BP Conference Room: spent so far",
+     "amount": 89759.03,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv",
+      "url": "https://biportal.cps.edu/analytics/",
+      "note": "Expenditure by project, project fiscal year 2026, period year 2026"
+     },
+     "note": "Project 2026-12510-INF-3, category: ITS Infrastructure, paid for by: District Priority."
+    },
+    {
+     "name": "Gen AI: spent so far",
+     "amount": 37990.0,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI subject area), FY2026 project expenditures",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv",
+      "url": "https://biportal.cps.edu/analytics/",
+      "note": "Expenditure by project, project fiscal year 2026, period year 2026"
+     },
+     "note": "Project 2026-12510-SFW-3, category: ITS Software, paid for by: Needs Assessment."
+    }
+   ],
+   "residual": {
+    "name": "IT money budgeted but not spent on a named project yet",
+    "why": "CPS has not yet charged this part of the IT money to a named project, so there is nothing to list."
+   },
+   "note": "Official purpose (project sheet): 'improved cybersecurity, data warehouse upgrades, ITS roadmap development, generative AI pilot, digital curriculum, Bridge-ERP implementation, upgrades to school network services to enhance network reliability and speed.' The IT program is $113,015,321 in all: this $108,000,000 from CPS funds plus $5,015,321 paid by outside funds (E-Rate, a federal school internet subsidy). The project-level spending below cannot be separated by funding source, so it is shown here.",
+   "side": [
+    {
+     "kind": "contract_authority",
+     "label": "Board-approved FY26 spending authority, Sentinel Technologies, data network upgrades for schools (Board Report 25-0320-PR6): CPS funds $17,513,614 plus E-Rate $4,500,000",
+     "amount": 17513614,
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Board Report 25-0320-PR6",
+      "url": "https://www.cpsboe.org/content/actions/2025_03/25-0320-PR6.pdf"
+     }
+    },
+    {
+     "kind": "contract_authority",
+     "label": "Oracle America, ERP cloud platform (Board Report 24-0222-PR11): $9,000,000 in FY26, charged to Fund 115 (operating), so not part of this capital line",
+     "amount": 9000000,
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Board Report 24-0222-PR11",
+      "url": "https://www.cpsboe.org/content/actions/2024_02/24-0222-PR11.pdf"
+     }
+    },
+    {
+     "kind": "contract_authority",
+     "label": "IBM, ERP system integrator (Board Report 24-1212-PR5): $24,000,000 in FY26, charged to Fund 115 (operating), so not part of this capital line",
+     "amount": 24000000,
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Board Report 24-1212-PR5",
+      "url": "https://www.cpsboe.org/content/actions/2024_12/24-1212-PR5.pdf"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.capital.facility-needs.tbd-8"
+   },
+   "expect_amount": 80000000,
+   "mode": "side_only",
+   "note": "Official purpose (project sheet): 'funding for unanticipated/emergency projects throughout FY26.' Nothing is assigned to a school in advance, by design. The sheet (7/14/2025) showed $0 spent.",
+   "side": [
+    {
+     "kind": "official_explanation",
+     "label": "Project sheet: 'The purpose of this funding is for unanticipated/emergency projects throughout FY26.' Start and finish: 'Varies'",
+     "amount": 80000000,
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Capital Budget project sheets",
+      "url": "http://schoolreports.cps.edu/capitalplan/",
+      "file": "raw/cps/cps_2026_capital_projects_detail.csv"
+     }
+    },
+    {
+     "kind": "spending_signal",
+     "label": "CPS capital expenditure data lists 40 FY2026 jobs with 'emergency' in the name, $1,069,697 in all (leaks, sewers, roofs, boilers). They are paid from many different capital and repair lines, so they are not tied to this $80M",
+     "amount": 1069696.81,
+     "period": "FY2026",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI)",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.capital.facility-needs.tbd-13"
+   },
+   "expect_amount": 25000000,
+   "mode": "side_only",
+   "note": "This is the outside-funded part of a $30,000,000 program ($5,000,000 from CPS funds plus $25,000,000 State grants). Official purpose: 'targeted renovations based upon the parameters provided in awarded state grants.'",
+   "side": [
+    {
+     "kind": "revenue_that_pays",
+     "label": "Budget book capital revenue table: State capital grants of $25.0M in FY2026. CPS spends this only if the State money is awarded",
+     "amount": 25000000,
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Capital Budget, Table 2 (Summary of Capital Projects Funds)",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "217 (printed)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.capital.management-administrative.tbd-6"
+   },
+   "expect_amount": 23000000,
+   "mode": "side_only",
+   "note": "Official purpose (project sheet and budget book): 'facility condition assessments, capital planning, estimating, managing project and construction timelines, managing the capital budget, and ensuring the effective design, implementation, and construction of various capital projects.' The five-year plan keeps this at $23.0M a year.",
+   "side": [
+    {
+     "kind": "spending_signal",
+     "label": "CPS capital expenditure data shows 17 'CIP Management' projects with $31,345,033 of FY2026 spending, mostly one citywide management project ($28,913,238). It is shared across capital funds, so it is not tied to this $23.0M line",
+     "amount": 31345033.1,
+     "period": "FY2026",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS Capital Expenditures (Oracle BI)",
+      "file": "raw/cps/cps_2026_capital_expenditures.csv"
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,357 @@
+{
+ "meta": {
+  "author": "cps deep research",
+  "description": "CPS pension general-fund reserve split into the operating diversion and the State share; contingencies and vacancy factor explained from the budget book",
+  "built_by": "scripts/cpsdeep_build.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.pensions.pension.fg115-000000-p119004-a58115"
+   },
+   "expect_amount": 120570340,
+   "mode": "budget_split",
+   "note": "Budget-only reserve line (it is not a payment to anyone). Official explanation: the budget book says CPS pays $663.6M of the teacher pension fund's required $1,026.7M: $602.3M comes from the pension levy and $61.3M from the operating budget (p.36-37). The State pays the other $363.1M. The pieces below are our arithmetic from those published numbers (see each piece), not a CPS-published split of this line.",
+   "pieces": [
+    {
+     "name": "CPS operating money diverted to the teacher pension fund",
+     "amount": 61256335,
+     "basis": "proxy",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Pensions chapter (CPS' Employer Contribution Requirements)",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "35-37 (printed)"
+     },
+     "why": "The pension tax is not big enough to cover what CPS owes the teachers' pension fund, so CPS must add this much from its regular school money.",
+     "note": "Method: Board required contribution $646,234,000 plus additional Board contribution $17,332,000 (CTPF valuation p.1) = $663,566,000, minus the $602,309,665 levy = $61,256,335. The budget book reports this gap as '$61.3 million' (operating revenue diversion)."
+    },
+    {
+     "name": "State's share of the teacher pension that schools are not charged for",
+     "amount": 59314005,
+     "basis": "proxy",
+     "source": {
+      "doc": "CTPF Actuarial Valuation 6/30/2025, Executive Summary p.1",
+      "url": "https://www.ctpf.org/sites/files/2025-10/CTPF_FundingVal_2025_Final.pdf",
+      "file": "data/cps_ctpf_valuation_2025.csv"
+     },
+     "why": "The State pays part of CPS teachers' pensions on CPS's behalf, and this part appears to be the matching cost in the budget (our reading of the numbers, not a CPS statement).",
+     "note": "Method: remainder of the line. It matches the State's FY2026 share $363,094,000 (normal cost $346,838,000 + additional $16,256,000, CTPF valuation p.1) minus the $303,780,006 of teacher employer pension already charged to schools and programs (accounts A57105 + A57110), which is $59,313,994, within $11 of the remainder. Whole teacher pension chain ties: $1,160.594M (research/cps_deep.md section 1)."
+    }
+   ],
+   "side": [
+    {
+     "kind": "official_explanation",
+     "label": "Budget book: CPS contributes $663.6M for teacher pensions, $602.3M from the pension levy and $61.3M from operating revenue",
+     "amount": 61300000,
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Pensions chapter (CPS' Employer Contribution Requirements)",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "35-37 (printed)"
+     }
+    },
+    {
+     "kind": "official_explanation",
+     "label": "Budget book: the operating diversion was $142.7M in FY2024 and $102.9M in FY2025",
+     "period": "FY2024-FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Pensions chapter (CPS' Employer Contribution Requirements)",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "35-37 (printed)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.reserves.a57915.fg324-041008-p600002-0"
+   },
+   "expect_amount": 120000000,
+   "mode": "side_only",
+   "note": "Official explanation (budget book): money budgeted but not yet assigned. See side info.",
+   "side": [
+    {
+     "kind": "official_explanation",
+     "label": "Budget book: contingencies are 'funding that has been budgeted but not yet allocated to specific accounts or units where it will eventually be spent'. 'Schools are not required to allocate all of their funds, but can hold some in contingency' and 'the District holds grant funds in contingency, particularly if the grant is not yet confirmed.' The contingency budget fell $155M from FY2025, driven largely by the end of pandemic-era grants.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, 'Contingencies' in the operating budget summary",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "15-16 (printed)"
+     }
+    },
+    {
+     "kind": "official_explanation",
+     "label": "Matching income line: 'Others' in fund 324 (Other Grants) is budgeted at $136,177,302. Money for state, local and private grants that may arrive during the year, held here until a grant is confirmed.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS BI budget data (fund and account descriptions, revenue by fund)",
+      "file": "raw/cps/cps_2026_rev_fund_account.csv"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.reserves.a57915.fg367-041008-p600002-3"
+   },
+   "expect_amount": 50396605.49,
+   "mode": "side_only",
+   "note": "Official explanation (budget book): money budgeted but not yet assigned. See side info.",
+   "side": [
+    {
+     "kind": "official_explanation",
+     "label": "Budget book: contingencies are 'funding that has been budgeted but not yet allocated to specific accounts or units where it will eventually be spent'. 'Schools are not required to allocate all of their funds, but can hold some in contingency' and 'the District holds grant funds in contingency, particularly if the grant is not yet confirmed.' The contingency budget fell $155M from FY2025, driven largely by the end of pandemic-era grants.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, 'Contingencies' in the operating budget summary",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "15-16 (printed)"
+     }
+    },
+    {
+     "kind": "official_explanation",
+     "label": "Matching income line: federal Title I School Improvement grants (account A44331) are budgeted at $77,256,376 in fund 367. This contingency appears to be the part of that grant income not yet assigned to a school or program (same fund, our reading).",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS BI budget data (fund and account descriptions, revenue by fund)",
+      "file": "raw/cps/cps_2026_rev_fund_account.csv"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.reserves.a57915.fg124-002239-p600005-4"
+   },
+   "expect_amount": 50000000,
+   "mode": "side_only",
+   "note": "Official explanation (budget book): money budgeted but not yet assigned. See side info.",
+   "side": [
+    {
+     "kind": "official_explanation",
+     "label": "Budget book: contingencies are 'funding that has been budgeted but not yet allocated to specific accounts or units where it will eventually be spent'. 'Schools are not required to allocate all of their funds, but can hold some in contingency' and 'the District holds grant funds in contingency, particularly if the grant is not yet confirmed.' The contingency budget fell $155M from FY2025, driven largely by the end of pandemic-era grants.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, 'Contingencies' in the operating budget summary",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "15-16 (printed)"
+     }
+    },
+    {
+     "kind": "official_explanation",
+     "label": "Matching income line: 'Payments From Schools' (A45124) of $50,000,000 in fund 124 (school-generated money, 'Internal Accounts Book Transfers'). Spending authority for school-raised money that moves through the central books.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS BI budget data (fund and account descriptions, revenue by fund)",
+      "file": "raw/cps/cps_2026_rev_fund_account.csv"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.reserves.a57915.fg332-041008-p888888-5"
+   },
+   "expect_amount": 35330376,
+   "mode": "side_only",
+   "note": "Official explanation (budget book): money budgeted but not yet assigned. See side info.",
+   "side": [
+    {
+     "kind": "official_explanation",
+     "label": "Budget book: contingencies are 'funding that has been budgeted but not yet allocated to specific accounts or units where it will eventually be spent'. 'Schools are not required to allocate all of their funds, but can hold some in contingency' and 'the District holds grant funds in contingency, particularly if the grant is not yet confirmed.' The contingency budget fell $155M from FY2025, driven largely by the end of pandemic-era grants.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, 'Contingencies' in the operating budget summary",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "15-16 (printed)"
+     }
+    },
+    {
+     "kind": "official_explanation",
+     "label": "Federal grant fund 332 (NCLB / Title programs). Held back until federal grant awards are confirmed.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS BI budget data (fund and account descriptions, revenue by fund)",
+      "file": "raw/cps/cps_2026_rev_fund_account.csv"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.reserves.a57915.fg124-150900-p600005-7"
+   },
+   "expect_amount": 30000000,
+   "mode": "side_only",
+   "note": "Official explanation (budget book): money budgeted but not yet assigned. See side info.",
+   "side": [
+    {
+     "kind": "official_explanation",
+     "label": "Budget book: contingencies are 'funding that has been budgeted but not yet allocated to specific accounts or units where it will eventually be spent'. 'Schools are not required to allocate all of their funds, but can hold some in contingency' and 'the District holds grant funds in contingency, particularly if the grant is not yet confirmed.' The contingency budget fell $155M from FY2025, driven largely by the end of pandemic-era grants.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, 'Contingencies' in the operating budget summary",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "15-16 (printed)"
+     }
+    },
+    {
+     "kind": "official_explanation",
+     "label": "School-generated fund 124, 'Grants - Supplemental'. Spending authority for grants and donations that schools secure during the year.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS BI budget data (fund and account descriptions, revenue by fund)",
+      "file": "raw/cps/cps_2026_rev_fund_account.csv"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.reserves.a57915.fg332-041008-p600002-8"
+   },
+   "expect_amount": 25000000,
+   "mode": "side_only",
+   "note": "Official explanation (budget book): money budgeted but not yet assigned. See side info.",
+   "side": [
+    {
+     "kind": "official_explanation",
+     "label": "Budget book: contingencies are 'funding that has been budgeted but not yet allocated to specific accounts or units where it will eventually be spent'. 'Schools are not required to allocate all of their funds, but can hold some in contingency' and 'the District holds grant funds in contingency, particularly if the grant is not yet confirmed.' The contingency budget fell $155M from FY2025, driven largely by the end of pandemic-era grants.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, 'Contingencies' in the operating budget summary",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "15-16 (printed)"
+     }
+    },
+    {
+     "kind": "official_explanation",
+     "label": "Federal grant fund 332. Held back for federal grants expected to expand during the year.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS BI budget data (fund and account descriptions, revenue by fund)",
+      "file": "raw/cps/cps_2026_rev_fund_account.csv"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.reserves.a57915.fg130-000000-p888888-9"
+   },
+   "expect_amount": 25000000,
+   "mode": "side_only",
+   "note": "Official explanation (budget book): money budgeted but not yet assigned. See side info.",
+   "side": [
+    {
+     "kind": "official_explanation",
+     "label": "Budget book: contingencies are 'funding that has been budgeted but not yet allocated to specific accounts or units where it will eventually be spent'. 'Schools are not required to allocate all of their funds, but can hold some in contingency' and 'the District holds grant funds in contingency, particularly if the grant is not yet confirmed.' The contingency budget fell $155M from FY2025, driven largely by the end of pandemic-era grants.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, 'Contingencies' in the operating budget summary",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "15-16 (printed)"
+     }
+    },
+    {
+     "kind": "official_explanation",
+     "label": "Matching income line: 'Fund Balance Appropriated' (A40001) of $25,000,000 in the CPS Blueprint Fund (fund 130). The budget book (p.10) says CPS used $25M of a 2023 philanthropic gift to help close the FY2026 deficit. The book does not name the fund, so this match is by amount only.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS BI budget data (fund and account descriptions, revenue by fund)",
+      "file": "raw/cps/cps_2026_rev_fund_account.csv"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.salaries.a58110.fg115-000000-p109981-0"
+   },
+   "expect_amount": -143275556.0,
+   "mode": "side_only",
+   "note": "Official explanation: planned savings because some jobs will sit empty for part of the year (vacancy savings).",
+   "side": [
+    {
+     "kind": "official_explanation",
+     "label": "Budget book glossary: vacancy savings are 'the anticipated savings resulting from the delay in staffing new and vacant positions.' In the budget the vacancy factor is a single FY2026 program (Vacancy Factor, P109981) of -$200,000,000 in the General Education Fund: -$143,275,556 against teacher salaries and -$56,724,444 against career service salaries. It is a budget-only offset: CPS plans for salary lines to come in lower because it expects not to fill every job all year.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, glossary 'Vacancy Savings' and Appendix B (school funding formula)",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "256 and 285 (pdf)"
+     }
+    },
+    {
+     "kind": "prior_year_budget",
+     "label": "FY2025 adopted vacancy factor in the same fund: -$123,275,556 teacher salaries and -$5,724,444 career service salaries",
+     "period": "FY2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS BI actuals pull (adopted FY2025)",
+      "file": "raw/cps/cps_2026_actuals_unit_fund_account.csv"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.salaries.a58210.fg115-000000-p109981-0"
+   },
+   "expect_amount": -56724444.44,
+   "mode": "side_only",
+   "note": "Official explanation: planned savings because some jobs will sit empty for part of the year (vacancy savings).",
+   "side": [
+    {
+     "kind": "official_explanation",
+     "label": "Budget book glossary: vacancy savings are 'the anticipated savings resulting from the delay in staffing new and vacant positions.' In the budget the vacancy factor is a single FY2026 program (Vacancy Factor, P109981) of -$200,000,000 in the General Education Fund: -$143,275,556 against teacher salaries and -$56,724,444 against career service salaries. It is a budget-only offset: CPS plans for salary lines to come in lower because it expects not to fill every job all year.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, glossary 'Vacancy Savings' and Appendix B (school funding formula)",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "256 and 285 (pdf)"
+     }
+    },
+    {
+     "kind": "prior_year_budget",
+     "label": "FY2025 adopted vacancy factor in the same fund: -$123,275,556 teacher salaries and -$5,724,444 career service salaries",
+     "period": "FY2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS BI actuals pull (adopted FY2025)",
+      "file": "raw/cps/cps_2026_actuals_unit_fund_account.csv"
+     }
+    }
+   ]
+  }
+ ]
+}
