@@ -52,7 +52,26 @@ def _mark(rows, key_cols, exempt):
 
 def dedupe_rows(rows):
     drop = _mark(rows, LOOSE, exempt=True)
-    return [r for r, d in zip(rows, drop) if not d], [r for r, d in zip(rows, drop) if d]
+    kept = [r for r, d in zip(rows, drop) if not d]
+    gone = [r for r, d in zip(rows, drop) if d]
+    # Second pass: the same payment line listed twice with two spellings of the vendor name
+    # (e.g. "F.H. PASCHEN, S.N. NIELSEN" vs "F.H. PASCHEN S.N. NIELSEN"). Same voucher, amount, date and
+    # contract, exactly two rows, two different names. Found by scripts/paidtodate_build.py: 1,014 pairs in
+    # 2026 YTD. Direct vouchers (contract "DV") are excluded because unrelated payees share them.
+    # Keep the row with a department (or the first one).
+    groups = defaultdict(list)
+    for i, r in enumerate(kept):
+        if not r["voucher_number"] or r["contract_number"] in ("", "DV") or float(r["amount"]) >= CHECK_CAP:
+            continue
+        groups[(r["voucher_number"], r["amount"], r["check_date"], r["contract_number"])].append(i)
+    drop2 = set()
+    for idx in groups.values():
+        if len(idx) == 2 and kept[idx[0]]["vendor_name"] != kept[idx[1]]["vendor_name"]:
+            keep = next((i for i in idx if kept[i]["department_name"]), idx[0])
+            drop2.update(i for i in idx if i != keep)
+    gone += [kept[i] for i in sorted(drop2)]
+    kept = [r for i, r in enumerate(kept) if i not in drop2]
+    return kept, gone
 
 
 def tot(rows):

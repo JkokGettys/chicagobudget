@@ -8,12 +8,12 @@
   "2025": {
    "output_file": "raw/contracts/payments_2025_dedup.csv",
    "rows_before": 115810,
-   "rows_after": 112771,
-   "rows_removed": 3039,
+   "rows_after": 112047,
+   "rows_removed": 3763,
    "dollars_before": 10662957407.92,
-   "dollars_after": 10502246535.82,
-   "dollars_removed": 160710872.1,
-   "negative_rows_removed": 8,
+   "dollars_after": 10326641461.17,
+   "dollars_removed": 336315946.75,
+   "negative_rows_removed": 9,
    "rows_of_99M_or_more_kept_by_exemption": 8,
    "dollars_of_99M_or_more_rows_that_the_loose_key_would_drop_without_exemption": 297000000.0,
    "rules_compared": {
@@ -36,6 +36,13 @@
    },
    "top20_vendors_by_dollars_removed": [
     {
+     "vendor_name": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC",
+     "rows_removed": 133,
+     "dollars_removed": 145325210.83,
+     "paid_before": 155254713.31,
+     "paid_after": 9929502.48
+    },
+    {
      "vendor_name": "K.L.E.O. COMMUNITY FAMILY LIFE CENTER",
      "rows_removed": 70,
      "dollars_removed": 29731370.61,
@@ -55,6 +62,13 @@
      "dollars_removed": 13528646.02,
      "paid_before": 27057292.04,
      "paid_after": 13528646.02
+    },
+    {
+     "vendor_name": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC",
+     "rows_removed": 13,
+     "dollars_removed": 9929502.48,
+     "paid_before": 177480391.58,
+     "paid_after": 167550889.1
     },
     {
      "vendor_name": "OZINGA READY MIX CONCRETE INC",
@@ -92,11 +106,39 @@
      "paid_after": 15366666.66
     },
     {
+     "vendor_name": "DAYSPRING PROFESSIONAL JANITOR",
+     "rows_removed": 66,
+     "dollars_removed": 5644268.5,
+     "paid_before": 5644268.5,
+     "paid_after": 0.0
+    },
+    {
+     "vendor_name": "GRANITE CONSTRUCTION COMPANY.",
+     "rows_removed": 4,
+     "dollars_removed": 4275248.87,
+     "paid_before": 26957645.22,
+     "paid_after": 22682396.35
+    },
+    {
      "vendor_name": "RS Affordable I, LLC.",
      "rows_removed": 1,
      "dollars_removed": 4250000.0,
      "paid_before": 8500000.0,
      "paid_after": 4250000.0
+    },
+    {
+     "vendor_name": "ARAMARK SAFE HAVEN FOUNDATION",
+     "rows_removed": 194,
+     "dollars_removed": 3869947.86,
+     "paid_before": 4851080.68,
+     "paid_after": 981132.82
+    },
+    {
+     "vendor_name": "CITY ESCAPE GARDEN & DESIGN,LLC.",
+     "rows_removed": 125,
+     "dollars_removed": 3733359.01,
+     "paid_before": 3814502.76,
+     "paid_after": 81143.75
     },
     {
      "vendor_name": "1237 N. California 9PCT HHDC, LP",
@@ -132,51 +174,23 @@
      "dollars_removed": 2739959.46,
      "paid_before": 5479918.92,
      "paid_after": 2739959.46
-    },
-    {
-     "vendor_name": "EXTENDED HOME LIVING SERVICES",
-     "rows_removed": 75,
-     "dollars_removed": 2573187.86,
-     "paid_before": 5146375.72,
-     "paid_after": 2573187.86
-    },
-    {
-     "vendor_name": "EXECUTIVE CONSTRUCTION INC",
-     "rows_removed": 2,
-     "dollars_removed": 2332831.76,
-     "paid_before": 10461783.1,
-     "paid_after": 8128951.34
-    },
-    {
-     "vendor_name": "BROADWAY ELECTRIC INC",
-     "rows_removed": 71,
-     "dollars_removed": 2295105.2,
-     "paid_before": 4590210.4,
-     "paid_after": 2295105.2
-    },
-    {
-     "vendor_name": "NTT DATA AMERICAS, INC",
-     "rows_removed": 5,
-     "dollars_removed": 2167531.66,
-     "paid_before": 10003695.58,
-     "paid_after": 7836163.92
-    },
-    {
-     "vendor_name": "HEARTLAND HUMAN CARE SERVICES, INC.",
-     "rows_removed": 75,
-     "dollars_removed": 2124341.22,
-     "paid_before": 4248682.44,
-     "paid_after": 2124341.22
-    },
-    {
-     "vendor_name": "WHEATLAND TITLE GUARANTY CO.",
-     "rows_removed": 1,
-     "dollars_removed": 2034067.0,
-     "paid_before": 4547614.75,
-     "paid_after": 2513547.75
     }
    ],
    "top20_contracts_by_dollars_removed": [
+    {
+     "contract_number": "283596",
+     "rows_removed": 7,
+     "dollars_removed": 51072112.43,
+     "paid_before": 102144224.86,
+     "paid_after": 51072112.43
+    },
+    {
+     "contract_number": "263824",
+     "rows_removed": 13,
+     "dollars_removed": 46583210.44,
+     "paid_before": 103681184.63,
+     "paid_after": 57097974.19
+    },
     {
      "contract_number": "47314",
      "rows_removed": 43,
@@ -192,11 +206,39 @@
      "paid_after": 13810824.63
     },
     {
+     "contract_number": "234083",
+     "rows_removed": 9,
+     "dollars_removed": 13502933.5,
+     "paid_before": 28690588.03,
+     "paid_after": 15187654.53
+    },
+    {
      "contract_number": "33959",
      "rows_removed": 23,
      "dollars_removed": 12611330.62,
      "paid_before": 25222661.24,
      "paid_after": 12611330.62
+    },
+    {
+     "contract_number": "263110",
+     "rows_removed": 75,
+     "dollars_removed": 11737403.68,
+     "paid_before": 25396117.58,
+     "paid_after": 13658713.9
+    },
+    {
+     "contract_number": "310789",
+     "rows_removed": 3,
+     "dollars_removed": 11496960.63,
+     "paid_before": 22993921.26,
+     "paid_after": 11496960.63
+    },
+    {
+     "contract_number": "244632",
+     "rows_removed": 10,
+     "dollars_removed": 9438459.06,
+     "paid_before": 20859308.33,
+     "paid_after": 11420849.27
     },
     {
      "contract_number": "232050",
@@ -220,6 +262,20 @@
      "paid_after": 6454594.04
     },
     {
+     "contract_number": "211302",
+     "rows_removed": 8,
+     "dollars_removed": 5764959.35,
+     "paid_before": 15526366.34,
+     "paid_after": 9761406.99
+    },
+    {
+     "contract_number": "70944",
+     "rows_removed": 76,
+     "dollars_removed": 5752753.22,
+     "paid_before": 11288537.0,
+     "paid_after": 5535783.78
+    },
+    {
      "contract_number": "282009",
      "rows_removed": 1,
      "dollars_removed": 5700000.0,
@@ -241,6 +297,13 @@
      "paid_after": 3804445.82
     },
     {
+     "contract_number": "84664",
+     "rows_removed": 2,
+     "dollars_removed": 3649325.64,
+     "paid_before": 7298651.28,
+     "paid_after": 3649325.64
+    },
+    {
      "contract_number": "299798",
      "rows_removed": 2,
      "dollars_removed": 3289734.34,
@@ -253,81 +316,18 @@
      "dollars_removed": 3010746.92,
      "paid_before": 20321055.7,
      "paid_after": 17310308.78
-    },
-    {
-     "contract_number": "242031",
-     "rows_removed": 1,
-     "dollars_removed": 2982483.0,
-     "paid_before": 5964966.0,
-     "paid_after": 2982483.0
-    },
-    {
-     "contract_number": "332942",
-     "rows_removed": 3,
-     "dollars_removed": 2739959.46,
-     "paid_before": 5479918.92,
-     "paid_after": 2739959.46
-    },
-    {
-     "contract_number": "295279",
-     "rows_removed": 11,
-     "dollars_removed": 2610692.02,
-     "paid_before": 5221384.04,
-     "paid_after": 2610692.02
-    },
-    {
-     "contract_number": "DV",
-     "rows_removed": 149,
-     "dollars_removed": 2397841.25,
-     "paid_before": 4944993303.85,
-     "paid_after": 4942595462.6
-    },
-    {
-     "contract_number": "316167",
-     "rows_removed": 9,
-     "dollars_removed": 2348587.64,
-     "paid_before": 4697175.28,
-     "paid_after": 2348587.64
-    },
-    {
-     "contract_number": "305561",
-     "rows_removed": 2,
-     "dollars_removed": 2332831.76,
-     "paid_before": 10461783.1,
-     "paid_after": 8128951.34
-    },
-    {
-     "contract_number": "208751",
-     "rows_removed": 71,
-     "dollars_removed": 2295105.2,
-     "paid_before": 4590210.4,
-     "paid_after": 2295105.2
-    },
-    {
-     "contract_number": "175898",
-     "rows_removed": 45,
-     "dollars_removed": 2211240.31,
-     "paid_before": 4422480.62,
-     "paid_after": 2211240.31
-    },
-    {
-     "contract_number": "26625",
-     "rows_removed": 5,
-     "dollars_removed": 2167531.66,
-     "paid_before": 10003695.58,
-     "paid_after": 7836163.92
     }
    ]
   },
   "2026ytd": {
    "output_file": "raw/contracts/payments_2026ytd_dedup.csv",
    "rows_before": 85720,
-   "rows_after": 83438,
-   "rows_removed": 2282,
+   "rows_after": 82424,
+   "rows_removed": 3296,
    "dollars_before": 8056126578.99,
-   "dollars_after": 7967095919.71,
-   "dollars_removed": 89030659.28,
-   "negative_rows_removed": 5,
+   "dollars_after": 7764791407.88,
+   "dollars_removed": 291335171.11,
+   "negative_rows_removed": 22,
    "rows_of_99M_or_more_kept_by_exemption": 8,
    "dollars_of_99M_or_more_rows_that_the_loose_key_would_drop_without_exemption": 396000000.0,
    "rules_compared": {
@@ -350,11 +350,25 @@
    },
    "top20_vendors_by_dollars_removed": [
     {
+     "vendor_name": "F.H. PASCHEN, S.N. NIELSEN & ASSOCIATES, LLC",
+     "rows_removed": 142,
+     "dollars_removed": 153457722.46,
+     "paid_before": 164843443.26,
+     "paid_after": 11385720.8
+    },
+    {
      "vendor_name": "TRANSYSTEMS CORPORATION",
      "rows_removed": 22,
      "dollars_removed": 11872949.98,
      "paid_before": 23147139.97,
      "paid_after": 11274189.99
+    },
+    {
+     "vendor_name": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC",
+     "rows_removed": 14,
+     "dollars_removed": 11385720.8,
+     "paid_before": 164843443.26,
+     "paid_after": 153457722.46
     },
     {
      "vendor_name": "VERIZON WIRELESS",
@@ -369,6 +383,20 @@
      "dollars_removed": 8814300.08,
      "paid_before": 17628600.16,
      "paid_after": 8814300.08
+    },
+    {
+     "vendor_name": "SALVATION ARMY DHQ",
+     "rows_removed": 358,
+     "dollars_removed": 8562325.97,
+     "paid_before": 9047245.03,
+     "paid_after": 484919.06
+    },
+    {
+     "vendor_name": "SEVEN-DUNNE CONSTRUCTION COMPANY",
+     "rows_removed": 36,
+     "dollars_removed": 8206370.18,
+     "paid_before": 10820343.27,
+     "paid_after": 2613973.09
     },
     {
      "vendor_name": "CBRE INC.",
@@ -399,6 +427,13 @@
      "paid_after": 5500000.0
     },
     {
+     "vendor_name": "ARAMARK SAFE HAVEN FOUNDATION",
+     "rows_removed": 111,
+     "dollars_removed": 5472178.5,
+     "paid_before": 8830719.61,
+     "paid_after": 3358541.11
+    },
+    {
      "vendor_name": "SGA YOUTH & FAMILY SERVICES, NFP",
      "rows_removed": 171,
      "dollars_removed": 4813095.02,
@@ -406,11 +441,39 @@
      "paid_after": 4813095.02
     },
     {
+     "vendor_name": "AFTER SCHOOL MATTERS, INC.",
+     "rows_removed": 16,
+     "dollars_removed": 3356426.27,
+     "paid_before": 3356426.27,
+     "paid_after": 0.0
+    },
+    {
+     "vendor_name": "CITY ESCAPE GARDEN & DESIGN,LLC.",
+     "rows_removed": 130,
+     "dollars_removed": 2991545.03,
+     "paid_before": 3263590.03,
+     "paid_after": 272045.0
+    },
+    {
      "vendor_name": "LANDRUM & BROWN, INC",
      "rows_removed": 88,
      "dollars_removed": 2983328.03,
      "paid_before": 5966656.06,
      "paid_after": 2983328.03
+    },
+    {
+     "vendor_name": "A SAFE HAVEN FOUNDATION",
+     "rows_removed": 43,
+     "dollars_removed": 2935875.69,
+     "paid_before": 8408054.19,
+     "paid_after": 5472178.5
+    },
+    {
+     "vendor_name": "SEVEN D CONSTRUCTION COMPANY",
+     "rows_removed": 1,
+     "dollars_removed": 2613973.09,
+     "paid_before": 10963700.63,
+     "paid_after": 8349727.54
     },
     {
      "vendor_name": "DELAWARE CARS/T.R. HARMSEN CORP. J.V.",
@@ -425,72 +488,44 @@
      "dollars_removed": 2332178.94,
      "paid_before": 4664357.88,
      "paid_after": 2332178.94
-    },
-    {
-     "vendor_name": "BROADWAY ELECTRIC INC",
-     "rows_removed": 47,
-     "dollars_removed": 1875440.05,
-     "paid_before": 3750880.1,
-     "paid_after": 1875440.05
-    },
-    {
-     "vendor_name": "PUERTO RICAN CULTURAL CENTER",
-     "rows_removed": 103,
-     "dollars_removed": 1731796.78,
-     "paid_before": 3473593.56,
-     "paid_after": 1741796.78
-    },
-    {
-     "vendor_name": "EXTENDED HOME LIVING SERVICES",
-     "rows_removed": 64,
-     "dollars_removed": 1684056.56,
-     "paid_before": 3368113.12,
-     "paid_after": 1684056.56
-    },
-    {
-     "vendor_name": "SCHINDLER ELEVATOR CORPORATION",
-     "rows_removed": 5,
-     "dollars_removed": 1349205.5,
-     "paid_before": 2596967.79,
-     "paid_after": 1247762.29
-    },
-    {
-     "vendor_name": "CHICAGO CONVENTION & TOURISM BUREAU, INC.",
-     "rows_removed": 2,
-     "dollars_removed": 800000.0,
-     "paid_before": 21373164.67,
-     "paid_after": 20573164.67
-    },
-    {
-     "vendor_name": "HERC RENTALS INC",
-     "rows_removed": 250,
-     "dollars_removed": 778515.02,
-     "paid_before": 13341902.5,
-     "paid_after": 12563387.48
-    },
-    {
-     "vendor_name": "GALLAGHER BASSETT",
-     "rows_removed": 2,
-     "dollars_removed": 751460.0,
-     "paid_before": 3436372.0,
-     "paid_after": 2684912.0
-    },
-    {
-     "vendor_name": "CAMBRIDGE SYSTEMATICS, INC.",
-     "rows_removed": 10,
-     "dollars_removed": 749176.24,
-     "paid_before": 1498352.48,
-     "paid_after": 749176.24
-    },
-    {
-     "vendor_name": "COLONIAL OIL INDUSTRIES, INC.",
-     "rows_removed": 25,
-     "dollars_removed": 739224.43,
-     "paid_before": 24606133.66,
-     "paid_after": 23866909.23
     }
    ],
    "top20_contracts_by_dollars_removed": [
+    {
+     "contract_number": "310789",
+     "rows_removed": 10,
+     "dollars_removed": 60935808.4,
+     "paid_before": 121871616.8,
+     "paid_after": 60935808.4
+    },
+    {
+     "contract_number": "283596",
+     "rows_removed": 9,
+     "dollars_removed": 37295302.4,
+     "paid_before": 74590604.8,
+     "paid_after": 37295302.4
+    },
+    {
+     "contract_number": "308592",
+     "rows_removed": 6,
+     "dollars_removed": 16176412.32,
+     "paid_before": 32352824.64,
+     "paid_after": 16176412.32
+    },
+    {
+     "contract_number": "263824",
+     "rows_removed": 12,
+     "dollars_removed": 13590797.31,
+     "paid_before": 27181594.62,
+     "paid_after": 13590797.31
+    },
+    {
+     "contract_number": "263110",
+     "rows_removed": 78,
+     "dollars_removed": 12871562.05,
+     "paid_before": 25743124.1,
+     "paid_after": 12871562.05
+    },
     {
      "contract_number": "47314",
      "rows_removed": 22,
@@ -520,6 +555,13 @@
      "paid_after": 7519658.94
     },
     {
+     "contract_number": "339016",
+     "rows_removed": 1,
+     "dollars_removed": 5721273.48,
+     "paid_before": 11442546.96,
+     "paid_after": 5721273.48
+    },
+    {
      "contract_number": "33959",
      "rows_removed": 14,
      "dollars_removed": 5689603.05,
@@ -534,11 +576,46 @@
      "paid_after": 5500000.0
     },
     {
+     "contract_number": "244632",
+     "rows_removed": 8,
+     "dollars_removed": 5080454.09,
+     "paid_before": 10160908.18,
+     "paid_after": 5080454.09
+    },
+    {
      "contract_number": "296396",
      "rows_removed": 7,
      "dollars_removed": 4843881.31,
      "paid_before": 9687762.62,
      "paid_after": 4843881.31
+    },
+    {
+     "contract_number": "234083",
+     "rows_removed": 9,
+     "dollars_removed": 4827559.83,
+     "paid_before": 9655119.66,
+     "paid_after": 4827559.83
+    },
+    {
+     "contract_number": "229463",
+     "rows_removed": 3,
+     "dollars_removed": 3739744.79,
+     "paid_before": 7479489.58,
+     "paid_after": 3739744.79
+    },
+    {
+     "contract_number": "248579",
+     "rows_removed": 9,
+     "dollars_removed": 3525277.64,
+     "paid_before": 7050555.28,
+     "paid_after": 3525277.64
+    },
+    {
+     "contract_number": "236546",
+     "rows_removed": 3,
+     "dollars_removed": 3444082.64,
+     "paid_before": 6888165.28,
+     "paid_after": 3444082.64
     },
     {
      "contract_number": "316167",
@@ -548,88 +625,11 @@
      "paid_after": 3169030.4
     },
     {
-     "contract_number": "15304",
-     "rows_removed": 6,
-     "dollars_removed": 2586709.9,
-     "paid_before": 13518544.3,
-     "paid_after": 10931834.4
-    },
-    {
-     "contract_number": "239765",
-     "rows_removed": 53,
-     "dollars_removed": 1915343.35,
-     "paid_before": 3830686.7,
-     "paid_after": 1915343.35
-    },
-    {
-     "contract_number": "208751",
-     "rows_removed": 47,
-     "dollars_removed": 1875440.05,
-     "paid_before": 3750880.1,
-     "paid_after": 1875440.05
-    },
-    {
-     "contract_number": "DV",
-     "rows_removed": 79,
-     "dollars_removed": 1556343.46,
-     "paid_before": 3540288026.61,
-     "paid_after": 3538731683.15
-    },
-    {
-     "contract_number": "114022",
-     "rows_removed": 9,
-     "dollars_removed": 1379905.85,
-     "paid_before": 2759811.7,
-     "paid_after": 1379905.85
-    },
-    {
-     "contract_number": "76213",
-     "rows_removed": 12,
-     "dollars_removed": 1270359.0,
-     "paid_before": 1993554.0,
-     "paid_after": 723195.0
-    },
-    {
-     "contract_number": "148384",
-     "rows_removed": 34,
-     "dollars_removed": 1063635.26,
-     "paid_before": 2127270.52,
-     "paid_after": 1063635.26
-    },
-    {
-     "contract_number": "354061",
-     "rows_removed": 2,
-     "dollars_removed": 800000.0,
-     "paid_before": 3785050.0,
-     "paid_after": 2985050.0
-    },
-    {
-     "contract_number": "334178",
-     "rows_removed": 16,
-     "dollars_removed": 773402.28,
-     "paid_before": 1546804.56,
-     "paid_after": 773402.28
-    },
-    {
-     "contract_number": "309160",
-     "rows_removed": 8,
-     "dollars_removed": 771588.8,
-     "paid_before": 1543177.6,
-     "paid_after": 771588.8
-    },
-    {
-     "contract_number": "298911",
-     "rows_removed": 10,
-     "dollars_removed": 752639.43,
-     "paid_before": 1505278.86,
-     "paid_after": 752639.43
-    },
-    {
-     "contract_number": "108929",
-     "rows_removed": 2,
-     "dollars_removed": 751460.0,
-     "paid_before": 3433533.0,
-     "paid_after": 2682073.0
+     "contract_number": "338805",
+     "rows_removed": 1,
+     "dollars_removed": 2613973.09,
+     "paid_before": 5227946.18,
+     "paid_after": 2613973.09
     }
    ]
   }
