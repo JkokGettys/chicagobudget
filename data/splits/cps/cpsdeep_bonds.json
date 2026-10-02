@@ -1,0 +1,1958 @@
+{
+ "meta": {
+  "author": "cps deep research",
+  "description": "CPS bond series split into principal and interest (budget book Tables 2-3, official statements) with the revenue that pays each series",
+  "built_by": "scripts/cpsdeep_build.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg690-000000"
+   },
+   "expect_amount": 256464600.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 254240000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 1.75%, last payment 12/15/25",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Series 2009G: final repayment of the loan (principal)",
+     "amount": 254240000.0,
+     "basis": "tied",
+     "source": {
+      "doc": "Official Statement, Series 2009G Qualified School Construction Bonds; CPS FY2026 Budget Book Table 2 note 2 and p.219 (sinking fund)",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/official-statements-for-long-term-bonds/os_2009g.pdf"
+     },
+     "why": "This is the last payment on a 2009 school-building loan. CPS saved this money in a sinking fund over 15 years, so it does not add to this year's operating cost.",
+     "note": "Budget book: paid from a sinking fund funded by required deposits since FY2011 and 'did not add to the District's annual debt service costs funded by operations in FY2026'. Matures 12/15/2025."
+    },
+    {
+     "name": "Series 2009G: interest (1.75% supplemental coupon)",
+     "amount": 2224600.0,
+     "basis": "tied",
+     "source": {
+      "doc": "Official Statement, Series 2009G Qualified School Construction Bonds; CPS FY2026 Budget Book Table 2 note 2 and p.219 (sinking fund)",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/official-statements-for-long-term-bonds/os_2009g.pdf"
+     },
+     "note": "$254,240,000 x 1.75% for one half year. Bonds were Qualified School Construction Bonds, so most of the investors' return was a federal tax credit."
+    }
+   ],
+   "note": "Principal is $254.2M of the $256.5M. The budget book says it is paid from a sinking fund saved up since FY2011, not from this year's revenue."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg614-000000"
+   },
+   "expect_amount": 62639987.5,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 134323470.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 4.30%-5.30%, last payment 12/01/31",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: IGA / PPRT. Payments from the City of Chicago under an intergovernmental agreement (property taxes the City levies) and the State's Personal Property Replacement Tax are pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Series 1999A: principal repaid",
+     "amount": 35380896.0,
+     "basis": "tied",
+     "source": {
+      "doc": "Official Statement, Unlimited Tax GO Bonds (Dedicated Tax Revenues) Series 1999A, inside cover and mandatory sinking fund schedule",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/official-statements-for-long-term-bonds/official-statement-1999a-final.pdf"
+     },
+     "why": "This is the loan itself being paid back on 12/1/2025, split below into the two kinds of bond in this series.",
+     "children": [
+      {
+       "name": "Zero-coupon bonds (capital appreciation), original principal due 12/1/2025",
+       "amount": 8215896.0,
+       "basis": "tied",
+       "source": {
+        "doc": "Official Statement, Unlimited Tax GO Bonds (Dedicated Tax Revenues) Series 1999A, inside cover and mandatory sinking fund schedule",
+        "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/official-statements-for-long-term-bonds/official-statement-1999a-final.pdf"
+       },
+       "why": "The money borrowed in 1999 on bonds that pay nothing until they mature.",
+       "note": "Official Statement: 2025 maturity original principal $8,215,896.00, $1,239.20 per $5,000 at maturity, so $33,150,000 at maturity."
+      },
+      {
+       "name": "Regular bonds called by the sinking fund schedule (term bonds due 2026)",
+       "amount": 27165000.0,
+       "basis": "tied",
+       "source": {
+        "doc": "Official Statement, Unlimited Tax GO Bonds (Dedicated Tax Revenues) Series 1999A, inside cover and mandatory sinking fund schedule",
+        "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/official-statements-for-long-term-bonds/official-statement-1999a-final.pdf"
+       },
+       "why": "A set yearly slice of the 5.5% term bonds that the 1999 documents require CPS to pay off each December 1.",
+       "note": "Official Statement: mandatory sinking fund redemption of $27,165,000 on 12/1/2025."
+      }
+     ]
+    },
+    {
+     "name": "Series 1999A: interest paid",
+     "amount": 27259091.5,
+     "basis": "tied",
+     "source": {
+      "doc": "Official Statement, Unlimited Tax GO Bonds (Dedicated Tax Revenues) Series 1999A, inside cover and mandatory sinking fund schedule",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/official-statements-for-long-term-bonds/official-statement-1999a-final.pdf"
+     },
+     "why": "This is the interest bill for the year, split below into built-up interest on the zero-coupon bonds and yearly interest on the regular bonds.",
+     "children": [
+      {
+       "name": "Built-up interest on the zero-coupon bonds (accreted interest)",
+       "amount": 24934104.0,
+       "basis": "tied",
+       "source": {
+        "doc": "Official Statement, Unlimited Tax GO Bonds (Dedicated Tax Revenues) Series 1999A, inside cover and mandatory sinking fund schedule",
+        "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/official-statements-for-long-term-bonds/official-statement-1999a-final.pdf"
+       },
+       "why": "Interest that piled up since 1999 on bonds that pay it all at the end.",
+       "note": "$33,150,000 at maturity minus $8,215,896 original principal."
+      },
+      {
+       "name": "Yearly interest on the 5.5% regular bonds",
+       "amount": 2324987.5,
+       "basis": "tied",
+       "source": {
+        "doc": "Official Statement, Unlimited Tax GO Bonds (Dedicated Tax Revenues) Series 1999A, inside cover and mandatory sinking fund schedule",
+        "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/official-statements-for-long-term-bonds/official-statement-1999a-final.pdf"
+       },
+       "note": "5.5% x half year on $55,855,000 (Dec 2025) plus 5.5% x half year on $28,690,000 (Jun 2026), balances from the sinking fund schedule."
+      }
+     ]
+    }
+   ],
+   "note": "Ties to the Official Statement: sinking fund $27,165,000 + zero-coupon maturity $33,150,000 + term-bond interest $2,324,987.50 = $62,639,987.50."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg651-000000"
+   },
+   "expect_amount": 61951875.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 286950000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%, last payment 12/01/32",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Series 2018C: principal repaid (the loan itself)",
+     "amount": 48825000.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the part of the bond that is paid back this year, the original loan, as set by the bond's payment schedule.",
+     "note": "Rate 5.00%, last payment 12/01/32."
+    },
+    {
+     "name": "Series 2018C: interest paid to bondholders",
+     "amount": 13126875.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the yearly interest on what CPS still owes on this bond.",
+     "note": "Rate 5.00%."
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg674-000000"
+   },
+   "expect_amount": 59000000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 120318180.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 4.55%-5.22%, last payment 12/01/31",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: IGA / PPRT. Payments from the City of Chicago under an intergovernmental agreement (property taxes the City levies) and the State's Personal Property Replacement Tax are pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Series 1998B-1: money borrowed in 1998 (principal)",
+     "amount": 14606630.0,
+     "basis": "tied",
+     "source": {
+      "doc": "Official Statement, Unlimited Tax GO Bonds (Dedicated Tax Revenues) Series 1998B-1, inside cover (2025 maturity)",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/official-statements-for-long-term-bonds/official-statement-series-1998b-1.pdf"
+     },
+     "why": "In 1998 CPS borrowed this part. The bond pays nothing until the end, so this is the day the original loan is repaid.",
+     "note": "Capital appreciation bond: it pays no interest each year. The Official Statement lists the 12/1/2025 maturity at $14,606,630.00 original principal and $59,000,000 total value at maturity ($1,237.85 per $5,000 at maturity)."
+    },
+    {
+     "name": "Series 1998B-1: interest that built up since 1998 (accreted interest)",
+     "amount": 44393370.0,
+     "basis": "tied",
+     "source": {
+      "doc": "Official Statement, Unlimited Tax GO Bonds (Dedicated Tax Revenues) Series 1998B-1, inside cover (2025 maturity)",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/official-statements-for-long-term-bonds/official-statement-series-1998b-1.pdf"
+     },
+     "why": "This bond adds interest to what is owed for 27 years and pays it all on one day, so this is the interest bill that came due.",
+     "note": "Equals $59,000,000 value at maturity minus $14,606,630 original principal."
+    }
+   ],
+   "note": "Whole FY2026 payment is the final value of the bonds that mature 12/1/2025 (capital appreciation bonds). It ties to the Official Statement: $59,000,000 at maturity."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg639-000000"
+   },
+   "expect_amount": 55148875.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 430325000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 4.00%-5.00%, last payment 12/01/35",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Series 2018A: principal repaid (the loan itself)",
+     "amount": 34495000.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the part of the bond that is paid back this year, the original loan, as set by the bond's payment schedule.",
+     "note": "Rate 4.00%-5.00%, last payment 12/01/35."
+    },
+    {
+     "name": "Series 2018A: interest paid to bondholders",
+     "amount": 20653875.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the yearly interest on what CPS still owes on this bond.",
+     "note": "Rate 4.00%-5.00%."
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg677-000000"
+   },
+   "expect_amount": 50750000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 725000000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 7.00%, last payment 12/01/44",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/44). Paid from EBF."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg686-000000"
+   },
+   "expect_amount": 50122424.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 458205000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 4.68%-6.14%, last payment 12/01/39",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF / Federal Subsidy. State aid (Evidence-Based Funding) and a federal interest subsidy are pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Series 2009E: principal repaid (the loan itself)",
+     "amount": 22810000.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the part of the bond that is paid back this year, the original loan, as set by the bond's payment schedule.",
+     "note": "Rate 4.68%-6.14%, last payment 12/01/39."
+    },
+    {
+     "name": "Series 2009E: interest paid to bondholders",
+     "amount": 27312424.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the yearly interest on what CPS still owes on this bond.",
+     "note": "Rate 4.68%-6.14%."
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg653-000000"
+   },
+   "expect_amount": 43579000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 225283872.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 2.89%-5.00%, last payment 12/01/30",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: IGA. Payments from the City of Chicago under an intergovernmental agreement are pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Series 2019A: principal repaid (the loan itself)",
+     "amount": 29898654.4,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the part of the bond that is paid back this year, the original loan, as set by the bond's payment schedule.",
+     "note": "Rate 2.89%-5.00%, last payment 12/01/30."
+    },
+    {
+     "name": "Series 2019A: interest paid to bondholders",
+     "amount": 13680345.6,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the yearly interest on what CPS still owes on this bond.",
+     "note": "Rate 2.89%-5.00%."
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg619-000000"
+   },
+   "expect_amount": 43538890.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 729580000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.75%-6.10%, last payment 04/01/46",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: CIT. The Capital Improvement Tax levy (a property tax collected for school buildings) is the only source for this series. These are not alternate revenue bonds.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 04/01/46). Paid from CIT."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg605-000000"
+   },
+   "expect_amount": 36935500.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 194465000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%, last payment 12/01/34",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Series 2017C: principal repaid (the loan itself)",
+     "amount": 27910000.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the part of the bond that is paid back this year, the original loan, as set by the bond's payment schedule.",
+     "note": "Rate 5.00%, last payment 12/01/34."
+    },
+    {
+     "name": "Series 2017C: interest paid to bondholders",
+     "amount": 9025500.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the yearly interest on what CPS still owes on this bond.",
+     "note": "Rate 5.00%."
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg673-000000"
+   },
+   "expect_amount": 32723275.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 575000000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%-6.00%, last payment 12/01/49",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/49). Paid from EBF."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg671-000000"
+   },
+   "expect_amount": 28618637.5,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 520835000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%-5.75%, last payment 04/01/48",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: CIT. The Capital Improvement Tax levy (a property tax collected for school buildings) is the only source for this series. These are not alternate revenue bonds.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 04/01/48). Paid from CIT."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg689-000000"
+   },
+   "expect_amount": 23445750.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 468915000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%, last payment 12/01/42",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/42). Paid from EBF."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg659-000000"
+   },
+   "expect_amount": 22500000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 450000000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%, last payment 12/01/41",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF / IGA. State aid (Evidence-Based Funding) and City intergovernmental agreement payments are pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/41). Paid from EBF / IGA."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg661-000000"
+   },
+   "expect_amount": 21874800.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 500000000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 4.00%-5.00%, last payment 12/01/47",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/47). Paid from EBF."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg621-000000"
+   },
+   "expect_amount": 19950000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 285000000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 7.00%, last payment 12/01/46",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/46). Paid from EBF."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg650-000000"
+   },
+   "expect_amount": 16352612.5,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 94775000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%-5.50%, last payment 12/01/32",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Series 2005A: principal repaid (the loan itself)",
+     "amount": 11455000.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the part of the bond that is paid back this year, the original loan, as set by the bond's payment schedule.",
+     "note": "Rate 5.00%-5.50%, last payment 12/01/32."
+    },
+    {
+     "name": "Series 2005A: interest paid to bondholders",
+     "amount": 4897612.5,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the yearly interest on what CPS still owes on this bond.",
+     "note": "Rate 5.00%-5.50%."
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg696-000000"
+   },
+   "expect_amount": 16247728.76,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 257125000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 6.32%, last payment 11/01/29",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF / Federal Subsidy. State aid (Evidence-Based Funding) and a federal interest subsidy are pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 11/01/29). Paid from EBF / Federal Subsidy."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg647-000000"
+   },
+   "expect_amount": 15664000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 313280000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%, last payment 12/01/46",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF / PPRT. State aid (Evidence-Based Funding) and the State's Personal Property Replacement Tax are pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/46). Paid from EBF / PPRT."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg623-000000"
+   },
+   "expect_amount": 14862500.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 215000000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 6.75%-7.00%, last payment 12/01/42",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/42). Paid from EBF."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg607-000000"
+   },
+   "expect_amount": 14737500.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 280000000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.25%-6.00%, last payment 12/01/39",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/39). Paid from EBF."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg663-000000"
+   },
+   "expect_amount": 14538000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 363450000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 4.00%, last payment 12/01/41",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/41). Paid from EBF."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg629-000000"
+   },
+   "expect_amount": 14000000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 280000000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%, last payment 12/01/46",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF / PPRT. State aid (Evidence-Based Funding) and the State's Personal Property Replacement Tax are pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/46). Paid from EBF / PPRT."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg655-000000"
+   },
+   "expect_amount": 13474000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 100610000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%, last payment 12/01/33",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Series 2019B: principal repaid (the loan itself)",
+     "amount": 8660000.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the part of the bond that is paid back this year, the original loan, as set by the bond's payment schedule.",
+     "note": "Rate 5.00%, last payment 12/01/33."
+    },
+    {
+     "name": "Series 2019B: interest paid to bondholders",
+     "amount": 4814000.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the yearly interest on what CPS still owes on this bond.",
+     "note": "Rate 5.00%."
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg627-000000"
+   },
+   "expect_amount": 9750000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 150000000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 6.50%, last payment 12/01/46",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/46). Paid from EBF."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg617-000000"
+   },
+   "expect_amount": 8303000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 45160000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%, last payment 12/01/31",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Series 2017D: principal repaid (the loan itself)",
+     "amount": 6200000.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the part of the bond that is paid back this year, the original loan, as set by the bond's payment schedule.",
+     "note": "Rate 5.00%, last payment 12/01/31."
+    },
+    {
+     "name": "Series 2017D: interest paid to bondholders",
+     "amount": 2103000.0,
+     "basis": "tied",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "why": "This is the yearly interest on what CPS still owes on this bond.",
+     "note": "Rate 5.00%."
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg698-000000"
+   },
+   "expect_amount": 8148750.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 125000000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 6.52%, last payment 12/01/40",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF / Federal Subsidy. State aid (Evidence-Based Funding) and a federal interest subsidy are pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/40). Paid from EBF / Federal Subsidy."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg635-000000"
+   },
+   "expect_amount": 6325000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 126500000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%, last payment 12/01/44",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF / PPRT. State aid (Evidence-Based Funding) and the State's Personal Property Replacement Tax are pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/44). Paid from EBF / PPRT."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg687-000000"
+   },
+   "expect_amount": 4938750.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 109825000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 4.00%-5.00%, last payment 12/01/35",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/35). Paid from EBF."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg657-000000"
+   },
+   "expect_amount": 4687000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 93740000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%, last payment 12/01/36",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/36). Paid from EBF."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg649-000000"
+   },
+   "expect_amount": 4300000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 86000000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%, last payment 12/01/46",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: CIT. The Capital Improvement Tax levy (a property tax collected for school buildings) is the only source for this series. These are not alternate revenue bonds.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/46). Paid from CIT."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg631-000000"
+   },
+   "expect_amount": 3245000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 64900000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.00%, last payment 04/01/46",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: CIT. The Capital Improvement Tax levy (a property tax collected for school buildings) is the only source for this series. These are not alternate revenue bonds.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 04/01/46). Paid from CIT."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.debt.fg613-000000"
+   },
+   "expect_amount": 1025000.0,
+   "side": [
+    {
+     "kind": "debt_facts",
+     "label": "Principal still owed on 6/30/2025",
+     "amount": 20000000.0,
+     "period": "6/30/2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "debt_facts",
+     "label": "Interest rate 5.13%, last payment 12/01/32",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Paid from: EBF. State aid (Evidence-Based Funding) is the first revenue pledged to this series.",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Debt Management chapter, Tables 2 and 3",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "223-227 (printed)",
+      "file": "data/cps_debt_by_series_fy26.csv"
+     },
+     "note": "Budget book p.220: CPS alternate revenue bonds are backed first by state aid, PPRT, City IGA revenue or federal subsidies, and second by a property tax levy that is abated (not collected) while the first source is available. Capital Improvement Tax bonds are paid only from the CIT levy."
+    }
+   ],
+   "mode": "side_only",
+   "note": "All interest this year, no principal is due until later (last payment 12/01/32). Paid from EBF."
+  }
+ ]
+}
