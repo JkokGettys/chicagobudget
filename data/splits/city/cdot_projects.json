@@ -3206,8 +3206,33 @@
      }
     },
     {
+     "kind": "bid_allowance",
+     "label": "Bid book Schedule of Prices, City-fixed allowances inside the construction contract: track flagging operations $3,500,000 and track access occurrences $3,500,000 (items 1 and 2), disposal of regulated substances $250,000 (item 5), utility service work $250,000 (item 11). Together $7,500,000 of the contract",
+     "amount": 7500000,
+     "period": "bid 2024",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Spec 1269715 Book 2, Schedule of Prices",
+      "url": "https://www.chicago.gov/content/dam/city/depts/dps/ContractAdministration/Specs/2024/Spec1269715_Book2.pdf",
+      "page": "PDF pages 22 and 23 (printed pages 19 and 20)",
+      "note": null
+     }
+    },
+    {
+     "kind": "bid_scope",
+     "label": "The same Schedule of Prices has 15 work items: 4 allowances above, then lump sums (bidder's price, not published) for mobilization, civil, structural, architectural, plumbing, mechanical, electrical, communications, track work, traction power, and signal and train control work. The winning bid's price for each lump sum is not in any public file we could reach (the City bid-tabulation search returned no record for specification 1269715).",
+     "period": "bid 2024",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Spec 1269715 Book 2, Schedule of Prices",
+      "url": "https://www.chicago.gov/content/dam/city/depts/dps/ContractAdministration/Specs/2024/Spec1269715_Book2.pdf",
+      "page": "PDF pages 22 and 23",
+      "note": null
+     }
+    },
+    {
      "kind": "gap",
-     "label": "No public cost breakdown by part (station, track, utilities) was found. The bid book (spec 1269715) lists scope but no prices, and the CTA and CDOT pages give only the total.",
+     "label": "No public cost breakdown of the $444M by part (station, track, utilities) was found beyond the allowances above. CTA and CDOT pages give only the total.",
      "period": "",
      "basis": "gov_estimate",
      "source": {
