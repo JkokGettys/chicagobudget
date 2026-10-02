@@ -311,6 +311,19 @@ def main():
                  "amount": 76775306, "period": "FFY2026", "basis": "gov_estimate",
                  "source": {"doc": "CDOT FFY 2024-2029 STP Program, updated 02/10/2026", "url": "https://cmap.illinois.gov/wp-content/uploads/CDOT_2025-2029-STP-Program-20260210.pdf", "page": 1}})
     side.extend(ahp_side())
+    MYP = "https://capitolnewsillinois.com/wp-content/uploads/2025/10/MYP_FY2026-31_Final_1025_BothLists-1.pdf"
+    side.append({"kind": "federal_award_to_idot", "label": "Federal Bridge Investment Program grant 693JJ22440000Y17FILJ498286 for the Calumet River bridges (92nd/Ewing, 95th, 100th, 106th Streets). The federal money is awarded to IDOT, not the City: $144,000,000 obligated, $145,500,000 non-federal match, $289,500,000 total, $34,274 spent. IDOT's FY2026 program shows these bridges as discretionary-grant (DG) projects: Ewing Ave $100,000,000 and 95th St $43,000,000. We cannot tell how much of it runs through the City's 925F line, so it is not a box.",
+                 "amount": 144000000, "period": "signed 2024-08-29", "basis": "gov_estimate",
+                 "source": {"doc": "USASpending.gov award 693JJ22440000Y17FILJ498286 (API /api/v2/awards/ASST_NON_693JJ22440000Y17FILJ498286_069/, checked 2026-10-02)", "url": "https://www.usaspending.gov/award/ASST_NON_693JJ22440000Y17FILJ498286_069"}})
+    side.append({"kind": "gap_views", "label": "Three public views of 2026 federal road money for Chicago do not add to this line: the City ordinance line $451,646,229 (anticipated 2026 grant $452,121,000 per Summary G), the CMAP TIP federal-highway funds programmed in FFY2026 $233,519,343 (boxes above), and federal-type Chicago local projects in IDOT's FY2026 annual program $291,533,000 (19 projects, of which $143,000,000 is two Calumet River bridge projects that IDOT labels discretionary grant (DG), which fits the Bridge Investment Program grant above, awarded to IDOT). The remainder is shown as not itemised.",
+                 "amount": 218126886, "period": "2026", "basis": "gov_estimate",
+                 "source": {"doc": "City 2026 Budget Recommendations Summary G p. 606 (PDF 615); CMAP eTIP; IDOT FY2026 Annual Highway Improvement Program", "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf"}})
+    for lbl, amt, pgn in (("Jeffrey Dr / Marquette Dr / South Shore Dr (US 41) construction and construction engineering, years 2027-2031 ($52,000,000 + $8,000,000)", 60000000, 336),
+                          ("100th St bridge over the Calumet River, superstructure replacement, years 2027-2031", 39193000, 339),
+                          ("California Ave bridge over the Sanitary and Ship Canal, years 2027-2031 ($26,601,000 + $117,000)", 26718000, 343),
+                          ("Ogden Ave Pulaski to Western reconstruction, years 2027-2031", 19858000, 353)):
+        side.append({"kind": "idot_myp_future", "label": "IDOT Multi-Year Program FY2026-2031, District 1 local highways, Chicago: %s (a later year, not 2026)" % lbl, "amount": amt, "period": "2027-2031", "basis": "gov_estimate",
+                     "source": {"doc": "IDOT FY 2026-2031 Proposed Highway & Multimodal Improvement Program (October 2025), District 1 local project list", "url": MYP, "page": "PDF page %d (file identical to the IDOT publication)" % pgn}})
     sp = {"target": {"by": "ordinance_line", "fund": "925F", "dept": "84", "authority": "281S", "account": "0540"},
           "expect_amount": 451646229.0, "mode": "budget_split", "pieces": pcs,
           "residual": {"name": "Federal highway money with no project in the regional plan for 2026",
@@ -364,6 +377,31 @@ def main():
           "side": [{"kind": "tip_state_not_placed", "label": "%s %s: %s, Rebuild Illinois" % (can["id"], can["title"], r["phase"]), "amount": dol(r["fy2026"]),
                     "period": "FFY2026", "basis": "gov_estimate", "source": tip_src(can, "FFY2026 column")} for r in can_ri]}
     check(sp, "925S 280Q 0540"); splits.append(sp)
+
+    # ---- 2c. 925F 281K 0140 Safe Streets and Roads for All ($20,928,000)
+    og = next(p for p in tip if p["id"] == "01-22-0043")
+    nv = next(p for p in tip if p["id"] == "01-23-0005")
+    og_ss = [r for r in og["rows"] if r["fund"] == "Safe Streets and Roads for All"][0]
+    nv_ss = [r for r in nv["rows"] if r["fund"] == "Safe Streets and Roads for All"][0]
+    sp = {"target": {"by": "ordinance_line", "fund": "925F", "dept": "84", "authority": "281K", "account": "0140"},
+          "expect_amount": 20928000.0, "mode": "budget_split",
+          "pieces": [{"key": og["id"], "name": "%s: %s" % (og["id"], og["title"]), "amount": dol(og_ss["total"]), "basis": "gov_estimate",
+                      "source": tip_src(og, "Construction, Safe Streets and Roads for All, $%s, programmed in FFY2027 (not FFY2026)" % f"{og_ss['total']:,.0f}"),
+                      "note": "The TIP programs $20,927,748 of Safe Streets and Roads for All money for this project, $252 below this $20,928,000 line. The TIP puts it in FFY2027 (Oct 2026 to Sep 2027), while the City budgets the grant in 2026, so the timing differs by a year. The line is the only Safe Streets grant in the 2026 ordinance, and this is the larger of the two Safe Streets projects in the TIP. Description: %s" % og["ctl"].get("Project Description"),
+                      "extra": {"tip_id": og["id"], "etip_project_id": og["projectId"]},
+                      "why": "This is one federal safety grant that the regional plan assigns to rebuilding Ogden Avenue from Pulaski to Roosevelt, and it is paid when the road work is bid."}],
+          "residual": {"name": "Difference between the line and the TIP amount"},
+          "note": "Match by amount: the TIP's Safe Streets money for Ogden Avenue is within $252 of this line. The TIP also lists $20,010,000 of Safe Streets money for North Avenue, Kostner to Kedzie (project 01-23-0005, FFY2027), which does not fit inside this line and is a side fact.",
+          "side": [{"kind": "tip_federal_not_placed", "label": "%s %s: %s, Safe Streets and Roads for All (FFY2027)" % (nv["id"], nv["title"], nv_ss["phase"]), "amount": dol(nv_ss["total"]), "period": "FFY2027", "basis": "gov_estimate", "source": tip_src(nv, "FFY2027 column")}]}
+    check(sp, "925F 281K 0140"); splits.append(sp)
+
+    # ---- 2d. lines with no public project list (notes only, so a reader sees why the box stops here)
+    ped = next(p for p in tip if p["id"] == "01-20-0006")
+    splits.append({"target": {"by": "ordinance_line", "fund": "925F", "dept": "84", "authority": "281U", "account": "0540"}, "expect_amount": 10000000.0, "mode": "side_only",
+                   "note": "This is the 2026 anticipated federal transit formula grant ($10,000,000, Summary G p. 606). No public list says which jobs it will pay for. The only CDOT-led transit-type project the TIP programs in FFY2026 is the Pedway reconstruction and wayfinding job, $3,236,583 of CMAQ money, and CMAQ money is not always federal transit money, so it is shown as a fact, not a box. The State/Lake station has no TIP money in FFY2026.",
+                   "side": [{"kind": "tip_federal_not_placed", "label": "%s %s: Construction, CMAQ" % (ped["id"], ped["title"]), "amount": 3236583.0, "period": "FFY2026", "basis": "gov_estimate", "source": tip_src(ped, "FFY2026 column")}]})
+    splits.append({"target": {"by": "ordinance_line", "fund": "925S", "dept": "84", "authority": "280M", "account": "0540"}, "expect_amount": 23600000.0, "mode": "side_only",
+                   "note": "This is the 2026 anticipated State of Illinois (DCEO) road grant ($23,600,000, Summary G p. 606). The City's grant ledger shows DCEO road projects only as small ward-level jobs (lighting, alleys, sidewalks, 25 records, $16.2M budget in total), and the CMAP TIP has no DCEO fund source for CDOT projects. No public list says which jobs this new money will pay for."})
 
     # ---- 3. 925S 280E 909A reserve ($124,113,000): ledger projects paid by IDOT funds F0L98 and F0W23, 2026-05-31 extract
     why_res = "This is the part of one named road or bridge job's state grant that the City has been promised but has not spent yet."
@@ -419,7 +457,7 @@ def main():
         pcs.append({"key": "sl-" + re.sub(r"\W+", "-", name.lower()) + "-" + ext, "name": "%s, not spent yet (ledger extract %s)" % (name, ext), "amount": amt, "basis": "gov_estimate",
                     "source": {"doc": "City Mid-Year Grants 925 ledger, extract %s, project D1209 State/Lake Loop Elevated" % ext, "url": LEDGER_URL},
                     "note": "Unspent = budget %s minus expended to date %s. Ledger record(s): %s.%s" % (f"${g['b']:,.0f}", f"${g['e']:,.0f}", ", ".join(g["rec"]),
-                    " This record is only in the older 2025-06-01 extract (nothing expended then, fully on order). It equals CDOT's STP-L programming for State/Lake in FFY2024, $77,140,573 plus $25,000,000 redistribution, to the dollar. It is not in the 2026-05-31 extract, so it may have been re-coded into the newer records or paid since. Treat as an upper bound." if ext.startswith("2025") else ""),
+                    " This record is only in the older 2025-06-01 extract (nothing expended then, fully on order). It equals CDOT's STP-L programming for State/Lake in FFY2024, $77,140,573 plus $25,000,000 redistribution, to the dollar, and equals a $102,140,573 FTA obligation posted in March 2025 (USASpending), so it is a real award. FTA later de-obligated and re-obligated amounts on this award (see side facts), and the record is not in the 2026-05-31 extract, so it may have been re-coded into newer records or paid since. Treat as an upper bound." if ext.startswith("2025") else ""),
                     "extra": {"ledger_records": g["rec"]}, "why": why_sl if amt >= T10 else None})
     # contract and payment facts
     def pay_sum(fn, contract):
@@ -450,6 +488,8 @@ def main():
          "source": cs("CMAP eTIP TIP 2026-2030, project 01-02-0030", ETIP_URL)},
         {"kind": "stp_programmed", "label": "CDOT STP-L program: State/Lake construction FFY2024 $77,140,573 + $25,000,000 redistribution, FFY2025 $68,552,719 + $16,447,281 redistribution", "amount": 187140573, "period": "FFY2024-2025", "basis": "gov_estimate",
          "source": cs("CDOT FFY 2024-2029 STP Program, updated 02/10/2026", "https://cmap.illinois.gov/wp-content/uploads/CDOT_2025-2029-STP-Program-20260210.pdf", 1)},
+        {"kind": "federal_obligations", "label": "FTA award IL-2016-002 obligations by FTA fiscal year (USASpending award funding history, checked 2026-10-02): 2017 to 2021 $5,000,000, 2023 $88,009,999, 2024 $65,430,000, 2025 $250,180,573, total $408,620,572 (the award page shows $414,620,572, so $6.0M is not in the account-level history). Includes a $102,140,573 obligation in FTA month 3 of 2025, the same amount as the old ledger record, and later de-obligations of $55,300,000 and $9,774,524 offset by new obligations", "amount": 408620572, "period": "2017-2025", "basis": "gov_estimate",
+         "source": cs("USASpending.gov, award funding history for IL-2016-002", "https://api.usaspending.gov/api/v2/awards/funding/ (award ASST_NON_IL-2016-002_069)")},
         {"kind": "federal_award", "label": "FTA award IL-2016-002 obligated (USASpending, Aug 2025 snapshot). Unspent = obligation minus outlays $84.8M", "amount": dol(Decimal(str(usa["Award Amount"]))), "period": "1999-10 to 2031-03", "basis": "gov_estimate",
          "source": cs("USASpending.gov award IL-2016-002", USA_URL)},
         {"kind": "bid_allowance", "label": "Bid book Schedule of Prices, City-fixed allowances inside the construction contract: track flagging operations $3,500,000 and track access occurrences $3,500,000 (items 1 and 2), disposal of regulated substances $250,000 (item 5), utility service work $250,000 (item 11). Together $7,500,000 of the contract", "amount": 7500000, "period": "bid 2024", "basis": "gov_estimate",

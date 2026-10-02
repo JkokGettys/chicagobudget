@@ -679,6 +679,76 @@
       "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
       "page": "PDF page 80 (printed page 1 - 60), District 1"
      }
+    },
+    {
+     "kind": "federal_award_to_idot",
+     "label": "Federal Bridge Investment Program grant 693JJ22440000Y17FILJ498286 for the Calumet River bridges (92nd/Ewing, 95th, 100th, 106th Streets). The federal money is awarded to IDOT, not the City: $144,000,000 obligated, $145,500,000 non-federal match, $289,500,000 total, $34,274 spent. IDOT's FY2026 program shows these bridges as discretionary-grant (DG) projects: Ewing Ave $100,000,000 and 95th St $43,000,000. We cannot tell how much of it runs through the City's 925F line, so it is not a box.",
+     "amount": 144000000,
+     "period": "signed 2024-08-29",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "USASpending.gov award 693JJ22440000Y17FILJ498286 (API /api/v2/awards/ASST_NON_693JJ22440000Y17FILJ498286_069/, checked 2026-10-02)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_693JJ22440000Y17FILJ498286_069"
+     }
+    },
+    {
+     "kind": "gap_views",
+     "label": "Three public views of 2026 federal road money for Chicago do not add to this line: the City ordinance line $451,646,229 (anticipated 2026 grant $452,121,000 per Summary G), the CMAP TIP federal-highway funds programmed in FFY2026 $233,519,343 (boxes above), and federal-type Chicago local projects in IDOT's FY2026 annual program $291,533,000 (19 projects, of which $143,000,000 is two Calumet River bridge projects that IDOT labels discretionary grant (DG), which fits the Bridge Investment Program grant above, awarded to IDOT). The remainder is shown as not itemised.",
+     "amount": 218126886,
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City 2026 Budget Recommendations Summary G p. 606 (PDF 615); CMAP eTIP; IDOT FY2026 Annual Highway Improvement Program",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf"
+     }
+    },
+    {
+     "kind": "idot_myp_future",
+     "label": "IDOT Multi-Year Program FY2026-2031, District 1 local highways, Chicago: Jeffrey Dr / Marquette Dr / South Shore Dr (US 41) construction and construction engineering, years 2027-2031 ($52,000,000 + $8,000,000) (a later year, not 2026)",
+     "amount": 60000000,
+     "period": "2027-2031",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026-2031 Proposed Highway & Multimodal Improvement Program (October 2025), District 1 local project list",
+      "url": "https://capitolnewsillinois.com/wp-content/uploads/2025/10/MYP_FY2026-31_Final_1025_BothLists-1.pdf",
+      "page": "PDF page 336 (file identical to the IDOT publication)"
+     }
+    },
+    {
+     "kind": "idot_myp_future",
+     "label": "IDOT Multi-Year Program FY2026-2031, District 1 local highways, Chicago: 100th St bridge over the Calumet River, superstructure replacement, years 2027-2031 (a later year, not 2026)",
+     "amount": 39193000,
+     "period": "2027-2031",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026-2031 Proposed Highway & Multimodal Improvement Program (October 2025), District 1 local project list",
+      "url": "https://capitolnewsillinois.com/wp-content/uploads/2025/10/MYP_FY2026-31_Final_1025_BothLists-1.pdf",
+      "page": "PDF page 339 (file identical to the IDOT publication)"
+     }
+    },
+    {
+     "kind": "idot_myp_future",
+     "label": "IDOT Multi-Year Program FY2026-2031, District 1 local highways, Chicago: California Ave bridge over the Sanitary and Ship Canal, years 2027-2031 ($26,601,000 + $117,000) (a later year, not 2026)",
+     "amount": 26718000,
+     "period": "2027-2031",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026-2031 Proposed Highway & Multimodal Improvement Program (October 2025), District 1 local project list",
+      "url": "https://capitolnewsillinois.com/wp-content/uploads/2025/10/MYP_FY2026-31_Final_1025_BothLists-1.pdf",
+      "page": "PDF page 343 (file identical to the IDOT publication)"
+     }
+    },
+    {
+     "kind": "idot_myp_future",
+     "label": "IDOT Multi-Year Program FY2026-2031, District 1 local highways, Chicago: Ogden Ave Pulaski to Western reconstruction, years 2027-2031 (a later year, not 2026)",
+     "amount": 19858000,
+     "period": "2027-2031",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026-2031 Proposed Highway & Multimodal Improvement Program (October 2025), District 1 local project list",
+      "url": "https://capitolnewsillinois.com/wp-content/uploads/2025/10/MYP_FY2026-31_Final_1025_BothLists-1.pdf",
+      "page": "PDF page 353 (file identical to the IDOT publication)"
+     }
     }
    ]
   },
@@ -999,6 +1069,95 @@
      }
     }
    ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "84",
+    "authority": "281K",
+    "account": "0140"
+   },
+   "expect_amount": 20928000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "01-22-0043",
+     "name": "01-22-0043: Ogden Avenue from Pulaski to Roosevelt",
+     "amount": 20927748.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-22-0043, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-22-0043",
+      "note": "Construction, Safe Streets and Roads for All, $20,927,748, programmed in FFY2027 (not FFY2026)"
+     },
+     "note": "The TIP programs $20,927,748 of Safe Streets and Roads for All money for this project, $252 below this $20,928,000 line. The TIP puts it in FFY2027 (Oct 2026 to Sep 2027), while the City budgets the grant in 2026, so the timing differs by a year. The line is the only Safe Streets grant in the 2026 ordinance, and this is the larger of the two Safe Streets projects in the TIP. Description: Roadway reconstruction/partial reconstruction.",
+     "extra": {
+      "tip_id": "01-22-0043",
+      "etip_project_id": 261142
+     },
+     "why": "This is one federal safety grant that the regional plan assigns to rebuilding Ogden Avenue from Pulaski to Roosevelt, and it is paid when the road work is bid."
+    }
+   ],
+   "residual": {
+    "name": "Difference between the line and the TIP amount"
+   },
+   "note": "Match by amount: the TIP's Safe Streets money for Ogden Avenue is within $252 of this line. The TIP also lists $20,010,000 of Safe Streets money for North Avenue, Kostner to Kedzie (project 01-23-0005, FFY2027), which does not fit inside this line and is a side fact.",
+   "side": [
+    {
+     "kind": "tip_federal_not_placed",
+     "label": "01-23-0005 North Avenue: Kostner to Kedzie: Construction, Safe Streets and Roads for All (FFY2027)",
+     "amount": 20010000.0,
+     "period": "FFY2027",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-23-0005, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-23-0005",
+      "note": "FFY2027 column"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "84",
+    "authority": "281U",
+    "account": "0540"
+   },
+   "expect_amount": 10000000.0,
+   "mode": "side_only",
+   "note": "This is the 2026 anticipated federal transit formula grant ($10,000,000, Summary G p. 606). No public list says which jobs it will pay for. The only CDOT-led transit-type project the TIP programs in FFY2026 is the Pedway reconstruction and wayfinding job, $3,236,583 of CMAQ money, and CMAQ money is not always federal transit money, so it is shown as a fact, not a box. The State/Lake station has no TIP money in FFY2026.",
+   "side": [
+    {
+     "kind": "tip_federal_not_placed",
+     "label": "01-20-0006 Chicago Pedway Reconstruction + System Wayfinding Replacement: Construction, CMAQ",
+     "amount": 3236583.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-20-0006, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-20-0006",
+      "note": "FFY2026 column"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925S",
+    "dept": "84",
+    "authority": "280M",
+    "account": "0540"
+   },
+   "expect_amount": 23600000.0,
+   "mode": "side_only",
+   "note": "This is the 2026 anticipated State of Illinois (DCEO) road grant ($23,600,000, Summary G p. 606). The City's grant ledger shows DCEO road projects only as small ward-level jobs (lighting, alleys, sidewalks, 25 records, $16.2M budget in total), and the CMAP TIP has no DCEO fund source for CDOT projects. No public list says which jobs this new money will pay for."
   },
   {
    "target": {
@@ -3005,7 +3164,7 @@
       "doc": "City Mid-Year Grants 925 ledger, extract 2025-06-01, project D1209 State/Lake Loop Elevated",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
      },
-     "note": "Unspent = budget $102,140,573 minus expended to date $0. Ledger record(s): F0W16-D1209-P842115-2024. This record is only in the older 2025-06-01 extract (nothing expended then, fully on order). It equals CDOT's STP-L programming for State/Lake in FFY2024, $77,140,573 plus $25,000,000 redistribution, to the dollar. It is not in the 2026-05-31 extract, so it may have been re-coded into the newer records or paid since. Treat as an upper bound.",
+     "note": "Unspent = budget $102,140,573 minus expended to date $0. Ledger record(s): F0W16-D1209-P842115-2024. This record is only in the older 2025-06-01 extract (nothing expended then, fully on order). It equals CDOT's STP-L programming for State/Lake in FFY2024, $77,140,573 plus $25,000,000 redistribution, to the dollar, and equals a $102,140,573 FTA obligation posted in March 2025 (USASpending), so it is a real award. FTA later de-obligated and re-obligated amounts on this award (see side facts), and the record is not in the 2026-05-31 extract, so it may have been re-coded into newer records or paid since. Treat as an upper bound.",
      "extra": {
       "ledger_records": [
        "F0W16-D1209-P842115-2024"
@@ -3189,6 +3348,19 @@
       "doc": "CDOT FFY 2024-2029 STP Program, updated 02/10/2026",
       "url": "https://cmap.illinois.gov/wp-content/uploads/CDOT_2025-2029-STP-Program-20260210.pdf",
       "page": 1,
+      "note": null
+     }
+    },
+    {
+     "kind": "federal_obligations",
+     "label": "FTA award IL-2016-002 obligations by FTA fiscal year (USASpending award funding history, checked 2026-10-02): 2017 to 2021 $5,000,000, 2023 $88,009,999, 2024 $65,430,000, 2025 $250,180,573, total $408,620,572 (the award page shows $414,620,572, so $6.0M is not in the account-level history). Includes a $102,140,573 obligation in FTA month 3 of 2025, the same amount as the old ledger record, and later de-obligations of $55,300,000 and $9,774,524 offset by new obligations",
+     "amount": 408620572,
+     "period": "2017-2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "USASpending.gov, award funding history for IL-2016-002",
+      "url": "https://api.usaspending.gov/api/v2/awards/funding/ (award ASST_NON_IL-2016-002_069)",
+      "page": null,
       "note": null
      }
     },
