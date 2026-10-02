@@ -439,6 +439,14 @@ def main():
     check(sp, "FHWA reserve child"); splits.append(sp)
 
     # ---- 6. children of the existing State/Lake piece ($329,801,213)
+    # Facts behind the notes below come from scripts/state_lake_stp_check.py (see research/state_lake_stp.md).
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    import state_lake_stp_check as slc
+    slf = slc.facts()
+    assert slf["dec2024"] == slf["old_budget"] == 102140573.0, "old ledger record is no longer the Dec 2024 FTA obligation"
+    assert slf["jan2025_new"] + slf["jan2025_deob"] == 0 and slf["cum_after_jan2025"] == slf["cum_after_dec2024"], "Jan 2025 swap is no longer net zero"
+    assert slf["fy2023_stp"] == slf["new_stp_budget"] == 34080000.0, "newer STP record is no longer the FY2023 tranche"
+    assert abs(slf["ledger_plus_missing"] - slf["award_obligated"]) <= 1, "ledger plus the three missing obligations no longer equals the award"
     sl = [r for r in led if r["grant_project_code"] == "D1209"]
     lk = {}
     for r in sl:
@@ -457,7 +465,14 @@ def main():
         pcs.append({"key": "sl-" + re.sub(r"\W+", "-", name.lower()) + "-" + ext, "name": "%s, not spent yet (ledger extract %s)" % (name, ext), "amount": amt, "basis": "gov_estimate",
                     "source": {"doc": "City Mid-Year Grants 925 ledger, extract %s, project D1209 State/Lake Loop Elevated" % ext, "url": LEDGER_URL},
                     "note": "Unspent = budget %s minus expended to date %s. Ledger record(s): %s.%s" % (f"${g['b']:,.0f}", f"${g['e']:,.0f}", ", ".join(g["rec"]),
-                    " This record is only in the older 2025-06-01 extract (nothing expended then, fully on order). It equals CDOT's STP-L programming for State/Lake in FFY2024, $77,140,573 plus $25,000,000 redistribution, to the dollar, and equals a $102,140,573 FTA obligation posted in March 2025 (USASpending), so it is a real award. FTA later de-obligated and re-obligated amounts on this award (see side facts), and the record is not in the 2026-05-31 extract, so it may have been re-coded into newer records or paid since. Treat as an upper bound." if ext.startswith("2025") else ""),
+                    (" This record is only in the older 2025-06-01 extract (nothing spent then, fully on order), and the newer 2026-05-31 extract has no record for it. "
+                    "It is not a copy of the other Surface Transportation Program box or of any other box here. It is a separate federal obligation of $%s that the FTA recorded in December 2024 (USASpending) and never reversed: "
+                    "the January 2025 de-obligations ($%s) were obligated again the same month, so the net change was zero. It equals CDOT's own FFY2024 STP programming for State/Lake ($77,140,573 plus $25,000,000 redistribution) to the dollar. "
+                    "The other STP box is the unspent part of an earlier $%s obligation from FY2023. The FTA records in the 2026 ledger match obligations on this award (for example $34,080,000 from two FY2023 obligations, $65,430,000 from FY2024 and $15,000,000 from August 2025), and the 2026 ledger plus three obligations it does not list "
+                    "(this one, $%s of STP and $%s more from August 2025, which we read as CMAQ) comes to the award to within $1. What the public records cannot show is how much of this $%s has been spent since June 2025, "
+"so the box is the most that could still be unspent. Details: research/state_lake_stp.md." % (
+                        f"{slf['old_budget']:,.0f}", f"{-slf['jan2025_deob']:,.0f}", f"{slf['new_stp_budget']:,.0f}",
+                        f"{slf['aug2025_stp']:,.0f}", f"{slf['aug2025_cmaq']:,.0f}", f"{slf['old_budget']:,.0f}")) if ext.startswith("2025") else ""),
                     "extra": {"ledger_records": g["rec"]}, "why": why_sl if amt >= T10 else None})
     # contract and payment facts
     def pay_sum(fn, contract):
