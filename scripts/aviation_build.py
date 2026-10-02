@@ -356,7 +356,8 @@ def main():
                      "why": "This is grant budget the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."},
         "note": ("Only payments that match this line without doubt are shown. Other O'Hare federally funded contracts were not placed: two construction contracts "
                  "(Paschen, 21.9M together) could be charged here or to the carryover line, and the airport engineering task orders do not name an airport. "
-                 "The side list shows the FAA awards made in FAA fiscal year 2026, which is what this line anticipated as new 2026 grant money."),
+                 "The side list shows the FAA awards made in FAA fiscal year 2026 (Federal Aviation Administration grants under ALN 20.116 and the infrastructure law's airport grants under ALN 20.117, each labelled). "
+                 "Together they are the closest public record of the new 2026 grant money this line anticipated, but there is no official crosswalk from an award to a budget line, so they are not shown as boxes."),
         "side": awards_fy26})
 
     # ---- 5: O'Hare interest residual: Series 2010B BABs
