@@ -1,0 +1,489 @@
+{
+ "meta": {
+  "author": "deep: O'Hare & Midway contracts (non-0140 lines)",
+  "built_by": "scripts/aviation_contracts_build.py",
+  "description": "No boxes. Side facts: Aviation contract payments by family next to the IT, rental, facilities, equipment, pavement and water lines. See research/aviation_contracts.md."
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0740",
+    "dept": "85",
+    "authority": "2015",
+    "account": "0138"
+   },
+   "expect_amount": 55012600,
+   "mode": "side_only",
+   "note": "The IT maintenance line for O'Hare. No payment is placed in a box on this line: the payments file has no fund or account, and the contract text does not pick one line. The side list shows 2026 payments on Aviation IT support and maintenance contracts that name only O'Hare, then the same family for both airports or neither, not divided.",
+   "side": [
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "2 contracts of the same family that name both airports or neither, not divided (largest: SDI PRESENCE LLC 10,548,919; CATALYST CONSULTING GROUP INC 2,703,284)",
+     "amount": 13252202.67,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0740",
+    "dept": "85",
+    "authority": "2015",
+    "account": "0157"
+   },
+   "expect_amount": 41763901,
+   "mode": "side_only",
+   "note": "The rental of equipment and services line for O'Hare. No payment is placed in a box on this line: the payments file has no fund or account, and the contract text does not pick one line. The side list shows 2026 payments on Aviation shuttle bus contracts (the contract text does not say whether the City books them as rental of equipment and services or as operation of facilities) that name only O'Hare, then the same family for both airports or neither, not divided.",
+   "side": [
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "DELAWARE CARS/T.R. HARMSEN CORP. J.V.: SHUTTLE BUS SERVICES AT CHICAGO O'HARE INTERNATIONAL AIRPORT (contract 15304, names only O'Hare)",
+     "amount": 10931834.4,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0740",
+    "dept": "85",
+    "authority": "2015",
+    "account": "0161"
+   },
+   "expect_amount": 61340400,
+   "mode": "side_only",
+   "note": "The operation, repair or maintenance of facilities line for O'Hare. No payment is placed in a box on this line: the payments file has no fund or account, and the contract text does not pick one line. The side list shows 2026 payments on Aviation maintenance, repair, roofing, doors, snow removal and landscape contracts (one family of accounts: 0160, 0161 and 0162. The contract text does not say which) that name only O'Hare, then the same family for both airports or neither, not divided.",
+   "side": [
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "BUILDERS CHICAGO CORPORATION: PREVENTATIVE MAINTENANCE, REPAIRS AND REPLACEMENT OF AUTOMATIC DOORS AT CHICAGO O'HARE INTERNATIONAL AIRPORT (contract 102725, names only O'Hare)",
+     "amount": 4632281.47,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    },
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "PLOTE CONSTRUCTION, INC / K-FIVE CONSTRUCTION CORP. JOINT VENTURE: AIRSIDE SNOW REMOVAL AT O'HARE INTERNATIONAL AIRPORT (contract 114934, names only O'Hare)",
+     "amount": 2090660.0,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    },
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "J S REIMER INC: AIRSIDE SNOW REMOVAL AT O'HARE INTERNATIONAL AIRPORT Unit Price Change (contract 112501, names only O'Hare)",
+     "amount": 1970996.76,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    },
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "SNOW SYSTEMS: 1301908: Landside Snow Removal Services at Chicago O'Hare International Airport (Multi-Award) (contract 325581, names only O'Hare)",
+     "amount": 718737.5,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    },
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "ELEVATOR INSPECTION SERVICE COMPANY, LLC: TRANSFER FROM PO 84415: THIRD PARTY CONVEYANCE DEVICE INSPECTIONS AT O'HARE INTERNATIONAL AIRPORT (contract 321158, names only O'Hare)",
+     "amount": 21047.09,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    },
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "15 contracts of the same family that name both airports or neither, not divided (largest: MCDONAGH DEMOLITION, INC. 3,205,338; MCDONAGH DEMOLITION, INC. 3,194,691; CITY ESCAPE GARDEN & DESIGN,LLC 2,245,394; SIEMENS INDUSTRY INC. 01 2,184,670; MCDONAGH DEMOLITION, INC. 2,107,059)",
+     "amount": 19918567.75,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0740",
+    "dept": "85",
+    "authority": "2015",
+    "account": "0162"
+   },
+   "expect_amount": 29763700,
+   "mode": "side_only",
+   "note": "The repair or maintenance of equipment line for O'Hare. No payment is placed in a box on this line: the payments file has no fund or account, and the contract text does not pick one line. The side list shows 2026 payments on Aviation maintenance, repair, roofing, doors, snow removal and landscape contracts (one family of accounts: 0160, 0161 and 0162. The contract text does not say which) that name only O'Hare, then the same family for both airports or neither, not divided.",
+   "side": [
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "BUILDERS CHICAGO CORPORATION: PREVENTATIVE MAINTENANCE, REPAIRS AND REPLACEMENT OF AUTOMATIC DOORS AT CHICAGO O'HARE INTERNATIONAL AIRPORT (contract 102725, names only O'Hare)",
+     "amount": 4632281.47,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    },
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "PLOTE CONSTRUCTION, INC / K-FIVE CONSTRUCTION CORP. JOINT VENTURE: AIRSIDE SNOW REMOVAL AT O'HARE INTERNATIONAL AIRPORT (contract 114934, names only O'Hare)",
+     "amount": 2090660.0,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    },
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "J S REIMER INC: AIRSIDE SNOW REMOVAL AT O'HARE INTERNATIONAL AIRPORT Unit Price Change (contract 112501, names only O'Hare)",
+     "amount": 1970996.76,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    },
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "SNOW SYSTEMS: 1301908: Landside Snow Removal Services at Chicago O'Hare International Airport (Multi-Award) (contract 325581, names only O'Hare)",
+     "amount": 718737.5,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    },
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "ELEVATOR INSPECTION SERVICE COMPANY, LLC: TRANSFER FROM PO 84415: THIRD PARTY CONVEYANCE DEVICE INSPECTIONS AT O'HARE INTERNATIONAL AIRPORT (contract 321158, names only O'Hare)",
+     "amount": 21047.09,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    },
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "15 contracts of the same family that name both airports or neither, not divided (largest: MCDONAGH DEMOLITION, INC. 3,205,338; MCDONAGH DEMOLITION, INC. 3,194,691; CITY ESCAPE GARDEN & DESIGN,LLC 2,245,394; SIEMENS INDUSTRY INC. 01 2,184,670; MCDONAGH DEMOLITION, INC. 2,107,059)",
+     "amount": 19918567.75,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0740",
+    "dept": "85",
+    "authority": "2015",
+    "account": "0163"
+   },
+   "expect_amount": 14395500,
+   "mode": "side_only",
+   "note": "The repair or maintenance of streets and pavements line for O'Hare. No payment is placed in a box on this line: the payments file has no fund or account, and the contract text does not pick one line. The side list shows 2026 payments on Aviation pavement, concrete and striping contracts that name only O'Hare, then the same family for both airports or neither, not divided.",
+   "side": [
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "5 contracts of the same family that name both airports or neither, not divided (largest: ROSSI CONTRACTORS, INC. 9,277,745; PREFORM TRAFFIC CONTROL SYSTEMS, LIMITED 4,871,438; ROSSI CONTRACTORS, INC. 4,449,075; SANCHEZ PAVING COMPANY 1,104,352; PREFORM TRAFFIC CONTROL SYSTEMS, LIMITED 47,127)",
+     "amount": 19749736.89,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0740",
+    "dept": "85",
+    "authority": "2015",
+    "account": "0183"
+   },
+   "expect_amount": 12000000,
+   "mode": "side_only",
+   "note": "The water line for O'Hare. Aviation vouchers paid $9,516,075 to the City Department of Water in 2026, for both airports together. The water bills cannot be told apart by airport in the payments file, so none is placed in a box here.",
+   "side": [
+    {
+     "kind": "payments_airport_not_stated",
+     "label": "Paid in 2026 to the City Department of Water on Aviation vouchers (voucher numbers start PV85, 45 direct vouchers): the payments file does not say whether they are for O'Hare or Midway, so the amount is not divided",
+     "amount": 9516075.35,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0610",
+    "dept": "85",
+    "authority": "2010",
+    "account": "0138"
+   },
+   "expect_amount": 9935800,
+   "mode": "side_only",
+   "note": "The IT maintenance line for Midway. No payment is placed in a box on this line: the payments file has no fund or account, and the contract text does not pick one line. The side list shows 2026 payments on Aviation IT support and maintenance contracts that name only Midway, then the same family for both airports or neither, not divided.",
+   "side": [
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "2 contracts of the same family that name both airports or neither, not divided (largest: SDI PRESENCE LLC 10,548,919; CATALYST CONSULTING GROUP INC 2,703,284)",
+     "amount": 13252202.67,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0610",
+    "dept": "85",
+    "authority": "2010",
+    "account": "0157"
+   },
+   "expect_amount": 14875000,
+   "mode": "side_only",
+   "note": "The rental of equipment and services line for Midway. No payment is placed in a box on this line: the payments file has no fund or account, and the contract text does not pick one line. The side list shows 2026 payments on Aviation shuttle bus contracts (the contract text does not say whether the City books them as rental of equipment and services or as operation of facilities) that name only Midway, then the same family for both airports or neither, not divided.",
+   "side": [
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "CONTINENTAL AIR TRANSPORT CHICAGO SCHOOL TRANSIT JV LLC: Shuttle Bus Service for Midway International Airport (contract 194124, names only Midway)",
+     "amount": 6024527.87,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0610",
+    "dept": "85",
+    "authority": "2010",
+    "account": "0161"
+   },
+   "expect_amount": 29374400,
+   "mode": "side_only",
+   "note": "The operation, repair or maintenance of facilities line for Midway. No payment is placed in a box on this line: the payments file has no fund or account, and the contract text does not pick one line. The side list shows 2026 payments on Aviation maintenance, repair, roofing, doors, snow removal and landscape contracts (one family of accounts: 0160, 0161 and 0162. The contract text does not say which) that name only Midway, then the same family for both airports or neither, not divided.",
+   "side": [
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "BRANCATO LANDSCAPING, INC. dba BRANCATO SNOW & ICE MANAGEMENT: Snow Removal Services at Midway International Airport (contract 264113, names only Midway)",
+     "amount": 1381055.5,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    },
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "15 contracts of the same family that name both airports or neither, not divided (largest: MCDONAGH DEMOLITION, INC. 3,205,338; MCDONAGH DEMOLITION, INC. 3,194,691; CITY ESCAPE GARDEN & DESIGN,LLC 2,245,394; SIEMENS INDUSTRY INC. 01 2,184,670; MCDONAGH DEMOLITION, INC. 2,107,059)",
+     "amount": 19918567.75,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0610",
+    "dept": "85",
+    "authority": "2010",
+    "account": "0162"
+   },
+   "expect_amount": 32082000,
+   "mode": "side_only",
+   "note": "The repair or maintenance of equipment line for Midway. No payment is placed in a box on this line: the payments file has no fund or account, and the contract text does not pick one line. The side list shows 2026 payments on Aviation maintenance, repair, roofing, doors, snow removal and landscape contracts (one family of accounts: 0160, 0161 and 0162. The contract text does not say which) that name only Midway, then the same family for both airports or neither, not divided.",
+   "side": [
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "BRANCATO LANDSCAPING, INC. dba BRANCATO SNOW & ICE MANAGEMENT: Snow Removal Services at Midway International Airport (contract 264113, names only Midway)",
+     "amount": 1381055.5,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    },
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "15 contracts of the same family that name both airports or neither, not divided (largest: MCDONAGH DEMOLITION, INC. 3,205,338; MCDONAGH DEMOLITION, INC. 3,194,691; CITY ESCAPE GARDEN & DESIGN,LLC 2,245,394; SIEMENS INDUSTRY INC. 01 2,184,670; MCDONAGH DEMOLITION, INC. 2,107,059)",
+     "amount": 19918567.75,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0610",
+    "dept": "85",
+    "authority": "2010",
+    "account": "0163"
+   },
+   "expect_amount": 6090000,
+   "mode": "side_only",
+   "note": "The repair or maintenance of streets and pavements line for Midway. No payment is placed in a box on this line: the payments file has no fund or account, and the contract text does not pick one line. The side list shows 2026 payments on Aviation pavement, concrete and striping contracts that name only Midway, then the same family for both airports or neither, not divided.",
+   "side": [
+    {
+     "kind": "contract_family_paid_2026",
+     "label": "5 contracts of the same family that name both airports or neither, not divided (largest: ROSSI CONTRACTORS, INC. 9,277,745; PREFORM TRAFFIC CONTROL SYSTEMS, LIMITED 4,871,438; ROSSI CONTRACTORS, INC. 4,449,075; SANCHEZ PAVING COMPANY 1,104,352; PREFORM TRAFFIC CONTROL SYSTEMS, LIMITED 47,127)",
+     "amount": 19749736.89,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0610",
+    "dept": "85",
+    "authority": "2010",
+    "account": "0183"
+   },
+   "expect_amount": 1708900,
+   "mode": "side_only",
+   "note": "The water line for Midway. Aviation vouchers paid $9,516,075 to the City Department of Water in 2026, for both airports together. The water bills cannot be told apart by airport in the payments file, so none is placed in a box here.",
+   "side": [
+    {
+     "kind": "payments_airport_not_stated",
+     "label": "Paid in 2026 to the City Department of Water on Aviation vouchers (voucher numbers start PV85, 45 direct vouchers): the payments file does not say whether they are for O'Hare or Midway, so the amount is not divided",
+     "amount": 9516075.35,
+     "period": "2026-01-01 to 2026-09-28",
+     "basis": "actual",
+     "source": {
+      "dataset": "s4vu-giwb",
+      "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+      "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+      "note": "joined to Contracts rsxa-ify5 on contract number (raw/contracts/contracts_all.csv), full contract description"
+     }
+    }
+   ]
+  }
+ ]
+}
