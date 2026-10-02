@@ -10,13 +10,13 @@ build/build_all.sh
 
 The build stops if any check fails. `build/verify_db.py` then re-checks the finished database on its own.
 
-## What's in it (2026-10-01 build)
+## What's in it (2026-10-02 build)
 
 | Government | Boxes | Total | Matches official figure |
 |---|---:|---:|---|
-| City of Chicago | 13,718 (incl. 238 in the "counted twice" branch) | $16,842,553,003.00 | Passed ordinance net total, p. 544 |
-| Chicago Public Schools | 26,090 | $10,253,327,463.68 | FY2026 budget, to the cent |
-| Chicago Park District | 7,027 | $637,580,350.00 | 2026 Appropriations grand total |
+| City of Chicago | 14,777 (incl. 238 in the "counted twice" branch) | $16,842,553,003.00 | Passed ordinance net total, p. 544 |
+| Chicago Public Schools | 24,870 | $10,253,327,463.68 | FY2026 budget, to the cent |
+| Chicago Park District | 7,046 | $637,580,350.00 | 2026 Appropriations grand total |
 
 Share of dollars by the size of the box where clicking stops:
 
@@ -55,6 +55,9 @@ Share of dollars by the size of the box where clicking stops:
 3. Every box has a basis and a source. Every leaf of $10M or more has a why-sentence.
 4. Actual payments are never inside budget amounts. They are only side info.
 5. **No individual names.** Every vendor payment row is kept and visible. When the payee is an individual person (refunds, reimbursements, small grants, jurors, sole practitioners), the name is replaced by "Individual (name hidden)" and the person's name is scrubbed from the description, while the amount, contract, category and payment count stay. Business and organization names are shown. `build/payee.py` decides once per payee: names with business words (INC, LLC, SERVICES, CENTER...), a City contract anywhere, or a single trade-name word count as businesses. "LAST, FIRST" names and anyone on the City employee roster always count as people. When unsure, it hides the name. Job titles with fewer than 5 positions in a CPS unit are pooled. The build scans its output against the private name lists in `data/people/` (gitignored) and against every hidden payee name, and fails on any match.
+
+6. **Names are unique among siblings.** Boxes under one parent never share a name. When siblings differ only by fund, bureau, project or program, the label is added, for example "Overtime (paid from: Water bills)". The official name stays in `extra.official_name`. (`treelib.disambiguate_siblings`, run by `cleanup`.)
+7. **A project on several lines is tagged.** A box for a ledger project code or TIP id that also has boxes on other budget lines gets a note listing those lines and saying not to add them up (`treelib.tag_projects_on_several_lines`, and `extra.also_on_other_lines`).
 
 ## Known judgment calls
 
