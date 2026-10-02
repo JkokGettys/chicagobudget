@@ -1,0 +1,277 @@
+{
+ "meta": {
+  "author": "public leads 3 agent",
+  "description": "Private special education tuition: more providers from the ISBE nonpublic special education directory, taken out of the leftover box",
+  "built_by": "scripts/public_leads3_sped_isbe.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.special-education.u11674.contracts.a54305.fg114-376711-p124904-0.not-spent-yet"
+   },
+   "expect_amount": 26603160.16,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Pactt Learning Center: paid so far",
+     "amount": 1524829.89,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'PACTT LEARNING CENTER'. It is listed as 'PACTT Learning Center' (Chicago) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Anderson Center For Autism: paid so far",
+     "amount": 1163225.84,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'ANDERSON CENTER FOR AUTISM'. It is listed as 'Anderson Center for Autism' (Staatsburg) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Keshet: paid so far",
+     "amount": 1133497.19,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'KESHET'. It is listed as 'Keshet' (Northbrook) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Merlin Day Llc: paid so far",
+     "amount": 1039434.82,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'MERLIN DAY LLC'. It is listed as 'Merlin Day Academy' (Chicago) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Brain Box Literacy Academy and Educational Services Inc: paid so far",
+     "amount": 984348.21,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'Brain Box Literacy Academy and Educational Services Inc. dba Brain Box NPS'. It is listed as 'Brain Box Literacy Academy and Educational Services Inc' (Chicago) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Specialized Education of Illinois: paid so far",
+     "amount": 887455.4,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'SPECIALIZED EDUCATION OF ILLINOIS, INC DBA NEW HOPE ACADEMY EAST, NEW HOPE ACADEMY WEST'. It is listed as 'Specialized Education of Illinois' (Darien) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Helping Hand Center: paid so far",
+     "amount": 879814.94,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'HELPING HAND CENTER'. It is listed as 'Helping Hand' (Countryside) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Jeanine Schultz School: paid so far",
+     "amount": 744008.83,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'Jeanine Schultz School'. It is listed as 'Jeanine Schultz School' (Park Ridge) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Frederic L Chamberlain Center: paid so far",
+     "amount": 540775.52,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'FREDERIC L. CHAMBERLAIN CENTER INC DBA CHAMBERLAIN INTERNATIONAL SCHOOL'. It is listed as 'Frederic L Chamberlain Center' (Middleboro) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "THE HOPE SCHOOL dba HOPE LEARNING ACADEMY: paid so far",
+     "amount": 378967.67,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'THE HOPE SCHOOL dba HOPE LEARNING ACADEMY'. It is listed as 'Hope Learning Academy' (Springfield) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Latham Centers, Inc.: paid so far",
+     "amount": 358797.75,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'LATHAM CENTERS, INC.'. It is listed as 'Latham Centers Inc.' (Brewster) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Chileda Institute Inc: paid so far",
+     "amount": 325516.15,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'CHILEDA INSTITUTE INC'. It is listed as 'Chileda Institute' (La Crosse) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Boston Higashi School, Inc.: paid so far",
+     "amount": 316091.76,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'BOSTON HIGASHI SCHOOL, INC.'. It is listed as 'Boston Higashi School' (Randolph) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Giant Steps Illinois, Inc.: paid so far",
+     "amount": 300581.66,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'GIANT STEPS ILLINOIS, INC.'. It is listed as 'Giant Steps Illinois' (Lisle) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Clinical Connections Inc Dba Classroom Connection Day School: paid so far",
+     "amount": 287550.36,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'CLINICAL CONNECTIONS INC DBA CLASSROOM CONNECTION DAY SCHOOL'. It is listed as 'Classroom Connection Day School' (Bannockburn) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Chicago Autism Academy, Inc: paid so far",
+     "amount": 283173.27,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'CHICAGO AUTISM ACADEMY, INC'. It is listed as 'Chicago Autism Academy' (Frankfort) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Grove School Inc.: paid so far",
+     "amount": 253838.18,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'GROVE SCHOOL INC.'. It is listed as 'Grove School Inc' (Madison) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Little Friends, Inc.: paid so far",
+     "amount": 177368.6,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'LITTLE FRIENDS, INC.'. It is listed as 'Little Friends' (Warrenville) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Felicity Schools, Llc: paid so far",
+     "amount": 111928.04,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'FELICITY SCHOOLS, LLC'. It is listed as 'Felicity Schools LLC' (Deerfield) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Sandhill Center, Llc: paid so far",
+     "amount": 90920.0,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'SANDHILL CENTER, LLC'. It is listed as 'Sandhill Center' (Los Lunas) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Little Keswick Education Corporation dba Keswick School LLC: paid so far",
+     "amount": 28826.79,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'Little Keswick Education Corporation dba Keswick School LLC'. It is listed as 'Keswick School' (Keswick) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Brehm Preparatory School: paid so far",
+     "amount": 26800.83,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'BREHM PREPARATORY SCHOOL'. It is listed as 'Brehm Preparatory School' (Carbondale) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Quantum Leep Academy: paid so far",
+     "amount": 20560.0,
+     "basis": "paid_to_date",
+     "kind": "vendor_payment",
+     "source": {
+      "doc": "CPS procurement API supplier payments FY2026, matched by name to the ISBE 2025-26 Directory of Educational Entities, sheet 'Non Pub Spec Ed'",
+      "url": "https://www.isbe.net/Pages/Data-Analysis-Directories.aspx"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'QUANTUM LEEP ACADEMY'. It is listed as 'Quantum Leep' (Chicago) in the State Board's directory of nonpublic special education schools. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    }
+   ],
+   "residual": {
+    "name": "Tuition budgeted but not matched to a payment shown here",
+    "why": "CPS pays many other private schools, and the payments file does not say which budget line each payment belongs to, so this part has no provider boxes."
+   },
+   "note": "23 more private schools were found by matching CPS FY2026 payment names to the State Board of Education's directory of approved nonpublic special education schools (together $11,858,311.70). Left out on purpose: agencies that run many services (UCAN, JCFS, Maryville, Rush and others), and names that did not match the same city."
+  }
+ ]
+}
