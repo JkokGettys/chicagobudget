@@ -277,8 +277,8 @@
     }
    ],
    "residual": {
-    "name": "Rest of the older Water bonds (mostly Series 2001, not printed in our files)",
-    "why": "Water Series 2001 ($51,180,000 left, final maturity 2030) and the WIFIA loan share this leftover, and the 2001 statement with its yearly schedule is not on the City's bond pages."
+    "name": "Rest of the older Water bonds' principal (not tied to a series)",
+    "why": "The bond papers we hold do not say which older Water bonds (Series 2001, 2017-2 or the WIFIA loan) make up this leftover principal. The 2001 bonds list a 2026 maturity with no amount on EMMA, so we do not guess."
    }
   },
   {
@@ -318,7 +318,7 @@
    ],
    "residual": {
     "name": "Rest of the older Water bonds' interest (2001, 2017, 2017-2, WIFIA loan)",
-    "why": "These series together would cost more interest than the leftover, so the budget line cannot hold all of them at full scheduled interest. The yearly figures by series are not printed in our files."
+    "why": "The yearly interest for these series is not printed in the bond papers we hold, and the 2026 refunding changed some of them after the budget was written, so we do not guess."
    },
    "side": [
     {
