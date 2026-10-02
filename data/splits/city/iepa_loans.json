@@ -1,0 +1,677 @@
+{
+ "meta": {
+  "author": "public leads 3 agent",
+  "description": "Illinois EPA loan tables (rates, maturities, balances) and published 2026 totals as side info on Water and Sewer loan lines",
+  "built_by": "scripts/public_leads3_srf_build.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.water-fund.0200-2005-0944"
+   },
+   "expect_amount": 39667255,
+   "mode": "side_only",
+   "note": "The City's bond papers list every state (Illinois EPA) loan with its rate, last year and balance, but no paper prints each loan's payment for 2026, so the line is not split into loans. The 2026 Water bond statement prints one number for all 24 state loans together: $42,045,045 of principal and interest in 2026. That is larger than this line because it includes interest, which is budgeted on the next line.",
+   "side": [
+    {
+     "kind": "iepa_aggregate",
+     "label": "All Water IEPA loans together: principal plus interest due in fiscal 2026 (Water 2026ABC OS p.36, 'Outstanding Subordinate Lien Obligations Debt Service')",
+     "amount": 42045045,
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_aggregate",
+     "label": "Total principal still owed on 24 fully drawn Water IEPA loans on 2026-04-01 (the City also signed $73.5M of further IEPA loans still being drawn)",
+     "amount": 457541223,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-3767: final maturity 9/9/2037, interest rate 1.995%, principal still owed on 2026-04-01",
+     "amount": 27935703,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-3769: final maturity 11/1/2032, interest rate 1.25%, principal still owed on 2026-04-01",
+     "amount": 581211,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-3770: final maturity 12/2/2031, interest rate 0.0%, principal still owed on 2026-04-01",
+     "amount": 2735434,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-4564: final maturity 12/21/2031, interest rate 1.25%, principal still owed on 2026-04-01",
+     "amount": 1959444,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-4686: final maturity 11/1/2032, interest rate 1.25%, principal still owed on 2026-04-01",
+     "amount": 581783,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-4687: final maturity 12/27/2032, interest rate 1.25%, principal still owed on 2026-04-01",
+     "amount": 2358887,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-4864: final maturity 3/21/2034, interest rate 2.295%, principal still owed on 2026-04-01",
+     "amount": 2979216,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-4865: final maturity 7/16/2034, interest rate 1.93%, principal still owed on 2026-04-01",
+     "amount": 18690170,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5025: final maturity 10/16/2034, interest rate 1.93%, principal still owed on 2026-04-01",
+     "amount": 7525347,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5199: final maturity 6/17/2035, interest rate 1.995%, principal still owed on 2026-04-01",
+     "amount": 24727993,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5229: final maturity 9/2/2038, interest rate 1.86%, principal still owed on 2026-04-01",
+     "amount": 19607880,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5232: final maturity 1/31/2036, interest rate 2.21%, principal still owed on 2026-04-01",
+     "amount": 35313764,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5281: final maturity 4/14/2035, interest rate 1.995%, principal still owed on 2026-04-01",
+     "amount": 8063203,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5319: final maturity 1/4/2041, interest rate 1.64%, principal still owed on 2026-04-01",
+     "amount": 29639675,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5330: final maturity 11/21/2042, interest rate 1.76%, principal still owed on 2026-04-01",
+     "amount": 48677205,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5331: final maturity 7/17/2037, interest rate 1.86%, principal still owed on 2026-04-01",
+     "amount": 51352758,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5332: final maturity 6/1/2036, interest rate 1.86%, principal still owed on 2026-04-01",
+     "amount": 11554905,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5361: final maturity 8/13/2039, interest rate 1.64%, principal still owed on 2026-04-01",
+     "amount": 3879029,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5384: final maturity 7/17/2037, interest rate 1.64%, principal still owed on 2026-04-01",
+     "amount": 14161274,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5417: final maturity 6/19/2038, interest rate 1.86%, principal still owed on 2026-04-01",
+     "amount": 27226483,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5480: final maturity 5/25/2039, interest rate 1.76%, principal still owed on 2026-04-01",
+     "amount": 76873399,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5481: final maturity 10/9/2039, interest rate 1.76%, principal still owed on 2026-04-01",
+     "amount": 8403452,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5482: final maturity 12/30/2044, interest rate 2.0%, principal still owed on 2026-04-01",
+     "amount": 27296532,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan L17-5483: final maturity 8/16/2043, interest rate 1.11%, principal still owed on 2026-04-01",
+     "amount": 5416476,
+     "period": "2026-04-01",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.water-fund.0200-2005-0943"
+   },
+   "expect_amount": 14135049,
+   "mode": "side_only",
+   "note": "The City's bond papers list every state (Illinois EPA) loan with its rate, last year and balance, but no paper prints each loan's payment for 2026, so the line is not split into loans. Interest here also covers the federal WIFIA loan (4.38%, $141.3M drawn at the end of 2025) and the PNC credit line, not only state loans. See the principal line for the loan-by-loan table.",
+   "side": [
+    {
+     "kind": "iepa_aggregate",
+     "label": "All Water IEPA loans together: principal plus interest due in fiscal 2026 (Water 2026ABC OS p.36)",
+     "amount": 42045045,
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Water 2026ABC Official Statement (City of Chicago, Dept of Water Management)",
+      "url": "https://bondlink-cdn.com/1344/ILChicago04a-FIN.yO9Z1Tmxh.pdf",
+      "page": "34 and 36"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.sewer-fund.0314-2005-0944"
+   },
+   "expect_amount": 32626175,
+   "mode": "side_only",
+   "note": "The City's bond papers list every state (Illinois EPA) loan with its rate, last year and balance, but no paper prints each loan's payment for 2026, so the line is not split into loans. The 2024 Sewer bond statement prints one number for state loans in 2026: $32,533,630 of principal and interest, for loans closed by mid 2024. The two Sewer loan lines in the budget add to $44,361,561, which is more, probably because loans closed after mid 2024 (the City had signed $166.5M more) are not in that table. The audited 2025 statement lists 22 loans (below).",
+   "side": [
+    {
+     "kind": "iepa_aggregate",
+     "label": "All Sewer IEPA loans together (loans closed by 2024-07-01): principal plus interest due in fiscal 2026 (Wastewater 2024B OS p.24)",
+     "amount": 32533630,
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Wastewater Transmission 2024B Official Statement",
+      "url": "https://bondlink-cdn.com/1345/OS.5X3PYWIM0.pdf",
+      "page": "24"
+     }
+    },
+    {
+     "kind": "iepa_aggregate",
+     "label": "Total principal still owed on 22 Sewer IEPA loans on 2025-12-31 (audited, thousands of dollars)",
+     "amount": 462292000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed May 28, 2008: original amount $1,546,000 (rounded to thousands), due through 2027, interest rate 2.5%, principal still owed on 2025-12-31",
+     "amount": 181000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed January 20, 2010: original amount $15,000,000 (rounded to thousands), due through 2031, interest rate 0.0%, principal still owed on 2025-12-31",
+     "amount": 4208000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed October 8, 2010: original amount $17,812,000 (rounded to thousands), due through 2032, interest rate 1.25%, principal still owed on 2025-12-31",
+     "amount": 6897000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed September 22, 2011: original amount $17,564,000 (rounded to thousands), due through 2033, interest rate 1.25%, principal still owed on 2025-12-31",
+     "amount": 7265000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed October 2, 2012: original amount $15,000,000 (rounded to thousands), due through 2034, interest rate 2.295%, principal still owed on 2025-12-31",
+     "amount": 7597000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed October 22, 2013: original amount $54,170,000 (rounded to thousands), due through 2035, interest rate 1.93%, principal still owed on 2025-12-31",
+     "amount": 30331000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed October 8, 2014: original amount $56,198,000 (rounded to thousands), due through 2036, interest rate 1.99%, principal still owed on 2025-12-31",
+     "amount": 33025000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed January 22, 2016: original amount $4,291,000 (rounded to thousands), due through 2036, interest rate 1.86%, principal still owed on 2025-12-31",
+     "amount": 2622000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed November 4, 2016: original amount $6,703,000 (rounded to thousands), due through 2037, interest rate 1.75%, principal still owed on 2025-12-31",
+     "amount": 4397000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed May 17, 2016: original amount $63,808,000 (rounded to thousands), due through 2038, interest rate 1.86%, principal still owed on 2025-12-31",
+     "amount": 42695000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed May 16, 2017: original amount $27,370,000 (rounded to thousands), due through 2038, interest rate 1.75%, principal still owed on 2025-12-31",
+     "amount": 18985000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed Apr 5, 2018: original amount $18,033,000 (rounded to thousands), due through 2039, interest rate 1.76%, principal still owed on 2025-12-31",
+     "amount": 12988000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed Apr 5, 2018: original amount $59,960,000 (rounded to thousands), due through 2039, interest rate 1.76%, principal still owed on 2025-12-31",
+     "amount": 43050000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed May 25, 2018: original amount $28,824,000 (rounded to thousands), due through 2039, interest rate 1.76%, principal still owed on 2025-12-31",
+     "amount": 22411000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed March 18, 2019: original amount $31,402,000 (rounded to thousands), due through 2040, interest rate 1.84%, principal still owed on 2025-12-31",
+     "amount": 24764000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed December 14, 2020: original amount $60,347,000 (rounded to thousands), due through 2040, interest rate 1.84%, principal still owed on 2025-12-31",
+     "amount": 47719000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed September 30, 2020: original amount $54,588,000 (rounded to thousands), due through 2042, interest rate 1.35%, principal still owed on 2025-12-31",
+     "amount": 47283000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed January 23, 2020: original amount $10,230,000 (rounded to thousands), due through 2042, interest rate 2.0%, principal still owed on 2025-12-31",
+     "amount": 9279000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed September 30, 2020: original amount $13,350,000 (rounded to thousands), due through 2042, interest rate 1.35%, principal still owed on 2025-12-31",
+     "amount": 12129000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed February 15, 2022: original amount $15,785,000 (rounded to thousands), due through 2044, interest rate 1.11%, principal still owed on 2025-12-31",
+     "amount": 14738000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed February 15, 2022: original amount $14,685,000 (rounded to thousands), due through 2044, interest rate 1.11%, principal still owed on 2025-12-31",
+     "amount": 13903000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    },
+    {
+     "kind": "iepa_loan",
+     "label": "IEPA loan signed September 2, 2022: original amount $58,450,000 (rounded to thousands), due through 2044, interest rate 1.11%, principal still owed on 2025-12-31",
+     "amount": 55825000,
+     "period": "2025-12-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago Sewer Fund Financial Statements 2025, note 4",
+      "url": "https://bondlink-cdn.com/1345/Sewer-Fund-Financial-Statements-2025.vcXRD2uoM.pdf",
+      "page": "41-42"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.sewer-fund.0314-2005-0943"
+   },
+   "expect_amount": 11735386,
+   "mode": "side_only",
+   "note": "The City's bond papers list every state (Illinois EPA) loan with its rate, last year and balance, but no paper prints each loan's payment for 2026, so the line is not split into loans. See the principal line for the loan-by-loan table. Interest rates run from 0% to 2.5%.",
+   "side": [
+    {
+     "kind": "iepa_aggregate",
+     "label": "All Sewer IEPA loans together: principal plus interest due in fiscal 2026 (Wastewater 2024B OS p.24)",
+     "amount": 32533630,
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Wastewater Transmission 2024B Official Statement",
+      "url": "https://bondlink-cdn.com/1345/OS.5X3PYWIM0.pdf",
+      "page": "24"
+     }
+    }
+   ]
+  }
+ ]
+}
