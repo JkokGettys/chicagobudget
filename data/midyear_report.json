@@ -1,0 +1,69 @@
+{
+ "rows_2026file": 229291,
+ "rows_2025file": 421583,
+ "rows_2025file_vouchers_not_in_2026file": 307272,
+ "exact_copy_rows_dropped": 2261,
+ "exact_copy_dollars_dropped": 54452053.5,
+ "rows_after_union_and_clean": 534302,
+ "ytd_items_total_cents": 490021495860,
+ "ytd_items_with_contract_cents": 420109320357,
+ "ytd_items_without_contract_cents": 69912175503,
+ "contracts_in_files_bfy2025": 18424,
+ "contract_classes_all": {
+  "multi": 863,
+  "low_coverage": 193,
+  "single": 15582,
+  "not_coded_to_a_2026_line": 1786
+ },
+ "item_stats": {
+  "no_2025_invoices_in_files": 1840,
+  "single_but_already_placed_by_rules": 327,
+  "not_coded_to_a_2026_line": 476,
+  "multi": 194,
+  "single": 382,
+  "low_coverage": 142,
+  "single_line_already_split_by_other_file": 58,
+  "single_line_but_paid_more_than_2x_the_line": 2
+ },
+ "item_dollars_cents": {
+  "no_2025_invoices_in_files": 125281703242,
+  "single_but_already_placed_by_rules": 22061313898,
+  "not_coded_to_a_2026_line": 98389848980,
+  "multi": 52030665374,
+  "single": 23005580008,
+  "low_coverage": 92262101656,
+  "single_line_already_split_by_other_file": 6198126011,
+  "single_line_but_paid_more_than_2x_the_line": 879981188
+ },
+ "placed_cents": 23005580008,
+ "lines_with_boxes": 102,
+ "contracts_placed": 381,
+ "guard_dropped": [
+  [
+   [
+    "0740",
+    "38",
+    "2140",
+    "0176"
+   ],
+   817908389,
+   380417900
+  ],
+  [
+   [
+    "0300",
+    "38",
+    "2131",
+    "0140"
+   ],
+   62072799,
+   4354800
+  ]
+ ],
+ "conflicts_with_rule_file": {
+  "contracts": 327,
+  "cents": 22061313898
+ },
+ "side_2025_lines": 1127,
+ "side_estimate_lines": 428
+}
