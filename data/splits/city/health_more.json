@@ -1,0 +1,1257 @@
+{
+ "meta": {
+  "author": "gov-estimates agent",
+  "description": "Health lines of the other funds, same method as data/leaves_health.json (EY p.46 enrollment shares x fund positions x equal average).",
+  "built_by": "scripts/govest_build.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0200",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0042"
+   },
+   "expect_amount": 25867089,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 1,011 enrolled employees x $23,158",
+     "amount": 23412378.67,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 1011,
+     "unit_amount": 23158,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 1,011 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $23,158. Employees only, not family members.",
+     "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+    },
+    {
+     "name": "Non-union: 106 enrolled employees x $23,158",
+     "amount": 2454710.33,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 106,
+     "unit_amount": 23158,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 106 budgeted positions in this fund's Non-union group enrolled (EY p.46 shares) x an equal average of $23,158. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+   },
+   "note": "PPO and other medical (self-insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 1,117.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 1404.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 150.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0300",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0042"
+   },
+   "expect_amount": 14604695,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 553 enrolled employees x $23,825",
+     "amount": 13175197.94,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 553,
+     "unit_amount": 23825,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 553 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $23,825. Employees only, not family members.",
+     "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+    },
+    {
+     "name": "Non-union: 60 enrolled employees x $23,825",
+     "amount": 1429497.06,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 60,
+     "unit_amount": 23825,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 60 budgeted positions in this fund's Non-union group enrolled (EY p.46 shares) x an equal average of $23,825. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+   },
+   "note": "PPO and other medical (self-insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 613.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 768.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 85.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0314",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0042"
+   },
+   "expect_amount": 7075581,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 345 enrolled employees x $18,868",
+     "amount": 6509534.52,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 345,
+     "unit_amount": 18868,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 345 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $18,868. Employees only, not family members."
+    },
+    {
+     "name": "Non-union: 30 enrolled employees x $18,868",
+     "amount": 566046.48,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 30,
+     "unit_amount": 18868,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 30 budgeted positions in this fund's Non-union group enrolled (EY p.46 shares) x an equal average of $18,868. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+   },
+   "note": "PPO and other medical (self-insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 375.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 479.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 42.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0346",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0042"
+   },
+   "expect_amount": 11103769,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 570 enrolled employees x $18,414",
+     "amount": 10496100.05,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 570,
+     "unit_amount": 18414,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 570 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $18,414. Employees only, not family members.",
+     "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+    },
+    {
+     "name": "Non-union: 33 enrolled employees x $18,414",
+     "amount": 607668.95,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 33,
+     "unit_amount": 18414,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 33 budgeted positions in this fund's Non-union group enrolled (EY p.46 shares) x an equal average of $18,414. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+   },
+   "note": "PPO and other medical (self-insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 603.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 791.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 46.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0353",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0042"
+   },
+   "expect_amount": 9218139,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 561 enrolled employees x $15,893",
+     "amount": 8916165.48,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 561,
+     "unit_amount": 15893,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 561 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $15,893. Employees only, not family members."
+    },
+    {
+     "name": "Non-union: 19 enrolled employees x $15,893",
+     "amount": 301973.52,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 19,
+     "unit_amount": 15893,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 19 budgeted positions in this fund's Non-union group enrolled (EY p.46 shares) x an equal average of $15,893. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+   },
+   "note": "PPO and other medical (self-insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 580.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 779.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 27.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0355",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0042"
+   },
+   "expect_amount": 1038884,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Non-union: 54 enrolled employees x $17,315",
+     "amount": 934995.6,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 54,
+     "unit_amount": 17315,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 54 budgeted positions in this fund's Non-union group enrolled (EY p.46 shares) x an equal average of $17,315. Employees only, not family members."
+    },
+    {
+     "name": "Other union: 6 enrolled employees x $17,315",
+     "amount": 103888.4,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 6,
+     "unit_amount": 17315,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 6 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $17,315. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+   },
+   "note": "PPO and other medical (self-insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 60.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Non-union",
+       "positions": 76.0
+      },
+      {
+       "group": "Other union",
+       "positions": 9.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0610",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0042"
+   },
+   "expect_amount": 8025098,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 261 enrolled employees x $19,291",
+     "amount": 5034977.35,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 261,
+     "unit_amount": 19291,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 261 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $19,291. Employees only, not family members."
+    },
+    {
+     "name": "Police: 59 enrolled employees x $19,291",
+     "amount": 1138174.96,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 59,
+     "unit_amount": 19291,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 59 budgeted positions in this fund's Police group enrolled (EY p.46 shares) x an equal average of $19,291. Employees only, not family members."
+    },
+    {
+     "name": "Fire: 57 enrolled employees x $19,291",
+     "amount": 1099592.75,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 57,
+     "unit_amount": 19291,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 57 budgeted positions in this fund's Fire group enrolled (EY p.46 shares) x an equal average of $19,291. Employees only, not family members."
+    },
+    {
+     "name": "Non-union: 39 enrolled employees x $19,291",
+     "amount": 752352.94,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 39,
+     "unit_amount": 19291,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 39 budgeted positions in this fund's Non-union group enrolled (EY p.46 shares) x an equal average of $19,291. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+   },
+   "note": "PPO and other medical (self-insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 416.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 363.0
+      },
+      {
+       "group": "Police",
+       "positions": 71.0
+      },
+      {
+       "group": "Fire",
+       "positions": 67.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 55.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0740",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0042"
+   },
+   "expect_amount": 36430192,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 1,299 enrolled employees x $18,778",
+     "amount": 24393205.88,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 1299,
+     "unit_amount": 18778,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 1,299 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $18,778. Employees only, not family members.",
+     "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+    },
+    {
+     "name": "Non-union: 255 enrolled employees x $18,778",
+     "amount": 4788504.62,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 255,
+     "unit_amount": 18778,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 255 budgeted positions in this fund's Non-union group enrolled (EY p.46 shares) x an equal average of $18,778. Employees only, not family members."
+    },
+    {
+     "name": "Fire: 206 enrolled employees x $18,778",
+     "amount": 3868360.59,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 206,
+     "unit_amount": 18778,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 206 budgeted positions in this fund's Fire group enrolled (EY p.46 shares) x an equal average of $18,778. Employees only, not family members."
+    },
+    {
+     "name": "Police: 180 enrolled employees x $18,778",
+     "amount": 3380120.91,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 180,
+     "unit_amount": 18778,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 180 budgeted positions in this fund's Police group enrolled (EY p.46 shares) x an equal average of $18,778. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+   },
+   "note": "PPO and other medical (self-insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 1,940.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 1804.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 359.0
+      },
+      {
+       "group": "Fire",
+       "positions": 242.0
+      },
+      {
+       "group": "Police",
+       "positions": 217.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0B21",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0042"
+   },
+   "expect_amount": 1244426,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Non-union: 66 enrolled employees x $14,304",
+     "amount": 944047.31,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 66,
+     "unit_amount": 14304,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 66 budgeted positions in this fund's Non-union group enrolled (EY p.46 shares) x an equal average of $14,304. Employees only, not family members."
+    },
+    {
+     "name": "Other union: 21 enrolled employees x $14,304",
+     "amount": 300378.69,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 21,
+     "unit_amount": 14304,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 21 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $14,304. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays hospital and doctor bills as they come in, and it does not publish what each worker's claims cost."
+   },
+   "note": "PPO and other medical (self-insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 87.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Non-union",
+       "positions": 93.0
+      },
+      {
+       "group": "Other union",
+       "positions": 29.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0200",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0029"
+   },
+   "expect_amount": 5373331,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 211 enrolled employees x $24,096",
+     "amount": 5084183.14,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 211,
+     "unit_amount": 24096,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 211 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $24,096. Employees only, not family members."
+    },
+    {
+     "name": "Non-union: 12 enrolled employees x $24,096",
+     "amount": 289147.86,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 12,
+     "unit_amount": 24096,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 12 budgeted positions in this fund's Non-union group enrolled (EY p.46 shares) x an equal average of $24,096. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays the health plan one monthly price per worker, and the price list is not published."
+   },
+   "note": "HMO premiums (partially insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 223.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 1404.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 150.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0300",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0029"
+   },
+   "expect_amount": 3033811,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 115 enrolled employees x $24,867",
+     "amount": 2859739.88,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 115,
+     "unit_amount": 24867,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 115 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $24,867. Employees only, not family members."
+    },
+    {
+     "name": "Non-union: 7 enrolled employees x $24,867",
+     "amount": 174071.12,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 7,
+     "unit_amount": 24867,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 7 budgeted positions in this fund's Non-union group enrolled (EY p.46 shares) x an equal average of $24,867. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays the health plan one monthly price per worker, and the price list is not published."
+   },
+   "note": "HMO premiums (partially insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 122.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 768.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 85.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0314",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0029"
+   },
+   "expect_amount": 1469800,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 72 enrolled employees x $19,597",
+     "amount": 1411008.0,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 72,
+     "unit_amount": 19597,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 72 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $19,597. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays the health plan one monthly price per worker, and the price list is not published."
+   },
+   "note": "HMO premiums (partially insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 75.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 479.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 42.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0346",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0029"
+   },
+   "expect_amount": 2306569,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 119 enrolled employees x $18,753",
+     "amount": 2231558.63,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 119,
+     "unit_amount": 18753,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 119 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $18,753. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays the health plan one monthly price per worker, and the price list is not published."
+   },
+   "note": "HMO premiums (partially insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 123.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 791.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 46.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0353",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0029"
+   },
+   "expect_amount": 1914870,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 117 enrolled employees x $16,091",
+     "amount": 1882687.31,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 117,
+     "unit_amount": 16091,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 117 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $16,091. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays the health plan one monthly price per worker, and the price list is not published."
+   },
+   "note": "HMO premiums (partially insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 119.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 779.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 27.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0610",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0029"
+   },
+   "expect_amount": 1667041,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 54 enrolled employees x $22,836",
+     "amount": 1233153.62,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 54,
+     "unit_amount": 22836,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 54 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $22,836. Employees only, not family members."
+    },
+    {
+     "name": "Police: 9 enrolled employees x $22,836",
+     "amount": 205525.6,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 9,
+     "unit_amount": 22836,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 9 budgeted positions in this fund's Police group enrolled (EY p.46 shares) x an equal average of $22,836. Employees only, not family members."
+    },
+    {
+     "name": "Fire: 6 enrolled employees x $22,836",
+     "amount": 137017.07,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 6,
+     "unit_amount": 22836,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 6 budgeted positions in this fund's Fire group enrolled (EY p.46 shares) x an equal average of $22,836. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays the health plan one monthly price per worker, and the price list is not published."
+   },
+   "note": "HMO premiums (partially insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 73.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 363.0
+      },
+      {
+       "group": "Police",
+       "positions": 71.0
+      },
+      {
+       "group": "Fire",
+       "positions": 67.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 55.0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0740",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0029"
+   },
+   "expect_amount": 7567588,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Other union: 271 enrolled employees x $21,746",
+     "amount": 5893150.43,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 271,
+     "unit_amount": 21746,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 271 budgeted positions in this fund's Other union group enrolled (EY p.46 shares) x an equal average of $21,746. Employees only, not family members."
+    },
+    {
+     "name": "Non-union: 29 enrolled employees x $21,746",
+     "amount": 630632.33,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 29,
+     "unit_amount": 21746,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 29 budgeted positions in this fund's Non-union group enrolled (EY p.46 shares) x an equal average of $21,746. Employees only, not family members."
+    },
+    {
+     "name": "Police: 26 enrolled employees x $21,746",
+     "amount": 565394.51,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 26,
+     "unit_amount": 21746,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 26 budgeted positions in this fund's Police group enrolled (EY p.46 shares) x an equal average of $21,746. Employees only, not family members."
+    },
+    {
+     "name": "Fire: 22 enrolled employees x $21,746",
+     "amount": 478410.73,
+     "basis": "proxy",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "count": 22,
+     "unit_amount": 21746,
+     "unit_label": "enrolled employees",
+     "note": "Proxy: 22 budgeted positions in this fund's Fire group enrolled (EY p.46 shares) x an equal average of $21,746. Employees only, not family members."
+    }
+   ],
+   "residual": {
+    "name": "Other / groups with fewer than 5 enrolled workers",
+    "why": "The City pays the health plan one monthly price per worker, and the price list is not published."
+   },
+   "note": "HMO premiums (partially insured plan): estimate, not a rate sheet. Counts come from this fund's budgeted positions grouped as Fire, Police, Other union and Non-union, times EY's plan enrollment shares (citywide), with an equal average per enrollee. Enrolled in this fund: 348.",
+   "side": [
+    {
+     "kind": "health_enrollment_basis",
+     "label": "Budgeted positions in this fund by group (2026 positions dataset), before applying enrollment shares",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "EY, Financial and Strategic Reform Options (City of Chicago, 2026 budget supplement), p.46 demographics and enrollment",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/Financial and Strategic Reform Options - City of Chicago.pdf",
+      "page": 46,
+      "note": "PROXY: budgeted positions of the fund (positions dataset v2t2-vajc) x EY plan enrollment shares x equal average per enrollee"
+     },
+     "items": [
+      {
+       "group": "Other union",
+       "positions": 1804.0
+      },
+      {
+       "group": "Non-union",
+       "positions": 359.0
+      },
+      {
+       "group": "Fire",
+       "positions": 242.0
+      },
+      {
+       "group": "Police",
+       "positions": 217.0
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

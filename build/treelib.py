@@ -205,6 +205,17 @@ def apply_split_file(path, resolve, log=print):
         if sp.get("expect_amount") is not None and cents(sp["expect_amount"]) != line.amount:
             log(f"  skip {tag}: expect {sp['expect_amount']:,} but line is {line.amount/100:,.2f}"); skipped += 1; continue
         mode = sp.get("mode", "budget_split")
+        if mode == "side_only":
+            # facts or rough estimates that should be visible but not shown as boxes
+            if sp.get("note"):
+                line.note = (line.note + " " if line.note else "") + sp["note"]
+            for s in sp.get("side", []) or []:
+                s = dict(s)
+                if "amount" in s and s["amount"] is not None:
+                    s["amount"] = cents(s["amount"])
+                line.side.append(s)
+            applied += 1
+            continue
         src = sp.get("source") or line.source
         pieces = sp["pieces"]
         tot = sum(cents(p["amount"]) for p in pieces)
