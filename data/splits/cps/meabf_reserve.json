@@ -1,0 +1,85 @@
+{
+ "meta": {
+  "author": "coordinator",
+  "description": "CPS MEABF reserve split like the CTPF levy (count x share of benefit dollars)",
+  "built_by": "inline, data/leaves_cps.json"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "match",
+    "contains": [
+     "a58275"
+    ],
+    "amount": 202791171.06
+   },
+   "expect_amount": 202791171.06,
+   "mode": "budget_split",
+   "note": "CPS budgets this reserve in case it must repay the City for non-teacher staff pensions. The budget book says a $175M reimbursement depends on new revenue (budget book p.15).",
+   "pieces": [
+    {
+     "name": "Retired workers paid by the fund (21,874 people)",
+     "amount": 189862036.4,
+     "basis": "proxy",
+     "count": 21874,
+     "unit_amount": 8679.8,
+     "unit_label": "people paid by the fund (share of this reserve)",
+     "source": {
+      "doc": "MEABF actuarial valuation 12/31/2025",
+      "file": "raw/pensions_debt/funds/MEABF_val_2025.txt"
+     },
+     "extra": {
+      "average_annual_benefit": 49104
+     },
+     "note": "This reserve is not a payment to retirees. It is split by each group's share of the fund's yearly benefits (estimate). The average yearly benefit is in extra.",
+     "why": "This is a set-aside, not a payment to people. Each person's share of it is far under $1 million, and the fund does not publish who each retiree is."
+    },
+    {
+     "name": "Surviving spouses (3,714 people)",
+     "amount": 12825390.64,
+     "basis": "proxy",
+     "count": 3714,
+     "unit_amount": 3453.26,
+     "unit_label": "people paid by the fund (share of this reserve)",
+     "source": {
+      "doc": "MEABF actuarial valuation 12/31/2025",
+      "file": "raw/pensions_debt/funds/MEABF_val_2025.txt"
+     },
+     "extra": {
+      "average_annual_benefit": 19536
+     },
+     "note": "This reserve is not a payment to retirees. It is split by each group's share of the fund's yearly benefits (estimate). The average yearly benefit is in extra.",
+     "why": "This is a set-aside, not a payment to people. Each person's share of it is far under $1 million, and the fund does not publish who each retiree is."
+    },
+    {
+     "name": "Reversionary annuitants (119 people)",
+     "amount": 103744.02,
+     "basis": "proxy",
+     "count": 119,
+     "unit_amount": 871.8,
+     "unit_label": "people paid by the fund (share of this reserve)",
+     "source": {
+      "doc": "MEABF actuarial valuation 12/31/2025",
+      "file": "raw/pensions_debt/funds/MEABF_val_2025.txt"
+     },
+     "extra": {
+      "average_annual_benefit": 4932
+     },
+     "note": "This reserve is not a payment to retirees. It is split by each group's share of the fund's yearly benefits (estimate). The average yearly benefit is in extra.",
+     "why": null
+    }
+   ],
+   "side": [
+    {
+     "kind": "fund_facts",
+     "label": "MEABF covers City and CPS non-teacher workers. CPS employees are about 64% of active members (Forecast 2027 p.22).",
+     "basis": "gov_estimate",
+     "period": "12/31/2025",
+     "source": {
+      "doc": "data/pensions_2026.json"
+     }
+    }
+   ]
+  }
+ ]
+}
