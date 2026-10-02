@@ -786,23 +786,22 @@
     {
      "key": "ledger-E0601",
      "name": "CREATE GS11 Columbus Avenue At BRC Grade Separation",
-     "amount": 60426714.67,
+     "amount": 23833832.96,
      "basis": "gov_estimate",
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
-     "note": "Grant project code E0601, fund codes F0L98, F0W23, 4 ledger row(s). Unspent = budget $81,000,000 minus expended to date $20,573,285 (money on order but not yet paid still counts as unspent).",
+     "note": "Grant project code E0601, fund codes F0L98, 2 ledger row(s). Unspent = budget $34,400,000 minus expended to date $10,566,167 (money on order but not yet paid still counts as unspent).",
      "extra": {
       "grant_project_code": "E0601",
       "fund_codes": [
-       "F0L98",
-       "F0W23"
+       "F0L98"
       ],
-      "ledger_budget": 81000000.0,
-      "expended_to_date": 20573285.33,
-      "encumbered": 58744052.11
+      "ledger_budget": 34400000.0,
+      "expended_to_date": 10566167.04,
+      "encumbered": 22494764.4
      },
      "why": "This is the part of one named road or bridge job's state grant that the City has been promised but has not spent yet."
     },
@@ -814,7 +813,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code E0600, fund codes F0L98, 1 ledger row(s). Unspent = budget $19,712,220 minus expended to date $410 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -836,7 +835,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code S3374, fund codes F0L98, 3 ledger row(s). Unspent = budget $10,000,000 minus expended to date $1,165,623 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -858,7 +857,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code S9340, fund codes F0L98, 3 ledger row(s). Unspent = budget $10,000,000 minus expended to date $4,748,614 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -880,7 +879,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code E5496, fund codes F0L98, 1 ledger row(s). Unspent = budget $5,970,000 minus expended to date $1,111,075 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -902,7 +901,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code S0445, fund codes F0L98, 3 ledger row(s). Unspent = budget $10,000,000 minus expended to date $6,166,427 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -924,7 +923,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B7203, fund codes F0L98, 2 ledger row(s). Unspent = budget $130,000,000 minus expended to date $126,269,120 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -946,7 +945,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code S1427, fund codes F0L98, 2 ledger row(s). Unspent = budget $10,000,000 minus expended to date $7,740,352 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -968,7 +967,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code E6147, fund codes F0L98, 1 ledger row(s). Unspent = budget $5,724,830 minus expended to date $3,516,465 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -990,7 +989,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B3695, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,995,000 minus expended to date $8,362 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1012,7 +1011,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code C3001, fund codes F0L98, 1 ledger row(s). Unspent = budget $3,000,000 minus expended to date $1,706,058 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1034,7 +1033,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code E4702, fund codes F0L98, 1 ledger row(s). Unspent = budget $4,800,000 minus expended to date $3,576,219 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1056,7 +1055,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B6193, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,373,213 minus expended to date $1,161,293 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1078,7 +1077,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code E8619, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,000,000 minus expended to date $30,736 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1100,7 +1099,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B2747, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,000,000 minus expended to date $110,294 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1122,7 +1121,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B6190, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,267,240 minus expended to date $1,784,074 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1144,7 +1143,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code E9293, fund codes F0L98, 1 ledger row(s). Unspent = budget $500,000 minus expended to date $64,145 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1166,7 +1165,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B6192, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,688,397 minus expended to date $1,255,114 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1188,7 +1187,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B8305, fund codes F0L98, 1 ledger row(s). Unspent = budget $400,000 minus expended to date $15,912 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1210,7 +1209,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B6111, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,758,000 minus expended to date $1,409,255 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1232,7 +1231,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B0447, fund codes F0L98, 1 ledger row(s). Unspent = budget $8,500,000 minus expended to date $8,181,346 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1254,7 +1253,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B6191, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,671,150 minus expended to date $1,363,053 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1276,7 +1275,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B7175, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,090,400 minus expended to date $1,805,242 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1298,7 +1297,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B7180, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,103,800 minus expended to date $1,835,535 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1320,7 +1319,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B7179, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,393,200 minus expended to date $2,126,352 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1342,7 +1341,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B7173, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,840,000 minus expended to date $1,595,808 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1364,7 +1363,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code E2514, fund codes F0L98, 1 ledger row(s). Unspent = budget $5,848,960 minus expended to date $5,606,270 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1386,7 +1385,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B7177, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,113,000 minus expended to date $1,899,316 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1408,7 +1407,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B9404, fund codes F0L98, 1 ledger row(s). Unspent = budget $575,000 minus expended to date $369,291 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1430,7 +1429,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B7174, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,728,200 minus expended to date $1,578,583 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1452,7 +1451,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B7176, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,041,400 minus expended to date $1,924,187 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1474,7 +1473,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B8345, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,350,000 minus expended to date $1,252,519 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1496,7 +1495,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code E2018, fund codes F0L98, 1 ledger row(s). Unspent = budget $3,720,000 minus expended to date $3,660,391 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1518,7 +1517,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B6206, fund codes F0L98, 1 ledger row(s). Unspent = budget $200,000 minus expended to date $150,294 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1540,7 +1539,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code C7100, fund codes F0L98, 1 ledger row(s). Unspent = budget $624,000 minus expended to date $615,682 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1562,7 +1561,7 @@
      "source": {
       "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
-      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line."
      },
      "note": "Grant project code B8285, fund codes F0L98, 1 ledger row(s). Unspent = budget $268,000 minus expended to date $261,243 (money on order but not yet paid still counts as unspent).",
      "extra": {
@@ -1579,9 +1578,9 @@
    ],
    "residual": {
     "name": "State grant money with no project in the City's grant ledger",
-    "why": "The ledger lists named jobs for most of this money, and the rest has not been matched to a job in any public list."
+    "why": "The ledger lists named jobs for most of this money, and the rest has not been matched to a job in any public list. Part of it may be state money for jobs that are not yet in the ledger."
    },
-   "note": "Named jobs come from the City's Mid-Year Grants ledger (state funds F0L98 and F0W23), amount = budget minus spent so far. The ledger was cut 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve."
+   "note": "Named jobs come from the City's Mid-Year Grants ledger (state fund F0L98 IDOT Transportation Funds), amount = budget minus spent so far. The ledger was cut 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve."
   },
   {
    "target": {
@@ -2778,7 +2777,7 @@
       "doc": "City Mid-Year Grants 925 ledger, extract 2025-06-01, project D1209 State/Lake Loop Elevated",
       "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
      },
-     "note": "Unspent = budget $102,140,573 minus expended to date $0. Ledger record(s): F0W16-D1209-P842115-2024.",
+     "note": "Unspent = budget $102,140,573 minus expended to date $0. Ledger record(s): F0W16-D1209-P842115-2024. This record is only in the older 2025-06-01 extract (nothing expended then, fully on order). It equals CDOT's STP-L programming for State/Lake in FFY2024, $77,140,573 plus $25,000,000 redistribution, to the dollar. It is not in the 2026-05-31 extract, so it may have been re-coded into the newer records or paid since. Treat as an upper bound.",
      "extra": {
       "ledger_records": [
        "F0W16-D1209-P842115-2024"
@@ -2991,6 +2990,3211 @@
      }
     }
    ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "21",
+    "authority": "2833",
+    "account": "909A"
+   },
+   "expect_amount": 48488000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-25OE",
+     "name": "Home Investment Partnership Fy25",
+     "amount": 15732594.31,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - CPD - Home Investment Partnerships Program (14.239)."
+     },
+     "note": "Grant project code 25OE, fund codes FG824, 1 ledger row(s). Unspent = budget $17,660,002 minus expended to date $1,927,408 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "25OE",
+      "fund_codes": [
+       "FG824"
+      ],
+      "ledger_budget": 17660002.0,
+      "expended_to_date": 1927407.69,
+      "encumbered": 0.0
+     },
+     "why": "This is the part of one named grant project that the City has been promised but has not spent yet."
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 14.239), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Home Investment Partnership - Arp (American Rescue Plan) (project ARP03, fund FGA03, ledger record FGA03-ARP03-P212833-2021): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 26604360.24,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Home Program Income (project 21NF, fund F0831, ledger record F0831-21NF-P212005-2021): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 1396520.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "2022 Home Investment Partnership (project 22LW, fund FG209, ledger record FG209-22LW-P212010-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 204479.03,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "2022 Home Investment Partnership (project 22LW, fund FG209, ledger record FG209-22LW-P212833-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 30440.28,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Home Investment Partnership Fy 2023 (project 23SC, fund FG377, ledger record FG377-23SC-P212833-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 145204.89,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Home Investment Partnership Program Fy24 (project 24YQ, fund FG544, ledger record FG544-24YQ-P212833-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 10283846.41,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925C",
+    "dept": "50",
+    "authority": "280E",
+    "account": "909A"
+   },
+   "expect_amount": 39285159.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $39,463,943, which is more than this $39,285,159 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Home Investment Partnership - Arp (American Rescue Plan) (project ARP03, fund FGA03, ledger record FGA03-ARP03-P502005-2021): unspent budget",
+     "amount": 39463942.95,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925C",
+    "dept": "21",
+    "authority": "2833",
+    "account": "909A"
+   },
+   "expect_amount": 29015862.0,
+   "mode": "side_only",
+   "note": "Ledger projects for this grant could sit on more than one reserve line, so they are shown as facts and not as boxes.",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Home Investment Partnership - Arp (American Rescue Plan) (project ARP03, fund FGA03, ledger record FGA03-ARP03-P212833-2021): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 26604360.24,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Home Program Income (project 21NF, fund F0831, ledger record F0831-21NF-P212005-2021): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 1396520.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "2022 Home Investment Partnership (project 22LW, fund FG209, ledger record FG209-22LW-P212010-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 204479.03,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "2022 Home Investment Partnership (project 22LW, fund FG209, ledger record FG209-22LW-P212833-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 30440.28,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Home Investment Partnership Fy 2023 (project 23SC, fund FG377, ledger record FG377-23SC-P212833-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 145204.89,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Home Investment Partnership Program Fy24 (project 24YQ, fund FG544, ledger record FG544-24YQ-P212833-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 10283846.41,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925L",
+    "dept": "84",
+    "authority": "281T",
+    "account": "909A"
+   },
+   "expect_amount": 23710000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-E0601",
+     "name": "CREATE GS11 Columbus Avenue At BRC Grade Separation",
+     "amount": 4000000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code E0601, fund codes FG413, 1 ledger row(s). Unspent = budget $4,000,000 minus expended to date $0 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E0601",
+      "fund_codes": [
+       "FG413"
+      ],
+      "ledger_budget": 4000000.0,
+      "expended_to_date": 0.0,
+      "encumbered": 4000000.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E0600",
+     "name": "Archer Ave. At Kenton Ave.- CREATE GS09",
+     "amount": 3748215.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code E0600, fund codes FG413, 1 ledger row(s). Unspent = budget $3,748,215 minus expended to date $0 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E0600",
+      "fund_codes": [
+       "FG413"
+      ],
+      "ledger_budget": 3748215.0,
+      "expended_to_date": 0.0,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B1857",
+     "name": "Various Ward Level Neighborhood Improvements \u00bf 2021 (2020 Iic) Program",
+     "amount": 3031761.52,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B1857, fund codes F0W03, 4 ledger row(s). Unspent = budget $4,265,313 minus expended to date $1,233,551 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B1857",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 4265313.0,
+      "expended_to_date": 1233551.48,
+      "encumbered": 148114.55
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-S4166",
+     "name": "119th St From Campbell Ave West To Csx Railroad",
+     "amount": 1455000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code S4166, fund codes F0W03, 1 ledger row(s). Unspent = budget $1,455,000 minus expended to date $0 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "S4166",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 1455000.0,
+      "expended_to_date": 0.0,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B1760",
+     "name": "138th St. From Indiana Ave To Leyden Ave, Lincoln Ave And Indiana Ave.",
+     "amount": 844741.41,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B1760, fund codes F0W03, 1 ledger row(s). Unspent = budget $900,000 minus expended to date $55,259 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B1760",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 900000.0,
+      "expended_to_date": 55258.59,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B1705",
+     "name": "Ashland Avenue From 74th To 89th",
+     "amount": 654997.96,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B1705, fund codes F0W03, 1 ledger row(s). Unspent = budget $4,500,000 minus expended to date $3,845,002 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B1705",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 4500000.0,
+      "expended_to_date": 3845002.04,
+      "encumbered": 104913.59
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B1710",
+     "name": "Arterial Street Resurfacing Western Ave. From 26th To 34th",
+     "amount": 600471.63,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B1710, fund codes F0W03, 1 ledger row(s). Unspent = budget $2,026,432 minus expended to date $1,425,960 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B1710",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 2026431.72,
+      "expended_to_date": 1425960.09,
+      "encumbered": 534691.77
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0392",
+     "name": "Ashland: Archer To 37th",
+     "amount": 569517.31,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B0392, fund codes F0W03, 1 ledger row(s). Unspent = budget $1,018,629 minus expended to date $449,112 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0392",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 1018629.0,
+      "expended_to_date": 449111.69,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E0602",
+     "name": "95th St. At Eggleston Uprr Grade Separation \u00bf CREATE Gs21A",
+     "amount": 500000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code E0602, fund codes F0W03, 1 ledger row(s). Unspent = budget $500,000 minus expended to date $0 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E0602",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 500000.0,
+      "expended_to_date": 0.0,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0451",
+     "name": "Cpaital Work In The Jeffrey Manor Neighborhood",
+     "amount": 465261.02,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B0451, fund codes F0W03, 1 ledger row(s). Unspent = budget $2,800,000 minus expended to date $2,334,739 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0451",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 2800000.0,
+      "expended_to_date": 2334738.98,
+      "encumbered": 21205.19
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0391",
+     "name": "Western: Monroe To Washburn",
+     "amount": 352941.59,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B0391, fund codes F0W03, 1 ledger row(s). Unspent = budget $1,638,431 minus expended to date $1,285,489 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0391",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 1638431.0,
+      "expended_to_date": 1285489.41,
+      "encumbered": 1955.59
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B3655",
+     "name": "Arterial Street Resurfacing - Ozanam From Devon To Northwest Highway",
+     "amount": 349374.71,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B3655, fund codes F0W03, 1 ledger row(s). Unspent = budget $1,500,000 minus expended to date $1,150,625 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B3655",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 1500000.0,
+      "expended_to_date": 1150625.29,
+      "encumbered": 201600.6
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0394",
+     "name": "Ashland: 95th To 89th",
+     "amount": 339600.84,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B0394, fund codes F0W03, 1 ledger row(s). Unspent = budget $1,307,840 minus expended to date $968,239 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0394",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 1307840.0,
+      "expended_to_date": 968239.16,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B1709",
+     "name": "Arterial Street Resurfacing: Lawrence Ave From Austin Ave. To Central Ave.",
+     "amount": 307461.28,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B1709, fund codes F0W03, 1 ledger row(s). Unspent = budget $900,000 minus expended to date $592,539 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B1709",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 900000.0,
+      "expended_to_date": 592538.72,
+      "encumbered": 3184.44
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B3653",
+     "name": "111th St. From Halsted St. To Stewart Ave.",
+     "amount": 239584.87,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B3653, fund codes F0W03, 1 ledger row(s). Unspent = budget $1,013,216 minus expended to date $773,631 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B3653",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 1013215.86,
+      "expended_to_date": 773630.99,
+      "encumbered": 188822.66
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B1762",
+     "name": "34th Ward Green Alley (Block Of 103rd St, 103rd Pl, Aberdee, And Racine)",
+     "amount": 239572.76,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B1762, fund codes F0W03, 1 ledger row(s). Unspent = budget $375,000 minus expended to date $135,427 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B1762",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 375000.0,
+      "expended_to_date": 135427.24,
+      "encumbered": 35683.72
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B8354",
+     "name": "Complex Intersections Framework Plan",
+     "amount": 220253.82,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B8354, fund codes F0W03, 1 ledger row(s). Unspent = budget $400,000 minus expended to date $179,746 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B8354",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 400000.0,
+      "expended_to_date": 179746.18,
+      "encumbered": 220253.82
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B4297",
+     "name": "Ashland And Berwyn Signal",
+     "amount": 176210.27,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B4297, fund codes F0W03, 1 ledger row(s). Unspent = budget $428,000 minus expended to date $251,790 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B4297",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 428000.0,
+      "expended_to_date": 251789.73,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0390",
+     "name": "Western: Howard To Touhy",
+     "amount": 144486.98,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B0390, fund codes F0W03, 1 ledger row(s). Unspent = budget $735,164 minus expended to date $590,677 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0390",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 735164.0,
+      "expended_to_date": 590677.02,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0413",
+     "name": "Doty: Beaubien Woods To Bishop Ford",
+     "amount": 90100.46,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B0413, fund codes F0W03, 1 ledger row(s). Unspent = budget $590,000 minus expended to date $499,900 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0413",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 590000.0,
+      "expended_to_date": 499899.54,
+      "encumbered": 19.2
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B1761",
+     "name": "Reconstruction Of Vaulted Sidewalks Around City Hall/Cook County Building",
+     "amount": 86325.78,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B1761, fund codes F0W03, 1 ledger row(s). Unspent = budget $250,000 minus expended to date $163,674 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B1761",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 250000.0,
+      "expended_to_date": 163674.22,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B3654",
+     "name": "Pratt From Western To Sheridan",
+     "amount": 59081.23,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B3654, fund codes F0W03, 1 ledger row(s). Unspent = budget $3,000,000 minus expended to date $2,940,919 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B3654",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 3000000.0,
+      "expended_to_date": 2940918.77,
+      "encumbered": 59081.23
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0389",
+     "name": "Touhy: Kedzie To California",
+     "amount": 51771.23,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B0389, fund codes F0W03, 1 ledger row(s). Unspent = budget $510,065 minus expended to date $458,294 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0389",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 510065.0,
+      "expended_to_date": 458293.77,
+      "encumbered": 10.97
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0444",
+     "name": "Temporary Bus Lanes - Chicago (Laramie To Ashland) And 79th (Cicero To Western)",
+     "amount": 46980.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B0444, fund codes F0W01, 1 ledger row(s). Unspent = budget $177,735 minus expended to date $130,755 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0444",
+      "fund_codes": [
+       "F0W01"
+      ],
+      "ledger_budget": 177735.0,
+      "expended_to_date": 130755.0,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B1707",
+     "name": "Arterial Street Resurfacing Damen Ave And Lawrence Ave",
+     "amount": 44752.61,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B1707, fund codes F0W03, 1 ledger row(s). Unspent = budget $720,000 minus expended to date $675,247 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B1707",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 720000.0,
+      "expended_to_date": 675247.39,
+      "encumbered": 12752.61
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B3695",
+     "name": "Chicago Centralized Transit Signal Priority Project",
+     "amount": 41237.53,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B3695, fund codes F0W01, 1 ledger row(s). Unspent = budget $49,599 minus expended to date $8,362 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B3695",
+      "fund_codes": [
+       "F0W01"
+      ],
+      "ledger_budget": 49599.2,
+      "expended_to_date": 8361.67,
+      "encumbered": 16409.55
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B2741",
+     "name": "Grant Administration Support Services",
+     "amount": 29148.87,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B2741, fund codes F0M09, 1 ledger row(s). Unspent = budget $750,000 minus expended to date $720,851 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B2741",
+      "fund_codes": [
+       "F0M09"
+      ],
+      "ledger_budget": 750000.0,
+      "expended_to_date": 720851.13,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0317",
+     "name": "Pedestrian Countdown Signals (Various Locations) - Construction",
+     "amount": 17688.37,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: SISTER AGENCY / PVT - Infrastructure Planning and Construction."
+     },
+     "note": "Grant project code B0317, fund codes F0W03, 1 ledger row(s). Unspent = budget $100,000 minus expended to date $82,312 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0317",
+      "fund_codes": [
+       "F0W03"
+      ],
+      "ledger_budget": 100000.0,
+      "expended_to_date": 82311.63,
+      "encumbered": 0.0
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant fund codes), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925C",
+    "dept": "41",
+    "authority": "282N",
+    "account": "909A"
+   },
+   "expect_amount": 22186377.0,
+   "mode": "side_only",
+   "note": "Ledger projects for this grant could sit on more than one reserve line, so they are shown as facts and not as boxes.",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening Us Public Health (A2) (project 22PB, fund FG641, ledger record FG641-22PB-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 925451.14,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening Us Public Health (A3) (project 22GM, fund FG640, ledger record FG640-22GM-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 432218.14,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening U.S. Public Health Workers (project 22PB, fund FG647, ledger record FG647-22PB-P411005-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 2809682.42,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening U.S. Public Health Infrastructure, Workforce And Data Systems (A1C6) (project ARP33, fund FGA33, ledger record FGA33-ARP33-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 22059266.1,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening Us Public Health (Dmic6) Arp Grant (project ARP33, fund FGA38, ledger record FGA38-ARP33-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 3176996.74,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "84",
+    "authority": "280Y",
+    "account": "909A"
+   },
+   "expect_amount": 19138000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-E0600",
+     "name": "Archer Ave. At Kenton Ave.- CREATE GS09",
+     "amount": 19136140.47,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: DOT - OST - Nationally Significant Freight and Highway Projects (INFRA) (20.934)."
+     },
+     "note": "Grant project code E0600, fund codes FG378, 1 ledger row(s). Unspent = budget $19,137,780 minus expended to date $1,640 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E0600",
+      "fund_codes": [
+       "FG378"
+      ],
+      "ledger_budget": 19137780.0,
+      "expended_to_date": 1639.53,
+      "encumbered": 998360.47
+     },
+     "why": "This is the part of one named grant project that the City has been promised but has not spent yet."
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 20.934), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "41",
+    "authority": "2932",
+    "account": "909A"
+   },
+   "expect_amount": 18845000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-25NO",
+     "name": "Hopwa 2025-2027",
+     "amount": 5046907.2,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - CPD - Housing Opportunities for People with AIDS (HOPWA) (14.241)."
+     },
+     "note": "Grant project code 25NO, fund codes FG809, 1 ledger row(s). Unspent = budget $12,775,677 minus expended to date $7,728,770 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "25NO",
+      "fund_codes": [
+       "FG809"
+      ],
+      "ledger_budget": 12775677.0,
+      "expended_to_date": 7728769.8,
+      "encumbered": 3756799.87
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-24YX",
+     "name": "Hopwa 2024-2026",
+     "amount": 2838190.45,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - CPD - Housing Opportunities for People with AIDS (HOPWA) (14.241)."
+     },
+     "note": "Grant project code 24YX, fund codes FG559, 1 ledger row(s). Unspent = budget $12,758,642 minus expended to date $9,920,452 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "24YX",
+      "fund_codes": [
+       "FG559"
+      ],
+      "ledger_budget": 12758642.0,
+      "expended_to_date": 9920451.55,
+      "encumbered": 744166.33
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-25LL",
+     "name": "Hopwa - Housing & Health Study",
+     "amount": 884184.13,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - CPD - Housing Opportunities for People with AIDS (HOPWA) (14.241)."
+     },
+     "note": "Grant project code 25LL, fund codes FG735, 1 ledger row(s). Unspent = budget $1,568,038 minus expended to date $683,854 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "25LL",
+      "fund_codes": [
+       "FG735"
+      ],
+      "ledger_budget": 1568038.0,
+      "expended_to_date": 683853.87,
+      "encumbered": 341184.11
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-23SB",
+     "name": "Hopwa 2023 - 2025",
+     "amount": 338236.52,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - CPD - Housing Opportunities for People with AIDS (HOPWA) (14.241)."
+     },
+     "note": "Grant project code 23SB, fund codes FG375, 1 ledger row(s). Unspent = budget $12,530,525 minus expended to date $12,192,288 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "23SB",
+      "fund_codes": [
+       "FG375"
+      ],
+      "ledger_budget": 12530525.0,
+      "expended_to_date": 12192288.48,
+      "encumbered": 184856.62
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 14.241), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925L",
+    "dept": "57",
+    "authority": "282E",
+    "account": "909A"
+   },
+   "expect_amount": 15596588.0,
+   "mode": "side_only",
+   "note": "Ledger projects for this grant could sit on more than one reserve line, so they are shown as facts and not as boxes.",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Cops Hiring Program Fy 2023 Ed (project 23SW, fund FG396, ledger record FG396-23SW-P571005-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 6250000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Cops Hiring Program Fy 2023 Match (project 23SW, fund FG397, ledger record FG397-23SW-P571005-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 5903000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925C",
+    "dept": "41",
+    "authority": "2710",
+    "account": "909A"
+   },
+   "expect_amount": 11603724.0,
+   "mode": "side_only",
+   "note": "Ledger projects for this grant could sit on more than one reserve line, so they are shown as facts and not as boxes.",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Epidemiology And Laboratory Capacity (Mpxco) (project 24OB, fund FG612, ledger record FG612-24OB-P411005-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 543851.72,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Building Epidemiology And Health It Capacity (Nwssc6) (project ARP34, fund FGA34, ledger record FGA34-ARP34-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 39794.71,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Building Epidemiology And Health It Capacity (Shrpc6) (project ARP20, fund FGA20, ledger record FGA20-ARP20-P411005-2021): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 452315.31,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Epidemiology And Laboratory Capacity - Core (project 24FR, fund FG612, ledger record FG612-24FR-P411005-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 593280.5,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Epidemiology And Laboratory Capacity (Etorc3) (project CARES24DT, fund FG612, ledger record FG612-CARES24DT-P411005-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 163912.42,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Epidemiology And Laboratory Capacity (H5N1C3) (project CARES2XDS, fund FG612, ledger record FG612-CARES2XDS-P411005-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 98139.57,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Epidemiology And Laboratory Capacity (Jcvdc5) (project COVID24CX, fund FG612, ledger record FG612-COVID24CX-P411005-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 402969.59,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Building Epidemiology And Health It Capacity (Asa2C6) (project ARP40, fund FGA40, ledger record FGA40-ARP40-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 3746822.1,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Building Epidemiology And Health It Capacity (Dmd2C6) (project ARP41, fund FGA41, ledger record FGA41-ARP41-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 1991016.12,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Building Epidemiology And Health It Capacity (Shp2C6) (project ARP43, fund FGA43, ledger record FGA43-ARP43-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 1871999.11,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "21",
+    "authority": "2859",
+    "account": "909A"
+   },
+   "expect_amount": 7817000.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $9,816,279, which is more than this $7,817,000 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Economic Development Initiative, Community Project Funding, And Miscellaneous Grants (project 23WX, fund FG496, ledger record FG496-23WX-P212840-2023): unspent budget",
+     "amount": 2000000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "North Town Village Affordable Housing Rehab (project 24QU, fund FG900, ledger record FG900-24QU-P212010-2024): unspent budget",
+     "amount": 850000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Chicago Neighborhood Rebuild-South Chicago (project 24QV, fund FG901, ledger record FG901-24QV-P212010-2024): unspent budget",
+     "amount": 500000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Lacasa Northe Ncs (project 24QW, fund FG902, ledger record FG902-24QW-P212010-2024): unspent budget",
+     "amount": 2500000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Unity Ncs ( Economic Development ) (project 24QX, fund FG903, ledger record FG903-24QX-P212010-2024): unspent budget",
+     "amount": 2500000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Brainerd Senior Apartments (project 24QY, fund FG904, ledger record FG904-24QY-P212010-2024): unspent budget",
+     "amount": 1466279.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "38",
+    "authority": "280B",
+    "account": "909A"
+   },
+   "expect_amount": 7317000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-25PU",
+     "name": "Clean Heavy Duty Vehicle Program",
+     "amount": 7316162.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: EPA - Clean Heavy-Duty Vehicles (CHDV) Program (66.049)."
+     },
+     "note": "Grant project code 25PU, fund codes FG868, 1 ledger row(s). Unspent = budget $7,316,162 minus expended to date $0 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "25PU",
+      "fund_codes": [
+       "FG868"
+      ],
+      "ledger_budget": 7316162.0,
+      "expended_to_date": 0.0,
+      "encumbered": 0.0
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 66.049), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925S",
+    "dept": "84",
+    "authority": "280M",
+    "account": "909A"
+   },
+   "expect_amount": 7157000.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $10,084,232, which is more than this $7,157,000 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Various Roadway Improvements In The 6th Ward-DCEO Program (project B5276, fund F0W24, ledger record F0W24-B5276-P842125-2025): unspent budget",
+     "amount": 131000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Various Roadway Improvements In The 6th Ward-DCEO Program (project B5276, fund F0W24, ledger record F0W24-B5276-P842155-2025): unspent budget",
+     "amount": 722843.2,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "'8th Ward Residential Lighting Improvements (project B5277, fund F0W24, ledger record F0W24-B5277-P842125-2025): unspent budget",
+     "amount": 1000000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Alley Repairs In The 45th Ward (project B3638, fund F0W24, ledger record F0W24-B3638-P842125-2023): unspent budget",
+     "amount": 71000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Various Roadway Improvements In The 8th Ward-DCEO Program (project B4342, fund F0W24, ledger record F0W24-B4342-P842125-2024): unspent budget",
+     "amount": 3000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Various Roadway Improvements In The 8th Ward-DCEO Program (project B4342, fund F0W24, ledger record F0W24-B4342-P842155-2024): unspent budget",
+     "amount": 22000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Various Roadway Improvements In The 17th Ward-DCEO Program (project B4344, fund F0W24, ledger record F0W24-B4344-P842125-2024): unspent budget",
+     "amount": 2100000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Various Roadway Improvements In The 17th Ward-DCEO Program (project B4344, fund F0W24, ledger record F0W24-B4344-P842155-2024): unspent budget",
+     "amount": 1702315.26,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "7th Ward Jeffrey Manor Community Residential Light Fixtures (project B3646, fund F0W24, ledger record F0W24-B3646-P842125-2023): unspent budget",
+     "amount": 1899002.24,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "38th Ward Lighting Harlem-Roscoe To Addison (project B3692, fund F0W24, ledger record F0W24-B3692-P842125-2023): unspent budget",
+     "amount": 88478.25,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "38th Ward Lighting Harlem-Roscoe To Addison (project B3692, fund F0W24, ledger record F0W24-B3692-P842150-2023): unspent budget",
+     "amount": 205080.19,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Roadway Improvements In The 17th Ward (project B3595, fund F0W24, ledger record F0W24-B3595-P842125-2022): unspent budget",
+     "amount": 65000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Capital Improvements In The 35th House District (project B3596, fund F0W24, ledger record F0W24-B3596-P842125-2022): unspent budget",
+     "amount": 60000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "18th Ward ADA Compliant Sidewalks - DCEO (project B3597, fund F0W24, ledger record F0W24-B3597-P842125-2022): unspent budget",
+     "amount": 75000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "18th Ward ADA Compliant Sidewalks - DCEO (project B3597, fund F0W24, ledger record F0W24-B3597-P842155-2022): unspent budget",
+     "amount": 168532.92,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Capital Improvements In The 19th Ward (project B3605, fund F0W24, ledger record F0W24-B3605-P842125-2022): unspent budget",
+     "amount": 26840.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Montrose And Paulina Pedestrian Infrastructure (project D4123, fund F0W24, ledger record F0W24-D4123-P842145-2022): unspent budget",
+     "amount": 45834.75,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Catalpa Plaza, Clark To Ashland / Andesonville Ped Plaza (project S1409, fund F0W24, ledger record F0W24-S1409-P842145-2022): unspent budget",
+     "amount": 500000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Reconstruction Of Alley At 5801 N. Lansing (DCEO) (project B3604, fund F0W24, ledger record F0W24-B3604-P842125-2022): unspent budget",
+     "amount": 100000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "George Armstrong Elementary School Alley Improvements 50th Ward (project B4252, fund F0W24, ledger record F0W24-B4252-P842125-2024): unspent budget",
+     "amount": 98305.08,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Halsted Community Identifier Project (Halsted Pylon Restoration) (project S4174, fund F0W24, ledger record F0W24-S4174-P842125-2024): unspent budget",
+     "amount": 17800.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Halsted Community Identifier Project (Halsted Pylon Restoration) (project S4174, fund F0W24, ledger record F0W24-S4174-P842145-2024): unspent budget",
+     "amount": 982200.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "57",
+    "authority": "282E",
+    "account": "909A"
+   },
+   "expect_amount": 6528294.0,
+   "mode": "side_only",
+   "note": "Ledger projects for this grant could sit on more than one reserve line, so they are shown as facts and not as boxes.",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Cops Hiring Program Fy 2023 Ed (project 23SW, fund FG396, ledger record FG396-23SW-P571005-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 6250000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Cops Hiring Program Fy 2023 Match (project 23SW, fund FG397, ledger record FG397-23SW-P571005-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 5903000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925C",
+    "dept": "88",
+    "authority": "2825",
+    "account": "909A"
+   },
+   "expect_amount": 6481000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-CARES20CD",
+     "name": "Community Development Block Grant Coronavirus (Cdbg-Cv)",
+     "amount": 2185208.39,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - CPD - CDBG - CARES Act - Lead Service Line Replacement (14.218)."
+     },
+     "note": "Grant project code CARES20CD, fund codes F005C, 1 ledger row(s). Unspent = budget $6,043,550 minus expended to date $3,858,342 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "CARES20CD",
+      "fund_codes": [
+       "F005C"
+      ],
+      "ledger_budget": 6043550.0,
+      "expended_to_date": 3858341.61,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-CARES20DB",
+     "name": "Community Development Block Grant Coronavirus (Cdbg-Cv)",
+     "amount": 436753.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - CPD - CDBG - CARES Act - Lead Service Line Replacement (14.218)."
+     },
+     "note": "Grant project code CARES20DB, fund codes F033C, 1 ledger row(s). Unspent = budget $436,753 minus expended to date $0 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "CARES20DB",
+      "fund_codes": [
+       "F033C"
+      ],
+      "ledger_budget": 436753.0,
+      "expended_to_date": 0.0,
+      "encumbered": 0.0
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 14.218), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "84",
+    "authority": "281V",
+    "account": "909A"
+   },
+   "expect_amount": 5985000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-B3695",
+     "name": "Chicago Centralized Transit Signal Priority Project",
+     "amount": 5959915.01,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: DOT - FHWA - Highway Research and Development Program (20.200)."
+     },
+     "note": "Grant project code B3695, fund codes F0L98, FG686, 2 ledger row(s). Unspent = budget $5,985,000 minus expended to date $25,085 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B3695",
+      "fund_codes": [
+       "F0L98",
+       "FG686"
+      ],
+      "ledger_budget": 5985000.01,
+      "expended_to_date": 25085.0,
+      "encumbered": 5885431.07
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 20.200), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "41",
+    "authority": "2820",
+    "account": "909A"
+   },
+   "expect_amount": 5693360.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-25PQ",
+     "name": "Immunization And Vaccines For Children (Core)",
+     "amount": 707276.42,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HHS - CDC - Immunization (93.268)."
+     },
+     "note": "Grant project code 25PQ, fund codes FG805, 1 ledger row(s). Unspent = budget $3,233,037 minus expended to date $2,525,761 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "25PQ",
+      "fund_codes": [
+       "FG805"
+      ],
+      "ledger_budget": 3233037.0,
+      "expended_to_date": 2525760.58,
+      "encumbered": 153649.76
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-25NM",
+     "name": "Immunization And Vaccines For Children (Vfc)",
+     "amount": 283722.51,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HHS - CDC - Immunization (93.268)."
+     },
+     "note": "Grant project code 25NM, fund codes FG805, 1 ledger row(s). Unspent = budget $1,429,925 minus expended to date $1,146,202 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "25NM",
+      "fund_codes": [
+       "FG805"
+      ],
+      "ledger_budget": 1429925.0,
+      "expended_to_date": 1146202.49,
+      "encumbered": 12412.38
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-25PO",
+     "name": "Immunization And Vaccines For Children (Panflu)",
+     "amount": 74466.85,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HHS - CDC - Immunization (93.268)."
+     },
+     "note": "Grant project code 25PO, fund codes FG805, 1 ledger row(s). Unspent = budget $225,885 minus expended to date $151,418 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "25PO",
+      "fund_codes": [
+       "FG805"
+      ],
+      "ledger_budget": 225885.0,
+      "expended_to_date": 151418.15,
+      "encumbered": 9169.0
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 93.268), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "50",
+    "authority": "2944",
+    "account": "909A"
+   },
+   "expect_amount": 4687000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-25LC",
+     "name": "Emergency Solutions 25/26",
+     "amount": 973199.21,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - CPD - Emergency Solutions Grant Program (14.231)."
+     },
+     "note": "Grant project code 25LC, fund codes FG727, 1 ledger row(s). Unspent = budget $6,647,177 minus expended to date $5,673,978 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "25LC",
+      "fund_codes": [
+       "FG727"
+      ],
+      "ledger_budget": 6647177.0,
+      "expended_to_date": 5673977.79,
+      "encumbered": 687483.63
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-24ZJ",
+     "name": "Emergency Solution Fy24",
+     "amount": 429915.09,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - CPD - Emergency Solutions Grant Program (14.231)."
+     },
+     "note": "Grant project code 24ZJ, fund codes FG578, 1 ledger row(s). Unspent = budget $6,596,645 minus expended to date $6,166,730 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "24ZJ",
+      "fund_codes": [
+       "FG578"
+      ],
+      "ledger_budget": 6596645.0,
+      "expended_to_date": 6166729.91,
+      "encumbered": 400021.0
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 14.231), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "41",
+    "authority": "2944",
+    "account": "909A"
+   },
+   "expect_amount": 4662981.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-22US",
+     "name": "Lead-Based Paint Hazard Reduction Program",
+     "amount": 2523500.09,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - OLHCHH - Lead Hazard Reduction Demonstration Grant Program (14.905)."
+     },
+     "note": "Grant project code 22US, fund codes F0U00, 1 ledger row(s). Unspent = budget $8,700,000 minus expended to date $6,176,500 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "22US",
+      "fund_codes": [
+       "F0U00"
+      ],
+      "ledger_budget": 8700000.0,
+      "expended_to_date": 6176499.91,
+      "encumbered": 268917.63
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 14.905), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925C",
+    "dept": "84",
+    "authority": "290G",
+    "account": "909A"
+   },
+   "expect_amount": 4474000.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $8,162,034, which is more than this $4,474,000 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "12th District Infrastructure Improvements (project ARP68, fund FGA51, ledger record FGA51-ARP68-P842125-2024): unspent budget",
+     "amount": 194882.98,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "12th District Infrastructure Improvements (project ARP68, fund FGA51, ledger record FGA51-ARP68-P842155-2024): unspent budget",
+     "amount": 177749.73,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Arterial Street Resurfacing Fullerton Ave. From Lockwood To Kimball (project ARP62, fund FGA51, ledger record FGA51-ARP62-P842125-2024): unspent budget",
+     "amount": 1500000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Arterial Street Resurfacing - Halsted St. From 47th To 59th (project ARP63, fund FGA51, ledger record FGA51-ARP63-P842125-2024): unspent budget",
+     "amount": 356761.78,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Archer: 47th To Western Protected Bike Land (project ARP64, fund FGA51, ledger record FGA51-ARP64-P842145-2024): unspent budget",
+     "amount": 338265.81,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "W. Schubert Ave./N. Lincoln Ave./N. Seminary Ave.Intersection Improvements (project ARP66, fund FGA51, ledger record FGA51-ARP66-P842125-2024): unspent budget",
+     "amount": 416732.53,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "W. Fullerton Avenue And N. Seminary Avenue Intersection Improvements (project ARP67, fund FGA51, ledger record FGA51-ARP67-P842125-2024): unspent budget",
+     "amount": 285780.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Bronzeville Trail Corridor Lighting Improvements (project ARP69, fund FGA51, ledger record FGA51-ARP69-P842125-2024): unspent budget",
+     "amount": 1000000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "12th District Residential Street Resurfacing (project ARP70, fund FGA51, ledger record FGA51-ARP70-P842125-2024): unspent budget",
+     "amount": 63110.56,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "12th District Residential Street Resurfacing (project ARP70, fund FGA51, ledger record FGA51-ARP70-P842155-2024): unspent budget",
+     "amount": 142952.43,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Green Alley: Berwyn/Foster/Sawyer/Kedzie (project ARP51, fund FGA51, ledger record FGA51-ARP51-P842125-2024): unspent budget",
+     "amount": 198348.32,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Green Alley: Central/Luna/Bryn Mawr/Catalpa (project ARP52, fund FGA51, ledger record FGA51-ARP52-P842125-2024): unspent budget",
+     "amount": 400000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Indiana - 31st To 45th (project ARP54, fund FGA51, ledger record FGA51-ARP54-P842125-2024): unspent budget",
+     "amount": 337596.74,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Damen: Wilson To Bowmanville (project ARP55, fund FGA51, ledger record FGA51-ARP55-P842125-2024): unspent budget",
+     "amount": 81012.64,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Milwaukee Pbl From Belmont To Addision (project ARP56, fund FGA51, ledger record FGA51-ARP56-P842125-2024): unspent budget",
+     "amount": 500000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "47th St, Loomis To Hoyne Streetscape (Boty Section 2) (project ARP57, fund FGA51, ledger record FGA51-ARP57-P842125-2024): unspent budget",
+     "amount": 500000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Western Ave Sidewalk Repairs From 99th To 111th (project ARP58, fund FGA51, ledger record FGA51-ARP58-P842125-2024): unspent budget",
+     "amount": 1032455.24,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Southport Ave. & Belden Ave. Raised Intersection With Curb Extensions (project ARP59, fund FGA51, ledger record FGA51-ARP59-P842125-2024): unspent budget",
+     "amount": 511500.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Bell Elementary (Addison St. And Oakley Ave.) Pedestrian Safety Improvements (project ARP60, fund FGA51, ledger record FGA51-ARP60-P842125-2024): unspent budget",
+     "amount": 124884.95,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "41",
+    "authority": "282N",
+    "account": "909A"
+   },
+   "expect_amount": 4468000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-22PB",
+     "name": "Strengthening Us Public Health (A2)",
+     "amount": 1547518.31,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HHS - CDC - Collaboration with Academia to Strengthen Public Health (93.967)."
+     },
+     "note": "Grant project code 22PB, fund codes FG796, 1 ledger row(s). Unspent = budget $2,222,101 minus expended to date $674,583 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "22PB",
+      "fund_codes": [
+       "FG796"
+      ],
+      "ledger_budget": 2222101.0,
+      "expended_to_date": 674582.69,
+      "encumbered": 100000.0
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 93.967), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening Us Public Health (A2) (project 22PB, fund FG641, ledger record FG641-22PB-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 925451.14,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening Us Public Health (A3) (project 22GM, fund FG640, ledger record FG640-22GM-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 432218.14,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening U.S. Public Health Workers (project 22PB, fund FG647, ledger record FG647-22PB-P411005-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 2809682.42,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening U.S. Public Health Infrastructure, Workforce And Data Systems (A1C6) (project ARP33, fund FGA33, ledger record FGA33-ARP33-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 22059266.1,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening Us Public Health (Dmic6) Arp Grant (project ARP33, fund FGA38, ledger record FGA38-ARP33-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 3176996.74,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "41",
+    "authority": "2829",
+    "account": "909A"
+   },
+   "expect_amount": 4430000.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $5,054,715, which is more than this $4,430,000 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Public Health Emergency Preparedness (Phep) (Bp2) (project 25PR, fund FG525, ledger record FG525-25PR-P411005-2025): unspent budget",
+     "amount": 5054715.11,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925C",
+    "dept": "84",
+    "authority": "280V",
+    "account": "909A"
+   },
+   "expect_amount": 3474000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-CARES20DB",
+     "name": "Community Development Block Grant Coronavirus (Cdbg-Cv)",
+     "amount": 2077670.51,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - CPD - CDBG - CARES Act - Public Space Activations (14.218)."
+     },
+     "note": "Grant project code CARES20DB, fund codes F033C, 1 ledger row(s). Unspent = budget $4,016,110 minus expended to date $1,938,439 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "CARES20DB",
+      "fund_codes": [
+       "F033C"
+      ],
+      "ledger_budget": 4016109.96,
+      "expended_to_date": 1938439.45,
+      "encumbered": 2077670.51
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 14.218), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "57",
+    "authority": "2996",
+    "account": "909A"
+   },
+   "expect_amount": 3134510.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $6,274,184, which is more than this $3,134,510 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Edward Byrne Memorial Justice (Jag) Fy24 (project 23YK, fund FG538, ledger record FG538-23YK-P571005-2023): unspent budget",
+     "amount": 1727936.92,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Local Law Enforcement Crime Gun-Fy22 Fed (project 22QK, fund FG290, ledger record FG290-22QK-P571005-2022): unspent budget",
+     "amount": 1196408.84,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Edward Bryne Memorial (Jag) - Fy22 (project 22MQ, fund FG212, ledger record FG212-22MQ-P571005-2021): unspent budget",
+     "amount": 1338818.36,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Edward Byrne Memorial Jag Fy23 (project 23TR, fund FG420, ledger record FG420-23TR-P571005-2022): unspent budget",
+     "amount": 2011019.88,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "84",
+    "authority": "281J",
+    "account": "909A"
+   },
+   "expect_amount": 2000000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-B4343",
+     "name": "Reconnecting West Side Communities Support Services",
+     "amount": 2000000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: DOT - OST - Reconnecting Communities Pilot (RCP) Discretionary Grant Program (20.940)."
+     },
+     "note": "Grant project code B4343, fund codes FG861, 1 ledger row(s). Unspent = budget $2,000,000 minus expended to date $0 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B4343",
+      "fund_codes": [
+       "FG861"
+      ],
+      "ledger_budget": 2000000.0,
+      "expended_to_date": 0.0,
+      "encumbered": 890000.0
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 20.940), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "50",
+    "authority": "280U",
+    "account": "909A"
+   },
+   "expect_amount": 1897000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-25LB",
+     "name": "Cha Family Supportive Services",
+     "amount": 1248642.32,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - PIH - CHA - Moving to Work Demonstration Program (14.881)."
+     },
+     "note": "Grant project code 25LB, fund codes FG726, 1 ledger row(s). Unspent = budget $2,564,000 minus expended to date $1,315,358 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "25LB",
+      "fund_codes": [
+       "FG726"
+      ],
+      "ledger_budget": 2564000.0,
+      "expended_to_date": 1315357.68,
+      "encumbered": 493590.69
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 14.881), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925C",
+    "dept": "41",
+    "authority": "2814",
+    "account": "909A"
+   },
+   "expect_amount": 1832000.0,
+   "mode": "side_only",
+   "note": "Ledger projects for this grant could sit on more than one reserve line, so they are shown as facts and not as boxes.",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening Std Prevention & Control For Health Departments (Std Pchd) (project 23JD, fund F0U65, ledger record F0U65-23JD-P411005-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 2664378.08,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening Std Prevention & Control (C6) (project ARP31, fund FGA31, ledger record FGA31-ARP31-P411005-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 1117657.35,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "41",
+    "authority": "282U",
+    "account": "909A"
+   },
+   "expect_amount": 1784197.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $1,808,474, which is more than this $1,784,197 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Healthy Homes Production Grant (project 25OK, fund FG828, ledger record FG828-25OK-P411005-2025): unspent budget",
+     "amount": 1808473.61,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "41",
+    "authority": "281D",
+    "account": "909A"
+   },
+   "expect_amount": 1756000.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $2,644,707, which is more than this $1,756,000 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Injury Prevention And Control Research (Opce) (project 23HZ, fund FG818, ledger record FG818-23HZ-P411005-2025): unspent budget",
+     "amount": 2644707.45,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925P",
+    "dept": "21",
+    "authority": "2833",
+    "account": "909A"
+   },
+   "expect_amount": 1678000.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $16,847,000, which is more than this $1,678,000 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Home Program Income Fy25 (project 25OF, fund FG825, ledger record FG825-25OF-P212833-2025): unspent budget",
+     "amount": 16847000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Home Investment Partnership - Arp (American Rescue Plan) (project ARP03, fund FGA03, ledger record FGA03-ARP03-P212833-2021): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 26604360.24,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Home Program Income (project 21NF, fund F0831, ledger record F0831-21NF-P212005-2021): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 1396520.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "2022 Home Investment Partnership (project 22LW, fund FG209, ledger record FG209-22LW-P212010-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 204479.03,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "2022 Home Investment Partnership (project 22LW, fund FG209, ledger record FG209-22LW-P212833-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 30440.28,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Home Investment Partnership Fy 2023 (project 23SC, fund FG377, ledger record FG377-23SC-P212833-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 145204.89,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Home Investment Partnership Program Fy24 (project 24YQ, fund FG544, ledger record FG544-24YQ-P212833-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 10283846.41,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "41",
+    "authority": "2710",
+    "account": "909A"
+   },
+   "expect_amount": 1447000.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $1,886,262, which is more than this $1,447,000 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Epidemiology And Laboratory Capacity - Core (project 25NG, fund FG612, ledger record FG612-25NG-P411005-2025): unspent budget",
+     "amount": 1886262.39,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Epidemiology And Laboratory Capacity (Mpxco) (project 24OB, fund FG612, ledger record FG612-24OB-P411005-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 543851.72,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Building Epidemiology And Health It Capacity (Nwssc6) (project ARP34, fund FGA34, ledger record FGA34-ARP34-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 39794.71,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Building Epidemiology And Health It Capacity (Shrpc6) (project ARP20, fund FGA20, ledger record FGA20-ARP20-P411005-2021): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 452315.31,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Epidemiology And Laboratory Capacity - Core (project 24FR, fund FG612, ledger record FG612-24FR-P411005-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 593280.5,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Epidemiology And Laboratory Capacity (Etorc3) (project CARES24DT, fund FG612, ledger record FG612-CARES24DT-P411005-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 163912.42,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Epidemiology And Laboratory Capacity (H5N1C3) (project CARES2XDS, fund FG612, ledger record FG612-CARES2XDS-P411005-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 98139.57,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Epidemiology And Laboratory Capacity (Jcvdc5) (project COVID24CX, fund FG612, ledger record FG612-COVID24CX-P411005-2024): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 402969.59,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Building Epidemiology And Health It Capacity (Asa2C6) (project ARP40, fund FGA40, ledger record FGA40-ARP40-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 3746822.1,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Building Epidemiology And Health It Capacity (Dmd2C6) (project ARP41, fund FGA41, ledger record FGA41-ARP41-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 1991016.12,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Building Epidemiology And Health It Capacity (Shp2C6) (project ARP43, fund FGA43, ledger record FGA43-ARP43-P411005-2022): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 1871999.11,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925C",
+    "dept": "70",
+    "authority": "2802",
+    "account": "909A"
+   },
+   "expect_amount": 1187000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-CARES20DB",
+     "name": "Community Development Block Grant Coronavirus (Cdbg-Cv)",
+     "amount": 267069.5,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HUD - CPD - CDBG - CARES Act - Business Assistance (14.218)."
+     },
+     "note": "Grant project code CARES20DB, fund codes F033C, 1 ledger row(s). Unspent = budget $2,000,000 minus expended to date $1,732,930 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "CARES20DB",
+      "fund_codes": [
+       "F033C"
+      ],
+      "ledger_budget": 2000000.0,
+      "expended_to_date": 1732930.5,
+      "encumbered": 267069.5
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 14.218), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "59",
+    "authority": "2823",
+    "account": "909A"
+   },
+   "expect_amount": 758000.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $2,236,217, which is more than this $758,000 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Securing The Cities Program Fy22 (project 21OK, fund FG264, ledger record FG264-21OK-P592005-2022): unspent budget",
+     "amount": 276366.84,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Securing The Cities Program Fy21 (project 21OK, fund FG306, ledger record FG306-21OK-P592005-2021): unspent budget",
+     "amount": 76510.15,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Securing The Cities Program Fy23 (project 21OK, fund FG651, ledger record FG651-21OK-P592005-2023): unspent budget",
+     "amount": 500000.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Securing The Cities Fy24 (project 21OK, fund FG698, ledger record FG698-21OK-P592005-2024): unspent budget",
+     "amount": 1289591.79,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Securing The Cities Program (2018 Fy) (project FRA70, fund F0V35, ledger record F0V35-FRA70-P592005-2018): unspent budget",
+     "amount": 1055.11,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Securing The Cities Program (2019 Fy) (project FRQ80, fund F0V35, ledger record F0V35-FRQ80-P592005-2019): unspent budget",
+     "amount": 90499.5,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Securing The Cities Program (2020 Fy) (project FXD80, fund F0V35, ledger record F0V35-FXD80-P592005-2020): unspent budget",
+     "amount": 2193.66,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "41",
+    "authority": "282M",
+    "account": "909A"
+   },
+   "expect_amount": 528000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-23HK",
+     "name": "Outcomes To Reduce The Burden Of Menthol Tobacco Products",
+     "amount": 248140.97,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HHS - CDC - Tobacco Control Program (93.387)."
+     },
+     "note": "Grant project code 23HK, fund codes FG812, 1 ledger row(s). Unspent = budget $375,000 minus expended to date $126,859 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "23HK",
+      "fund_codes": [
+       "FG812"
+      ],
+      "ledger_budget": 375000.0,
+      "expended_to_date": 126859.03,
+      "encumbered": 150000.0
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 93.387), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "57",
+    "authority": "280N",
+    "account": "909A"
+   },
+   "expect_amount": 444000.0,
+   "mode": "side_only",
+   "note": "Ledger projects for this grant could sit on more than one reserve line, so they are shown as facts and not as boxes.",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Port Security - Fy23 - Cpd (project 23SM, fund FG384, ledger record FG384-23SM-P571005-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 420859.77,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "57",
+    "authority": "282A",
+    "account": "909A"
+   },
+   "expect_amount": 400000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-23JT",
+     "name": "Bja Fy 23 Matthew Shepard And James Byrd, Jr. Hate Crimes Program",
+     "amount": 399623.5,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: DOJ - OJP - Matthew Shepard and James Byrd, Jr. Hate Crimes Program (16.040)."
+     },
+     "note": "Grant project code 23JT, fund codes FG699, 1 ledger row(s). Unspent = budget $399,976 minus expended to date $352 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "23JT",
+      "fund_codes": [
+       "FG699"
+      ],
+      "ledger_budget": 399976.0,
+      "expended_to_date": 352.5,
+      "encumbered": 0.0
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 16.040), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "41",
+    "authority": "2814",
+    "account": "909A"
+   },
+   "expect_amount": 360000.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $615,969, which is more than this $360,000 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Support And Scale Up Of Hiv Prevention (project 24LG, fund FG835, ledger record FG835-24LG-P411005-2025): unspent budget",
+     "amount": 372182.33,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Sexually Transmitted Infection Surveillance Network (Ssun) (project 24LK, fund FG840, ledger record FG840-24LK-P411005-2025): unspent budget",
+     "amount": 243786.39,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening Std Prevention & Control For Health Departments (Std Pchd) (project 23JD, fund F0U65, ledger record F0U65-23JD-P411005-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 2664378.08,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    },
+    {
+     "kind": "ledger_project",
+     "label": "Strengthening Std Prevention & Control (C6) (project ARP31, fund FGA31, ledger record FGA31-ARP31-P411005-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 1117657.35,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "41",
+    "authority": "280L",
+    "account": "909A"
+   },
+   "expect_amount": 236000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-21PD",
+     "name": "Lead Poisoning Surveillance",
+     "amount": 222778.43,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: HHS - CDC - Childhood Lead Poisoning Prevention Projects (93.197)."
+     },
+     "note": "Grant project code 21PD, fund codes FG786, 1 ledger row(s). Unspent = budget $397,968 minus expended to date $175,190 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "21PD",
+      "fund_codes": [
+       "FG786"
+      ],
+      "ledger_budget": 397968.0,
+      "expended_to_date": 175189.57,
+      "encumbered": 115785.64
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 93.197), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925L",
+    "dept": "57",
+    "authority": "280N",
+    "account": "909A"
+   },
+   "expect_amount": 148000.0,
+   "mode": "side_only",
+   "note": "Ledger projects for this grant could sit on more than one reserve line, so they are shown as facts and not as boxes.",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Port Security - Fy23 - Cpd (project 23SM, fund FG384, ledger record FG384-23SM-P571005-2023): unspent budget, could belong to more than one reserve line of this grant, so not placed",
+     "amount": 420859.77,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "48",
+    "authority": "2834",
+    "account": "909A"
+   },
+   "expect_amount": 100766.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $144,522, which is more than this $100,766 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Disabled Survivors Of Gun & Community Violence (project 23WZ, fund FG498, ledger record FG498-23WZ-P482005-2023): unspent budget",
+     "amount": 144522.47,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "51",
+    "authority": "2996",
+    "account": "909A"
+   },
+   "expect_amount": 100000.0,
+   "mode": "side_only",
+   "note": "Matched ledger projects add up to $479,840, which is more than this $100,000 reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers).",
+   "side": [
+    {
+     "kind": "ledger_project",
+     "label": "Edward Byrne Memorial Jag Fy23 (project 23TR, fund FG420, ledger record FG420-23TR-P512005-2022): unspent budget",
+     "amount": 479840.0,
+     "period": "ledger 2026-05-31",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "23",
+    "authority": "2887",
+    "account": "909A"
+   },
+   "expect_amount": 55000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-24ZA",
+     "name": "Nea Our Town",
+     "amount": 55000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Grant: NEA - CTY - Promotion of the Arts (45.024)."
+     },
+     "note": "Grant project code 24ZA, fund codes FG564, 1 ledger row(s). Unspent = budget $75,000 minus expended to date $20,000 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "24ZA",
+      "fund_codes": [
+       "FG564"
+      ],
+      "ledger_budget": 75000.0,
+      "expended_to_date": 20000.0,
+      "encumbered": 0.0
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Reserve not matched to a project in the City's grant ledger"
+   },
+   "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant 45.024), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve.",
+   "side": []
   }
  ]
 }

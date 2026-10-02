@@ -123,6 +123,10 @@ def tip_pieces(projs, funds, why_text, note):
 # ---------------------------------------------------------------- Mid-Year Grants ledger
 def load_ledger():
     rows = list(csv.DictReader(open(os.path.join(ROOT, "raw", "contracts", "midyear_grants.csv"))))
+    return rows
+
+
+def cdot(rows):
     return [r for r in rows if r["department_code"] == "D84"]
 
 
@@ -175,12 +179,90 @@ def check(sp, label):
     print(f"  {label}: line ${line:,.2f}  pieces ${tot:,.2f} ({len(sp['pieces'])})  not itemised ${line - tot:,.2f}  ({tot / line:.1%})")
 
 
+
+# lines handled elsewhere in this file or by other agents (airports are dept 85 and are skipped)
+DONE_AUTH = {("925F", "84", "281S"), ("925F", "84", "281U"), ("925S", "84", "280E"), ("925S", "84", "280Q")}
+# ledger fund codes for CDOT lines whose grant has no federal ALN in Summary G
+FUND_RULE = {("925S", "84", "280M"): {"F0W24"}, ("925L", "84", "281T"): {"FG413", "F0W03", "F0W01", "F0M09"}}
+
+
+def other_reserves(led_all, done):
+    """Reserve Balance (909A) lines other than airports and the four CDOT lines above.
+    A ledger row is placed on a line when department and grant (ALN, or fund code for CDOT lines) match and the row maps to ONE line
+    (using the ledger's composite fund code when several lines share a department and ALN). Rows that could be on several lines,
+    and lines whose matched projects add up to more than the reserve, are listed as side facts and not boxes."""
+    ra = json.load(open(os.path.join(ROOT, "data", "city_grants_2026.json")))["reserve_attribution"]["lines"]
+    rows = [r for r in led_all if r["data_extract_as_of_date"].startswith("2026")]
+    cands = {}      # row id -> list of line indexes
+    lines = []
+    for l in ra:
+        if l["dept_number"] == "085" or not l.get("named_items"):
+            continue
+        key = (l["fund_code"], l["dept_number"].lstrip("0"), l["authority_code"])
+        if key in DONE_AUTH:
+            continue
+        lines.append((key, l))
+    def match(l, key, r):
+        if r["department_code"] != "D" + key[1].zfill(2):
+            return False
+        if key in FUND_RULE:
+            return r["fund_code"] in FUND_RULE[key]
+        return bool(l.get("aln")) and r["aln_code"] == l["aln"]
+    for i, (key, l) in enumerate(lines):
+        for r in rows:
+            if match(l, key, r):
+                cands.setdefault(r["record_id"], []).append(i)
+    assigned = {}
+    ambiguous = {}
+    for r in rows:
+        c = cands.get(r["record_id"], [])
+        if len(c) == 1:
+            assigned[r["record_id"]] = c[0]
+        elif len(c) > 1:
+            comp = r["composite_fund_code"][1:] if r["composite_fund_code"] else ""
+            ok = [i for i in c if lines[i][0][0] == comp]
+            if len(ok) == 1:
+                assigned[r["record_id"]] = ok[0]
+            else:
+                ambiguous[r["record_id"]] = c
+    out = []
+    for i, (key, l) in enumerate(lines):
+        res = Decimal(str(l["reserve_amount"]))
+        mine = [r for r in rows if assigned.get(r["record_id"]) == i and unspent(r) > 0]
+        amb = [r for r in rows if r["record_id"] in ambiguous and i in ambiguous[r["record_id"]] and unspent(r) > 0]
+        tot = sum(unspent(r) for r in mine)
+        sidec = lambda r, why: {"kind": "ledger_project", "label": "%s (project %s, fund %s, ledger record %s): %s" % (nice(r["grant_project_description"]), r["grant_project_code"], r["fund_code"], r["record_id"], why),
+                                "amount": dol(unspent(r)), "period": "ledger 2026-05-31", "basis": "gov_estimate",
+                                "source": {"doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31", "url": LEDGER_URL}}
+        tgt = {"by": "ordinance_line", "fund": key[0], "dept": key[1], "authority": key[2], "account": "909A"}
+        gname = l["grant_name"]
+        side = [sidec(r, "unspent budget, could belong to more than one reserve line of this grant, so not placed") for r in amb]
+        if mine and tot <= res:
+            why = "This is the part of one named grant project that the City has been promised but has not spent yet."
+            pcs = ledger_pieces(mine, why, "Extract as of 2026-05-31. Grant: %s." % gname)
+            sp = {"target": tgt, "expect_amount": dol(res), "mode": "budget_split", "pieces": pcs,
+                  "residual": {"name": "Reserve not matched to a project in the City's grant ledger"},
+                  "note": "Named projects come from the City's Mid-Year Grants ledger (department and grant %s), amount = budget minus spent so far. The ledger is dated 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve." % (l.get("aln") or "fund codes"),
+                  "side": side}
+            check(sp, "%s %s %s 909A" % key); out.append(sp)
+        elif mine or amb:
+            side = [sidec(r, "unspent budget") for r in mine] + side
+            if mine:
+                note = "Matched ledger projects add up to $%s, which is more than this $%s reserve, so they are shown as facts and not as boxes (we cannot say which part of each project this reserve covers)." % (f"{tot:,.0f}", f"{res:,.0f}")
+            else:
+                note = "Ledger projects for this grant could sit on more than one reserve line, so they are shown as facts and not as boxes."
+            sp = {"target": tgt, "expect_amount": dol(res), "mode": "side_only", "note": note, "side": side}
+            print("  side only %s %s %s 909A: reserve $%s, matched $%s, ambiguous rows %d" % (key + (f"{res:,.0f}", f"{tot:,.0f}", len(amb))))
+            out.append(sp)
+    return out
+
 # ---------------------------------------------------------------- build
 def main():
     if not os.path.isdir(TIP_DIR) or len(os.listdir(TIP_DIR)) < 100:
         sys.exit("raw/cdot/tip3488 missing: run  python3 scripts/cdot_etip_fetch.py 3488 16811 cdot")
     tip = load_tip()
-    led = load_ledger()
+    led_all = load_ledger()
+    led = cdot(led_all)
     splits = []
 
     # ---- 1. 925F 281S 0540: federal highway construction ($451,646,229)
@@ -249,13 +331,13 @@ def main():
 
     # ---- 3. 925S 280E 909A reserve ($124,113,000): ledger projects paid by IDOT funds F0L98 and F0W23, 2026-05-31 extract
     why_res = "This is the part of one named road or bridge job's state grant that the City has been promised but has not spent yet."
-    rows = [r for r in led if r["data_extract_as_of_date"].startswith("2026") and r["fund_code"] in ("F0L98", "F0W23")]
-    pcs = ledger_pieces(rows, why_res, "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program.")
+    rows = [r for r in led if r["data_extract_as_of_date"].startswith("2026") and r["fund_code"] == "F0L98"]
+    pcs = ledger_pieces(rows, why_res, "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Fund F0L98 IDOT Transportation Funds. The Illinois Competitive Freight Program (F0W23, ALN 20.205, federal freight money) is left out here because it is federal highway money counted on the FHWA reserve line.")
     sp = {"target": {"by": "ordinance_line", "fund": "925S", "dept": "84", "authority": "280E", "account": "909A"},
           "expect_amount": 124113000.0, "mode": "budget_split", "pieces": pcs,
           "residual": {"name": "State grant money with no project in the City's grant ledger",
-                       "why": "The ledger lists named jobs for most of this money, and the rest has not been matched to a job in any public list."},
-          "note": "Named jobs come from the City's Mid-Year Grants ledger (state funds F0L98 and F0W23), amount = budget minus spent so far. The ledger was cut 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve."}
+                       "why": "The ledger lists named jobs for most of this money, and the rest has not been matched to a job in any public list. Part of it may be state money for jobs that are not yet in the ledger."},
+          "note": "Named jobs come from the City's Mid-Year Grants ledger (state fund F0L98 IDOT Transportation Funds), amount = budget minus spent so far. The ledger was cut 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve."}
     check(sp, "925S 280E 909A"); splits.append(sp)
 
     # ---- 4. 925S 280Q 909A reserve ($117,880,000): Rebuild Illinois F0W32
@@ -300,7 +382,8 @@ def main():
         amt = dol(g["u"])
         pcs.append({"key": "sl-" + re.sub(r"\W+", "-", name.lower()) + "-" + ext, "name": "%s, not spent yet (ledger extract %s)" % (name, ext), "amount": amt, "basis": "gov_estimate",
                     "source": {"doc": "City Mid-Year Grants 925 ledger, extract %s, project D1209 State/Lake Loop Elevated" % ext, "url": LEDGER_URL},
-                    "note": "Unspent = budget %s minus expended to date %s. Ledger record(s): %s." % (f"${g['b']:,.0f}", f"${g['e']:,.0f}", ", ".join(g["rec"])),
+                    "note": "Unspent = budget %s minus expended to date %s. Ledger record(s): %s.%s" % (f"${g['b']:,.0f}", f"${g['e']:,.0f}", ", ".join(g["rec"]),
+                    " This record is only in the older 2025-06-01 extract (nothing expended then, fully on order). It equals CDOT's STP-L programming for State/Lake in FFY2024, $77,140,573 plus $25,000,000 redistribution, to the dollar. It is not in the 2026-05-31 extract, so it may have been re-coded into the newer records or paid since. Treat as an upper bound." if ext.startswith("2025") else ""),
                     "extra": {"ledger_records": g["rec"]}, "why": why_sl if amt >= T10 else None})
     # contract and payment facts
     def pay_sum(fn, contract):
@@ -343,6 +426,10 @@ def main():
           "note": "The cap is the federal award IL-2016-002 (obligated minus outlays). The City ledger shows part of it by funding source, and the rest is shown as not itemised.",
           "side": side}
     check(sp, "State/Lake child"); splits.append(sp)
+
+
+    # ---- 7. other (non-airport) 909A Reserve Balance lines: named ledger projects, one line per ledger row
+    splits.extend(other_reserves(led_all, splits))
 
     meta = {"author": "cdot agent", "built_by": "scripts/cdot_build.py",
             "description": "CDOT project-level pieces: CMAP TIP 2026-2030 FFY2026 programmed amounts for the federal and state construction lines, City Mid-Year Grants ledger projects for the IDOT, Rebuild Illinois and FHWA reserves, and the State/Lake funding sources with contract facts."}
