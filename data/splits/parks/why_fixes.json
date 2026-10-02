@@ -1,0 +1,29 @@
+{
+ "meta": {
+  "author": "launch fix 1",
+  "description": "Explanations for the two negative Parks boxes",
+  "built_by": "scripts/why_fixes_build.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.maintaining-the-parks.facilities-management-specialty-trades-8485.corporate-fund.611010"
+   },
+   "expect_amount": -1151021,
+   "mode": "side_only",
+   "why": "The District's official name for this account is 'Employee Health Care Contribution'. We read the negative amount as the share of health insurance cost that employees pay themselves, which lowers the District's cost.",
+   "evidence": "Official account name in extra.official_name (Park District 2026 Budget Appropriations, p. 107)"
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.utilities-benefits-and-shared-costs.610000.611011"
+   },
+   "expect_amount": -15171602,
+   "mode": "side_only",
+   "why": "The District assumes some jobs will sit empty for part of the year, so it subtracts the pay it expects not to spend. The pay lines elsewhere in the tree are the full-year pay for every job.",
+   "evidence": "Official name 'Vacancy Allowance', account 611011 (Park District 2026 Budget Appropriations)"
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "meta": {
+  "author": "launch fix 1",
+  "description": "Plain-English why sentences for reserve and preschool boxes that wrongly said 'a few large companies', plus negative contingency boxes",
+  "built_by": "scripts/why_fixes_build.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.reserves.a57940.fg115-000000-p231601-0"
+   },
+   "expect_amount": 35000000,
+   "mode": "side_only",
+   "why": "This is a central CPS amount in a 'miscellaneous charges' account under the Labor and Employee Relations program. It sits with the district's central set-asides, not with a list of purchases, and we found no CPS document that says what it will be used for.",
+   "evidence": "Fund, program and account in the CPS FY2026 budget data; research/final_gap_audit.md tier C"
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.reserves.a57940.fg115-005058-p009546-1"
+   },
+   "expect_amount": 20000000,
+   "mode": "side_only",
+   "why": "This is money CPS holds centrally under a program called School Transitions, in a fund called New and Expansion School Funding. It sits with the district's central set-asides, not with a list of purchases, and we found no list of which schools get it.",
+   "evidence": "Fund and program names in the CPS FY2026 budget data"
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.contracts.a54125.fg362-376690-p119027-0"
+   },
+   "expect_amount": 32912073.49,
+   "mode": "side_only",
+   "why": "This is State Preschool for All money for ages 3 to 5, booked as outside services. We could not find where CPS sends it. The similar $88.1 million line for ages 0 to 3 is passed to the City, which pays community preschool programs, but no document says this line works the same way.",
+   "note": "Related City boxes: the City's 'For Delegate Agencies (ISBE - CPS - Early Childhood Block Grant)' line under Family and Support Services lists the community programs the City pays from the same kind of state grant. Whether any of this $32.9 million reaches them is not stated in the sources.",
+   "evidence": "research/cps_tree_deep.md section 5 and data/splits/cps/cpsdeep_services.json"
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.early-childhood.u11385.contracts.a54125.fg362-376689-p410001-0"
+   },
+   "expect_amount": 88143619,
+   "mode": "side_only",
+   "why": "CPS passes this State Preschool for All money to the City's Family and Support Services department, which pays about 88 community preschool and infant and toddler programs. The programs are in the City part of this tree, so there is nothing smaller to show here.",
+   "note": "Where the money lands: in the City tree, Family and Support Services > For Delegate Agencies (ISBE - CPS - Early Childhood Block Grant). That City line is $63.7 million and payments to named programs so far this year are $71.6 million.",
+   "evidence": "Board Reports 25-0925-EX2 and 26-0730-EX2 (data/splits/cps/cpsdeep_services.json); City tree boxes under 925s-2962-0135 (paid_to_date $71,617,007.54 against a $63,664,481 line)"
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.reserves.a57915.fg114-000000-p111086-12"
+   },
+   "expect_amount": -8000000,
+   "mode": "side_only",
+   "why": "This is a planned cut, not a payment. It is a negative amount in CPS's contingency account that offsets spending counted on other lines, and CPS does not explain this particular line.",
+   "evidence": "Negative budget-only offsets, research/cps_deep.md; same wording as the inventory sentence for account A57915"
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.reserves.a57915.fg114-000000-p127725-13"
+   },
+   "expect_amount": -7500000,
+   "mode": "side_only",
+   "why": "This is a planned cut, not a payment. It is a negative amount in CPS's contingency account that offsets spending counted on other lines, and CPS does not explain this particular line.",
+   "evidence": "Negative budget-only offsets, research/cps_deep.md; same wording as the inventory sentence for account A57915"
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.set-asides.u12670.reserves.a57915.fg353-041008-p888888-14"
+   },
+   "expect_amount": -5161994.31,
+   "mode": "side_only",
+   "why": "This is a planned cut, not a payment. It is a negative amount in CPS's contingency account that offsets spending counted on other lines, and CPS does not explain this particular line.",
+   "evidence": "Negative budget-only offsets, research/cps_deep.md; same wording as the inventory sentence for account A57915"
+  }
+ ]
+}

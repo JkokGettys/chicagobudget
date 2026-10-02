@@ -46,3 +46,5 @@ not edit the builders**, so several agents can add detail at once.
 - **Every leaf of $10M or more needs `why`.** One plain sentence a 13-year-old can read.
 - **No names of private individuals.** Business names are fine. Hide people with "Individual (name hidden)".
 - **Side info** (`side`) is facts that are not added into amounts (prior-year actuals, counts, projections).
+- **mode `side_only`** adds `note` and `side` to a box without splitting it. It can also carry `why`, a sentence that
+  replaces the box's existing why sentence (used to fix generic or stale ones, see `scripts/why_fixes_build.py`).

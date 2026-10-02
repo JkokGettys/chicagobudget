@@ -1,0 +1,208 @@
+{
+ "meta": {
+  "author": "launch fix 1",
+  "description": "Plain-English why sentences replacing generic or stale ones, and explanations for negative boxes (no boxes added, amounts unchanged)",
+  "built_by": "scripts/why_fixes_build.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0100",
+    "dept": 57,
+    "authority": "1005",
+    "account": "0937"
+   },
+   "expect_amount": 25000000,
+   "mode": "side_only",
+   "why": "This pays the medical bills of Police Department employees who were hurt on the job and are not covered by workers' compensation. The budget gives one total, and we found no public list of the bills.",
+   "evidence": "Line name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c"
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0200",
+    "dept": 88,
+    "authority": "2020",
+    "account": "0020"
+   },
+   "expect_amount": 11866140,
+   "mode": "side_only",
+   "why": "This is overtime pay for crews in the Bureau of Water Supply. The City reports 2025 overtime for the whole Water Department ($47.8 million over 95 job titles) but not for each bureau, so we cannot split this line.",
+   "evidence": "data/leaves_over_10m.json note for the Water overtime lines (2025 payroll costing dawh-m56b)"
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0200",
+    "dept": 88,
+    "authority": "2025",
+    "account": "0020"
+   },
+   "expect_amount": 19314459,
+   "mode": "side_only",
+   "why": "This is overtime pay for crews in the Bureau of Operations and Distribution. The City reports 2025 overtime for the whole Water Department ($47.8 million over 95 job titles) but not for each bureau, so we cannot split this line.",
+   "evidence": "data/leaves_over_10m.json note for the Water overtime lines (2025 payroll costing dawh-m56b)"
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0100",
+    "dept": 50,
+    "authority": "2005",
+    "account": "9204"
+   },
+   "expect_amount": 10224000,
+   "mode": "side_only",
+   "why": "This pays outside groups that run mentoring programs for young people. The budget gives one total, and the City's payment records show what each company or group was paid but not which budget line paid it, so we cannot split it.",
+   "evidence": "Line name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c; payment records carry no budget line (research/tree_gap_audit_2.md section 2)"
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0B93",
+    "dept": 50,
+    "authority": "2005",
+    "account": "9263"
+   },
+   "expect_amount": 11192277,
+   "mode": "side_only",
+   "why": "This pays for homeless services and is paid from a fund set aside for that purpose (the Houseshare Surcharge Homeless Services Fund). The budget gives one total, and the City's payment records show what each company or group was paid but not which budget line paid it.",
+   "evidence": "Fund name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c; payment records carry no budget line"
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.city-development.department-of-housing.grant-money-not-yet-assigned-to-projects.925f-federal-grant-fund.925f-2833-909a.other-not-itemised"
+   },
+   "expect_amount": 32755405.69,
+   "mode": "side_only",
+   "why": "This is part of the federal HOME housing grant money the City expects to receive. The City's grant ledger (dated 2026-05-31) names projects for only part of it, and this rest is not matched to any named project.",
+   "evidence": "Parent note: named projects come from the City's Mid-Year Grants ledger, dated 2026-05-31 (research/cdot_projects.md, other reserve lines)"
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0355",
+    "dept": 23,
+    "authority": "2015",
+    "account": "9805"
+   },
+   "expect_amount": 11222900,
+   "mode": "side_only",
+   "why": "This pays for producing City festivals and is paid from the special events and hotel tax fund. The budget gives one total, and the City's payment records show what each company or group was paid but not which budget line paid it.",
+   "evidence": "Line and fund name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c"
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0100",
+    "dept": 6,
+    "authority": "2150",
+    "account": "0149"
+   },
+   "expect_amount": 14942252,
+   "mode": "side_only",
+   "why": "This pays for software upkeep and licenses used across City departments. The budget gives one total, and the City's payment records show what each company or group was paid but not which budget line paid it.",
+   "evidence": "Line name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c"
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0100",
+    "dept": 38,
+    "authority": "2126",
+    "account": "0125"
+   },
+   "expect_amount": 18501258,
+   "mode": "side_only",
+   "why": "This pays outside companies for services that keep City buildings running. The budget gives one total, and the City's payment records show what each company or group was paid but not which budget line paid it.",
+   "evidence": "Line name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c"
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0100",
+    "dept": 38,
+    "authority": "2131",
+    "account": "0155"
+   },
+   "expect_amount": 22807498,
+   "mode": "side_only",
+   "why": "This is rent the City pays for space and property it leases. The budget gives one total, and the City's payment records show what each company or group was paid but not which budget line paid it.",
+   "evidence": "Line name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c"
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0100",
+    "dept": 38,
+    "authority": "2140",
+    "account": "0176"
+   },
+   "expect_amount": 12925000,
+   "mode": "side_only",
+   "why": "This pays to keep City-owned vehicles repaired and running, as needs come up during the year. The budget gives one total, and the City's payment records show what each company or group was paid but not which budget line paid it.",
+   "evidence": "Line name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c"
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0355",
+    "dept": 38,
+    "authority": "2126",
+    "account": "9188"
+   },
+   "expect_amount": 10159160,
+   "mode": "side_only",
+   "why": "This pays part of the cost of running Millennium Park. Two other budget lines also pay for it (the main fund has $5.38 million and the special events fund has $3.83 million in Cultural Affairs), and the City's payment records show what each company or group was paid but not which budget line paid it.",
+   "evidence": "Three account 9188 lines in 2026 Annual Appropriation Ordinance, dataset 6694-f78c: fund 0100 dept 38 $5,380,000, fund 0355 dept 23 authority 2015 $3,830,000, fund 0355 dept 38 $10,159,160"
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.citywide.corporate-fund.0100-2005-0931.not-spent-yet"
+   },
+   "expect_amount": 36144850.99,
+   "mode": "side_only",
+   "why": "This is the part of the full-year settlements budget that has not been matched to a payment yet. The Law Department payment list we have only runs from 2026-01-02 to 2026-07-31 and places payments here by department only, so more may be paid later or sit on another line.",
+   "evidence": "Note on the parent line (Law Department payments report, 2026-01-02 to 2026-07-31, unaudited)"
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0100",
+    "dept": 99,
+    "authority": "2005",
+    "account": "9222"
+   },
+   "expect_amount": 124725187,
+   "mode": "side_only",
+   "why": "The budget does not say what this line pays for. It is listed under Finance General as 'purposes as specified' and has stayed near $125 million since 2024. Our best guess is a payment to the State linked to the ambulance Medicaid program, but no City document confirms it, so treat the use as unconfirmed.",
+   "evidence": "research/parks_misc_detail.md section 6 (account 9222: 'I could not establish what this line pays for')"
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0100",
+    "dept": 41,
+    "authority": "1005",
+    "account": "9646"
+   },
+   "expect_amount": -3085466,
+   "mode": "side_only",
+   "why": "This is a credit, not a payment: the ordinance prints it as a negative amount that lowers the Public Health Department's main-fund total. Its name refers to American Rescue Plan 'revenue replacement', which is federal pandemic aid used in place of lost City revenue. The ordinance does not say how this line is figured.",
+   "evidence": "Line name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c; research/new_sources.md section 5 (ARPA money used as revenue replacement)"
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.public-safety.chicago-police-department.programs-and-other-costs.0100-corporate-fund.0100-1005-0931.over-budget-so-far"
+   },
+   "expect_amount": -151741708.64,
+   "mode": "side_only",
+   "why": "Settlement payments so far this year ($234.3 million through 2026-07-31) are bigger than the $82.6 million budgeted for this line. This negative box keeps the boxes adding up to the budget, and the City plans to borrow to cover the extra.",
+   "evidence": "Sibling paid_to_date boxes sum to $234,299,708.64 against the $82,558,000 line; the 2026 Budget Overview financing statement is quoted in the parent box note"
+  }
+ ]
+}

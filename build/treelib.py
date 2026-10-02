@@ -209,6 +209,9 @@ def apply_split_file(path, resolve, log=print):
             # facts or rough estimates that should be visible but not shown as boxes
             if sp.get("note"):
                 line.note = (line.note + " " if line.note else "") + sp["note"]
+            if sp.get("why"):
+                # a plain-English sentence that replaces a generic or stale one (the box is not split)
+                line.why = sp["why"]
             for s in sp.get("side", []) or []:
                 s = dict(s)
                 if "amount" in s and s["amount"] is not None:
