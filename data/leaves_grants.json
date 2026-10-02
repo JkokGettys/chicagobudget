@@ -351,19 +351,15 @@
     "0540"
    ],
    "amount": 221342000,
-   "proposed_status": "split_proxy",
-   "split_basis": "CDBG-DR Action Plan (HTTP 200, PDF p.50 Table 25) estimates local sewer rehab at $8,500,000 per mile. $221,342,000 / $8.5M = 26.0 miles x $8.5M (count derived from the plan's own unit cost, PROXY). The plan names no street list. The six stormwater lines in the ordinance sum to $390,279,000 against the plan's $390,277,600 Infrastructure and Mitigation Program (Table 38, p.73), a $1,400 difference.",
-   "pieces": [
+   "proposed_status": "superseded",
+   "split_basis": "Superseded 2026-10-02 by data/splits/city/drgr_cdbgdr.json (City's own project counts: 104 blocks of local sewer). The old proxy was 221,342,000 / 8,500,000 per mile = 26.0 miles (Action Plan Table 25 p.50).",
+   "pieces": [],
+   "pieces_over_10m_after": [
     {
-     "name": "about 26.0 miles of local sewer x $8.5M per mile",
-     "count": 26.0,
-     "average": 8500000,
-     "amount": 221342000,
-     "basis": "count_x_average",
-     "source": "CDBG-DR Action Plan Table 25 p.50"
+     "name": "Local sewer line construction (no street list)",
+     "amount": 221342000
     }
    ],
-   "pieces_over_10m_after": [],
    "why_cant_go_deeper": "The plan says how many miles of sewer it hopes to fix and what a mile costs, but the streets have not been picked yet."
   },
   {

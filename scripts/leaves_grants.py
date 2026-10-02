@@ -77,8 +77,8 @@ sewer_per_mile = 8_500_000
 miles = 221_342_000 / sewer_per_mile
 leaves.append({"match_path_contains": ["CDBG-DR - Stormwater Infrastructure - Local Sewer Line Construction", "0540"], "amount": 221_342_000, "proposed_status": "split_proxy",
   "split_basis": f"CDBG-DR Action Plan (HTTP 200, PDF p.50 Table 25) estimates local sewer rehab at $8,500,000 per mile. $221,342,000 / $8.5M = {miles:.1f} miles x $8.5M (count derived from the plan's own unit cost, PROXY). The plan names no street list. The six stormwater lines in the ordinance sum to $390,279,000 against the plan's $390,277,600 Infrastructure and Mitigation Program (Table 38, p.73), a $1,400 difference.",
-  "pieces": [{"name": f"about {miles:.1f} miles of local sewer x $8.5M per mile", "count": round(miles, 1), "average": sewer_per_mile, "amount": 221_342_000, "basis": "count_x_average", "source": "CDBG-DR Action Plan Table 25 p.50"}],
-  "pieces_over_10m_after": [], "why_cant_go_deeper": "The plan says how many miles of sewer it hopes to fix and what a mile costs, but the streets have not been picked yet."})
+  "pieces": [],  # 2026-10-02: superseded by data/splits/city/drgr_cdbgdr.json (104 blocks, City hearing deck p.14). The old proxy was miles x $8.5M.
+  "pieces_over_10m_after": [{"name": "Local sewer line construction (no street list)", "amount": 221_342_000}], "why_cant_go_deeper": "The plan says how many miles of sewer it hopes to fix and what a mile costs, but the streets have not been picked yet."})
 for tail, amt, why in (("Permeable Alleys", 67_104_000, "The city wants to make alleys soak up rain, but no list of which alleys has been published."), ("Wing Storage", 62_097_000, "Wing storage means big underground water tanks, and the plan does not say how many or where.")):
     leaves.append({"match_path_contains": [f"CDBG-DR - Stormwater Infrastructure - {tail}", "0540"], "amount": amt, "proposed_status": "unsplit",
       "split_basis": "CDBG-DR Action Plan (Table 38 p.73) names the program and the project types but gives no per-project budget or unit cost for this type. No split made.",
