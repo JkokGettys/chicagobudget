@@ -18,22 +18,46 @@
    "pieces": [
     {
      "name": "AOR TRANSIT",
-     "amount": 30337941.21,
+     "amount": 47298791.43,
      "basis": "paid_to_date",
      "kind": "vendor",
-     "note": "Contract 25743: OPERATION AND MAINTENANCE OF AIRPORT TRANSIT SYSTEM (ATS) at O'HARE, Spec# 92543, Req# 550 (25 payments)",
+     "note": "2 contracts, 27 payments",
      "extra": {
-      "contract": "25743",
-      "payments": 25
+      "contracts": 2
      },
-     "why": "This is what one company has been paid so far this year on one contract, and the payment records do not show smaller pieces."
+     "children": [
+      {
+       "name": "Contract 25743: OPERATION AND MAINTENANCE OF AIRPORT TRANSIT SYSTEM (ATS) at O'HARE, \u2026",
+       "amount": 30337941.21,
+       "basis": "paid_to_date",
+       "kind": "contract",
+       "note": "25 payments",
+       "extra": {
+        "contract": "25743",
+        "payments": 25
+       },
+       "why": "This is what one company has been paid so far this year on one contract, and the payment records do not show smaller pieces."
+      },
+      {
+       "name": "Contract 356057: (Spec 1318223) Operation and Maintenance of the Airport Transit Syste\u2026",
+       "amount": 16960850.22,
+       "basis": "paid_to_date",
+       "kind": "contract",
+       "note": "2 payments",
+       "extra": {
+        "contract": "356057",
+        "payments": 2
+       },
+       "why": "This is what one company has been paid so far this year on one contract, and the payment records do not show smaller pieces."
+      }
+     ]
     },
     {
      "name": "STUDIO ORD INC",
      "amount": 28504829.25,
      "basis": "paid_to_date",
      "kind": "vendor",
-     "note": "Contract 101451: LEAD ARCHITECTURAL DESIGN SERVICES - TERMINAL AREA PLAN - FOR THE O'HARE 21 PROGRAM (SPEC (133 payments)",
+     "note": "Contract 101451: LEAD ARCHITECTURAL DESIGN SERVICES - TERMINAL AREA PLAN - FOR THE O'HARE 21 PROGRAM (SPEC #428915) (133 payments)",
      "extra": {
       "contract": "101451",
       "payments": 133
@@ -45,10 +69,22 @@
      "amount": 22705743.41,
      "basis": "paid_to_date",
      "kind": "vendor",
-     "note": "Contract 174908: MANAGEMENT OF PUBLIC PARKING FACILITIES AND GROUND TRANSPORTATION AT CHICAGO O'HARE INTL A (33 payments)",
+     "note": "Contract 174908: MANAGEMENT OF PUBLIC PARKING FACILITIES AND GROUND TRANSPORTATION AT CHICAGO O'HARE INTL AIRPORT, Spec# 1157052 (33 payments)",
      "extra": {
       "contract": "174908",
       "payments": 33
+     },
+     "why": "This is what one company has been paid so far this year on one contract, and the payment records do not show smaller pieces."
+    },
+    {
+     "name": "ABM Aviation",
+     "amount": 22677984.09,
+     "basis": "paid_to_date",
+     "kind": "vendor",
+     "note": "Contract 190841: COMPREHENSIVE CUSTODIAL/WINDOW CLEANING AND RELATED HYGIENE DISPOSAL SERVICES FOR AIRSIDE (SECURE) AT CHICAGO O'HARE INTERNATIONAL AIRPORT \u2026 (9 payments)",
+     "extra": {
+      "contract": "190841",
+      "payments": 9
      },
      "why": "This is what one company has been paid so far this year on one contract, and the payment records do not show smaller pieces."
     },
@@ -57,7 +93,7 @@
      "amount": 22549941.29,
      "basis": "paid_to_date",
      "kind": "vendor",
-     "note": "Contract 111685: LEAD ARCHITECTURAL DESIGN SERVICES - TERMINAL AREA PLAN - FOR THE O'HARE 21 PROGRAM AT O'H (64 payments)",
+     "note": "Contract 111685: LEAD ARCHITECTURAL DESIGN SERVICES - TERMINAL AREA PLAN - FOR THE O'HARE 21 PROGRAM AT O'HARE INTERNATIONAL AIRPORT (SPEC #428915) (64 payments)",
      "extra": {
       "contract": "111685",
       "payments": 64
@@ -77,14 +113,48 @@
      "why": "This is what one company has been paid so far this year on one contract, and the payment records do not show smaller pieces."
     },
     {
+     "name": "HNTB CORPORATION",
+     "amount": 10586833.48,
+     "basis": "paid_to_date",
+     "kind": "vendor",
+     "note": "Contract 119983: LEAD TUNNEL DESIGN AND ENGINEERING SERVICES - TERMINAL AREA PLAN - FOR THE O' HARE 21 PROGRAM AT O'HARE INTERNATIONAL AIRPORT (281 payments)",
+     "extra": {
+      "contract": "119983",
+      "payments": 281
+     },
+     "why": "This is what one company has been paid so far this year on one contract, and the payment records do not show smaller pieces."
+    },
+    {
+     "name": "SP PLUS LLC",
+     "amount": 9826800.58,
+     "basis": "paid_to_date",
+     "kind": "vendor",
+     "note": "Contract 328281: TRANSFER FROM PO # 174908 for MANAGEMENT OF PUBLIC PARKING FACILITIES AND GROUND TRANSPORTATION AT CHICAGO O'HARE INTL AIRPORT, Spec# 11570\u2026 (19 payments)",
+     "extra": {
+      "contract": "328281",
+      "payments": 19
+     }
+    },
+    {
      "name": "DIVERSE FACILITY SOLUTION INC.",
      "amount": 8446435.8,
      "basis": "paid_to_date",
      "kind": "vendor",
-     "note": "Contract 183280: TARGET MARKET LANDSIDE (NON-SECURE) CUSTODIAL SERVICES AT O'HARE INTERNATIONAL AIRPORT (SP (10 payments)",
+     "note": "Contract 183280: TARGET MARKET LANDSIDE (NON-SECURE) CUSTODIAL SERVICES AT O'HARE INTERNATIONAL AIRPORT (SPEC #1187829) (10 payments)",
      "extra": {
       "contract": "183280",
       "payments": 10
+     }
+    },
+    {
+     "name": "EXP U.S. SERVICES INC.",
+     "amount": 1441824.5,
+     "basis": "paid_to_date",
+     "kind": "vendor",
+     "note": "Contract 64824: PROFESSIONAL DESIGN SERVICES FOR THE PARTIAL RELOCATION OF TAXIWAYS ALPHA AND BRAVO AT O'HARE INTERNATIONAL AIRPORT (57 payments)",
+     "extra": {
+      "contract": "64824",
+      "payments": 57
      }
     },
     {
@@ -122,19 +192,30 @@
      ]
     },
     {
+     "name": "MORENO ARCHITECTS LIMITED DBA JGMA",
+     "amount": 1145086.18,
+     "basis": "paid_to_date",
+     "kind": "vendor",
+     "note": "Contract 193854: TARGET MARKET ARCHITECTURE AND ENGINEERING SERVICES FOR TERMINAL 5 LANDSIDE IMPROVEMENTS AND REPURPOSING PROJECT AT O'HARE INTERNATIONAL AI\u2026 (18 payments)",
+     "extra": {
+      "contract": "193854",
+      "payments": 18
+     }
+    },
+    {
      "name": "GLOBETROTTERS ENGINEERING CORPORATION, ATTN: DAVID FELLER",
      "amount": 1076600.18,
      "basis": "paid_to_date",
      "kind": "vendor",
-     "note": "Contract 122861: ARCHITECTURAL AND ENGINEERING SERVICES (ON-CALL) FOR THE ORD & MDW RESIDENTIAL SOUND INSUL (66 payments)",
+     "note": "Contract 122861: ARCHITECTURAL AND ENGINEERING SERVICES (ON-CALL) FOR THE ORD & MDW RESIDENTIAL SOUND INSULATION PROGRAM (66 payments)",
      "extra": {
       "contract": "122861",
       "payments": 66
      }
     },
     {
-     "name": "Other vendors (2)",
-     "amount": 1746242.21,
+     "name": "Other vendors (3)",
+     "amount": 1989126.21,
      "basis": "paid_to_date",
      "kind": "vendor_group",
      "children": [
@@ -143,7 +224,7 @@
        "amount": 957768.72,
        "basis": "paid_to_date",
        "kind": "vendor",
-       "note": "Contract 30370: CONSTRUCTION MANAGEMENT SERVICES FOR THE O'HARE MODERNIZATION PROGRAM ( PREVIOUSLY PO # 96 (13 payments)",
+       "note": "Contract 30370: CONSTRUCTION MANAGEMENT SERVICES FOR THE O'HARE MODERNIZATION PROGRAM ( PREVIOUSLY PO # 9613) (13 payments)",
        "extra": {
         "contract": "30370",
         "payments": 13
@@ -158,6 +239,17 @@
        "extra": {
         "contract": "46920",
         "payments": 13
+       }
+      },
+      {
+       "name": "SIMULATION LIVE FIRE TRAINING SOLUTIONS INC",
+       "amount": 242884.0,
+       "basis": "paid_to_date",
+       "kind": "vendor",
+       "note": "Contract 56283: LARGE FRAME AIRCRAFT FIRE TRAINING SIMULATOR DESIGN, BUILD AND MAINTENANCE FOR CHICAGO O'HARE INTERNATIONAL AIRPORT (3 payments)",
+       "extra": {
+        "contract": "56283",
+        "payments": 3
        }
       }
      ],
@@ -1407,7 +1499,7 @@
        "amount": 837642.6,
        "basis": "paid_to_date",
        "kind": "vendor",
-       "note": "Contract 110169: ACCEPTANCE AND PROCESSING OF MUNICIPAL SOLID WASTE DELIVERED BY THE CITY OF CHICAGO AT PRI (11 payments)",
+       "note": "Contract 110169: ACCEPTANCE AND PROCESSING OF MUNICIPAL SOLID WASTE DELIVERED BY THE CITY OF CHICAGO AT PRIVATELY OWNED TRANSFER STATIONS (11 payments)",
        "extra": {
         "contract": "110169",
         "payments": 11
@@ -4208,7 +4300,7 @@
      "amount": 18562608.9,
      "basis": "paid_to_date",
      "kind": "vendor",
-     "note": "Contract 224479: 1199045: RFP FOR PROPERTY MANAGEMENT SERVICES FOR MIDWAY INTERNATIONAL AIRPORT - Replaceme (29 payments)",
+     "note": "Contract 224479: 1199045: RFP FOR PROPERTY MANAGEMENT SERVICES FOR MIDWAY INTERNATIONAL AIRPORT - Replacement of RFQ 8452. (29 payments)",
      "extra": {
       "contract": "224479",
       "payments": 29
@@ -4220,7 +4312,7 @@
      "amount": 9264013.42,
      "basis": "paid_to_date",
      "kind": "vendor",
-     "note": "Contract 26600: Management of Parking and Ground Transportation Facilities Midway Int'l Airport, Spec# 872 (15 payments)",
+     "note": "Contract 26600: Management of Parking and Ground Transportation Facilities Midway Int'l Airport, Spec# 87223 (15 payments)",
      "extra": {
       "contract": "26600",
       "payments": 15
@@ -6064,7 +6156,7 @@
        "amount": 421839.84,
        "basis": "paid_to_date",
        "kind": "vendor",
-       "note": "Contract 308280: CDPH-VIOLNCE PREV: PO 308280 Institute for Nonviolence Chicago - Victim Services Community (20 payments)",
+       "note": "Contract 308280: CDPH-VIOLNCE PREV: PO 308280 Institute for Nonviolence Chicago - Victim Services Community-based Network (20 payments)",
        "extra": {
         "contract": "308280",
         "payments": 20
@@ -6154,7 +6246,7 @@
        "amount": 216134.99,
        "basis": "paid_to_date",
        "kind": "vendor",
-       "note": "Contract 308268: CDPH-VIOLNCE PREV: 308268 SGA YOUTH & FAMILY SERVICES - Victim Services Community-based Ne (18 payments)",
+       "note": "Contract 308268: CDPH-VIOLNCE PREV: 308268 SGA YOUTH & FAMILY SERVICES - Victim Services Community-based Network (18 payments)",
        "extra": {
         "contract": "308268",
         "payments": 18
@@ -6165,7 +6257,7 @@
        "amount": 214849.39,
        "basis": "paid_to_date",
        "kind": "vendor",
-       "note": "Contract 308277: CDPH-VIOLNCE PREV: PO 308277 UNIVERSAL FAMILY CONNECTION - Victim Services Community-based (21 payments)",
+       "note": "Contract 308277: CDPH-VIOLNCE PREV: PO 308277 UNIVERSAL FAMILY CONNECTION - Victim Services Community-based Network (21 payments)",
        "extra": {
         "contract": "308277",
         "payments": 21
@@ -6176,7 +6268,7 @@
        "amount": 212631.56,
        "basis": "paid_to_date",
        "kind": "vendor",
-       "note": "Contract 308274: CDPH-VIOLNCE PREV: PO 308274 HOPE OPPORTUNITY PURPOSE EMPOWERMENT INC. - Victim Services C (15 payments)",
+       "note": "Contract 308274: CDPH-VIOLNCE PREV: PO 308274 HOPE OPPORTUNITY PURPOSE EMPOWERMENT INC. - Victim Services Community-based Network (15 payments)",
        "extra": {
         "contract": "308274",
         "payments": 15
@@ -6198,7 +6290,7 @@
        "amount": 193992.92,
        "basis": "paid_to_date",
        "kind": "vendor",
-       "note": "Contract 308270: CDPH-VIOLNCE PREV: 308270 Lomax Urban Outreach Inc. - Victim Services Community-based Netw (16 payments)",
+       "note": "Contract 308270: CDPH-VIOLNCE PREV: 308270 Lomax Urban Outreach Inc. - Victim Services Community-based Network (16 payments)",
        "extra": {
         "contract": "308270",
         "payments": 16
@@ -6209,7 +6301,7 @@
        "amount": 175826.77,
        "basis": "paid_to_date",
        "kind": "vendor",
-       "note": "Contract 308272: CDPH-VIOLNCE PREV: PO 308272 BREAKTHROUGH URBAN MINISTRIES, INC. - Victim Services Commun (19 payments)",
+       "note": "Contract 308272: CDPH-VIOLNCE PREV: PO 308272 BREAKTHROUGH URBAN MINISTRIES, INC. - Victim Services Community-based Network (19 payments)",
        "extra": {
         "contract": "308272",
         "payments": 19
@@ -6388,7 +6480,7 @@
        "amount": 41420.43,
        "basis": "paid_to_date",
        "kind": "vendor",
-       "note": "Contract 341284: CDPH-VIOLNCE PREV: Violence Prevention - Community Conveners for Neighborhood Safety PO# 3 (3 payments)",
+       "note": "Contract 341284: CDPH-VIOLNCE PREV: Violence Prevention - Community Conveners for Neighborhood Safety PO# 341284 (3 payments)",
        "extra": {
         "contract": "341284",
         "payments": 3
@@ -11358,7 +11450,7 @@
        "amount": 140806.82,
        "basis": "paid_to_date",
        "kind": "vendor",
-       "note": "Contract 314360: CDPH-STI PROJ: Repro Health Access Initiative PO 314360 BOARD OF TRUSTEES OF THE UNIV. OF (8 payments)",
+       "note": "Contract 314360: CDPH-STI PROJ: Repro Health Access Initiative PO 314360 BOARD OF TRUSTEES OF THE UNIV. OF ILLINOIS (8 payments)",
        "extra": {
         "contract": "314360",
         "payments": 8
@@ -12098,7 +12190,7 @@
        "amount": 228200.0,
        "basis": "paid_to_date",
        "kind": "vendor",
-       "note": "Contract 59622: MAINTENANCE SERVICE FOR THE AUTOMATED MATERIAL HANDLING (AMH) SYSTEM AND PURCHASE OF RELAT (1 payments)",
+       "note": "Contract 59622: MAINTENANCE SERVICE FOR THE AUTOMATED MATERIAL HANDLING (AMH) SYSTEM AND PURCHASE OF RELATED GOODS AND SERVICES (1 payments)",
        "extra": {
         "contract": "59622",
         "payments": 1

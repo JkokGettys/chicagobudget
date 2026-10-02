@@ -203,10 +203,28 @@ def place(item, lines_by):
     return None, f"{len(cands)} candidate lines"
 
 
+def full_descriptions():
+    """contract number -> full description of its latest revision (rsxa-ify5). The items file cuts descriptions at 90
+    characters, so words such as "O'Hare" or "Federal" late in the text were invisible to the matching rules."""
+    import csv
+    by = {}
+    with open(P("raw/contracts/contracts_all.csv"), newline="") as f:
+        for r in csv.DictReader(f):
+            try:
+                rv = int(r["revision_number"])
+            except (TypeError, ValueError):
+                rv = -1
+            k = r["purchase_order_contract_number"]
+            if k not in by or rv >= by[k][0]:
+                by[k] = (rv, r["purchase_order_description"] or "")
+    return {k: v[1] for k, v in by.items()}
+
+
 def main():
     ven = json.load(open(P("data/city_vendors_items_2026ytd.json")))
     label = ven["meta"]["label"]
     rem, npairs, nmiss = alias_duplicate_corrections(ven)
+    FULL = full_descriptions() if os.path.exists(P("raw/contracts/contracts_all.csv")) else {}
     print(f"removed {npairs} same-voucher pairs spelled with two vendor names: ${rem:,.2f} ({nmiss} pairs not found in items)")
     emp_path = P("data/people/city_employees_2026.json")
     pp = json.load(open(emp_path)) if os.path.exists(emp_path) else {"current_employees": []}
@@ -234,8 +252,12 @@ def main():
         for fam, rows in dd["families"].items():
             for v in rows:
                 name = (v[0] or "").upper().strip()
+                desc = v[4] or ""
+                fd = FULL.get(str(v[1]), "")
+                if len(desc) >= 85 and fd.startswith(desc[:80]):
+                    desc = fd   # the items file truncated it
                 item = {"dept": d.lstrip("0") or "0", "family": fam, "vendor": v[0] or "", "contract": v[1], "amount": round(v[2] * 100),
-                        "payments": v[3], "desc": v[4] or "", "ctype": v[5], "biz": biz.get(name, False)}
+                        "payments": v[3], "desc": desc, "ctype": v[5], "biz": biz.get(name, False)}
                 tot_items += item["amount"]
                 if item["amount"] <= 0:
                     unplaced["non-positive net"] += item["amount"]
