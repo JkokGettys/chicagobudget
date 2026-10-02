@@ -361,11 +361,90 @@ def collapse_single_children(root, kinds=COLLAPSIBLE):
 
 
 def cleanup(root, log=print):
-    """Run after all splits: kid-friendly fund labels, merged rounding, no pointless single-child clicks."""
+    """Run after all splits: kid-friendly fund labels, merged rounding, no pointless single-child clicks,
+    and unique names among boxes that share a parent."""
     a = friendly_fund_names(root)
     b = merge_rounding(root)
     c = collapse_single_children(root)
-    log(f"cleanup: {a} fund labels, {b} rounding boxes merged, {c} single-child boxes removed")
+    d = disambiguate_siblings(root)
+    log(f"cleanup: {a} fund labels, {b} rounding boxes merged, {c} single-child boxes removed, {d} same-name siblings relabelled")
+
+
+# ---- unique sibling names ---------------------------------------------------
+def _fund_label(n):
+    fn = n.extra.get("fund_name")
+    if fn:
+        return "paid from: " + FUND_KID_NAMES.get(fn, fn)
+    return None
+
+
+def _org_unit(n):
+    for v in n.extra.get("via") or []:
+        if v.get("kind") == "org_unit":
+            return v.get("name")
+    return None
+
+
+# Attributes tried in order, per kind. Each returns a short kid-readable phrase or None.
+# Only attributes that differ inside a group of same-name siblings are used, and only as many as it takes
+# to make every name in the group different.
+_SIB_ATTRS = {
+    "line": [_fund_label,
+             lambda n: n.extra.get("authority_name"),
+             lambda n: "fund " + str(n.extra["fund"]) if n.extra.get("fund") else None],
+    "job_title": [_org_unit,
+                  lambda n: "job code " + str(n.extra["title_code"]) if n.extra.get("title_code") else None],
+    "piece": [lambda n: "project " + str(n.extra["grant_project_code"]) if n.extra.get("grant_project_code") else None],
+    "budget_line": [lambda n: "money from: " + str(n.extra["money_comes_from"]) if n.extra.get("money_comes_from") else None,
+                    lambda n: "fund " + str(n.extra["fund_code"]) if n.extra.get("fund_code") else None,
+                    lambda n: "program code " + str(n.extra["program_code"]) if n.extra.get("program_code") else None,
+                    lambda n: str(n.extra["fund"]) if n.extra.get("fund") else None],
+    "project": [lambda n: str(n.extra["money_source"]) if n.extra.get("money_source") else None,
+                lambda n: str(n.extra["project_type"]) if n.extra.get("project_type") else None,
+                lambda n: "project " + str(n.extra["project_number"]) if n.extra.get("project_number") not in (None, "TBD") else None],
+}
+
+
+def disambiguate_siblings(root):
+    """Boxes under the same parent must not share a name (a reader cannot tell them apart). Add the thing
+    that differs, such as the fund that pays (\"Overtime (paid from: Water bills)\"). The old name stays in
+    extra.official_name. Returns the number of boxes renamed."""
+    renamed = 0
+    for parent in list(root.walk()):
+        groups = {}
+        for ch in parent.children:
+            groups.setdefault(ch.name, []).append(ch)
+        for name, grp in groups.items():
+            if len(grp) < 2:
+                continue
+            labels = {id(ch): [] for ch in grp}
+            attrs = _SIB_ATTRS.get(grp[0].kind, [])
+            # fund codes and the like come after friendlier attributes, so walk the list in order
+            for fn in attrs + [lambda n: None]:
+                if len({tuple(v) for v in labels.values()}) == len(grp):
+                    break
+                vals = [fn(ch) for ch in grp]
+                if len({v for v in vals}) < 2:
+                    continue  # does not tell them apart
+                for ch, v in zip(grp, vals):
+                    if v:
+                        labels[id(ch)].append(v)
+            taken = {c.name for c in parent.children}
+            def fmt(lab):
+                # merge into an existing closing bracket instead of stacking two: "Overtime (Bureau X, paid from: Y)"
+                if name.endswith(")"):
+                    return f"{name[:-1]}, {lab})"
+                return f"{name} ({lab})"
+            for i, ch in enumerate(grp, 1):
+                lab = ", ".join(labels[id(ch)])
+                new = fmt(lab) if lab else fmt(f"#{i}")
+                if new in taken:
+                    new = fmt(f"{lab}, #{i}" if lab else f"#{i}b")
+                taken.add(new)
+                ch.extra.setdefault("official_name", ch.name)
+                ch.name = new
+                renamed += 1
+    return renamed
 
 
 # ---- checks ---------------------------------------------------------------

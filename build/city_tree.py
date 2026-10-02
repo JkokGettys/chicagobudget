@@ -162,7 +162,8 @@ for r in app:
         dn = g.add(r["department_description"], r["department_description"], kind="department")
         fn = dn.add(f"{fund}-{r['fund_description']}", r["fund_description"], kind="fund")
         fn.add(f"{auth}-{acct}", desc, amount=cents(a), kind="line", source=src,
-               extra={"fund": fund, "authority": auth, "account": acct})
+               extra={"fund": fund, "fund_name": r["fund_description"], "authority": auth,
+                      "authority_name": r["appropriation_authority_description"], "account": acct})
         continue
     if r["department_description"] == "Finance General":
         b, _ = fg_bucket(desc, acct)
@@ -693,6 +694,8 @@ for n in city.walk():
 from treelib import cleanup  # noqa: E402
 city.rollup()
 cleanup(city)
+from treelib import disambiguate_siblings  # noqa: E402
+print(f"memo branch: {disambiguate_siblings(twice)} same-name siblings relabelled")
 
 # ---------------------------------------------------------------- checks + save
 twice.rollup()
