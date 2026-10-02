@@ -204,7 +204,7 @@ def award_pieces(awards, idx, airport, fy_pred, label_for_note):
                 + f", period {a['start']} to {a['end']}. The box shows the part not yet paid out. "
                 + ("Amount and project type match the FAA grant history. " if f else "Not yet in an FAA grant history file (the FAA has not published its FY2026 list), so USASpending is the only source. ")
                 + label_for_note)
-        pieces.append({"name": nm, "amount": r2(unspent), "basis": "gov_estimate", "kind": "grant_award",
+        pieces.append({"key": gn or a["award_id"], "name": nm, "amount": r2(unspent), "basis": "gov_estimate", "kind": "grant_award",
                        "source": {"doc": "USASpending.gov award record", "url": a["usaspending_url"],
                                   "faa_grant_history": f["file"] if f else None},
                        "why": WHY_AWARD, "note": note,
@@ -374,7 +374,7 @@ def main():
                              "(par $328,000,000, matching the outstanding table). No principal falls due before the 2038 sinking fund installments. Check: 35% federal subsidy x "
                              f"(1 - 5.7% sequestration) = ${subsidy_check:,.0f}, and the 2026CD OS prints $6,912 thousand (Table B-4). Coupons from the 2010 OS cover (raw/bonds)."),
                     "why": "This is one old bond's yearly interest to the people who lent the money. It is fixed by the bond's printed rate, and it is already as small as the bond itself."}],
-        "residual": {"name": "Other bonds (not printed one by one)",
+        "residual": {"name": "Rest of the older bonds (not printed one by one)",
                      "why": "Several older bonds share this line (parts of 2016D to 2016G, 2017A to 2017C and 2018C), and the public statements we found do not print each bond's share for 2026."},
         "source": SRC_OS,
         "note": "Series 2010B was taken out of the combined 'other' column because its terms are printed and its interest checks against the printed federal subsidy.",
