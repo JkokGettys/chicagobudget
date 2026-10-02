@@ -1,0 +1,251 @@
+{
+ "meta": {
+  "author": "launch fix 3",
+  "built_by": "scripts/cps_utilities_build.py",
+  "description": "Names the utility companies on the four large CPS utility lines (paid FY2026, vendor totals)"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.facilities.u11880.supplies.a53105"
+   },
+   "expect_amount": 43882579.0,
+   "mode": "paid_to_date",
+   "pieces": [
+    {
+     "name": "Constellation NewEnergy (electricity supplier): paid in FY2026",
+     "amount": 37377201.26,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendors paid $1M or more; vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "data/cps_supplier_payments_fy2026_over1m.csv"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the supplier name 'CONSTELLATION NEWENERGY, INC'. Not tied to a budget line by CPS.",
+     "why": "This is what CPS paid one utility company for buying the electricity itself in a year. The payments are made as the bills come in, and CPS does not publish them bill by bill."
+    }
+   ],
+   "residual": {
+    "name": "Budgeted but not matched to a payment of $1M or more shown here",
+    "why": "Smaller payments to other companies, bills paid from other accounts, or budget that was not spent. CPS's file only lists companies paid $1M or more."
+   },
+   "over": {
+    "name": "Paid more than this budget line (payments from other accounts)"
+   },
+   "note": "Plain words: CPS pays Constellation NewEnergy for buying the electricity itself. The box shows what CPS paid that company in fiscal year 2026 (July 2025 to June 2026): $37,377,201.26. CPS publishes payments by company, not by budget line, so this is our match to the electricity supply (Constellation sells CPS the power). Delivery over the wires is the separate 'Electricity delivery' line. The company total can include other CPS accounts, and companies paid under $1M are not in the file, so the rest of the line is shown as not matched.",
+   "side": [
+    {
+     "kind": "vendor_payment",
+     "label": "Constellation NewEnergy: paid FY2026, whole vendor total $37,377,201.26",
+     "amount": 37377201.26,
+     "period": "FY2026",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendors paid $1M or more; vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "data/cps_supplier_payments_fy2026_over1m.csv"
+     }
+    },
+    {
+     "kind": "vendor_payment_prior_years",
+     "label": "Constellation NewEnergy: earlier years paid by CPS (vendor totals), FY2025: $33,074,589.87; FY2024: $22,637,240.79",
+     "amount": 33074589.87,
+     "period": "FY2025",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2024 and FY2025 (vendors paid $1M or more)",
+      "file": "data/cps_supplier_payments_fy2025_over1m.csv, data/cps_supplier_payments_fy2024_over1m.csv"
+     }
+    },
+    {
+     "kind": "contract_authority",
+     "label": "Board Report 22-1207-PR7: Authorize the fourth and fifth (final) renewal agreement with constellation newenergy, inc for the supply of electricity, up to $160,000,000, 01/01/2024 to 12/31/2027",
+     "amount": 160000000.0,
+     "period": "contract term",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS Board Report 22-1207-PR7",
+      "file": "data/cps_contract_awards_fy21_27.csv"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.facilities.u11880.supplies.a53115"
+   },
+   "expect_amount": 42227643.0,
+   "mode": "paid_to_date",
+   "pieces": [
+    {
+     "name": "Commonwealth Edison, called ComEd (electricity delivery company): paid in FY2026",
+     "amount": 35858365.71,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendors paid $1M or more; vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "data/cps_supplier_payments_fy2026_over1m.csv"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the supplier name 'COMMONWEALTH EDISON COMPANY'. Not tied to a budget line by CPS.",
+     "why": "This is what CPS paid one utility company for delivering electricity over the wires in a year. The payments are made as the bills come in, and CPS does not publish them bill by bill."
+    }
+   ],
+   "residual": {
+    "name": "Budgeted but not matched to a payment of $1M or more shown here",
+    "why": "Smaller payments to other companies, bills paid from other accounts, or budget that was not spent. CPS's file only lists companies paid $1M or more."
+   },
+   "over": {
+    "name": "Paid more than this budget line (payments from other accounts)"
+   },
+   "note": "Plain words: CPS pays Commonwealth Edison, called ComEd for delivering electricity over the wires. The box shows what CPS paid that company in fiscal year 2026 (July 2025 to June 2026): $35,858,365.71. CPS publishes payments by company, not by budget line, so this is our match to the electricity delivery (ComEd owns the wires). We match ComEd here because it is the local delivery company, not because a CPS document says so. The company total can include other CPS accounts, and companies paid under $1M are not in the file, so the rest of the line is shown as not matched.",
+   "side": [
+    {
+     "kind": "vendor_payment",
+     "label": "Commonwealth Edison, called ComEd: paid FY2026, whole vendor total $35,858,365.71",
+     "amount": 35858365.71,
+     "period": "FY2026",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendors paid $1M or more; vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "data/cps_supplier_payments_fy2026_over1m.csv"
+     }
+    },
+    {
+     "kind": "vendor_payment_prior_years",
+     "label": "Commonwealth Edison, called ComEd: earlier years paid by CPS (vendor totals), FY2025: $34,232,373.14; FY2024: $25,041,467.03",
+     "amount": 34232373.14,
+     "period": "FY2025",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2024 and FY2025 (vendors paid $1M or more)",
+      "file": "data/cps_supplier_payments_fy2025_over1m.csv, data/cps_supplier_payments_fy2024_over1m.csv"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.facilities.u11880.supplies.a53120"
+   },
+   "expect_amount": 18116321.0,
+   "mode": "paid_to_date",
+   "pieces": [
+    {
+     "name": "Peoples Gas (gas delivery company): paid in FY2026",
+     "amount": 17803388.66,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendors paid $1M or more; vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "data/cps_supplier_payments_fy2026_over1m.csv"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the supplier name 'PEOPLES GAS'. Not tied to a budget line by CPS.",
+     "why": "This is what CPS paid one utility company for delivering natural gas through the pipes in a year. The payments are made as the bills come in, and CPS does not publish them bill by bill."
+    }
+   ],
+   "residual": {
+    "name": "Budgeted but not matched to a payment of $1M or more shown here",
+    "why": "Smaller payments to other companies, bills paid from other accounts, or budget that was not spent. CPS's file only lists companies paid $1M or more."
+   },
+   "over": {
+    "name": "Paid more than this budget line (payments from other accounts)"
+   },
+   "note": "Plain words: CPS pays Peoples Gas for delivering natural gas through the pipes. The box shows what CPS paid that company in fiscal year 2026 (July 2025 to June 2026): $17,803,388.66. CPS publishes payments by company, not by budget line, so this is our match to the natural gas delivery (Peoples Gas owns the pipes). We match Peoples Gas here because it is the local delivery company, not because a CPS document says so. The company total can include other CPS accounts, and companies paid under $1M are not in the file, so the rest of the line is shown as not matched.",
+   "side": [
+    {
+     "kind": "vendor_payment",
+     "label": "Peoples Gas: paid FY2026, whole vendor total $17,803,388.66",
+     "amount": 17803388.66,
+     "period": "FY2026",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendors paid $1M or more; vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "data/cps_supplier_payments_fy2026_over1m.csv"
+     }
+    },
+    {
+     "kind": "vendor_payment_prior_years",
+     "label": "Peoples Gas: earlier years paid by CPS (vendor totals), FY2025: $16,813,754.12; FY2024: $10,896,355.14",
+     "amount": 16813754.12,
+     "period": "FY2025",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2024 and FY2025 (vendors paid $1M or more)",
+      "file": "data/cps_supplier_payments_fy2025_over1m.csv, data/cps_supplier_payments_fy2024_over1m.csv"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.facilities.u11880.supplies.a53125"
+   },
+   "expect_amount": 14863679.0,
+   "mode": "paid_to_date",
+   "pieces": [
+    {
+     "name": "Constellation NewEnergy Gas Division (natural gas supplier): paid in FY2026",
+     "amount": 12487156.24,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendors paid $1M or more; vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "data/cps_supplier_payments_fy2026_over1m.csv"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the supplier name 'CONSTELLATION NEWENERGY - GAS DIVISION, LLC'. Not tied to a budget line by CPS.",
+     "why": "This is what CPS paid one utility company for buying the natural gas itself in a year. The payments are made as the bills come in, and CPS does not publish them bill by bill."
+    }
+   ],
+   "residual": {
+    "name": "Budgeted but not matched to a payment of $1M or more shown here",
+    "why": "Smaller payments to other companies, bills paid from other accounts, or budget that was not spent. CPS's file only lists companies paid $1M or more."
+   },
+   "over": {
+    "name": "Paid more than this budget line (payments from other accounts)"
+   },
+   "note": "Plain words: CPS pays Constellation NewEnergy Gas Division for buying the natural gas itself. The box shows what CPS paid that company in fiscal year 2026 (July 2025 to June 2026): $12,487,156.24. CPS publishes payments by company, not by budget line, so this is our match to the natural gas supply (Constellation sells CPS the gas). Delivery through the pipes is the separate 'Natural gas delivery' line. The company total can include other CPS accounts, and companies paid under $1M are not in the file, so the rest of the line is shown as not matched.",
+   "side": [
+    {
+     "kind": "vendor_payment",
+     "label": "Constellation NewEnergy Gas Division: paid FY2026, whole vendor total $12,487,156.24",
+     "amount": 12487156.24,
+     "period": "FY2026",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendors paid $1M or more; vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "data/cps_supplier_payments_fy2026_over1m.csv"
+     }
+    },
+    {
+     "kind": "vendor_payment_prior_years",
+     "label": "Constellation NewEnergy Gas Division: earlier years paid by CPS (vendor totals), FY2025: $13,008,505.38",
+     "amount": 13008505.38,
+     "period": "FY2025",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2024 and FY2025 (vendors paid $1M or more)",
+      "file": "data/cps_supplier_payments_fy2025_over1m.csv, data/cps_supplier_payments_fy2024_over1m.csv"
+     }
+    },
+    {
+     "kind": "contract_authority",
+     "label": "Board Report 25-0828-PR3: Authorize the first and second (final) renewal agreement with constellation newenergy-gas division, llc for natural gas supply services, up to $64,000,000, 01/17/2026 to 01/16/2030",
+     "amount": 64000000.0,
+     "period": "contract term",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS Board Report 25-0828-PR3",
+      "file": "data/cps_contract_awards_fy21_27.csv"
+     }
+    }
+   ]
+  }
+ ]
+}
