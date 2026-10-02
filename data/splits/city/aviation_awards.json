@@ -1,0 +1,1298 @@
+{
+ "meta": {
+  "author": "deep: O'Hare & Midway awards and capital tables",
+  "built_by": "scripts/aviation_awards_build.py",
+  "description": "Second pass on the FAA AIP carryover lines (awards with unspent money on the Aug 1 2025 carryover date not named in aviation.json), plus the O'Hare and Midway capital program tables as side facts on the airport bond lines. See research/aviation_awards.md.",
+  "carryover_snapshot": {
+   "ORD": [
+    {
+     "award": "31700221922023",
+     "unspent": 42856444.64,
+     "named_in_aviation_json": true,
+     "open_2026": true
+    },
+    {
+     "award": "31700221932024",
+     "unspent": 34976516.78,
+     "named_in_aviation_json": true,
+     "open_2026": true
+    },
+    {
+     "award": "31700221962024",
+     "unspent": 29481263.0,
+     "named_in_aviation_json": false,
+     "open_2026": true
+    },
+    {
+     "award": "31700221972025",
+     "unspent": 15743737.0,
+     "named_in_aviation_json": true,
+     "open_2026": true
+    },
+    {
+     "award": "31700221952024",
+     "unspent": 9472514.0,
+     "named_in_aviation_json": true,
+     "open_2026": true
+    },
+    {
+     "award": "31700221682018",
+     "unspent": 6761455.37,
+     "named_in_aviation_json": false,
+     "open_2026": false
+    },
+    {
+     "award": "31700221802021",
+     "unspent": 5732386.79,
+     "named_in_aviation_json": false,
+     "open_2026": false
+    },
+    {
+     "award": "31700221892022",
+     "unspent": 1070952.91,
+     "named_in_aviation_json": true,
+     "open_2026": true
+    }
+   ],
+   "MDW": [
+    {
+     "award": "31700251012021",
+     "unspent": 36758725.39,
+     "named_in_aviation_json": false,
+     "open_2026": false
+    },
+    {
+     "award": "31700251042023",
+     "unspent": 10962407.35,
+     "named_in_aviation_json": true,
+     "open_2026": true
+    },
+    {
+     "award": "31700251032022",
+     "unspent": 4774787.82,
+     "named_in_aviation_json": true,
+     "open_2026": true
+    },
+    {
+     "award": "31700250952018",
+     "unspent": 4729149.4,
+     "named_in_aviation_json": false,
+     "open_2026": false
+    },
+    {
+     "award": "31700250932017",
+     "unspent": 3173065.08,
+     "named_in_aviation_json": false,
+     "open_2026": false
+    },
+    {
+     "award": "31700251072024",
+     "unspent": 2786663.0,
+     "named_in_aviation_json": true,
+     "open_2026": true
+    },
+    {
+     "award": "31700250942017",
+     "unspent": 1950923.02,
+     "named_in_aviation_json": false,
+     "open_2026": false
+    },
+    {
+     "award": "31700251082024",
+     "unspent": 555019.0,
+     "named_in_aviation_json": true,
+     "open_2026": true
+    }
+   ]
+  }
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "city.infrastructure-services.chicago-department-of-aviation.grant-money-not-yet-assigned-to-projects.925f-federal-grant-fund.925f-2810-909a.other-not-itemised"
+   },
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Extend/expand taxiway (FAA grant 31700221962024)",
+     "amount": 29481263.0,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record and award funding history",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221962024_069"
+     },
+     "why": "The FAA promised this money to the City for one airport project. On the day the budget counted carryover the City had not yet been paid any of it, so the whole grant was waiting to be used.",
+     "note": "Award 31700221962024 (Airport Improvement Program (entitlement or discretionary)): 29,481,263.00 awarded, period 2024-09-10 to 2028-09-09. The box is the unspent balance on 2025-08-01 (obligated minus gross outlays reported through July 2025), because that is the date the Budget Book uses to calculate carryover. Treasury has since reported gross outlays of 22,419,527.71 (through the latest report in the file), so little may be left to pay today. The first pass named only awards with money still unspent today, so this one was missing. FAA grant history lists it as 3-17-0022-196-2024. ",
+     "extra": {
+      "award_id": "31700221962024",
+      "obligation": 29481263.0,
+      "balance_date": "2025-08-01",
+      "period_start": "2024-09-10",
+      "period_end": "2028-09-09"
+     }
+    }
+   ],
+   "residual": {
+    "name": "Still not tied to any FAA award, even on the carryover date",
+    "why": "The budget carries this much federal airport grant money over from earlier years. Federal records show awards with unspent money on the day the carryover was counted, but they explain only about a third of it. No public record ties the rest to a project."
+   },
+   "note": "Second pass on this box. Unspent money on every named O'Hare FAA award on 2025-08-01 (the date the Budget Book says carryover is counted) adds up to $146,095,270, against the $411,790,000 carried. Awards made after that date, the IIJA 2026 awards, expired grants, and awards already named in the first pass are not repeated.",
+   "side": [
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700221922023 on 2025-08-01: Expand terminal building (IIJA Airport Terminal Program), already a named box above (shown there at today's balance)",
+     "amount": 42856444.64,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221922023_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700221932024 on 2025-08-01: Expand terminal building (IIJA Airport Terminal Program), already a named box above (shown there at today's balance)",
+     "amount": 34976516.78,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221932024_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700221962024 on 2025-08-01: Extend/expand taxiway (Airport Improvement Program (entitlement or discretionary)), a new named box above",
+     "amount": 29481263.0,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221962024_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700221972025 on 2025-08-01: Extend/expand taxiway (IIJA Airport Infrastructure Grants), already a named box above (shown there at today's balance)",
+     "amount": 15743737.0,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221972025_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700221952024 on 2025-08-01: Rehabilitate taxiway (Airport Improvement Program (entitlement or discretionary)), already a named box above (shown there at today's balance)",
+     "amount": 9472514.0,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221952024_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700221682018 on 2025-08-01: Airport improvement (older FAA record gives no project text) (Airport Improvement Program (entitlement or discretionary)), grant period ended before 2026, so not treated as 2026 carryover",
+     "amount": 6761455.37,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221682018_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700221802021 on 2025-08-01: Rehabilitate taxiway lighting; rehabilitate taxiway; reconstruct airfield guidance signs (COVID relief for airports (CRRSA and ARPA), Airport Improvement Program (entitlement or discretionary)), grant period ended before 2026, so not treated as 2026 carryover",
+     "amount": 5732386.79,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221802021_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700221892022 on 2025-08-01: Construct taxiway (Airport Improvement Program (entitlement or discretionary)), already a named box above (shown there at today's balance)",
+     "amount": 1070952.91,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221892022_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_total",
+     "label": "All unspent money on ORD FAA awards on 2025-08-01, added up (the budget carried 411,790,000)",
+     "amount": 146095270.49,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award funding histories (raw/aviation/faa_award_funding.json), summed by scripts/aviation_awards_build.py"
+     }
+    },
+    {
+     "kind": "iija_allocation",
+     "label": "IIJA Airport Infrastructure Grants allocated to O'Hare for federal fiscal years 2022 to 2026 (about $73.7M, $73.4M, $69.6M, $63.9M, $66.0M, added up from the printed figures)",
+     "amount": 346600000,
+     "period": "FFY2022 to FFY2026",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "301 (E-137) and 71",
+      "note": "text says $346.6 million allocated through August 2026"
+     }
+    },
+    {
+     "kind": "iija_atp",
+     "label": "IIJA Airport Terminal Program discretionary grants awarded to O'Hare ($50.0M FFY23, $40.0M FFY24, $20.0M FFY25)",
+     "amount": 110000000,
+     "period": "FFY2023 to FFY2025",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "71 and 301 (E-137)"
+     }
+    },
+    {
+     "kind": "faa_loi",
+     "label": "FAA Letter of Intent LOI AGL-10-01 discretionary grants for O'Hare Modernization (total, $605.0M received by July 2026, final $20.0M payment is for federal fiscal year 2026 and goes to Series 2016E bond debt service)",
+     "amount": 625000000,
+     "period": "FFY2011 to FFY2026",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "300 (E-136) and 190 (E-26, footnote 20)"
+     }
+    },
+    {
+     "kind": "budget_book_bil_line",
+     "label": "Summary G also lists 925F-2827 DOT - FAA - Airport Improvement Program - O'Hare (BIL) (20.106) with $90,000,000 anticipated for 2026 and no carryover. The ordinance data has no row for it, so it is not a box in this tree.",
+     "amount": 90000000,
+     "period": "2026 budget",
+     "basis": "published",
+     "source": {
+      "doc": "Mayor's Budget Recommendations for Year 2026, Summary G (grant funds)",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Recommendations.pdf",
+      "page": "607 (PDF 616)"
+     }
+    },
+    {
+     "kind": "faa_fy2026_awards_listed_elsewhere",
+     "label": "FAA awards made in August and September 2026 (including $83.3M of IIJA Airport Infrastructure Grants under ALN 20.117) are listed on the 'professional and technical services' O'Hare grant line, not here. They were awarded after the August 2025 carryover date, so they cannot be part of this carryover.",
+     "amount": 83314240,
+     "period": "awarded 2026-09",
+     "basis": "actual",
+     "source": {
+      "doc": "USASpending.gov awards 31700222072026, 31700222092026, 31700222102026 (ALN 20.117, sum of obligations)",
+      "url": "https://www.usaspending.gov/"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.infrastructure-services.chicago-department-of-aviation.grant-money-not-yet-assigned-to-projects.925f-federal-grant-fund.925f-2805-909a.other-not-itemised"
+   },
+   "mode": "side_only",
+   "note": "No further Midway FAA award both had unspent money on 2025-08-01 and was still open in 2026, beyond the ones already named above. Unspent money on every named Midway FAA award on that date adds up to $65,690,740, against the $123,869,000 carried. The side list shows each award's balance that day, including four whose grant period ended before 2026.",
+   "side": [
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700251012021 on 2025-08-01: American rescue plan act awarded as economic assistance to eligible u (COVID relief for airports (CRRSA and ARPA)), grant period ended before 2026, so not treated as 2026 carryover",
+     "amount": 36758725.39,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251012021_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700251042023 on 2025-08-01: Noise mitigation measures for residences within 65-69 dnl (Airport Improvement Program (entitlement or discretionary)), already a named box above (shown there at today's balance)",
+     "amount": 10962407.35,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251042023_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700251032022 on 2025-08-01: Noise mitigation measures for residences within 65-69 dnl (Airport Improvement Program (entitlement or discretionary)), already a named box above (shown there at today's balance)",
+     "amount": 4774787.82,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251032022_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700250952018 on 2025-08-01: Airport improvement (older FAA record gives no project text) (Airport Improvement Program (entitlement or discretionary)), grant period ended before 2026, so not treated as 2026 carryover",
+     "amount": 4729149.4,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700250952018_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700250932017 on 2025-08-01: Airport improvement (older FAA record gives no project text) (Airport Improvement Program (entitlement or discretionary)), grant period ended before 2026, so not treated as 2026 carryover",
+     "amount": 3173065.08,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700250932017_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700251072024 on 2025-08-01: Rehabilitate runway (Airport Improvement Program (entitlement or discretionary)), already a named box above (shown there at today's balance)",
+     "amount": 2786663.0,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251072024_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700250942017 on 2025-08-01: Airport improvement (older FAA record gives no project text) (Airport Improvement Program (entitlement or discretionary)), grant period ended before 2026, so not treated as 2026 carryover",
+     "amount": 1950923.02,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700250942017_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_balance",
+     "label": "Unspent on FAA award 31700251082024 on 2025-08-01: Noise mitigation measures for residences within 65-69 dnl (Airport Improvement Program (entitlement or discretionary)), already a named box above (shown there at today's balance)",
+     "amount": 555019.0,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award record, award funding history (Treasury account data)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251082024_069",
+      "note": "obligations minus gross outlays reported through July 2025 (federal fiscal year 2025, period 10). Agencies report outlays late, so older awards can look more unspent than they were."
+     }
+    },
+    {
+     "kind": "carryover_date_total",
+     "label": "All unspent money on MDW FAA awards on 2025-08-01, added up (the budget carried 123,869,000)",
+     "amount": 65690740.06,
+     "period": "balance on 2025-08-01",
+     "basis": "published",
+     "source": {
+      "doc": "USASpending.gov award funding histories (raw/aviation/faa_award_funding.json), summed by scripts/aviation_awards_build.py"
+     }
+    },
+    {
+     "kind": "iija_allocation",
+     "label": "IIJA Airport Infrastructure Grants allocated to Midway for federal fiscal years 2022 to 2025 (FFY2022 $20.3M, FFY2023 $20.2M, FFY2024 $20.3M, FFY2025 $20.1M)",
+     "amount": 80800000,
+     "period": "FFY2022 to FFY2025",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "159 and 67"
+     }
+    },
+    {
+     "kind": "aip_entitlement",
+     "label": "AIP entitlement grants allocated to Midway for federal fiscal years 2022 to 2025",
+     "amount": 19000000,
+     "period": "FFY2022 to FFY2025",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "159"
+     }
+    },
+    {
+     "kind": "project_funding",
+     "label": "Runway 13C-31C pavement rehabilitation: IIJA AIG funds applied",
+     "amount": 28200000,
+     "period": "FFY2022 to FFY2025",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "159"
+     }
+    },
+    {
+     "kind": "project_funding",
+     "label": "Runway 13C-31C pavement rehabilitation: AIP entitlement funds applied",
+     "amount": 9600000,
+     "period": "FFY2022 to FFY2025",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "159"
+     }
+    },
+    {
+     "kind": "faa_fy2026_awards_not_placed",
+     "label": "Two Midway IIJA Airport Infrastructure Grants (ALN 20.117, Reconstruct taxiway $8,646,553 and Reconstruct terminal $12,763,682) were awarded in September 2026, after the August 2025 carryover date. No Midway budget line carries IIJA money, so they sit in no box. The 2026 Midway AIP awards (ALN 20.116) are boxes on the Midway 'professional and technical services' grant line.",
+     "amount": 21410235,
+     "period": "awarded 2026-09",
+     "basis": "actual",
+     "source": {
+      "doc": "USASpending.gov awards 31700251122026 and 31700251132026 (ALN 20.117)",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251132026_069"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.chicago-o-hare-airport-fund.0740-2005-0902.o-hare-2026b"
+   },
+   "expect_amount": 1825655,
+   "mode": "side_only",
+   "note": "This bond's new money (about $1.0 billion) pays for part of the O'Hare capital program (O'Hare 21 and other projects). The side list shows the program's cost, who pays for what, the approved project list with completion years, and how the bond money is used. The bond is not tied to single projects: the airport consultant states only the total share by program.",
+   "side": [
+    {
+     "kind": "capital_program_funding",
+     "label": "TAP Phase 1 elements (O'Hare Global Terminal, Concourses D and E, tunnel, baggage, Terminal 5): total cost in escalated dollars (of which already funded $2,937,130,000, paid by the 2026B bonds $695,305,000, to be paid by future bonds $6,193,783,000, other (airline fees) $0)",
+     "amount": 9826217000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "184 (E-20, Table S-1) and 210 (E-46, Table 2-2)"
+     }
+    },
+    {
+     "kind": "capital_program_funding",
+     "label": "Pre-approved capital improvement projects: total cost in escalated dollars (of which already funded $1,352,816,000, paid by the 2026B bonds $130,828,000, to be paid by future bonds $442,166,000, other (airline fees) $0)",
+     "amount": 1925810000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "184 (E-20, Table S-1) and 210 (E-46, Table 2-2)"
+     }
+    },
+    {
+     "kind": "capital_program_funding",
+     "label": "Pre-approved allowances and infrastructure reliability: total cost in escalated dollars (of which already funded $96,291,000, paid by the 2026B bonds $45,659,000, to be paid by future bonds $26,207,000, other (airline fees) $600,000,000)",
+     "amount": 768157000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "184 (E-20, Table S-1) and 210 (E-46, Table 2-2)"
+     }
+    },
+    {
+     "kind": "capital_program_funding",
+     "label": "Ongoing projects from earlier agreements: total cost in escalated dollars (of which already funded $149,842,000, paid by the 2026B bonds $18,598,000, to be paid by future bonds $40,778,000, other (airline fees) $0)",
+     "amount": 209218000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "184 (E-20, Table S-1) and 210 (E-46, Table 2-2)"
+     }
+    },
+    {
+     "kind": "capital_program_funding",
+     "label": "New approvals since the 2018 airline agreement: total cost in escalated dollars (of which already funded $957,552,000, paid by the 2026B bonds $111,010,000, to be paid by future bonds $425,198,000, other (airline fees) $0)",
+     "amount": 1493760000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "184 (E-20, Table S-1) and 210 (E-46, Table 2-2)"
+     }
+    },
+    {
+     "kind": "capital_program_funding",
+     "label": "Proposed projects: total cost in escalated dollars (of which already funded $44,144,000, paid by the 2026B bonds $3,259,000, to be paid by future bonds $356,549,000, other (airline fees) $0)",
+     "amount": 403952000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "184 (E-20, Table S-1) and 210 (E-46, Table 2-2)"
+     }
+    },
+    {
+     "kind": "capital_program_funding",
+     "label": "Total airport capital program: total cost in escalated dollars (of which already funded $5,537,774,000, paid by the 2026B bonds $1,004,658,000, to be paid by future bonds $7,484,681,000, other (airline fees) $600,000,000)",
+     "amount": 14627114000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "184 (E-20, Table S-1) and 210 (E-46, Table 2-2)"
+     }
+    },
+    {
+     "kind": "capital_program_funding",
+     "label": "Executed grant funding already counted inside 'already funded' (about $290.1M). The financial analysis assumes no future grants: new grants would reduce future bonds.",
+     "amount": 290100000,
+     "period": "to July 2026",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "184 (E-20, note 3) and 209 (E-45)"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit L: Central detention basin elimination and south basin expansion (approval $223,000,000), estimated completion 2026",
+     "amount": 223000000,
+     "period": "approved 2018, 2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit L: Concourse D (Satellite 1) (approval $730,000,000), estimated completion 2028",
+     "amount": 730000000,
+     "period": "approved 2018, 2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit L: Concourse E (Satellite 2), north portion 2030 and south portion 2034 (approval $527,000,000), estimated completion 2030 and 2034",
+     "amount": 527000000,
+     "period": "approved 2018, 2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit L: Concourse L 3-gate expansion (approval $25,063,000 plus $28,763,000 added later), estimated completion complete 2025",
+     "amount": 53826000,
+     "period": "approved 2018, 2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit L: Terminal 5 landside and parking, phase 1 (stage 1 garage complete 2024, stage 2 2029) (approval $222,000,000), estimated completion 2029",
+     "amount": 222000000,
+     "period": "approved 2018, 2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit L: Consolidated people mover, pedestrian and utility tunnel (phase 1) (approval $665,000,000), estimated completion 2035",
+     "amount": 665000000,
+     "period": "approved 2018, 2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit L: Baggage handling system equipment (approval $825,000,000), estimated completion 2033",
+     "amount": 825000000,
+     "period": "approved 2018, 2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit L: Terminal 2 redevelopment: O'Hare Global Terminal and Global Concourse (approval $1,830,000,000), estimated completion 2033",
+     "amount": 1830000000,
+     "period": "approved 2018, 2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit L: Terminal 5 repurposing and core expansion (approval $250,000,000), estimated completion 2029",
+     "amount": 250000000,
+     "period": "approved 2018, 2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit L: TAP phase 1 utilities allowance (approval $493,000,000), estimated completion 2033",
+     "amount": 493000000,
+     "period": "approved 2018, 2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit L: Western parking and screening facilities allowance (approval $215,000,000), estimated completion 2030",
+     "amount": 215000000,
+     "period": "approved 2018, 2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit L: Concourse L 5-gate buyout (approval $78,000,000), estimated completion complete 2018",
+     "amount": 78000000,
+     "period": "approved 2018, 2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit N: remaining O'Hare Modernization airfield projects (complete 2021)",
+     "amount": 334443000,
+     "period": "2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit N: capital improvement projects (ongoing)",
+     "amount": 1352032000,
+     "period": "2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit O: pre-approved allowances ($40 million a year, paid from airport fees and charges)",
+     "amount": 600000000,
+     "period": "2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "AULA Exhibit O: infrastructure reliability allowance (ongoing)",
+     "amount": 168157000,
+     "period": "2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "Total airline agreement funding approval, all exhibits",
+     "amount": 8566458000,
+     "period": "2018 dollars",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "207 (E-43, Table 2-1)",
+      "note": "2018 dollars, unescalated, includes contingency and management reserve spread across projects by the airport consultant"
+     }
+    },
+    {
+     "kind": "capital_project_cip",
+     "label": "Capital improvement program project: Vehicle acquisition, high-speed runway equipment",
+     "amount": 99100000,
+     "period": "ongoing, unescalated",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "215 (E-51)",
+      "note": "unescalated dollars, 'significant ongoing projects included in the CIP'"
+     }
+    },
+    {
+     "kind": "capital_project_cip",
+     "label": "Capital improvement program project: Full core terminal virtual ramp control",
+     "amount": 48800000,
+     "period": "ongoing, unescalated",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "215 (E-51)",
+      "note": "unescalated dollars, 'significant ongoing projects included in the CIP'"
+     }
+    },
+    {
+     "kind": "capital_project_cip",
+     "label": "Capital improvement program project: Taxiway N reconstruction",
+     "amount": 59900000,
+     "period": "ongoing, unescalated",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "215 (E-51)",
+      "note": "unescalated dollars, 'significant ongoing projects included in the CIP'"
+     }
+    },
+    {
+     "kind": "capital_project_cip",
+     "label": "Capital improvement program project: Taxiway V reconstruction",
+     "amount": 91100000,
+     "period": "ongoing, unescalated",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "215 (E-51)",
+      "note": "unescalated dollars, 'significant ongoing projects included in the CIP'"
+     }
+    },
+    {
+     "kind": "capital_project_cip",
+     "label": "Capital improvement program project: Grade separated roads",
+     "amount": 282300000,
+     "period": "ongoing, unescalated",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "215 (E-51)",
+      "note": "unescalated dollars, 'significant ongoing projects included in the CIP'"
+     }
+    },
+    {
+     "kind": "capital_project_cip",
+     "label": "Capital improvement program project: Terminal 3 improvements (ElevateT3)",
+     "amount": 305700000,
+     "period": "ongoing, unescalated",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "215 (E-51)",
+      "note": "unescalated dollars, 'significant ongoing projects included in the CIP'"
+     }
+    },
+    {
+     "kind": "capital_project_cip",
+     "label": "Capital improvement program project: Terminal 3 city equipment",
+     "amount": 76900000,
+     "period": "ongoing, unescalated",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21 (Appendix E, Report of the Airport Consultant)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago07a-FIN.1Lay3BJv8.pdf",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "215 (E-51)",
+      "note": "unescalated dollars, 'significant ongoing projects included in the CIP'"
+     }
+    },
+    {
+     "kind": "bond_uses",
+     "label": "2026B bonds (new money part only): par amount $1,185.9M, deposit to project fund",
+     "amount": 1004400000,
+     "period": "2026",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue and Revenue Refunding Bonds 2026B, Official Statement (Appendix E, Report of the Airport Consultant, July 2026)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago06a-FIN.MLCK3FoI1.pdf",
+      "file": "raw/bonds/ohare_2026B_OS.pdf",
+      "page": "184 (E-30, Table 1-2)"
+     }
+    },
+    {
+     "kind": "bond_uses",
+     "label": "2026B bonds (new money part only): deposit to capitalized interest accounts (interest paid from bond money, not from airport revenue)",
+     "amount": 134900000,
+     "period": "2026",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue and Revenue Refunding Bonds 2026B, Official Statement (Appendix E, Report of the Airport Consultant, July 2026)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago06a-FIN.MLCK3FoI1.pdf",
+      "file": "raw/bonds/ohare_2026B_OS.pdf",
+      "page": "184 (E-30, Table 1-2)"
+     }
+    },
+    {
+     "kind": "bond_uses",
+     "label": "2026B bonds (new money part only): deposit to common debt service reserve",
+     "amount": 63500000,
+     "period": "2026",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue and Revenue Refunding Bonds 2026B, Official Statement (Appendix E, Report of the Airport Consultant, July 2026)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago06a-FIN.MLCK3FoI1.pdf",
+      "file": "raw/bonds/ohare_2026B_OS.pdf",
+      "page": "184 (E-30, Table 1-2)"
+     }
+    },
+    {
+     "kind": "bond_uses",
+     "label": "2026B bonds (new money part only): cost of issuance",
+     "amount": 9500000,
+     "period": "2026",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue and Revenue Refunding Bonds 2026B, Official Statement (Appendix E, Report of the Airport Consultant, July 2026)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago06a-FIN.MLCK3FoI1.pdf",
+      "file": "raw/bonds/ohare_2026B_OS.pdf",
+      "page": "184 (E-30, Table 1-2)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.chicago-o-hare-airport-fund.0740-2005-0912.o-hare-2026b"
+   },
+   "expect_amount": 1410000,
+   "mode": "side_only",
+   "note": "Principal on the 2026B bonds. See the interest line of the same bond for the capital program tables and the 2026B sources and uses.",
+   "side": [
+    {
+     "kind": "bond_uses",
+     "label": "2026B bonds (new money part only): deposit to project fund, which pays for part of the airport capital program",
+     "amount": 1004400000,
+     "period": "2026",
+     "basis": "published",
+     "source": {
+      "doc": "O'Hare General Airport Senior Lien Revenue and Revenue Refunding Bonds 2026B, Official Statement (Appendix E, Report of the Airport Consultant, July 2026)",
+      "url": "https://bondlink-cdn.com/1348/ILChicago06a-FIN.MLCK3FoI1.pdf",
+      "file": "raw/bonds/ohare_2026B_OS.pdf",
+      "page": "184 (E-30, Table 1-2)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.chicago-midway-airport-fund.bonds.midway-2023a"
+   },
+   "expect_amount": 17850013,
+   "mode": "side_only",
+   "note": "The Series 2023A bonds put $59.7 million into the project fund for the 'Midway 2023 Airport Projects'. The side list shows those projects and the 2023 to 2027 Midway capital program by cost and by who pays. The consultant's report dates from October 2023, so the amounts are plans from then.",
+   "side": [
+    {
+     "kind": "capital_project",
+     "label": "2023 Airport Project: Fuel farm garage and upgrades (cost $4,000,000, of which paid by the Series 2023 bonds $4,000,000)",
+     "amount": 4000000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "212 (E-34, Table 2-1)",
+      "note": "Chicago Department of Aviation, October 2023, thousands of dollars in the source"
+     }
+    },
+    {
+     "kind": "capital_project",
+     "label": "2023 Airport Project: Restrooms modernization (cost $22,585,000, of which paid by the Series 2023 bonds $6,115,000)",
+     "amount": 22585000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "212 (E-34, Table 2-1)",
+      "note": "Chicago Department of Aviation, October 2023, thousands of dollars in the source"
+     }
+    },
+    {
+     "kind": "capital_project",
+     "label": "2023 Airport Project: Baggage handling system and checked bag inspection system elements (cost $36,520,000, of which paid by the Series 2023 bonds $28,838,000)",
+     "amount": 36520000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "212 (E-34, Table 2-1)",
+      "note": "Chicago Department of Aviation, October 2023, thousands of dollars in the source"
+     }
+    },
+    {
+     "kind": "capital_project",
+     "label": "2023 Airport Project: Holdroom carpet replacement (cost $1,800,000, of which paid by the Series 2023 bonds $1,800,000)",
+     "amount": 1800000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "212 (E-34, Table 2-1)",
+      "note": "Chicago Department of Aviation, October 2023, thousands of dollars in the source"
+     }
+    },
+    {
+     "kind": "capital_project",
+     "label": "2023 Airport Project: Passenger loading bridge refresh (cost $9,385,000, of which paid by the Series 2023 bonds $9,385,000)",
+     "amount": 9385000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "212 (E-34, Table 2-1)",
+      "note": "Chicago Department of Aviation, October 2023, thousands of dollars in the source"
+     }
+    },
+    {
+     "kind": "capital_project",
+     "label": "2023 Airport Project: North CBIA matrix recapitalization and optimization (cost $1,800,000, of which paid by the Series 2023 bonds $1,385,000)",
+     "amount": 1800000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "212 (E-34, Table 2-1)",
+      "note": "Chicago Department of Aviation, October 2023, thousands of dollars in the source"
+     }
+    },
+    {
+     "kind": "capital_project",
+     "label": "2023 Airport Project: Project implementation (cost $16,500,000, of which paid by the Series 2023 bonds $8,150,000)",
+     "amount": 16500000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "212 (E-34, Table 2-1)",
+      "note": "Chicago Department of Aviation, October 2023, thousands of dollars in the source"
+     }
+    },
+    {
+     "kind": "capital_project",
+     "label": "2023 Airport Projects total cost (the Series 2023 bonds pay $59,672,000 of it; the table's own parts add to $59,673,000 because of rounding)",
+     "amount": 92590000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "212 (E-34, Table 2-1)",
+      "note": "Chicago Department of Aviation, October 2023, thousands of dollars in the source"
+     }
+    },
+    {
+     "kind": "capital_program_cost",
+     "label": "2023 to 2027 capital improvement program cost: Airfield (mostly Runway 13C-31C, Runway 4R-22L, Taxiway Y, apron pavement)",
+     "amount": 216900000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "213 (E-35, Table 2-2)",
+      "note": "printed in millions of dollars"
+     }
+    },
+    {
+     "kind": "capital_program_cost",
+     "label": "2023 to 2027 capital improvement program cost: Terminal (restrooms, baggage systems, loading bridges, carpet)",
+     "amount": 57200000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "213 (E-35, Table 2-2)",
+      "note": "printed in millions of dollars"
+     }
+    },
+    {
+     "kind": "capital_program_cost",
+     "label": "2023 to 2027 capital improvement program cost: Parking and roadway",
+     "amount": 8800000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "213 (E-35, Table 2-2)",
+      "note": "printed in millions of dollars"
+     }
+    },
+    {
+     "kind": "capital_program_cost",
+     "label": "2023 to 2027 capital improvement program cost: Facilities, fuel, vehicles",
+     "amount": 88000000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "213 (E-35, Table 2-2)",
+      "note": "printed in millions of dollars"
+     }
+    },
+    {
+     "kind": "capital_program_cost",
+     "label": "2023 to 2027 capital improvement program cost: Land and property acquisition",
+     "amount": 23600000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "213 (E-35, Table 2-2)",
+      "note": "printed in millions of dollars"
+     }
+    },
+    {
+     "kind": "capital_program_cost",
+     "label": "2023 to 2027 capital improvement program cost: Residential noise mitigation (about 2,020 homes)",
+     "amount": 119800000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "213 (E-35, Table 2-2)",
+      "note": "printed in millions of dollars"
+     }
+    },
+    {
+     "kind": "capital_program_funding",
+     "label": "2023 to 2027 capital improvement program paid by: Previously issued senior lien revenue bonds",
+     "amount": 137200000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "214 (E-36, Table 2-3)",
+      "note": "printed in millions of dollars. Assumes grant funding for about 60 percent of noise mitigation projects"
+     }
+    },
+    {
+     "kind": "capital_program_funding",
+     "label": "2023 to 2027 capital improvement program paid by: FAA AIP grants",
+     "amount": 63700000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "214 (E-36, Table 2-3)",
+      "note": "printed in millions of dollars. Assumes grant funding for about 60 percent of noise mitigation projects"
+     }
+    },
+    {
+     "kind": "capital_program_funding",
+     "label": "2023 to 2027 capital improvement program paid by: Series 2023 bonds",
+     "amount": 59700000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "214 (E-36, Table 2-3)",
+      "note": "printed in millions of dollars. Assumes grant funding for about 60 percent of noise mitigation projects"
+     }
+    },
+    {
+     "kind": "capital_program_funding",
+     "label": "2023 to 2027 capital improvement program paid by: Future bonds (assumed 2025 issue, level debt service 2036 to 2055)",
+     "amount": 253700000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "214 (E-36, Table 2-3)",
+      "note": "printed in millions of dollars. Assumes grant funding for about 60 percent of noise mitigation projects"
+     }
+    },
+    {
+     "kind": "capital_program_funding",
+     "label": "2023 to 2027 capital improvement program paid by: Total",
+     "amount": 514300000,
+     "period": "2023 to 2027",
+     "basis": "published",
+     "source": {
+      "doc": "Chicago Midway Airport Senior Lien Revenue and Revenue Refunding Bonds 2025A and 2025B, Official Statement (includes the October 2023 Report of the Airport Consultant and a 2025 update letter)",
+      "url": "https://bondlink-cdn.com/1351/Official-Statement.02duRik1H.pdf",
+      "file": "raw/bonds/midway_2025AB_OS.pdf",
+      "page": "214 (E-36, Table 2-3)",
+      "note": "printed in millions of dollars. Assumes grant funding for about 60 percent of noise mitigation projects"
+     }
+    }
+   ]
+  }
+ ]
+}
