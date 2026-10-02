@@ -1,0 +1,1365 @@
+{
+ "meta": {
+  "author": "parks and misc detail agent",
+  "description": "Soldier Field, harbors, golf, utilities (side facts), Park pension benefit groups, bond series principal and interest.",
+  "built_by": "scripts/parksmisc_build.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.managed-venues.626045"
+   },
+   "expect_amount": 36292135,
+   "mode": "side_only",
+   "note": "The budget book says Soldier Field is projected at $62.9 million of gross revenue and $36.3 million of gross expenses in 2026, so this line is the expense side of the stadium. The District publishes no list of what the operator spends it on. The operator (SMG, now ASM Global) was approved by the Board on 2013-02-13 for ten years at a management fee of $600,000 to $684,000 a year (press report), which would be under 2 percent of this line. The budget also has a separate account, 623095 Management Contract Incentive Fee ($1,183,983 in 2026, Revenue department), so some fees may sit outside this line. The book does not say.",
+   "side": [
+    {
+     "kind": "revenue_context",
+     "label": "Soldier Field gross revenue budgeted for 2026 (account 420000, all sources)",
+     "amount": 62899354,
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p54 (printed 48) and narrative PDF p45"
+     }
+    },
+    {
+     "kind": "revenue_context",
+     "label": "of which event and stadium revenue (account 420005)",
+     "amount": 48955346,
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p54"
+     }
+    },
+    {
+     "kind": "revenue_context",
+     "label": "of which other income, mainly non-event parking (account 420015)",
+     "amount": 6907552,
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p54"
+     }
+    },
+    {
+     "kind": "revenue_context",
+     "label": "of which Bears and NFL contribution (account 420055)",
+     "amount": 7036456,
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p54"
+     }
+    },
+    {
+     "kind": "revenue_context",
+     "label": "Soldier Field revenue budgeted for 2025",
+     "amount": 56838270,
+     "period": "2025",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p54"
+     }
+    },
+    {
+     "kind": "prior_year_actual",
+     "label": "Soldier Field revenue actually received in 2025 (General Fund)",
+     "amount": 74567000,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p94 (budget versus actual, $ thousands: budget 56,838, actual 74,567)"
+     }
+    },
+    {
+     "kind": "contract_term",
+     "label": "Bears lease (Permit and Operating Agreement): Bears pay an annual facility fee of $4,700,000 for 2004 to 2007, raised on each fifth anniversary of 1/1/2008 by 50 percent of the cumulative inflation (CPI) since the last raise, plus a separate parking allotment fee. Term runs through the 2033 football season. The District pays routine maintenance and insurance.",
+     "period": "2004-2033",
+     "basis": "contract",
+     "source": {
+      "doc": "Chicago Bears lease summary, Marquette University Sports Law Library, sections 3.1, 14.1, 19.2, 27.1",
+      "url": "https://law.marquette.edu/assets/sports-law/pdf/Chicago%20Bears%20Lease%20Summary.pdf",
+      "page": "1-3"
+     }
+    },
+    {
+     "kind": "revenue_context",
+     "label": "Rent received from the Bears in 2025 (facility fee plus parking allotment fee)",
+     "amount": 7000000,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p78 (Note 9, lessor leases: 'the total amount of the inflows ... is $7.0 million')"
+     }
+    },
+    {
+     "kind": "revenue_context",
+     "label": "Rent received from the Chicago Fire soccer club in 2025 (lease ended 2025)",
+     "amount": 3000000,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p78 (Note 9)"
+     }
+    },
+    {
+     "kind": "contract_term",
+     "label": "Management agreement P-12035: Board of Commissioners approved a new 10-year SMG contract on 2013-02-13 covering Soldier Field and two other facilities (McFetridge and the Devon and Kedzie ballpark): management fee $600,000 to $684,000 a year, a $2.5 million contribution from SMG to the District and a $1 million marketing fund. The contract text is not on the District's Legistar site. The Bonfire contract library now lists the agreement as pending for 2027-04-01 to 2028-03-31 with a stated value of $0.",
+     "period": "2013-2028",
+     "basis": "contract",
+     "source": {
+      "doc": "Chicago Tribune, 'Soldier Field management gets another contract', 2013-02-13",
+      "url": "https://www.chicagotribune.com/2013/02/13/soldier-field-management-gets-another-contract/"
+     }
+    },
+    {
+     "kind": "contract_term",
+     "label": "Soldier Field food service (separate contract P-23013, Levy Premium Foodservice, Board action 24-1058-0410): contractor puts in $12 million of capital at its own cost, 3 percent of gross receipts goes to an equipment reserve, 1 percent of District concession sales goes to a community fund. Commissions to the District on concessions are 48 percent of the first $13 million, 50 percent up to $20 million, 52 percent above. This is money the District receives, not part of this line.",
+     "period": "2024-2029",
+     "basis": "contract",
+     "source": {
+      "doc": "Exhibit A, Board matter 5896",
+      "url": "https://chicagoparkdistrict.legistar.com/"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "The 2025 audit says contractual services ran $7 million over budget mainly because Soldier Field revenue beat the plan and the extra events cost more to run. The expense line moves with the number of events (568 targeted for 2026, 386 in 2024).",
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p35; Revenue department performance table, budget PDF p94"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "District spokesperson: Bears games are under 20 percent of the stadium's revenue",
+     "period": "2026",
+     "basis": "actual",
+     "source": {
+      "doc": "Block Club Chicago, 2026-02-23",
+      "url": "https://blockclubchicago.org/2026/02/23/soldier-field-after-the-bears-park-district-pitches-plan-for-year-round-concert-venue/"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.managed-venues.626040"
+   },
+   "expect_amount": 16580506,
+   "mode": "side_only",
+   "note": "The budget book says harbor gross revenue is forecast at $31.5 million and gross expenses at $16.6 million, so this line is the expense side of the harbor system. In addition, $10.6 million of 2026 debt service on bonds backed by harbor revenue is paid from harbor income (it sits in the loan boxes, not here). The operator is Westrec (2014 Board approval for 'management and operation of the Chicago Park District harbor system', specification P-14010). No fee schedule or operating budget is published, and Legistar has only the minority-business form for that approval.",
+   "side": [
+    {
+     "kind": "revenue_context",
+     "label": "Harbor fees budgeted for 2026 (account 417000: marine fees $31,488,599 plus other $38,508)",
+     "amount": 31527107,
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p54"
+     }
+    },
+    {
+     "kind": "revenue_context",
+     "label": "Harbor fees budgeted for 2025",
+     "amount": 31247643,
+     "period": "2025",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p54"
+     }
+    },
+    {
+     "kind": "prior_year_actual",
+     "label": "Harbor fees received in 2025, all funds",
+     "amount": 31029000,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p50 ($ thousands: 31,029)"
+     }
+    },
+    {
+     "kind": "debt_context",
+     "label": "Harbor-backed bond payments in 2026 (paid from harbor revenue, shown under Paying back loans)",
+     "amount": 10600000,
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "narrative PDF p46"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "10 harbors in the budget book, 11 in the ACFR, 4,679 boat slips and 715 mooring cans. Target harbor occupancy 86 percent in 2026.",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p46 and p94; ACFR PDF p139"
+     }
+    },
+    {
+     "kind": "contract_term",
+     "label": "Contract P-14010 (Westrec). Board approved 2014-11-12 (action 14-2148-1112). The Bonfire library shows P-14010 active May 2026 to April 2027. The 2026 harbor fee schedule is printed in the budget book and says 'Managed by Westrec SMI'.",
+     "period": "2014-2027",
+     "basis": "contract",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p264; Legistar matter 3168"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.managed-venues.626050"
+   },
+   "expect_amount": 8490697,
+   "mode": "side_only",
+   "note": "The budget book says golf gross revenue is $9.9 million and gross expenses $8.5 million in 2026, so this line is the expense side of seven courses, three driving ranges, three learning centers and two mini-golf courses. The contract fee is $1,275,000 a year, about 15 percent of the line. It is not shown whether that fee is paid from this line or from account 623095 (Management Contract Incentive Fee). The rest is what the operator spends running the courses, which the District does not itemise.",
+   "side": [
+    {
+     "kind": "contract_term",
+     "label": "Management fee in contract P-24001 (Indigo Sports, Troon), per year",
+     "amount": 1275000,
+     "period": "2025-2034",
+     "basis": "contract",
+     "source": {
+      "doc": "Exhibit A, Board action 24-1125-0911 (2024-08-14), Legistar matter 5963",
+      "url": "https://chicagoparkdistrict.legistar.com/"
+     }
+    },
+    {
+     "kind": "contract_term",
+     "label": "District holds back 10 percent of the fee ($127,500 a year) until a performance review",
+     "amount": 127500,
+     "period": "2025-2034",
+     "basis": "contract",
+     "source": {
+      "doc": "Exhibit A, Board matter 5963"
+     }
+    },
+    {
+     "kind": "contract_term",
+     "label": "Contractor capital at its own cost, $9,000,000 over 10 years: $3,575,000, $1,200,000, $1,700,000, $525,000, $1,250,000, $200,000, $150,000, $150,000, $150,000, $100,000. Plus $25,000 a year to a community youth fund.",
+     "amount": 9000000,
+     "period": "2025-2034",
+     "basis": "contract",
+     "source": {
+      "doc": "Exhibit A, Board matter 5963"
+     }
+    },
+    {
+     "kind": "revenue_context",
+     "label": "Golf fees budgeted for 2026 (account 418000)",
+     "amount": 9931373,
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p54"
+     }
+    },
+    {
+     "kind": "revenue_context",
+     "label": "Golf fees budgeted for 2025",
+     "amount": 10134318,
+     "period": "2025",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p54"
+     }
+    },
+    {
+     "kind": "prior_year_actual",
+     "label": "Golf fees received in 2025 (General Fund)",
+     "amount": 10535000,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p94 ($ thousands: 10,535)"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "Revenue management line 623095 'Management Contract Incentive Fee' is a separate account: $1,183,983 in 2026, $1,037,039 in 2025, $1,576,981 actual in 2024.",
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p94"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.utilities-benefits-and-shared-costs.623000.623080"
+   },
+   "expect_amount": 16707439,
+   "mode": "side_only",
+   "note": "No usage by park is published. The District does not post utility bills, the City's open data portal has energy benchmarking (electricity and gas, no water) for only a few park buildings and none after 2020, and the City's payments file lists no District water bills. The bill is the same $16,707,439 as in 2025. The budget book says the District expects level water and sewer costs in 2026 after a multi-year City rate increase that more than doubled them, and that the City added a water and sewer tax in 2017.",
+   "side": [
+    {
+     "kind": "rate_context",
+     "label": "City water rate from 2026-06-01: $37.18 per 1,000 cubic feet (about $4.98 per 1,000 gallons), up 1.85 percent. The sewer charge is 100 percent of the water charge, added as a separate line, and a water-sewer tax is added on top.",
+     "period": "2026",
+     "basis": "actual",
+     "source": {
+      "doc": "City of Chicago Department of Finance, Water and Sewer Rates",
+      "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/utility-billing/water-and-sewer-rates.html"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "All utilities together are budgeted at $37.6 million in 2026, 5.9 percent of the budget (water and sewer, electric, gas)",
+     "amount": 37600000,
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p60 (printed 54)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.utilities-benefits-and-shared-costs.623000.623075"
+   },
+   "expect_amount": 14805112,
+   "mode": "side_only",
+   "note": "No usage by park is published. The budget book gives the change instead: electricity is up $823,000 from 2025 (the two budget lines differ by $823,180) because of more data centers in the state and higher delivery rates. A hedging plan saves about $1.5 million a year on the electricity commodity price, and the District buys renewable energy credits equal to 100 percent of its electricity use.",
+   "side": [
+    {
+     "kind": "context",
+     "label": "Increase from the 2025 budget line ($13,981,932 to $14,805,112)",
+     "amount": 823180,
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p60 and account table PDF p62-63"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "Hedging saves about $1.5 million a year on the electric commodity price",
+     "amount": 1500000,
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p60"
+     }
+    },
+    {
+     "kind": "usage_context",
+     "label": "Only District building with published usage in the City's benchmarking data that is large enough to matter: Soldier Field used 108,529,613 kBtu of electricity and 16,899,451 kBtu of gas in 2015. No dollars and no later year.",
+     "period": "2015",
+     "basis": "actual",
+     "source": {
+      "doc": "City of Chicago Energy Benchmarking dataset xq83-jr8c, property 'Soldier Field'",
+      "url": "https://data.cityofchicago.org/resource/xq83-jr8c"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.retirement-pensions.regular-yearly-payment.other-not-itemised"
+   },
+   "expect_amount": 53913236,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Pensions for retired workers (2,125 retirees)",
+     "amount": 44574897.3,
+     "basis": "proxy",
+     "kind": "benefit_group",
+     "source": {
+      "doc": "Park Employees' and Retirement Board Employees' Annuity and Benefit Fund, FY2025 annual report",
+      "url": "https://www.chicagoparkpension.org/about-us/annual-reports/",
+      "page": "PDF p21, p153-158; valuation Exhibits A, E, F",
+      "note": "Benefits paid 2025 by type; total $87,525,524 equals Exhibit F of the Segal valuation."
+     },
+     "note": "Proxy: this group received $72,365,184 of the $87,525,524 the fund paid out in 2025 (82.68%), so it gets 82.68% of the District's payment. Retirement benefits paid in 2025. Retired members in pay status: 2,125, average annual benefit $34,793 (total in force $73,935,252). The District's payment is not the same as the benefits paid. The District sends one payment set by law, and the fund pays its people from that money plus member contributions and investment earnings. This shares the payment by benefit dollars, so it is our estimate, not a District figure.",
+     "why": "The District's payment goes to the fund as one lump sum and the fund pays about 2,700 people from it, so no single person's pension is bought by one District payment.",
+     "count": 2125,
+     "unit_amount": 20976.42,
+     "unit_label": "retirees (share of the District's payment each)"
+    },
+    {
+     "name": "Pensions for surviving spouses (574 people)",
+     "amount": 7618898.98,
+     "basis": "proxy",
+     "kind": "benefit_group",
+     "source": {
+      "doc": "Park Employees' and Retirement Board Employees' Annuity and Benefit Fund, FY2025 annual report",
+      "url": "https://www.chicagoparkpension.org/about-us/annual-reports/",
+      "page": "PDF p21, p153-158; valuation Exhibits A, E, F",
+      "note": "Benefits paid 2025 by type; total $87,525,524 equals Exhibit F of the Segal valuation."
+     },
+     "note": "Proxy: this group received $12,368,913 of the $87,525,524 the fund paid out in 2025 (14.13%), so it gets 14.13% of the District's payment. Spousal benefits paid in 2025. 574 surviving spouses, average annual benefit $20,655 (total in force $11,856,109). The District's payment is not the same as the benefits paid. The District sends one payment set by law, and the fund pays its people from that money plus member contributions and investment earnings. This shares the payment by benefit dollars, so it is our estimate, not a District figure.",
+     "why": "The District's payment goes to the fund as one lump sum and the fund pays about 2,700 people from it, so no single person's pension is bought by one District payment.",
+     "count": 574,
+     "unit_amount": 13273.34,
+     "unit_label": "surviving spouses (share of the District's payment each)"
+    },
+    {
+     "name": "Benefits for children of workers who died (2 children)",
+     "amount": 1355.14,
+     "basis": "proxy",
+     "kind": "benefit_group",
+     "source": {
+      "doc": "Park Employees' and Retirement Board Employees' Annuity and Benefit Fund, FY2025 annual report",
+      "url": "https://www.chicagoparkpension.org/about-us/annual-reports/",
+      "page": "PDF p21, p153-158; valuation Exhibits A, E, F",
+      "note": "Benefits paid 2025 by type; total $87,525,524 equals Exhibit F of the Segal valuation."
+     },
+     "note": "Proxy: this group received $2,200 of the $87,525,524 the fund paid out in 2025 (0.00%), so it gets 0.00% of the District's payment. Child benefits paid in 2025. The District's payment is not the same as the benefits paid. The District sends one payment set by law, and the fund pays its people from that money plus member contributions and investment earnings. This shares the payment by benefit dollars, so it is our estimate, not a District figure.",
+     "why": "The District's payment goes to the fund as one lump sum and the fund pays about 2,700 people from it, so no single person's pension is bought by one District payment.",
+     "count": 2,
+     "unit_amount": 677.57,
+     "unit_label": "children (share of the District's payment each)"
+    },
+    {
+     "name": "Disability benefits",
+     "amount": 210245.27,
+     "basis": "proxy",
+     "kind": "benefit_group",
+     "source": {
+      "doc": "Park Employees' and Retirement Board Employees' Annuity and Benefit Fund, FY2025 annual report",
+      "url": "https://www.chicagoparkpension.org/about-us/annual-reports/",
+      "page": "PDF p21, p153-158; valuation Exhibits A, E, F",
+      "note": "Benefits paid 2025 by type; total $87,525,524 equals Exhibit F of the Segal valuation."
+     },
+     "note": "Proxy: this group received $341,323 of the $87,525,524 the fund paid out in 2025 (0.39%), so it gets 0.39% of the District's payment. Ordinary and duty disability benefits paid in 2025 ($308,705 and $32,618). The report gives no head count. The District's payment is not the same as the benefits paid. The District sends one payment set by law, and the fund pays its people from that money plus member contributions and investment earnings. This shares the payment by benefit dollars, so it is our estimate, not a District figure.",
+     "why": "The District's payment goes to the fund as one lump sum and the fund pays about 2,700 people from it, so no single person's pension is bought by one District payment."
+    },
+    {
+     "name": "Death benefits",
+     "amount": 111182.87,
+     "basis": "proxy",
+     "kind": "benefit_group",
+     "source": {
+      "doc": "Park Employees' and Retirement Board Employees' Annuity and Benefit Fund, FY2025 annual report",
+      "url": "https://www.chicagoparkpension.org/about-us/annual-reports/",
+      "page": "PDF p21, p153-158; valuation Exhibits A, E, F",
+      "note": "Benefits paid 2025 by type; total $87,525,524 equals Exhibit F of the Segal valuation."
+     },
+     "note": "Proxy: this group received $180,500 of the $87,525,524 the fund paid out in 2025 (0.21%), so it gets 0.21% of the District's payment. Death benefits paid in 2025. The report gives no head count. The District's payment is not the same as the benefits paid. The District sends one payment set by law, and the fund pays its people from that money plus member contributions and investment earnings. This shares the payment by benefit dollars, so it is our estimate, not a District figure.",
+     "why": "The District's payment goes to the fund as one lump sum and the fund pays about 2,700 people from it, so no single person's pension is bought by one District payment."
+    },
+    {
+     "name": "Refunds to workers who left",
+     "amount": 1396656.44,
+     "basis": "proxy",
+     "kind": "benefit_group",
+     "source": {
+      "doc": "Park Employees' and Retirement Board Employees' Annuity and Benefit Fund, FY2025 annual report",
+      "url": "https://www.chicagoparkpension.org/about-us/annual-reports/",
+      "page": "PDF p21, p153-158; valuation Exhibits A, E, F",
+      "note": "Benefits paid 2025 by type; total $87,525,524 equals Exhibit F of the Segal valuation."
+     },
+     "note": "Proxy: this group received $2,267,404 of the $87,525,524 the fund paid out in 2025 (2.59%), so it gets 2.59% of the District's payment. Refunds of employee contributions paid in 2025. 5,530 inactive members are owed a refund, but the report does not say how many were paid. The District's payment is not the same as the benefits paid. The District sends one payment set by law, and the fund pays its people from that money plus member contributions and investment earnings. This shares the payment by benefit dollars, so it is our estimate, not a District figure.",
+     "why": "The District's payment goes to the fund as one lump sum and the fund pays about 2,700 people from it, so no single person's pension is bought by one District payment."
+    }
+   ],
+   "note": "Split by who the Park Employees' fund pays (2025 benefit dollars by group). The first group alone is about 83 percent. Administrative costs ($1,976,961 in 2025) are not benefits and are left out of the shares.",
+   "side": [
+    {
+     "kind": "benefits_paid",
+     "label": "Total benefits and refunds the fund paid in 2025 (retirement $72,365,184, spousal $12,368,913, child $2,200, disability $341,323, death $180,500, refunds $2,267,404)",
+     "amount": 87525524,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Park Employees' and Retirement Board Employees' Annuity and Benefit Fund, FY2025 annual report",
+      "page": "PDF p21"
+     }
+    },
+    {
+     "kind": "retirees",
+     "label": "Members at 12/31/2025: 2,125 retirees, 574 surviving spouses, 2 children, 206 inactive with vested rights, 3,251 active (average pay $58,371), 5,530 inactive owed a refund",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Segal actuarial valuation of the Park Employees' Annuity and Benefit Fund as of 12/31/2025",
+      "url": "https://www.chicagoparkpension.org/wp-content/uploads/2026/06/Park-Employees-Annuity-and-Benefit-Fund-of-Chicago_Actuarial-Valuation-Report-as-of-12.31.2025.pdf",
+      "page": "Exhibits A and D (PDF pp34-37)"
+     }
+    },
+    {
+     "kind": "statute_context",
+     "label": "Statute P.A. 102-0263 sets the employer payment (normal cost plus a 32-year closed payoff of the unfunded liability) and aims for 100 percent funded by 2057. The fund's own policy asks for $88,904,199 in 2026, which is $25,571,787 more than the $63,332,412 budgeted.",
+     "amount": 25571787,
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Segal actuarial valuation of the Park Employees' Annuity and Benefit Fund as of 12/31/2025",
+      "url": "https://www.chicagoparkpension.org/wp-content/uploads/2026/06/Park-Employees-Annuity-and-Benefit-Fund-of-Chicago_Actuarial-Valuation-Report-as-of-12.31.2025.pdf",
+      "page": "Section 1 (PDF p10) and Exhibit I"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2016a"
+   },
+   "expect_amount": 5586250,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Paying back the loan itself (principal)",
+     "amount": 2890000,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    },
+    {
+     "name": "Interest (what lenders charge)",
+     "amount": 2696250,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    }
+   ],
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $68,530 thousand, still owed $2,615 thousand, interest rate 5.00%, years of payment 2022 to 2040",
+     "amount": 2615000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2016b"
+   },
+   "expect_amount": 289500,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Fully refunded in December 2025 by Series 2025B. The ACFR shows no balance outstanding.",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p76-77"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2016e"
+   },
+   "expect_amount": 1823250,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Paying back the loan itself (principal)",
+     "amount": 1500000,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    },
+    {
+     "name": "Interest (what lenders charge)",
+     "amount": 323250,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    }
+   ],
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $11,785 thousand, still owed $6,465 thousand, interest rate 5.00%, years of payment 2022 to 2029",
+     "amount": 6465000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2018a"
+   },
+   "expect_amount": 1085200,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $25,135 thousand, still owed $25,135 thousand, interest rate 4.00% to 5.00%, years of payment 2033 to 2041",
+     "amount": 25135000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2018b"
+   },
+   "expect_amount": 2052500,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Paying back the loan itself (principal)",
+     "amount": 1470000,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    },
+    {
+     "name": "Interest (what lenders charge)",
+     "amount": 582500,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    }
+   ],
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $13,735 thousand, still owed $13,735 thousand, interest rate 5.00%, years of payment 2027 to 2033",
+     "amount": 13735000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2018d"
+   },
+   "expect_amount": 1142750,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $22,855 thousand, still owed $22,855 thousand, interest rate 5.00%, years of payment 2030 to 2033",
+     "amount": 22855000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2018f"
+   },
+   "expect_amount": 1696337,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Paying back the loan itself (principal)",
+     "amount": 1605000,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    },
+    {
+     "name": "Interest (what lenders charge)",
+     "amount": 91337,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    }
+   ],
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $8,000 thousand, still owed $6,315 thousand, interest rate 2.98%, years of payment 2025 to 2029",
+     "amount": 6315000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2020a"
+   },
+   "expect_amount": 2415900,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Paying back the loan itself (principal)",
+     "amount": 1060000,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    },
+    {
+     "name": "Interest (what lenders charge)",
+     "amount": 1355900,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    }
+   ],
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $40,160 thousand, still owed $33,890 thousand, interest rate 4.00% to 5.00%, years of payment 2023 to 2037",
+     "amount": 33890000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2020c"
+   },
+   "expect_amount": 1544800,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $38,620 thousand, still owed $38,620 thousand, interest rate 4.00%, years of payment 2038 to 2042",
+     "amount": 38620000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2020d"
+   },
+   "expect_amount": 1209000,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $30,225 thousand, still owed $30,225 thousand, interest rate 4.00%, years of payment 2034 to 2039",
+     "amount": 30225000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2020e"
+   },
+   "expect_amount": 366650,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $9,585 thousand, still owed $8,765 thousand, interest rate 4.00% to 5.00%, years of payment 2021 to 2034",
+     "amount": 8765000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2020f-1"
+   },
+   "expect_amount": 200000,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $4,000 thousand, still owed $4,000 thousand, interest rate 5.00%, years of payment 2033 to 2040",
+     "amount": 4000000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2020f-2"
+   },
+   "expect_amount": 8405150,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Paying back the loan itself (principal)",
+     "amount": 3825000,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    },
+    {
+     "name": "Interest (what lenders charge)",
+     "amount": 4580150,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    }
+   ],
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $103,970 thousand, still owed $99,955 thousand, interest rate 4.00% to 5.00%, years of payment 2023 to 2040",
+     "amount": 99955000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2021a"
+   },
+   "expect_amount": 2572872,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $145,885 thousand, still owed $98,475 thousand, interest rate 1.827% to 3.075%, years of payment 2029 to 2041",
+     "amount": 98475000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2021b"
+   },
+   "expect_amount": 2500000,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $50,000 thousand, still owed $50,000 thousand, interest rate 5.00%, years of payment 2042 to 2044",
+     "amount": 50000000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2021c"
+   },
+   "expect_amount": 1220400,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $30,510 thousand, still owed $30,510 thousand, interest rate 4.00%, years of payment 2030 to 2036",
+     "amount": 30510000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2021d"
+   },
+   "expect_amount": 837600,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Paying back the loan itself (principal)",
+     "amount": 320000,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    },
+    {
+     "name": "Interest (what lenders charge)",
+     "amount": 517600,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    }
+   ],
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $21,715 thousand, still owed $14,230 thousand, interest rate 4.00%, years of payment 2023 to 2036",
+     "amount": 14230000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2021e"
+   },
+   "expect_amount": 2483850,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Paying back the loan itself (principal)",
+     "amount": 1595000,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    },
+    {
+     "name": "Interest (what lenders charge)",
+     "amount": 888850,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    }
+   ],
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $34,655 thousand, still owed $25,110 thousand, interest rate 3.00% to 4.00%, years of payment 2023 to 2039",
+     "amount": 25110000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2023a"
+   },
+   "expect_amount": 3854038,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Paying back the loan itself (principal)",
+     "amount": 1000000,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    },
+    {
+     "name": "Interest (what lenders charge)",
+     "amount": 2854038,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    }
+   ],
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $57,855 thousand, still owed $57,855 thousand, interest rate 5.00% - 5.25%, years of payment 2026 to 2046",
+     "amount": 57855000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2023b"
+   },
+   "expect_amount": 1289750,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $25,795 thousand, still owed $25,795 thousand, interest rate 5.00%, years of payment 2035 to 2045",
+     "amount": 25795000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2023c"
+   },
+   "expect_amount": 22264000,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Paying back the loan itself (principal)",
+     "amount": 19365000,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": "This is the part of one bond's yearly payment that repays the money borrowed, and the bond contract fixes it.",
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    },
+    {
+     "name": "Interest (what lenders charge)",
+     "amount": 2899000,
+     "basis": "tied",
+     "kind": "bond_part",
+     "why": null,
+     "source": {
+      "doc": "Chicago Park District 2026 Budget Appropriations, ordinance Appropriation M",
+      "url": "https://files.chicagoparkdistrict.com/2025-12/2026%20Budget%20Appropriations.pdf",
+      "page": "PDF p253 (printed 247)"
+     }
+    }
+   ],
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $93,780 thousand, still owed $93,780 thousand, interest rate 5.00%, years of payment 2026 to 2040",
+     "amount": 93780000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2023f"
+   },
+   "expect_amount": 295000,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $5,900 thousand, still owed $5,900 thousand, interest rate 5.00%, years of payment 2041",
+     "amount": 5900000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2024a"
+   },
+   "expect_amount": 1262500,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $25,250 thousand, still owed $25,250 thousand, interest rate 5.00%, years of payment 2038 to 2047",
+     "amount": 25250000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2024b"
+   },
+   "expect_amount": 1855500,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $37,110 thousand, still owed $37,110 thousand, interest rate 5.00%, years of payment 2029 to 2038",
+     "amount": 37110000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "parks.paying-back-loans.2024e"
+   },
+   "expect_amount": 453750,
+   "mode": "side_only",
+   "side": [
+    {
+     "kind": "debt_context",
+     "label": "Bond facts at 12/31/2025: original $9,075 thousand, still owed $9,075 thousand, interest rate 5.00%, years of payment 2030 to 2037",
+     "amount": 9075000,
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Chicago Park District FY2025 ACFR",
+      "url": "https://files.chicagoparkdistrict.com/2026-07/Chicago%20Park%20District_25%20ACFR_Final.pdf",
+      "page": "PDF p77 (Note 8, debt table)"
+     }
+    }
+   ]
+  }
+ ]
+}

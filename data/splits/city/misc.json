@@ -1,0 +1,609 @@
+{
+ "meta": {
+  "author": "parks and misc detail agent",
+  "description": "Emergency Medical Transportation, CTA transfer tax share, and judgments and settlements paid so far in 2026.",
+  "built_by": "scripts/parksmisc_build.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0100",
+    "dept": "57",
+    "authority": "1005",
+    "account": "0931"
+   },
+   "expect_amount": 82558000,
+   "mode": "paid_to_date",
+   "pieces": [
+    {
+     "name": "Watts global settlement (176 lawsuits, approved by the Council 2025-09-15)",
+     "amount": 90000000.0,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "364 payments. Payments (including $10,389,123 of lawyers' fees and costs) were sent to the Comptroller in January and February 2026 for settlements the Council approved on 2025-09-15. The report's own 'Total Global Watts Settlement' cell shows $85,402,413 because 22 amounts in the sheet are typed as text. Adding them back gives exactly $90,000,000, the amount the Council approved.",
+     "why": "This is one court-approved deal that settled hundreds of lawsuits about one former sergeant, so there is no smaller bill to show."
+    },
+    {
+     "name": "Wrongful conviction settlements, other than Watts (10 payments)",
+     "amount": 91844242.37,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "10 payments. People are not named here. Each case closed with its own settlement.",
+     "why": "These are a few very large payments to people whose convictions were overturned, and each was a separate court deal."
+    },
+    {
+     "name": "Police vehicle chase crashes",
+     "amount": 45398000.0,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "8 payments.",
+     "why": "These are a few very large settlements for crashes during police chases, and each was a separate court deal."
+    },
+    {
+     "name": "Lawsuits over police conduct and jobs (force, arrests, searches, discrimination, whistleblower)",
+     "amount": 4479733.08,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "49 payments."
+    },
+    {
+     "name": "Crashes and property damage involving police",
+     "amount": 2286097.54,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "71 payments."
+    },
+    {
+     "name": "Union awards, public records lawsuits and small items",
+     "amount": 291635.65,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "22 payments. Includes arbitration awards, public records (FOIA) lawsuits and discipline cases, mostly lawyers' fees and costs."
+    }
+   ],
+   "over": {
+    "name": "Paid beyond the budget line (the City plans to borrow for settlements)",
+    "note": "Settlement payments so far in 2026 are larger than the full-year budget line. This negative box keeps the boxes adding up to the budget. The 2026 Budget Overview says amounts above the budgeted resources will be financed and repaid over five years, and the Civic Federation says the budget uses debt to cover police settlements. The report does not say which fund or bond issue pays each item. Payments are authorized payment requests from the Law Department to the Comptroller from 2026-01-02 to 2026-07-31, unaudited, and may change after reconciliation. The report names no fund or account, so a payment is placed here by its department only. "
+   },
+   "note": "Payments are authorized payment requests from the Law Department to the Comptroller from 2026-01-02 to 2026-07-31, unaudited, and may change after reconciliation. The report names no fund or account, so a payment is placed here by its department only. All Police Department payments in the report are placed here, including $90,000,000 for the Watts global settlement. The line also pays outside lawyers and experts, which are not in this report.",
+   "side": [
+    {
+     "kind": "prior_year_budget",
+     "label": "2025 budget line",
+     "amount": 82558000,
+     "period": "2025",
+     "basis": "budget",
+     "source": {
+      "doc": "City of Chicago 2025 ACFR, budgetary comparison, Police 1005.0931",
+      "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/comprehensive_annualfinancialstatements/2025-financial-statements.html",
+      "page": "PDF p148"
+     }
+    },
+    {
+     "kind": "prior_year_actual",
+     "label": "Actually spent on this line in 2025 (budget was $82,558,000)",
+     "amount": 131088495,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "City of Chicago 2025 ACFR, budgetary comparison",
+      "page": "PDF p148"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "Police lawsuits that closed in 2025 cost $258,956,775 (Law Department counting rules, cases closed in 2025): 15 wrongful conviction cases $193,344,242, 9 vehicle pursuit cases $54,378,000, 20 use-of-force cases $1,844,207. On top, 184 Watts cases for $101,300,000 (Appendix C). Outside lawyers were paid $36,081,683 in 2025.",
+     "amount": 258956775.56,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "Law Department, Report on 2025 CPD Litigation (2026-06-30)",
+      "url": "https://www.chicago.gov/content/dam/city/depts/dol/CPDLitigationReports/2025/2025%20Annual%20Litigation%20Report%206.30.26.pdf"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "Not yet in the numbers above: a proposed $260.8 million global settlement for 16 lawsuits tied to a former detective was on the Finance Committee agenda for Monday 2026-10-05. It is a proposal, not a payment.",
+     "amount": 260800000,
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Chicago Sun-Times, 2026-10-01",
+      "url": "https://chicago.suntimes.com/city-hall/2026/10/01/brandon-johnson-proposed-global-settlement-police-misconduct-cases-ex-cpd-det-reynaldo-guevara"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0100",
+    "dept": "59",
+    "authority": "2005",
+    "account": "0931"
+   },
+   "expect_amount": 12000000,
+   "mode": "paid_to_date",
+   "pieces": [
+    {
+     "name": "Paramedic malpractice lawsuits",
+     "amount": 1100000.0,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "2 payments."
+    },
+    {
+     "name": "Crashes involving fire vehicles",
+     "amount": 747303.96,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "12 payments."
+    },
+    {
+     "name": "Discrimination and harassment cases (mostly lawyers' fees)",
+     "amount": 1270495.93,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "4 payments. Includes $1,015,666 of fees and costs awarded to one case's lawyers."
+    },
+    {
+     "name": "Union awards, discipline cases and small items",
+     "amount": 145190.61,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "13 payments."
+    }
+   ],
+   "note": "Payments are authorized payment requests from the Law Department to the Comptroller from 2026-01-02 to 2026-07-31, unaudited, and may change after reconciliation. The report names no fund or account, so a payment is placed here by its department only. All Fire Department payments in the report are placed here.",
+   "side": [
+    {
+     "kind": "prior_year_actual",
+     "label": "Actually spent on this line in 2025 (budget was $12,000,000)",
+     "amount": 14828284,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "City of Chicago 2025 ACFR, budgetary comparison, Fire 2005.0931",
+      "page": "PDF p149"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0100",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0931"
+   },
+   "expect_amount": 40785387,
+   "mode": "paid_to_date",
+   "pieces": [
+    {
+     "name": "Trips and falls on sidewalks, curbs and streets",
+     "amount": 1840937.81,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "30 payments."
+    },
+    {
+     "name": "Crashes and road-condition claims",
+     "amount": 1695338.89,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "70 payments."
+    },
+    {
+     "name": "Property damage, including wrongful demolition",
+     "amount": 284922.0,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "20 payments."
+    },
+    {
+     "name": "Other claims, verdicts and lawyers' fees",
+     "amount": 819337.31,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "36 payments."
+    }
+   ],
+   "note": "Payments are authorized payment requests from the Law Department to the Comptroller from 2026-01-02 to 2026-07-31, unaudited, and may change after reconciliation. The report names no fund or account, so a payment is placed here by its department only. All payments for departments other than Police, Fire, Water Management and Aviation are placed here (Transportation is most of it). 5 small Aviation and 'Department of Water' payments are left out because their lines are in other funds.",
+   "side": [
+    {
+     "kind": "prior_year_actual",
+     "label": "Actually spent on this line in 2025 (2025 budget was $44,358,000)",
+     "amount": 38906432,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "City of Chicago 2025 ACFR, budgetary comparison, Finance General 2005.0931",
+      "page": "PDF p146"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0200",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0931"
+   },
+   "expect_amount": 6800000,
+   "mode": "paid_to_date",
+   "pieces": [
+    {
+     "name": "Claims paid for Water Management (water)",
+     "amount": 303450.3,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "38 payments. Payments are authorized payment requests from the Law Department to the Comptroller from 2026-01-02 to 2026-07-31, unaudited, and may change after reconciliation. The report names no fund or account, so a payment is placed here by its department only. "
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0314",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0931"
+   },
+   "expect_amount": 383133,
+   "mode": "paid_to_date",
+   "pieces": [
+    {
+     "name": "Claims paid for Water Management (sewer)",
+     "amount": 4726.04,
+     "basis": "paid_to_date",
+     "kind": "settlement_group",
+     "source": {
+      "doc": "City of Chicago Law Department, Judgment/Verdict and Settlement Report, 2026 expenditures through 2026-07-31 (unaudited)",
+      "url": "https://www.chicago.gov/city/en/depts/dol/supp_info/judgment-and-settlement-payments-requests.html",
+      "page": "sheet A, summed by department and primary cause"
+     },
+     "note": "1 payments. Payments are authorized payment requests from the Law Department to the Comptroller from 2026-01-02 to 2026-07-31, unaudited, and may change after reconciliation. The report names no fund or account, so a payment is placed here by its department only. "
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0100",
+    "dept": "99",
+    "authority": "2005",
+    "account": "9222"
+   },
+   "expect_amount": 124725187,
+   "mode": "side_only",
+   "note": "What this line is: the City's budget documents do not say. It is a Finance General line, not part of the Fire Department, and it is about 16 times what the ambulance billing company was paid in 2025, so it is not a billing contract. It grew from $77.4 million (2021 and 2022) to about $125 million (2024 to 2026) after Chicago joined the Illinois ambulance supplement (GEMT) program in 2020. Under that program the City must send the State half of the extra Medicaid money. That fits this line, but no City document confirms it, so treat it as our reading and ask the Office of Budget and Management. The budget book does not split the line, and the City says it is spent as ambulance-related payments 'as specified'.",
+   "side": [
+    {
+     "kind": "prior_year_budget",
+     "label": "Appropriation for this line in the 2020 ordinance (dataset fyin-2vyd)",
+     "amount": 143000000,
+     "period": "2020",
+     "basis": "budget",
+     "source": {
+      "doc": "City of Chicago 2020 Budget Ordinance - Appropriations, Finance General 9222",
+      "url": "https://data.cityofchicago.org/resource/fyin-2vyd"
+     }
+    },
+    {
+     "kind": "prior_year_budget",
+     "label": "Appropriation for this line in the 2021 ordinance (dataset 6tbx-h7y2)",
+     "amount": 77400000,
+     "period": "2021",
+     "basis": "budget",
+     "source": {
+      "doc": "City of Chicago 2021 Budget Ordinance - Appropriations, Finance General 9222",
+      "url": "https://data.cityofchicago.org/resource/6tbx-h7y2"
+     }
+    },
+    {
+     "kind": "prior_year_budget",
+     "label": "Appropriation for this line in the 2022 ordinance (dataset 2cr6-8u6w)",
+     "amount": 77400000,
+     "period": "2022",
+     "basis": "budget",
+     "source": {
+      "doc": "City of Chicago 2022 Budget Ordinance - Appropriations, Finance General 9222",
+      "url": "https://data.cityofchicago.org/resource/2cr6-8u6w"
+     }
+    },
+    {
+     "kind": "prior_year_budget",
+     "label": "Appropriation for this line in the 2023 ordinance (dataset xbjh-7zvh)",
+     "amount": 96000000,
+     "period": "2023",
+     "basis": "budget",
+     "source": {
+      "doc": "City of Chicago 2023 Budget Ordinance - Appropriations, Finance General 9222",
+      "url": "https://data.cityofchicago.org/resource/xbjh-7zvh"
+     }
+    },
+    {
+     "kind": "prior_year_budget",
+     "label": "Appropriation for this line in the 2024 ordinance (dataset x394-e874)",
+     "amount": 125000000,
+     "period": "2024",
+     "basis": "budget",
+     "source": {
+      "doc": "City of Chicago 2024 Budget Ordinance - Appropriations, Finance General 9222",
+      "url": "https://data.cityofchicago.org/resource/x394-e874"
+     }
+    },
+    {
+     "kind": "prior_year_budget",
+     "label": "Appropriation for this line in the 2025 ordinance (dataset t59y-fr3k)",
+     "amount": 127642689,
+     "period": "2025",
+     "basis": "budget",
+     "source": {
+      "doc": "City of Chicago 2025 Budget Ordinance - Appropriations, Finance General 9222",
+      "url": "https://data.cityofchicago.org/resource/t59y-fr3k"
+     }
+    },
+    {
+     "kind": "prior_year_actual",
+     "label": "Spent on this line in 2024",
+     "amount": 116996954,
+     "period": "2024",
+     "basis": "actual",
+     "source": {
+      "doc": "City of Chicago 2026 Budget Recommendations",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Recommendation%20Book.pdf",
+      "page": "PDF p573 (Finance General, account 9222)"
+     }
+    },
+    {
+     "kind": "prior_year_actual",
+     "label": "Spent on this line in 2025 (budget was $127,642,689)",
+     "amount": 115267967,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "City of Chicago 2025 ACFR, budgetary comparison, Finance General 2005.9222",
+      "page": "PDF p147"
+     }
+    },
+    {
+     "kind": "vendor_context",
+     "label": "The ambulance billing company, Advanced Data Processing, was paid $7,713,575 in 2025 (24 payments) and $2,780,182 in 2026 through 9/28 (12 payments) on contract 54815, under the Department of Finance. Those payments are not in this line (this line is Finance General), and they equal about 6 percent of it.",
+     "amount": 7713574.58,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "City payments data (contracts 54815)",
+      "url": "https://webapps1.chicago.gov/vcsearch/city/contracts/54815"
+     }
+    },
+    {
+     "kind": "contract_term",
+     "label": "Billing contract 54815 (Part A EMS billing and collection, Part B patient tracking and electronic patient care reports): awarded 2018-04-13 for up to $17,572,176 over five years, extended by modifications to 2026-04-10, then to 2026-10-08. At award the fee was 3.95 percent of collections (2.7 percent base plus 1.25 percent compliance), down from 7 percent.",
+     "period": "2018-2026",
+     "basis": "contract",
+     "source": {
+      "doc": "City contract search, contract 54815; Chicago Sun-Times 2018-04-16",
+      "url": "https://chicago.suntimes.com/2018/4/16/18406121/city-awards-17-5m-ambulance-fee-collection-contract-to-reverse-33-year-struggle"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "City statement: 2025 'local non-tax revenues are expected to underperform ... primarily due to ... lower reimbursements from the federally funded Ground Emergency Medical Transportation (GEMT) program, which provides supplemental Medicaid reimbursement for ambulance services.'",
+     "period": "2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago 2026 Budget Forecast",
+      "page": "PDF p21"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "City statement, July 2026: Charges for Service are $34.3 million (16.0 percent) below budget 'mainly due to lower-than-expected Medicaid reimbursements for Emergency Medical Transport services'.",
+     "amount": 34300000,
+     "period": "2026",
+     "basis": "actual",
+     "source": {
+      "doc": "City of Chicago Monthly Revenue Report, July 2026",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/RevenueReports/2026/Monthly_Revenue_Report_July_2026.pdf"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "The State's agreement for the GEMT program requires the local government to send the State 50 percent of the supplemental ambulance payments it receives, invoiced each quarter. Chicago joined in 2020 (DoltHub analysis).",
+     "period": "2025",
+     "basis": "contract",
+     "source": {
+      "doc": "Illinois HFS GEMT intergovernmental agreement, 2025 form, Article II",
+      "url": "https://hfs.illinois.gov/content/dam/soi/en/web/hfs/medicalproviders/costreports/transportation/2025%20GEMT%20IGA.pdf",
+      "page": "2"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0B09",
+    "dept": "99",
+    "authority": "2005",
+    "account": "9205"
+   },
+   "expect_amount": 62789053,
+   "mode": "side_only",
+   "note": "One pass-through, so there is nothing to split. Since 2008-04-01 the City adds $1.50 for every $500 of a property's sale price ('CTA portion') on top of its own $3.75 ('City portion'), $5.25 in all. The seller pays the CTA portion by default. The City collects it, keeps $634,233 to cover collection costs, and sends the rest to the CTA, which uses it in its operating budget.",
+   "side": [
+    {
+     "kind": "rate_context",
+     "label": "Tax rate: $1.50 per $500 of transfer price for the CTA portion (City portion $3.75, total $5.25)",
+     "period": "2026",
+     "basis": "actual",
+     "source": {
+      "doc": "City of Chicago Department of Finance, Real Property Transfer Tax (7551)",
+      "url": "https://www.chicago.gov/city/en/depts/fin/supp_info/revenue/tax_list/real_property_transfertax.html"
+     }
+    },
+    {
+     "kind": "revenue_context",
+     "label": "City's 2026 revenue estimate for the CTA Real Property Transfer Tax Fund (this line plus $634,233 collection cost)",
+     "amount": 63423286,
+     "period": "2026",
+     "basis": "budget",
+     "source": {
+      "doc": "City of Chicago 2026 Budget Recommendations, revenue"
+     }
+    },
+    {
+     "kind": "revenue_context",
+     "label": "What the CTA's own budget book expects from the transfer tax in 2026 (a different, higher number than the City's)",
+     "amount": 67043000,
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CTA FY2026 budget book",
+      "url": "https://www.transitchicago.com/assets/1/6/FY2026_-_Accessible_Text_Budget_Book.pdf",
+      "page": "PDF pp60, 62"
+     }
+    },
+    {
+     "kind": "revenue_context",
+     "label": "CTA forecast of the transfer tax for 2025",
+     "amount": 65091000,
+     "period": "2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CTA FY2026 budget book",
+      "url": "https://www.transitchicago.com/assets/1/6/FY2026_-_Accessible_Text_Budget_Book.pdf",
+      "page": "PDF p60"
+     }
+    },
+    {
+     "kind": "prior_year_actual",
+     "label": "Sent to the CTA in 2025 (appropriation $58,728,050)",
+     "amount": 58728049,
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "City of Chicago 2025 ACFR, budgetary comparison, CTA Real Property Transfer Tax Fund",
+      "page": "PDF p187"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "How the CTA uses it: the CTA receives 100 percent of the $1.50 increase as public funding for operations. The transfer tax receipts, which the City remits directly to the CTA, also back the 2008A and 2008B Sales and Transfer Tax Receipts Revenue Bonds ($1.94 billion issued for the pension and retiree health care funds). Debt service on them is $156,574,793 in 2026 and is paid in the CTA operating budget.",
+     "amount": 156574793,
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CTA FY2026 budget book",
+      "url": "https://www.transitchicago.com/assets/1/6/FY2026_-_Accessible_Text_Budget_Book.pdf",
+      "page": "PDF pp116-117, 144"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "Separate from this line: the State adds 25 percent on top of the transfer tax receipts through the Public Transportation Fund ($17,246,000 for the CTA in 2026), and buyers age 65 or older can get the CTA portion refunded on homes of $250,000 or less.",
+     "amount": 17246000,
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CTA FY2026 budget book; City Finance page",
+      "url": "https://www.transitchicago.com/assets/1/6/FY2026_-_Accessible_Text_Budget_Book.pdf",
+      "page": "PDF p61"
+     }
+    },
+    {
+     "kind": "context",
+     "label": "All City real property transfer tax receipts through July 2026 were 14.2 percent ($12.7 million) above budget",
+     "amount": 12700000,
+     "period": "2026",
+     "basis": "actual",
+     "source": {
+      "doc": "City of Chicago Monthly Revenue Report, July 2026",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/RevenueReports/2026/Monthly_Revenue_Report_July_2026.pdf"
+     }
+    }
+   ]
+  }
+ ]
+}
