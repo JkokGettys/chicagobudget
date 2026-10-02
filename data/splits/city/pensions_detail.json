@@ -1,0 +1,458 @@
+{
+ "meta": {
+  "author": "pensions detail agent",
+  "description": "Public detail under each City pension fund: benefit groups (count x share, proxy), active members by tier, advance payment notes, funded status as side info.",
+  "built_by": "scripts/pensions_tree_funds.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "city.retirement.policemen-s-annuity-and-benefit-fund.0683-2005-0976.paying-down-the-shortfall-money-promised-but-nev"
+   },
+   "expect_amount": 817827915,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Service retirees: 11,271 retired officers",
+     "amount": 715305538.13,
+     "basis": "proxy",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis), Exhibits B, D, E, F, G; PABF Financial Statements 2025 p.17",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": "44, 48-52 (valuation); FS p.17",
+      "note": "Annual benefits by group: Exhibit E service retirees $914,683,048 (p.50), Exhibit F widows $94,059,866 (p.51), Exhibit G miscellaneous annuities (p.52); these add to $1,032,071,723 in Exhibit B (p.44). Death benefits $1,991,600 and refunds $11,718,221 are 2025 payments from the financial statements p.17. 110 refund payments in Exhibit D (pp.48-49)."
+     },
+     "count": 11271,
+     "unit_amount": 63464.25,
+     "unit_label": "retired officers (share of the City's payment each)",
+     "note": "Proxy: this group draws $914,683,048 a year in benefits, 87.46% of the $1,045,781,544 of benefit dollars (annual annuities in force at 12/31/2025 plus 2025 death benefits and refunds). Average benefit $81,154 a year per person. Exhibit E (p.50). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+     "why": "The City's payment goes to the fund as one lump sum, and thousands of retirees in this group share it, so each person's share is far under $1M and no single person's benefit is bought by one payment."
+    },
+    {
+     "name": "Surviving spouses (widow annuities): 3,068 widows and widowers",
+     "amount": 73557220.94,
+     "basis": "proxy",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis), Exhibits B, D, E, F, G; PABF Financial Statements 2025 p.17",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": "44, 48-52 (valuation); FS p.17",
+      "note": "Annual benefits by group: Exhibit E service retirees $914,683,048 (p.50), Exhibit F widows $94,059,866 (p.51), Exhibit G miscellaneous annuities (p.52); these add to $1,032,071,723 in Exhibit B (p.44). Death benefits $1,991,600 and refunds $11,718,221 are 2025 payments from the financial statements p.17. 110 refund payments in Exhibit D (pp.48-49)."
+     },
+     "count": 3068,
+     "unit_amount": 23975.63,
+     "unit_label": "widows and widowers (share of the City's payment each)",
+     "note": "Proxy: this group draws $94,059,866 a year in benefits, 8.99% of the $1,045,781,544 of benefit dollars (annual annuities in force at 12/31/2025 plus 2025 death benefits and refunds). Average benefit $30,658 a year per person. Exhibit F (p.51). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+     "why": "The City's payment goes to the fund as one lump sum, and thousands of retirees in this group share it, so each person's share is far under $1M and no single person's benefit is bought by one payment."
+    },
+    {
+     "name": "Refunds to people who left",
+     "amount": 9163948.53,
+     "basis": "proxy",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis), Exhibits B, D, E, F, G; PABF Financial Statements 2025 p.17",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": "44, 48-52 (valuation); FS p.17",
+      "note": "Annual benefits by group: Exhibit E service retirees $914,683,048 (p.50), Exhibit F widows $94,059,866 (p.51), Exhibit G miscellaneous annuities (p.52); these add to $1,032,071,723 in Exhibit B (p.44). Death benefits $1,991,600 and refunds $11,718,221 are 2025 payments from the financial statements p.17. 110 refund payments in Exhibit D (pp.48-49)."
+     },
+     "count": 0,
+     "unit_amount": null,
+     "unit_label": null,
+     "note": "Proxy: this group draws $11,718,221 a year in benefits, 1.12% of the $1,045,781,544 of benefit dollars (annual annuities in force at 12/31/2025 plus 2025 death benefits and refunds). 2025 refunds of employee deductions, FS p.17. Exhibit D (pp.48-49) shows 110 refund payments, but that counts a different set of people than the accounting total, so no average is shown. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    },
+    {
+     "name": "Duty disability: 177 disabled officers",
+     "amount": 10960720.33,
+     "basis": "proxy",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis), Exhibits B, D, E, F, G; PABF Financial Statements 2025 p.17",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": "44, 48-52 (valuation); FS p.17",
+      "note": "Annual benefits by group: Exhibit E service retirees $914,683,048 (p.50), Exhibit F widows $94,059,866 (p.51), Exhibit G miscellaneous annuities (p.52); these add to $1,032,071,723 in Exhibit B (p.44). Death benefits $1,991,600 and refunds $11,718,221 are 2025 payments from the financial statements p.17. 110 refund payments in Exhibit D (pp.48-49)."
+     },
+     "count": 177,
+     "unit_amount": 61924.97,
+     "unit_label": "disabled officers (share of the City's payment each)",
+     "note": "Proxy: this group draws $14,015,808 a year in benefits, 1.34% of the $1,045,781,544 of benefit dollars (annual annuities in force at 12/31/2025 plus 2025 death benefits and refunds). Average benefit $79,185 a year per person. Exhibit G (p.52). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+     "why": "The City's payment goes to the fund as one lump sum, and thousands of retirees in this group share it, so each person's share is far under $1M and no single person's benefit is bought by one payment."
+    },
+    {
+     "name": "Widows' compensation (service-connected death): 65 widows",
+     "amount": 3782105.6,
+     "basis": "proxy",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis), Exhibits B, D, E, F, G; PABF Financial Statements 2025 p.17",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": "44, 48-52 (valuation); FS p.17",
+      "note": "Annual benefits by group: Exhibit E service retirees $914,683,048 (p.50), Exhibit F widows $94,059,866 (p.51), Exhibit G miscellaneous annuities (p.52); these add to $1,032,071,723 in Exhibit B (p.44). Death benefits $1,991,600 and refunds $11,718,221 are 2025 payments from the financial statements p.17. 110 refund payments in Exhibit D (pp.48-49)."
+     },
+     "count": 65,
+     "unit_amount": 58186.24,
+     "unit_label": "widows (share of the City's payment each)",
+     "note": "Proxy: this group draws $4,836,294 a year in benefits, 0.46% of the $1,045,781,544 of benefit dollars (annual annuities in force at 12/31/2025 plus 2025 death benefits and refunds). Average benefit $74,405 a year per person. Exhibit G (p.52). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    },
+    {
+     "name": "Death benefits",
+     "amount": 1557482.13,
+     "basis": "proxy",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis), Exhibits B, D, E, F, G; PABF Financial Statements 2025 p.17",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": "44, 48-52 (valuation); FS p.17",
+      "note": "Annual benefits by group: Exhibit E service retirees $914,683,048 (p.50), Exhibit F widows $94,059,866 (p.51), Exhibit G miscellaneous annuities (p.52); these add to $1,032,071,723 in Exhibit B (p.44). Death benefits $1,991,600 and refunds $11,718,221 are 2025 payments from the financial statements p.17. 110 refund payments in Exhibit D (pp.48-49)."
+     },
+     "count": 0,
+     "unit_amount": null,
+     "unit_label": null,
+     "note": "Proxy: this group draws $1,991,600 a year in benefits, 0.19% of the $1,045,781,544 of benefit dollars (annual annuities in force at 12/31/2025 plus 2025 death benefits and refunds). 2025 death benefits paid, FS p.17. The count is not printed. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    },
+    {
+     "name": "Ordinary disability: 29 disabled officers",
+     "amount": 1288159.56,
+     "basis": "proxy",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis), Exhibits B, D, E, F, G; PABF Financial Statements 2025 p.17",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": "44, 48-52 (valuation); FS p.17",
+      "note": "Annual benefits by group: Exhibit E service retirees $914,683,048 (p.50), Exhibit F widows $94,059,866 (p.51), Exhibit G miscellaneous annuities (p.52); these add to $1,032,071,723 in Exhibit B (p.44). Death benefits $1,991,600 and refunds $11,718,221 are 2025 payments from the financial statements p.17. 110 refund payments in Exhibit D (pp.48-49)."
+     },
+     "count": 29,
+     "unit_amount": 44419.3,
+     "unit_label": "disabled officers (share of the City's payment each)",
+     "note": "Proxy: this group draws $1,647,209 a year in benefits, 0.16% of the $1,045,781,544 of benefit dollars (annual annuities in force at 12/31/2025 plus 2025 death benefits and refunds). Average benefit $56,800 a year per person. Exhibit G (p.52). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    },
+    {
+     "name": "Children's annuities: 166 children",
+     "amount": 1127120.16,
+     "basis": "proxy",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis), Exhibits B, D, E, F, G; PABF Financial Statements 2025 p.17",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": "44, 48-52 (valuation); FS p.17",
+      "note": "Annual benefits by group: Exhibit E service retirees $914,683,048 (p.50), Exhibit F widows $94,059,866 (p.51), Exhibit G miscellaneous annuities (p.52); these add to $1,032,071,723 in Exhibit B (p.44). Death benefits $1,991,600 and refunds $11,718,221 are 2025 payments from the financial statements p.17. 110 refund payments in Exhibit D (pp.48-49)."
+     },
+     "count": 166,
+     "unit_amount": 6789.88,
+     "unit_label": "children (share of the City's payment each)",
+     "note": "Proxy: this group draws $1,441,283 a year in benefits, 0.14% of the $1,045,781,544 of benefit dollars (annual annuities in force at 12/31/2025 plus 2025 death benefits and refunds). Average benefit $8,682 a year per person. Exhibit G (p.52). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    },
+    {
+     "name": "Occupational disease disability: 18 disabled officers",
+     "amount": 990838.13,
+     "basis": "proxy",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis), Exhibits B, D, E, F, G; PABF Financial Statements 2025 p.17",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": "44, 48-52 (valuation); FS p.17",
+      "note": "Annual benefits by group: Exhibit E service retirees $914,683,048 (p.50), Exhibit F widows $94,059,866 (p.51), Exhibit G miscellaneous annuities (p.52); these add to $1,032,071,723 in Exhibit B (p.44). Death benefits $1,991,600 and refunds $11,718,221 are 2025 payments from the financial statements p.17. 110 refund payments in Exhibit D (pp.48-49)."
+     },
+     "count": 18,
+     "unit_amount": 55046.56,
+     "unit_label": "disabled officers (share of the City's payment each)",
+     "note": "Proxy: this group draws $1,267,015 a year in benefits, 0.12% of the $1,045,781,544 of benefit dollars (annual annuities in force at 12/31/2025 plus 2025 death benefits and refunds). Average benefit $70,390 a year per person. Exhibit G (p.52). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    },
+    {
+     "name": "Children's disability: 101 children",
+     "amount": 94781.49,
+     "basis": "proxy",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis), Exhibits B, D, E, F, G; PABF Financial Statements 2025 p.17",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": "44, 48-52 (valuation); FS p.17",
+      "note": "Annual benefits by group: Exhibit E service retirees $914,683,048 (p.50), Exhibit F widows $94,059,866 (p.51), Exhibit G miscellaneous annuities (p.52); these add to $1,032,071,723 in Exhibit B (p.44). Death benefits $1,991,600 and refunds $11,718,221 are 2025 payments from the financial statements p.17. 110 refund payments in Exhibit D (pp.48-49)."
+     },
+     "count": 101,
+     "unit_amount": 938.43,
+     "unit_label": "children (share of the City's payment each)",
+     "note": "Proxy: this group draws $121,200 a year in benefits, 0.01% of the $1,045,781,544 of benefit dollars (annual annuities in force at 12/31/2025 plus 2025 death benefits and refunds). Average benefit $1,200 a year per person. Exhibit G (p.52). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    }
+   ],
+   "residual": {
+    "name": "Rounding",
+    "why": null
+   },
+   "note": "The valuation says this is a severely underfunded plan: funded ratio 26.1%, unfunded liability about $13.8 billion. The money here is the part of the City's payment left after the cost of this year's pensions. The State law (P.A. 99-0506) sets payments that aim for 90% funded by 2055. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+   "side": [
+    {
+     "kind": "unfunded_liability",
+     "label": "Unfunded actuarial liability (promised pensions not yet saved for), 12/31/2025",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 34
+     },
+     "amount": 13845585439
+    },
+    {
+     "kind": "funded_ratio",
+     "label": "Funded ratio, actuarial value of assets $4,884,050,114 vs liability $18,729,635,553: 26.08%",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 12
+     },
+     "ratio": 0.2608
+    },
+    {
+     "kind": "amortization_target",
+     "label": "State law aims for a 90% funded ratio by plan year-end 2055 (P.A. 99-0506). The actuary's own measuring stick, a 25-year closed level-dollar payoff started 12/31/2024, has 24 years left.",
+     "period": "2055 target",
+     "basis": "actual",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 10
+     },
+     "target_year": 2055
+    },
+    {
+     "kind": "amortization_payment",
+     "label": "Payment on the unfunded liability in the actuary's recommended 2026 contribution (25-year closed, level dollar)",
+     "period": "plan year 2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 34
+     },
+     "amount": 1142871201
+    },
+    {
+     "kind": "recommended_contribution",
+     "label": "Actuarially determined contribution for 2026 (City payment the actuary recommends)",
+     "period": "plan year 2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 34
+     },
+     "amount": 1416650276
+    },
+    {
+     "kind": "gap_vs_recommended",
+     "label": "Gap: recommended contribution minus the statutory contribution of $1,040,273,100",
+     "period": "plan year 2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 34
+     },
+     "amount": 376377176
+    },
+    {
+     "kind": "benefits_paid",
+     "label": "Total benefits and refunds paid in 2025 (pensions $1,035,953,513, death $1,991,600, refunds $11,718,221)",
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "PABF Financial Statements 2025",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/final_PABF_FS_2025.pdf",
+      "page": 17
+     },
+     "amount": 1049663334
+    },
+    {
+     "kind": "annual_benefits_in_force",
+     "label": "Annual benefits in payment at 12/31/2025: 14,895 annuitants and beneficiaries",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 44
+     },
+     "amount": 1032071723,
+     "members": 14895
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.retirement.policemen-s-annuity-and-benefit-fund.0683-2005-0976.cost-of-pensions-workers-earn-this-year"
+   },
+   "expect_amount": 222445185,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Tier 1 (hired before 2011): 4,957 active members",
+     "amount": 130073340,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis), Exhibits B, D, E, F, G; PABF Financial Statements 2025 p.17",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 29,
+      "note": "Table 1C: Tier 1 net normal cost $130,073,340, 4,957 members."
+     },
+     "count": 4957,
+     "unit_amount": 26240.33,
+     "unit_label": "active members (net normal cost each)",
+     "note": "Average net normal cost per member $26,240 = $130,073,340 / 4,957 (our division of the actuary's printed numbers). Tier 1 payroll $672,681,254, average pay $135,703. Net of the $60,690,023 members are expected to pay in.",
+     "why": "The fund's actuary prints this cost for the whole group, and it is spread over thousands of working members, so each member's cost is far under $1M and the City does not publish it person by person."
+    },
+    {
+     "name": "Tier 2 (hired 2011 or later): 6,682 active members",
+     "amount": 92371845,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis), Exhibits B, D, E, F, G; PABF Financial Statements 2025 p.17",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 29,
+      "note": "Table 1C: Tier 2 net normal cost $92,371,845, 6,682 members."
+     },
+     "count": 6682,
+     "unit_amount": 13823.98,
+     "unit_label": "active members (net normal cost each)",
+     "note": "Average net normal cost per member $13,824 = $92,371,845 / 6,682 (our division of the actuary's printed numbers). Tier 2 payroll $723,235,341, average pay $108,236. Net of the $65,291,641 members are expected to pay in.",
+     "why": "The fund's actuary prints this cost for the whole group, and it is spread over thousands of working members, so each member's cost is far under $1M and the City does not publish it person by person."
+    }
+   ],
+   "residual": {
+    "name": "Rounding",
+    "why": null
+   },
+   "note": "Net normal cost is the actuary's estimate of what this year of work by 11,639 active officers adds to the pension promise, after officers' own contributions (Table 1C, p.29). Tier 1 is hired before 1/1/2011, Tier 2 after.",
+   "side": [
+    {
+     "kind": "active_payroll",
+     "label": "Active member payroll, annualized pay rate at 12/31/2025 (11,639 active members, average $119,934)",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 29
+     },
+     "amount": 1395916595
+    },
+    {
+     "kind": "active_payroll_t1",
+     "label": "Tier 1 payroll (4,957 members, average $135,703)",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 29
+     },
+     "amount": 672681254
+    },
+    {
+     "kind": "active_payroll_t2",
+     "label": "Tier 2 payroll (6,682 members, average $108,236)",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 29
+     },
+     "amount": 723235341
+    },
+    {
+     "kind": "total_normal_cost",
+     "label": "Total normal cost before member contributions (25.0% of pay)",
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 29
+     },
+     "amount": 348426849
+    },
+    {
+     "kind": "member_contributions",
+     "label": "Estimated contributions by active officers themselves",
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 29
+     },
+     "amount": 125981664
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.retirement.policemen-s-annuity-and-benefit-fund.0683-2005-097a.extra-payment-above-what-the-law-requires"
+   },
+   "expect_amount": 72249824,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Advance payment: City pays more than State law requires",
+     "amount": 72249824,
+     "basis": "tied",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis) p.10",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 10
+     },
+     "why": "This is money the City chooses to pay on top of what the law requires, so the fund has more savings and the shortfall grows more slowly, and it goes into the fund as one payment.",
+     "note": "Under the City's Pension Management Policy (2022) the City budgets extra payments on top of the State-law minimum so the shortfall does not grow. The valuation lists the extras actually paid and assumes no more in its projections."
+    }
+   ],
+   "note": "Under the City's Pension Management Policy (2022) the City budgets extra payments on top of the State-law minimum so the shortfall does not grow. The valuation lists the extras actually paid and assumes no more in its projections.",
+   "side": [
+    {
+     "kind": "advance_history",
+     "label": "Extra contributions above the statutory minimum, FY2023",
+     "period": "2023",
+     "basis": "actual",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 10
+     },
+     "amount": 89500000
+    },
+    {
+     "kind": "advance_history",
+     "label": "Extra contributions above the statutory minimum, FY2024",
+     "period": "2024",
+     "basis": "actual",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 10
+     },
+     "amount": 79800000
+    },
+    {
+     "kind": "advance_history",
+     "label": "Extra contributions above the statutory minimum, FY2025",
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 10
+     },
+     "amount": 67400000
+    },
+    {
+     "kind": "advance_history",
+     "label": "Extra contributions above the statutory minimum, FY2026",
+     "period": "2026",
+     "basis": "actual",
+     "source": {
+      "doc": "PABF Actuarial Valuation as of 12/31/2025 (Lewis & Ellis)",
+      "url": "https://chipabf.org/wp-content/uploads/2026/07/PABF_20251231_Final.pdf",
+      "page": 10
+     },
+     "amount": 36100000
+    }
+   ]
+  }
+ ]
+}
