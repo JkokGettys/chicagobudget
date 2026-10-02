@@ -870,7 +870,7 @@
      "count": 21874,
      "unit_amount": 33596.16,
      "unit_label": "retirees (share of the City's payment each)",
-     "note": "Proxy: this group draws $1,074,098,388 a year in benefits, 89.83% of the $1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $49,104 a year per person. Exhibit D.1 (p.40). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+     "note": "Proxy: this group draws $1,074,098,388 a year in benefits, 89.83% of the $1,195,697,315 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $49,104 a year per person. Exhibit D.1 (p.40). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
      "why": "The City's payment goes to the fund as one lump sum, and thousands of retirees in this group share it, so each person's share is far under $1M and no single person's benefit is bought by one payment."
     },
     {
@@ -886,7 +886,7 @@
      "count": 3714,
      "unit_amount": 13367.3,
      "unit_label": "spouses (share of the City's payment each)",
-     "note": "Proxy: this group draws $72,562,411 a year in benefits, 6.07% of the $1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $19,538 a year per person. Exhibit D.2 (p.41). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+     "note": "Proxy: this group draws $72,562,411 a year in benefits, 6.07% of the $1,195,697,315 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $19,538 a year per person. Exhibit D.2 (p.41). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
      "why": "The City's payment goes to the fund as one lump sum, and thousands of retirees in this group share it, so each person's share is far under $1M and no single person's benefit is bought by one payment."
     },
     {
@@ -902,7 +902,7 @@
      "count": 0,
      "unit_amount": null,
      "unit_label": null,
-     "note": "Proxy: this group draws $40,088,296 a year in benefits, 3.35% of the $1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). 2025 refunds of contributions, income statement p.45. The valuation prints 1,839 refunds in the member count roll-forward (p.44) but that counts a different set, so no average is shown. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+     "note": "Proxy: this group draws $40,088,296 a year in benefits, 3.35% of the $1,195,697,315 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). 2025 refunds of contributions, income statement p.45. The valuation prints 1,839 refunds in the member count roll-forward (p.44) but that counts a different set, so no average is shown. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
      "why": "The City's payment goes to the fund as one lump sum, and thousands of retirees in this group share it, so each person's share is far under $1M and no single person's benefit is bought by one payment."
     },
     {
@@ -918,7 +918,7 @@
      "count": 181,
      "unit_amount": 30939.56,
      "unit_label": "members on disability (share of the City's payment each)",
-     "note": "Proxy: this group draws $8,185,003 a year in benefits, 0.68% of the $1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $45,221 a year per person. 2025 disability payments, p.45. 93 ordinary and 88 duty disability members (p.17, p.33). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+     "note": "Proxy: this group draws $8,185,003 a year in benefits, 0.68% of the $1,195,697,315 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $45,221 a year per person. 2025 disability payments, p.45. 93 ordinary and 88 duty disability members (p.17, p.33). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
     },
     {
      "name": "Reversionary annuitants: 119 annuitants",
@@ -933,7 +933,7 @@
      "count": 119,
      "unit_amount": 3373.94,
      "unit_label": "annuitants (share of the City's payment each)",
-     "note": "Proxy: this group draws $586,827 a year in benefits, 0.05% of the $1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $4,931 a year per person. Exhibit D.3 (p.42). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+     "note": "Proxy: this group draws $586,827 a year in benefits, 0.05% of the $1,195,697,315 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $4,931 a year per person. Exhibit D.3 (p.42). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
     },
     {
      "name": "Children's annuities (derived): 64 children",
@@ -948,7 +948,7 @@
      "count": 64,
      "unit_amount": 1885.68,
      "unit_label": "children (share of the City's payment each)",
-     "note": "Proxy: this group draws $176,390 a year in benefits, 0.01% of the $1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $2,756 a year per person. Derived: printed monthly total of $95,618,668 x 12 minus the groups above (p.18). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+     "note": "Proxy: this group draws $176,390 a year in benefits, 0.01% of the $1,195,697,315 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments). Average benefit $2,756 a year per person. Derived: printed monthly total of $95,618,668 x 12 minus the groups above (p.18). The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
     }
    ],
    "residual": {
@@ -1239,6 +1239,357 @@
       "page": 32
      },
      "amount": 159998000
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.retirement.laborers-and-retirement-board-annuity-and-benefi.0682-2005-0976.paying-down-the-shortfall-money-promised-but-nev"
+   },
+   "expect_amount": 109949504,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Retired members: 2,506 retirees",
+     "amount": 94225394.14,
+     "basis": "proxy",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS), Summary of Actuarial Valuation p.11; LABF Financial Statements 2025 p.14",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": "11 (valuation); FS p.14",
+      "note": "Annual payments in force at 12/31/2025 (valuation p.11): employees' annuities $163,399,654 for 2,506 retirees, spouses' annuities $19,932,438 for 934 survivors, children's annuities $51,730 for 17 children, duty disability $1,513,912 plus $768,981 payments in lieu, ordinary disability $1,419,720 (57 members on disability in all). Refunds $3,580,965 are 2025 cash from the financial statements (p.14). The valuation lists 31 reversionary annuitants but prints no separate payment line for them."
+     },
+     "count": 2506,
+     "unit_amount": 37599.92,
+     "unit_label": "retirees (share of the City's payment each)",
+     "note": "Proxy: this group draws $163,399,654 a year in benefits, 85.70% of the $190,667,400 of benefit dollars (annual payments in force at 12/31/2025 plus 2025 refunds). Average benefit $65,203 a year per person. Valuation p.11. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+     "why": "The City's payment goes to the fund as one lump sum, and thousands of retirees in this group share it, so each person's share is far under $1M and no single person's benefit is bought by one payment."
+    },
+    {
+     "name": "Surviving spouses: 934 spouses",
+     "amount": 11494160.36,
+     "basis": "proxy",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS), Summary of Actuarial Valuation p.11; LABF Financial Statements 2025 p.14",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": "11 (valuation); FS p.14",
+      "note": "Annual payments in force at 12/31/2025 (valuation p.11): employees' annuities $163,399,654 for 2,506 retirees, spouses' annuities $19,932,438 for 934 survivors, children's annuities $51,730 for 17 children, duty disability $1,513,912 plus $768,981 payments in lieu, ordinary disability $1,419,720 (57 members on disability in all). Refunds $3,580,965 are 2025 cash from the financial statements (p.14). The valuation lists 31 reversionary annuitants but prints no separate payment line for them."
+     },
+     "count": 934,
+     "unit_amount": 12306.38,
+     "unit_label": "spouses (share of the City's payment each)",
+     "note": "Proxy: this group draws $19,932,438 a year in benefits, 10.45% of the $190,667,400 of benefit dollars (annual payments in force at 12/31/2025 plus 2025 refunds). Average benefit $21,341 a year per person. Valuation p.11. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+     "why": "The City's payment goes to the fund as one lump sum, and thousands of retirees in this group share it, so each person's share is far under $1M and no single person's benefit is bought by one payment."
+    },
+    {
+     "name": "Disability (duty and ordinary): 57 members on disability",
+     "amount": 2135134.07,
+     "basis": "proxy",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS), Summary of Actuarial Valuation p.11; LABF Financial Statements 2025 p.14",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": "11 (valuation); FS p.14",
+      "note": "Annual payments in force at 12/31/2025 (valuation p.11): employees' annuities $163,399,654 for 2,506 retirees, spouses' annuities $19,932,438 for 934 survivors, children's annuities $51,730 for 17 children, duty disability $1,513,912 plus $768,981 payments in lieu, ordinary disability $1,419,720 (57 members on disability in all). Refunds $3,580,965 are 2025 cash from the financial statements (p.14). The valuation lists 31 reversionary annuitants but prints no separate payment line for them."
+     },
+     "count": 57,
+     "unit_amount": 37458.49,
+     "unit_label": "members on disability (share of the City's payment each)",
+     "note": "Proxy: this group draws $3,702,613 a year in benefits, 1.94% of the $190,667,400 of benefit dollars (annual payments in force at 12/31/2025 plus 2025 refunds). Average benefit $64,958 a year per person. Valuation p.11: duty $1,513,912, duty payments in lieu $768,981, ordinary $1,419,720. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    },
+    {
+     "name": "Refunds to members who left",
+     "amount": 2064985.02,
+     "basis": "proxy",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS), Summary of Actuarial Valuation p.11; LABF Financial Statements 2025 p.14",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": "11 (valuation); FS p.14",
+      "note": "Annual payments in force at 12/31/2025 (valuation p.11): employees' annuities $163,399,654 for 2,506 retirees, spouses' annuities $19,932,438 for 934 survivors, children's annuities $51,730 for 17 children, duty disability $1,513,912 plus $768,981 payments in lieu, ordinary disability $1,419,720 (57 members on disability in all). Refunds $3,580,965 are 2025 cash from the financial statements (p.14). The valuation lists 31 reversionary annuitants but prints no separate payment line for them."
+     },
+     "count": 0,
+     "unit_amount": null,
+     "unit_label": null,
+     "note": "Proxy: this group draws $3,580,965 a year in benefits, 1.88% of the $190,667,400 of benefit dollars (annual payments in force at 12/31/2025 plus 2025 refunds). 2025 refunds, financial statements p.14. The count of refunds is not printed. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    },
+    {
+     "name": "Children's annuities: 17 children",
+     "amount": 29830.41,
+     "basis": "proxy",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS), Summary of Actuarial Valuation p.11; LABF Financial Statements 2025 p.14",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": "11 (valuation); FS p.14",
+      "note": "Annual payments in force at 12/31/2025 (valuation p.11): employees' annuities $163,399,654 for 2,506 retirees, spouses' annuities $19,932,438 for 934 survivors, children's annuities $51,730 for 17 children, duty disability $1,513,912 plus $768,981 payments in lieu, ordinary disability $1,419,720 (57 members on disability in all). Refunds $3,580,965 are 2025 cash from the financial statements (p.14). The valuation lists 31 reversionary annuitants but prints no separate payment line for them."
+     },
+     "count": 17,
+     "unit_amount": 1754.73,
+     "unit_label": "children (share of the City's payment each)",
+     "note": "Proxy: this group draws $51,730 a year in benefits, 0.03% of the $190,667,400 of benefit dollars (annual payments in force at 12/31/2025 plus 2025 refunds). Average benefit $3,043 a year per person. Valuation p.11. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure."
+    }
+   ],
+   "residual": {
+    "name": "Rounding",
+    "why": null
+   },
+   "note": "The valuation says the State-law policy aims for 90% funded by 2058, with most of the gain coming after 2043 ('back-loading'). Funded ratio is 43.5% and the unfunded liability is about $1.77 billion. The City's payment is not the same as the benefits paid. The City sends one payment set by law to the fund, and the fund pays its retirees from that money plus member contributions and investment earnings. This split shares the payment out by each group's share of yearly benefit dollars, so it is our estimate, not a City figure.",
+   "side": [
+    {
+     "kind": "unfunded_liability",
+     "label": "Unfunded actuarial accrued liability (promised pensions not yet saved for), 12/31/2025",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 29
+     },
+     "amount": 1771186323
+    },
+    {
+     "kind": "funded_ratio",
+     "label": "Funded ratio on actuarial value of assets: 43.5% (market value basis 44.3%)",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 15
+     },
+     "ratio": 0.435
+    },
+    {
+     "kind": "amortization_target",
+     "label": "State law aims for 90% funded by 2058 and holds 90% after that. The actuary's own measuring stick is a 30-year level-dollar payoff. Funded ratio is projected to stay below 50% until 2043.",
+     "period": "2058 target",
+     "basis": "actual",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 3
+     },
+     "target_year": 2058
+    },
+    {
+     "kind": "amortization_payment",
+     "label": "30-year level-dollar payment on the unfunded liability in the actuary's recommended 2026 contribution",
+     "period": "plan year 2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 29
+     },
+     "amount": 134694224
+    },
+    {
+     "kind": "recommended_contribution",
+     "label": "Actuarially determined contribution for 2026 (64.41% of pay), after members' own contributions",
+     "period": "plan year 2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 29
+     },
+     "amount": 170342684
+    },
+    {
+     "kind": "gap_vs_recommended",
+     "label": "Gap: recommended contribution minus the estimated City contribution of $136,573,560",
+     "period": "plan year 2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 29
+     },
+     "amount": 33769124
+    },
+    {
+     "kind": "benefits_paid",
+     "label": "Benefits and refunds paid in 2025 (benefits $186,382,777, refunds $3,580,965)",
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "LABF Financial Statements 2025",
+      "url": "https://www.labfchicago.org/assets/1/7/2025_LABF_Issued_Financial_Statements.pdf",
+      "page": 14
+     },
+     "amount": 189963742
+    },
+    {
+     "kind": "annual_benefits_in_force",
+     "label": "Annual payments in force at 12/31/2025 to 4,543 pay-status members (retirees, survivors, disabled, children)",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 11
+     },
+     "amount": 187086435,
+     "members": 4543
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.retirement.laborers-and-retirement-board-annuity-and-benefi.0682-2005-0976.cost-of-pensions-workers-earn-this-year"
+   },
+   "expect_amount": 26624056,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Tier 1 (hired before 2011): 1,196 active members",
+     "amount": 17305069,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS), Summary of Actuarial Valuation p.11; LABF Financial Statements 2025 p.14",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 31,
+      "note": "Table 1B (p.31): Tier 1 (hired before 2011) net employer normal cost $17,305,069, 1,196 active members."
+     },
+     "count": 1196,
+     "unit_amount": 14469.12,
+     "unit_label": "active members (net normal cost each)",
+     "note": "Average net employer normal cost per member $14,469 = $17,305,069 / 1,196 (our division of the actuary's printed numbers). Capped payroll $125,526,077, average $104,955. Total normal cost $27,003,421, of which members pay $9,698,352.",
+     "why": "The fund's actuary prints this cost for the whole group, and it is spread over thousands of working members, so each member's cost is far under $1M and the City does not publish it person by person."
+    },
+    {
+     "name": "Tier 2 (hired 2011 to July 5, 2017): 502 active members",
+     "amount": 3960611,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS), Summary of Actuarial Valuation p.11; LABF Financial Statements 2025 p.14",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 31,
+      "note": "Table 1B (p.31): Tier 2 (hired 2011 to July 5, 2017) net employer normal cost $3,960,611, 502 active members."
+     },
+     "count": 502,
+     "unit_amount": 7889.66,
+     "unit_label": "active members (net normal cost each)",
+     "note": "Average net employer normal cost per member $7,890 = $3,960,611 / 502 (our division of the actuary's printed numbers). Capped payroll $51,387,681, average $102,366. Total normal cost $8,114,017, of which members pay $4,153,406."
+    },
+    {
+     "name": "Tier 3 (hired July 6, 2017 or later): 1,082 active members",
+     "amount": 5358376,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS), Summary of Actuarial Valuation p.11; LABF Financial Statements 2025 p.14",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 31,
+      "note": "Table 1B (p.31): Tier 3 (hired July 6, 2017 or later) net employer normal cost $5,358,376, 1,082 active members."
+     },
+     "count": 1082,
+     "unit_amount": 4952.29,
+     "unit_label": "active members (net normal cost each)",
+     "note": "Average net employer normal cost per member $4,952 = $5,358,376 / 1,082 (our division of the actuary's printed numbers). Capped payroll $87,572,506, average $80,936. Total normal cost $15,072,753, of which members pay $9,714,377."
+    }
+   ],
+   "residual": {
+    "name": "Rounding",
+    "why": null
+   },
+   "note": "Net employer normal cost is the actuary's estimate of what this year of work by 2,780 active members adds to the pension promise, after members' own contributions (Table 1B, p.31).",
+   "side": [
+    {
+     "kind": "active_payroll",
+     "label": "Capped payroll of 2,780 active members at 12/31/2025 (average $95,139)",
+     "period": "12/31/2025",
+     "basis": "actual",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 31
+     },
+     "amount": 264486264
+    },
+    {
+     "kind": "total_normal_cost",
+     "label": "Total normal cost before member contributions (19.27% of expected pay, includes administration $3,822,623)",
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 31
+     },
+     "amount": 50190191
+    },
+    {
+     "kind": "member_contributions",
+     "label": "Estimated contributions by active members themselves",
+     "period": "2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 31
+     },
+     "amount": 23566135
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.retirement.laborers-and-retirement-board-annuity-and-benefi.0682-2005-097a.extra-payment-above-what-the-law-requires"
+   },
+   "expect_amount": 14574818,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "One extra payment into the fund's savings",
+     "amount": 14574818,
+     "basis": "tied",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS) p.15",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 15
+     },
+     "why": "This is money the City chooses to pay on top of what the law requires, so the fund has more savings and the shortfall grows more slowly, and it goes into the fund as one payment.",
+     "note": "The City has paid extra amounts above the State-law minimum since 2023 to help the fund. The valuation does not count on future extras in its projections. It says they will help reduce the City's long-term contribution requirements."
+    }
+   ],
+   "note": "The City has paid extra amounts above the State-law minimum since 2023 to help the fund. The valuation does not count on future extras in its projections. It says they will help reduce the City's long-term contribution requirements.",
+   "side": [
+    {
+     "kind": "advance_history",
+     "label": "Extra City allocation above the statutory requirement, FY2023 (net received $11.8M)",
+     "period": "2023",
+     "basis": "actual",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 15
+     },
+     "amount": 12100000
+    },
+    {
+     "kind": "advance_history",
+     "label": "Extra City allocation above the statutory requirement, FY2024 (net received $20.1M)",
+     "period": "2024",
+     "basis": "actual",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 15
+     },
+     "amount": 20300000
+    },
+    {
+     "kind": "advance_history",
+     "label": "Extra City allocation above the statutory requirement, FY2025 (net received $19.9M)",
+     "period": "2025",
+     "basis": "actual",
+     "source": {
+      "doc": "LABF Actuarial Valuation as of 12/31/2025 (GRS)",
+      "url": "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf",
+      "page": 15
+     },
+     "amount": 20200000
     }
    ]
   }

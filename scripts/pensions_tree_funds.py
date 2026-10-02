@@ -185,7 +185,7 @@ add_fund(dict(
              "surviving spouses Exhibit D.2 (p.41), reversionary annuitants Exhibit D.3 (p.42). Children are the remainder of the printed "
              "monthly total $95,618,668 x 12 (p.18), so that line is derived. Refunds $40,088,296 and disability payments $8,185,003 are 2025 cash (p.45).",
     short_amt=818078695,
-    ben_label="$1,195,697,595 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments)",
+    ben_label="$1,195,697,315 of benefit dollars (annual benefits in payment at 12/31/2025 plus 2025 refunds and disability payments)",
     groups=[
         ("Retired members", "retirees", 21874, 1074098388, "Exhibit D.1 (p.40)."),
         ("Surviving spouses", "spouses", 3714, 72562411, "Exhibit D.2 (p.41)."),
@@ -233,6 +233,74 @@ add_fund(dict(
         S("advance_history", "Supplemental pension payment received in 2025", 168736173, "2025", "actual", MD, MU, 45),
         S("advance_payment_2026", "Supplemental payment made January 2026 (the only 2026 payment the actuary counts)", 80609447, "2026", "actual", MD, MU, 10),
         S("advance_savings", "Actuary's estimate of how much the January 2026 payment reduces total required contributions through 2058", 159998000, "through 2058", "gov_estimate", MD, MU, 32),
+    ],
+))
+
+
+# ======================================================================= LABF (Laborers)
+LU = "https://www.labfchicago.org/assets/1/7/GRS_2025_Val.pdf"
+LFSU = "https://www.labfchicago.org/assets/1/7/2025_LABF_Issued_Financial_Statements.pdf"
+LD = "LABF Actuarial Valuation as of 12/31/2025 (GRS)"
+LFD = "LABF Financial Statements 2025"
+_l = [("Tier 1 (hired before 2011)", 1196, 17305069, 27003421, 125526077, 104955, 9698352),
+      ("Tier 2 (hired 2011 to July 5, 2017)", 502, 3960611, 8114017, 51387681, 102366, 4153406),
+      ("Tier 3 (hired July 6, 2017 or later)", 1082, 5358376, 15072753, 87572506, 80936, 9714377)]
+add_fund(dict(
+    ids=dict(
+        short="city.retirement.laborers-and-retirement-board-annuity-and-benefi.0682-2005-0976.paying-down-the-shortfall-money-promised-but-nev",
+        nc="city.retirement.laborers-and-retirement-board-annuity-and-benefi.0682-2005-0976.cost-of-pensions-workers-earn-this-year",
+        adv="city.retirement.laborers-and-retirement-board-annuity-and-benefi.0682-2005-097a.extra-payment-above-what-the-law-requires"),
+    val_doc=LD + ", Summary of Actuarial Valuation p.11; " + LFD + " p.14",
+    val_url=LU, val_pages="11 (valuation); FS p.14",
+    src_note="Annual payments in force at 12/31/2025 (valuation p.11): employees' annuities $163,399,654 for 2,506 retirees, spouses' annuities "
+             "$19,932,438 for 934 survivors, children's annuities $51,730 for 17 children, duty disability $1,513,912 plus $768,981 payments in lieu, "
+             "ordinary disability $1,419,720 (57 members on disability in all). Refunds $3,580,965 are 2025 cash from the financial statements (p.14). "
+             "The valuation lists 31 reversionary annuitants but prints no separate payment line for them.",
+    short_amt=109949504,
+    ben_label="$190,667,400 of benefit dollars (annual payments in force at 12/31/2025 plus 2025 refunds)",
+    groups=[
+        ("Retired members", "retirees", 2506, 163399654, "Valuation p.11."),
+        ("Surviving spouses", "spouses", 934, 19932438, "Valuation p.11."),
+        ("Disability (duty and ordinary)", "members on disability", 57, 3702613, "Valuation p.11: duty $1,513,912, duty payments in lieu $768,981, ordinary $1,419,720."),
+        ("Refunds to members who left", "", 0, 3580965, "2025 refunds, financial statements p.14. The count of refunds is not printed."),
+        ("Children's annuities", "children", 17, 51730, "Valuation p.11."),
+    ],
+    short_note="The valuation says the State-law policy aims for 90% funded by 2058, with most of the gain coming after 2043 ('back-loading'). "
+               "Funded ratio is 43.5% and the unfunded liability is about $1.77 billion.",
+    short_side=[
+        S("unfunded_liability", "Unfunded actuarial accrued liability (promised pensions not yet saved for), 12/31/2025", 1771186323, "12/31/2025", "actual", LD, LU, 29),
+        S("funded_ratio", "Funded ratio on actuarial value of assets: 43.5% (market value basis 44.3%)", None, "12/31/2025", "actual", LD, LU, 15, ratio=0.435),
+        S("amortization_target", "State law aims for 90% funded by 2058 and holds 90% after that. The actuary's own measuring stick is a 30-year level-dollar payoff. Funded ratio is projected to stay below 50% until 2043.", None, "2058 target", "actual", LD, LU, 3, target_year=2058),
+        S("amortization_payment", "30-year level-dollar payment on the unfunded liability in the actuary's recommended 2026 contribution", 134694224, "plan year 2026", "gov_estimate", LD, LU, 29),
+        S("recommended_contribution", "Actuarially determined contribution for 2026 (64.41% of pay), after members' own contributions", 170342684, "plan year 2026", "gov_estimate", LD, LU, 29),
+        S("gap_vs_recommended", "Gap: recommended contribution minus the estimated City contribution of $136,573,560", 33769124, "plan year 2026", "gov_estimate", LD, LU, 29),
+        S("benefits_paid", "Benefits and refunds paid in 2025 (benefits $186,382,777, refunds $3,580,965)", 189963742, "2025", "actual", LFD, LFSU, 14),
+        S("annual_benefits_in_force", "Annual payments in force at 12/31/2025 to 4,543 pay-status members (retirees, survivors, disabled, children)", 187086435, "12/31/2025", "actual", LD, LU, 11, members=4543),
+    ],
+    tiers=[
+        dict(name=x[0], count=x[1], net_nc=x[2], page=31,
+             src_note=f"Table 1B (p.31): {x[0]} net employer normal cost ${x[2]:,}, {x[1]:,} active members.",
+             note=f"Average net employer normal cost per member ${x[2] / x[1]:,.0f} = ${x[2]:,} / {x[1]:,} (our division of the actuary's printed numbers). "
+                  f"Capped payroll ${x[4]:,}, average ${x[5]:,}. Total normal cost ${x[3]:,}, of which members pay ${x[6]:,}.")
+        for x in _l],
+    nc_amt=26624056,
+    nc_note="Net employer normal cost is the actuary's estimate of what this year of work by 2,780 active members adds to the pension promise, "
+            "after members' own contributions (Table 1B, p.31).",
+    nc_side=[
+        S("active_payroll", "Capped payroll of 2,780 active members at 12/31/2025 (average $95,139)", 264486264, "12/31/2025", "actual", LD, LU, 31),
+        S("total_normal_cost", "Total normal cost before member contributions (19.27% of expected pay, includes administration $3,822,623)", 50190191, "2026", "gov_estimate", LD, LU, 31),
+        S("member_contributions", "Estimated contributions by active members themselves", 23566135, "2026", "gov_estimate", LD, LU, 31),
+    ],
+    adv_amt=14574818,
+    adv_name="One extra payment into the fund's savings",
+    adv_doc=LD + " p.15",
+    adv_page=15,
+    adv_note="The City has paid extra amounts above the State-law minimum since 2023 to help the fund. The valuation does not count on "
+             "future extras in its projections. It says they will help reduce the City's long-term contribution requirements.",
+    adv_side=[
+        S("advance_history", "Extra City allocation above the statutory requirement, FY2023 (net received $11.8M)", 12100000, "2023", "actual", LD, LU, 15),
+        S("advance_history", "Extra City allocation above the statutory requirement, FY2024 (net received $20.1M)", 20300000, "2024", "actual", LD, LU, 15),
+        S("advance_history", "Extra City allocation above the statutory requirement, FY2025 (net received $19.9M)", 20200000, "2025", "actual", LD, LU, 15),
     ],
 ))
 
