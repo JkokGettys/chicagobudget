@@ -256,6 +256,41 @@ def other_reserves(led_all, done):
             out.append(sp)
     return out
 
+
+# Chicago-sponsored local-system projects in IDOT's FY2026 Annual Highway Improvement Program (district 1, local construction and local engineering)
+AHP_NBRS = ["1-22003-0000", "1-22304-0000", "1-21283-0000", "1-22369-0000", "1-22473-0000", "1-22379-0000", "1-21951-0010", "1-22302-0002",
+            "1-22821-0000", "1-22305-0000", "1-22306-0000", "1-22307-0000", "1-22308-0000", "1-21759-0000", "1-21760-0000", "1-22537-0000",
+            "1-22539-0000", "1-22368-0000", "1-22463-0000"]
+
+
+def ahp_side():
+    """Read each project number from raw/grants_tree/idot_fy26_ahp.txt: location, funds, cost and PDF page. Amounts are IDOT's 'Estimated Cost'."""
+    path = os.path.join(ROOT, "raw", "grants_tree", "idot_fy26_ahp.txt")
+    lines = open(path).read().split("\n")
+    page, pg = None, {}
+    for i, l in enumerate(lines):
+        m = re.match(r"=====PAGE (\d+)=====", l)
+        if m:
+            page = int(m.group(1))
+        pg[i] = page
+    out = []
+    for nbr in AHP_NBRS:
+        for i, l in enumerate(lines):
+            if l.rstrip().endswith(nbr):
+                m = re.search(r"\s([A-Z, ]*?)\s?([\d,]{6,})\s+([A-Z][A-Z /().#-]+?)\s+" + re.escape(nbr), l)
+                if not m:
+                    continue
+                cost = Decimal(m.group(2).replace(",", ""))
+                label = l[:m.start(2)].strip()
+                out.append({"kind": "idot_ahp_project", "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project %s: %s (%s)" % (nbr, label, m.group(3).strip().title()),
+                            "amount": dol(cost), "period": "IDOT FY2026 (Jul 2025 to Jun 2026)", "basis": "gov_estimate",
+                            "source": {"doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)", "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+                                       "page": "PDF page %d (printed page 1 - %d), District 1" % (pg[i], pg[i] - 20)}})
+                break
+        else:
+            print("  AHP project not found", nbr)
+    return out
+
 # ---------------------------------------------------------------- build
 def main():
     if not os.path.isdir(TIP_DIR) or len(os.listdir(TIP_DIR)) < 100:
@@ -275,6 +310,7 @@ def main():
     side.append({"kind": "cdot_stp_program", "label": "CDOT's own FFY2026 STP-L program (updated 02/10/2026): 92nd St Bridge $10.0M, Arterial Resurfacing $12.17M, Bridge and Viaduct Painting #11 $2.48M, Canal St Harrison to Taylor $40.12M, Signal Controller Modernization #1 $4.0M, Bridge Inspection $8.0M",
                  "amount": 76775306, "period": "FFY2026", "basis": "gov_estimate",
                  "source": {"doc": "CDOT FFY 2024-2029 STP Program, updated 02/10/2026", "url": "https://cmap.illinois.gov/wp-content/uploads/CDOT_2025-2029-STP-Program-20260210.pdf", "page": 1}})
+    side.extend(ahp_side())
     sp = {"target": {"by": "ordinance_line", "fund": "925F", "dept": "84", "authority": "281S", "account": "0540"},
           "expect_amount": 451646229.0, "mode": "budget_split", "pieces": pcs,
           "residual": {"name": "Federal highway money with no project in the regional plan for 2026",

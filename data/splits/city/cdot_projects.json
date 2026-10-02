@@ -451,6 +451,234 @@
       "url": "https://cmap.illinois.gov/wp-content/uploads/CDOT_2025-2029-STP-Program-20260210.pdf",
       "page": 1
      }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22003-0000: CANAL ST VIADUCT COOK HARRISON ST TO TAYLOR ST STP (Bridge Replacement)",
+     "amount": 23880000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 75 (printed page 1 - 55), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22304-0000: GRAND AVE COOK PULASKI RD TO CALIFORNIA AVE STP (Reconstruction)",
+     "amount": 10560000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 77 (printed page 1 - 57), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-21283-0000: GRAND AVE COOK AT N BRANCH CHICAGO RIVER W OF N STP (Bridge Replacement)",
+     "amount": 17600000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 77 (printed page 1 - 57), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22369-0000: 95TH ST COOK AT CALUMET RIVER 0.1 M E OF S CHICAGO DG (Bridge Substructure)",
+     "amount": 43000000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 73 (printed page 1 - 53), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22473-0000: 106TH ST COOK AT CALUMET RIVER 0.5 MI E OF MUSKEGON STP (Bridge Superstructure)",
+     "amount": 19034000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 73 (printed page 1 - 53), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22379-0000: EWING AVE COOK AT CALUMET RIVER 0.1 MI S OF LAKE SHORE DG (Bridge Substructure)",
+     "amount": 100000000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 76 (printed page 1 - 56), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-21951-0010: ILL 50 COOK AT SANITARY & SHIP CANAL NHFP (Bridge Replacement)",
+     "amount": 18800000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 72 (printed page 1 - 52), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22302-0002: US 41 COOK JEFFREY DR: MARQUETTE DR TO 67TH ST; L (P.E. (Phase Ii))",
+     "amount": 8000000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 85 (printed page 1 - 65), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22821-0000: VARIOUS COOK VARIOUS LOCATIONS IN CHICAGO S (Miscellaneous)",
+     "amount": 50000000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 84 (printed page 1 - 64), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22305-0000: VARIOUS COOK ARTERIAL ST RESURFACING (#103 NORTH) STP (Standard Overlay)",
+     "amount": 8000000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 83 (printed page 1 - 63), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22306-0000: VARIOUS COOK ARTERIAL ST RESURFACING (#104 CENTRAL) STP (Standard Overlay)",
+     "amount": 8000000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 83 (printed page 1 - 63), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22307-0000: VARIOUS COOK ARTERIAL ST RESURFACING (#105 SOUTH) STP (Standard Overlay)",
+     "amount": 8000000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 83 (printed page 1 - 63), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22308-0000: VARIOUS COOK ARTERIAL ST RESURFACING (#106 FAR STP (Standard Overlay)",
+     "amount": 8000000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 83 (printed page 1 - 63), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-21759-0000: VARIOUS COOK BRIDGE / VIADUCT PAINTING - PROJECT #11 STP (Bridge Painting)",
+     "amount": 1200000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 83 (printed page 1 - 63), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-21760-0000: VARIOUS COOK BRIDGE / VIADUCT PAINTING - PROJECT #12 STP (Bridge Painting)",
+     "amount": 1200000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 83 (printed page 1 - 63), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22537-0000: VARIOUS COOK SIGNAL CONTROLLER MODERNIZATION #2 STP (Traf Signal Modernization)",
+     "amount": 4000000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 83 (printed page 1 - 63), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22539-0000: VARIOUS COOK SIGNAL CONTROLLER MODERNIZATION #3 STP (Traf Signal Modernization)",
+     "amount": 4000000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 84 (printed page 1 - 64), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22368-0000: VARIOUS COOK TRAFFIC SIGNAL MODERNIZATION #2A STP (Traf Signal Replacement)",
+     "amount": 6400000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 84 (printed page 1 - 64), District 1"
+     }
+    },
+    {
+     "kind": "idot_ahp_project",
+     "label": "IDOT FY2026 Annual Highway Improvement Program, Chicago local project 1-22463-0000: MILWAUKEE AVE COOK LOGAN BLVD TO ARMITAGE AVE STP (Standard Overlay)",
+     "amount": 9440000.0,
+     "period": "IDOT FY2026 (Jul 2025 to Jun 2026)",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "IDOT FY 2026 Annual Highway Improvement Program (Combined, final 09/23/25)",
+      "url": "https://idot.illinois.gov/content/dam/soi/en/web/idot/documents/transportation-system/maps---charts/proposed-improvements/fy2026/FY26_Annual_Highway_Program_Combined_Final_092325.pdf",
+      "page": "PDF page 80 (printed page 1 - 60), District 1"
+     }
     }
    ]
   },
