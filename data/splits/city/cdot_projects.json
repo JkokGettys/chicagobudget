@@ -1,0 +1,2996 @@
+{
+ "meta": {
+  "author": "cdot agent",
+  "built_by": "scripts/cdot_build.py",
+  "description": "CDOT project-level pieces: CMAP TIP 2026-2030 FFY2026 programmed amounts for the federal and state construction lines, City Mid-Year Grants ledger projects for the IDOT, Rebuild Illinois and FHWA reserves, and the State/Lake funding sources with contract facts."
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "84",
+    "authority": "281S",
+    "account": "0540"
+   },
+   "expect_amount": 451646229.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "01-12-0013",
+     "name": "01-12-0013: LaSalle Street from Carroll Ave to Wacker Drive (LaSalle Street Bridge)",
+     "amount": 56800000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-12-0013, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-12-0013",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Bridge reconstruction. Completion year 2027. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-12-0013",
+      "etip_project_id": 255108,
+      "tip_document": "26-08.1 (Admin FHWA)"
+     },
+     "children": [
+      {
+       "key": "01-12-0013-Construction-STP - Regional Redistribution",
+       "name": "Construction, STP - Regional Redistribution",
+       "amount": 30797745.0,
+       "basis": "gov_estimate",
+       "why": "This is federal road, bridge or trail money that the regional plan (the TIP) lists for this one job in 2026, and the job is paid in a few big chunks."
+      },
+      {
+       "key": "01-12-0013-Construction-STP - Shared Fund",
+       "name": "Construction, STP - Shared Fund",
+       "amount": 26002255.0,
+       "basis": "gov_estimate",
+       "why": "This is federal road, bridge or trail money that the regional plan (the TIP) lists for this one job in 2026, and the job is paid in a few big chunks."
+      }
+     ]
+    },
+    {
+     "key": "01-24-0017",
+     "name": "01-24-0017: Calumet River Bridges",
+     "amount": 51958506.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-24-0017, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-24-0017",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Rehabilitation of the bridges over the Calumet River at 92nd St (Ewing Ave), 95th St, 100th St, and 106th St. Completion year 2030. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-24-0017",
+      "etip_project_id": 261885,
+      "tip_document": "26-08.1 (Admin FHWA)"
+     },
+     "children": [],
+     "why": "This is federal road, bridge or trail money that the regional plan (the TIP) lists for this one job in 2026, and the job is paid in a few big chunks."
+    },
+    {
+     "key": "01-21-0021",
+     "name": "01-21-0021: Englewood Trail",
+     "amount": 34161260.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-21-0021, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-21-0021",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Conversion of the former Englewood Connecting Line railroad right-of-way into a grade-separated, multi-use trail.. Completion year 2030. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-21-0021",
+      "etip_project_id": 260549,
+      "tip_document": "26-05.1 (Admin FHWA)"
+     },
+     "children": [],
+     "why": "This is federal road, bridge or trail money that the regional plan (the TIP) lists for this one job in 2026, and the job is paid in a few big chunks."
+    },
+    {
+     "key": "01-17-0010",
+     "name": "01-17-0010: Bridge Inspection Services #1",
+     "amount": 20814794.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-17-0010, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-17-0010",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Inspections of various bridges in Chicago.. Completion year 2028. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-17-0010",
+      "etip_project_id": 259091,
+      "tip_document": "26-07.1 (Admin FHWA)"
+     },
+     "children": [],
+     "why": "This is federal road, bridge or trail money that the regional plan (the TIP) lists for this one job in 2026, and the job is paid in a few big chunks."
+    },
+    {
+     "key": "01-12-0004",
+     "name": "01-12-0004: Chicago Area Alternative Fuel Deployment Project",
+     "amount": 19225000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-12-0004, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-12-0004",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Provide vouchers for the installation of electric vehicle charging equipment. Completion year 2029. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-12-0004",
+      "etip_project_id": 257665,
+      "tip_document": "26-07.1 (Admin FHWA)"
+     },
+     "children": [],
+     "why": "This is federal road, bridge or trail money that the regional plan (the TIP) lists for this one job in 2026, and the job is paid in a few big chunks."
+    },
+    {
+     "key": "01-16-0002",
+     "name": "01-16-0002: IL 50 Cicero Avenue Bridge over Sanitary and Ship Canal",
+     "amount": 18800000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-16-0002, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-16-0002",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Reconstruct/Rehab bridge. Completion year 2029. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-16-0002",
+      "etip_project_id": 255351,
+      "tip_document": "2026 Technical Plan Revision 1"
+     },
+     "children": [],
+     "why": "This is federal road, bridge or trail money that the regional plan (the TIP) lists for this one job in 2026, and the job is paid in a few big chunks."
+    },
+    {
+     "key": "01-20-0003",
+     "name": "01-20-0003: Arterial Resurfacing #99, 100, 101, and 102",
+     "amount": 11232800.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-20-0003, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-20-0003",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Resurfacing of fed aid eligible roadways in Chicago with associated improvements to ADA, pedestrian and on-street bicycle facilities.. Completion year 2028. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-20-0003",
+      "etip_project_id": 259862,
+      "tip_document": "26-08.1 (Admin FHWA)"
+     },
+     "children": [
+      {
+       "key": "01-20-0003-Construction-CMAQ",
+       "name": "Construction, CMAQ",
+       "amount": 896000.0,
+       "basis": "gov_estimate"
+      },
+      {
+       "key": "01-20-0003-Construction-STP - Locally Prgmd",
+       "name": "Construction, STP - Locally Prgmd",
+       "amount": 10336800.0,
+       "basis": "gov_estimate",
+       "why": "This is federal road, bridge or trail money that the regional plan (the TIP) lists for this one job in 2026, and the job is paid in a few big chunks."
+      }
+     ]
+    },
+    {
+     "key": "01-94-0092",
+     "name": "01-94-0092: Chicago Streets for Cycling",
+     "amount": 6400000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-94-0092, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-94-0092",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "On-street bikeway installations, lane striping, road diet (Canal St), parking lane relocations.. Completion year 2025. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-94-0092",
+      "etip_project_id": 256756,
+      "tip_document": "26-05 (Formal)"
+     },
+     "children": []
+    },
+    {
+     "key": "01-22-0041",
+     "name": "01-22-0041: Signal Controller Modernization #1",
+     "amount": 4000000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-22-0041, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-22-0041",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Modernization of traffic signal controllers at various locations.. Completion year 2027. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-22-0041",
+      "etip_project_id": 261054,
+      "tip_document": "26-07.1 (Admin FHWA)"
+     },
+     "children": [
+      {
+       "key": "01-22-0041-Construction-STP - Locally Prgmd",
+       "name": "Construction, STP - Locally Prgmd",
+       "amount": 3688000.0,
+       "basis": "gov_estimate"
+      },
+      {
+       "key": "01-22-0041-Construction Engineering-STP - Locally Prgmd",
+       "name": "Construction Engineering, STP - Locally Prgmd",
+       "amount": 312000.0,
+       "basis": "gov_estimate"
+      }
+     ]
+    },
+    {
+     "key": "01-20-0006",
+     "name": "01-20-0006: Chicago Pedway Reconstruction + System Wayfinding Replacement",
+     "amount": 3236583.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-20-0006, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-20-0006",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Modernization of the \"Main Stem\" that connects transit stations, and system-wide signage replacement. The main stem consists of 203 N. LaSalle to City/County Building to Millennium Station; most segments are owner by various public agencies and the other 2.5 blocks are public access rights (e.g. easements) through private properties; reconstruction work is limited to the 1.5 blocks of public access secured in the 1980s through UMTA grant grant for Randolph Street Pedway.. Completion year 2030. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-20-0006",
+      "etip_project_id": 259852,
+      "tip_document": "26-00 (Adoption)"
+     },
+     "children": []
+    },
+    {
+     "key": "01-17-0007",
+     "name": "01-17-0007: Bridge & Viaduct Painting Program #11 and 12",
+     "amount": 2480000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-17-0007, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-17-0007",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Preventive Maintenance by painting various bridges and viaducts in Chicago.. Completion year 2027. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-17-0007",
+      "etip_project_id": 258985,
+      "tip_document": "2026 Technical Plan Revision 1"
+     },
+     "children": []
+    },
+    {
+     "key": "01-21-0001",
+     "name": "01-21-0001: Cermak at Kenton Vertical Clearance",
+     "amount": 1940000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-21-0001, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-21-0001",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Vertical Clearance of Cermak Rd under RR tracks.. Completion year 2025. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-21-0001",
+      "etip_project_id": 260450,
+      "tip_document": "26-07.1 (Admin FHWA)"
+     },
+     "children": []
+    },
+    {
+     "key": "01-17-0014",
+     "name": "01-17-0014: Wireless Signal Interconnects",
+     "amount": 1600000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-17-0014, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-17-0014",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Installation of a primarily wireless (cellular phone-type) modems in the signal cabinets system, operating behind a firewall.. Completion year 2030. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-17-0014",
+      "etip_project_id": 259081,
+      "tip_document": "26-07.1 (Admin FHWA)"
+     },
+     "children": []
+    },
+    {
+     "key": "01-01-0009",
+     "name": "01-01-0009: Navy Pier Flyover from Jane Addams Park to Chicago River",
+     "amount": 870400.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-01-0009, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-01-0009",
+      "note": "FFY2026 programmed federal highway funds (STP, TAP, CMAQ, NHFP) in the TIP, not the City's own budget number"
+     },
+     "note": "Bicycle facility. Completion year BEF 2025. Lead agency CDOT.",
+     "extra": {
+      "tip_id": "01-01-0009",
+      "etip_project_id": 256192,
+      "tip_document": "26-08.1 (Admin FHWA)"
+     },
+     "children": []
+    }
+   ],
+   "residual": {
+    "name": "Federal highway money with no project in the regional plan for 2026",
+    "why": "The City budgeted much more federal road money than the regional plan lists for 2026, and no public list says which jobs the rest will pay for."
+   },
+   "note": "Projects are the CMAP TIP 2026-2030 entries led by CDOT, with federal-highway funds (STP, TAP, CMAQ, freight) programmed in federal fiscal year 2026 (Oct 2025 to Sep 2026). That year is not the City's calendar 2026, and the TIP does not say which City budget line each fund pays through, so the match is by fund type.",
+   "side": [
+    {
+     "kind": "tip_federal_not_placed",
+     "label": "01-25-0003 Charge Up Chicago! Chicago Community Resources and Charging Infrastructure Implementation.: Engineering I, Other - Federal (federal money in the TIP that is not federal-highway type, so not placed on this line)",
+     "amount": 1400000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-25-0003, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-25-0003",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_federal_not_placed",
+     "label": "01-25-0003 Charge Up Chicago! Chicago Community Resources and Charging Infrastructure Implementation.: Engineering II, Other - Federal (federal money in the TIP that is not federal-highway type, so not placed on this line)",
+     "amount": 1400000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-25-0003, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-25-0003",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_federal_not_placed",
+     "label": "01-25-0003 Charge Up Chicago! Chicago Community Resources and Charging Infrastructure Implementation.: Right of Way, Other - Federal (federal money in the TIP that is not federal-highway type, so not placed on this line)",
+     "amount": 200000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-25-0003, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-25-0003",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_federal_not_placed",
+     "label": "01-25-0003 Charge Up Chicago! Chicago Community Resources and Charging Infrastructure Implementation.: Construction, Other - Federal (federal money in the TIP that is not federal-highway type, so not placed on this line)",
+     "amount": 12000000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-25-0003, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-25-0003",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_federal_not_placed",
+     "label": "01-25-0025 California Park Multi-Use Trail Connection: Engineering I, Community Project Funding (federal money in the TIP that is not federal-highway type, so not placed on this line)",
+     "amount": 2000000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-25-0025, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-25-0025",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_federal_not_placed",
+     "label": "01-24-0017 Calumet River Bridges: Construction, Community Project Funding (federal money in the TIP that is not federal-highway type, so not placed on this line)",
+     "amount": 850000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-24-0017, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-24-0017",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_federal_not_placed",
+     "label": "01-25-0030 79th St/Stony Island/South Chicago/Skyway Ramps Intersection Improvements: Engineering I, Community Project Funding (federal money in the TIP that is not federal-highway type, so not placed on this line)",
+     "amount": 1000000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-25-0030, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-25-0030",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_federal_not_placed",
+     "label": "01-16-0002 IL 50 Cicero Avenue Bridge over Sanitary and Ship Canal: Construction, Community Project Funding (federal money in the TIP that is not federal-highway type, so not placed on this line)",
+     "amount": 2000000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-16-0002, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-16-0002",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "cdot_stp_program",
+     "label": "CDOT's own FFY2026 STP-L program (updated 02/10/2026): 92nd St Bridge $10.0M, Arterial Resurfacing $12.17M, Bridge and Viaduct Painting #11 $2.48M, Canal St Harrison to Taylor $40.12M, Signal Controller Modernization #1 $4.0M, Bridge Inspection $8.0M",
+     "amount": 76775306,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CDOT FFY 2024-2029 STP Program, updated 02/10/2026",
+      "url": "https://cmap.illinois.gov/wp-content/uploads/CDOT_2025-2029-STP-Program-20260210.pdf",
+      "page": 1
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925S",
+    "dept": "84",
+    "authority": "280E",
+    "account": "0540"
+   },
+   "expect_amount": 117368000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "01-24-0017",
+     "name": "01-24-0017: Calumet River Bridges",
+     "amount": 112191494.0,
+     "basis": "proxy",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-24-0017, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-24-0017",
+      "note": "FFY2026 State Match - Chicago, construction and construction engineering"
+     },
+     "note": "Rehabilitation of the bridges over the Calumet River at 92nd St (Ewing Ave), 95th St, 100th St, and 106th St",
+     "extra": {
+      "tip_id": "01-24-0017",
+      "etip_project_id": 261885
+     },
+     "children": [
+      {
+       "key": "01-24-0017-Construction-State Match - Chicago",
+       "name": "Construction, State Match - Chicago",
+       "amount": 86191494.0,
+       "basis": "proxy",
+       "why": "This is state money for the Calumet River bridge rebuilds (92nd, 95th, 100th and 106th Streets), and the bridge work is paid in a few very large chunks."
+      },
+      {
+       "key": "01-24-0017-Construction Engineering-State Match - Chicago",
+       "name": "Construction Engineering, State Match - Chicago",
+       "amount": 26000000.0,
+       "basis": "proxy",
+       "why": "This is state money for the Calumet River bridge rebuilds (92nd, 95th, 100th and 106th Streets), and the bridge work is paid in a few very large chunks."
+      }
+     ]
+    }
+   ],
+   "residual": {
+    "name": "State road money with no project named in the regional plan for 2026",
+    "why": "The regional plan lists only one project big enough to fit this state line, and it does not say which jobs the rest of the line will pay for."
+   },
+   "note": "The CMAP TIP programs $184,905,697 of state-type money (State Match - Chicago, IL Funds, Local Project Funding) for CDOT projects in federal fiscal year 2026. That is more than this line, so the other projects are shown as side facts, not boxes. Calumet River Bridges alone is $112,191,494 of State Match and is the one project that fits inside the line. The amounts are the TIP's own numbers (gov_estimate), but which project to place on this line is our choice (basis proxy), because the TIP does not say which budget line a state fund pays through.",
+   "side": [
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-12-0012 Canal Street from Madison Street to Taylor Street (Canal St Viaducts): Construction, IL Funds",
+     "amount": 15877003.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-12-0012, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-12-0012",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-12-0012 Canal Street from Madison Street to Taylor Street (Canal St Viaducts): Construction, State Match - Chicago",
+     "amount": 11443400.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-12-0012, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-12-0012",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-12-0013 LaSalle Street from Carroll Ave to Wacker Drive (LaSalle Street Bridge): Construction, State Match - Chicago",
+     "amount": 11000000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-12-0013, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-12-0013",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-16-0002 IL 50 Cicero Avenue Bridge over Sanitary and Ship Canal: Construction, Local Project Funding",
+     "amount": 9200000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-16-0002, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-16-0002",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-16-0002 IL 50 Cicero Avenue Bridge over Sanitary and Ship Canal: Construction, State Match - Chicago",
+     "amount": 9200000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-16-0002, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-16-0002",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-12-0015 Grand Avenue from Jefferson to Kingsbury (Grand Ave Bridge & Viaduct): Construction, State Match - Chicago",
+     "amount": 4400000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-12-0015, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-12-0015",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-21-0021 Englewood Trail: Construction, IL Funds",
+     "amount": 3000000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-21-0021, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-21-0021",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-17-0010 Bridge Inspection Services #1: Construction, State Match - Chicago",
+     "amount": 2000000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-17-0010, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-17-0010",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-24-0010 Michigan Avenue Bridge over the Chicago River: Engineering I, State Match - Chicago",
+     "amount": 1750000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-24-0010, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-24-0010",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-24-0010 Michigan Avenue Bridge over the Chicago River: Engineering II, State Match - Chicago",
+     "amount": 1750000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-24-0010, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-24-0010",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-22-0042 Signal Controller Modernization #2: Construction, State Match - Chicago",
+     "amount": 1000000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-22-0042, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-22-0042",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-22-0041 Signal Controller Modernization #1: Construction, State Match - Chicago",
+     "amount": 922000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-22-0041, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-22-0041",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-17-0007 Bridge & Viaduct Painting Program #11 and 12: Construction, State Match - Chicago",
+     "amount": 620000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-17-0007, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-17-0007",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-25-0030 79th St/Stony Island/South Chicago/Skyway Ramps Intersection Improvements: Engineering I, State Match - Chicago",
+     "amount": 250000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-25-0030, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-25-0030",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-20-0003 Arterial Resurfacing #99, 100, 101, and 102: Construction, State Match - Chicago",
+     "amount": 223800.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-20-0003, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-20-0003",
+      "note": "FFY2026 column"
+     }
+    },
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-22-0041 Signal Controller Modernization #1: Construction Engineering, State Match - Chicago",
+     "amount": 78000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-22-0041, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-22-0041",
+      "note": "FFY2026 column"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925S",
+    "dept": "84",
+    "authority": "280Q",
+    "account": "0540"
+   },
+   "expect_amount": 9500000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "01-20-0003",
+     "name": "01-20-0003: Arterial Resurfacing #99, 100, 101, and 102",
+     "amount": 9313253.0,
+     "basis": "proxy",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-20-0003, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-20-0003",
+      "note": "FFY2026 Rebuild Illinois, construction"
+     },
+     "note": "Resurfacing of fed aid eligible roadways in Chicago with associated improvements to ADA, pedestrian and on-street bicycle facilities.",
+     "extra": {
+      "tip_id": "01-20-0003",
+      "etip_project_id": 259862
+     },
+     "children": [
+      {
+       "key": "01-20-0003-Construction-Rebuild Illinois",
+       "name": "Construction, Rebuild Illinois",
+       "amount": 9313253.0,
+       "basis": "proxy"
+      }
+     ]
+    }
+   ],
+   "residual": {
+    "name": "Rebuild Illinois money with no project named in the regional plan for 2026"
+   },
+   "note": "The TIP lists $15.8M of Rebuild Illinois money in FFY2026 (this resurfacing project $9.3M and Canal Street viaduct construction engineering $6.5M). Only the resurfacing fits inside this $9.5M line, so Canal Street is a side fact. Match is by fund type.",
+   "side": [
+    {
+     "kind": "tip_state_not_placed",
+     "label": "01-12-0012 Canal Street from Madison Street to Taylor Street (Canal St Viaducts): Construction Engineering, Rebuild Illinois",
+     "amount": 6500000.0,
+     "period": "FFY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project 01-12-0012, fund table, column FY2026",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": "Projects tab, search TIP ID 01-12-0012",
+      "note": "FFY2026 column"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925S",
+    "dept": "84",
+    "authority": "280E",
+    "account": "909A"
+   },
+   "expect_amount": 124113000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-E0601",
+     "name": "CREATE GS11 Columbus Avenue At BRC Grade Separation",
+     "amount": 60426714.67,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code E0601, fund codes F0L98, F0W23, 4 ledger row(s). Unspent = budget $81,000,000 minus expended to date $20,573,285 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E0601",
+      "fund_codes": [
+       "F0L98",
+       "F0W23"
+      ],
+      "ledger_budget": 81000000.0,
+      "expended_to_date": 20573285.33,
+      "encumbered": 58744052.11
+     },
+     "why": "This is the part of one named road or bridge job's state grant that the City has been promised but has not spent yet."
+    },
+    {
+     "key": "ledger-E0600",
+     "name": "Archer Avenue At Kenton Ave - CREATE GS09",
+     "amount": 19711810.12,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code E0600, fund codes F0L98, 1 ledger row(s). Unspent = budget $19,712,220 minus expended to date $410 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E0600",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 19712220.0,
+      "expended_to_date": 409.88,
+      "encumbered": 2824594.12
+     },
+     "why": "This is the part of one named road or bridge job's state grant that the City has been promised but has not spent yet."
+    },
+    {
+     "key": "ledger-S3374",
+     "name": "Various State Funded Improvements Within The 22nd District - Project #4",
+     "amount": 8834377.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code S3374, fund codes F0L98, 3 ledger row(s). Unspent = budget $10,000,000 minus expended to date $1,165,623 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "S3374",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 10000000.0,
+      "expended_to_date": 1165623.0,
+      "encumbered": 327640.44
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-S9340",
+     "name": "Various State Funded Improvements In The 22nd District",
+     "amount": 5251386.11,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code S9340, fund codes F0L98, 3 ledger row(s). Unspent = budget $10,000,000 minus expended to date $4,748,614 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "S9340",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 10000000.0,
+      "expended_to_date": 4748613.89,
+      "encumbered": 455997.2
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E5496",
+     "name": "Canal Street Viaduct - From Madison Street To Adams Street",
+     "amount": 4858925.44,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code E5496, fund codes F0L98, 1 ledger row(s). Unspent = budget $5,970,000 minus expended to date $1,111,075 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E5496",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 5970000.0,
+      "expended_to_date": 1111074.56,
+      "encumbered": 4855885.44
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-S0445",
+     "name": "Various Improvement Locations Within The 22nd District",
+     "amount": 3833572.85,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code S0445, fund codes F0L98, 3 ledger row(s). Unspent = budget $10,000,000 minus expended to date $6,166,427 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "S0445",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 10000000.0,
+      "expended_to_date": 6166427.15,
+      "encumbered": 450725.22
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7203",
+     "name": "OPC Mobility Improvements To Support South Lakefront Framework",
+     "amount": 3730880.34,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B7203, fund codes F0L98, 2 ledger row(s). Unspent = budget $130,000,000 minus expended to date $126,269,120 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7203",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 130000000.0,
+      "expended_to_date": 126269119.66,
+      "encumbered": 1150934.74
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-S1427",
+     "name": "Various Improvement Locations Within The 22nd District, Project #3",
+     "amount": 2259647.69,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code S1427, fund codes F0L98, 2 ledger row(s). Unspent = budget $10,000,000 minus expended to date $7,740,352 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "S1427",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 10000000.0,
+      "expended_to_date": 7740352.31,
+      "encumbered": 1156025.4
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E6147",
+     "name": "Montrose Harbor Pedestrian Underpasses",
+     "amount": 2208364.8,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code E6147, fund codes F0L98, 1 ledger row(s). Unspent = budget $5,724,830 minus expended to date $3,516,465 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E6147",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 5724830.0,
+      "expended_to_date": 3516465.2,
+      "encumbered": 910259.06
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B3695",
+     "name": "Chicago Centralized Transit Signal Priority Project",
+     "amount": 1986638.33,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B3695, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,995,000 minus expended to date $8,362 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B3695",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 1995000.0,
+      "expended_to_date": 8361.67,
+      "encumbered": 1961810.35
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-C3001",
+     "name": "Lake Shore Drive Between Grand And Hollywood Avenue",
+     "amount": 1293941.9,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code C3001, fund codes F0L98, 1 ledger row(s). Unspent = budget $3,000,000 minus expended to date $1,706,058 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "C3001",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 3000000.0,
+      "expended_to_date": 1706058.1,
+      "encumbered": 1260457.73
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E4702",
+     "name": "Bridge Inspection Services 2022-2023",
+     "amount": 1223780.83,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code E4702, fund codes F0L98, 1 ledger row(s). Unspent = budget $4,800,000 minus expended to date $3,576,219 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E4702",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 4800000.0,
+      "expended_to_date": 3576219.17,
+      "encumbered": 888354.04
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B6193",
+     "name": "Arterial Street Resurfacing #90 (Far South)",
+     "amount": 1211919.72,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B6193, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,373,213 minus expended to date $1,161,293 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B6193",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 2373213.0,
+      "expended_to_date": 1161293.28,
+      "encumbered": 919178.47
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E8619",
+     "name": "Congress Parkway Bridge Routine Operations And Maintenance (Eisenhower Expressway)",
+     "amount": 969263.68,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code E8619, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,000,000 minus expended to date $30,736 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E8619",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 1000000.0,
+      "expended_to_date": 30736.32,
+      "encumbered": 5899.56
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B2747",
+     "name": "Traffic Management Center - ATMS Added Functions",
+     "amount": 889705.79,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B2747, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,000,000 minus expended to date $110,294 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B2747",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 1000000.0,
+      "expended_to_date": 110294.21,
+      "encumbered": 889705.79
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B6190",
+     "name": "Arterial Street Resurfacing Project # 87 - North Area",
+     "amount": 483165.86,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B6190, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,267,240 minus expended to date $1,784,074 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B6190",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 2267240.0,
+      "expended_to_date": 1784074.14,
+      "encumbered": 169691.83
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E9293",
+     "name": "Calumet River Bridges At 106th St Bascule Bridge",
+     "amount": 435854.61,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code E9293, fund codes F0L98, 1 ledger row(s). Unspent = budget $500,000 minus expended to date $64,145 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E9293",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 500000.0,
+      "expended_to_date": 64145.39,
+      "encumbered": 435854.61
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B6192",
+     "name": "Arterial Street Resurfacing #89 (South)",
+     "amount": 433283.24,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B6192, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,688,397 minus expended to date $1,255,114 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B6192",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 1688397.0,
+      "expended_to_date": 1255113.76,
+      "encumbered": 20299.44
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B8305",
+     "name": "Consolidated Wireless Signal Interconnect",
+     "amount": 384088.09,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B8305, fund codes F0L98, 1 ledger row(s). Unspent = budget $400,000 minus expended to date $15,912 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B8305",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 400000.0,
+      "expended_to_date": 15911.91,
+      "encumbered": 384088.09
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B6111",
+     "name": "Stony Island Avenue/Cornell Drive/57th Drive",
+     "amount": 348745.04,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B6111, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,758,000 minus expended to date $1,409,255 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B6111",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 1758000.0,
+      "expended_to_date": 1409254.96,
+      "encumbered": 54475.07
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0447",
+     "name": "Arterial Street Resurfacing - Irving Park Rd From Kolmar To Ravenswood",
+     "amount": 318653.76,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B0447, fund codes F0L98, 1 ledger row(s). Unspent = budget $8,500,000 minus expended to date $8,181,346 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0447",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 8500000.0,
+      "expended_to_date": 8181346.24,
+      "encumbered": 29190.31
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B6191",
+     "name": "Arterial Street Resurfacing #88 (Central)",
+     "amount": 308097.43,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B6191, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,671,150 minus expended to date $1,363,053 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B6191",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 1671150.0,
+      "expended_to_date": 1363052.57,
+      "encumbered": 66974.57
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7175",
+     "name": "Arterial Street Resurfacing Project No. 93 - South",
+     "amount": 285157.84,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B7175, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,090,400 minus expended to date $1,805,242 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7175",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 2090400.0,
+      "expended_to_date": 1805242.16,
+      "encumbered": 88417.15
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7180",
+     "name": "Arterial Street Resurfacing Project 98 - Far South Area R",
+     "amount": 268265.05,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B7180, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,103,800 minus expended to date $1,835,535 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7180",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 2103800.0,
+      "expended_to_date": 1835534.95,
+      "encumbered": 268265.05
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7179",
+     "name": "Arterial Street Resurfacing Project 97 - South Area",
+     "amount": 266847.84,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B7179, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,393,200 minus expended to date $2,126,352 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7179",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 2393200.0,
+      "expended_to_date": 2126352.16,
+      "encumbered": 266847.84
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7173",
+     "name": "Arterial Street Resurfacing Project 91 - North Area",
+     "amount": 244191.95,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B7173, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,840,000 minus expended to date $1,595,808 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7173",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 1840000.0,
+      "expended_to_date": 1595808.05,
+      "encumbered": 31380.76
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E2514",
+     "name": "Pin & Link Assembly Expansion Joint Retrofits #2",
+     "amount": 242690.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code E2514, fund codes F0L98, 1 ledger row(s). Unspent = budget $5,848,960 minus expended to date $5,606,270 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E2514",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 5848960.0,
+      "expended_to_date": 5606270.0,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7177",
+     "name": "Arterial Street Resurfacing Project 95 - North Area",
+     "amount": 213683.6,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B7177, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,113,000 minus expended to date $1,899,316 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7177",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 2113000.0,
+      "expended_to_date": 1899316.4,
+      "encumbered": 213683.6
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B9404",
+     "name": "Traffic Signal Modernization Number 1",
+     "amount": 205709.4,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B9404, fund codes F0L98, 1 ledger row(s). Unspent = budget $575,000 minus expended to date $369,291 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B9404",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 575000.0,
+      "expended_to_date": 369290.6,
+      "encumbered": 150605.54
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7174",
+     "name": "Arterial Street Resurfacing Project 92 - Central Area",
+     "amount": 149616.98,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B7174, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,728,200 minus expended to date $1,578,583 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7174",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 1728200.0,
+      "expended_to_date": 1578583.02,
+      "encumbered": 108243.08
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7176",
+     "name": "Arterial Street Resurfacing Project No. 94- Far South",
+     "amount": 117212.95,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B7176, fund codes F0L98, 1 ledger row(s). Unspent = budget $2,041,400 minus expended to date $1,924,187 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7176",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 2041400.0,
+      "expended_to_date": 1924187.05,
+      "encumbered": 49831.53
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B8345",
+     "name": "Northwest Highway ICC Signal Work - Various Locations",
+     "amount": 97481.16,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B8345, fund codes F0L98, 1 ledger row(s). Unspent = budget $1,350,000 minus expended to date $1,252,519 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B8345",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 1350000.0,
+      "expended_to_date": 1252518.84,
+      "encumbered": 6847.16
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E2018",
+     "name": "31st Street & 43rd Street Bridge Over Metra & Ic(Cn) Railroad",
+     "amount": 59609.06,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code E2018, fund codes F0L98, 1 ledger row(s). Unspent = budget $3,720,000 minus expended to date $3,660,391 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E2018",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 3720000.0,
+      "expended_to_date": 3660390.94,
+      "encumbered": 1548.12
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B6206",
+     "name": "Pavement Preservation And Roadside Safety Appurtenances",
+     "amount": 49706.24,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B6206, fund codes F0L98, 1 ledger row(s). Unspent = budget $200,000 minus expended to date $150,294 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B6206",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 200000.0,
+      "expended_to_date": 150293.76,
+      "encumbered": 36617.65
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-C7100",
+     "name": "Enhanced Travel Information & Arterial Monitoring Systems-Midway Airport Area",
+     "amount": 8317.93,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code C7100, fund codes F0L98, 1 ledger row(s). Unspent = budget $624,000 minus expended to date $615,682 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "C7100",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 624000.0,
+      "expended_to_date": 615682.07,
+      "encumbered": 3300.19
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B8285",
+     "name": "Chicago Traffic Advisory System",
+     "amount": 6757.03,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Reserve is carryover cut about Aug 1 2025, so timing differs by about 10 months. Funds F0L98 IDOT Transportation Funds and F0W23 Illinois Competitive Freight Program."
+     },
+     "note": "Grant project code B8285, fund codes F0L98, 1 ledger row(s). Unspent = budget $268,000 minus expended to date $261,243 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B8285",
+      "fund_codes": [
+       "F0L98"
+      ],
+      "ledger_budget": 268000.0,
+      "expended_to_date": 261242.97,
+      "encumbered": 6757.03
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "State grant money with no project in the City's grant ledger",
+    "why": "The ledger lists named jobs for most of this money, and the rest has not been matched to a job in any public list."
+   },
+   "note": "Named jobs come from the City's Mid-Year Grants ledger (state funds F0L98 and F0W23), amount = budget minus spent so far. The ledger was cut 2026-05-31 and the reserve about Aug 2025, so these are caps, not exact shares of the reserve."
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925S",
+    "dept": "84",
+    "authority": "280Q",
+    "account": "909A"
+   },
+   "expect_amount": 117880000.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-E5014",
+     "name": "Chicago Ave Bridge Over Chicago River And Chicago/Halsted Viaduct",
+     "amount": 30426141.91,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code E5014, fund codes F0W32, 1 ledger row(s). Unspent = budget $49,000,000 minus expended to date $18,573,858 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E5014",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 49000000.0,
+      "expended_to_date": 18573858.09,
+      "encumbered": 30426141.91
+     },
+     "why": "This is the part of one named road or bridge job's state grant that the City has been promised but has not spent yet."
+    },
+    {
+     "key": "ledger-E5496",
+     "name": "Canal Street Viaduct - From Madison Street To Adams Street",
+     "amount": 17510774.35,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code E5496, fund codes F0W32, 2 ledger row(s). Unspent = budget $18,600,000 minus expended to date $1,089,226 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E5496",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 18600000.0,
+      "expended_to_date": 1089225.65,
+      "encumbered": 12923857.45
+     },
+     "why": "This is the part of one named road or bridge job's state grant that the City has been promised but has not spent yet."
+    },
+    {
+     "key": "ledger-E0601",
+     "name": "CREATE GS11 Columbus Avenue At BRC Grade Separation",
+     "amount": 6329229.97,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code E0601, fund codes F0W32, 1 ledger row(s). Unspent = budget $7,000,000 minus expended to date $670,770 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E0601",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 7000000.0,
+      "expended_to_date": 670770.03,
+      "encumbered": 5529229.97
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-C3001",
+     "name": "Lake Shore Drive Between Grand And Hollywood Avenue",
+     "amount": 3342059.41,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code C3001, fund codes F0W32, 1 ledger row(s). Unspent = budget $7,000,000 minus expended to date $3,657,941 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "C3001",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 7000000.0,
+      "expended_to_date": 3657940.59,
+      "encumbered": 3263929.67
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7203",
+     "name": "OPC Mobility Improvements To Support South Lakefront Framework",
+     "amount": 819783.79,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code B7203, fund codes F0W32, 2 ledger row(s). Unspent = budget $6,600,000 minus expended to date $5,780,216 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7203",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 6600000.0,
+      "expended_to_date": 5780216.21,
+      "encumbered": 819783.79
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7178",
+     "name": "Arterial Street Resurfacing Project No. 96 - Central Area",
+     "amount": 504886.67,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code B7178, fund codes F0W32, 1 ledger row(s). Unspent = budget $1,178,500 minus expended to date $673,613 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7178",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 1178500.0,
+      "expended_to_date": 673613.33,
+      "encumbered": 504555.17
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7177",
+     "name": "Arterial Street Resurfacing Project No. 95 - North Area",
+     "amount": 498951.04,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code B7177, fund codes F0W32, 1 ledger row(s). Unspent = budget $1,713,400 minus expended to date $1,214,449 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7177",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 1713400.0,
+      "expended_to_date": 1214448.96,
+      "encumbered": 217404.72
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E8330",
+     "name": "95th Street Street Bascule Bridge",
+     "amount": 420472.56,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code E8330, fund codes F0W32, 1 ledger row(s). Unspent = budget $3,950,000 minus expended to date $3,529,527 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E8330",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 3950000.0,
+      "expended_to_date": 3529527.44,
+      "encumbered": 414384.56
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E6147",
+     "name": "Montrose Harbor Pedestrian Underpasses",
+     "amount": 250000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code E6147, fund codes F0W32, 2 ledger row(s). Unspent = budget $250,000 minus expended to date $0 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E6147",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 250000.0,
+      "expended_to_date": 0.0,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B3506",
+     "name": "Milwaukee Avenue - Belmont To Logan",
+     "amount": 221094.71,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code B3506, fund codes F0W32, 1 ledger row(s). Unspent = budget $6,300,000 minus expended to date $6,078,905 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B3506",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 6300000.0,
+      "expended_to_date": 6078905.29,
+      "encumbered": 215092.72
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B5144",
+     "name": "Cermak Road At Kenton Avenue Vertical Clearance Improvement",
+     "amount": 149426.9,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code B5144, fund codes F0W32, 1 ledger row(s). Unspent = budget $1,400,000 minus expended to date $1,250,573 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B5144",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 1400000.0,
+      "expended_to_date": 1250573.1,
+      "encumbered": 149426.9
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7179",
+     "name": "Arterial Street Resurfacing Project 97 - South Area",
+     "amount": 56500.33,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code B7179, fund codes F0W32, 1 ledger row(s). Unspent = budget $1,325,000 minus expended to date $1,268,500 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7179",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 1325000.0,
+      "expended_to_date": 1268499.67,
+      "encumbered": 56084.83
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7180",
+     "name": "Arterial Street Resurfacing Project 98 - Far South Area",
+     "amount": 18289.04,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "Extract as of 2026-05-31. Fund F0W32 Rebuild Illinois."
+     },
+     "note": "Grant project code B7180, fund codes F0W32, 1 ledger row(s). Unspent = budget $1,160,000 minus expended to date $1,141,711 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7180",
+      "fund_codes": [
+       "F0W32"
+      ],
+      "ledger_budget": 1160000.0,
+      "expended_to_date": 1141710.96,
+      "encumbered": 18281.54
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Rebuild Illinois money with no project in the City's grant ledger",
+    "why": "The ledger names jobs for about half of this money, and the rest has not been matched to a job in any public list."
+   },
+   "note": "Named jobs come from the City's Mid-Year Grants ledger (fund F0W32 Rebuild Illinois), amount = budget minus spent so far, extract 2026-05-31. Caps, not exact shares of the reserve."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.infrastructure-services.chicago-department-of-transportation.grant-money-not-yet-assigned-to-projects.925f-federal-grant-fund.925f-281s-909a.0-named-projects-unspent-budget"
+   },
+   "expect_amount": 121122530.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "ledger-E0601",
+     "name": "CREATE GS11 Columbus Avenue At BRC Grade Separation",
+     "amount": 46592881.71,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code E0601, fund codes F0W16, F0W23, 3 ledger row(s). Unspent = budget $56,600,000 minus expended to date $10,007,118 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E0601",
+      "fund_codes": [
+       "F0W16",
+       "F0W23"
+      ],
+      "ledger_budget": 56600000.0,
+      "expended_to_date": 10007118.29,
+      "encumbered": 41659287.71
+     },
+     "why": "This is the part of one named road or bridge job's federal grant that the City has been promised but has not spent yet."
+    },
+    {
+     "key": "ledger-E5496",
+     "name": "Canal Street Viaduct - From Madison Street To Adams Street",
+     "amount": 19435701.73,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code E5496, fund codes F0W16, 1 ledger row(s). Unspent = budget $23,880,000 minus expended to date $4,444,298 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E5496",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 23880000.0,
+      "expended_to_date": 4444298.27,
+      "encumbered": 19423541.73
+     },
+     "why": "This is the part of one named road or bridge job's federal grant that the City has been promised but has not spent yet."
+    },
+    {
+     "key": "ledger-E6147",
+     "name": "Montrose Harbor Pedestrian Underpasses",
+     "amount": 10936675.95,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code E6147, fund codes F0W16, 1 ledger row(s). Unspent = budget $25,140,000 minus expended to date $14,203,324 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E6147",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 25140000.0,
+      "expended_to_date": 14203324.05,
+      "encumbered": 4450077.21
+     },
+     "why": "This is the part of one named road or bridge job's federal grant that the City has been promised but has not spent yet."
+    },
+    {
+     "key": "ledger-E0600",
+     "name": "Archer Avenue At Kenton Ave - CREATE GS09",
+     "amount": 7850000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code E0600, fund codes F0W16, 1 ledger row(s). Unspent = budget $7,850,000 minus expended to date $0 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E0600",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 7850000.0,
+      "expended_to_date": 0.0,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E4702",
+     "name": "Bridge Inspection Services 2022-2023",
+     "amount": 4895123.41,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code E4702, fund codes F0W02, 1 ledger row(s). Unspent = budget $19,200,000 minus expended to date $14,304,877 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E4702",
+      "fund_codes": [
+       "F0W02"
+      ],
+      "ledger_budget": 19200000.0,
+      "expended_to_date": 14304876.59,
+      "encumbered": 3553416.25
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E4710",
+     "name": "Lake Front Bicycle Trail # 2 (Navy Pier Flyover)",
+     "amount": 4488276.97,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2025-06-01",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code E4710, fund codes F0L73, F0L87, 2 ledger row(s). Unspent = budget $22,083,782 minus expended to date $17,595,506 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E4710",
+      "fund_codes": [
+       "F0L73",
+       "F0L87"
+      ],
+      "ledger_budget": 22083782.49,
+      "expended_to_date": 17595505.52,
+      "encumbered": 63854.87
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B2747",
+     "name": "Traffic Management Center - ATMS Added Functions",
+     "amount": 3558823.24,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B2747, fund codes F0W02, 1 ledger row(s). Unspent = budget $4,000,000 minus expended to date $441,177 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B2747",
+      "fund_codes": [
+       "F0W02"
+      ],
+      "ledger_budget": 4000000.0,
+      "expended_to_date": 441176.76,
+      "encumbered": 3558823.24
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B6191",
+     "name": "Arterial Street Resurfacing #88 (Central)",
+     "amount": 2302567.37,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B6191, fund codes F0W16, 1 ledger row(s). Unspent = budget $8,254,080 minus expended to date $5,951,513 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B6191",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 8254080.0,
+      "expended_to_date": 5951512.63,
+      "encumbered": 151610.5
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B6192",
+     "name": "Arterial Street Resurfacing #89",
+     "amount": 1843246.93,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B6192, fund codes F0W16, 1 ledger row(s). Unspent = budget $5,402,040 minus expended to date $3,558,793 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B6192",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 5402040.0,
+      "expended_to_date": 3558793.07,
+      "encumbered": 0.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B6190",
+     "name": "Arterial Street Resurfacing Project # 87 - North Area",
+     "amount": 1668923.37,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B6190, fund codes F0W16, 1 ledger row(s). Unspent = budget $7,830,600 minus expended to date $6,161,677 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B6190",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 7830600.0,
+      "expended_to_date": 6161676.63,
+      "encumbered": 993910.41
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-D9111",
+     "name": "Streets For Cycling - Phase Vii (Program Management)",
+     "amount": 1649041.68,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code D9111, fund codes F0W02, 1 ledger row(s). Unspent = budget $6,400,000 minus expended to date $4,750,958 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "D9111",
+      "fund_codes": [
+       "F0W02"
+      ],
+      "ledger_budget": 6400000.0,
+      "expended_to_date": 4750958.32,
+      "encumbered": 1629916.08
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B8305",
+     "name": "Consolidated Wireless Signal Interconnect",
+     "amount": 1536352.38,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B8305, fund codes F0W02, 1 ledger row(s). Unspent = budget $1,600,000 minus expended to date $63,648 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B8305",
+      "fund_codes": [
+       "F0W02"
+      ],
+      "ledger_budget": 1600000.0,
+      "expended_to_date": 63647.62,
+      "encumbered": 1536352.38
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B4154",
+     "name": "IDOT Transportation Funds - Arterial Street Resurfacing # 81",
+     "amount": 1517409.75,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2025-06-01",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B4154, fund codes F0W16, 1 ledger row(s). Unspent = budget $8,313,600 minus expended to date $6,796,190 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B4154",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 8313600.0,
+      "expended_to_date": 6796190.25,
+      "encumbered": 6198.98
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7175",
+     "name": "Arterial Street Resurfacing Project No. 93 - South",
+     "amount": 1140631.37,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B7175, fund codes F0W16, 1 ledger row(s). Unspent = budget $8,361,600 minus expended to date $7,220,969 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7175",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 8361600.0,
+      "expended_to_date": 7220968.63,
+      "encumbered": 249837.7
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7180",
+     "name": "Arterial Street Resurfacing Project 98 - Far South Area",
+     "amount": 1073060.17,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B7180, fund codes F0W16, 1 ledger row(s). Unspent = budget $8,415,200 minus expended to date $7,342,140 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7180",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 8415200.0,
+      "expended_to_date": 7342139.83,
+      "encumbered": 1073060.17
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7179",
+     "name": "Arterial Street Resurfacing Project 97 - South Area",
+     "amount": 1063391.39,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B7179, fund codes F0W16, 1 ledger row(s). Unspent = budget $9,572,800 minus expended to date $8,509,409 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7179",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 9572800.0,
+      "expended_to_date": 8509408.61,
+      "encumbered": 1063391.39
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B1702",
+     "name": "Support Services For Research Into Emerging Transportation Topics",
+     "amount": 1000000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B1702, fund codes F0W15, 1 ledger row(s). Unspent = budget $1,000,000 minus expended to date $0 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B1702",
+      "fund_codes": [
+       "F0W15"
+      ],
+      "ledger_budget": 1000000.0,
+      "expended_to_date": 0.0,
+      "encumbered": 1000000.0
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7173",
+     "name": "Arterial Street Resurfacing Project 91 - North Area",
+     "amount": 976767.91,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B7173, fund codes F0W16, 1 ledger row(s). Unspent = budget $7,360,000 minus expended to date $6,383,232 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7173",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 7360000.0,
+      "expended_to_date": 6383232.09,
+      "encumbered": 5314.85
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B3506",
+     "name": "Milwaukee Avenue - Belmont To Logan",
+     "amount": 859738.34,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B3506, fund codes F0W16, 1 ledger row(s). Unspent = budget $25,200,000 minus expended to date $24,340,262 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B3506",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 25200000.0,
+      "expended_to_date": 24340261.66,
+      "encumbered": 835992.14
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7177",
+     "name": "Arterial Street Resurfacing Project 95 - North Area",
+     "amount": 854734.42,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B7177, fund codes F0W16, 1 ledger row(s). Unspent = budget $8,452,000 minus expended to date $7,597,266 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7177",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 8452000.0,
+      "expended_to_date": 7597265.58,
+      "encumbered": 854734.42
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B9404",
+     "name": "Traffic Signal Modernization Number 1",
+     "amount": 822837.42,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B9404, fund codes F0W16, 1 ledger row(s). Unspent = budget $2,300,000 minus expended to date $1,477,163 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B9404",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 2300000.0,
+      "expended_to_date": 1477162.58,
+      "encumbered": 602421.98
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E9293",
+     "name": "Calumet River Bridges At 106th St Bascule Bridge",
+     "amount": 743418.4,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code E9293, fund codes FG627, 1 ledger row(s). Unspent = budget $1,000,000 minus expended to date $256,582 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E9293",
+      "fund_codes": [
+       "FG627"
+      ],
+      "ledger_budget": 1000000.0,
+      "expended_to_date": 256581.6,
+      "encumbered": 743418.4
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7174",
+     "name": "Arterial Street Resurfacing Project 92 - Central Area",
+     "amount": 598467.97,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B7174, fund codes F0W16, 1 ledger row(s). Unspent = budget $6,912,800 minus expended to date $6,314,332 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7174",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 6912800.0,
+      "expended_to_date": 6314332.03,
+      "encumbered": 432972.35
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B5569",
+     "name": "Uwp Core Grant",
+     "amount": 495922.28,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B5569, fund codes F0W21, 1 ledger row(s). Unspent = budget $900,000 minus expended to date $404,078 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B5569",
+      "fund_codes": [
+       "F0W21"
+      ],
+      "ledger_budget": 900000.0,
+      "expended_to_date": 404077.72,
+      "encumbered": 125689.27
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B7176",
+     "name": "Arterial Street Resurfacing Project No. 94- Far South",
+     "amount": 468851.82,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B7176, fund codes F0W16, 1 ledger row(s). Unspent = budget $8,165,600 minus expended to date $7,696,748 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B7176",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 8165600.0,
+      "expended_to_date": 7696748.18,
+      "encumbered": 111326.11
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B6111",
+     "name": "Stony Island Avenue/Cornell Drive/57th Drive",
+     "amount": 465446.8,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B6111, fund codes F0W02, 1 ledger row(s). Unspent = budget $4,032,000 minus expended to date $3,566,553 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B6111",
+      "fund_codes": [
+       "F0W02"
+      ],
+      "ledger_budget": 4032000.0,
+      "expended_to_date": 3566553.2,
+      "encumbered": 188473.6
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B4301",
+     "name": "Uwp Core Grant",
+     "amount": 414973.58,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2025-06-01",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B4301, fund codes F0W21, 1 ledger row(s). Unspent = budget $891,467 minus expended to date $476,494 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B4301",
+      "fund_codes": [
+       "F0W21"
+      ],
+      "ledger_budget": 891467.26,
+      "expended_to_date": 476493.68,
+      "encumbered": 226777.96
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B6206",
+     "name": "Pavement Preservation And Roadside Safety Appurtenances",
+     "amount": 397649.68,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B6206, fund codes F0W16, 1 ledger row(s). Unspent = budget $1,600,000 minus expended to date $1,202,350 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B6206",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 1600000.0,
+      "expended_to_date": 1202350.32,
+      "encumbered": 292940.38
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B6193",
+     "name": "Arterial Street Resurfacing #90 (Far South)",
+     "amount": 320160.98,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B6193, fund codes F0W16, 1 ledger row(s). Unspent = budget $7,313,280 minus expended to date $6,993,119 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B6193",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 7313280.0,
+      "expended_to_date": 6993119.02,
+      "encumbered": 111326.59
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E2018",
+     "name": "31st Street & 43rd Street Bridge Over Metra & Ic(Cn) Railroad",
+     "amount": 238436.25,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code E2018, fund codes F0W16, 2 ledger row(s). Unspent = budget $14,880,000 minus expended to date $14,641,564 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E2018",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 14880000.0,
+      "expended_to_date": 14641563.75,
+      "encumbered": 6192.5
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0434",
+     "name": "Cdot Railroad Related Support Services",
+     "amount": 217683.31,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2025-06-01",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B0434, fund codes F0W15, 1 ledger row(s). Unspent = budget $400,000 minus expended to date $182,317 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0434",
+      "fund_codes": [
+       "F0W15"
+      ],
+      "ledger_budget": 400000.0,
+      "expended_to_date": 182316.69,
+      "encumbered": 217683.31
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-D5107",
+     "name": "Streets For Cycling - Phase Vi: Belmont Cragin (Design)",
+     "amount": 190401.98,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code D5107, fund codes F0W02, 1 ledger row(s). Unspent = budget $1,200,000 minus expended to date $1,009,598 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "D5107",
+      "fund_codes": [
+       "F0W02"
+      ],
+      "ledger_budget": 1200000.0,
+      "expended_to_date": 1009598.02,
+      "encumbered": 153803.82
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0433",
+     "name": "CREATE Program Support Services",
+     "amount": 166319.54,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2025-06-01",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B0433, fund codes F0W15, 1 ledger row(s). Unspent = budget $400,000 minus expended to date $233,680 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0433",
+      "fund_codes": [
+       "F0W15"
+      ],
+      "ledger_budget": 400000.0,
+      "expended_to_date": 233680.46,
+      "encumbered": 166319.54
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-S8141",
+     "name": "Lincoln Ashland Belmont Streetscape, Section 2",
+     "amount": 114383.05,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code S8141, fund codes F0W16, 1 ledger row(s). Unspent = budget $11,240,000 minus expended to date $11,125,617 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "S8141",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 11240000.0,
+      "expended_to_date": 11125616.95,
+      "encumbered": 83516.25
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-S8190",
+     "name": "71st Street Streetscape/South Shore Drive To Jeffrey Blvd. - Phase II (Median)",
+     "amount": 109351.6,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code S8190, fund codes F0W16, 1 ledger row(s). Unspent = budget $2,164,725 minus expended to date $2,055,373 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "S8190",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 2164725.0,
+      "expended_to_date": 2055373.4,
+      "encumbered": 109351.6
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B0438",
+     "name": "Transportation Planning And Programming (Cbd Multimodal Demand)",
+     "amount": 63997.95,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2025-06-01",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B0438, fund codes F0W21, 1 ledger row(s). Unspent = budget $240,000 minus expended to date $176,002 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B0438",
+      "fund_codes": [
+       "F0W21"
+      ],
+      "ledger_budget": 240000.0,
+      "expended_to_date": 176002.05,
+      "encumbered": 63997.95
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-B8285",
+     "name": "Chicago Traffic Advisory System",
+     "amount": 27028.12,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code B8285, fund codes F0W02, 1 ledger row(s). Unspent = budget $1,072,000 minus expended to date $1,044,972 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "B8285",
+      "fund_codes": [
+       "F0W02"
+      ],
+      "ledger_budget": 1072000.0,
+      "expended_to_date": 1044971.88,
+      "encumbered": 27028.12
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-C7100",
+     "name": "Enhanced Travel Information & Arterial Monitoring Systems-Midway Airport Area",
+     "amount": 23850.7,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code C7100, fund codes F0W02, 1 ledger row(s). Unspent = budget $2,187,000 minus expended to date $2,163,149 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "C7100",
+      "fund_codes": [
+       "F0W02"
+      ],
+      "ledger_budget": 2187000.0,
+      "expended_to_date": 2163149.3,
+      "encumbered": 13200.77
+     },
+     "why": null
+    },
+    {
+     "key": "ledger-E9300",
+     "name": "Pin And Link Number 4 At Various Locations",
+     "amount": 0.01,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8",
+      "note": "ALN 20.205 rows of the 2026-05-31 extract, plus rows of the 2025-06-01 extract whose project is not in the 2026 extract. Both extracts are in the existing $121.1M cap."
+     },
+     "note": "Grant project code E9300, fund codes F0W16, 1 ledger row(s). Unspent = budget $10,560,000 minus expended to date $10,560,000 (money on order but not yet paid still counts as unspent).",
+     "extra": {
+      "grant_project_code": "E9300",
+      "fund_codes": [
+       "F0W16"
+      ],
+      "ledger_budget": 10560000.0,
+      "expended_to_date": 10559999.99,
+      "encumbered": 0.01
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Rounding between the two ledger extracts"
+   },
+   "note": "Split of the existing $121.1M cap into the named projects behind it (ledger rows with federal highway ALN 20.205)."
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.infrastructure-services.chicago-department-of-transportation.grant-money-not-yet-assigned-to-projects.925f-federal-grant-fund.925f-281u-909a.0-state-lake-loop-elevated-station-one-na"
+   },
+   "expect_amount": 329801213.0,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "key": "sl-surface-transportation-program-money-2025-06-01",
+     "name": "Surface Transportation Program money, not spent yet (ledger extract 2025-06-01)",
+     "amount": 102140573.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2025-06-01, project D1209 State/Lake Loop Elevated",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     },
+     "note": "Unspent = budget $102,140,573 minus expended to date $0. Ledger record(s): F0W16-D1209-P842115-2024.",
+     "extra": {
+      "ledger_records": [
+       "F0W16-D1209-P842115-2024"
+      ]
+     },
+     "why": "This is federal money already promised for the one State/Lake station rebuild, and it pays the main construction contract in large monthly chunks."
+    },
+    {
+     "key": "sl-congestion-mitigation-and-air-quality-money-2026-05-31",
+     "name": "Congestion Mitigation and Air Quality money, not spent yet (ledger extract 2026-05-31)",
+     "amount": 59516917.67,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31, project D1209 State/Lake Loop Elevated",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     },
+     "note": "Unspent = budget $65,430,000 minus expended to date $5,913,082. Ledger record(s): F0W02-D1209-P842105-2016.",
+     "extra": {
+      "ledger_records": [
+       "F0W02-D1209-P842105-2016"
+      ]
+     },
+     "why": "This is federal money already promised for the one State/Lake station rebuild, and it pays the main construction contract in large monthly chunks."
+    },
+    {
+     "key": "sl-surface-transportation-program-money-2026-05-31",
+     "name": "Surface Transportation Program money, not spent yet (ledger extract 2026-05-31)",
+     "amount": 18190500.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31, project D1209 State/Lake Loop Elevated",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     },
+     "note": "Unspent = budget $34,080,000 minus expended to date $15,889,500. Ledger record(s): F0W16-D1209-P842125-2016.",
+     "extra": {
+      "ledger_records": [
+       "F0W16-D1209-P842125-2016"
+      ]
+     },
+     "why": "This is federal money already promised for the one State/Lake station rebuild, and it pays the main construction contract in large monthly chunks."
+    },
+    {
+     "key": "sl-carbon-reduction-program-money-2026-05-31",
+     "name": "Carbon Reduction Program money, not spent yet (ledger extract 2026-05-31)",
+     "amount": 15000000.0,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31, project D1209 State/Lake Loop Elevated",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     },
+     "note": "Unspent = budget $15,000,000 minus expended to date $0. Ledger record(s): FG665-D1209-P842160-2024.",
+     "extra": {
+      "ledger_records": [
+       "FG665-D1209-P842160-2024"
+      ]
+     },
+     "why": "This is federal money already promised for the one State/Lake station rebuild, and it pays the main construction contract in large monthly chunks."
+    },
+    {
+     "key": "sl-congestion-mitigation-and-air-quality-money-direct-fta-grant--2026-05-31",
+     "name": "Congestion Mitigation and Air Quality money (direct FTA grant), not spent yet (ledger extract 2026-05-31)",
+     "amount": 7334548.37,
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City Mid-Year Grants 925 ledger, extract 2026-05-31, project D1209 State/Lake Loop Elevated",
+      "url": "https://data.cityofchicago.org/resource/iyu8-jkf8"
+     },
+     "note": "Unspent = budget $64,930,000 minus expended to date $57,595,452. Ledger record(s): F0W02-D1209-P842125-2016.",
+     "extra": {
+      "ledger_records": [
+       "F0W02-D1209-P842125-2016"
+      ]
+     },
+     "why": null
+    }
+   ],
+   "residual": {
+    "name": "Rest of the federal award not shown by funding source in the City ledger",
+    "why": "The federal award is bigger than the amounts the City ledger lists by funding source, and no public record splits the rest into station, track or utility work."
+   },
+   "note": "The cap is the federal award IL-2016-002 (obligated minus outlays). The City ledger shows part of it by funding source, and the rest is shown as not itemised.",
+   "side": [
+    {
+     "kind": "project_cost",
+     "label": "Reported total project cost (CDOT spokesperson: more than 90 percent federally funded). Up from $180M estimated in 2021 and $75M in 2017",
+     "amount": 444000000,
+     "period": "2025-12",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Chicago Sun-Times, 2025-12-04",
+      "url": "https://chicago.suntimes.com/transportation/2025/12/04/state-lake-cta-station-closing-construction",
+      "page": null,
+      "note": null
+     }
+    },
+    {
+     "kind": "contract_award",
+     "label": "Construction contract 283596 (F.H. Paschen S.N. Nielsen & Associates), original award 2025-01-15",
+     "amount": 444347400,
+     "period": "2025",
+     "basis": "tied",
+     "source": {
+      "doc": "City Vendor, Contract and Payment Search, contract 283596",
+      "url": "https://webapps1.chicago.gov/vcsearch/city/contracts/283596",
+      "page": null,
+      "note": null
+     }
+    },
+    {
+     "kind": "contract_award",
+     "label": "Same contract, modification 2 approved 2026-06-30 (current award $548,215,560)",
+     "amount": 103868160,
+     "period": "2026",
+     "basis": "tied",
+     "source": {
+      "doc": "City Vendor, Contract and Payment Search, contract 283596",
+      "url": "https://webapps1.chicago.gov/vcsearch/city/contracts/283596",
+      "page": null,
+      "note": null
+     }
+    },
+    {
+     "kind": "paid_to_date",
+     "label": "Paid to the construction contractor in calendar 2025 (7 payments)",
+     "amount": 51072112.43,
+     "period": "2025",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "City payments dataset (s4vu-giwb), contract 283596",
+      "url": "https://data.cityofchicago.org/resource/s4vu-giwb",
+      "page": null,
+      "note": null
+     }
+    },
+    {
+     "kind": "paid_to_date",
+     "label": "Paid to the construction contractor in 2026 so far (9 payments)",
+     "amount": 37295302.4,
+     "period": "2026 to 09/28",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "City payments dataset (s4vu-giwb), contract 283596",
+      "url": "https://data.cityofchicago.org/resource/s4vu-giwb",
+      "page": null,
+      "note": null
+     }
+    },
+    {
+     "kind": "cip_total",
+     "label": "City CIP 2025-2029 project 40492 State/Lake CTA Station, all funds, all years (federal 0W02 $167.4M, 0W16 $221.2M, 0997 $16.0M, city bonds $91.0M)",
+     "amount": 495647401,
+     "period": "multi-year",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "City of Chicago 2025-2029 Capital Improvement Program",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/CIP/City%20of%202025-2029%20CIP.pdf",
+      "page": 168,
+      "note": null
+     }
+    },
+    {
+     "kind": "tip_total",
+     "label": "CMAP TIP 01-02-0030 State/Lake Station, total programmed (all prior years, none in FY2026): CMAQ $178.9M incl. $11.0M engineering, STP-L $196.2M, STP Shared $25.0M, Carbon Reduction $15.0M, Community Project $1.0M, local $65.8M",
+     "amount": 481925718,
+     "period": "multi-year",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CMAP eTIP TIP 2026-2030, project 01-02-0030",
+      "url": "https://cmap.ecointeractive.com/",
+      "page": null,
+      "note": null
+     }
+    },
+    {
+     "kind": "stp_programmed",
+     "label": "CDOT STP-L program: State/Lake construction FFY2024 $77,140,573 + $25,000,000 redistribution, FFY2025 $68,552,719 + $16,447,281 redistribution",
+     "amount": 187140573,
+     "period": "FFY2024-2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CDOT FFY 2024-2029 STP Program, updated 02/10/2026",
+      "url": "https://cmap.illinois.gov/wp-content/uploads/CDOT_2025-2029-STP-Program-20260210.pdf",
+      "page": 1,
+      "note": null
+     }
+    },
+    {
+     "kind": "federal_award",
+     "label": "FTA award IL-2016-002 obligated (USASpending, Aug 2025 snapshot). Unspent = obligation minus outlays $84.8M",
+     "amount": 414620572.0,
+     "period": "1999-10 to 2031-03",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "USASpending.gov award IL-2016-002",
+      "url": "https://www.usaspending.gov/award/ASST_NON_IL-2016-002_069",
+      "page": null,
+      "note": null
+     }
+    },
+    {
+     "kind": "gap",
+     "label": "No public cost breakdown by part (station, track, utilities) was found. The bid book (spec 1269715) lists scope but no prices, and the CTA and CDOT pages give only the total.",
+     "period": "",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Spec 1269715 Book 2",
+      "url": "https://www.chicago.gov/content/dam/city/depts/dps/ContractAdministration/Specs/2024/Spec1269715_Book2.pdf",
+      "page": null,
+      "note": null
+     }
+    }
+   ]
+  }
+ ]
+}
