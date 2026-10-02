@@ -1,0 +1,1111 @@
+{
+ "meta": {
+  "author": "deep: O'Hare & Midway (squid)",
+  "built_by": "scripts/aviation_build.py",
+  "description": "Aviation detail: named FAA grants under the O'Hare and Midway AIP reserve lines, FY2026 awards and the Terminal 3 construction manager under the AIP professional services lines, Series 2010B interest out of the O'Hare bond residual, capital program and prior-year side info. See research/aviation.md.",
+  "awards_pulled": "2026-10-01 21:27",
+  "faa_workbook_mismatches": []
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "85",
+    "authority": "2810",
+    "account": "909A"
+   },
+   "expect_amount": 411790000,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Reconstruct Service Road (FAA grant 3-17-0022-199-2025)",
+     "amount": 25893809.96,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221992025_069",
+      "faa_grant_history": "FY_2025_AIP_Grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700221992025: 29,971,297.00 awarded, 4,077,487.04 paid out so far, period 2025-09-22 to 2029-09-21. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700221992025",
+      "faa_grant_number": "3-17-0022-199-2025",
+      "obligation": 29971297.0,
+      "outlay": 4077487.04,
+      "period_start": "2025-09-22",
+      "period_end": "2029-09-21"
+     }
+    },
+    {
+     "name": "Expand Terminal (FAA grant 3-17-0022-203-2025)",
+     "amount": 20000000.0,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700222032025_069",
+      "faa_grant_history": "FY_2025_AIP_Grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700222032025: 20,000,000.00 awarded, 0.00 paid out so far (no payout reported yet, counted as zero), period 2025-09-22 to 2029-09-21. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700222032025",
+      "faa_grant_number": "3-17-0022-203-2025",
+      "obligation": 20000000.0,
+      "outlay": null,
+      "period_start": "2025-09-22",
+      "period_end": "2029-09-21"
+     }
+    },
+    {
+     "name": "Expand Terminal Building (FAA grant 3-17-0022-193-2024)",
+     "amount": 13995713.17,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221932024_069",
+      "faa_grant_history": "FY2024-AIP-grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700221932024: 40,000,000.00 awarded, 26,004,286.83 paid out so far, period 2024-04-15 to 2028-04-14. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700221932024",
+      "faa_grant_number": "3-17-0022-193-2024",
+      "obligation": 40000000.0,
+      "outlay": 26004286.83,
+      "period_start": "2024-04-15",
+      "period_end": "2028-04-14"
+     }
+    },
+    {
+     "name": "Noise Mitigation Measures for Residences within 65-69 DNL (FAA grant 3-17-0022-201-2025)",
+     "amount": 12358946.25,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700222012025_069",
+      "faa_grant_history": "FY_2025_AIP_Grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700222012025: 12,520,494.00 awarded, 161,547.75 paid out so far, period 2025-09-22 to 2029-09-21. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700222012025",
+      "faa_grant_number": "3-17-0022-201-2025",
+      "obligation": 12520494.0,
+      "outlay": 161547.75,
+      "period_start": "2025-09-22",
+      "period_end": "2029-09-21"
+     }
+    },
+    {
+     "name": "Expand Terminal (FAA grant 3-17-0022-202-2025)",
+     "amount": 10448503.0,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700222022025_069",
+      "faa_grant_history": "FY_2025_AIP_Grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700222022025: 10,448,503.00 awarded, 0.00 paid out so far (no payout reported yet, counted as zero), period 2025-09-22 to 2029-09-21. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700222022025",
+      "faa_grant_number": "3-17-0022-202-2025",
+      "obligation": 10448503.0,
+      "outlay": null,
+      "period_start": "2025-09-22",
+      "period_end": "2029-09-21"
+     }
+    },
+    {
+     "name": "Extend/Expand Taxiway (FAA grant 3-17-0022-197-2025)",
+     "amount": 6464086.19,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221972025_069",
+      "faa_grant_history": "FY_2025_AIP_Grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700221972025: 15,743,737.00 awarded, 9,279,650.81 paid out so far, period 2025-06-30 to 2029-06-29. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700221972025",
+      "faa_grant_number": "3-17-0022-197-2025",
+      "obligation": 15743737.0,
+      "outlay": 9279650.81,
+      "period_start": "2025-06-30",
+      "period_end": "2029-06-29"
+     }
+    },
+    {
+     "name": "Rehabilitate Taxiway (FAA grant 3-17-0022-195-2024)",
+     "amount": 5826220.99,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221952024_069",
+      "faa_grant_history": "FY2024-AIP-grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700221952024: 9,472,514.00 awarded, 3,646,293.01 paid out so far, period 2024-09-10 to 2028-09-09. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700221952024",
+      "faa_grant_number": "3-17-0022-195-2024",
+      "obligation": 9472514.0,
+      "outlay": 3646293.01,
+      "period_start": "2024-09-10",
+      "period_end": "2028-09-09"
+     }
+    },
+    {
+     "name": "Expand Terminal Building (FAA grant 3-17-0022-192-2023)",
+     "amount": 2605663.4,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221922023_069",
+      "faa_grant_history": "FY2023-AIP-grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700221922023: 50,000,000.00 awarded, 47,394,336.60 paid out so far, period 2023-09-07 to 2027-09-06. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700221922023",
+      "faa_grant_number": "3-17-0022-192-2023",
+      "obligation": 50000000.0,
+      "outlay": 47394336.6,
+      "period_start": "2023-09-07",
+      "period_end": "2027-09-06"
+     }
+    },
+    {
+     "name": "Reconstruct Taxiway (FAA grant 3-17-0022-204-2025)",
+     "amount": 1257425.69,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700222042025_069",
+      "faa_grant_history": "FY_2025_AIP_Grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700222042025: 1,857,143.00 awarded, 599,717.31 paid out so far, period 2025-09-22 to 2029-09-21. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700222042025",
+      "faa_grant_number": "3-17-0022-204-2025",
+      "obligation": 1857143.0,
+      "outlay": 599717.31,
+      "period_start": "2025-09-22",
+      "period_end": "2029-09-21"
+     }
+    },
+    {
+     "name": "Reconstruct Service Road (FAA grant 3-17-0022-205-2025)",
+     "amount": 987518.19,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700222052025_069",
+      "faa_grant_history": "FY_2025_AIP_Grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700222052025: 3,119,958.00 awarded, 2,132,439.81 paid out so far, period 2025-09-22 to 2029-09-21. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700222052025",
+      "faa_grant_number": "3-17-0022-205-2025",
+      "obligation": 3119958.0,
+      "outlay": 2132439.81,
+      "period_start": "2025-09-22",
+      "period_end": "2029-09-21"
+     }
+    },
+    {
+     "name": "Rehabilitate Taxilane; Rehabilitate Taxiway (FAA grant 3-17-0022-200-2025)",
+     "amount": 247318.87,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700222002025_069",
+      "faa_grant_history": "FY_2025_AIP_Grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700222002025: 1,786,110.00 awarded, 1,538,791.13 paid out so far, period 2025-09-22 to 2029-09-21. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700222002025",
+      "faa_grant_number": "3-17-0022-200-2025",
+      "obligation": 1786110.0,
+      "outlay": 1538791.13,
+      "period_start": "2025-09-22",
+      "period_end": "2029-09-21"
+     }
+    },
+    {
+     "name": "Construct Taxiway (FAA grant 3-17-0022-189-2022)",
+     "amount": 35962.62,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700221892022_069",
+      "faa_grant_history": "FY2022-AIP-grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700221892022: 1,125,431.00 awarded, 1,089,468.38 paid out so far, period 2022-07-29 to 2026-07-28. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700221892022",
+      "faa_grant_number": "3-17-0022-189-2022",
+      "obligation": 1125431.0,
+      "outlay": 1089468.38,
+      "period_start": "2022-07-29",
+      "period_end": "2026-07-28"
+     }
+    }
+   ],
+   "residual": {
+    "name": "Carryover not tied to a named FAA award",
+    "why": "The budget carries this much federal airport grant money over from earlier years. The FAA and USASpending records name awards that still have unspent money, but they explain only part of it. The rest is carryover the budget expects and no public record ties it to a project."
+   },
+   "source": {
+    "dataset": "6694-f78c",
+    "name": "2026 Annual Appropriation Ordinance",
+    "url": "https://data.cityofchicago.org/Administration-Finance/Budget-2026-Budget-Ordinance-Appropriations/6694-f78c"
+   },
+   "note": "Named pieces: 12 FAA grants made in FAA fiscal year 2025 or earlier that still have unspent money ($100,121,168.33 in all) per USASpending.gov, cross-checked with the FAA AIP grant histories (grant numbers and project types). Awards made after September 2025 are shown on the 'professional and technical services' line of the same grant, because they are the 2026 new money. The pieces are an upper bound: the FAA does not publish which grant pays which budget line.",
+   "side": [
+    {
+     "kind": "grant_carryover",
+     "label": "Summary G: carryover from 2025 (Aug 1 2025 estimate)",
+     "amount": 411790000,
+     "period": "2026 budget",
+     "basis": "published",
+     "source": {
+      "doc": "Mayor's Budget Recommendations for Year 2026",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Recommendations.pdf",
+      "page": "607 (PDF 616)"
+     }
+    },
+    {
+     "kind": "grant_anticipated_2026",
+     "label": "Summary G: new grant money anticipated in 2026 (the 0140 line below)",
+     "amount": 112740000,
+     "period": "2026 budget",
+     "basis": "published",
+     "source": {
+      "doc": "Mayor's Budget Recommendations for Year 2026",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Recommendations.pdf",
+      "page": "607 (PDF 616)"
+     }
+    },
+    {
+     "kind": "pfc_authority",
+     "label": "FAA passenger facility charge authority at O'Hare: $4.50 per passenger from 2001-04-01 to 2039-02-01 (total approved, all projects)",
+     "amount": 6560089985,
+     "period": "as of 2026-09-30",
+     "basis": "published",
+     "source": {
+      "doc": "FAA PFC approved locations, collections and expiration dates",
+      "url": "https://www.faa.gov/airports/pfc/monthly_reports",
+      "file": "raw/aviation/pfc_locations_latest.xlsx",
+      "note": "The FAA publishes one total per airport. No project list with amounts was found, so PFC money is not split into boxes."
+     }
+    },
+    {
+     "kind": "capital_program",
+     "label": "Total airport capital program, escalated dollars (2026CD OS Table S-1)",
+     "amount": 14627114000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-19 and E-46 (Tables S-1, 2-2)"
+     }
+    },
+    {
+     "kind": "capital_program",
+     "label": "  of which already funded by earlier bonds and about $290.1M of executed grants",
+     "amount": 5537774000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-19 and E-46 (Tables S-1, 2-2)"
+     }
+    },
+    {
+     "kind": "capital_program",
+     "label": "  of which paid by the 2026B bonds",
+     "amount": 1004658000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-19 and E-46 (Tables S-1, 2-2)"
+     }
+    },
+    {
+     "kind": "capital_program",
+     "label": "  of which to be paid by future bonds (no future grants assumed)",
+     "amount": 7484681000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-19 and E-46 (Tables S-1, 2-2)"
+     }
+    },
+    {
+     "kind": "capital_program",
+     "label": "  of which paid from airline fees (pre-approved allowances)",
+     "amount": 600000000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-19 and E-46 (Tables S-1, 2-2)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "85",
+    "authority": "2805",
+    "account": "909A"
+   },
+   "expect_amount": 123869000,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Noise Mitigation Measures for Residences within 65-69 DNL (FAA grant 3-17-0025-104-2023)",
+     "amount": 10811332.15,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251042023_069",
+      "faa_grant_history": "FY2023-AIP-grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700251042023: 11,454,428.00 awarded, 643,095.85 paid out so far, period 2023-09-15 to 2027-09-14. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700251042023",
+      "faa_grant_number": "3-17-0025-104-2023",
+      "obligation": 11454428.0,
+      "outlay": 643095.85,
+      "period_start": "2023-09-15",
+      "period_end": "2027-09-14"
+     }
+    },
+    {
+     "name": "Rehabilitate Runway; Rehabilitate Runway Lighting; Rehabilitate Taxiway Lighting (FAA grant 3-17-0025-109-2025)",
+     "amount": 10050628.95,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251092025_069",
+      "faa_grant_history": "FY_2025_AIP_Grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700251092025: 28,156,307.00 awarded, 18,105,678.05 paid out so far, period 2025-09-22 to 2029-09-21. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700251092025",
+      "faa_grant_number": "3-17-0025-109-2025",
+      "obligation": 28156307.0,
+      "outlay": 18105678.05,
+      "period_start": "2025-09-22",
+      "period_end": "2029-09-21"
+     }
+    },
+    {
+     "name": "Noise Mitigation Measures for Residences within 65-69 DNL (FAA grant 3-17-0025-103-2022)",
+     "amount": 2456530.5,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251032022_069",
+      "faa_grant_history": "FY2022-AIP-grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700251032022: 5,000,000.00 awarded, 2,543,469.50 paid out so far, period 2022-09-08 to 2026-09-07. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700251032022",
+      "faa_grant_number": "3-17-0025-103-2022",
+      "obligation": 5000000.0,
+      "outlay": 2543469.5,
+      "period_start": "2022-09-08",
+      "period_end": "2026-09-07"
+     }
+    },
+    {
+     "name": "Noise Mitigation Measures for Residences within 65-69 DNL (FAA grant 3-17-0025-108-2024)",
+     "amount": 411744.2,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251082024_069",
+      "faa_grant_history": "FY2024-AIP-grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700251082024: 555,019.00 awarded, 143,274.80 paid out so far, period 2024-09-10 to 2028-09-09. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700251082024",
+      "faa_grant_number": "3-17-0025-108-2024",
+      "obligation": 555019.0,
+      "outlay": 143274.8,
+      "period_start": "2024-09-10",
+      "period_end": "2028-09-09"
+     }
+    },
+    {
+     "name": "Rehabilitate Runway (FAA grant 3-17-0025-110-2025)",
+     "amount": 314830.96,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251102025_069",
+      "faa_grant_history": "FY_2025_AIP_Grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700251102025: 6,833,466.00 awarded, 6,518,635.04 paid out so far, period 2025-09-22 to 2029-09-21. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700251102025",
+      "faa_grant_number": "3-17-0025-110-2025",
+      "obligation": 6833466.0,
+      "outlay": 6518635.04,
+      "period_start": "2025-09-22",
+      "period_end": "2029-09-21"
+     }
+    },
+    {
+     "name": "Rehabilitate Runway (FAA grant 3-17-0025-107-2024)",
+     "amount": 22614.5,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251072024_069",
+      "faa_grant_history": "FY2024-AIP-grants.xlsx"
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700251072024: 2,786,663.00 awarded, 2,764,048.50 paid out so far, period 2024-09-10 to 2028-09-09. The box shows the part not yet paid out. Amount and project type match the FAA grant history. Matched to the carryover because the award was made in FAA fiscal year 2025 or earlier. The ordinance figure is a carryover estimate, so this is an upper bound of what the named awards can explain.",
+     "extra": {
+      "award_id": "31700251072024",
+      "faa_grant_number": "3-17-0025-107-2024",
+      "obligation": 2786663.0,
+      "outlay": 2764048.5,
+      "period_start": "2024-09-10",
+      "period_end": "2028-09-09"
+     }
+    }
+   ],
+   "residual": {
+    "name": "Carryover not tied to a named FAA award",
+    "why": "The budget carries this much federal airport grant money over from earlier years. The FAA and USASpending records name awards that still have unspent money, but they explain only part of it. The rest is carryover the budget expects and no public record ties it to a project."
+   },
+   "source": {
+    "dataset": "6694-f78c",
+    "name": "2026 Annual Appropriation Ordinance",
+    "url": "https://data.cityofchicago.org/Administration-Finance/Budget-2026-Budget-Ordinance-Appropriations/6694-f78c"
+   },
+   "note": "Named pieces: 6 FAA grants made in FAA fiscal year 2025 or earlier that still have unspent money ($24,067,681.26 in all) per USASpending.gov, cross-checked with the FAA AIP grant histories (grant numbers and project types). Awards made after September 2025 are shown on the 'professional and technical services' line of the same grant, because they are the 2026 new money. The pieces are an upper bound: the FAA does not publish which grant pays which budget line.",
+   "side": [
+    {
+     "kind": "grant_carryover",
+     "label": "Summary G: carryover from 2025 (Aug 1 2025 estimate)",
+     "amount": 123869000,
+     "period": "2026 budget",
+     "basis": "published",
+     "source": {
+      "doc": "Mayor's Budget Recommendations for Year 2026",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Recommendations.pdf",
+      "page": "607 (PDF 616)"
+     }
+    },
+    {
+     "kind": "grant_anticipated_2026",
+     "label": "Summary G: new grant money anticipated in 2026 (the 0140 line below)",
+     "amount": 36199000,
+     "period": "2026 budget",
+     "basis": "published",
+     "source": {
+      "doc": "Mayor's Budget Recommendations for Year 2026",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Recommendations.pdf",
+      "page": "607 (PDF 616)"
+     }
+    },
+    {
+     "kind": "pfc_authority",
+     "label": "FAA passenger facility charge authority at Midway: $4.50 per passenger from 2007-01-01 to 2056-05-01 (total approved, all projects)",
+     "amount": 2477196685,
+     "period": "as of 2026-09-30",
+     "basis": "published",
+     "source": {
+      "doc": "FAA PFC approved locations, collections and expiration dates",
+      "url": "https://www.faa.gov/airports/pfc/monthly_reports",
+      "file": "raw/aviation/pfc_locations_latest.xlsx",
+      "note": "The FAA publishes one total per airport. No project list with amounts was found, so PFC money is not split into boxes."
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "85",
+    "authority": "2805",
+    "account": "0140"
+   },
+   "expect_amount": 36199000,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Reconstruct taxiway (FAA grant 31700251152026)",
+     "amount": 5475808.0,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251152026_069",
+      "faa_grant_history": null
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700251152026: 5,475,808.00 awarded, 0.00 paid out so far (no payout reported yet, counted as zero), period 2026-09-15 to 2030-09-14. The box shows the part not yet paid out. Not yet in an FAA grant history file (the FAA has not published its FY2026 list), so USASpending is the only source. Matched to this line because the award was made in FAA fiscal year 2026 and this line is the 2026 anticipated grant (Summary G).",
+     "extra": {
+      "award_id": "31700251152026",
+      "faa_grant_number": null,
+      "obligation": 5475808.0,
+      "outlay": null,
+      "period_start": "2026-09-15",
+      "period_end": "2030-09-14"
+     }
+    },
+    {
+     "name": "Acquire airfield equipment (FAA grant 31700251142026)",
+     "amount": 199500.0,
+     "basis": "gov_estimate",
+     "kind": "grant_award",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700251142026_069",
+      "faa_grant_history": null
+     },
+     "why": "The FAA has promised this money to the City for this one airport project. It is paid back to the City as work is done, and no public list splits the project into smaller pieces.",
+     "note": "Award 31700251142026: 199,500.00 awarded, 0.00 paid out so far (no payout reported yet, counted as zero), period 2026-09-16 to 2030-09-15. The box shows the part not yet paid out. Not yet in an FAA grant history file (the FAA has not published its FY2026 list), so USASpending is the only source. Matched to this line because the award was made in FAA fiscal year 2026 and this line is the 2026 anticipated grant (Summary G).",
+     "extra": {
+      "award_id": "31700251142026",
+      "faa_grant_number": null,
+      "obligation": 199500.0,
+      "outlay": null,
+      "period_start": "2026-09-16",
+      "period_end": "2030-09-15"
+     }
+    }
+   ],
+   "residual": {
+    "name": "2026 grant money not yet awarded",
+    "why": "The budget expects this much new federal grant money in 2026. The FAA had not announced awards for all of it when the data was collected (October 2026)."
+   },
+   "source": {
+    "dataset": "6694-f78c",
+    "name": "2026 Annual Appropriation Ordinance",
+    "url": "https://data.cityofchicago.org/Administration-Finance/Budget-2026-Budget-Ordinance-Appropriations/6694-f78c"
+   },
+   "note": "2 Midway FAA awards made in August and September 2026 ($5,675,308.00) against the $36,199,000 the budget anticipated as new 2026 grant money (Mayor's Budget Recommendations 2026, Summary G p.607). The match is by year, not by an official crosswalk. No 2026 payment could be matched to this line without doubt (the Midway runway contract text does not say it is federally funded)."
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "925F",
+    "dept": "85",
+    "authority": "2810",
+    "account": "0140"
+   },
+   "expect_amount": 112740000,
+   "mode": "paid_to_date",
+   "pieces": [
+    {
+     "name": "Clark-W.E. O'Neil JV: construction manager for Terminal 3 (contract 234140)",
+     "amount": 93378259.71,
+     "basis": "paid_to_date",
+     "kind": "vendor",
+     "note": "Contract 234140, Specification 1258275: Construction Management At-Risk Services at Terminal 3, O'Hare International Airport, 'Federal Funds'. 23 checks from 01/12/2026 to 09/17/2026. Matched to this line because the contract text names O'Hare and federal funds, its type is professional services, and no other O'Hare federal contract of that type was paid. FAA terminal-expansion grants for Terminal 3 are listed on the reserve line of this grant.",
+     "extra": {
+      "contract": "234140",
+      "payments": 23
+     },
+     "why": "This is what one company has been paid so far this year to manage building work at Terminal 3, and the payment records do not split it by task.",
+     "children": [
+      {
+       "name": "January 2026",
+       "amount": 12414329.11,
+       "basis": "paid_to_date",
+       "kind": "month",
+       "note": "4 payments by check date",
+       "why": "These are checks the City wrote to this one company in this month. The payment records show each check, not what it bought."
+      },
+      {
+       "name": "February 2026",
+       "amount": 11450141.06,
+       "basis": "paid_to_date",
+       "kind": "month",
+       "note": "3 payments by check date",
+       "why": "These are checks the City wrote to this one company in this month. The payment records show each check, not what it bought."
+      },
+      {
+       "name": "March 2026",
+       "amount": 10100784.58,
+       "basis": "paid_to_date",
+       "kind": "month",
+       "note": "3 payments by check date",
+       "why": "These are checks the City wrote to this one company in this month. The payment records show each check, not what it bought."
+      },
+      {
+       "name": "April 2026",
+       "amount": 13107698.9,
+       "basis": "paid_to_date",
+       "kind": "month",
+       "note": "1 payments by check date",
+       "why": "These are checks the City wrote to this one company in this month. The payment records show each check, not what it bought."
+      },
+      {
+       "name": "May 2026",
+       "amount": 8376310.94,
+       "basis": "paid_to_date",
+       "kind": "month",
+       "note": "3 payments by check date",
+       "why": "These are checks the City wrote to this one company in this month. The payment records show each check, not what it bought."
+      },
+      {
+       "name": "July 2026",
+       "amount": 9512219.6,
+       "basis": "paid_to_date",
+       "kind": "month",
+       "note": "2 payments by check date",
+       "why": "These are checks the City wrote to this one company in this month. The payment records show each check, not what it bought."
+      },
+      {
+       "name": "August 2026",
+       "amount": 18845924.96,
+       "basis": "paid_to_date",
+       "kind": "month",
+       "note": "5 payments by check date",
+       "why": "These are checks the City wrote to this one company in this month. The payment records show each check, not what it bought."
+      },
+      {
+       "name": "September 2026",
+       "amount": 9570850.56,
+       "basis": "paid_to_date",
+       "kind": "month",
+       "note": "2 payments by check date",
+       "why": "These are checks the City wrote to this one company in this month. The payment records show each check, not what it bought."
+      }
+     ]
+    }
+   ],
+   "source": {
+    "dataset": "s4vu-giwb",
+    "name": "City of Chicago Payments (deduplicated, checks Jan 1 to 09/28/2026)",
+    "url": "https://data.cityofchicago.org/d/s4vu-giwb",
+    "note": "joined to Contracts rsxa-ify5 on contract number; research/aviation.md"
+   },
+   "residual": {
+    "name": "Budgeted but not spent yet",
+    "why": "This is grant budget the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+   },
+   "note": "Only payments that match this line without doubt are shown. Other O'Hare federally funded contracts were not placed: two construction contracts (Paschen, 21.9M together) could be charged here or to the carryover line, and the airport engineering task orders do not name an airport. The side list shows the FAA awards made in FAA fiscal year 2026, which is what this line anticipated as new 2026 grant money.",
+   "side": [
+    {
+     "kind": "faa_award_fy2026",
+     "label": "FAA award made in FAA fiscal year 2026: Construct taxiway (award 31700222092026, ALN 20.117)",
+     "amount": 47891414.0,
+     "period": "2026-09-14 to 2030-09-13",
+     "basis": "actual",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700222092026_069"
+     }
+    },
+    {
+     "kind": "faa_award_fy2026",
+     "label": "FAA award made in FAA fiscal year 2026: Rehabilitate taxiway (award 31700222072026, ALN 20.117)",
+     "amount": 21422826.0,
+     "period": "2026-09-15 to 2030-09-14",
+     "basis": "actual",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700222072026_069"
+     }
+    },
+    {
+     "kind": "faa_award_fy2026",
+     "label": "FAA award made in FAA fiscal year 2026: Extend/expand runway (award 31700222062026, ALN 20.116)",
+     "amount": 20000000.0,
+     "period": "2026-08-12 to 2030-08-11",
+     "basis": "actual",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700222062026_069"
+     }
+    },
+    {
+     "kind": "faa_award_fy2026",
+     "label": "FAA award made in FAA fiscal year 2026: Noise mitigation measures for residences within 65-69 dnl (award 31700222102026, ALN 20.117)",
+     "amount": 14000000.0,
+     "period": "2026-09-15 to 2030-09-14",
+     "basis": "actual",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700222102026_069"
+     }
+    },
+    {
+     "kind": "faa_award_fy2026",
+     "label": "FAA award made in FAA fiscal year 2026: Acquire airfield equipment (award 31700222112026, ALN 20.116)",
+     "amount": 499999.0,
+     "period": "2026-09-16 to 2030-09-15",
+     "basis": "actual",
+     "source": {
+      "doc": "USASpending.gov award record",
+      "url": "https://www.usaspending.gov/award/ASST_NON_31700222112026_069"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "city.loans.chicago-o-hare-airport-fund.0740-2005-0902.other-not-itemised"
+   },
+   "expect_amount": 79662262,
+   "mode": "budget_split",
+   "pieces": [
+    {
+     "name": "Series 2010B (Build America Bonds, taxable)",
+     "amount": 20944350.0,
+     "basis": "tied",
+     "kind": "bond_series",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "p.54 (outstanding bonds) and E-1 56 (Table B-4)"
+     },
+     "note": "Interest only: $315,500,000 at 6.395% ($20,176,225.00) plus $12,500,000 at 6.145% ($768,125.00), the two 2038 and 2040 term bonds that remain (par $328,000,000, matching the outstanding table). No principal falls due before the 2038 sinking fund installments. Check: 35% federal subsidy x (1 - 5.7% sequestration) = $6,912,683, and the 2026CD OS prints $6,912 thousand (Table B-4). Coupons from the 2010 OS cover (raw/bonds).",
+     "why": "This is one old bond's yearly interest to the people who lent the money. It is fixed by the bond's printed rate, and it is already as small as the bond itself."
+    }
+   ],
+   "residual": {
+    "name": "Other bonds (not printed one by one)",
+    "why": "Several older bonds share this line (parts of 2016D to 2016G, 2017A to 2017C and 2018C), and the public statements we found do not print each bond's share for 2026."
+   },
+   "source": {
+    "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+    "file": "raw/bonds/ohare_2026CD_OS.pdf"
+   },
+   "note": "Series 2010B was taken out of the combined 'other' column because its terms are printed and its interest checks against the printed federal subsidy.",
+   "side": [
+    {
+     "kind": "pfc_applied",
+     "label": "Passenger facility charges pledged to pay part of 2026 O'Hare airport bond debt service (not split by bond)",
+     "amount": 111658000,
+     "period": "2026",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-1 56 (Table B-4)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0740",
+    "dept": "99",
+    "authority": "2005",
+    "account": "0140"
+   },
+   "expect_amount": 92222410,
+   "mode": "side_only",
+   "note": "No public record says who is paid from this line. The payments file has no fund or account, and the Finance General payments cannot be told apart by airport. The budget book shows the line was $91.6M in 2025 and $53.0M was actually spent in 2024.",
+   "side": [
+    {
+     "kind": "prior_year_budget",
+     "label": "2025 appropriation, same line",
+     "amount": 91593627,
+     "period": "2025",
+     "basis": "published",
+     "source": {
+      "doc": "Mayor's Budget Recommendations for Year 2026",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Recommendations.pdf",
+      "page": "585 (PDF 594)"
+     }
+    },
+    {
+     "kind": "prior_year_actual",
+     "label": "2024 actual spending, same line",
+     "amount": 53003859,
+     "period": "2024",
+     "basis": "actual",
+     "source": {
+      "doc": "Mayor's Budget Recommendations for Year 2026",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Recommendations.pdf",
+      "page": "585 (PDF 594)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "ordinance_line",
+    "fund": "0740",
+    "dept": "99",
+    "authority": "2005",
+    "account": "9047"
+   },
+   "expect_amount": 2000000,
+   "mode": "side_only",
+   "note": "This is the only O'Hare capital line in the ordinance, and it is small. O'Hare's building program (O'Hare 21) is not appropriated line by line: it is paid with airport bond proceeds and airline fees under the airline agreement. The side list shows the program's published cost tables.",
+   "side": [
+    {
+     "kind": "capital_program",
+     "label": "TAP Phase 1 (ORDNext terminals, tunnel, parking), escalated",
+     "amount": 9826217000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-19 (Table S-1)"
+     }
+    },
+    {
+     "kind": "capital_program",
+     "label": "Pre-approved capital improvement projects, escalated",
+     "amount": 1925810000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-19 (Table S-1)"
+     }
+    },
+    {
+     "kind": "capital_program",
+     "label": "Pre-approved allowances and infrastructure reliability, escalated",
+     "amount": 768157000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-19 (Table S-1)"
+     }
+    },
+    {
+     "kind": "capital_program",
+     "label": "Ongoing projects from earlier agreements",
+     "amount": 209218000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-19 (Table S-1)"
+     }
+    },
+    {
+     "kind": "capital_program",
+     "label": "New approvals since the 2018 airline agreement",
+     "amount": 1493760000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-19 (Table S-1)"
+     }
+    },
+    {
+     "kind": "capital_program",
+     "label": "Proposed projects",
+     "amount": 403952000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-19 (Table S-1)"
+     }
+    },
+    {
+     "kind": "capital_program",
+     "label": "Total airport capital program, escalated dollars",
+     "amount": 14627114000,
+     "period": "program to 2035",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-19 (Table S-1)"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "Concourse D (Satellite 1) (2018 dollars, airline agreement exhibit L)",
+     "amount": 730000000,
+     "period": "approved 2018",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-43 (Table 2-1)"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "Concourse E (Satellite 2), north and south (2018 dollars, airline agreement exhibit L)",
+     "amount": 527000000,
+     "period": "approved 2018",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-43 (Table 2-1)"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "Terminal 2 redevelopment: O'Hare Global Terminal and Concourse (2018 dollars, airline agreement exhibit L)",
+     "amount": 1830000000,
+     "period": "approved 2018",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-43 (Table 2-1)"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "Baggage handling equipment (2018 dollars, airline agreement exhibit L)",
+     "amount": 825000000,
+     "period": "approved 2018",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-43 (Table 2-1)"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "Consolidated people mover, pedestrian and utility tunnel (phase 1) (2018 dollars, airline agreement exhibit L)",
+     "amount": 665000000,
+     "period": "approved 2018",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-43 (Table 2-1)"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "Terminal 5 repurposing and core expansion (2018 dollars, airline agreement exhibit L)",
+     "amount": 250000000,
+     "period": "approved 2018",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-43 (Table 2-1)"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "Central detention basin elimination and south basin expansion (2018 dollars, airline agreement exhibit L)",
+     "amount": 223000000,
+     "period": "approved 2018",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-43 (Table 2-1)"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "Terminal 5 landside and parking, stage 1 and 2 (2018 dollars, airline agreement exhibit L)",
+     "amount": 222000000,
+     "period": "approved 2018",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-43 (Table 2-1)"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "TAP phase 1 utilities allowance (2018 dollars, airline agreement exhibit L)",
+     "amount": 493000000,
+     "period": "approved 2018",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-43 (Table 2-1)"
+     }
+    },
+    {
+     "kind": "capital_project_2018",
+     "label": "Western parking and screening allowance (2018 dollars, airline agreement exhibit L)",
+     "amount": 215000000,
+     "period": "approved 2018",
+     "basis": "published",
+     "source": {
+      "doc": "City of Chicago O'Hare General Airport Senior Lien Revenue Refunding Bonds 2026C and 2026D, Official Statement dated 2026-08-21",
+      "file": "raw/bonds/ohare_2026CD_OS.pdf",
+      "page": "E-43 (Table 2-1)"
+     }
+    },
+    {
+     "kind": "prior_year_actual",
+     "label": "2024 actual spending, same line",
+     "amount": 1376213,
+     "period": "2024",
+     "basis": "actual",
+     "source": {
+      "doc": "Mayor's Budget Recommendations for Year 2026",
+      "url": "https://www.chicago.gov/content/dam/city/depts/obm/supp_info/2026Budget/2026%20Budget%20Recommendations.pdf",
+      "page": "586 (PDF 595)"
+     }
+    }
+   ]
+  }
+ ]
+}
