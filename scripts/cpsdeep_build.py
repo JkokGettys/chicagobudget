@@ -304,7 +304,111 @@ def capital_splits():
     return splits
 
 
+# ======================================================================================= 4. PRESCHOOL, LUNCH, SPECIAL ED TUITION
+def supplier_fy26():
+    rows = json.load(open(P("raw", "cps", "cps_supplier_payments_FY2026.json")))
+    return {r["Name"]: float(r["PaymentAmount"]) for r in rows}
+
+
+SUP_SRC = {"doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+           "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026", "file": "raw/cps/cps_supplier_payments_FY2026.json"}
+
+
+def preschool_lunch_splits():
+    sup = supplier_fy26()
+    out = []
+    iga = lambda n, u: {"doc": f"Board Report {n}", "url": f"https://www.cpsboe.org/content/actions/{u}/{n}.pdf"}  # noqa: E731
+    out.append({
+        "target": {"by": "id", "id": "cps.citywide.early-childhood.u11385.contracts.a54125.fg362-376689-p410001-0"},
+        "expect_amount": 88_143_619, "mode": "side_only",
+        "note": "Plain words: CPS passes this state grant money to the City's Department of Family and Support Services (DFSS), which pays about 88 community preschool and "
+                "infant and toddler programs. CPS does not publish what each program gets, and the DFSS provider list is behind a login, so no provider boxes are shown. "
+                "The budget line ($88.1M) is smaller than the Board's spending limit for the agreement ($95.6M for FY2026), and the difference is not explained in the sources.",
+        "side": [
+            {"kind": "contract_authority", "label": "Board Report 25-0925-EX2: fifth and final renewal of the agreement with the City's Department of Family and Support Services, not to exceed $99,624,439, "
+             "'to support approximately 90 agencies to service prenatal parents and birth to 5 years of age'. Paid from Fund 362, Early Childhood Block Grant (state money from the Illinois State Board of Education)",
+             "amount": 99_624_439, "period": "FY2026", "basis": "gov_estimate", "source": iga("25-0925-EX2", "2025_09")},
+            {"kind": "contract_authority", "label": "Board Report 26-0730-EX2 (July 2026) amends it: FY2026 cut to $95,624,439, $4,000,000 moved to FY2027, term extended to 8/31/2026, about 88 agencies",
+             "amount": 95_624_439, "period": "FY2026", "basis": "gov_estimate", "source": iga("26-0730-EX2", "2026_07")},
+            {"kind": "contract_authority", "label": "Board Report 25-1218-EX4: new agreement for FY2027 at $49,100,000 for about 55 agencies, because oversight is now shared between DFSS and five other City Head Start grantees",
+             "amount": 49_100_000, "period": "FY2027", "basis": "gov_estimate", "source": iga("25-1218-EX4", "2025_12")},
+            {"kind": "vendor_payment", "label": "CITY OF CHICAGO paid FY2026 by CPS, all agreements together (vendor total, includes other City agreements, not tied to this line)",
+             "amount": sup["CITY OF CHICAGO"], "period": "FY2026", "basis": "paid_to_date", "source": SUP_SRC},
+            {"kind": "official_explanation", "label": "Budget book, Office of Early Childhood Education: 'Continue to sub-grant a portion of the Illinois Early Childhood Block Grant to DFSS to support the Community-Based Preschool for All and Prevention Initiative'",
+             "period": "FY2026", "basis": "gov_estimate", "source": {"doc": "CPS FY2026 Budget Book, Office of Early Childhood Education", "url": BB_URL, "page": "77-78 (printed)"}},
+        ]})
+    out.append({
+        "target": {"by": "id", "id": "cps.citywide.food.u12050.supplies.a53205.fg312-000000-p256013-0"},
+        "expect_amount": 56_983_670, "mode": "side_only",
+        "note": "Plain words: this is the food budget for school lunches, paid from the Lunchroom Fund. Two companies run CPS school food, Aramark and Open Kitchens, under one "
+                "Board contract. Their payments cover all meals (breakfast, lunch, snacks, supper), so they cannot be assigned to this lunch line. Most of the money comes back from the federal government.",
+        "side": [
+            {"kind": "contract_authority", "label": "Board Report 25-0424-PR6: third renewal of the food management contract with Aramark Educational Services and Open Kitchens, not to exceed $116,000,000 for 7/1/2025 to 6/30/2026, about 700 sites (original agreement 22-0525-PR15 was $88,500,000)",
+             "amount": 116_000_000, "period": "FY2026", "basis": "gov_estimate", "source": iga("25-0424-PR6", "2025_04")},
+            {"kind": "vendor_payment", "label": "ARAMARK EDUCATIONAL SERVICES, LLC paid FY2026 (all meals, vendor total)",
+             "amount": sup["ARAMARK EDUCATIONAL SERVICES, LLC"], "period": "FY2026", "basis": "paid_to_date", "source": SUP_SRC},
+            {"kind": "vendor_payment", "label": "OPEN KITCHENS, INC. paid FY2026 (all meals, vendor total)",
+             "amount": sup["OPEN KITCHENS, INC."], "period": "FY2026", "basis": "paid_to_date", "source": SUP_SRC},
+            {"kind": "revenue_that_pays", "label": "Budget book: CPS expects $214M of federal meal reimbursements in FY2026, $209M for lunches, breakfasts, snacks and donated foods, $3.4M for the after-school adult-and-child food program, $2.0M for fresh fruit and vegetables. Every CPS school gives free meals to all students (Community Eligibility Provision)",
+             "amount": 214_000_000, "period": "FY2026", "basis": "gov_estimate", "source": {"doc": "CPS FY2026 Budget Book, Revenue chapter (Child Nutrition Programs)", "url": BB_URL, "page": "27-28 (printed)"}},
+            {"kind": "official_explanation", "label": "Budget book, Nutrition Support Services: department plus school-budget total of $223.1M for FY2026 (FY2025 approved $220.1M); 'reflects an increase in food costs and other programmatic changes'",
+             "amount": 223_134_609, "period": "FY2026", "basis": "gov_estimate", "source": {"doc": "CPS FY2026 Budget Book, Nutrition Support Services", "url": BB_URL, "page": "152-153 (printed)"}},
+        ]})
+    return out
+
+
+# Providers whose own websites or ISBE listings say they run ISBE-approved private special education programs (checked 2026-10-02).
+# Pathways in Education, Ombudsman and Camelot are left out: Pathways and Ombudsman are CPS alternative high schools with their own budget units,
+# and Camelot's Board Reports are for alternative safe school contracts, so their payments are not tuition for special education placements.
+SPED_PROVIDERS = [
+    ("SPECIAL EDUCATION SERVICES DBA MENTA ACADEMY CHICAGO WEST", "Menta Academy (Special Education Services)", "ISBE-approved nonpublic special education day school (menta.com, ISBE private facility listing site 1815)"),
+    ("EASTER SEALS METROPOLITAN CHICAGO, INC.", "Easterseals Academy (Easter Seals Metropolitan Chicago)", "approved by ISBE for students 3 to 22 (eastersealschicago.org/programs/easterseals-academy)"),
+    ("Leslie Shankman School Corporation dba Sonia Shankman Orthogenic Schoo", "Sonia Shankman Orthogenic School", "ISBE-approved therapeutic day school (oschool.org)"),
+    ("LAWRENCE HALL", "Lawrence Hall Therapeutic Day School", "licensed by ISBE, part of the CPS network (lawrencehall.org)"),
+    ("COVE SCHOOL", "The Cove School", "approved by the State Board of Education for students with learning disabilities (coveschool.org)"),
+    ("ELIM CHRISTIAN SCHOOL", "Elim Christian School", "approved for private special education by ISBE (elimcs.org)"),
+    ("NEW HORIZON CENTER FOR THE DEVELOPMENTALLY DISABLED DBA NEW HORIZON CE", "New Horizon Center", "children's program approved by ISBE (newhorizoncenter.org)"),
+    ("REDWOOD SCHOOLS, INC.", "Redwood Schools (Everstone Day School)", "ISBE-approved (lmais.org school listing)"),
+    ("SHRUB OAK INTERNATIONAL SCHOOL, LLC", "Shrub Oak International School (New York)", "out-of-state residential placements named in Board Reports 23-0125-EX26, 23-0222-EX2, 24-0627-EX2"),
+    ("THE ACHIEVEMENT CENTERS INC DBA ACACIA ACADEMY", "Acacia Academy", "approved by ISBE for out-of-district placement (acaciaacademy.com)"),
+    ("Soaring Eagle Academy", "Soaring Eagle Academy", "ISBE-approved nonpublic therapeutic day school (soaringeagleacademy.org)"),
+]
+
+
+def sped_splits():
+    sup = supplier_fy26()
+    pieces = []
+    for key, nice, basis_txt in SPED_PROVIDERS:
+        hits = [v for k, v in sup.items() if k.startswith(key)]
+        assert len(hits) == 1, (key, hits)
+        amt = hits[0]
+        p = {"name": f"{nice}: paid so far", "amount": round(amt, 2), "basis": "paid_to_date", "source": SUP_SRC,
+             "note": f"Vendor total paid by CPS in FY2026 under the name '{key}'. Why it is listed: {basis_txt}. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."}
+        if amt >= 10_000_000:
+            p["why"] = "This is what CPS has paid one private special education school so far this year for students whose plans say they need that setting."
+        pieces.append(p)
+    tot = sum(p["amount"] for p in pieces)
+    return [{
+        "target": {"by": "id", "id": "cps.citywide.special-education.u11674.contracts.a54305.fg114-376711-p124904-0"},
+        "expect_amount": 66_654_450, "mode": "paid_to_date", "pieces": pieces,
+        "residual": {"name": "Tuition budgeted but not matched to a payment shown here",
+                     "why": "CPS pays many other private schools, and some listed schools were paid from other lines, so this part has no provider boxes."},
+        "note": "Plain words: when a student's plan (IEP) says no CPS school can serve them, CPS pays a private school's tuition. The boxes are FY2026 vendor payments to private schools whose "
+                f"own pages or ISBE listings say they are approved for special education (together ${tot:,.0f}). Payments are by vendor, not by budget line, so this is a partial match and the boxes "
+                "can include other contracts. Left out on purpose: Pathways in Education and Ombudsman (CPS alternative high schools with their own budgets) and Camelot (alternative safe school contracts).",
+        "side": [
+            {"kind": "official_explanation", "label": "Budget book: the Contracts category 'includes tuition for charter schools and private therapeutic schools'", "period": "FY2026", "basis": "gov_estimate",
+             "source": {"doc": "CPS FY2026 Budget Book, Operating Budget, Contracts", "url": BB_URL, "page": "16 (printed)"}},
+            {"kind": "official_explanation", "label": "This line is in the Special Education Fund (114), 'Special Education - Non-Public Tuition'. A second line of $6,656,520 ('IDEA Room & Board', federal funds) pays the residential part", "period": "FY2026", "basis": "gov_estimate",
+             "source": {"doc": "CPS BI budget data", "file": "raw/cps/cps_2026_exp_unit_fund_program_account.csv"}},
+            {"kind": "contract_authority", "label": "Board Reports 23-0125-EX26, 23-0222-EX2, 23-0726-EX2 and 24-0627-EX2 approve individual out-of-state residential placements at Shrub Oak International School, each capped at $600,000 a year (student initials in the reports are not shown here)",
+             "period": "FY2023-FY2025", "basis": "gov_estimate", "source": {"doc": "CPS Board Reports (cpsboe.org)", "url": "https://www.cpsboe.org/content/actions/2024_06/24-0627-EX2.pdf"}},
+        ]}]
+
+
+
 if __name__ == "__main__":
     write("cpsdeep_bonds.json", "CPS bond series split into principal and interest (budget book Tables 2-3, official statements) with the revenue that pays each series", bond_splits())
     write("cpsdeep_reserves.json", "CPS pension general-fund reserve split into the operating diversion and the State share; contingencies and vacancy factor explained from the budget book", reserve_splits() + reserve_side_splits())
     write("cpsdeep_capital.json", "CPS capital: IT centralized program spent-so-far by project; emergency repairs, state projects and support services explained from project sheets", capital_splits())
+    write("cpsdeep_services.json", "CPS State Preschool for All (DFSS agreement), lunch program (food contract) explained; special education private tuition matched to provider payments", preschool_lunch_splits() + sped_splits())

@@ -1,0 +1,316 @@
+{
+ "meta": {
+  "author": "cps deep research",
+  "description": "CPS State Preschool for All (DFSS agreement), lunch program (food contract) explained; special education private tuition matched to provider payments",
+  "built_by": "scripts/cpsdeep_build.py"
+ },
+ "splits": [
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.early-childhood.u11385.contracts.a54125.fg362-376689-p410001-0"
+   },
+   "expect_amount": 88143619,
+   "mode": "side_only",
+   "note": "Plain words: CPS passes this state grant money to the City's Department of Family and Support Services (DFSS), which pays about 88 community preschool and infant and toddler programs. CPS does not publish what each program gets, and the DFSS provider list is behind a login, so no provider boxes are shown. The budget line ($88.1M) is smaller than the Board's spending limit for the agreement ($95.6M for FY2026), and the difference is not explained in the sources.",
+   "side": [
+    {
+     "kind": "contract_authority",
+     "label": "Board Report 25-0925-EX2: fifth and final renewal of the agreement with the City's Department of Family and Support Services, not to exceed $99,624,439, 'to support approximately 90 agencies to service prenatal parents and birth to 5 years of age'. Paid from Fund 362, Early Childhood Block Grant (state money from the Illinois State Board of Education)",
+     "amount": 99624439,
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Board Report 25-0925-EX2",
+      "url": "https://www.cpsboe.org/content/actions/2025_09/25-0925-EX2.pdf"
+     }
+    },
+    {
+     "kind": "contract_authority",
+     "label": "Board Report 26-0730-EX2 (July 2026) amends it: FY2026 cut to $95,624,439, $4,000,000 moved to FY2027, term extended to 8/31/2026, about 88 agencies",
+     "amount": 95624439,
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Board Report 26-0730-EX2",
+      "url": "https://www.cpsboe.org/content/actions/2026_07/26-0730-EX2.pdf"
+     }
+    },
+    {
+     "kind": "contract_authority",
+     "label": "Board Report 25-1218-EX4: new agreement for FY2027 at $49,100,000 for about 55 agencies, because oversight is now shared between DFSS and five other City Head Start grantees",
+     "amount": 49100000,
+     "period": "FY2027",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Board Report 25-1218-EX4",
+      "url": "https://www.cpsboe.org/content/actions/2025_12/25-1218-EX4.pdf"
+     }
+    },
+    {
+     "kind": "vendor_payment",
+     "label": "CITY OF CHICAGO paid FY2026 by CPS, all agreements together (vendor total, includes other City agreements, not tied to this line)",
+     "amount": 93717874.87,
+     "period": "FY2026",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     }
+    },
+    {
+     "kind": "official_explanation",
+     "label": "Budget book, Office of Early Childhood Education: 'Continue to sub-grant a portion of the Illinois Early Childhood Block Grant to DFSS to support the Community-Based Preschool for All and Prevention Initiative'",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Office of Early Childhood Education",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "77-78 (printed)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.food.u12050.supplies.a53205.fg312-000000-p256013-0"
+   },
+   "expect_amount": 56983670,
+   "mode": "side_only",
+   "note": "Plain words: this is the food budget for school lunches, paid from the Lunchroom Fund. Two companies run CPS school food, Aramark and Open Kitchens, under one Board contract. Their payments cover all meals (breakfast, lunch, snacks, supper), so they cannot be assigned to this lunch line. Most of the money comes back from the federal government.",
+   "side": [
+    {
+     "kind": "contract_authority",
+     "label": "Board Report 25-0424-PR6: third renewal of the food management contract with Aramark Educational Services and Open Kitchens, not to exceed $116,000,000 for 7/1/2025 to 6/30/2026, about 700 sites (original agreement 22-0525-PR15 was $88,500,000)",
+     "amount": 116000000,
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "Board Report 25-0424-PR6",
+      "url": "https://www.cpsboe.org/content/actions/2025_04/25-0424-PR6.pdf"
+     }
+    },
+    {
+     "kind": "vendor_payment",
+     "label": "ARAMARK EDUCATIONAL SERVICES, LLC paid FY2026 (all meals, vendor total)",
+     "amount": 69425271.08,
+     "period": "FY2026",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     }
+    },
+    {
+     "kind": "vendor_payment",
+     "label": "OPEN KITCHENS, INC. paid FY2026 (all meals, vendor total)",
+     "amount": 26132733.14,
+     "period": "FY2026",
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     }
+    },
+    {
+     "kind": "revenue_that_pays",
+     "label": "Budget book: CPS expects $214M of federal meal reimbursements in FY2026, $209M for lunches, breakfasts, snacks and donated foods, $3.4M for the after-school adult-and-child food program, $2.0M for fresh fruit and vegetables. Every CPS school gives free meals to all students (Community Eligibility Provision)",
+     "amount": 214000000,
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Revenue chapter (Child Nutrition Programs)",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "27-28 (printed)"
+     }
+    },
+    {
+     "kind": "official_explanation",
+     "label": "Budget book, Nutrition Support Services: department plus school-budget total of $223.1M for FY2026 (FY2025 approved $220.1M); 'reflects an increase in food costs and other programmatic changes'",
+     "amount": 223134609,
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Nutrition Support Services",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "152-153 (printed)"
+     }
+    }
+   ]
+  },
+  {
+   "target": {
+    "by": "id",
+    "id": "cps.citywide.special-education.u11674.contracts.a54305.fg114-376711-p124904-0"
+   },
+   "expect_amount": 66654450,
+   "mode": "paid_to_date",
+   "pieces": [
+    {
+     "name": "Menta Academy (Special Education Services): paid so far",
+     "amount": 14671644.13,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'SPECIAL EDUCATION SERVICES DBA MENTA ACADEMY CHICAGO WEST'. Why it is listed: ISBE-approved nonpublic special education day school (menta.com, ISBE private facility listing site 1815). The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines.",
+     "why": "This is what CPS has paid one private special education school so far this year for students whose plans say they need that setting."
+    },
+    {
+     "name": "Easterseals Academy (Easter Seals Metropolitan Chicago): paid so far",
+     "amount": 6209757.8,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'EASTER SEALS METROPOLITAN CHICAGO, INC.'. Why it is listed: approved by ISBE for students 3 to 22 (eastersealschicago.org/programs/easterseals-academy). The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Sonia Shankman Orthogenic School: paid so far",
+     "amount": 4544961.95,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'Leslie Shankman School Corporation dba Sonia Shankman Orthogenic Schoo'. Why it is listed: ISBE-approved therapeutic day school (oschool.org). The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Lawrence Hall Therapeutic Day School: paid so far",
+     "amount": 2426391.71,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'LAWRENCE HALL'. Why it is listed: licensed by ISBE, part of the CPS network (lawrencehall.org). The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "The Cove School: paid so far",
+     "amount": 2749151.8,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'COVE SCHOOL'. Why it is listed: approved by the State Board of Education for students with learning disabilities (coveschool.org). The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Elim Christian School: paid so far",
+     "amount": 2150377.46,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'ELIM CHRISTIAN SCHOOL'. Why it is listed: approved for private special education by ISBE (elimcs.org). The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "New Horizon Center: paid so far",
+     "amount": 1844038.39,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'NEW HORIZON CENTER FOR THE DEVELOPMENTALLY DISABLED DBA NEW HORIZON CE'. Why it is listed: children's program approved by ISBE (newhorizoncenter.org). The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Redwood Schools (Everstone Day School): paid so far",
+     "amount": 1817534.15,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'REDWOOD SCHOOLS, INC.'. Why it is listed: ISBE-approved (lmais.org school listing). The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Shrub Oak International School (New York): paid so far",
+     "amount": 1255033.88,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'SHRUB OAK INTERNATIONAL SCHOOL, LLC'. Why it is listed: out-of-state residential placements named in Board Reports 23-0125-EX26, 23-0222-EX2, 24-0627-EX2. The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Acacia Academy: paid so far",
+     "amount": 1339959.82,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'THE ACHIEVEMENT CENTERS INC DBA ACACIA ACADEMY'. Why it is listed: approved by ISBE for out-of-district placement (acaciaacademy.com). The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    },
+    {
+     "name": "Soaring Eagle Academy: paid so far",
+     "amount": 1042438.75,
+     "basis": "paid_to_date",
+     "source": {
+      "doc": "CPS procurement API, supplier payments FY2026 (vendor totals, not tied to budget lines)",
+      "url": "https://api.cps.edu/procurement/Supplier/GetSupplierPayments?reportyear=2026",
+      "file": "raw/cps/cps_supplier_payments_FY2026.json"
+     },
+     "note": "Vendor total paid by CPS in FY2026 under the name 'Soaring Eagle Academy'. Why it is listed: ISBE-approved nonpublic therapeutic day school (soaringeagleacademy.org). The total can include other CPS contracts with the same organization, and CPS does not link payments to budget lines."
+    }
+   ],
+   "residual": {
+    "name": "Tuition budgeted but not matched to a payment shown here",
+    "why": "CPS pays many other private schools, and some listed schools were paid from other lines, so this part has no provider boxes."
+   },
+   "note": "Plain words: when a student's plan (IEP) says no CPS school can serve them, CPS pays a private school's tuition. The boxes are FY2026 vendor payments to private schools whose own pages or ISBE listings say they are approved for special education (together $40,051,290). Payments are by vendor, not by budget line, so this is a partial match and the boxes can include other contracts. Left out on purpose: Pathways in Education and Ombudsman (CPS alternative high schools with their own budgets) and Camelot (alternative safe school contracts).",
+   "side": [
+    {
+     "kind": "official_explanation",
+     "label": "Budget book: the Contracts category 'includes tuition for charter schools and private therapeutic schools'",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS FY2026 Budget Book, Operating Budget, Contracts",
+      "url": "https://www.cps.edu/globalassets/cps-pages/about-cps/finance/budget/budget-2026/docs/fy2026-budget-book-final-approved-1.2.pdf",
+      "page": "16 (printed)"
+     }
+    },
+    {
+     "kind": "official_explanation",
+     "label": "This line is in the Special Education Fund (114), 'Special Education - Non-Public Tuition'. A second line of $6,656,520 ('IDEA Room & Board', federal funds) pays the residential part",
+     "period": "FY2026",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS BI budget data",
+      "file": "raw/cps/cps_2026_exp_unit_fund_program_account.csv"
+     }
+    },
+    {
+     "kind": "contract_authority",
+     "label": "Board Reports 23-0125-EX26, 23-0222-EX2, 23-0726-EX2 and 24-0627-EX2 approve individual out-of-state residential placements at Shrub Oak International School, each capped at $600,000 a year (student initials in the reports are not shown here)",
+     "period": "FY2023-FY2025",
+     "basis": "gov_estimate",
+     "source": {
+      "doc": "CPS Board Reports (cpsboe.org)",
+      "url": "https://www.cpsboe.org/content/actions/2024_06/24-0627-EX2.pdf"
+     }
+    }
+   ]
+  }
+ ]
+}
