@@ -350,7 +350,7 @@ def preschool_lunch_splits():
             {"kind": "vendor_payment", "label": "OPEN KITCHENS, INC. paid FY2026 (all meals, vendor total)",
              "amount": sup["OPEN KITCHENS, INC."], "period": "FY2026", "basis": "paid_to_date", "source": SUP_SRC},
             {"kind": "revenue_that_pays", "label": "Budget book: CPS expects $214M of federal meal reimbursements in FY2026, $209M for lunches, breakfasts, snacks and donated foods, $3.4M for the after-school adult-and-child food program, $2.0M for fresh fruit and vegetables. Every CPS school gives free meals to all students (Community Eligibility Provision)",
-             "amount": 214_000_000, "period": "FY2026", "basis": "gov_estimate", "source": {"doc": "CPS FY2026 Budget Book, Revenue chapter (Child Nutrition Programs)", "url": BB_URL, "page": "27-28 (printed)"}},
+             "amount": 214_000_000, "period": "FY2026", "basis": "gov_estimate", "source": {"doc": "CPS FY2026 Budget Book, Revenue chapter (Child Nutrition Programs)", "url": BB_URL, "page": "32 (printed)"}},
             {"kind": "official_explanation", "label": "Budget book, Nutrition Support Services: department plus school-budget total of $223.1M for FY2026 (FY2025 approved $220.1M); 'reflects an increase in food costs and other programmatic changes'",
              "amount": 223_134_609, "period": "FY2026", "basis": "gov_estimate", "source": {"doc": "CPS FY2026 Budget Book, Nutrition Support Services", "url": BB_URL, "page": "152-153 (printed)"}},
         ]})
