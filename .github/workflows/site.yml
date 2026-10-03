@@ -9,6 +9,8 @@ permissions:
   contents: read
 jobs:
   site:
+    # Static pages need the checked export, which needs the unpublished input asset.
+    if: vars.CHICAGO_BUDGET_INPUTS_URL != ''
     runs-on: ubuntu-latest
     timeout-minutes: 15
     defaults:
@@ -16,6 +18,21 @@ jobs:
         working-directory: site
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+        working-directory: .
+      - name: Rebuild and validate site inputs
+        working-directory: .
+        env:
+          CHICAGO_BUDGET_INPUTS_URL: ${{ vars.CHICAGO_BUDGET_INPUTS_URL }}
+        run: |
+          bash build/fetch_inputs.sh
+          bash build/build_all.sh
+          python build/export_site.py
+          python build/validate_site_data.py
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
