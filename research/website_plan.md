@@ -39,7 +39,7 @@ A static website, no server, built only from `data/budget.db`. Three budgets sid
 |---|---|---|
 | A 13-year-old (the design target) | Understand where the money goes without jargon | Kid-friendly box names (already in `nodes.name`), one idea per screen, glossary words highlighted, amounts in words ("$2.1 billion") with the exact figure one tap away |
 | Parents, teachers | Find their school, park or neighborhood service | Search by school (640 CPS school boxes), park (230 park boxes), department |
-| Reporters, watchdogs, City Council staff | Check a number against the source, see vendors and payments, download data | Source link on every box, official name in the details, vendor pages, exact cents, JSON download per box |
+| Reporters, watchdogs, City Council staff | Check a number against the source, see vendors and payments, inspect public data | Source link on every box, official name in the details, vendor pages, exact cents, public repository |
 | City, CPS and Park District staff | See how their line was split, and object if it is wrong | Basis badge and method note on every estimate, a "report a problem" link with the box id that opens a pre-filled issue |
 | Contributors (section 20) | Fix a number or add detail | Public repository, split files, CI that checks their change the same way the maintainer does |
 | Screen reader and keyboard users | Same content, same depth | Every tile is a real link in a list, a table view mirrors every box view |
@@ -136,7 +136,7 @@ flowchart TD
 | `/sources` | Every document and dataset used, with links where known, grouped by government, with the number of boxes that cite each | distinct `source` JSON without `file` |
 | `/gaps` | "What we could not find": the ranked dead ends, both coverage tables, what it would take | leaves of $10M or more from `nodes`, plus hand-written context from audit 3 |
 | `/contribute` | How to report a wrong number, how the data is built, link to the repository and CONTRIBUTING (section 20) | hand-written |
-| `/box/<id>.json` | Raw JSON of one box, its children and side facts, for anyone who wants the data. Written for parents of $1M or more (4,606 files, open question 11) | export |
+| `/box/<id>.json` | Not built. The user chose GitHub links to source files instead of per-box downloads. | |
 | `/404` | Friendly not-found with search | |
 
 Header on every page: site name, the three budgets, Find, About. Footer: data build date and commit, the list of "paid so far" periods in use (not one date), link to Sources, link to Contribute, link to report a problem (GitHub issue, pre-filled with the box id; decided with open question 8).
@@ -167,7 +167,7 @@ How a box page looks, top to bottom:
    - **Negative parent** (5 boxes). The page is reached from the negatives strip of its own parent. The equation (section 6.2) is shown first, then tiles sized by absolute value, each marked with its sign, and the header says "This box is negative. It takes money away from the box above."
    - **Zero parent** (2 boxes). No tiles. The list view only, with the sentence "Every box inside this one is $0 in the 2026 budget."
 4. **"Also shown as a list"**: a table under the tiles with name, amount, share, basis, and an "open" link. This is the same data as the tiles and is always present (not hidden behind a toggle), because it is the accessible version and the place where long names can be read in full.
-5. **Side facts** (section 6.3), **sources** (section 6.4), and a small **"Get this box as JSON"** link (on boxes that have the file, section 4).
+5. **Side facts** (section 6.3) and **sources** (section 6.4), with public GitHub links to relevant source files when available. No per-box download link.
 6. **Up one level** button at the bottom, mirroring the breadcrumb.
 
 ### 5.2 Mobile first
@@ -513,7 +513,7 @@ Both read only `data/budget.db` (and the hand-written content files under `site/
 Writes `site/public/data/`:
 
 - `manifest.json`: build commit (`git rev-parse HEAD`) and time (from `checks.run_at`), the three official totals, the `city-twice` total, the gross check, coverage shares under both rules for each of the four roots computed from `nodes` (with an assertion that the build rule equals `checks.depth`), the list of paid-so-far period keys with labels and box counts (section 6.1.1), chunk index, id-to-hash map, counts, output file count.
-- `spine.json`, `chunks/*.json`, `sources.json`, `side/*.json`, `box/<hash>.json` as in section 11.
+- `spine.json`, `chunks/*.json`, `sources.json`, `side/*.json` as in section 11. No per-box JSON downloads.
 - `search/*.json`.
 - `vendors.json` and `vendors/<slug>.json` from the `vendors` table (section 7.2), or the fallback.
 - `gaps.json`: every leaf of $10M or more, with amount, basis, why sentence and path, sorted by absolute amount, per root (City proper 310, memo branch 30, CPS 137, Parks 8 today), plus the counts and totals of negative, proxy, residual and adjustment boxes by root (today, leaves only: City proxy 378 / $4.06B, residual 164 / $2.05B, adjustment 259 / $525M; CPS proxy 392 / $2.16B, residual 132 / $109M, adjustment 19 / $465M; Parks proxy 7 / $63M, residual 18 / $2.6M, adjustment 276 / $15M).
