@@ -596,7 +596,7 @@ def build():
     # ---- GO series isolated from the 2026AB all-outstanding table (type columns tied to Table 3 balances)
     g26 = parse_go_2026ab()
     gv = g26["values"]
-    leaves.append(leaf("GO Taxable Series 2010B (MSAC Program, BAB)", "go", gv["ar_p"] + gv["ar_i"], gv["ar_p"], g26["doc"], 26,
+    leaves.append(leaf("GO Taxable Series 2010B (MSAC), Build America Bonds", "go", gv["ar_p"] + gv["ar_i"], gv["ar_p"], g26["doc"], 26,
                        g26["row"], "current",
                        "Alternate Revenue Bonds column of Table 4 is this one series: its total principal $%d equals the Table 3 balance. Row 'Year Ending January 1 2027' holds the June 1 and December 1 2026 payments (table note). Interest is gross of the federal BAB subsidy." % g26["msac_balance"],
                        "printed in table"))

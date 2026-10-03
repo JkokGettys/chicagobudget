@@ -1378,7 +1378,7 @@
    "printed_upper_bound_interest": 6531000
   },
   {
-   "series": "GO Taxable Series 2010B (MSAC Program, BAB)",
+   "series": "GO Taxable Series 2010B (MSAC), Build America Bonds",
    "credit": "go",
    "window": "payments Jan 2 2026 through Jan 1 2027",
    "total_pi": 6682387,
@@ -2809,7 +2809,7 @@
    "amount": 29585510
   },
   {
-   "series": "GO Taxable Series 2010B (MSAC Program, BAB)",
+   "series": "GO Taxable Series 2010B (MSAC), Build America Bonds",
    "fund": "Bond Redemption and Interest Series Fund",
    "credit": "go",
    "status": "current",
@@ -2822,7 +2822,7 @@
    "amount": 6240000
   },
   {
-   "series": "GO Taxable Series 2010B (MSAC Program, BAB)",
+   "series": "GO Taxable Series 2010B (MSAC), Build America Bonds",
    "fund": "Bond Redemption and Interest Series Fund",
    "credit": "go",
    "status": "current",
