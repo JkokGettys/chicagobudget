@@ -14,19 +14,19 @@ The build stops if any check fails. `build/verify_db.py` then re-checks the fini
 
 | Government | Boxes | Total | Matches official figure |
 |---|---:|---:|---|
-| City of Chicago | 14,777 (incl. 238 in the "counted twice" branch) | $16,842,553,003.00 | Passed ordinance net total, p. 544 |
-| Chicago Public Schools | 24,870 | $10,253,327,463.68 | FY2026 budget, to the cent |
+| City of Chicago | 15,420 (incl. 238 in the "counted twice" branch) | $16,842,553,003.00 | Passed ordinance net total, p. 544 |
+| Chicago Public Schools | 24,894 | $10,253,327,463.68 | FY2026 budget, to the cent |
 | Chicago Park District | 7,046 | $637,580,350.00 | 2026 Appropriations grand total |
 
-Share of dollars by the size of the box where clicking stops:
+Share of dollars (absolute leaf dollars) in boxes of $10M or more where clicking stops, measured 2026-10-03 (`scripts/treeaudit3_coverage.py` and `treeaudit3_strict.py`, details in `research/tree_gap_audit_3.md`). Two rules give different answers, so both are shown:
 
-| | Under $1M | $1M to $10M | $10M or more |
-|---|---:|---:|---:|
-| City | 26.0% | 9.4% | 64.5% |
-| CPS | 46.6% | 14.8% | 38.6% |
-| Parks | 40.5% | 33.6% | 25.9% |
+| | Build rule: "N people x rate" boxes count as small | Strict rule: every box judged by its own amount |
+|---|---:|---:|
+| City | 43.7% | 69.4% |
+| CPS | 27.1% | 43.4% |
+| Parks | 17.5% | 25.7% |
 
-"N people x rate" boxes count as under $1M (each person is under $1M). These shares are stricter than `research/final_gap_audit.md`, because estimates that don't fit inside the 2026 budget line (for example 2025 overtime by title) are kept as side info, not as boxes.
+The build rule treats a box like "2,148 positions x $111,252" as small, because each person is under $1M. The strict rule judges that box by its whole amount. Estimates that don't fit inside a 2026 budget line (for example 2025 overtime by title) are kept as side info, not as boxes.
 
 ## Tables
 
