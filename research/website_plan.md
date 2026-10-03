@@ -745,6 +745,8 @@ Decided by the user on 2026-10-03:
 | 13 | Launch scope | **Everything** (all three governments and the counted-twice branch) |
 | 8 | Reporting problems | **GitHub issues** with templates (no separate email) |
 | - | Repository visibility | **Public** (names in committed data files are acceptable; the site still hides individuals' names) |
+| 16 | Under-5 rule on budgeted rates | **Actual pay only.** Budgeted single-position rates printed in the ordinance stay as boxes |
+| 14 | Kid testers | **None.** Drop the kid usability test from M5 and M7; replace it with a plain-language review against the grade 7 reading target and the glossary |
 
 Still open (recommendations stand unless the user says otherwise): 2 deploy machine, 10 service worker (default no), 12 refresh cadence, 14 kid testers, 15 remaining build changes (treated as approved: remainder sentence, vendors, context), 16 under-5 rule on budgeted rates (recommended: actual pay only), 17 CPS FY2026 badge, 18 individuals' neutral descriptions (recommended: keep), 19 memo branch out of headline figures, 20 strict coverage leads, 21 licenses (recommended MIT + CC BY 4.0), 22 contribution scope.
 
