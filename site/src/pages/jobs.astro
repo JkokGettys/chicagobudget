@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import {box,compact,href} from '../lib/data';
+import {readFileSync} from 'node:fs';
+import {join} from 'node:path';
+type Entry={id:string;name:string;amount_cents:number};
+const entries:Entry[]=JSON.parse(readFileSync(join(process.cwd(),'public/data/jobs.json'),'utf8'));
+const jobs=entries.filter(r=>!/^\d+ positions? x /i.test(r.name)).sort((a,b)=>Math.abs(b.amount_cents)-Math.abs(a.amount_cents));
+const examples=jobs.slice(0,300);
+---
+<Base title="Budgeted jobs"><div class="stack hero"><h1>Budgeted jobs</h1><p class="lede">These are job titles and planned costs in Chicago public budgets, not a list of employees or what any person was paid.</p><p class="callout">A budgeted rate is not actual pay. We do not publish actual pay for groups smaller than five people. Open a box to check the budget document behind it.</p><p><a href="/sources">Budget sources</a> · <a href="/glossary">What is a position?</a></p><p>Showing 300 of {jobs.length.toLocaleString('en-US')} budgeted job-title boxes, sorted by size. <a href="/find">Search all boxes</a> for a title or department.</p><div class="table-scroll"><table><caption>Largest budgeted job-title boxes</caption><thead><tr><th scope="col">Title</th><th scope="col">Government</th><th scope="col">Planned amount</th></tr></thead><tbody>{examples.map(r=><tr><th scope="row"><a href={href(box(r.id)??{...r})}>{r.name}</a></th><td>{r.id.startsWith('cps.')?'Chicago Public Schools':r.id.startsWith('parks.')?'Chicago Park District':'City of Chicago'}</td><td class="numeric">{compact(r.amount_cents)}</td></tr>)}</tbody></table></div></div></Base>

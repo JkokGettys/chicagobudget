@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import {box,compact,href} from '../lib/data';
+import {readFileSync} from 'node:fs';
+import {join} from 'node:path';
+type Entry={id:string;name:string;amount_cents:number};
+const parks:Entry[]=JSON.parse(readFileSync(join(process.cwd(),'public/data/parks.json'),'utf8'));
+const groups=new Map<string,Entry[]>();
+for(const park of parks){const region=park.id.match(/(?:^|\.)(north|south|central|west|east)-region(?:\.|$)/)?.[1]??'Other';const label=region==='Other'?'Other':`${region[0].toUpperCase()}${region.slice(1)} region`;groups.set(label,[...(groups.get(label)??[]),park])}
+---
+<Base title="Park directory"><div class="stack hero"><h1>Find a park</h1><p class="lede">Explore the Chicago Park District's {parks.length} park budget boxes, grouped by region.</p><p>These are planned amounts, not money paid to a park. Open a box for its source and any facts about that park. <a href="/sources">See the source documents</a>.</p>{[...groups].map(([region,items])=><section><h2>{region}</h2><div class="table-scroll"><table><caption>{region} parks</caption><thead><tr><th scope="col">Park</th><th scope="col">Budgeted amount</th></tr></thead><tbody>{items.sort((a,b)=>a.name.localeCompare(b.name)).map(park=><tr><th scope="row"><a href={href(box(park.id)??park)}>{park.name}</a></th><td class="numeric">{compact(park.amount_cents)}</td></tr>)}</tbody></table></div></section>)}</div></Base>

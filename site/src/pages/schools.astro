@@ -1,0 +1,10 @@
+---
+import Base from '../layouts/Base.astro';
+import {box,compact,href} from '../lib/data';
+import {readFileSync} from 'node:fs';
+import {join} from 'node:path';
+type Entry={id:string;name:string;amount_cents:number};
+const schools:Entry[]=JSON.parse(readFileSync(join(process.cwd(),'public/data/schools.json'),'utf8'));
+schools.sort((a,b)=>a.name.localeCompare(b.name));
+---
+<Base title="CPS schools"><div class="stack hero"><h1>Chicago public schools</h1><p class="lede">Find a school and open its budget box. CPS fiscal year 2026 runs from July 2025 through June 2026.</p><p>The amounts are budgeted money, not a school's spending to date. Each box links to its source and shows any enrollment facts available in the data. <a href="/sources">See the source documents</a>.</p><label for="school-filter">Find a school</label><input class="search-field" id="school-filter" type="search" placeholder="Type a school name"/><p id="school-count" aria-live="polite">{schools.length} schools</p><div class="table-scroll"><table id="school-table"><caption>CPS school budget boxes</caption><thead><tr><th scope="col">School</th><th scope="col">Budgeted amount</th></tr></thead><tbody>{schools.map(s=><tr data-name={s.name.toLocaleLowerCase('en-US')}><th scope="row"><a href={href(box(s.id)??s)}>{s.name}</a></th><td class="numeric">{compact(s.amount_cents)}</td></tr>)}</tbody></table></div><script>const input=document.querySelector<HTMLInputElement>('#school-filter');const count=document.querySelector<HTMLElement>('#school-count');input?.addEventListener('input',()=>{let shown=0;document.querySelectorAll<HTMLTableRowElement>('#school-table tbody tr').forEach(row=>{row.hidden=!(row.dataset.name??'').includes(input.value.trim().toLocaleLowerCase('en-US'));if(!row.hidden)shown++});if(count)count.textContent=`${shown} schools shown`});</script></div></Base>
