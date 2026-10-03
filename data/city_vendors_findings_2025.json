@@ -10,8 +10,8 @@
   },
   {
    "vendor": "F.H. PASCHEN S.N. NIELSEN & ASSOCIATES, LLC",
-   "paid_2025": 332735104.89,
-   "payments": 321,
+   "paid_2025": 177480391.58,
+   "payments": 175,
    "depts": [
     "Department of Fleet and Facility Management",
     "Department of Environment",
@@ -419,16 +419,6 @@
    "award_total": 100139181.1
   },
   {
-   "contract": "68348",
-   "vendor": "A SAFE HAVEN FOUNDATION",
-   "desc": "MEDIAN AND BOULEVARD LANDSCAPE MAINTENANCE AND SERVICES- CENTRAL REGION",
-   "dept": "Chicago Department of Transportation",
-   "type": "WORK SERVICES / FACILITIES MAINT.",
-   "procurement": "SOLE SOURCE",
-   "paid_2025": 2076929.0,
-   "award_total": 9690000.0
-  },
-  {
    "contract": "270136",
    "vendor": "CONDY HOLDINGS LLC DBA CARUS LLC",
    "desc": "Corrosion Control Product-Liquid Blended Phosphate",
@@ -439,16 +429,6 @@
    "award_total": 9408000.0
   },
   {
-   "contract": "98336",
-   "vendor": "A SAFE HAVEN FOUNDATION",
-   "desc": "MEDIAN AND BOULEVARD LANDSCAPE MAINTENANCE AND SERVICES - SOUTHEAST REGION",
-   "dept": "Chicago Department of Transportation",
-   "type": "WORK SERVICES / FACILITIES MAINT.",
-   "procurement": "SOLE SOURCE",
-   "paid_2025": 1659803.52,
-   "award_total": 7282550.0
-  },
-  {
    "contract": "T26138",
    "vendor": "MOTOROLA INC FKA SUNCOAST",
    "desc": "SOFTWARE AND SERVICES AGREEMENT",
@@ -457,6 +437,16 @@
    "procurement": "SOLE SOURCE",
    "paid_2025": 1452499.75,
    "award_total": 44213180.1
+  },
+  {
+   "contract": "68348",
+   "vendor": "A SAFE HAVEN FOUNDATION",
+   "desc": "MEDIAN AND BOULEVARD LANDSCAPE MAINTENANCE AND SERVICES- CENTRAL REGION",
+   "dept": "Chicago Department of Transportation",
+   "type": "WORK SERVICES / FACILITIES MAINT.",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 1251856.29,
+   "award_total": 9690000.0
   },
   {
    "contract": "283026",
@@ -497,6 +487,16 @@
    "procurement": "SOLE SOURCE",
    "paid_2025": 955301.05,
    "award_total": 5990321.0
+  },
+  {
+   "contract": "98336",
+   "vendor": "A SAFE HAVEN FOUNDATION",
+   "desc": "MEDIAN AND BOULEVARD LANDSCAPE MAINTENANCE AND SERVICES - SOUTHEAST REGION",
+   "dept": "Chicago Department of Transportation",
+   "type": "WORK SERVICES / FACILITIES MAINT.",
+   "procurement": "SOLE SOURCE",
+   "paid_2025": 949050.46,
+   "award_total": 7282550.0
   },
   {
    "contract": "T26824",
@@ -666,8 +666,8 @@
   "Chicago Police Department": 13569506.28,
   "Department of Technology and Innovation": 6121079.72,
   "Chicago Department of Aviation": 5770502.28,
-  "Chicago Department of Public Health": 5169495.28,
-  "Chicago Department of Transportation": 4808220.16,
+  "Chicago Department of Public Health": 5118870.13,
+  "Chicago Department of Transportation": 3272394.39,
   "Department of Water Management": 3043936.87,
   "Chicago Fire Department": 1216576.56,
   "Department of Family and Support Services": 310944.75,
@@ -675,18 +675,18 @@
   "Department of Planning and Development": 63706.03
  },
  "procurement_type_coverage": {
-  "paid_on_contracts_2025": 5550246202.46,
-  "with_procurement_type": 3405586909.56,
-  "pct_with_procurement_type": 61.35920435476472,
-  "sole_source_paid": 79552363.12,
+  "paid_on_contracts_2025": 5374641127.809999,
+  "with_procurement_type": 3233661886.9,
+  "pct_with_procurement_type": 60.165168427117244,
+  "sole_source_paid": 77965912.2,
   "emergency_paid": 0.0
  },
  "procurement_type_paid_breakdown": {
-  "BID": 1524263766.68,
-  "RFP": 1007742372.79,
+  "BID": 1360513991.94,
+  "RFP": 1001476165.42,
   "RFQ": 555518746.93,
-  "MASTER AGREEMENT": 118247001.52,
-  "SOLE SOURCE": 79552363.12,
+  "MASTER AGREEMENT": 117924411.89,
+  "SOLE SOURCE": 77965912.2,
   "EMERGENCY": 0.0,
   "JOINT PURCHASE": 18527976.11,
   "REFERENCE CONTRACT": 27582065.75,
@@ -694,20 +694,20 @@
   "RFI": 0.0,
   "CM": 0.0,
   "INNOVATIVE PROCUREMENT": 0.0,
-  "(blank, mostly delegate agency, comptroller and legacy)": 2144659292.9
+  "(blank, mostly delegate agency, comptroller and legacy)": 2140979240.91
  },
  "consulting": {
   "definition": "contract_type contains CONSULT (PRO SERV CONSULTING over/under $250,000, PRO SERV-BUSINESS CONSULTING) or description contains CONSULT",
-  "paid_2025": 600289699.45,
-  "contract_type_only_paid_2025": 496999503.69000006,
+  "paid_2025": 599954218.0999999,
+  "contract_type_only_paid_2025": 496948878.54,
   "by_dept": {
    "Department of Technology and Innovation": 140541360.87,
    "Department of Fleet and Facility Management": 112284479.67,
    "Chicago Department of Aviation": 102831163.8,
-   "Department of Finance": 81030224.19,
+   "Department of Finance": 80745367.99,
    "Chicago Department of Transportation": 64699346.79,
    "Office of Public Safety Administration": 25269801.53,
-   "Chicago Department of Public Health": 14201111.93,
+   "Chicago Department of Public Health": 14150486.78,
    "Department of Water Management": 13599763.47,
    "Office of Emergency Management and Communications": 10102772.26,
    "Department of Streets and Sanitation": 8164783.49,
@@ -1090,30 +1090,30 @@
   ]
  },
  "delegate_agencies": {
-  "paid_2025": 584822998.9499999,
+  "paid_2025": 581399943.94,
   "agencies_dept_pairs": {
-   "groups": 639,
-   "groups_under_1M": 525,
-   "dollars": 584822998.95,
-   "dollars_in_groups_under_1M": 131470195.36000001,
-   "pct_dollars_under_1M": 22.480339452457166,
-   "pct_groups_under_1M": 82.15962441314554
+   "groups": 636,
+   "groups_under_1M": 523,
+   "dollars": 581399943.9399999,
+   "dollars_in_groups_under_1M": 130539112.25,
+   "pct_dollars_under_1M": 22.452549851547897,
+   "pct_groups_under_1M": 82.23270440251572
   },
   "agency_contract_groups": {
-   "groups": 1672,
-   "groups_under_1M": 1556,
-   "dollars": 584823656.02,
-   "dollars_in_groups_under_1M": 257916109.84,
-   "pct_dollars_under_1M": 44.101517984966684,
-   "pct_groups_under_1M": 93.0622009569378
+   "groups": 1648,
+   "groups_under_1M": 1532,
+   "dollars": 581400601.01,
+   "dollars_in_groups_under_1M": 254493054.82999998,
+   "pct_dollars_under_1M": 43.77241000231143,
+   "pct_groups_under_1M": 92.96116504854369
   },
   "by_dept": {
-   "Department of Family and Support Services": 437041304.05,
-   "Chicago Department of Public Health": 110754656.67,
+   "Department of Family and Support Services": 434549894.45,
+   "Chicago Department of Public Health": 110274808.92,
    "Department of Housing": 15357380.41,
-   "Department of Business Affairs and Consumer Protection": 8011115.15,
+   "Department of Business Affairs and Consumer Protection": 7709704.14,
    "Mayor's Office for People with Disabilities": 4645725.7,
-   "Department of Planning and Development": 4053829.24,
+   "Department of Planning and Development": 3903442.59,
    "Department of Cultural Affairs and Special Events": 2416018.68,
    "Office of Budget and Management": 1384309.29,
    "Department of Finance": 912859.96,
@@ -1339,24 +1339,24 @@
   "DFSS-CORP-HL-SPC": 23640823.17,
   "DFSS-IDOA-SS-HDM": 19518969.91,
   "DFSS-CORP-HL-RRP": 18871951.99,
-  "DFSS-CORP-YS-OST": 16809400.66,
+  "DFSS-CORP-YS-OST": 16757194.56,
   "DFSS-CORP-HL-EFSP": 13810824.63,
-  "DFSS-IDHS-HL-INTHS": 12463649.02,
-  "DFSS-CORP-HL-ESH": 8692946.14,
+  "DFSS-IDHS-HL-INTHS": 11973306.48,
+  "DFSS-CORP-HL-ESH": 8382334.53,
   "DFSS-CORP-YS-CB": 7953507.66,
   "DFSS-IDHS-CS-CCO": 7688546.43,
-  "DFSS-CORP-YS-MENT": 7114030.69,
-  "DFSS-CDBG-HL-ESH": 5490327.68,
+  "DFSS-CORP-YS-MENT": 7023590.78,
   "DFSS-ARP-HL-RRP": 5436744.37,
   "DFSS-ARP-HL-EFSP": 5318345.68,
-  "DFSS-ESG-HL-ESH": 4568543.59,
+  "DFSS-CDBG-HL-ESH": 5111799.67,
   "DFSS-ARP-YS-SYEP": 4424317.14,
   "DFSS-ARP-DV-EFA": 4297445.34,
   "DFSS-ARP-YS-CYSC": 4237378.57,
+  "DFSS-ESG-HL-ESH": 4197604.8,
   "DFSS-ARP-YS-MCMF": 3711184.06,
-  "DFSS-CSBG-HL-INTHS": 3516498.41,
   "DFSS-CORP-HL-SOES": 3278981.64,
   "DFSS-IDOA-SS-CD": 3035321.72,
+  "DFSS-CSBG-HL-INTHS": 2985526.74,
   "DFSS-ARP-DV-LSFGBVS": 2985439.86
  },
  "direct_vouchers": {
@@ -1536,7 +1536,7 @@
   "label": "paid in calendar 2025, full year",
   "latest_check_date": "12/31/2025",
   "deduplicated": true,
-  "payment_rows": 112771,
+  "payment_rows": 112047,
   "note": "JSON keys named paid_2025... keep their historical names on every basis and hold this basis's dollars. No annualizing or extrapolation."
  },
  "tif": {
@@ -1648,8 +1648,8 @@
    "rows": 7507
   },
   "contract join": {
-   "amount": 957283175.44,
-   "rows": 12610
+   "amount": 781879322.61,
+   "rows": 11896
   },
   "payroll deduction voucher (PVPR) -> Finance General": {
    "amount": 701784795.36,
@@ -1660,8 +1660,8 @@
    "rows": 34227
   },
   "contract description prefix (CDPH-, MOPD- ...)": {
-   "amount": 29023105.52,
-   "rows": 1392
+   "amount": 28821883.7,
+   "rows": 1382
   },
   "contract join, contract dept unmappable/blank": {
    "amount": 12790295.66,
@@ -1678,8 +1678,8 @@
    "rows": 7507
   },
   "contract join": {
-   "amount": 957283175.44,
-   "rows": 12610
+   "amount": 781879322.61,
+   "rows": 11896
   },
   "payroll deduction voucher (PVPR) -> Finance General": {
    "amount": 701784795.36,
@@ -1690,8 +1690,8 @@
    "rows": 34227
   },
   "contract description prefix (CDPH-, MOPD- ...)": {
-   "amount": 29023105.52,
-   "rows": 1392
+   "amount": 28821883.7,
+   "rows": 1382
   },
   "contract join, contract dept unmappable/blank": {
    "amount": 12790295.66,

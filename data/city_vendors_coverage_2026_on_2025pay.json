@@ -5,7 +5,7 @@
   "label": "paid in calendar 2025, full year",
   "latest_check_date": "12/31/2025",
   "deduplicated": true,
-  "payment_rows": 112771,
+  "payment_rows": 112047,
   "note": "JSON keys named paid_2025... keep their historical names on every basis and hold this basis's dollars. No annualizing or extrapolation."
  },
  "budget_by_kind_family": {
@@ -89,8 +89,8 @@
    "budget_vendor_payable": 148541108.0,
    "paid_2025_vendor": 35473339.379999995,
    "ratio_paid_to_budget": 0.238811598066173,
-   "covered_capped_by_family": 22849537.13,
-   "covered_capped_pct": 15.382635445266775
+   "covered_capped_by_family": 22849537.130000003,
+   "covered_capped_pct": 15.382635445266777
   },
   {
    "dept": "84",
@@ -99,10 +99,10 @@
    "budget_personnel": 175446218.0,
    "budget_nonvendor_other": 834785760.0,
    "budget_vendor_payable": 827290585.0,
-   "paid_2025_vendor": 752114553.25,
-   "ratio_paid_to_budget": 0.9091298352561331,
-   "covered_capped_by_family": 640730263.72,
-   "covered_capped_pct": 77.44923915941821
+   "paid_2025_vendor": 649636887.1800001,
+   "ratio_paid_to_budget": 0.7852584073345885,
+   "covered_capped_by_family": 539887253.4200001,
+   "covered_capped_pct": 65.25968785441938
   },
   {
    "dept": "85",
@@ -111,10 +111,10 @@
    "budget_personnel": 250222614.0,
    "budget_nonvendor_other": 591683000.0,
    "budget_vendor_payable": 824187915.0,
-   "paid_2025_vendor": 1301246123.1,
-   "ratio_paid_to_budget": 1.5788221343915239,
-   "covered_capped_by_family": 577953688.62,
-   "covered_capped_pct": 70.12401881917911
+   "paid_2025_vendor": 1251979765.82,
+   "ratio_paid_to_budget": 1.5190464978123344,
+   "covered_capped_by_family": 575270541.78,
+   "covered_capped_pct": 69.79846844514822
   },
   {
    "dept": "59",
@@ -135,10 +135,10 @@
    "budget_personnel": 308943847.0,
    "budget_nonvendor_other": 28881511.0,
    "budget_vendor_payable": 434893700.0,
-   "paid_2025_vendor": 463261935.84000003,
-   "ratio_paid_to_budget": 1.0652302754443213,
-   "covered_capped_by_family": 357663309.2,
-   "covered_capped_pct": 82.2415475781783
+   "paid_2025_vendor": 462886927.13000005,
+   "ratio_paid_to_budget": 1.0643679757375195,
+   "covered_capped_by_family": 357566255.90999997,
+   "covered_capped_pct": 82.21923102358116
   },
   {
    "dept": "50",
@@ -147,9 +147,9 @@
    "budget_personnel": 79716786.0,
    "budget_nonvendor_other": 62036412.0,
    "budget_vendor_payable": 511612775.0,
-   "paid_2025_vendor": 457075691.94,
-   "ratio_paid_to_budget": 0.8934016394332608,
-   "covered_capped_by_family": 436577032.96,
+   "paid_2025_vendor": 454584282.34,
+   "ratio_paid_to_budget": 0.8885319220967459,
+   "covered_capped_by_family": 436577032.96000004,
    "covered_capped_pct": 85.33348936800884
   },
   {
@@ -159,8 +159,8 @@
    "budget_personnel": 120224875.0,
    "budget_nonvendor_other": 7932000.0,
    "budget_vendor_payable": 375297199.0,
-   "paid_2025_vendor": 626559484.76,
-   "ratio_paid_to_budget": 1.6695021610326486,
+   "paid_2025_vendor": 608950726.5,
+   "ratio_paid_to_budget": 1.622582657484742,
    "covered_capped_by_family": 332489791.81,
    "covered_capped_pct": 88.59373123378947
   },
@@ -171,8 +171,8 @@
    "budget_personnel": 220655684.0,
    "budget_nonvendor_other": 3273989.0,
    "budget_vendor_payable": 125958888.0,
-   "paid_2025_vendor": 119899475.61999999,
-   "ratio_paid_to_budget": 0.951893729166615,
+   "paid_2025_vendor": 118434716.77999999,
+   "ratio_paid_to_budget": 0.940264864675528,
    "covered_capped_by_family": 75022435.73,
    "covered_capped_pct": 59.561049578335435
   },
@@ -183,10 +183,10 @@
    "budget_personnel": 103092688.0,
    "budget_nonvendor_other": 80068673.0,
    "budget_vendor_payable": 151888299.0,
-   "paid_2025_vendor": 149622526.0,
-   "ratio_paid_to_budget": 0.9850826362865516,
-   "covered_capped_by_family": 122763371.4,
-   "covered_capped_pct": 80.8247720253948
+   "paid_2025_vendor": 149092053.1,
+   "ratio_paid_to_budget": 0.9815901164315495,
+   "covered_capped_by_family": 122712746.25,
+   "covered_capped_pct": 80.79144151189685
   },
   {
    "dept": "21",
@@ -207,8 +207,8 @@
    "budget_personnel": 19970472.0,
    "budget_nonvendor_other": 555000.0,
    "budget_vendor_payable": 125957343.0,
-   "paid_2025_vendor": 531317007.31,
-   "ratio_paid_to_budget": 4.218229716944728,
+   "paid_2025_vendor": 531146994.65999997,
+   "ratio_paid_to_budget": 4.216879953239407,
    "covered_capped_by_family": 120350042.54,
    "covered_capped_pct": 95.54825441181305
   },
@@ -231,8 +231,8 @@
    "budget_personnel": 55071607.0,
    "budget_nonvendor_other": 4076000.0,
    "budget_vendor_payable": 68671275.0,
-   "paid_2025_vendor": 860570782.14,
-   "ratio_paid_to_budget": 12.531743179954063,
+   "paid_2025_vendor": 860285925.94,
+   "ratio_paid_to_budget": 12.52759506707863,
    "covered_capped_by_family": 30895820.25,
    "covered_capped_pct": 44.99089357231244
   },
@@ -279,8 +279,8 @@
    "budget_personnel": 8292449.0,
    "budget_nonvendor_other": 7540000.0,
    "budget_vendor_payable": 46171148.0,
-   "paid_2025_vendor": 48871668.56,
-   "ratio_paid_to_budget": 1.0584893527013883,
+   "paid_2025_vendor": 48811668.56,
+   "ratio_paid_to_budget": 1.057189839854101,
    "covered_capped_by_family": 20104882.7,
    "covered_capped_pct": 43.54425560308788
   },
@@ -291,8 +291,8 @@
    "budget_personnel": 6977968.0,
    "budget_nonvendor_other": 44112372.0,
    "budget_vendor_payable": 1368555.0,
-   "paid_2025_vendor": 2235132.81,
-   "ratio_paid_to_budget": 1.6332064184486557,
+   "paid_2025_vendor": 1841142.68,
+   "ratio_paid_to_budget": 1.3453187339931534,
    "covered_capped_by_family": 919009.0,
    "covered_capped_pct": 67.15177687414828
   },
@@ -351,8 +351,8 @@
    "budget_personnel": 20307684.0,
    "budget_nonvendor_other": 1622000.0,
    "budget_vendor_payable": 14853478.0,
-   "paid_2025_vendor": 18388383.94,
-   "ratio_paid_to_budget": 1.23798506585461,
+   "paid_2025_vendor": 18086972.93,
+   "ratio_paid_to_budget": 1.2176927807749807,
    "covered_capped_by_family": 5425948.9,
    "covered_capped_pct": 36.52982082714904
   },
@@ -375,8 +375,8 @@
    "budget_personnel": 12805495.0,
    "budget_nonvendor_other": 223976.0,
    "budget_vendor_payable": 3390241.0,
-   "paid_2025_vendor": 2220110.33,
-   "ratio_paid_to_budget": 0.654853247895946,
+   "paid_2025_vendor": 2039737.33,
+   "ratio_paid_to_budget": 0.601649655584957,
    "covered_capped_by_family": 569344.0,
    "covered_capped_pct": 16.793614377266984
   },
@@ -564,7 +564,7 @@
    },
    "paid_2025": {
     "LEGAL": 17250.0,
-    "OTHER_VENDOR": 2202860.33
+    "OTHER_VENDOR": 2022487.33
    }
   },
   "3": {
@@ -672,7 +672,7 @@
    "paid_2025": {
     "BENEFITS": 507936.0,
     "DELEGATE": 2416018.68,
-    "DEVLOAN": 27001189.76,
+    "DEVLOAN": 26941189.76,
     "FACILITY": 518678.81,
     "LEGAL": 137112.73,
     "OTHER_VENDOR": 16890896.02,
@@ -719,7 +719,7 @@
     "FACILITY": 145651.68,
     "IT": 1285902.6099999999,
     "MATERIALS": 378690.0,
-    "OTHER_VENDOR": 6960876.73,
+    "OTHER_VENDOR": 6676020.53,
     "PROF": 77186025.11
    }
   },
@@ -822,9 +822,9 @@
     "WASTE": 8400.0
    },
    "paid_2025": {
-    "CONSTR": 53478581.83,
+    "CONSTR": 41405607.35,
     "EQUIP": 92387194.41,
-    "FACILITY": 80041633.9,
+    "FACILITY": 74505850.12,
     "FUEL": 34692711.44,
     "IT": 28489999.37,
     "LEGAL": 483978.38,
@@ -869,11 +869,11 @@
    },
    "paid_2025": {
     "BENEFITS": 301219.06,
-    "DELEGATE": 110754656.67,
+    "DELEGATE": 110274808.92,
     "FACILITY": 47757.86,
     "LEGAL": 237994.3,
     "OTHER_VENDOR": 24555994.41,
-    "PROF": 13702578.4,
+    "PROF": 13651953.25,
     "UTIL": 22325.3
    }
   },
@@ -921,7 +921,7 @@
    },
    "paid_2025": {
     "BENEFITS": 11873.0,
-    "DELEGATE": 437041304.05,
+    "DELEGATE": 434549894.45,
     "DEVLOAN": 1280439.27,
     "FACILITY": 1795.7,
     "IT": 310944.75,
@@ -969,12 +969,12 @@
    },
    "paid_2025": {
     "BENEFITS": 253750.0,
-    "DELEGATE": 4053829.24,
+    "DELEGATE": 3903442.59,
     "DEVLOAN": 364701184.56,
     "FACILITY": 41689.0,
     "IT": 63706.03,
     "LEGAL": 25266.25,
-    "OTHER_VENDOR": 155953277.72,
+    "OTHER_VENDOR": 155933651.72,
     "PROF": 6224304.51
    }
   },
@@ -1118,7 +1118,7 @@
     "TELECOM": 24000.0
    },
    "paid_2025": {
-    "DELEGATE": 8011115.15,
+    "DELEGATE": 7709704.14,
     "LEGAL": 61901.55,
     "OTHER_VENDOR": 10279774.34,
     "PROF": 35592.9
@@ -1136,7 +1136,7 @@
     "TELECOM": 7008.0
    },
    "paid_2025": {
-    "CONSTR": 465580.23000000004,
+    "CONSTR": 71590.1,
     "DEVLOAN": 62571.82,
     "OTHER_VENDOR": 165060.09999999998,
     "PROF": 1541920.66
@@ -1202,7 +1202,7 @@
    },
    "paid_2025": {
     "BENEFITS": 1525.0,
-    "FACILITY": 17189790.06,
+    "FACILITY": 15725031.22,
     "LEGAL": 252683.57,
     "MATERIALS": 10120064.24,
     "OTHER_VENDOR": 5650371.21,
@@ -1229,9 +1229,9 @@
    },
    "paid_2025": {
     "BENEFITS": 1509.14,
-    "CONSTR": 504643875.72,
+    "CONSTR": 403800865.42,
     "DEVLOAN": 6090964.54,
-    "FACILITY": 20564037.53,
+    "FACILITY": 18929381.759999998,
     "LEGAL": 160532.63,
     "MATERIALS": 67887887.73,
     "OTHER_VENDOR": 10906167.14,
@@ -1256,9 +1256,9 @@
    },
    "paid_2025": {
     "BENEFITS": 9774386.76,
-    "CONSTR": 506782670.9,
+    "CONSTR": 460199460.46,
     "DEVLOAN": 70745985.74,
-    "FACILITY": 103072600.76,
+    "FACILITY": 100389453.92,
     "IT": 5303131.64,
     "LEGAL": 1566591.21,
     "MATERIALS": 18526812.94,
@@ -1285,8 +1285,8 @@
    },
    "paid_2025": {
     "BENEFITS": 386.18,
-    "CONSTR": 222176265.2,
-    "FACILITY": 27517846.29,
+    "CONSTR": 222079211.91,
+    "FACILITY": 27239890.87,
     "FUEL": 555359.8,
     "LEGAL": 319580.06,
     "MATERIALS": 65897849.17,
@@ -1347,8 +1347,8 @@
  },
  "explained_by_named_contracts": {
   "vendor_payable_budget": 5369189605.0,
-  "explained_by_named_contracts": 3067606293.77,
-  "explained_in_items_under_1M": 453809033.5594081,
+  "explained_by_named_contracts": 2963932458.1899996,
+  "explained_in_items_under_1M": 449627360.7093457,
   "by_family": {
    "BENEFITS": {
     "budget": 831076963.0,
@@ -1357,18 +1357,18 @@
    },
    "CONSTR": {
     "budget": 976403544.0,
-    "explained": 726820140.9200001,
-    "explained_under_1M": 16486901.93
+    "explained": 625880077.3299999,
+    "explained_under_1M": 15145959.130000003
    },
    "DELEGATE": {
     "budget": 588993697.0,
     "explained": 564573306.8,
-    "explained_under_1M": 244834546.74783292
+    "explained_under_1M": 243126789.53726858
    },
    "DEVLOAN": {
     "budget": 159554072.0,
     "explained": 116244089.18,
-    "explained_under_1M": 8168950.079091761
+    "explained_under_1M": 8168714.101714993
    },
    "EQUIP": {
     "budget": 1108234.0,
@@ -1377,8 +1377,8 @@
    },
    "FACILITY": {
     "budget": 271688383.0,
-    "explained": 195853602.29,
-    "explained_under_1M": 19737394.826026347
+    "explained": 193170455.45000002,
+    "explained_under_1M": 18711051.29973583
    },
    "FUEL": {
     "budget": 40610182.0,
@@ -1403,12 +1403,12 @@
    "OTHER_VENDOR": {
     "budget": 236052734.0,
     "explained": 176439277.33999997,
-    "explained_under_1M": 71982670.90480897
+    "explained_under_1M": 71926902.7189781
    },
    "PROF": {
     "budget": 883508597.0,
-    "explained": 708008098.4000001,
-    "explained_under_1M": 58426637.13977946
+    "explained": 707957473.25,
+    "explained_under_1M": 58376011.989779465
    },
    "RENTAL": {
     "budget": 109351279.0,
@@ -1454,7 +1454,7 @@
     "name": "Department of Cultural Affairs and Special Events",
     "budget": 36308558.0,
     "explained": 20104882.7,
-    "explained_under_1M": 17568378.009674385
+    "explained_under_1M": 17568142.032297615
    },
    "25": {
     "name": "Office of City Clerk",
@@ -1466,7 +1466,7 @@
     "name": "Department of Finance",
     "budget": 67320092.0,
     "explained": 30895820.25,
-    "explained_under_1M": 3265889.1010656143
+    "explained_under_1M": 3210129.99957799
    },
    "28": {
     "name": "City Treasurer's Office",
@@ -1508,7 +1508,7 @@
     "name": "Department of Fleet and Facility Management",
     "budget": 375288799.0,
     "explained": 332489791.81,
-    "explained_under_1M": 20971098.68919905
+    "explained_under_1M": 21306144.251948167
    },
    "39": {
     "name": "Board of Election Commissioners",
@@ -1519,8 +1519,8 @@
    "41": {
     "name": "Chicago Department of Public Health",
     "budget": 147383292.0,
-    "explained": 122763371.4,
-    "explained_under_1M": 77082848.05145666
+    "explained": 122712746.25,
+    "explained_under_1M": 76888143.47038275
    },
    "45": {
     "name": "Chicago Commission on Human Relations",
@@ -1544,7 +1544,7 @@
     "name": "Department of Family and Support Services",
     "budget": 511282419.0,
     "explained": 436577032.96,
-    "explained_under_1M": 158144072.69111586
+    "explained_under_1M": 156580394.91162544
    },
    "51": {
     "name": "Office of Public Safety Administration",
@@ -1556,7 +1556,7 @@
     "name": "Department of Planning and Development",
     "budget": 125866745.0,
     "explained": 120350042.54,
-    "explained_under_1M": 11647222.76147927
+    "explained_under_1M": 11647213.67713605
    },
    "55": {
     "name": "Chicago Police Board",
@@ -1640,25 +1640,25 @@
     "name": "Department of Streets and Sanitation",
     "budget": 123583632.0,
     "explained": 75022435.73,
-    "explained_under_1M": 2428094.61444866
+    "explained_under_1M": 2427562.1965185977
    },
    "84": {
     "name": "Chicago Department of Transportation",
     "budget": 817304617.0,
-    "explained": 640730263.72,
-    "explained_under_1M": 39576223.50193049
+    "explained": 539887253.42,
+    "explained_under_1M": 37073537.704789445
    },
    "85": {
     "name": "Chicago Department of Aviation",
     "budget": 808662515.0,
-    "explained": 577953688.62,
+    "explained": 575270541.78,
     "explained_under_1M": 21152635.230947297
    },
    "88": {
     "name": "Department of Water Management",
     "budget": 430672359.0,
-    "explained": 357663309.20000005,
-    "explained_under_1M": 21167652.190334022
+    "explained": 357566255.90999997,
+    "explained_under_1M": 20968538.51636551
    },
    "91": {
     "name": "Chicago Public Library",
@@ -1682,21 +1682,21 @@
    },
    "CONSTR": {
     "budget": 1030693391.0,
-    "paid": 1295862297.27,
+    "paid": 1135872058.63,
     "explained": 1030693391.0,
-    "explained_under_1M": 18857290.946918417
+    "explained_under_1M": 19634603.81542445
    },
    "DELEGATE": {
     "budget": 593371527.0,
-    "paid": 584823656.02,
-    "explained": 584823656.02,
-    "explained_under_1M": 257916109.84
+    "paid": 581400601.01,
+    "explained": 581400601.01,
+    "explained_under_1M": 254493054.82999998
    },
    "DEVLOAN": {
     "budget": 191591897.0,
-    "paid": 485599916.1,
+    "paid": 485539916.1,
     "explained": 191591897.0,
-    "explained_under_1M": 14417287.824158179
+    "explained_under_1M": 14395393.688994303
    },
    "EQUIP": {
     "budget": 20048610.0,
@@ -1706,9 +1706,9 @@
    },
    "FACILITY": {
     "budget": 306470695.0,
-    "paid": 266410691.14999998,
-    "explained": 266410691.14999998,
-    "explained_under_1M": 32644245.119999997
+    "paid": 254814390.5,
+    "explained": 254814390.5,
+    "explained_under_1M": 30288192.77
    },
    "FUEL": {
     "budget": 40662700.0,
@@ -1736,15 +1736,15 @@
    },
    "OTHER_VENDOR": {
     "budget": 236052734.0,
-    "paid": 609095715.7,
+    "paid": 608610860.5,
     "explained": 236052734.0,
-    "explained_under_1M": 75325211.20452474
+    "explained_under_1M": 75197166.20850466
    },
    "PROF": {
     "budget": 1074957612.0,
-    "paid": 974108827.4200001,
-    "explained": 974108827.4200001,
-    "explained_under_1M": 82638882.65
+    "paid": 974058202.27,
+    "explained": 974058202.27,
+    "explained_under_1M": 82588257.5
    },
    "RENTAL": {
     "budget": 133716831.0,
@@ -1773,8 +1773,8 @@
   },
   "pooled_citywide_total": {
    "budget": 5369189605.0,
-   "explained": 4986974473.69,
-   "explained_under_1M": 539213887.6517212,
+   "explained": 4971904492.88,
+   "explained_under_1M": 534011528.87904316,
    "budget_in_families_without_payments": 0.0
   },
   "headline_accounts": [
@@ -1783,16 +1783,16 @@
     "family": "PROF",
     "description": "For Professional and Technical Services and Other Third Party Benefit ",
     "budget_2026": 1054952586.0,
-    "explained": 696516097.3241928,
-    "explained_under_1M": 56550399.44587026
+    "explained": 696465579.0454757,
+    "explained_under_1M": 56499881.16715323
    },
    {
     "account": "0540",
     "family": "CONSTR",
     "description": "Construction of Buildings and Other Structures",
     "budget_2026": 971457229.0,
-    "explained": 723097212.5175396,
-    "explained_under_1M": 16395284.072605163
+    "explained": 622158775.214891,
+    "explained_under_1M": 15055967.559956642
    },
    {
     "account": "0135",
@@ -1800,7 +1800,7 @@
     "description": "For Delegate Agencies",
     "budget_2026": 360484363.0,
     "explained": 340264085.23279256,
-    "explained_under_1M": 152170643.81969458
+    "explained_under_1M": 151192655.12653518
    },
    {
     "account": "0138",
@@ -1815,8 +1815,8 @@
     "family": "FACILITY",
     "description": "Repair/Maintenance of Equipment",
     "budget_2026": 104744637.0,
-    "explained": 73109003.53890985,
-    "explained_under_1M": 9875959.725102643
+    "explained": 72171861.79378098,
+    "explained_under_1M": 8578124.220418153
    },
    {
     "account": "0157",
@@ -1849,7 +1849,7 @@
    "family": "PROF",
    "label": "Professional & technical services (0140-0148)",
    "budget_2026": 1074957612.0,
-   "paid_2025": 980675323.0
+   "paid_2025": 980624697.8499999
   },
   {
    "family": "IT",
@@ -1867,19 +1867,19 @@
    "family": "DELEGATE",
    "label": "Delegate agencies and program grants (0135 + 92xx program accounts)",
    "budget_2026": 593371527.0,
-   "paid_2025": 584822998.9499999
+   "paid_2025": 581399943.94
   },
   {
    "family": "CONSTR",
    "label": "Construction and capital (0540, 0521, 9097)",
    "budget_2026": 1030693391.0,
-   "paid_2025": 1296172930.6100001
+   "paid_2025": 1136182691.97
   },
   {
    "family": "FACILITY",
    "label": "Facility, equipment and street repair, maintenance services (0125, 0160-0163, 0176, 0188, 0526)",
    "budget_2026": 306470695.0,
-   "paid_2025": 272130505.64
+   "paid_2025": 260534204.98999998
   },
   {
    "family": "WASTE",
@@ -1933,13 +1933,13 @@
    "family": "DEVLOAN",
    "label": "Housing / development loans and grants (9103, 0991, 9102)",
    "budget_2026": 191591897.0,
-   "paid_2025": 485599916.1
+   "paid_2025": 485539916.1
   },
   {
    "family": "OTHER_VENDOR",
    "label": "Other vendor-payable accounts",
    "budget_2026": 236052734.0,
-   "paid_2025": 612195863.62
+   "paid_2025": 611711008.4200001
   },
   {
    "family": "LEGACY_UNTYPED",
@@ -1964,52 +1964,52 @@
  "under_1M": {
   "overall": {
    "dept_vendor": {
-    "groups": 18563,
-    "groups_under_1M": 17960,
-    "dollars": 6262081440.16,
-    "dollars_in_groups_under_1M": 459976297.31,
-    "pct_dollars_under_1M": 7.345421833067814,
-    "pct_groups_under_1M": 96.75160265043365
+    "groups": 18557,
+    "groups_under_1M": 17958,
+    "dollars": 6086476365.51,
+    "dollars_in_groups_under_1M": 457071005.66,
+    "pct_dollars_under_1M": 7.509616044022886,
+    "pct_groups_under_1M": 96.7721075604893
    },
    "dept_vendor_contract": {
-    "groups": 20383,
-    "groups_under_1M": 19646,
-    "dollars": 6262082097.2300005,
-    "dollars_in_groups_under_1M": 708776865.9,
-    "pct_dollars_under_1M": 11.31854956378684,
-    "pct_groups_under_1M": 96.38424177010253
+    "groups": 20343,
+    "groups_under_1M": 19609,
+    "dollars": 6086477022.579999,
+    "dollars_in_groups_under_1M": 700331774.4599999,
+    "pct_dollars_under_1M": 11.506356992096817,
+    "pct_groups_under_1M": 96.39187927051074
    },
    "dept_vendor_family": {
-    "groups": 18821,
-    "groups_under_1M": 18207,
-    "dollars": 6262081440.16,
-    "dollars_in_groups_under_1M": 488891930.2300001,
-    "pct_dollars_under_1M": 7.807179368422724,
-    "pct_groups_under_1M": 96.73768662664045
+    "groups": 18812,
+    "groups_under_1M": 18202,
+    "dollars": 6086476365.510001,
+    "dollars_in_groups_under_1M": 485593820.31000006,
+    "pct_dollars_under_1M": 7.978242108384675,
+    "pct_groups_under_1M": 96.75738890070168
    },
    "dept_vendor_contract_quarter": {
-    "groups": 31281,
-    "groups_under_1M": 30250,
-    "dollars": 6262127667.91,
-    "dollars_in_groups_under_1M": 1268945195.55,
-    "pct_dollars_under_1M": 20.26380270163852,
-    "pct_groups_under_1M": 96.70406956299351
+    "groups": 31200,
+    "groups_under_1M": 30177,
+    "dollars": 6086522593.26,
+    "dollars_in_groups_under_1M": 1261251926.8,
+    "pct_dollars_under_1M": 20.72204460715657,
+    "pct_groups_under_1M": 96.72115384615384
    },
    "dept_vendor_contract_month": {
-    "groups": 44222,
-    "groups_under_1M": 42969,
-    "dollars": 6262208797.030001,
-    "dollars_in_groups_under_1M": 1793361496.92,
-    "pct_dollars_under_1M": 28.6378425735428,
-    "pct_groups_under_1M": 97.1665686762245
+    "groups": 44065,
+    "groups_under_1M": 42831,
+    "dollars": 6086603722.379999,
+    "dollars_in_groups_under_1M": 1788376210.53,
+    "pct_dollars_under_1M": 29.3821693032893,
+    "pct_groups_under_1M": 97.19959151253829
    },
    "dept_voucher_line": {
-    "groups": 94110,
-    "groups_under_1M": 93066,
-    "dollars": 6262157945.490001,
-    "dollars_in_groups_under_1M": 2747825502.85,
-    "pct_dollars_under_1M": 43.87984983401738,
-    "pct_groups_under_1M": 98.89065986611412
+    "groups": 93704,
+    "groups_under_1M": 92681,
+    "dollars": 6086552870.84,
+    "dollars_in_groups_under_1M": 2732147861.82,
+    "pct_dollars_under_1M": 44.88826302502715,
+    "pct_groups_under_1M": 98.90826432169385
    },
    "voucher_level_by_family": {
     "BENEFITS": {
@@ -2018,17 +2018,17 @@
      "vouchers_1M_plus": 61
     },
     "CONSTR": {
-     "dollars": 1295862297.27,
-     "dollars_in_vouchers_1M_plus": 914174622.1099999,
-     "vouchers_1M_plus": 302
+     "dollars": 1135872058.63,
+     "dollars_in_vouchers_1M_plus": 755841487.81,
+     "vouchers_1M_plus": 282
     },
     "DELEGATE": {
-     "dollars": 584899270.89,
+     "dollars": 581476215.88,
      "dollars_in_vouchers_1M_plus": 24836681.4,
      "vouchers_1M_plus": 20
     },
     "DEVLOAN": {
-     "dollars": 485599916.09999996,
+     "dollars": 485539916.1,
      "dollars_in_vouchers_1M_plus": 381310257.38000005,
      "vouchers_1M_plus": 120
     },
@@ -2038,9 +2038,9 @@
      "vouchers_1M_plus": 28
     },
     "FACILITY": {
-     "dollars": 266410691.14999998,
-     "dollars_in_vouchers_1M_plus": 20801554.12,
-     "vouchers_1M_plus": 15
+     "dollars": 254814390.5,
+     "dollars_in_vouchers_1M_plus": 19207254.8,
+     "vouchers_1M_plus": 14
     },
     "FUEL": {
      "dollars": 35248071.24,
@@ -2063,12 +2063,12 @@
      "vouchers_1M_plus": 45
     },
     "OTHER_VENDOR": {
-     "dollars": 609095949.09,
+     "dollars": 608611093.8900001,
      "dollars_in_vouchers_1M_plus": 262440294.71000004,
      "vouchers_1M_plus": 93
     },
     "PROF": {
-     "dollars": 974108827.4200001,
+     "dollars": 974058202.2700001,
      "dollars_in_vouchers_1M_plus": 500322829.1,
      "vouchers_1M_plus": 234
     },
@@ -2099,16 +2099,16 @@
     "dept_vendor": {
      "groups": 228,
      "groups_under_1M": 228,
-     "dollars": 2220110.33,
-     "dollars_in_groups_under_1M": 2220110.33,
+     "dollars": 2039737.33,
+     "dollars_in_groups_under_1M": 2039737.33,
      "pct_dollars_under_1M": 100.0,
      "pct_groups_under_1M": 100.0
     },
     "dept_vendor_contract": {
-     "groups": 229,
-     "groups_under_1M": 229,
-     "dollars": 2220110.33,
-     "dollars_in_groups_under_1M": 2220110.33,
+     "groups": 228,
+     "groups_under_1M": 228,
+     "dollars": 2039737.33,
+     "dollars_in_groups_under_1M": 2039737.33,
      "pct_dollars_under_1M": 100.0,
      "pct_groups_under_1M": 100.0
     }
@@ -2151,20 +2151,20 @@
    },
    "23": {
     "dept_vendor": {
-     "groups": 1679,
-     "groups_under_1M": 1675,
-     "dollars": 48871668.56,
-     "dollars_in_groups_under_1M": 30407381.12,
-     "pct_dollars_under_1M": 62.21883151517264,
-     "pct_groups_under_1M": 99.76176295413937
+     "groups": 1678,
+     "groups_under_1M": 1674,
+     "dollars": 48811668.56,
+     "dollars_in_groups_under_1M": 30347381.12,
+     "pct_dollars_under_1M": 62.17239036337503,
+     "pct_groups_under_1M": 99.761620977354
     },
     "dept_vendor_contract": {
-     "groups": 1796,
-     "groups_under_1M": 1790,
-     "dollars": 48871668.56,
-     "dollars_in_groups_under_1M": 30411181.12,
-     "pct_dollars_under_1M": 62.226606981228876,
-     "pct_groups_under_1M": 99.66592427616926
+     "groups": 1794,
+     "groups_under_1M": 1788,
+     "dollars": 48811668.56,
+     "dollars_in_groups_under_1M": 30351181.119999997,
+     "pct_dollars_under_1M": 62.18017538714516,
+     "pct_groups_under_1M": 99.66555183946488
     }
    },
    "25": {
@@ -2189,17 +2189,17 @@
     "dept_vendor": {
      "groups": 52,
      "groups_under_1M": 31,
-     "dollars": 860570782.1400001,
-     "dollars_in_groups_under_1M": 7682467.22,
-     "pct_dollars_under_1M": 0.892717645014143,
+     "dollars": 860285925.94,
+     "dollars_in_groups_under_1M": 7397611.02,
+     "pct_dollars_under_1M": 0.8599014347371691,
      "pct_groups_under_1M": 59.61538461538461
     },
     "dept_vendor_contract": {
      "groups": 61,
      "groups_under_1M": 38,
-     "dollars": 860570782.1399999,
-     "dollars_in_groups_under_1M": 7932467.22,
-     "pct_dollars_under_1M": 0.9217681316432987,
+     "dollars": 860285925.9399999,
+     "dollars_in_groups_under_1M": 7647611.0200000005,
+     "pct_dollars_under_1M": 0.8889615405068684,
      "pct_groups_under_1M": 62.295081967213115
     }
    },
@@ -2313,20 +2313,20 @@
    },
    "38": {
     "dept_vendor": {
-     "groups": 241,
+     "groups": 240,
      "groups_under_1M": 177,
-     "dollars": 626559484.76,
+     "dollars": 608950726.5,
      "dollars_in_groups_under_1M": 28202189.68,
-     "pct_dollars_under_1M": 4.50111926576336,
-     "pct_groups_under_1M": 73.44398340248962
+     "pct_dollars_under_1M": 4.63127613659231,
+     "pct_groups_under_1M": 73.75
     },
     "dept_vendor_contract": {
-     "groups": 319,
+     "groups": 318,
      "groups_under_1M": 243,
-     "dollars": 626559484.76,
-     "dollars_in_groups_under_1M": 40591685.65,
-     "pct_dollars_under_1M": 6.4785046970517755,
-     "pct_groups_under_1M": 76.17554858934169
+     "dollars": 608950726.5,
+     "dollars_in_groups_under_1M": 40256114.85,
+     "pct_dollars_under_1M": 6.610734349784868,
+     "pct_groups_under_1M": 76.41509433962264
     }
    },
    "39": {
@@ -2349,20 +2349,20 @@
    },
    "41": {
     "dept_vendor": {
-     "groups": 569,
-     "groups_under_1M": 539,
-     "dollars": 149622526.0,
-     "dollars_in_groups_under_1M": 54601652.760000005,
-     "pct_dollars_under_1M": 36.492936070334764,
-     "pct_groups_under_1M": 94.72759226713532
+     "groups": 568,
+     "groups_under_1M": 538,
+     "dollars": 149092053.10000002,
+     "dollars_in_groups_under_1M": 54071179.86,
+     "pct_dollars_under_1M": 36.266976499232335,
+     "pct_groups_under_1M": 94.71830985915493
     },
     "dept_vendor_contract": {
-     "groups": 849,
-     "groups_under_1M": 823,
-     "dollars": 149622526.0,
-     "dollars_in_groups_under_1M": 92007587.1,
-     "pct_dollars_under_1M": 61.49313847301308,
-     "pct_groups_under_1M": 96.93757361601885
+     "groups": 846,
+     "groups_under_1M": 820,
+     "dollars": 149092053.1,
+     "dollars_in_groups_under_1M": 91477114.2,
+     "pct_dollars_under_1M": 61.35613018800128,
+     "pct_groups_under_1M": 96.92671394799055
     }
    },
    "45": {
@@ -2421,20 +2421,20 @@
    },
    "50": {
     "dept_vendor": {
-     "groups": 529,
+     "groups": 528,
      "groups_under_1M": 443,
-     "dollars": 457075691.94000006,
-     "dollars_in_groups_under_1M": 71669702.86,
-     "pct_dollars_under_1M": 15.680051274616464,
-     "pct_groups_under_1M": 83.7429111531191
+     "dollars": 454584282.3399999,
+     "dollars_in_groups_under_1M": 71670265.16,
+     "pct_dollars_under_1M": 15.766111575849697,
+     "pct_groups_under_1M": 83.90151515151516
     },
     "dept_vendor_contract": {
-     "groups": 1197,
-     "groups_under_1M": 1100,
-     "dollars": 457076349.01,
-     "dollars_in_groups_under_1M": 164016018.39999998,
-     "pct_dollars_under_1M": 35.883724623960276,
-     "pct_groups_under_1M": 91.89640768588137
+     "groups": 1185,
+     "groups_under_1M": 1088,
+     "dollars": 454584939.40999997,
+     "dollars_in_groups_under_1M": 161524608.8,
+     "pct_dollars_under_1M": 35.53232735990787,
+     "pct_groups_under_1M": 91.81434599156118
     }
    },
    "51": {
@@ -2459,18 +2459,18 @@
     "dept_vendor": {
      "groups": 409,
      "groups_under_1M": 336,
-     "dollars": 531317007.31,
-     "dollars_in_groups_under_1M": 39299688.69,
-     "pct_dollars_under_1M": 7.396655508727273,
+     "dollars": 531146994.66,
+     "dollars_in_groups_under_1M": 39129676.04000001,
+     "pct_dollars_under_1M": 7.367014486271894,
      "pct_groups_under_1M": 82.15158924205379
     },
     "dept_vendor_contract": {
-     "groups": 536,
-     "groups_under_1M": 431,
-     "dollars": 531317007.30999994,
-     "dollars_in_groups_under_1M": 58588901.36,
-     "pct_dollars_under_1M": 11.027108214854483,
-     "pct_groups_under_1M": 80.41044776119404
+     "groups": 533,
+     "groups_under_1M": 428,
+     "dollars": 531146994.65999997,
+     "dollars_in_groups_under_1M": 58418888.71,
+     "pct_dollars_under_1M": 10.998629249026504,
+     "pct_groups_under_1M": 80.30018761726079
     }
    },
    "55": {
@@ -2621,34 +2621,34 @@
     "dept_vendor": {
      "groups": 950,
      "groups_under_1M": 948,
-     "dollars": 18388383.939999998,
-     "dollars_in_groups_under_1M": 15946053.94,
-     "pct_dollars_under_1M": 86.71808241567531,
+     "dollars": 18086972.93,
+     "dollars_in_groups_under_1M": 15644642.93,
+     "pct_dollars_under_1M": 86.49674542306069,
      "pct_groups_under_1M": 99.78947368421052
     },
     "dept_vendor_contract": {
-     "groups": 1051,
-     "groups_under_1M": 1049,
-     "dollars": 18388383.939999998,
-     "dollars_in_groups_under_1M": 15946053.94,
-     "pct_dollars_under_1M": 86.71808241567531,
-     "pct_groups_under_1M": 99.80970504281636
+     "groups": 1044,
+     "groups_under_1M": 1042,
+     "dollars": 18086972.93,
+     "dollars_in_groups_under_1M": 15644642.93,
+     "pct_dollars_under_1M": 86.49674542306069,
+     "pct_groups_under_1M": 99.80842911877394
     }
    },
    "72": {
     "dept_vendor": {
      "groups": 10,
      "groups_under_1M": 10,
-     "dollars": 2235132.81,
-     "dollars_in_groups_under_1M": 2235132.81,
+     "dollars": 1841142.68,
+     "dollars_in_groups_under_1M": 1841142.68,
      "pct_dollars_under_1M": 100.0,
      "pct_groups_under_1M": 100.0
     },
     "dept_vendor_contract": {
      "groups": 13,
      "groups_under_1M": 13,
-     "dollars": 2235132.8099999996,
-     "dollars_in_groups_under_1M": 2235132.8099999996,
+     "dollars": 1841142.6799999997,
+     "dollars_in_groups_under_1M": 1841142.6799999997,
      "pct_dollars_under_1M": 100.0,
      "pct_groups_under_1M": 100.0
     }
@@ -2709,55 +2709,55 @@
    },
    "81": {
     "dept_vendor": {
-     "groups": 1973,
+     "groups": 1972,
      "groups_under_1M": 1963,
-     "dollars": 119899475.62,
-     "dollars_in_groups_under_1M": 7383636.25,
-     "pct_dollars_under_1M": 6.158188942711575,
-     "pct_groups_under_1M": 99.4931576279777
+     "dollars": 118434716.78,
+     "dollars_in_groups_under_1M": 6940195.090000001,
+     "pct_dollars_under_1M": 5.8599330320448635,
+     "pct_groups_under_1M": 99.54361054766734
     },
     "dept_vendor_contract": {
-     "groups": 1987,
-     "groups_under_1M": 1972,
-     "dollars": 119899475.61999999,
-     "dollars_in_groups_under_1M": 9900936.11,
-     "pct_dollars_under_1M": 8.257697591088098,
-     "pct_groups_under_1M": 99.2450931051837
+     "groups": 1983,
+     "groups_under_1M": 1969,
+     "dollars": 118434716.78,
+     "dollars_in_groups_under_1M": 9457494.95,
+     "pct_dollars_under_1M": 7.985407663504525,
+     "pct_groups_under_1M": 99.29399899142713
     }
    },
    "84": {
     "dept_vendor": {
-     "groups": 633,
+     "groups": 632,
      "groups_under_1M": 563,
-     "dollars": 752114553.25,
-     "dollars_in_groups_under_1M": 19603493.009999998,
-     "pct_dollars_under_1M": 2.6064504303620186,
-     "pct_groups_under_1M": 88.94154818325434
+     "dollars": 649636887.1800001,
+     "dollars_in_groups_under_1M": 19437204.82,
+     "pct_dollars_under_1M": 2.9920106452659576,
+     "pct_groups_under_1M": 89.08227848101266
     },
     "dept_vendor_contract": {
-     "groups": 784,
-     "groups_under_1M": 682,
-     "dollars": 752114553.25,
-     "dollars_in_groups_under_1M": 60324793.699999996,
-     "pct_dollars_under_1M": 8.020692252174552,
-     "pct_groups_under_1M": 86.98979591836735
+     "groups": 777,
+     "groups_under_1M": 676,
+     "dollars": 649636887.1800001,
+     "dollars_in_groups_under_1M": 57446248.42,
+     "pct_dollars_under_1M": 8.842824284404113,
+     "pct_groups_under_1M": 87.001287001287
     }
    },
    "85": {
     "dept_vendor": {
      "groups": 463,
      "groups_under_1M": 376,
-     "dollars": 1301246123.1000001,
+     "dollars": 1251979765.8200002,
      "dollars_in_groups_under_1M": 27563142.49,
-     "pct_dollars_under_1M": 2.1182113053551657,
+     "pct_dollars_under_1M": 2.201564533428954,
      "pct_groups_under_1M": 81.20950323974083
     },
     "dept_vendor_contract": {
      "groups": 538,
      "groups_under_1M": 438,
-     "dollars": 1301246123.1,
+     "dollars": 1251979765.8200002,
      "dollars_in_groups_under_1M": 43903903.81,
-     "pct_dollars_under_1M": 3.373989211618655,
+     "pct_dollars_under_1M": 3.506758256691519,
      "pct_groups_under_1M": 81.41263940520446
     }
    },
@@ -2765,17 +2765,17 @@
     "dept_vendor": {
      "groups": 411,
      "groups_under_1M": 363,
-     "dollars": 463261935.84000003,
-     "dollars_in_groups_under_1M": 20450621.2,
-     "pct_dollars_under_1M": 4.414483387873934,
+     "dollars": 462886927.13,
+     "dollars_in_groups_under_1M": 20075612.490000002,
+     "pct_dollars_under_1M": 4.337044602765773,
      "pct_groups_under_1M": 88.32116788321167
     },
     "dept_vendor_contract": {
      "groups": 498,
      "groups_under_1M": 426,
-     "dollars": 463261935.84,
-     "dollars_in_groups_under_1M": 35768651.92,
-     "pct_dollars_under_1M": 7.721042708838843,
+     "dollars": 462886927.13,
+     "dollars_in_groups_under_1M": 35393643.20999999,
+     "pct_dollars_under_1M": 7.6462827389505925,
      "pct_groups_under_1M": 85.5421686746988
     }
    },
@@ -2837,56 +2837,56 @@
    },
    "CONSTR": {
     "dept_vendor": {
-     "groups": 72,
-     "groups_under_1M": 18,
-     "dollars": 1295862297.27,
-     "dollars_in_groups_under_1M": 6147340.6,
-     "pct_dollars_under_1M": 0.47438224053208705,
-     "pct_groups_under_1M": 25.0
+     "groups": 71,
+     "groups_under_1M": 17,
+     "dollars": 1135872058.6299999,
+     "dollars_in_groups_under_1M": 5196020.720000001,
+     "pct_dollars_under_1M": 0.45744770993548645,
+     "pct_groups_under_1M": 23.943661971830984
     },
     "dept_vendor_contract": {
-     "groups": 183,
-     "groups_under_1M": 72,
-     "dollars": 1295862297.27,
-     "dollars_in_groups_under_1M": 23708750.42,
-     "pct_dollars_under_1M": 1.829573286447746,
-     "pct_groups_under_1M": 39.34426229508197
+     "groups": 178,
+     "groups_under_1M": 68,
+     "dollars": 1135872058.63,
+     "dollars_in_groups_under_1M": 21638246.689999998,
+     "pct_dollars_under_1M": 1.9049897852138697,
+     "pct_groups_under_1M": 38.20224719101124
     }
    },
    "DELEGATE": {
     "dept_vendor": {
-     "groups": 639,
-     "groups_under_1M": 525,
-     "dollars": 584822998.95,
-     "dollars_in_groups_under_1M": 131470195.36000001,
-     "pct_dollars_under_1M": 22.480339452457166,
-     "pct_groups_under_1M": 82.15962441314554
+     "groups": 636,
+     "groups_under_1M": 523,
+     "dollars": 581399943.9399999,
+     "dollars_in_groups_under_1M": 130539112.25,
+     "pct_dollars_under_1M": 22.452549851547897,
+     "pct_groups_under_1M": 82.23270440251572
     },
     "dept_vendor_contract": {
-     "groups": 1672,
-     "groups_under_1M": 1556,
-     "dollars": 584823656.02,
-     "dollars_in_groups_under_1M": 257916109.84,
-     "pct_dollars_under_1M": 44.101517984966684,
-     "pct_groups_under_1M": 93.0622009569378
+     "groups": 1648,
+     "groups_under_1M": 1532,
+     "dollars": 581400601.01,
+     "dollars_in_groups_under_1M": 254493054.82999998,
+     "pct_dollars_under_1M": 43.77241000231143,
+     "pct_groups_under_1M": 92.96116504854369
     }
    },
    "DEVLOAN": {
     "dept_vendor": {
-     "groups": 532,
-     "groups_under_1M": 477,
-     "dollars": 485599916.1000001,
-     "dollars_in_groups_under_1M": 23491116.380000003,
-     "pct_dollars_under_1M": 4.837545395119561,
-     "pct_groups_under_1M": 89.66165413533835
+     "groups": 531,
+     "groups_under_1M": 476,
+     "dollars": 485539916.1000001,
+     "dollars_in_groups_under_1M": 23431116.380000003,
+     "pct_dollars_under_1M": 4.825785811433517,
+     "pct_groups_under_1M": 89.6421845574388
     },
     "dept_vendor_contract": {
-     "groups": 610,
-     "groups_under_1M": 531,
-     "dollars": 485599916.1,
-     "dollars_in_groups_under_1M": 36541387.54,
-     "pct_dollars_under_1M": 7.524998734240926,
-     "pct_groups_under_1M": 87.04918032786885
+     "groups": 608,
+     "groups_under_1M": 529,
+     "dollars": 485539916.1,
+     "dollars_in_groups_under_1M": 36481387.54,
+     "pct_dollars_under_1M": 7.51357124930722,
+     "pct_groups_under_1M": 87.00657894736842
     }
    },
    "EQUIP": {
@@ -2909,20 +2909,20 @@
    },
    "FACILITY": {
     "dept_vendor": {
-     "groups": 158,
+     "groups": 155,
      "groups_under_1M": 105,
-     "dollars": 266410691.14999998,
-     "dollars_in_groups_under_1M": 24549175.569999997,
-     "pct_dollars_under_1M": 9.2147861874574,
-     "pct_groups_under_1M": 66.45569620253164
+     "dollars": 254814390.49999997,
+     "dollars_in_groups_under_1M": 23728948.99,
+     "pct_dollars_under_1M": 9.312248395170602,
+     "pct_groups_under_1M": 67.74193548387096
     },
     "dept_vendor_contract": {
-     "groups": 188,
-     "groups_under_1M": 129,
-     "dollars": 266410691.14999998,
-     "dollars_in_groups_under_1M": 32644245.119999997,
-     "pct_dollars_under_1M": 12.253354014843183,
-     "pct_groups_under_1M": 68.61702127659575
+     "groups": 181,
+     "groups_under_1M": 124,
+     "dollars": 254814390.5,
+     "dollars_in_groups_under_1M": 30288192.77,
+     "pct_dollars_under_1M": 11.886374513844421,
+     "pct_groups_under_1M": 68.50828729281768
     }
    },
    "FUEL": {
@@ -2999,37 +2999,37 @@
    },
    "OTHER_VENDOR": {
     "dept_vendor": {
-     "groups": 16319,
-     "groups_under_1M": 16228,
-     "dollars": 609095715.7,
-     "dollars_in_groups_under_1M": 181368385.59,
-     "pct_dollars_under_1M": 29.77666414572681,
-     "pct_groups_under_1M": 99.44236779214413
+     "groups": 16318,
+     "groups_under_1M": 16227,
+     "dollars": 608610860.5,
+     "dollars_in_groups_under_1M": 180883530.39,
+     "pct_dollars_under_1M": 29.720720106998485,
+     "pct_groups_under_1M": 99.44233361931609
     },
     "dept_vendor_contract": {
-     "groups": 16432,
-     "groups_under_1M": 16331,
-     "dollars": 609095715.7,
-     "dollars_in_groups_under_1M": 194364465.31,
-     "pct_dollars_under_1M": 31.91033203814735,
-     "pct_groups_under_1M": 99.38534566699124
+     "groups": 16430,
+     "groups_under_1M": 16329,
+     "dollars": 608610860.5,
+     "dollars_in_groups_under_1M": 193879610.11,
+     "pct_dollars_under_1M": 31.856087804729537,
+     "pct_groups_under_1M": 99.38527084601338
     }
    },
    "PROF": {
     "dept_vendor": {
      "groups": 284,
      "groups_under_1M": 177,
-     "dollars": 974108827.42,
-     "dollars_in_groups_under_1M": 50150489.57,
-     "pct_dollars_under_1M": 5.148345663063882,
+     "dollars": 974058202.27,
+     "dollars_in_groups_under_1M": 50099864.42,
+     "pct_dollars_under_1M": 5.143415896837013,
      "pct_groups_under_1M": 62.32394366197183
     },
     "dept_vendor_contract": {
      "groups": 383,
      "groups_under_1M": 274,
-     "dollars": 974108827.4200001,
-     "dollars_in_groups_under_1M": 82638882.65,
-     "pct_dollars_under_1M": 8.483536985171899,
+     "dollars": 974058202.27,
+     "dollars_in_groups_under_1M": 82588257.5,
+     "pct_dollars_under_1M": 8.478780560292156,
      "pct_groups_under_1M": 71.54046997389034
     }
    },
