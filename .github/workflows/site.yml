@@ -1,10 +1,10 @@
 name: Site checks
 on:
   pull_request:
-    paths: ['site/**', 'build/export_site.py', 'build/validate_site_data.py', '.github/workflows/site.yml']
+    paths: ['site/**', 'build/export_site.py', 'build/validate_site_data.py', 'tests/check_site_dist.py', '.github/workflows/site.yml']
   push:
     branches: [main]
-    paths: ['site/**', 'build/export_site.py', 'build/validate_site_data.py', '.github/workflows/site.yml']
+    paths: ['site/**', 'build/export_site.py', 'build/validate_site_data.py', 'tests/check_site_dist.py', '.github/workflows/site.yml']
 permissions:
   contents: read
 jobs:
@@ -41,3 +41,4 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm run build
+      - run: python ../tests/check_site_dist.py dist
