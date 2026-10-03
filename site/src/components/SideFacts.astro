@@ -1,0 +1,24 @@
+---
+import type {SideFact} from '../lib/sideFacts';
+const {side=[],sideRef} = Astro.props as {side?:SideFact[];sideRef?:string};
+---
+{(sideRef || side.length>0) && <section class="side-facts" aria-label="More facts" data-side-facts data-side-ref={sideRef} data-side={!sideRef?JSON.stringify(side):undefined}>
+  <details data-side-toggle>
+    <summary>More facts{!sideRef ? ` (${side.length})` : ''}</summary>
+    <div data-side-output aria-live="polite"><p>Open to load additional facts.</p></div>
+  </details>
+</section>}
+<script>
+  import {initSideFacts} from '../lib/sideFacts';
+  document.querySelectorAll<HTMLElement>('[data-side-facts]').forEach(initSideFacts);
+</script>
+<style>
+  .side-facts{margin-block:1.5rem}
+  .side-facts :global(summary){cursor:pointer;font-weight:600;padding:.55rem 0}
+  .side-facts :global(summary:focus-visible){outline:2px solid currentColor;outline-offset:3px}
+  .side-facts :global(.side-facts-group){margin-block:.7rem;border-top:1px solid #bbb}
+  .side-facts :global(.side-facts-group > ul){padding-inline-start:1.5rem}
+  .side-facts :global(.side-facts-group li){margin-block:.7rem}
+  .side-facts :global(.side-fact-detail){margin-block:.35rem}
+  .side-facts :global(dd){margin:0 0 .45rem 1rem;overflow-wrap:anywhere}
+</style>
