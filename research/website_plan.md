@@ -729,6 +729,26 @@ Launch checklist (M7): fresh `build_all.sh` pass; validator pass before and afte
 
 ## 19. Open questions for the user
 
+Decided by the user on 2026-10-03:
+
+| # | Question | Decision |
+|---|---|---|
+| 7 | Comparisons (`context` table) | **Yes.** Add the sourced context table; per resident, per student and tax bill cards may appear |
+| 9 | Vendors table | **Yes.** Add the `vendors` table to `budget.db` in the build |
+| 11 | Per-box JSON downloads | **No downloads.** Instead each box links to the files it comes from in the public GitHub repository (the split file, builder script and research note), and the About and Contribute pages link to the repository |
+| 23 | Reproducible inputs | **Yes.** Publish the gitignored `raw/` inputs as a checksummed GitHub release asset fetched by `build/fetch_inputs.sh` |
+| 1 | Domain and name | Name to be decided, probably **ChicagoBudget.com**. Launch on `*.pages.dev` until the domain is bought; keep the name in one config value |
+| 3 | Hosting | **Cloudflare Pages** |
+| 4 | Analytics | **Cloudflare Web Analytics** (basic, cookie-free traffic counts) |
+| 5 | Branding | Undecided. **Build the site so branding is cheap to change**: all colors, fonts, spacing, logo and site name live in design tokens (CSS custom properties) and one site config file; components use tokens only, never hard-coded colors; a /style-guide page renders every token and badge for review |
+| 6 | Spanish | **English only** |
+| 13 | Launch scope | **Everything** (all three governments and the counted-twice branch) |
+| 8 | Reporting problems | **GitHub issues** with templates (no separate email) |
+| - | Repository visibility | **Public** (names in committed data files are acceptable; the site still hides individuals' names) |
+
+Still open (recommendations stand unless the user says otherwise): 2 deploy machine, 10 service worker (default no), 12 refresh cadence, 14 kid testers, 15 remaining build changes (treated as approved: remainder sentence, vendors, context), 16 under-5 rule on budgeted rates (recommended: actual pay only), 17 CPS FY2026 badge, 18 individuals' neutral descriptions (recommended: keep), 19 memo branch out of headline figures, 20 strict coverage leads, 21 licenses (recommended MIT + CC BY 4.0), 22 contribution scope.
+
+Original list, kept for reference:
 Decided since the first draft:
 
 - **Repository visibility (was part of question 8): PUBLIC.** The repository is open so anyone can check the data and contribute to the site and the data. Names in committed data files are acceptable because they are public records; the website itself still hides individuals' names. Research files can be linked from the Sources page. Section 20 describes the contribution setup.
