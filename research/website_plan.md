@@ -580,7 +580,7 @@ CI (without private data) runs sections 13.3 and the tests (section 20.5). Deplo
 From audit 3, the gap check and this plan:
 
 1. Done in `aaae712`: hide remaining couples and artist grant payees; fix the IEPA loan and sewer cleaning why sentences.
-2. Improve the "Budgeted but not spent yet" why sentence on the 98 Mid-Year remainder boxes so it says payments coded to another line or paid without a contract number could also be inside it (a `why_fixes` split).
+2. Done (M1 part A): the "Budgeted but not spent yet" why sentence on the 98 Mid-Year remainder boxes now says it is the part of the line with no matched payment yet, not a promise that this much is unspent, and that payments coded to another line or paid without a contract number could also be inside it. The sentence lives in `scripts/midyear_build.py` (`WHY_REMAINDER`) and in `data/splits/city/paid_to_date_midyear.json` (102 lines carry it; 98 of them keep a remainder box after the build). The same commit removed four `why_fixes` entries whose lines had since been split by vendor boxes, so `build_all.sh` now reports 0 skipped splits.
 3. Add the `vendors` table (section 7.2), or decide on the fallback.
 4. Done in `30edc9e`: "2010B (MSAC)" added to the two GO 2010B names (the two ids changed with the names).
 5. Consider a `glossary_terms` list or leave the glossary hand-written (recommended: hand-written, no numbers).

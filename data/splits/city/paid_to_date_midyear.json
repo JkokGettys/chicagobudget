@@ -50,7 +50,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -127,7 +127,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -168,7 +168,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -220,7 +220,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -261,7 +261,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -330,7 +330,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -482,7 +482,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -574,7 +574,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -1431,7 +1431,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -1483,7 +1483,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -1746,7 +1746,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -1958,7 +1958,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -1998,7 +1998,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -2078,7 +2078,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -2118,7 +2118,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -2223,7 +2223,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -2327,7 +2327,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -2367,7 +2367,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -2435,7 +2435,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -2475,7 +2475,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -2592,7 +2592,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -2710,7 +2710,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -2923,7 +2923,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -3052,7 +3052,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -3120,7 +3120,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -3160,7 +3160,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -3528,7 +3528,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -3596,7 +3596,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -3676,7 +3676,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -3744,7 +3744,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -3836,7 +3836,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -3876,7 +3876,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -3916,7 +3916,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -3984,7 +3984,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -4439,7 +4439,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -4555,7 +4555,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -4623,7 +4623,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -4663,7 +4663,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -4731,7 +4731,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -4799,7 +4799,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -4855,7 +4855,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -4911,7 +4911,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -4979,7 +4979,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -5461,7 +5461,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -5517,7 +5517,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -5693,7 +5693,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -5749,7 +5749,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -5817,7 +5817,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -5885,7 +5885,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -5941,7 +5941,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -5997,7 +5997,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -6053,7 +6053,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -6109,7 +6109,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -6165,7 +6165,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -6233,7 +6233,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -6314,7 +6314,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -6431,7 +6431,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -6487,7 +6487,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -6543,7 +6543,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -6695,7 +6695,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -6763,7 +6763,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -6903,7 +6903,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -6959,7 +6959,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7015,7 +7015,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7071,7 +7071,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7127,7 +7127,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7183,7 +7183,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7251,7 +7251,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7307,7 +7307,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7363,7 +7363,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7419,7 +7419,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7475,7 +7475,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7531,7 +7531,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7587,7 +7587,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7643,7 +7643,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7699,7 +7699,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7755,7 +7755,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7811,7 +7811,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7867,7 +7867,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7923,7 +7923,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -7979,7 +7979,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8035,7 +8035,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8091,7 +8091,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8131,7 +8131,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8187,7 +8187,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8255,7 +8255,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8311,7 +8311,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8367,7 +8367,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8423,7 +8423,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8479,7 +8479,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8535,7 +8535,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8591,7 +8591,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8631,7 +8631,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8687,7 +8687,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8755,7 +8755,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8811,7 +8811,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8867,7 +8867,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8923,7 +8923,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -8963,7 +8963,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -9019,7 +9019,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -9075,7 +9075,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",
@@ -9131,7 +9131,7 @@
    },
    "residual": {
     "name": "Budgeted but not spent yet",
-    "why": "This is budget money the City has set aside for this line but has not paid out yet this year (payments run to 09/28/2026)."
+    "why": "This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, or paid without a contract number, could also be inside this amount."
    },
    "over": {
     "name": "Already spent more than the budget for this line",

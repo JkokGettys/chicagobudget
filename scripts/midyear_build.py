@@ -50,6 +50,9 @@ SINGLE_THRESHOLD = 0.95
 GUARD = 2.0
 HIDDEN = "Individual (name hidden)"
 NOTE_CODED = "Matched to this line using how the City coded this contract's 2025 invoices."
+WHY_REMAINDER = ("This is the part of the budget line with no matched payment yet (payments run to 09/28/2026). It is not a promise that this much is still unspent. "
+                 "We only matched payments on contracts the City coded to this line in 2025, so payments coded to another line, "
+                 "or paid without a contract number, could also be inside this amount.")
 URL_PAGE = "https://www.chicago.gov/city/en/depts/fin/supp_info/mid-year-report-contracts-data.html"
 TOP_N = 10
 
@@ -287,6 +290,7 @@ def main():
                       f"(same fund, department and account) on {SINGLE_THRESHOLD:.0%} or more of their 2025 invoice dollars (Department of Finance, "
                       "Contracts Data published with the 2026 Mid-Year Budget Report). " + NOTE_CODED + " The 2026 invoices themselves are not in that "
                       "file, so a few may be coded differently. Names of individual people are hidden.")
+        sp["residual"] = {"name": "Budgeted but not spent yet", "why": WHY_REMAINDER}
         sp["over"] = {"name": "Already spent more than the budget for this line",
                       "note": "Payments so far on contracts matched to this line are larger than the full-year budget line. " + NOTE_CODED +
                               " Some of this money may be charged to other lines in 2026, so this negative box keeps the boxes adding up to the budget."}

@@ -47,19 +47,6 @@
   {
    "target": {
     "by": "ordinance_line",
-    "fund": "0100",
-    "dept": 50,
-    "authority": "2005",
-    "account": "9204"
-   },
-   "expect_amount": 10224000,
-   "mode": "side_only",
-   "why": "This pays outside groups that run mentoring programs for young people. The budget gives one total, and the City's payment records show what each company or group was paid but not which budget line paid it, so we cannot split it.",
-   "evidence": "Line name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c; payment records carry no budget line (research/tree_gap_audit_2.md section 2)"
-  },
-  {
-   "target": {
-    "by": "ordinance_line",
     "fund": "0B93",
     "dept": 50,
     "authority": "2005",
@@ -83,19 +70,6 @@
   {
    "target": {
     "by": "ordinance_line",
-    "fund": "0355",
-    "dept": 23,
-    "authority": "2015",
-    "account": "9805"
-   },
-   "expect_amount": 11222900,
-   "mode": "side_only",
-   "why": "This pays for producing City festivals and is paid from the special events and hotel tax fund. The budget gives one total, and the City's payment records show what each company or group was paid but not which budget line paid it.",
-   "evidence": "Line and fund name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c"
-  },
-  {
-   "target": {
-    "by": "ordinance_line",
     "fund": "0100",
     "dept": 6,
     "authority": "2150",
@@ -111,38 +85,12 @@
     "by": "ordinance_line",
     "fund": "0100",
     "dept": 38,
-    "authority": "2126",
-    "account": "0125"
-   },
-   "expect_amount": 18501258,
-   "mode": "side_only",
-   "why": "This pays outside companies for services that keep City buildings running. The budget gives one total, and the City's payment records show what each company or group was paid but not which budget line paid it.",
-   "evidence": "Line name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c"
-  },
-  {
-   "target": {
-    "by": "ordinance_line",
-    "fund": "0100",
-    "dept": 38,
     "authority": "2131",
     "account": "0155"
    },
    "expect_amount": 22807498,
    "mode": "side_only",
    "why": "This is rent the City pays for space and property it leases. The budget gives one total, and the City's payment records show what each company or group was paid but not which budget line paid it.",
-   "evidence": "Line name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c"
-  },
-  {
-   "target": {
-    "by": "ordinance_line",
-    "fund": "0100",
-    "dept": 38,
-    "authority": "2140",
-    "account": "0176"
-   },
-   "expect_amount": 12925000,
-   "mode": "side_only",
-   "why": "This pays to keep City-owned vehicles repaired and running, as needs come up during the year. The budget gives one total, and the City's payment records show what each company or group was paid but not which budget line paid it.",
    "evidence": "Line name in 2026 Annual Appropriation Ordinance, dataset 6694-f78c"
   },
   {
