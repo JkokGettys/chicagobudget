@@ -242,13 +242,16 @@ def build_salary(line, dept_tree, fund, dept_num, division_code=None):
                        extra={"title_code": c["code"]})
         if len(rows) > 1:
             # one box per pay rate: "2,148 positions x $111,252"
-            by_rate = defaultdict(lambda: [0, 0, None])
+            # Rows counted in positions and rows counted in hours can share one rate (for example 26 plumbers
+            # and 145,600 plumber hours at $60.50). They get separate boxes, so a count of hours is never
+            # labelled as positions.
+            by_rate = defaultdict(lambda: [0, 0])
             for x in rows:
-                k = (x["rate"], x.get("grade"))
-                by_rate[k][0] += x["units"]; by_rate[k][1] += x["amount"]; by_rate[k][2] = x.get("unit_is_positions")
-            for (rt, gr), (u, a, isp) in sorted(by_rate.items(), key=lambda kv: -kv[1][1]):
+                k = (x["rate"], x.get("grade"), bool(x.get("unit_is_positions")))
+                by_rate[k][0] += x["units"]; by_rate[k][1] += x["amount"]
+            for (rt, gr, isp), (u, a) in sorted(by_rate.items(), key=lambda kv: -kv[1][1]):
                 lbl = "positions" if isp else "hours"
-                n.add(f"rate-{rt}-{gr}", f"{u:,.0f} {lbl} x ${rt:,.2f}" + (f" (grade {gr})" if gr else ""),
+                n.add(f"rate-{rt}-{gr}" + ("" if isp else "-hours"), f"{u:,.0f} {lbl} x ${rt:,.2f}" + (f" (grade {gr})" if gr else ""),
                       amount=cents(a), basis="tied", kind="pay_rate", count=u, unit_amount=cents(rt), unit_label=lbl)
             if sum(ch.amount for ch in n.children) != n.amount:
                 n.add("rounding", "Rounding", amount=n.amount - sum(ch.amount for ch in n.children), basis="adjustment")
