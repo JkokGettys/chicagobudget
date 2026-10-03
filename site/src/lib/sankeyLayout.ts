@@ -11,6 +11,8 @@ export type FlowOptions = {
 
 export type FlowRow<T extends FlowChild> = {
   id: string;
+  /** Synthetic rows say "N more"; ordinary rows use their child ID. */
+  label: string;
   amount_cents: number;
   y: number;
   height: number;
@@ -115,6 +117,7 @@ export function layoutFlow<T extends FlowChild>(
     const isOverflow = group.length > 1;
     const row: FlowRow<T> = {
       id: isOverflow ? overflowId : group[0].id,
+      label: isOverflow ? `${group.length} more` : group[0].id,
       amount_cents,
       y,
       height: rowHeight,

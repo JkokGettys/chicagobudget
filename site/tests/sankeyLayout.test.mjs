@@ -43,6 +43,7 @@ test('more than 20 positive children aggregate without hiding any child or deep 
   assert.deepEqual(result.rows.slice(0, 11).map(row => row.id), input.slice(0, 11).map(child => child.id));
   const more = result.rows.at(-1);
   assert.equal(more.isOverflow, true);
+  assert.equal(more.label, '12 more');
   assert.equal(more.children.length, 12);
   assert.equal(more.amount_cents, 210);
   assert.deepEqual(more.children.map(child => child.id), input.slice(11).map(child => child.id));
