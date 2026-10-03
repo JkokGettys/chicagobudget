@@ -6,7 +6,7 @@ Data contributions fix numbers, add detail or improve explanations. Site contrib
 
 ## Local setup and a split example
 
-Use Python 3.11+, SQLite and `python3 -m pip install -r requirements.txt`. Site work also needs Node 20+. The builders currently need public-source extracts under `raw/` that are not committed. See the root README for this reproducibility limitation. Never commit `raw/` or `data/people/`.
+Use Python 3.11+, SQLite and `python3 -m pip install -r requirements.txt`. Site work also needs Node 22+. The builders currently need public-source extracts under `raw/` that are not committed. See the root README for this reproducibility limitation. Never commit `raw/` or `data/people/`.
 
 Find a box with `sqlite3 data/budget.db "select id, amount_cents from nodes where name like '%Overtime%' limit 10;"`. A split file targets one existing box and names its exact expected dollar amount:
 
