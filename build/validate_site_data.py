@@ -4,10 +4,11 @@ import gzip
 import json
 import re
 import sqlite3
+import subprocess
 import sys
 from pathlib import Path
 
-from export_site import DB, OUT, PAY_FIELDS, PERIODS, coverage
+from export_site import DB, OUT, PAY_FIELDS, PERIODS, ROOT, coverage, safe_repo_path
 
 BASIS = {'budget', 'tied', 'paid_to_date', 'proxy', 'adjustment', 'residual', 'gov_estimate'}
 TOTALS = {'city': 1_684_255_300_300, 'city-twice': 170_902_695_500, 'cps': 1_025_332_746_368, 'parks': 63_758_035_000}
@@ -21,6 +22,10 @@ def validate(db=DB, out=OUT):
     con.row_factory = sqlite3.Row
     originals = {r['id']: dict(r) for r in con.execute('select * from nodes')}
     sources = json.loads((out / 'sources.json').read_text())
+    tracked = set(subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode().strip('\0').split('\0'))
+    for source in sources:
+        if isinstance(source, dict) and 'repo_path' in source:
+            assert safe_repo_path(source['repo_path'], tracked) == source['repo_path'], source['repo_path']
     records = {}
     for root, filename in manifest['chunks'].items():
         chunk = json.loads((out / filename).read_text())

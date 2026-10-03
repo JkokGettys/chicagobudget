@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'build'))
-from export_site import clean, coverage, formula, period_for, suppress_pay, DB, OUT
+from export_site import clean, coverage, formula, period_for, safe_repo_path, suppress_pay, DB, OUT
 from validate_site_data import validate
 
 
@@ -25,6 +25,13 @@ class ExportTests(unittest.TestCase):
             self.assertEqual(result[count], 4)
             self.assertEqual(result['budget_2026_total'], 999)
             self.assertTrue(set(fields.split()).isdisjoint(result))
+
+    def test_repo_path_allowlist_and_tracking(self):
+        tracked = {'research/sources.md', 'data/splits/city/example.json', 'build/payee.py', 'data/budget.json', 'raw/secret.json', 'data/people/person.json', 'data/untracked.csv'}
+        for path in ('research/sources.md', 'data/splits/city/example.json', 'build/payee.py', 'data/budget.json'):
+            self.assertEqual(safe_repo_path(path, tracked), path)
+        for path in ('raw/secret.json', 'data/people/person.json', 'data/untracked.csv', 'research/../raw/secret.json', '/research/sources.md', 'research/untracked.md'):
+            self.assertIsNone(safe_repo_path(path, tracked))
 
     def test_paid_period_is_own_source_and_unknown_fails(self):
         self.assertEqual(period_for({'doc': 'Judgments through 2026-07-31'}), 'city_law_2026_to_0731')

@@ -38,6 +38,15 @@ def parsed(value):
         return value
 
 
+def safe_repo_path(path, tracked):
+    """Only expose existing, git-tracked public source paths, never arbitrary files."""
+    if not isinstance(path, str) or path not in tracked or '\\' in path or '..' in Path(path).parts:
+        return None
+    if path.startswith(('data/splits/', 'research/', 'build/')) or re.fullmatch(r'data/[^/]+\.json', path):
+        return path
+    return None
+
+
 def suppress_pay(extra):
     group = extra.get('group') if isinstance(extra, dict) else None
     if isinstance(group, dict):
@@ -112,9 +121,18 @@ def export(db=DB, out=OUT):
             children[n['parent_id']].append(n['id'])
     sides = collections.defaultdict(list)
     sources, source_ids = [], {}
+    tracked = set(subprocess.check_output(['git', 'ls-files', '-z'], cwd=ROOT).decode().strip('\0').split('\0'))
 
     def source_index(raw):
         value = parsed(raw)
+        if isinstance(value, dict):
+            try:
+                original = json.loads(raw) if isinstance(raw, str) else raw
+            except ValueError:
+                original = {}
+            repo_path = safe_repo_path(original.get('file'), tracked) if isinstance(original, dict) else None
+            if repo_path:
+                value['repo_path'] = repo_path
         key = json.dumps(value, sort_keys=True, ensure_ascii=False)
         if key not in source_ids:
             source_ids[key] = len(sources)
