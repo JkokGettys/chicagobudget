@@ -2,7 +2,7 @@
  "meta": {
   "basis": "2026ytd",
   "title": "2026 year to date",
-  "label": "paid Jan 1 to 09/28/2026 2026, partial year",
+  "label": "paid Jan 1 to 09/28/2026, partial year",
   "latest_check_date": "09/28/2026",
   "deduplicated": true,
   "payment_rows": 82424,
@@ -33,7 +33,7 @@
   "vendor:UTIL": 160802534.0,
   "vendor:WASTE": 66157047.0
  },
- "source": "2026 Budget Ordinance 6694-f78c vs Payments s4vu-giwb (paid Jan 1 to 09/28/2026 2026, partial year) + Contracts rsxa-ify5",
+ "source": "2026 Budget Ordinance 6694-f78c vs Payments s4vu-giwb (paid Jan 1 to 09/28/2026, partial year) + Contracts rsxa-ify5",
  "definitions": {
   "budget_vendor_payable": "2026 appropriation lines whose account maps to a vendor-facing family (see families). Excludes personnel, pensions, debt, internal transfers, reserves, tax distributions.",
   "paid_2025_vendor": "payments of the chosen basis (see meta.label) resolved to the department, excluding pension / bank / tax / pass-through direct vouchers and payments on contracts missing from the Contracts dataset",

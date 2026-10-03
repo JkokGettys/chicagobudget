@@ -1,7 +1,7 @@
 {
  "meta": {
   "generated_by": "scripts/leaves_contracts.py",
-  "basis": "paid Jan 1 to 09/28/2026 2026, partial year. Payments s4vu-giwb, duplicates removed (scripts/payments_dedupe.py), file raw/contracts/payments_2026ytd_dedup.csv. A voucher is one check (sum of its lines). Revision history from Contracts rsxa-ify5. Keys named *_2025 hold this basis's dollars.",
+  "basis": "paid Jan 1 to 09/28/2026, partial year. Payments s4vu-giwb, duplicates removed (scripts/payments_dedupe.py), file raw/contracts/payments_2026ytd_dedup.csv. A voucher is one check (sum of its lines). Revision history from Contracts rsxa-ify5. Keys named *_2025 hold this basis's dollars.",
   "basis_id": "2026ytd",
   "payments_deduplicated": true,
   "sources_fetched": [

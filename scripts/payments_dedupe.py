@@ -200,7 +200,7 @@ def main():
                        "Rows of $99,000,000 or more are never dropped: the City splits large wires into checks capped at $99M, so identical $99M lines in one voucher are tranches. "
                        "Only rows with a voucher number are considered."),
               "check_cap_exemption_amount": CHECK_CAP, "latest_2026_check_date": latest,
-              "label_2026ytd": f"paid Jan 1 to {latest} 2026, partial year", "by_year": {}}
+              "label_2026ytd": f"paid Jan 1 to {latest}, partial year", "by_year": {}}
     for y, rows in years.items():
         kept, dropped = dedupe_rows(rows)
         write_csv(f"{ROOT}/{out_files[y]}", kept)

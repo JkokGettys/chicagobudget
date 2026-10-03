@@ -388,7 +388,7 @@ def load_payments(basis, raw):
         keep = df.check_date.map(lambda x: mmdd_key(x) <= mmdd_key(cutoff))
         df = df[keep].copy()
     if basis == "2026ytd":
-        label = "paid Jan 1 to {} 2026, partial year".format(cutoff)
+        label = "paid Jan 1 to {}, partial year".format(cutoff)
         latest = cutoff
     elif basis == "2025samedates":
         label = "paid Jan 1 to {}/2025, same dates as the 2026 year to date".format(cutoff[:5])

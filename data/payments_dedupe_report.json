@@ -3,7 +3,7 @@
  "rule": "Same payment line = equal voucher_number + amount + check_date + vendor_name + contract_number. department_name is ignored (the dataset lists many payments twice, once with the department and once blank). Keep one row per key (prefer the row with a department). Rows of $99,000,000 or more are never dropped: the City splits large wires into checks capped at $99M, so identical $99M lines in one voucher are tranches. Only rows with a voucher number are considered.",
  "check_cap_exemption_amount": 99000000.0,
  "latest_2026_check_date": "09/28/2026",
- "label_2026ytd": "paid Jan 1 to 09/28/2026 2026, partial year",
+ "label_2026ytd": "paid Jan 1 to 09/28/2026, partial year",
  "by_year": {
   "2025": {
    "output_file": "raw/contracts/payments_2025_dedup.csv",

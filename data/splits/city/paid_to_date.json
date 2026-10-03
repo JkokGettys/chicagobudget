@@ -2,7 +2,7 @@
  "meta": {
   "author": "paid-to-date agent",
   "built_by": "scripts/paidtodate_build.py",
-  "description": "Vendor payments so far (paid Jan 1 to 09/28/2026 2026, partial year) as boxes under the City budget lines they can be matched to. Rules are in the header of scripts/paidtodate_build.py. Payments carry no fund or account, so only unambiguous matches are placed."
+  "description": "Vendor payments so far (paid Jan 1 to 09/28/2026, partial year) as boxes under the City budget lines they can be matched to. Rules are in the header of scripts/paidtodate_build.py. Payments carry no fund or account, so only unambiguous matches are placed."
  },
  "splits": [
   {

@@ -1517,7 +1517,7 @@
  "meta": {
   "basis": "2026ytd",
   "title": "2026 year to date",
-  "label": "paid Jan 1 to 09/28/2026 2026, partial year",
+  "label": "paid Jan 1 to 09/28/2026, partial year",
   "latest_check_date": "09/28/2026",
   "deduplicated": true,
   "payment_rows": 82424,
