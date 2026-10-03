@@ -294,10 +294,16 @@
      "why": "This is what one company has been paid so far this year on one contract, and the payment records do not show smaller pieces."
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 181416.94,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CHICAGO UNITED INDUSTRIES, LIMITED",
@@ -313,11 +319,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -372,10 +374,16 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (7)",
      "amount": 2370974.89,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 7,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "I O SOLUTIONS",
@@ -463,11 +471,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -522,10 +526,16 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 306349.07,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "POLYDYNE, INC",
@@ -553,11 +563,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -588,10 +594,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (47)",
      "amount": 7966932.67,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 47,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "SINAI COMMUNITY INSTITUTE, INC.",
@@ -1408,11 +1420,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -1544,10 +1552,16 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (10)",
      "amount": 2635132.76,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 10,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "BOARD OF TRUSTEES OF THE UNIV. OF ILLINOIS",
@@ -1721,11 +1735,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -1780,10 +1790,16 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (12)",
      "amount": 3404192.38,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 12,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "PATSON",
@@ -1931,11 +1947,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -2018,10 +2030,16 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 653831.15,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "The Aberdeen Group, Inc.",
@@ -2049,11 +2067,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -2161,10 +2175,16 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 1011887.25,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CITY ESCAPE GARDEN & DESIGN,LLC",
@@ -2192,11 +2212,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -2251,10 +2267,16 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (3)",
      "amount": 322955.81,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 3,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "VECTOR DISEASE CONTROL INTERNATIONAL LLC",
@@ -2294,11 +2316,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -2381,10 +2399,16 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 570060.19,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CSG FORTE PAYMENTS INC",
@@ -2400,11 +2424,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -2512,10 +2532,16 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (3)",
      "amount": 486582.2,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 3,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CHICAGO UNITED INDUSTRIES, LIMITED",
@@ -2555,11 +2581,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -2627,10 +2649,16 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 947585.25,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CHRISTY WEBBER LANDSCAPES",
@@ -2671,11 +2699,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -2706,10 +2730,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (12)",
      "amount": 2592971.72,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 12,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "RAVENSWOOD SPECIAL EVENTS INC",
@@ -2882,11 +2912,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -2954,10 +2980,16 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (4)",
      "amount": 1415854.76,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 4,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "ILLINOIS ACTION FOR CHILDREN",
@@ -3009,11 +3041,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -3056,10 +3084,16 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 7317.08,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "FCA FUND CHICAGO II LLC",
@@ -3075,11 +3109,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -3162,10 +3192,16 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (26)",
      "amount": 777905.76,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 26,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "ALTERNATIVE SCHOOLS NETWORK",
@@ -3481,11 +3517,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -3528,10 +3560,16 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 732386.31,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CITY WIDE DISPOSAL",
@@ -3547,11 +3585,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -3582,10 +3616,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (3)",
      "amount": 2143857.45,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 3,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "FEDERAL AVIATION ADMINISTRATION",
@@ -3625,11 +3665,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -3672,10 +3708,16 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 172520.82,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CHICAGO UNITED INDUSTRIES, LIMITED",
@@ -3691,11 +3733,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -3726,10 +3764,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (4)",
      "amount": 1793162.85,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 4,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "TRANSWESTERN COMMERCIAL SERVICES, LLC.",
@@ -3781,11 +3825,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -3908,10 +3948,16 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 444864.4,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CHICAGO UNITED INDUSTRIES, LIMITED",
@@ -3927,11 +3973,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -3962,10 +4004,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (27)",
      "amount": 1176070.5,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 27,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "METROPOLITAN FAMILY SERVICES",
@@ -4368,11 +4416,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     },
     {
      "name": "Individual (name hidden)",
@@ -4415,10 +4459,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (6)",
      "amount": 1214495.64,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 6,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "SMITH.BARNEY. FRIEDMAN DEVELOPMENT ADVISORS, LLC",
@@ -4494,11 +4544,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -4529,10 +4575,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 1195069.98,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "NIJC, NFP",
@@ -4560,11 +4612,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -4635,10 +4683,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 979405.66,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "RAE PRODUCTS & CHEMICALS CORP.",
@@ -4666,11 +4720,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -4701,10 +4751,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 945526.99,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "T & N CHICAGO, INC.",
@@ -4732,11 +4788,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -4767,10 +4819,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 809955.24,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "LADDER UP",
@@ -4786,11 +4844,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -4821,10 +4875,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 804400.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "JACOBSEN/DANIELS ASSOC., LLC",
@@ -4840,11 +4900,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -4875,10 +4931,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 778775.97,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CARDINAL HEALTH",
@@ -4906,11 +4968,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -4941,10 +4999,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (20)",
      "amount": 777968.79,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 20,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "WM INITIATIVES LLC",
@@ -5386,11 +5450,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -5421,10 +5481,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 771500.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "GUIDEHOUSE INC.",
@@ -5440,11 +5506,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -5475,10 +5537,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (11)",
      "amount": 652116.02,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 11,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "LAWNDALE BUSINESS RENAISSANCE ASSOCIATION",
@@ -5614,11 +5682,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -5649,10 +5713,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 604645.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CANUCK POWER INC",
@@ -5668,11 +5738,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -5703,10 +5769,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 594254.6,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CONTINENTAL TESTING SERVICES",
@@ -5734,11 +5806,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -5769,10 +5837,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 555623.04,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "MACKIE CONSULTANTS, LLC",
@@ -5800,11 +5874,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -5835,10 +5905,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 525269.19,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "ALDRIDGE ELECTRIC INC",
@@ -5854,11 +5930,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -5889,10 +5961,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 512100.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CURB MOBILITY LLC",
@@ -5908,11 +5986,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -5943,10 +6017,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 466425.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "BAKER TILLY VIRCHOW KRAUSE, LLP",
@@ -5962,11 +6042,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -5997,10 +6073,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 463133.08,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "GREELEY & HANSEN",
@@ -6016,11 +6098,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6051,10 +6129,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 443771.27,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "WESTSIDE HEALTH AUTHORITY",
@@ -6070,11 +6154,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6105,10 +6185,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 409408.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "WALLACE-HARRISON FUNERAL HOME, INC.",
@@ -6136,11 +6222,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6171,10 +6253,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 406559.61,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CITY LIGHTS, LIMITED/ZSL ELECTRIC",
@@ -6215,11 +6303,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6250,10 +6334,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (4)",
      "amount": 404391.45,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 4,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "GLADYS R. WILSON & ASSOCIATES PC",
@@ -6330,11 +6420,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6365,10 +6451,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 390119.69,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "INNOVATIVE INTERFACES INC",
@@ -6384,11 +6476,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6419,10 +6507,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 383677.78,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "SOMERCOR 504, INC.",
@@ -6438,11 +6532,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6473,10 +6563,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (9)",
      "amount": 366930.99,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 9,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "SKILLS FOR CHICAGOLAND'S FUTURE",
@@ -6588,11 +6684,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6623,10 +6715,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 350997.3,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "AIR ONE EQUIPMENT INC",
@@ -6654,11 +6752,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6689,10 +6783,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (8)",
      "amount": 340606.94,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 8,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CATHOLIC CHARITIES OF THE ARCHDIOCESE OF CHICAGO",
@@ -6792,11 +6892,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6827,10 +6923,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 296615.01,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "ELECTRONIC KNOWLEDGE INTERCHANGE",
@@ -6846,11 +6948,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6881,10 +6979,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 285000.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CHICAGO PARK DISTRICT",
@@ -6900,11 +7004,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6935,10 +7035,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 283445.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "PRADO & RENTERIA CPA'S",
@@ -6954,11 +7060,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -6989,10 +7091,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 265004.77,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "RUSSO HARDWARE, INC.",
@@ -7008,11 +7116,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7043,10 +7147,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 253385.43,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CABRINI GREEN LEGAL AID CLINIC",
@@ -7062,11 +7172,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7097,10 +7203,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 238911.8,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CENTER FOR APPLIED PSYCHOLOGY & FORENSIC STUDIES",
@@ -7128,11 +7240,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7163,10 +7271,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 221791.1,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "ARCONAS",
@@ -7182,11 +7296,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7217,10 +7327,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 212313.84,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "FOUNTAIN PROS LLC",
@@ -7236,11 +7352,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7271,10 +7383,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 185940.81,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "IDEMIA IDENTITY & SECURITY USA LLC",
@@ -7290,11 +7408,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7325,10 +7439,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 172606.27,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CHICAGO CHILDREN'S ADVOCACY CENTER",
@@ -7344,11 +7464,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7379,10 +7495,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 127133.26,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "UNIVERSITY OF CHICAGO 03",
@@ -7398,11 +7520,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7433,10 +7551,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 102931.44,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "EX3 LABS, LLC",
@@ -7452,11 +7576,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7487,10 +7607,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 86400.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "HERC RENTALS INC",
@@ -7506,11 +7632,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7541,10 +7663,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 74942.12,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "BROOKWOOD FARMS LLC",
@@ -7560,11 +7688,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7595,10 +7719,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 67920.11,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "SILK SCREEN EXPRESS, INC.",
@@ -7614,11 +7744,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7649,10 +7775,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 65702.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "O'LEARY CONTRACTORS EQUIPMENT & SUPPLY CO., INC",
@@ -7668,11 +7800,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7703,10 +7831,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 63850.94,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "BYERS GROUP",
@@ -7722,11 +7856,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7757,10 +7887,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 56514.56,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "BRADFORD SYSTEMS CORPORATION",
@@ -7776,11 +7912,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7811,10 +7943,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 47907.2,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "GEM BUSINESS FORMS, INC.",
@@ -7830,11 +7968,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7865,10 +7999,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 47758.08,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "FRESH COAST LLC DBA GREENPRINT PARTNERS",
@@ -7884,11 +8024,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -7919,10 +8055,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 44200.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "TS Design Studio, Inc.",
@@ -7938,11 +8080,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8013,10 +8151,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 38384.85,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "LAW ENFORCEMENT SYSTEMS, LLC",
@@ -8032,11 +8176,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8067,10 +8207,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 38180.34,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "3 DS CLEANING & VENDOR SUPPLY",
@@ -8098,11 +8244,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8133,10 +8275,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 37686.35,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "COSTAR REALTY INFORMATION, INC",
@@ -8152,11 +8300,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8187,10 +8331,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 35000.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CHICAGO ARCHITECTURE BIENNIAL",
@@ -8206,11 +8356,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8241,10 +8387,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 31433.41,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CBG MIDWEST, LLC DBA AMERICAN BUILDING SERVICES",
@@ -8260,11 +8412,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8295,10 +8443,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 31064.6,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "SAINT FRANCIS GROUP",
@@ -8314,11 +8468,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8349,10 +8499,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 25578.73,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "TETRA TECH INC",
@@ -8368,11 +8524,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8403,10 +8555,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 24791.74,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "COGENT Infotech Corporation",
@@ -8422,11 +8580,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8497,10 +8651,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 17569.98,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "ODP BUSINESS SOLUTIONS LLC",
@@ -8516,11 +8676,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8551,10 +8707,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 15500.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "JAZZ INSTITUTE OF CHICAGO INC",
@@ -8582,11 +8744,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8617,10 +8775,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 14355.6,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CHICAGO UNITED INDUSTRIES, LIMITED",
@@ -8636,11 +8800,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8671,10 +8831,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 11776.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "MERCK ANIMAL HEALTH",
@@ -8690,11 +8856,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8725,10 +8887,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 7937.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "KETCHUM MANUFACTURING CO., INC",
@@ -8744,11 +8912,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8819,10 +8983,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 4928.62,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "CARLIN TRANSCRIPTION SERVICES",
@@ -8838,11 +9008,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8873,10 +9039,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 2381.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "ROOT BROTHERS.MANUFACTURING & SUPPLY CO.",
@@ -8892,11 +9064,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {
@@ -8927,10 +9095,16 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 1148.9,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1,
+      "midyear_contract": true,
+      "midyear_group": true
+     },
      "children": [
       {
        "name": "Eastern Engineering Supply, Inc",
@@ -8946,11 +9120,7 @@
       }
      ],
      "children_residual_name": "Other / not itemised",
-     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices.",
-     "extra": {
-      "midyear_contract": true,
-      "midyear_group": true
-     }
+     "note": "Vendors paid under $1 million each so far, largest first. Matched to this line using how the City coded this contract's 2025 invoices."
     }
    ],
    "source": {

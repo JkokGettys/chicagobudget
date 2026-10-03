@@ -214,10 +214,14 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (3)",
      "amount": 1989126.21,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 3
+     },
      "children": [
       {
        "name": "WSP USA INC.",
@@ -629,10 +633,14 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (61)",
      "amount": 21365718.37,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 61
+     },
      "children": [
       {
        "name": "CHILDREN'S CENTER, INC",
@@ -1489,10 +1497,14 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 837642.6,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1
+     },
      "children": [
       {
        "name": "WASTE MANAGEMENT OF ILLINOIS INC/MTR",
@@ -2052,10 +2064,14 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (40)",
      "amount": 7709589.83,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 40
+     },
      "children": [
       {
        "name": "LINCOLN PARK COMMUNITY SERVICES",
@@ -3964,10 +3980,14 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (10)",
      "amount": 6088894.05,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 10
+     },
      "children": [
       {
        "name": "ALLISON'S INFANT & TODDLER CENTER INC",
@@ -4319,10 +4339,14 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 4349.42,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1
+     },
      "children": [
       {
        "name": "LANDRUM & BROWN, INC",
@@ -4414,10 +4438,14 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (14)",
      "amount": 2346910.95,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 14
+     },
      "children": [
       {
        "name": "ALLIANCE REHAB, INC.",
@@ -4842,10 +4870,14 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (28)",
      "amount": 6065453.57,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 28
+     },
      "children": [
       {
        "name": "LA CASA NORTE, INC",
@@ -5597,10 +5629,14 @@
      }
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (26)",
      "amount": 6457606.68,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 26
+     },
      "children": [
       {
        "name": "BACK OF THE YARDS NEIGHBORHOOD COUNCIL",
@@ -6022,10 +6058,14 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (25)",
      "amount": 5384584.71,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 25
+     },
      "children": [
       {
        "name": "PHALANX FAMILY SERVICES",
@@ -6887,10 +6927,14 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (24)",
      "amount": 5319480.77,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 24
+     },
      "children": [
       {
        "name": "ACCESS COMMUNITY HEALTH NETWORK",
@@ -7937,10 +7981,14 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (82)",
      "amount": 5628497.43,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 82
+     },
      "children": [
       {
        "name": "CHICAGO YOUTH CENTERS",
@@ -9174,10 +9222,14 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (20)",
      "amount": 3982798.67,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 20
+     },
      "children": [
       {
        "name": "PUERTO RICAN CULTURAL CENTER",
@@ -9569,10 +9621,14 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (19)",
      "amount": 4149236.73,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 19
+     },
      "children": [
       {
        "name": "CHICAGO CHILDREN'S ADVOCACY CENTER",
@@ -10078,10 +10134,14 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (10)",
      "amount": 3541253.14,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 10
+     },
      "children": [
       {
        "name": "OLIVE BRANCH MISSION 01",
@@ -10398,10 +10458,14 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (65)",
      "amount": 2669106.47,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 65
+     },
      "children": [
       {
        "name": "ALLIES FOR COMMUNITY BUSINESS INC",
@@ -11346,10 +11410,14 @@
      ]
     },
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 597122.81,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1
+     },
      "children": [
       {
        "name": "INDEPENDENT LIVING SOLUTIONS",
@@ -11418,10 +11486,14 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (4)",
      "amount": 1663700.98,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 4
+     },
      "children": [
       {
        "name": "Chicago Abortion Fund",
@@ -11500,10 +11572,14 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (16)",
      "amount": 1059974.94,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 16
+     },
      "children": [
       {
        "name": "HISTORIC CHICAGO BUNGALOW (LISC)",
@@ -12011,10 +12087,14 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 718130.93,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1
+     },
      "children": [
       {
        "name": "COMMUNITY & ECONOMIC DEVELOPMENT ASSOCIATION OF COOK COUNTY, INC. (CEDA)",
@@ -12060,10 +12140,14 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 515627.26,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2
+     },
      "children": [
       {
        "name": "FEDERACION DE CLUBES MICHOACANOS EN ILLINOIS",
@@ -12120,10 +12204,14 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 483574.55,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2
+     },
      "children": [
       {
        "name": "NEIGHBOR SPACE (BOWMANVILLE GATEWAY GARDEN",
@@ -12180,10 +12268,14 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (3)",
      "amount": 268896.0,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 3
+     },
      "children": [
       {
        "name": "TECH LOGIC CORP",
@@ -12251,10 +12343,14 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 245017.58,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2
+     },
      "children": [
       {
        "name": "EXTENDED HOME LIVING SERVICES",
@@ -12357,10 +12453,14 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (1)",
      "amount": 120439.33,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 1
+     },
      "children": [
       {
        "name": "MIDWEST TAPE EXCHANGE",
@@ -12406,10 +12506,14 @@
    "mode": "paid_to_date",
    "pieces": [
     {
+     "key": "other-vendors",
      "name": "Other vendors (2)",
      "amount": 85112.25,
      "basis": "paid_to_date",
      "kind": "vendor_group",
+     "extra": {
+      "n_vendors": 2
+     },
      "children": [
       {
        "name": "DAVIS BANCORP",

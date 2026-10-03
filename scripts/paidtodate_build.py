@@ -369,7 +369,10 @@ def make_split(line, items):
     out = list(top)
     if rest:
         tot = sum(p["_c"] for p in rest)
-        out.append({"name": f"Other vendors ({len(rest)})", "amount": tot / 100, "basis": "paid_to_date", "kind": "vendor_group",
+        # The id is "other-vendors" with no count, so deep links survive a refresh of the payments.
+        # The count stays in the name and in extra.n_vendors.
+        out.append({"key": "other-vendors", "name": f"Other vendors ({len(rest)})", "amount": tot / 100, "basis": "paid_to_date",
+                    "kind": "vendor_group", "extra": {"n_vendors": len(rest)},
                     "children": rest, "children_residual_name": "Other / not itemised",
                     "note": f"Vendors paid under $1 million each so far, largest first."})
     if ind_piece:
