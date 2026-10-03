@@ -38,12 +38,8 @@ def add_vendors(db):
     # Name matching is a navigation aid, not a claim that all invoices can be
     # assigned to one budget line. Unmatched rows remain in the table.
     by_name = defaultdict(set)
-    by_contract = defaultdict(set)
     for node_id, name, kind, extra in db.execute("SELECT id,name,kind,extra FROM nodes WHERE gov='city' AND kind IN ('vendor','contract')"):
         by_name[name.upper().strip()].add(node_id)
-        info = json.loads(extra or '{}')
-        if info.get('contract'):
-            by_contract[str(info['contract'])].add(node_id)
     db.execute('DROP TABLE IF EXISTS vendors')
     db.execute('''CREATE TABLE vendors (
         payee_display TEXT NOT NULL, is_individual INTEGER NOT NULL CHECK(is_individual IN (0,1)),
@@ -70,7 +66,7 @@ def add_vendors(db):
                 totals[key][1] += 1
     records = []
     for (name, individual, period, contract, department), (amount, count) in sorted(totals.items()):
-        ids = set() if individual else by_name[name.upper()].union(by_contract.get(contract, ()) if contract and contract != 'DV' else ())
+        ids = set() if individual else by_name[name.upper()]
         records.append((name, individual, period, amount, count, contract, department, json.dumps(sorted(ids))))
     db.executemany('INSERT INTO vendors VALUES (?,?,?,?,?,?,?,?)', records)
     db.execute('CREATE INDEX IF NOT EXISTS vendors_period ON vendors(period)')
