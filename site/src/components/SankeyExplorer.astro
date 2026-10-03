@@ -1,0 +1,247 @@
+---
+// Mounted on the home page. Data and the chart are loaded only in the browser.
+---
+<section class="sankey-explorer" data-sankey-explorer aria-labelledby="sankey-title">
+  <header class="explorer-intro">
+    <p class="eyebrow">Follow the money</p>
+    <h2 id="sankey-title">Where does the budget go?</h2>
+    <p>Start with one government, then follow a ribbon into smaller and smaller budget lines. These are separate budgets that may overlap, not parts of a combined total.</p>
+    <p class="explorer-fallback">Browse as pages: <a href="/city">City</a> · <a href="/cps">Public schools</a> · <a href="/parks">Park District</a></p>
+  </header>
+  <p class="explorer-status" data-status role="status" aria-live="polite">Loading budgets…</p>
+  <div data-roots class="explorer-roots" aria-label="Choose a government"></div>
+  <nav data-crumbs class="explorer-crumbs" aria-label="Budget path" hidden></nav>
+  <div data-scroll class="explorer-scroll" tabindex="0" aria-label="Budget flow, scroll horizontally to see more levels" hidden><div data-panels class="explorer-panels"></div></div>
+  <section data-detail class="explorer-detail" aria-label="Selected budget box" hidden></section>
+</section>
+<script>
+  import {layoutFlow} from '../lib/sankeyLayout';
+  import {renderSideFacts} from '../lib/sideFacts';
+  import {sourceUrl} from '../lib/sources';
+
+  type Node = {id:string; name:string; short_name?:string|null; amount_cents:number; parent_id?:string|null; root?:string; basis?:string; period?:string|null; period_label?:string|null; note?:string|null; why?:string|null; source?:number|number[]; side?:Record<string,unknown>[]; side_ref?:string|null; is_leaf?:boolean; n_children?:number; kind?:string; collapse_into?:string|null};
+  type Chunk = {nodes?:Node[];stubs?:Node[]};
+  type Manifest = {chunks:Record<string,string>};
+  const roots=['city','cps','parks'];
+  const title:Record<string,string>={city:'City of Chicago',cps:'Chicago Public Schools',parks:'Chicago Park District'};
+  const basis:Record<string,string>={budget:'In the budget',tied:'Adds up exactly',gov_estimate:'Government estimate',paid_to_date:'Paid so far',proxy:'Our estimate',residual:'Leftover',adjustment:'Adjustment'};
+  const money=(cents:number)=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(cents/100);
+  const short=(cents:number)=>{const n=Math.abs(cents)/100;const result=n>=1e9?`$${(n/1e9).toFixed(2)}b`:n>=1e6?`$${(n/1e6).toFixed(1)}m`:money(Math.abs(cents));return cents<0?`−${result}`:result};
+  const el=<K extends keyof HTMLElementTagNameMap>(tag:K,text?:string):HTMLElementTagNameMap[K]=>{const item=document.createElement(tag);if(text!==undefined)item.textContent=text;return item};
+  const add=(parent:Element,tag:keyof HTMLElementTagNameMap,text:string)=>{const item=el(tag,text);parent.append(item);return item};
+  const fetchJson=async<T,>(url:string):Promise<T>=>{const response=await fetch(url);if(!response.ok)throw Error(`Cannot load ${url}`);return response.json() as Promise<T>};
+  const host=document.querySelector<HTMLElement>('[data-sankey-explorer]');
+  if(host){
+    const rootArea=host.querySelector<HTMLElement>('[data-roots]')!;
+    const crumbArea=host.querySelector<HTMLElement>('[data-crumbs]')!;
+    const scroll=host.querySelector<HTMLElement>('[data-scroll]')!;
+    const panels=host.querySelector<HTMLElement>('[data-panels]')!;
+    const detail=host.querySelector<HTMLElement>('[data-detail]')!;
+    const status=host.querySelector<HTMLElement>('[data-status]')!;
+    let manifest:Manifest;
+    let spine=new Map<string,Node>();
+    let current='';
+    let renderVersion=0;
+    const chunkCache=new Map<string,Promise<Chunk>>();
+    const nodeCache=new Map<string,Node>();
+    let sourcesPromise:Promise<Record<string,unknown>[]>|undefined;
+    const chunkKey=(id:string)=>Object.keys(manifest.chunks).filter(key=>id===key||id.startsWith(`${key}.`)).sort((a,b)=>b.length-a.length)[0];
+    const loadChunk=(key:string):Promise<Chunk>=>{
+      if(!chunkCache.has(key)){
+        const path=manifest.chunks[key];
+        if(!/^chunks\/[a-z0-9-]+\.json$/.test(path))throw Error('Invalid data path');
+        chunkCache.set(key,fetchJson<Chunk>(`/data/${path}`).then(chunk=>{for(const node of chunk.nodes??[])nodeCache.set(node.id,node);return chunk}));
+      }
+      return chunkCache.get(key)!;
+    };
+    const getNode=async(id:string):Promise<Node|undefined>=>{
+      const key=chunkKey(id);
+      if(key)await loadChunk(key);
+      return nodeCache.get(id)??spine.get(id);
+    };
+    const getChildren=async(parent:Node):Promise<Node[]>=>{
+      const key=chunkKey(parent.id);
+      const chunk=key?await loadChunk(key):{};
+      const found=new Map<string,Node>();
+      for(const node of [...spine.values(),...(chunk.nodes??[]),...(chunk.stubs??[])]){
+        const parentId=node.parent_id??(node.id.includes('.')?node.id.slice(0,node.id.lastIndexOf('.')):null);
+        if(parentId===parent.id)found.set(node.id,node);
+      }
+      return [...found.values()].sort((a,b)=>Math.abs(b.amount_cents)-Math.abs(a.amount_cents));
+    };
+    const pathTo=async(id:string):Promise<Node[]>=>{
+      const path:Node[]=[];const visited=new Set<string>();let next:string|null|undefined=id;
+      while(next&&!visited.has(next)&&path.length<24){visited.add(next);const node=await getNode(next);if(!node)break;path.unshift(node);next=node.parent_id??null}
+      return roots.includes(path[0]?.id)?path:[];
+    };
+    const go=(id:string,historyMode:'push'|'replace'|'none'='push')=>{
+      if(id===current&&historyMode==='push')return;
+      current=id;
+      if(historyMode!=='none'){
+        const url=new URL(location.href);
+        if(id)url.searchParams.set('box',id);else url.searchParams.delete('box');
+        window.history[historyMode==='push'?'pushState':'replaceState']({},'',url);
+      }
+      void render(id);
+    };
+    const makeButton=(node:Node,klass:string)=>{
+      const button=el('button');button.type='button';button.className=klass;
+      button.setAttribute('aria-label',`${node.name}, ${money(node.amount_cents)}${node.n_children?', open smaller boxes':''}`);
+      button.addEventListener('click',()=>go(node.id));return button;
+    };
+    const rootNodes:Node[]=[];
+    const renderRoots=()=>{
+      rootArea.replaceChildren();
+      for(const node of rootNodes){
+        const button=makeButton(node,'root-card');button.dataset.gov=node.id;
+        if(current===node.id||current.startsWith(`${node.id}.`))button.setAttribute('aria-current','location');
+        add(button,'span',title[node.id]??node.name).className='root-name';
+        add(button,'strong',short(node.amount_cents));
+        add(button,'span','Explore this budget →').className='root-invite';
+        rootArea.append(button);
+      }
+    };
+    const renderCrumbs=(path:Node[])=>{
+      crumbArea.replaceChildren();crumbArea.hidden=!path.length;if(!path.length)return;
+      const home=el('button','All three budgets');home.type='button';home.addEventListener('click',()=>go(''));crumbArea.append(home);
+      for(const node of path){add(crumbArea,'span','›').setAttribute('aria-hidden','true');const button=el('button',node.short_name??node.name);button.type='button';if(node.id===current)button.setAttribute('aria-current','page');button.addEventListener('click',()=>go(node.id));crumbArea.append(button)}
+    };
+    const renderPanel=async(parent:Node,selectedNext:string|undefined):Promise<HTMLElement>=>{
+      const entries=await getChildren(parent);
+      const panel=el('section');panel.className='flow-panel';panel.setAttribute('aria-label',`Inside ${parent.name}`);
+      const heading=add(panel,'h3',parent.name);heading.className='flow-heading';
+      add(panel,'p',`${money(parent.amount_cents)} · ${entries.length} smaller boxes`).className='flow-subhead';
+      if(!entries.length){add(panel,'p','This is a final budget line.');return panel}
+      const positives=entries.filter(node=>node.amount_cents>0);
+      const negatives=entries.filter(node=>node.amount_cents<0);
+      const zeroes=entries.filter(node=>node.amount_cents===0);
+      const chart=el('div');chart.className='flow-chart';
+      if(positives.length){
+        const flow=layoutFlow(parent.amount_cents,entries,{width:160,height:440,maxVisualChildren:11,gap:5});
+        chart.style.height=`${flow.height}px`;
+        const source=el('div');source.className='flow-source';source.dataset.gov=parent.root??parent.id;
+        source.style.height=`${Math.max(8,flow.sourceHeight)}px`;source.style.top='0px';
+        add(source,'span',short(parent.amount_cents));source.setAttribute('aria-hidden','true');chart.append(source);
+        const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('aria-hidden','true');svg.setAttribute('viewBox',`0 0 ${flow.width} ${flow.height}`);svg.setAttribute('preserveAspectRatio','none');svg.classList.add('flow-ribbons');
+        for(const row of flow.rows){
+          const ribbon=document.createElementNS('http://www.w3.org/2000/svg','path');ribbon.setAttribute('d',row.path);ribbon.setAttribute('class',row.isOverflow?'ribbon overflow':'ribbon');if(selectedNext&&row.children.some(child=>child.id===selectedNext))ribbon.classList.add('selected');svg.append(ribbon);
+          const target=el('button');target.type='button';target.className='flow-target';target.style.top=`${row.y}px`;target.style.height=`${Math.max(2,row.height)}px`;if(selectedNext&&row.children.some(child=>child.id===selectedNext))target.classList.add('selected');
+          if(row.isOverflow){target.setAttribute('aria-label',`${row.children.length} more boxes; open searchable list`);target.addEventListener('click',()=>{search.focus();listSection.scrollIntoView({block:'nearest'})})}
+          else{const child=row.children[0];target.setAttribute('aria-label',`${child.name}, ${money(child.amount_cents)}; follow this ribbon`);target.addEventListener('click',()=>go(child.id))}
+          if(row.height>=23)add(target,'span',row.isOverflow?`${row.label} · ${short(row.amount_cents)}`:`${row.children[0]?.short_name??row.children[0]?.name} · ${short(row.amount_cents)}`);
+          chart.append(target);
+        }
+        chart.append(svg);panel.append(chart);
+        if(flow.explanation)add(panel,'p',flow.explanation).className='flow-explanation';
+      }
+      if(negatives.length){const box=el('div');box.className='adjustment';add(box,'strong','Adjustments that take money away');const ul=el('ul');for(const node of negatives){const li=el('li');const button=makeButton(node,'text-node');button.textContent=`${node.name}: ${money(node.amount_cents)}`;li.append(button);ul.append(li)}box.append(ul);panel.append(box)}
+      if(zeroes.length)add(panel,'p',`${zeroes.length} zero-dollar ${zeroes.length===1?'line':'lines'} are included in the list below.`);
+      const listSection=el('div');listSection.className='flow-list';
+      add(listSection,'h4',`All ${entries.length} smaller boxes`);
+      const search=el('input');search.type='search';search.placeholder='Find a smaller box';search.setAttribute('aria-label',`Search boxes inside ${parent.name}`);if(entries.length>11)listSection.append(search);
+      const list=el('ul');list.setAttribute('aria-label',`All boxes inside ${parent.name}`);listSection.append(list);
+      const drawList=()=>{
+        list.replaceChildren();const query=search.value.trim().toLocaleLowerCase();let matches=0;
+        for(const node of entries){if(query&&!node.name.toLocaleLowerCase().includes(query))continue;matches++;
+          const li=el('li');if(node.id===selectedNext)li.classList.add('active');const button=makeButton(node,'text-node');
+          add(button,'span',node.name);add(button,'strong',money(node.amount_cents));
+          if(node.amount_cents<0)add(button,'small','takes away');else if(node.amount_cents===0)add(button,'small','zero-dollar line');
+          else if(node.n_children)add(button,'small',`${node.n_children} smaller boxes`);
+          li.append(button);list.append(li);
+        }
+        if(!matches)add(list,'li','No boxes match this search.');
+      };
+      search.addEventListener('input',drawList);drawList();panel.append(listSection);
+      return panel;
+    };
+    const renderDetail=async(node:Node,version:number)=>{
+      detail.replaceChildren();detail.hidden=false;
+      add(detail,'p',node.is_leaf||node.n_children===0?'Final budget line':'Selected budget box').className='detail-eyebrow';
+      add(detail,'h3',node.name);add(detail,'p',money(node.amount_cents)).className='detail-amount';
+      add(detail,'p',`${basis[node.basis??'']??node.basis??'Basis not stated'} · ${node.period_label??node.period??'2026 budget period'}`);
+      if(node.amount_cents<0)add(detail,'p','This adjustment takes money away from its parent box.');
+      if(node.note)add(detail,'p',node.note);
+      if(node.why)add(detail,'p',`Why: ${node.why}`);
+      if(node.collapse_into)add(detail,'p','This amount is included in another box; do not add it again.');
+      const gov=node.root??node.id.split('.')[0];
+      if(roots.includes(gov)){
+        const href=node.id===gov?`/${gov}`:`/${gov}/box/${encodeURIComponent(node.id)}`;
+        const link=el('a','Open full box page');link.href=href;detail.append(link);
+      }
+      if(node.source!==undefined){
+        const citations=el('div');add(citations,'h4','Sources');const list=el('ul');citations.append(list);detail.append(citations);
+        try{
+          sourcesPromise??=fetchJson<Record<string,unknown>[]>('/data/sources.json');
+          const sources=await sourcesPromise;if(version!==renderVersion)return;
+          for(const index of (Array.isArray(node.source)?node.source:[node.source])){
+            const source=sources[index];if(!source)continue;
+            const item=el('li');const url=sourceUrl(source);const label=String(source.name??source.doc??source.dataset??`Source ${index+1}`);
+            if(url){const link=el('a',label);link.href=url;link.target='_blank';link.rel='noopener noreferrer';item.append(link)}else item.textContent=label;list.append(item);
+          }
+        }catch{add(list,'li','Sources could not be loaded. Open the full box page for citations.')}
+      }
+      if(node.side_ref||(node.side?.length??0)>0){
+        const disclosure=el('details');disclosure.className='detail-side';add(disclosure,'summary','More facts (not included in the budget ribbons)');const output=el('div');disclosure.append(output);detail.append(disclosure);
+        disclosure.addEventListener('toggle',async()=>{
+          if(!disclosure.open||disclosure.dataset.loaded==='true')return;
+          disclosure.dataset.loaded='true';output.textContent='Loading more facts…';
+          try{
+            const path=node.side_ref;
+            if(path&&!/^side\/[a-z0-9-]+\.json$/.test(path))throw Error('Invalid facts path');
+            const facts=path?await fetchJson<Record<string,unknown>[]>(`/data/${path}`):node.side??[];
+            if(version===renderVersion)await renderSideFacts(output,facts);
+          }catch{output.textContent='Could not load more facts. Close and reopen to retry.';disclosure.dataset.loaded='false'}
+        });
+      }
+    };
+    const render=async(id:string)=>{
+      const version=++renderVersion;status.textContent=id?'Loading budget path…':'';renderRoots();
+      if(!id){
+        detail.hidden=true;crumbArea.hidden=true;panels.replaceChildren();scroll.hidden=false;
+        try{for(const root of rootNodes){const panel=await renderPanel(root,undefined);if(version!==renderVersion)return;panels.append(panel)}}
+        catch{if(version===renderVersion){scroll.hidden=true;status.textContent='Some budget flows could not be loaded. Choose a government to try again.'}return}
+        status.textContent='Three independent budget flows. Choose a government or a smaller box to explore.';return
+      }
+      try{
+        const path=await pathTo(id);if(version!==renderVersion)return;
+        if(!path.length)throw Error('Budget box not found');
+        renderCrumbs(path);panels.replaceChildren();scroll.hidden=false;
+        for(let i=0;i<path.length;i++){
+          const panel=await renderPanel(path[i],path[i+1]?.id);if(version!==renderVersion)return;panels.append(panel)
+        }
+        await renderDetail(path[path.length-1],version);if(version!==renderVersion)return;
+        status.textContent=`Showing ${path[path.length-1].name}. Follow a box in the list or use the breadcrumb to move back.`;
+        requestAnimationFrame(()=>{if(version===renderVersion)scroll.scrollTo({left:scroll.scrollWidth,behavior:'smooth'})});
+      }catch{if(version===renderVersion){scroll.hidden=true;detail.hidden=true;crumbArea.hidden=true;status.textContent='This box is unavailable. Choose City, CPS, or Parks to start again.'}}
+    };
+    window.addEventListener('popstate',()=>go(new URL(location.href).searchParams.get('box')??'','none'));
+    Promise.all([fetchJson<Manifest>('/data/manifest.json'),fetchJson<Node[]>('/data/spine.json')]).then(async([data,spineNodes])=>{
+      manifest=data;spine=new Map(spineNodes.map(node=>[node.id,node]));
+      for(const id of roots){const node=await getNode(id);if(node)rootNodes.push(node)}
+      go(new URL(location.href).searchParams.get('box')??'','none');
+    }).catch(()=>{status.textContent='Budget data is unavailable. Please refresh the page to try again.'});
+  }
+</script>
+<style is:global>
+  .sankey-explorer{margin:2rem 0 3rem;padding:clamp(1rem,3vw,2rem);border:1px solid #d5dfdf;border-radius:1.25rem;background:#f7faf9;color:#173036}
+  .explorer-intro{max-width:65ch}.explorer-intro h2{margin:.3rem 0;font-size:clamp(1.7rem,3.5vw,2.8rem)}.explorer-intro p{line-height:1.5}.explorer-intro .eyebrow,.detail-eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;font-weight:700;color:#496c76}
+  .sankey-explorer [hidden]{display:none!important}.explorer-fallback{font-size:.84rem}.explorer-status{min-height:1.5rem;font-size:.86rem;color:#4b6470}
+  .explorer-roots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1rem 0}
+  .root-card{text-align:left;border:2px solid #9bb7ad;border-radius:.8rem;background:#fff;padding:1.1rem;display:flex;flex-direction:column;gap:.6rem;min-height:10rem;cursor:pointer;color:inherit}
+  .root-card[data-gov="city"]{border-color:#286d77}.root-card[data-gov="cps"]{border-color:#7e648d}.root-card[data-gov="parks"]{border-color:#528664}
+  .root-card[aria-current]{background:#e4f1ed;box-shadow:0 0 0 2px #286d77}.root-card:hover{transform:translateY(-2px);box-shadow:0 5px 15px #17303621}
+  .root-name{font-weight:700;font-size:1.2rem}.root-card strong{font-size:1.55rem}.root-invite{margin-top:auto;font-size:.85rem}
+  .explorer-crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;margin:1.4rem 0 .7rem}.explorer-crumbs button{border:0;background:none;padding:.3rem;color:#155668;text-decoration:underline;cursor:pointer}.explorer-crumbs button[aria-current]{color:inherit;font-weight:700;text-decoration:none}
+  .explorer-scroll{overflow-x:auto;overscroll-behavior-inline:contain;border:1px solid #ccdad8;background:#fff;border-radius:.8rem;scrollbar-color:#648e8b #e2ebea}
+  .explorer-panels{display:flex;align-items:flex-start;width:max-content;max-width:none}.flow-panel{box-sizing:border-box;width:440px;min-width:440px;padding:1.2rem;border-right:1px solid #d9e4e1}.flow-heading{margin:0;font-size:1.2rem}.flow-subhead{margin:.3rem 0 1rem;font-size:.85rem;color:#51656b}
+  .flow-chart{position:relative;width:100%;margin:1rem 0;background:repeating-linear-gradient(0deg,transparent,transparent 54px,#eef3f2 55px);overflow:hidden}
+  .flow-source{position:absolute;left:0;width:109px;box-sizing:border-box;border-radius:4px;background:#245f69;color:white;display:flex;align-items:center;justify-content:center;padding:3px;font-size:.85rem;font-weight:700;z-index:1}
+  .flow-ribbons{position:absolute;top:0;left:109px;width:160px;height:100%;overflow:visible;pointer-events:none}.flow-ribbons .ribbon{fill:#71a99b;opacity:.6}.flow-ribbons .ribbon:nth-child(even){fill:#8a8bb9}.flow-ribbons .ribbon.overflow{fill:#b1aaa0}.flow-ribbons .ribbon.selected{fill:#137583;opacity:.9}
+  .flow-target{position:absolute;left:269px;right:0;box-sizing:border-box;border:0;border-radius:3px;background:#4d9188;color:white;font-weight:600;font-size:.73rem;line-height:1.1;overflow:hidden;padding:0 4px;display:flex;align-items:center;text-align:left;cursor:pointer;z-index:1}.flow-target:hover,.flow-target.selected{background:#1d6874}.flow-target span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .flow-explanation{font-size:.82rem;color:#4e636b}.adjustment{border-left:3px solid #ae6559;background:#fcf2ed;padding:.6rem .8rem;font-size:.85rem}.adjustment ul{margin:.4rem 0;padding-left:1.3rem}.adjustment button{color:#833d37}
+  .flow-list{border-top:1px solid #dce6e2;margin-top:1rem;padding-top:.8rem}.flow-list h4{margin:.1rem 0 .6rem}.flow-list input{width:100%;padding:.55rem;border:1px solid #879c99;border-radius:.4rem}.flow-list ul{list-style:none;padding:0;margin:.5rem 0;max-height:18rem;overflow:auto}.flow-list li{border-bottom:1px solid #ebefed}.flow-list li.active{background:#e1efed}.flow-list .text-node{display:flex;align-items:baseline;justify-content:space-between;gap:.5rem;width:100%;text-align:left;border:0;background:none;padding:.6rem .3rem;color:#155668;cursor:pointer}.flow-list small{font-size:.7rem;white-space:nowrap}.flow-list strong{white-space:nowrap}.text-node:hover{text-decoration:underline}
+  .explorer-detail{margin-top:1.25rem;padding:1.25rem;border-radius:.8rem;border:1px solid #cadad5;background:#fff;max-width:72ch;overflow-wrap:anywhere}.explorer-detail h3{margin:.2rem 0}.explorer-detail .detail-amount{font-size:1.55rem;font-weight:700;margin:.35rem 0}.explorer-detail .detail-side{margin-top:1rem}.explorer-detail .detail-side summary{cursor:pointer;font-weight:700}.explorer-detail .side-facts-group{border-top:1px solid #ddd;margin-top:1rem}.explorer-detail dd{margin:0 0 .5rem 1rem}
+  .sankey-explorer button:focus-visible,.sankey-explorer input:focus-visible,.explorer-scroll:focus-visible,.sankey-explorer a:focus-visible{outline:3px solid #be6426;outline-offset:3px}
+  @media(max-width:680px){.explorer-roots{grid-template-columns:1fr}.root-card{min-height:7rem}.flow-panel{width:330px;min-width:330px;padding:.8rem}.flow-source{width:68px;font-size:.68rem}.flow-ribbons{left:68px;width:130px}.flow-target{left:198px;font-size:.64rem}.flow-chart{font-size:.72rem}}
+  @media(prefers-reduced-motion:reduce){.root-card:hover{transform:none}}
+</style>
