@@ -11,7 +11,7 @@ from collections import defaultdict
 from decimal import Decimal
 from pathlib import Path
 
-from payee import is_business
+from payee import is_business, people_by_description
 
 ROOT = Path(__file__).resolve().parent.parent
 PERIODS = {2025: 'city_2025', 2026: 'city_2026_payments'}
@@ -49,21 +49,54 @@ def add_vendors(db):
     )''')
     totals = defaultdict(lambda: [0, 0])
     individual_names = defaultdict(set)
+    city_roster = ROOT / 'data/people/city_employees_2026.json'
+    people = set()
+    if city_roster.exists():
+        employees = json.loads(city_roster.read_text())
+        people = {e['name'].upper().strip() for group in ('current_employees', 'paid_2025_not_matched_to_current_roster')
+                  for e in employees.get(group, []) if e.get('name')}
+    cps_roster = ROOT / 'data/people/cps_positions_2025q4.json'
+    if cps_roster.exists():
+        people |= {e['name'].upper().strip() for e in json.loads(cps_roster.read_text()).get('positions', []) if e.get('name')}
+    items = json.loads((ROOT / 'data/city_vendors_items_2026ytd.json').read_text())
+    people |= people_by_description(
+        (v[0], v[4]) for department in items['departments'].values()
+        for family in department['families'].values() for v in family)
+    upstream_contract = defaultdict(bool)
+    for department in items['departments'].values():
+        for family in department['families'].values():
+            for v in family:
+                upstream_contract[(v[0] or '').upper().strip()] |= bool(v[1])
+    upstream_hidden = {name for name, contracted in upstream_contract.items()
+                       if not is_business(name, contracted, people)}
+    # Decide contract status once per name across both years, as the City tree
+    # does across its payment rows. A later contracted row must not change the
+    # classification of an earlier row with the same payee.
+    has_contract = defaultdict(bool)
+    payments = {}
     for year, period in PERIODS.items():
         path = ROOT / f'raw/contracts/payments_{year if year == 2025 else "2026ytd"}_dedup.csv'
         with path.open(newline='') as fh:
-            for row in csv.DictReader(fh):
-                name = row['vendor_name'].strip()
-                contract = row['contract_number'].strip()
-                individual = not is_business(name, bool(contract and contract != 'DV'))
-                if individual:
-                    key = ('Individuals (names hidden)', 1, period, '', '')
-                    individual_names[period].add(name)
-                else:
-                    key = (name, 0, period, contract, row['department_name'].strip())
-                cents = int((Decimal(row['amount']) * 100).to_integral_exact())
-                totals[key][0] += cents
-                totals[key][1] += 1
+            payments[period] = list(csv.DictReader(fh))
+        for row in payments[period]:
+            name = row['vendor_name'].upper().strip()
+            contract = row['contract_number'].strip()
+            has_contract[name] |= bool(contract and contract != 'DV')
+    business = {name: name not in upstream_hidden and is_business(name, contract, people)
+                for name, contract in has_contract.items()}
+    for period, rows in payments.items():
+        for row in rows:
+            name = row['vendor_name'].strip()
+            contract = row['contract_number'].strip()
+            individual = not business[name.upper()]
+            if individual:
+                key = ('Individuals (names hidden)', 1, period, '', '')
+                individual_names[period].add(name)
+            else:
+                key = (name, 0, period, contract, row['department_name'].strip())
+            cents = int((Decimal(row['amount']) * 100).to_integral_exact())
+            totals[key][0] += cents
+            totals[key][1] += 1
     records = []
     for (name, individual, period, contract, department), (amount, count) in sorted(totals.items()):
         ids = set() if individual else by_name[name.upper()]
