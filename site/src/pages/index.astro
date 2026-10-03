@@ -1,5 +1,26 @@
 ---
 import Base from '../layouts/Base.astro';
-import {box,compact,roots,titles} from '../lib/data';
+import SankeyExplorer from '../components/SankeyExplorer.astro';
+import {roots,titles} from '../lib/data';
 ---
-<Base title="Home"><section class="hero"><p class="eyebrow">Chicago public money, one box at a time</p><h1>Where does the money go?</h1><p class="lede">A budget is a plan for how public money will be spent. Pick a government, then open a box to see what is inside. Every number has a source.</p><form action="/find" role="search"><label for="home-search">Find a school, park, department or box</label><div><input class="search-field" id="home-search" name="q" type="search" placeholder="Try police, parks or a school"/><button type="submit">Find</button></div></form></section><section aria-labelledby="budgets"><h2 id="budgets">Choose a budget</h2><div class="grid">{roots.map(root=><a class="card card-link" href={`/${root}`}><span class="eyebrow">2026 budget</span><h3>{titles[root]}</h3><span class="amount">{box(root)?compact(box(root)!.amount_cents):'Explore the budget'}</span><p>Open the boxes inside →</p></a>)}</div></section><section class="hero"><h2>How to read this</h2><p>Some numbers are printed in the budget. Others are estimates, leftovers or money paid so far. Their labels tell you which is which.</p><p><a href="/glossary">Learn the words</a> · <a href="/about">How we built this</a> · <a href="/gaps">What we could not find</a></p></section></Base>
+<Base title="Home">
+  <section class="hero">
+    <p class="eyebrow">Chicago public money, one flow at a time</p>
+    <h1>Where does the money go?</h1>
+    <p class="lede">Explore the City, public schools and parks budgets. Each is a separate budget, not part of a combined total. Select a flow to see the boxes inside and where its numbers come from.</p>
+  </section>
+  <section aria-label="Explore budget flows">
+    <SankeyExplorer />
+  </section>
+  <section class="hero" aria-labelledby="more-ways">
+    <h2 id="more-ways">More ways to explore</h2>
+    <form action="/find" role="search">
+      <label for="home-search">Find a school, park, department or box</label>
+      <div><input class="search-field" id="home-search" name="q" type="search" placeholder="Try police, parks or a school"/><button type="submit">Find</button></div>
+    </form>
+    <p>Prefer a list? Browse the detailed budget pages: {roots.map((root,index)=><>{index>0?' · ':''}<a href={`/${root}`}>{titles[root]}</a></>)}.</p>
+    <h2>How to read this</h2>
+    <p>Some numbers are printed in the budget. Others are estimates, leftovers or money paid so far. Their labels tell you which is which.</p>
+    <p><a href="/glossary">Learn the words</a> · <a href="/about">How we built this</a> · <a href="/gaps">What we could not find</a></p>
+  </section>
+</Base>
