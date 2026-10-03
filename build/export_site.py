@@ -8,6 +8,7 @@ import re
 import sqlite3
 import subprocess
 from pathlib import Path
+from payee import ALLOWED_INDIVIDUAL_DESCRIPTIONS
 
 ROOT = Path(__file__).resolve().parents[1]
 DB = ROOT / 'data/budget.db'
@@ -27,6 +28,21 @@ def clean(value):
     if isinstance(value, str):
         return re.sub(r'(?<![\w/])(?:raw/|data/people/)[^\s;,)]*', '[private source]', value)
     return value
+
+
+def redact_individuals(value):
+    """Remove identifiers at every depth while preserving payment counts and cents."""
+    if isinstance(value, list):
+        return [redact_individuals(item) for item in value]
+    if not isinstance(value, dict):
+        return value
+    result = {key: redact_individuals(item) for key, item in value.items()}
+    if result.get('is_individual') or result.get('vendor') == 'Individual (name hidden)':
+        for key in ('contract', 'contract_number'):
+            result.pop(key, None)
+        if 'description' in result and result['description'] not in ALLOWED_INDIVIDUAL_DESCRIPTIONS:
+            result['description'] = 'Payment to an individual'
+    return result
 
 
 def parsed(value):
@@ -93,7 +109,7 @@ def hash_id(value):
 
 def dump(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(clean(value), ensure_ascii=False, separators=(',', ':'), sort_keys=True), encoding='utf-8')
+    path.write_text(json.dumps(clean(redact_individuals(value)), ensure_ascii=False, separators=(',', ':'), sort_keys=True), encoding='utf-8')
 
 
 def coverage(leaves, build=False):
@@ -142,11 +158,7 @@ def export(db=DB, out=OUT):
     for row in con.execute('select * from side_info'):
         s = dict(row)
         s['source'] = source_index(s['source'])
-        s['extra'] = suppress_pay(parsed(s['extra'])) if s['kind'] == 'pay_2025' else parsed(s['extra'])
-        if isinstance(s['extra'], dict) and s['extra'].get('is_individual'):
-            s['extra']['contract'] = ''
-            if s['extra'].get('description') and not str(s['extra']['description']).startswith(NEUTRAL):
-                raise ValueError(f'Non-neutral individual description on {s["node_id"]}')
+        s['extra'] = redact_individuals(suppress_pay(parsed(s['extra'])) if s['kind'] == 'pay_2025' else parsed(s['extra']))
         kind = s['kind'] or ''
         s['section'] = ('Paid so far' if kind in ('vendors_paid', 'contract_family_paid_2026', 'paid_to_date') else 'Last year' if kind in ('pay_2025', 'pay_2025_actual', 'prior_year_budget', 'prior_year_actual') else 'More facts')
         sides[s['node_id']].append(s)

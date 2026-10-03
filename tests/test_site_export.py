@@ -5,8 +5,8 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'build'))
-from export_site import clean, coverage, formula, period_for, safe_repo_path, suppress_pay, DB, OUT
-from validate_site_data import validate
+from export_site import clean, coverage, formula, period_for, redact_individuals, safe_repo_path, suppress_pay, DB, OUT
+from validate_site_data import validate, validate_individuals
 
 
 class ExportTests(unittest.TestCase):
@@ -25,6 +25,22 @@ class ExportTests(unittest.TestCase):
             self.assertEqual(result[count], 4)
             self.assertEqual(result['budget_2026_total'], 999)
             self.assertTrue(set(fields.split()).isdisjoint(result))
+
+    def test_nested_individual_contract_regression(self):
+        side = {'extra': {'items': [{'family': 'OTHER_VENDOR', 'vendor': 'Individual (name hidden)', 'is_individual': True, 'contract': '301213', 'contract_number': '301213', 'amount': 24500000, 'payments': 2, 'description': 'Payment to an individual (other vendor-payable accounts)'}, {'vendor': 'Business LLC', 'contract': 'safe-public-contract', 'amount': 3}]}}
+        with self.assertRaises(AssertionError):
+            validate_individuals(side)
+        redacted = redact_individuals(side)
+        individual, business = redacted['extra']['items']
+        self.assertNotIn('contract', individual)
+        self.assertNotIn('contract_number', individual)
+        self.assertEqual((individual['amount'], individual['payments']), (24500000, 2))
+        self.assertEqual(business['contract'], 'safe-public-contract')
+        validate_individuals(redacted)
+        inferred = redact_individuals({'items': [{'vendor': 'Individual (name hidden)', 'contract': 'secret', 'description': 'Name Fragment', 'amount': 45}]})
+        self.assertNotIn('contract', inferred['items'][0])
+        self.assertEqual(inferred['items'][0]['description'], 'Payment to an individual')
+        validate_individuals(inferred)
 
     def test_repo_path_allowlist_and_tracking(self):
         tracked = {'research/sources.md', 'data/splits/city/example.json', 'build/payee.py', 'data/budget.json', 'raw/secret.json', 'data/people/person.json', 'data/untracked.csv'}

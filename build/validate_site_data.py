@@ -9,9 +9,25 @@ import sys
 from pathlib import Path
 
 from export_site import DB, OUT, PAY_FIELDS, PERIODS, ROOT, coverage, safe_repo_path
+from payee import ALLOWED_INDIVIDUAL_DESCRIPTIONS
 
 BASIS = {'budget', 'tied', 'paid_to_date', 'proxy', 'adjustment', 'residual', 'gov_estimate'}
 TOTALS = {'city': 1_684_255_300_300, 'city-twice': 170_902_695_500, 'cps': 1_025_332_746_368, 'parks': 63_758_035_000}
+
+
+def validate_individuals(value, location='root'):
+    """Reject identifying fields in an individual row at any nesting level."""
+    if isinstance(value, list):
+        for index, item in enumerate(value):
+            validate_individuals(item, f'{location}[{index}]')
+    elif isinstance(value, dict):
+        if value.get('is_individual') or value.get('vendor') == 'Individual (name hidden)':
+            for key in ('contract', 'contract_number'):
+                assert not value.get(key), f'{location}: individual {key} leaked'
+            if 'description' in value:
+                assert value['description'] in ALLOWED_INDIVIDUAL_DESCRIPTIONS, f'{location}: identifying description'
+        for key, item in value.items():
+            validate_individuals(item, f'{location}.{key}')
 
 
 def validate(db=DB, out=OUT):
@@ -89,6 +105,7 @@ def validate(db=DB, out=OUT):
         assert '—' not in text, file
         assert not re.search(r'data/people|raw/|"file"\s*:', text), file
         data = json.loads(text)
+        validate_individuals(data, str(file))
         if file.parent.name == 'search':
             assert 'name hidden' not in text.lower(), file
         size = len(gzip.compress(text.encode(), compresslevel=6))
