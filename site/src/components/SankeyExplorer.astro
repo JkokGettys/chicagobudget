@@ -158,12 +158,13 @@
       detail.replaceChildren();detail.hidden=false;
       add(detail,'p',node.is_leaf||node.n_children===0?'Final budget line':'Selected budget box').className='detail-eyebrow';
       add(detail,'h3',node.name);add(detail,'p',money(node.amount_cents)).className='detail-amount';
-      add(detail,'p',`${basis[node.basis??'']??node.basis??'Basis not stated'} · ${node.period_label??node.period??'2026 budget period'}`);
+      const gov=node.root??node.id.split('.')[0];
+      const defaultPeriod=gov==='cps'?'FY2026 (July 2025 to June 2026)':gov==='parks'?'Park District fiscal year 2026':'City calendar year 2026';
+      add(detail,'p',`${basis[node.basis??'']??node.basis??'Basis not stated'} · ${node.period_label??node.period??defaultPeriod}`);
       if(node.amount_cents<0)add(detail,'p','This adjustment takes money away from its parent box.');
       if(node.note)add(detail,'p',node.note);
       if(node.why)add(detail,'p',`Why: ${node.why}`);
       if(node.collapse_into)add(detail,'p','This amount is included in another box; do not add it again.');
-      const gov=node.root??node.id.split('.')[0];
       if(roots.includes(gov)){
         const href=node.id===gov?`/${gov}`:`/${gov}/box/${encodeURIComponent(node.id)}`;
         const link=el('a','Open full box page');link.href=href;detail.append(link);
