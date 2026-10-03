@@ -785,14 +785,16 @@
        "name": "Construction, State Match - Chicago",
        "amount": 86191494.0,
        "basis": "proxy",
-       "why": "This is state money for the Calumet River bridge rebuilds (92nd, 95th, 100th and 106th Streets), and the bridge work is paid in a few very large chunks."
+       "why": "This is state money for the Calumet River bridge rebuilds (92nd, 95th, 100th and 106th Streets), and the bridge work is paid in a few very large chunks.",
+       "note": "Amount is what the regional plan (CMAP TIP) programs for this phase in federal fiscal year 2026, fund type State Match - Chicago. The amount is the TIP's own number, but which project to place on this budget line is our choice (a proxy), because the TIP does not say which budget line a state fund pays through. Match is by fund type."
       },
       {
        "key": "01-24-0017-Construction Engineering-State Match - Chicago",
        "name": "Construction Engineering, State Match - Chicago",
        "amount": 26000000.0,
        "basis": "proxy",
-       "why": "This is state money for the Calumet River bridge rebuilds (92nd, 95th, 100th and 106th Streets), and the bridge work is paid in a few very large chunks."
+       "why": "This is state money for the Calumet River bridge rebuilds (92nd, 95th, 100th and 106th Streets), and the bridge work is paid in a few very large chunks.",
+       "note": "Amount is what the regional plan (CMAP TIP) programs for this phase in federal fiscal year 2026, fund type State Match - Chicago. The amount is the TIP's own number, but which project to place on this budget line is our choice (a proxy), because the TIP does not say which budget line a state fund pays through. Match is by fund type."
       }
      ]
     }
@@ -1045,7 +1047,8 @@
        "key": "01-20-0003-Construction-Rebuild Illinois",
        "name": "Construction, Rebuild Illinois",
        "amount": 9313253.0,
-       "basis": "proxy"
+       "basis": "proxy",
+       "note": "Amount is what the regional plan (CMAP TIP) programs for this phase in federal fiscal year 2026, fund type Rebuild Illinois. The amount is the TIP's own number, but which project to place on this budget line is our choice (a proxy), because the TIP does not say which budget line a state fund pays through. Match is by fund type."
       }
      ]
     }

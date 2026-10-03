@@ -473,6 +473,8 @@ def apply_proxy(file, kind_label):
                         "unit_amount": cents(p["average"]) if p.get("average") else None,
                         "unit_label": "people" if p.get("count") else None,
                         "source": {"doc": file, "note": rec_.get("split_basis")},
+                        # a proxy box always says how it was estimated (the method text from its source file)
+                        "note": rec_.get("split_basis") if b == "proxy" else None,
                         "why": rec_.get("why_cant_go_deeper") if cents(p["amount"]) >= 1_000_000_000 else None})
         tot = sum(p["amount"] for p in pcs)
         if tot > line.amount:

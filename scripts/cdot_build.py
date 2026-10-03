@@ -77,6 +77,12 @@ FED_HWY = {"STP - Locally Prgmd", "TAP - Locally Prgmd", "CMAQ", "STP - Regional
 STATE = {"State Match - Chicago", "IL Funds", "Local Project Funding"}   # Rebuild Illinois is handled on its own line
 
 
+# Method note for the phase boxes under a project that we placed on a state line (basis proxy).
+NOTE_TIP_PROXY = ("Amount is what the regional plan (CMAP TIP) programs for this phase in federal fiscal year 2026, fund type %s. "
+                  "The amount is the TIP's own number, but which project to place on this budget line is our choice (a proxy), "
+                  "because the TIP does not say which budget line a state fund pays through. Match is by fund type.")
+
+
 def tip_src(p, note):
     return {"doc": "CMAP eTIP, Transportation Improvement Program 2026-2030, project %s, fund table, column FY2026" % p["id"],
             "url": ETIP_URL, "page": "Projects tab, search TIP ID %s" % p["id"], "note": note}
@@ -348,7 +354,7 @@ def main():
     pc = {"key": cal["id"], "name": "%s: %s" % (cal["id"], cal["title"]), "amount": dol(cal_amt), "basis": "proxy",
           "source": tip_src(cal, "FFY2026 State Match - Chicago, construction and construction engineering"),
           "note": cal["ctl"].get("Project Description"), "extra": {"tip_id": cal["id"], "etip_project_id": cal["projectId"]},
-          "children": [dict(k, basis="proxy") for k in cal_state]}
+          "children": [dict(k, basis="proxy", note=NOTE_TIP_PROXY % "State Match - Chicago") for k in cal_state]}
     side2 = []
     for p, r in sorted(state_rows, key=lambda x: -x[1]["fy2026"]):
         if p["id"] == cal["id"]:
@@ -373,7 +379,7 @@ def main():
           "expect_amount": 9500000.0, "mode": "budget_split",
           "pieces": [{"key": ar["id"], "name": "%s: %s" % (ar["id"], ar["title"]), "amount": dol(ar_amt), "basis": "proxy",
                       "source": tip_src(ar, "FFY2026 Rebuild Illinois, construction"), "note": ar["ctl"].get("Project Description"),
-                      "extra": {"tip_id": ar["id"], "etip_project_id": ar["projectId"]}, "children": [dict(k, basis="proxy") for k in ar_ri]}],
+                      "extra": {"tip_id": ar["id"], "etip_project_id": ar["projectId"]}, "children": [dict(k, basis="proxy", note=NOTE_TIP_PROXY % "Rebuild Illinois") for k in ar_ri]}],
           "residual": {"name": "Rebuild Illinois money with no project named in the regional plan for 2026"},
           "note": "The TIP lists $15.8M of Rebuild Illinois money in FFY2026 (this resurfacing project $9.3M and Canal Street viaduct construction engineering $6.5M). Only the resurfacing fits inside this $9.5M line, so Canal Street is a side fact. Match is by fund type.",
           "side": [{"kind": "tip_state_not_placed", "label": "%s %s: %s, Rebuild Illinois" % (can["id"], can["title"], r["phase"]), "amount": dol(r["fy2026"]),
