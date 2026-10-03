@@ -1,6 +1,6 @@
 import { readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-export type Box = {id:string;parent_id?:string|null;root?:string;name:string;short_name?:string;amount_cents:number;basis?:string;period_label?:string;why?:string;note?:string;kind?:string;path?:unknown[];source?:number|number[];side?:unknown[];n_children?:number;is_leaf?:boolean;depth?:number;collapse_into?:string};
+export type Box = {id:string;parent_id?:string|null;root?:string;name:string;short_name?:string;amount_cents:number;basis?:string;period_label?:string;why?:string;note?:string;kind?:string;path?:unknown[];source?:number|number[];side?:Record<string,any>[];side_ref?:string;n_children?:number;is_leaf?:boolean;depth?:number;collapse_into?:string};
 const base = join(process.cwd(),'public/data');
 function read<T>(file:string, fallback:T):T { const path=join(base,file); return existsSync(path)?JSON.parse(readFileSync(path,'utf8')) as T:fallback; }
 export const manifest = read<Record<string,any>>('manifest.json',{});
@@ -29,4 +29,5 @@ export function href(n:Box){const root=n.root==='city-twice'?'city':n.root??n.id
 export function compact(cents:number){const n=Math.abs(cents)/100;const value=n>=1e9?`$${(n/1e9).toFixed(2)} billion`:n>=1e6?`$${(n/1e6).toFixed(1)} million`:`$${Math.round(n).toLocaleString('en-US')}`;return cents<0?`takes away ${value}`:value;}
 export function exact(cents:number){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(cents/100)}
 export const basisLabels:Record<string,string>={budget:'In the budget',tied:'Adds up exactly',gov_estimate:'Government estimate',paid_to_date:'Paid so far',proxy:'Our estimate',residual:'Leftover',adjustment:'Adjustment'};
+export function sideFor(n:Box):Record<string,any>[]{return n.side_ref?read<Record<string,any>[]>(n.side_ref,[]):n.side??[]}
 export function sourceFor(n:Box){return (Array.isArray(n.source)?n.source:[n.source]).filter((i):i is number=>typeof i==='number').map(i=>sources[i]).filter(Boolean)}

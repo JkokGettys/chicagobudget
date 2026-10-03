@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Budget box"><div class="hero stack"><nav class="breadcrumbs" aria-label="Breadcrumb"><ol id="trail"><li><a href="/">Home</a></li></ol></nav><article id="box"><h1 tabindex="-1">Opening this box…</h1><p role="status">Loading public budget data.</p></article></div><script>
+  import {sourceUrl} from '../lib/sources';
+  type RecordBox={id:string;name:string;parent_id?:string;amount_cents:number;basis?:string;period_label?:string;note?:string;why?:string;root?:string;source?:number;side?:Record<string,any>[];side_ref?:string;collapse_into?:string};
+  const boxElement=document.querySelector<HTMLElement>('#box')!;
+  const trail=document.querySelector<HTMLOListElement>('#trail')!;
+  const escape=(s:unknown)=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
+  const amount=(c:number)=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(c/100);
+  const labels:Record<string,string>={budget:'In the budget',tied:'Adds up exactly',gov_estimate:'Government estimate',paid_to_date:'Paid so far',proxy:'Our estimate',residual:'Leftover',adjustment:'Adjustment'};
+  const gov=location.pathname.split('/')[1];
+  const id=decodeURIComponent(location.pathname.split('/box/')[1]??'').replace(/\/$/,'');
+  const href=(id:string)=>id===gov?`/${gov}`:id==='city-twice'?'/city/counted-twice':`/${gov}/box/${encodeURIComponent(id)}`;
+  const get=async(path:string)=>{const response=await fetch(`/data/${path}`);if(!response.ok)throw Error('Data not available');return response.json()};
+  async function render(){
+    try{
+      const [manifest,sources]=await Promise.all([get('manifest.json'),get('sources.json')]);
+      const keys=Object.keys(manifest.chunks).filter(k=>id===k||id.startsWith(k+'.')).sort((a,b)=>b.length-a.length);
+      const chunk=keys[0]&&await get(manifest.chunks[keys[0]]);
+      const record:RecordBox|undefined=chunk?.nodes.find((n:RecordBox)=>n.id===id);
+      if(!record){boxElement.innerHTML='<h1>Box not found</h1><p>This box may have moved after a data update.</p><p><a href="/find">Search for it</a></p>';return}
+      document.title=`${record.name} | Chicago budget explorer`;
+      const ids=id.split('.').map((_,i)=>id.split('.').slice(0,i+1).join('.'));
+      const byId=new Map<string,RecordBox>([...(chunk.ancestors??[]),...chunk.nodes].map((n:RecordBox)=>[n.id,n]));
+      trail.innerHTML=ids.map((part:string)=>`<li><a href="${href(part)}">${escape(byId.get(part)?.name??part)}</a></li>`).join('');
+      const children:RecordBox[]=[...chunk.nodes,...(chunk.stubs??[]).map((n:RecordBox)=>({...n,parent_id:n.id.slice(0,n.id.lastIndexOf('.'))}))].filter((n:RecordBox)=>n.parent_id===id).sort((a:RecordBox,b:RecordBox)=>Math.abs(b.amount_cents)-Math.abs(a.amount_cents));
+      const source=typeof record.source==='number'?sources[record.source]:undefined;
+      const positive=children.filter(n=>n.amount_cents>0&&n.name!=='Rounding');
+      const negative=children.filter(n=>n.amount_cents<0);
+      const side:Record<string,any>[]=record.side_ref?await get(record.side_ref):record.side??[];
+      const denominator=Math.max(Math.abs(record.amount_cents),positive.reduce((total,n)=>total+n.amount_cents,0));
+      const sideHtml=side.length?`<section><h2>More facts</h2><ul>${side.map(f=>`<li>${escape(f.label??f.kind)}: ${escape(f.value??(f.amount_cents!=null?amount(f.amount_cents):''))}${f.period?` (${escape(f.period)})`:''}</li>`).join('')}</ul></section>`:'';
+      boxElement.innerHTML=`<header><p class="eyebrow">${escape(gov)} budget box</p><h1 tabindex="-1">${escape(record.name)}</h1><p class="amount">${amount(record.amount_cents)}</p><span class="badge" data-basis="${escape(record.basis)}">${escape(labels[record.basis??'']??record.basis)}${record.period_label?` (${escape(record.period_label)})`:''}</span>${record.note?`<p>${escape(record.note)}</p>`:''}${record.why?`<p class="callout">${escape(record.why)}</p>`:''}</header>${children.length?`<section id="inside"><h2>Inside this box</h2>${negative.length?`<p>Boxes that add money total ${amount(positive.reduce((s,n)=>s+n.amount_cents,0))}. Boxes that take money away total ${amount(negative.reduce((s,n)=>s+n.amount_cents,0))}. Together they make ${amount(record.amount_cents)}.</p>`:''}<ul class="tiles">${positive.slice(0,20).map(n=>`<li><a class="tile" href="${href(n.id)}"><strong>${escape(n.name)}</strong><span>${amount(n.amount_cents)}</span><span class="badge" data-basis="${escape(n.basis)}">${escape(labels[n.basis??'']??n.basis)}</span></a></li>`).join('')}</ul>${negative.length?`<h3>Boxes that take money away</h3><ul>${negative.map(n=>`<li><a href="${href(n.id)}">${escape(n.name)}</a>: ${amount(n.amount_cents)}</li>`).join('')}</ul>`:''}<h3>All boxes as a list</h3><div class="table-scroll"><table><caption>Amounts inside ${escape(record.name)}</caption><thead><tr><th scope="col">Box</th><th scope="col">Amount</th><th scope="col">Share of adding boxes</th><th scope="col">How we know</th></tr></thead><tbody>${children.map(n=>`<tr><th scope="row"><a href="${href(n.id)}">${escape(n.name)}</a></th><td class="numeric">${amount(n.amount_cents)}</td><td class="numeric">${denominator?`${Math.round(Math.abs(n.amount_cents)/denominator*100)}%`:'not available'}</td><td>${escape(labels[n.basis??'']??n.basis)}</td></tr>`).join('')}</tbody></table></div></section>`:'<p>This box has no smaller boxes to open.</p>'}${sideHtml}${source?`<section><h2>Source</h2><p>${sourceUrl(source)?`<a href="${escape(sourceUrl(source))}" rel="noopener noreferrer">${escape(source.name??source.doc??'View source')}</a>`:escape(source.name??source.doc??'Public source')}</p></section>`:''}${record.parent_id?`<p><a href="${href(record.parent_id)}">↑ Up one level</a></p>`:''}`;
+      boxElement.querySelector('h1')?.focus();
+    }catch{boxElement.innerHTML='<h1>Could not open this box</h1><p>The data could not be loaded. Please try again later.</p><a href="/find">Find another box</a>'}
+  }
+  render();
+</script></Base>
