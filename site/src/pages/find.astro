@@ -1,0 +1,14 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Find"><section class="hero"><h1>Find a box</h1><p>Search budget boxes by name. Results open in their budget.</p><label for="query">Search public budget boxes</label><div><input id="query" class="search-field" type="search" autocomplete="off" placeholder="Try a school, department or park"/></div><p id="status" role="status" aria-live="polite">Type to search.</p><ul class="search-results" id="results"></ul></section><script>
+  const input=document.querySelector<HTMLInputElement>('#query')!;
+  const status=document.querySelector<HTMLElement>('#status')!;
+  const results=document.querySelector<HTMLUListElement>('#results')!;
+  type Item={id:string;name:string;root?:string;amount_cents?:number;basis?:string;path?:string[]};
+  let index:Item[]=[];
+  const load=Promise.all(['city','cps','parks','city-twice','vendors'].map(async key=>{try{const response=await fetch(`/data/search/${key}.json`);return response.ok?await response.json() as Item[]:[]}catch{return []}})).then(parts=>index=parts.flat());
+  const safe=(value:string)=>value.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
+  const run=async()=>{const query=input.value.trim().toLocaleLowerCase();history.replaceState(null,'',query?`?q=${encodeURIComponent(input.value)}`:'/find');if(!query){results.replaceChildren();status.textContent='Type to search.';return}status.textContent='Searching…';await load;const matches=index.filter(n=>`${n.name} ${n.path?.join(' ')??''}`.toLocaleLowerCase().includes(query)).slice(0,50);results.innerHTML=matches.map(n=>`<li><a href="/${n.root==='city-twice'?'city':safe(n.root??n.id.split('.')[0])}/box/${encodeURIComponent(n.id)}">${safe(n.name)}</a><br><small>${safe(n.path?.join(' › ')??'')} ${n.amount_cents!==undefined?' · '+new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(n.amount_cents/100):''}</small></li>`).join('');status.textContent=`${matches.length} ${matches.length===1?'result':'results'}${matches.length===50?' shown':''}.`};
+  input.value=new URLSearchParams(location.search).get('q')??'';input.addEventListener('input',run);if(input.value)run();
+</script></Base>

@@ -5,9 +5,8 @@ import {readFileSync} from 'node:fs';
 import {join} from 'node:path';
 type Row={period:string;amount_cents:number;n_payments?:number;contract_number?:string;department?:string;linked_node_ids?:string[]};
 type Vendor={slug:string;payee_display:string;totals:Record<string,number>;rows:Row[];is_individual?:number};
-const all:Vendor[]=JSON.parse(readFileSync(join(process.cwd(),'public/data/vendors.json'),'utf8'));
-export function getStaticPaths(){const data:Vendor[]=JSON.parse(readFileSync(join(process.cwd(),'public/data/vendors.json'),'utf8'));return data.filter(v=>!v.is_individual).map(v=>({params:{slug:v.slug}}))}
-const vendor=all.find(v=>v.slug===Astro.params.slug && !v.is_individual);
+export function getStaticPaths(){const data:Vendor[]=JSON.parse(readFileSync(join(process.cwd(),'public/data/vendors.json'),'utf8'));return data.filter(v=>!v.is_individual).map(v=>({params:{slug:v.slug},props:{vendor:v}}))}
+const vendor=Astro.props.vendor as Vendor | undefined;
 const name=vendor?.payee_display??'Business';
 const rows=vendor?.rows??[];
 const ids=[...new Set(rows.flatMap(r=>Array.isArray(r.linked_node_ids)?r.linked_node_ids:[]))];

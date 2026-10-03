@@ -1,0 +1,7 @@
+---
+import BoxPage from '../../../components/BoxPage.astro';
+import {spine} from '../../../lib/data';
+export function getStaticPaths(){return spine.filter(n=>n.id.includes('.')&&['city','cps','parks'].includes(n.id.split('.')[0])&&(n.depth??99)<=3).map(n=>({params:{gov:n.id.split('.')[0],id:n.id}}))}
+const {id}=Astro.params;
+---
+<BoxPage id={id!}/>

@@ -1,0 +1,6 @@
+---
+import BoxPage from '../../components/BoxPage.astro';
+const {gov}=Astro.params;
+export function getStaticPaths(){return ['city','cps','parks'].map(gov=>({params:{gov}}))}
+---
+<BoxPage id={gov!} front />
