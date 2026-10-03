@@ -513,22 +513,12 @@ if os.path.isdir(SPLIT_DIR):
 # Every payment row is kept. Payees that are individual people (refunds, reimbursements, small
 # grants, jurors, sole practitioners) keep their amount, contract, family and payment count,
 # but their name is replaced with a placeholder. Business and organization names are shown.
-from payee import is_business, people_by_description  # noqa: E402
+from payee import is_business, people_by_description, neutral_description, ALLOWED_INDIVIDUAL_DESCRIPTIONS  # noqa: E402
 ven = json.load(open(P("data/city_vendors_items_2026ytd.json")))
 VEN_LABEL = ven["meta"]["label"]
 _pp = json.load(open(P("data/people/city_employees_2026.json"))) if os.path.exists(P("data/people/city_employees_2026.json")) else {"current_employees": []}
 EMP_NAMES = {e["name"].upper().strip() for e in _pp["current_employees"] if e.get("name")}
 HIDDEN = "Individual (name hidden)"
-
-
-def scrub(text, name):
-    """Remove any word of a hidden person's name from a contract description."""
-    if not text:
-        return text
-    out = text
-    for w in re.findall(r"[A-Za-z']{3,}", name or ""):
-        out = re.sub(rf"\b{re.escape(w)}\b", "[name hidden]", out, flags=re.I)
-    return out
 
 
 n_hidden = 0
@@ -558,7 +548,9 @@ for dnum, dd in ven["departments"].items():
                 HIDDEN_NAMES.add((v[0] or "").upper().strip())
             items.append({"family": fam, "vendor": v[0] if biz else HIDDEN, "is_individual": not biz,
                           "contract": v[1], "amount": cents(v[2]), "payments": v[3],
-                          "description": v[4] if biz else scrub(v[4], v[0])})
+                          # Individuals get a neutral label only (contract family). The original text can hold a
+                          # role or a name fragment that would point to one person (build/payee.py).
+                          "description": v[4] if biz else neutral_description(fam)})
     items.sort(key=lambda x: -x["amount"])
     dn.side.append({"kind": "vendors_paid", "label": VEN_LABEL, "period": VEN_LABEL, "basis": "actual",
                     "amount": sum(i["amount"] for i in items),
@@ -720,6 +712,20 @@ if gross_check != cents(OFFICIAL_GROSS):
 for n in city.walk():
     if n.eff("basis") == "actual":
         problems.append(f"actual basis inside totals at {n.id}")
+# privacy check: every payment to a hidden individual carries only a neutral description label
+n_ind_rows = 0
+for n in city.walk():
+    for sd in n.side:
+        for it in sd.get("items") or []:
+            if isinstance(it, dict) and (it.get("is_individual") or it.get("vendor") == HIDDEN):
+                n_ind_rows += 1
+                # pooled rows ("Individual (name hidden)", amount, vouchers) carry no description at all
+                if ("description" in it or it.get("is_individual")) \
+                        and it.get("description") not in ALLOWED_INDIVIDUAL_DESCRIPTIONS:
+                    problems.append(f"individual payment with a non-neutral description at {n.id}")
+                    break
+print(f"privacy check: {n_ind_rows:,} hidden-individual rows, no description other than a neutral label"
+      if not any("non-neutral" in x for x in problems) else "privacy check FAILED")
 # names check: tokenise every string in the output and look for exact employee-name strings
 blob_strings = set()
 for row in to_rows(city) + side_rows(city) + to_rows(twice):

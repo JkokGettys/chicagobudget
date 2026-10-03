@@ -90,6 +90,41 @@ def people_by_description(rows):
     return out
 
 
+# ---- Neutral descriptions for payments to individuals --------------------------------------------
+# A payment description can name a person's role ("Poet Laureate"), a name fragment ("Jr", "R.") or the
+# program they were in. For every payee that is hidden as an individual, the description is replaced by
+# one of these labels, built only from the contract family (the kind of account the City paid from).
+# Nothing from the original description is kept.
+FAMILY_LABELS = {
+    "PROF": "professional and technical services",
+    "IT": "IT services, software or hardware",
+    "TELECOM": "telephone and data",
+    "DELEGATE": "delegate agency or program grant",
+    "CONSTR": "construction and capital",
+    "FACILITY": "facility, equipment and street repair",
+    "WASTE": "waste disposal",
+    "RENTAL": "rental of property or equipment",
+    "UTIL": "electricity, gas or water",
+    "FUEL": "fuel",
+    "MATERIALS": "materials and supplies",
+    "EQUIP": "equipment and vehicles",
+    "BENEFITS": "employee health, insurance or workers comp",
+    "LEGAL": "judgments, claims or outside counsel",
+    "DEVLOAN": "housing or development loan or grant",
+    "OTHER_VENDOR": "other vendor-payable accounts",
+    "LEGACY_UNTYPED": "contract with no type on record",
+}
+GENERIC_INDIVIDUAL_LABEL = "Payment to an individual"
+ALLOWED_INDIVIDUAL_DESCRIPTIONS = frozenset(
+    {GENERIC_INDIVIDUAL_LABEL} | {f"{GENERIC_INDIVIDUAL_LABEL} ({v})" for v in FAMILY_LABELS.values()})
+
+
+def neutral_description(family):
+    """The only description allowed on a payment to a hidden individual (see ALLOWED_INDIVIDUAL_DESCRIPTIONS)."""
+    lab = FAMILY_LABELS.get(family)
+    return f"{GENERIC_INDIVIDUAL_LABEL} ({lab})" if lab else GENERIC_INDIVIDUAL_LABEL
+
+
 def is_business(name, has_contract=False, known_people=None):
     """known_people: set of upper-case names of individuals (e.g. current City employees).
     A name in that set is always treated as a person."""
