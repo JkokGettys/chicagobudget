@@ -3,4 +3,13 @@ __pycache__/
 raw/
 data/people/
 build/out/
+build/raw-inputs-*.zip
 data/budget.db
+site/node_modules/
+site/dist/
+site/.astro/
+site/coverage/
+site/playwright-report/
+site/test-results/
+.venv/
+*.pyc

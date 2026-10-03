@@ -1,0 +1,24 @@
+name: Something is broken on the site
+description: Report a site bug
+labels: [site, bug]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Device and browser
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened? What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot, if safe to share

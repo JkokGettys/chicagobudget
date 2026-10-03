@@ -1,0 +1,6 @@
+name: A name appears on the site
+description: Do not post a person's name in a public issue
+body:
+  - type: markdown
+    attributes:
+      value: "**Stop: do not enter the person's name here.** Report it privately using [GitHub's security advisory form](../../security/advisories/new). Do not attach a screenshot or link exposing the name to this public issue."

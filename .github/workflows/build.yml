@@ -1,0 +1,45 @@
+name: Data build
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  build:
+    # No release asset exists yet. Keep the job visibly skipped until configured.
+    if: vars.CHICAGO_BUDGET_INPUTS_URL != ''
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Fetch and checksum versioned public raw inputs
+        env:
+          CHICAGO_BUDGET_INPUTS_URL: ${{ vars.CHICAGO_BUDGET_INPUTS_URL }}
+        run: bash build/fetch_inputs.sh
+      - name: Build and verify budgets
+        run: |
+          build/build_all.sh
+          python build/verify_db.py
+      - name: Export and validate site data
+        run: |
+          if [ -f build/export_site.py ]; then
+            python build/export_site.py
+            python build/validate_site_data.py
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: checked-budget-database
+          path: data/budget.db
+          retention-days: 7
+      - uses: actions/upload-artifact@v4
+        if: hashFiles('site/public/data/**') != ''
+        with:
+          name: checked-site-data
+          path: site/public/data/
+          retention-days: 7

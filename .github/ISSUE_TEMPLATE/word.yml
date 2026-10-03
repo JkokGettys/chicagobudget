@@ -1,0 +1,18 @@
+name: A word I did not understand
+description: Improve the plain-language glossary
+labels: [glossary]
+body:
+  - type: input
+    id: word
+    attributes:
+      label: Word or phrase
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page URL
+  - type: textarea
+    id: meaning
+    attributes:
+      label: What did you think it meant?

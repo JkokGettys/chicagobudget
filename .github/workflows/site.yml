@@ -1,0 +1,26 @@
+name: Site checks
+on:
+  pull_request:
+    paths: ['site/**', 'build/export_site.py', 'build/validate_site_data.py', '.github/workflows/site.yml']
+  push:
+    branches: [main]
+    paths: ['site/**', 'build/export_site.py', 'build/validate_site_data.py', '.github/workflows/site.yml']
+permissions:
+  contents: read
+jobs:
+  site:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build

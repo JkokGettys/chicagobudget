@@ -1,0 +1,26 @@
+name: I want to add detail under a box
+description: Suggest a sourced breakdown
+labels: [data, split-proposal]
+body:
+  - type: input
+    id: box
+    attributes:
+      label: Box id or link
+    validations:
+      required: true
+  - type: textarea
+    id: document
+    attributes:
+      label: Public document URL and page
+    validations:
+      required: true
+  - type: textarea
+    id: pieces
+    attributes:
+      label: Rough list of pieces
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Can you write a split file?
+      options:
+        - label: I plan to write the split file myself.

@@ -1,0 +1,37 @@
+name: This number looks wrong
+description: Report a budget box with a source we can check
+labels: [data, needs-check]
+body:
+  - type: input
+    id: box
+    attributes:
+      label: Box link or id
+      description: Include the build commit if known.
+    validations:
+      required: true
+  - type: input
+    id: shown
+    attributes:
+      label: What does the site show?
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: What should it show?
+  - type: textarea
+    id: source
+    attributes:
+      label: Public source URL and document page or dataset
+    validations:
+      required: true
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Before reporting
+      options:
+        - label: I checked the source link on the box.
+  - type: textarea
+    id: details
+    attributes:
+      label: Anything else?
