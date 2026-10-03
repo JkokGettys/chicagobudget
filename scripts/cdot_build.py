@@ -36,6 +36,8 @@ def dol(d):
 
 def nice(s):
     s = re.sub(r"\s+", " ", s.strip())
+    # The portal's ledger has a lost dash stored as the character U+00BF ("IMPROVEMENTS ¿ 2021"). Use a plain hyphen.
+    s = s.replace(" \u00bf ", " - ").replace("\u00bf", "-")
     s = s.replace("MOBIILITY", "MOBILITY").replace("IMPROVMENTS", "IMPROVEMENTS")
     s = s.title()
     s = re.sub(r"\b(\d+)(St|Nd|Rd|Th)\b", lambda m: m.group(1) + m.group(2).lower(), s)
