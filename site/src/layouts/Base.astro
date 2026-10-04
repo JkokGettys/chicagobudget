@@ -5,5 +5,36 @@ const {title='Chicago budget explorer', description='Open the boxes inside Chica
 const current=Astro.url.pathname;
 const analyticsToken=import.meta.env.PUBLIC_CF_ANALYTICS_TOKEN;
 const nav=[['/city','City'],['/cps','Schools'],['/parks','Parks'],['/find','Find'],['/about','About']];
+const active=(url:string)=>current===url || (url!=='/find' && url!=='/about' && current.startsWith(`${url}/`));
 ---
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="description" content={description}/><title>{title} | Chicago budget explorer</title>{analyticsToken&&<script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({token:analyticsToken})}></script>}</head><body><a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap"><a class="brand" href="/">Chicago budget explorer</a><nav aria-label="Main navigation" class="nav">{nav.map(([url,label])=><a href={url} aria-current={current===url?'page':undefined}>{label}</a>)}</nav></div></header><main id="main" class="wrap"><slot/></main><footer class="site-footer"><div class="wrap"><p>Numbers from public budget documents. {manifest.run_at && `Data built ${manifest.run_at}.`} Every paid-so-far figure states its own period.</p><nav aria-label="Footer navigation"><a href="/sources">Sources</a><a href="/glossary">Glossary</a><a href="/gaps">What we could not find</a><a href="/contribute">Contribute</a><a href="/style-guide">Style guide</a></nav></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="description" content={description}/>
+    <meta name="theme-color" content="#173238"/>
+    <title>{title} | Chicago budget explorer</title>
+    {analyticsToken&&<script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({token:analyticsToken})}></script>}
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="/">Chicago budget explorer</a>
+        <nav aria-label="Main navigation" class="nav desktop-nav">{nav.map(([url,label])=><a href={url} aria-current={active(url)?'page':undefined}>{label}</a>)}</nav>
+        <details class="mobile-nav">
+          <summary>Menu</summary>
+          <nav aria-label="Mobile navigation" class="nav">{nav.map(([url,label])=><a href={url} aria-current={active(url)?'page':undefined}>{label}</a>)}</nav>
+        </details>
+      </div>
+    </header>
+    <main id="main" class="wrap" tabindex="-1"><slot/></main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>Numbers from public budget documents. {manifest.run_at && `Data built ${manifest.run_at}.`} Every paid-so-far figure states its own period.</p>
+        <nav aria-label="Footer navigation"><a href="/sources">Sources</a><a href="/glossary">Glossary</a><a href="/gaps">What we could not find</a><a href="/contribute">Contribute</a><a href="/style-guide">Style guide</a></nav>
+      </div>
+    </footer>
+  </body>
+</html>
