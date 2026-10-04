@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import { manifest } from '../lib/data';
+
+const builtAt = typeof manifest.run_at === 'string' && !Number.isNaN(Date.parse(manifest.run_at))
+  ? new Date(manifest.run_at)
+  : undefined;
+---
+<Base title="Disclosures" description="How to interpret the Chicago budget explorer's figures, periods, sources, and limitations.">
+  <section class="hero">
+    <p class="eyebrow">Reading the numbers</p>
+    <h1>Disclosures</h1>
+    <p class="lede">This site organizes public budget records to make them easier to explore. A box is a reported amount or a clearly labeled calculation, not necessarily money spent or paid.</p>
+  </section>
+
+  <div class="stack">
+    <section aria-labelledby="compare-heading">
+      <h2 id="compare-heading">Three budgets, not one total</h2>
+      <p>The <a href="/city">City of Chicago</a>, <a href="/cps">Chicago Public Schools</a>, and <a href="/parks">Chicago Park District</a> publish separate budgets under different rules and periods. Their responsibilities and funding may overlap. Do not add their headline amounts together or interpret them as a single Chicago-wide budget.</p>
+      <p>The City's headline is a <strong>net</strong> budget. Money moved between City funds that is <a href="/city/counted-twice">counted twice</a> is shown separately to explain the gross figure, not added to the net headline.</p>
+    </section>
+
+    <section aria-labelledby="periods-heading">
+      <h2 id="periods-heading">Figures and periods</h2>
+      <p>City budget figures are for calendar year 2026. CPS fiscal year 2026 runs from July 2025 through June 2026. Park District figures are labeled FY2026. A budget is a plan or authorization, not a record of completed spending. Payments and project-spending figures may cover a shorter or different period, including partial-year or unaudited data. Check the period and basis on each box before comparing amounts.</p>
+      <p>Headline amounts are formatted for readability. Open a box for its exact dollar amount, label, period, notes, and source references. Dollar amounts throughout the site are in US dollars.</p>
+    </section>
+
+    <section aria-labelledby="flow-heading">
+      <h2 id="flow-heading">How to read the flow</h2>
+      <p>Open a line to see its immediate smaller lines. A line is a breakdown of its parent, not an additional amount to add to that parent. The proportional ribbons draw positive amounts only; the complete list alongside them also includes negative adjustments and zero-dollar lines. Negative adjustments reduce a total rather than representing a negative-sized service. More facts shown separately on a line are not included in its budget flow.</p>
+      <p>Where a source does not provide a reliable split, the path stops even if the remaining amount is large. A line may reflect a budget total, a published estimate, our own estimate, a leftover after known parts, or an adjustment.</p>
+      <p>“Adds up exactly” means the listed detail reconciles to a published total. “Paid so far” describes actual payments only for the period shown, not a full-year budget or forecast. A contract value is not the same as an amount paid. See the <a href="/glossary">glossary and basis labels</a> for the meaning of each badge, and <a href="/about">about and methods</a> for how the boxes are built.</p>
+    </section>
+
+    <section aria-labelledby="limits-heading">
+      <h2 id="limits-heading">What the data cannot establish</h2>
+      <p>Public records do not always identify projects, individual recipients, or payments within a budget line. A large final box does not mean one person or company received all of it. Positions are budgeted jobs or rates, not necessarily named employees or payments to individuals. Some smaller splits are estimates or residual calculations and should not be read as exact allocations printed by an agency.</p>
+      <p>The explorer is not a live ledger. It does not establish that appropriations were spent, contracts were fully paid, or every agency's records are complete. See <a href="/gaps">what we could not find</a> for documented unresolved large boxes and the coverage measures.</p>
+    </section>
+
+    <section aria-labelledby="sources-heading">
+      <h2 id="sources-heading">Sources and data export</h2>
+      <p>Figures retain source references where available. Sources include budgets, reports, and datasets, which may use different definitions or reporting dates. Some records identify a document without a direct public web link. Use a box's own source and period to verify an individual figure, or browse the <a href="/sources">source records</a>. You can <a href="/contribute">report a correction</a> with the box URL and the conflicting source.</p>
+      {builtAt && <p>Current site data export built <time datetime={builtAt.toISOString()}>{builtAt.toLocaleString('en-US', { dateStyle: 'long', timeStyle: 'short', timeZone: 'UTC' })} UTC</time>. This is the export build time, not the publication date or reporting period of every source.</p>}
+    </section>
+  </div>
+</Base>

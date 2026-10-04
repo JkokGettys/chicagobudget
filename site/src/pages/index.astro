@@ -40,7 +40,7 @@ const budgets = roots.map(root => ({ root, title: titles[root], node: box(root),
           </li>
         )}
       </ul>
-      <p class="separate-note">These budgets are independent and may overlap. Their amounts should not be added together.</p>
+      <p class="separate-note"><a href="/disclosures">How to compare these budgets ↗</a></p>
     </section>
 
     <div class="explorer-frame" id="explore">
@@ -48,8 +48,7 @@ const budgets = roots.map(root => ({ root, title: titles[root], node: box(root),
     </div>
 
     <aside class="more-links" aria-label="About this data">
-      <p>Numbers retain their original labels and sources. <a href="/sources">View sources</a></p>
-      <nav aria-label="Learn more"><a href="/glossary">Budget terms ↗</a><a href="/about">How this works ↗</a><a href="/gaps">Data gaps ↗</a></nav>
+      <nav aria-label="Learn more"><a href="/disclosures">Disclosures ↗</a><a href="/sources">Sources ↗</a><a href="/glossary">Budget terms ↗</a><a href="/about">How this works ↗</a><a href="/gaps">Data gaps ↗</a></nav>
     </aside>
   </div>
 </Base>
@@ -76,10 +75,10 @@ const budgets = roots.map(root => ({ root, title: titles[root], node: box(root),
   .card-arrow { flex: none; color: var(--link); font-size: 1.1rem; }
   .card-amount { display: block; margin-top: auto; font-size: clamp(1.55rem, 2.3vw, 2.25rem); font-weight: 760; line-height: 1.15; letter-spacing: -.055em; font-variant-numeric: tabular-nums; }
   .card-caption { margin-top: .35rem; color: var(--muted); font-size: .78rem; }
-  .separate-note { margin: .75rem 0 0; color: var(--muted); font-size: .78rem; line-height: 1.45; }
+  .separate-note { margin: .75rem 0 0; font-size: .78rem; line-height: 1.45; }
+  .separate-note a { color: var(--link); font-weight: 650; }
   .explorer-frame { scroll-margin-top: 5.7rem; margin-top: .8rem; padding: clamp(.85rem, 2vw, 1.65rem); border: 1px solid var(--line); border-radius: var(--radius); background: var(--paper); }
   .more-links { display: flex; align-items: baseline; justify-content: space-between; gap: .5rem 1.5rem; margin-top: 1.15rem; padding: 1rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .84rem; }
-  .more-links p { margin: 0; }
   .more-links nav { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; }
   .more-links a { color: var(--link); font-weight: 650; white-space: nowrap; }
   @media (max-width: 780px) { .start-heading { grid-template-columns: 1fr; } .home-search { max-width: 35rem; } .budget-grid { gap: .5rem; } .budget-card { padding: .9rem; } .more-links { flex-wrap: wrap; } }
