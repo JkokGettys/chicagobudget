@@ -13,35 +13,7 @@ const active=(url:string)=>current===url || (url!=='/find' && url!=='/about' && 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="description" content={description}/>
-    <meta name="theme-color" content="#493223"/>
-    <script is:inline>
-      (() => {
-        const themeColors = { saffron: '#493223', plum: '#352241', midnight: '#14222e', evergreen: '#103d35', chicago: '#075b84' };
-        let theme = 'saffron';
-        try {
-          const stored = localStorage.getItem('chicago-budget-palette');
-          if (stored && Object.hasOwn(themeColors, stored)) theme = stored;
-        } catch { /* Storage can be unavailable in private or restricted contexts. */ }
-        const apply = (next) => {
-          document.documentElement.dataset.theme = next;
-          document.querySelector('meta[name="theme-color"]').content = themeColors[next];
-          document.querySelectorAll('[data-palette]').forEach((button) => {
-            button.setAttribute('aria-pressed', String(button.dataset.palette === next));
-          });
-        };
-        apply(theme);
-        document.addEventListener('DOMContentLoaded', () => {
-          apply(theme);
-          document.querySelectorAll('[data-palette]').forEach((button) => {
-            button.addEventListener('click', () => {
-              theme = button.dataset.palette;
-              apply(theme);
-              try { localStorage.setItem('chicago-budget-palette', theme); } catch { /* Switching still works without storage. */ }
-            });
-          });
-        });
-      })();
-    </script>
+    <meta name="theme-color" content="#075b84"/>
     <title>{title} | Chicago budget explorer</title>
     {analyticsToken&&<script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({token:analyticsToken})}></script>}
   </head>
@@ -71,16 +43,6 @@ const active=(url:string)=>current===url || (url!=='/find' && url!=='/about' && 
       <div class="wrap">
         <p>Numbers from public budget documents. {manifest.run_at && `Data built ${manifest.run_at}.`} Every paid-so-far figure states its own period.</p>
         <nav aria-label="Footer navigation"><a href="/sources">Sources</a><a href="/glossary">Glossary</a><a href="/gaps">What we could not find</a><a href="/contribute">Contribute</a><a href="/style-guide">Style guide</a></nav>
-        <div class="palette-picker" role="group" aria-labelledby="palette-label">
-          <span id="palette-label">Palette preview</span>
-          <div class="palette-options">
-            <button type="button" class="palette-option" data-palette="saffron" aria-label="Use Saffron palette" aria-pressed="true">Saffron</button>
-            <button type="button" class="palette-option" data-palette="plum" aria-label="Use Plum palette" aria-pressed="false">Plum</button>
-            <button type="button" class="palette-option" data-palette="midnight" aria-label="Use Midnight palette" aria-pressed="false">Midnight</button>
-            <button type="button" class="palette-option" data-palette="evergreen" aria-label="Use Evergreen palette" aria-pressed="false">Evergreen</button>
-            <button type="button" class="palette-option" data-palette="chicago" aria-label="Use Chicago palette" aria-pressed="false">Chicago</button>
-          </div>
-        </div>
       </div>
     </footer>
   </body>
