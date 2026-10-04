@@ -4,7 +4,7 @@ import { manifest } from '../lib/data';
 const {title='Chicago budget explorer', description='Open the boxes inside Chicago public budgets.'}=Astro.props;
 const current=Astro.url.pathname;
 const analyticsToken=import.meta.env.PUBLIC_CF_ANALYTICS_TOKEN;
-const nav=[['/city','City'],['/cps','Schools'],['/parks','Parks'],['/find','Find'],['/about','About']];
+const secondaryNav=[['/cps','Schools'],['/parks','Parks'],['/about','About']];
 const active=(url:string)=>current===url || (url!=='/find' && url!=='/about' && current.startsWith(`${url}/`));
 ---
 <!doctype html>
@@ -13,7 +13,7 @@ const active=(url:string)=>current===url || (url!=='/find' && url!=='/about' && 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="description" content={description}/>
-    <meta name="theme-color" content="#173238"/>
+    <meta name="theme-color" content="#ffffff"/>
     <title>{title} | Chicago budget explorer</title>
     {analyticsToken&&<script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({token:analyticsToken})}></script>}
   </head>
@@ -21,11 +21,20 @@ const active=(url:string)=>current===url || (url!=='/find' && url!=='/about' && 
     <a class="skip" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="wrap">
-        <a class="brand" href="/">Chicago budget explorer</a>
-        <nav aria-label="Main navigation" class="nav desktop-nav">{nav.map(([url,label])=><a href={url} aria-current={active(url)?'page':undefined}>{label}</a>)}</nav>
+        <a class="brand" href="/">Chicago Budget</a>
+        <nav aria-label="Main navigation" class="nav desktop-nav">
+          <a class="nav-primary" href="/city" aria-current={active('/city')?'page':undefined}>Explore</a>
+          <a class="nav-primary nav-find" href="/find" aria-current={active('/find')?'page':undefined}>Find</a>
+          <span class="nav-divider" aria-hidden="true"></span>
+          {secondaryNav.map(([url,label])=><a href={url} aria-current={active(url)?'page':undefined}>{label}</a>)}
+        </nav>
+        <nav aria-label="Explore and find" class="nav mobile-primary">
+          <a class="nav-primary" href="/city" aria-current={active('/city')?'page':undefined}>Explore</a>
+          <a class="nav-primary nav-find" href="/find" aria-current={active('/find')?'page':undefined}>Find</a>
+        </nav>
         <details class="mobile-nav">
-          <summary>Menu</summary>
-          <nav aria-label="Mobile navigation" class="nav">{nav.map(([url,label])=><a href={url} aria-current={active(url)?'page':undefined}>{label}</a>)}</nav>
+          <summary>More</summary>
+          <nav aria-label="More navigation" class="nav">{secondaryNav.map(([url,label])=><a href={url} aria-current={active(url)?'page':undefined}>{label}</a>)}</nav>
         </details>
       </div>
     </header>
