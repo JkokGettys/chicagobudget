@@ -13,11 +13,11 @@ const active=(url:string)=>current===url || (url!=='/find' && url!=='/about' && 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="description" content={description}/>
-    <meta name="theme-color" content="#ffffff"/>
+    <meta name="theme-color" content="#493223"/>
     <script is:inline>
       (() => {
-        const themeColors = { cobalt: '#ffffff', ink: '#14191e', midnight: '#081521', evergreen: '#103d35' };
-        let theme = 'cobalt';
+        const themeColors = { saffron: '#493223', plum: '#352241', midnight: '#14222e', evergreen: '#103d35', chicago: '#075b84' };
+        let theme = 'saffron';
         try {
           const stored = localStorage.getItem('chicago-budget-palette');
           if (stored && Object.hasOwn(themeColors, stored)) theme = stored;
@@ -74,10 +74,11 @@ const active=(url:string)=>current===url || (url!=='/find' && url!=='/about' && 
         <div class="palette-picker" role="group" aria-labelledby="palette-label">
           <span id="palette-label">Palette preview</span>
           <div class="palette-options">
-            <button type="button" class="palette-option" data-palette="cobalt" aria-label="Use Cobalt palette" aria-pressed="true">Cobalt</button>
-            <button type="button" class="palette-option" data-palette="ink" aria-label="Use Ink palette" aria-pressed="false">Ink</button>
+            <button type="button" class="palette-option" data-palette="saffron" aria-label="Use Saffron palette" aria-pressed="true">Saffron</button>
+            <button type="button" class="palette-option" data-palette="plum" aria-label="Use Plum palette" aria-pressed="false">Plum</button>
             <button type="button" class="palette-option" data-palette="midnight" aria-label="Use Midnight palette" aria-pressed="false">Midnight</button>
             <button type="button" class="palette-option" data-palette="evergreen" aria-label="Use Evergreen palette" aria-pressed="false">Evergreen</button>
+            <button type="button" class="palette-option" data-palette="chicago" aria-label="Use Chicago palette" aria-pressed="false">Chicago</button>
           </div>
         </div>
       </div>

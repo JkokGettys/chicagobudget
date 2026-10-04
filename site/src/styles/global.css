@@ -42,10 +42,11 @@ main > section:last-child { margin-bottom: 2rem; }
 .palette-option:hover { border-color: var(--accent); background: var(--surface-subtle); }
 .palette-option[aria-pressed='true'] { border-color: var(--accent); box-shadow: inset 0 -3px var(--accent); }
 .palette-option::before { content: ''; width: 1rem; height: 1rem; flex: none; border: 1px solid var(--line-strong); border-radius: 50%; background: var(--swatch); }
-.palette-option[data-palette='cobalt'] { --swatch: #1557a0; }
-.palette-option[data-palette='ink'] { --swatch: #14191e; }
-.palette-option[data-palette='midnight'] { --swatch: #081521; }
+.palette-option[data-palette='saffron'] { --swatch: #925315; }
+.palette-option[data-palette='plum'] { --swatch: #653780; }
+.palette-option[data-palette='midnight'] { --swatch: #14222e; }
 .palette-option[data-palette='evergreen'] { --swatch: #12604c; }
+.palette-option[data-palette='chicago'] { --swatch: #b4082e; }
 
 h1, h2, h3 { line-height: 1.14; letter-spacing: -.045em; text-wrap: balance; }
 h1 { max-width: 18ch; margin: .2em 0 .35em; font-size: clamp(2.5rem, 5vw, 4.5rem); font-weight: 700; }
