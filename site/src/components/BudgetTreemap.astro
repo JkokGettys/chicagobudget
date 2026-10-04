@@ -1,0 +1,42 @@
+---
+import { children, compact, exact, href, type Box } from '../lib/data';
+import { layoutTreemap, type Rectangle } from '../lib/treemapLayout';
+const { parent, entries, nested = false } = Astro.props as { parent: Box; entries: Box[]; nested?: boolean };
+// Limit second-level data reads to the three overview pages, never to thousands of deep pages.
+const map = layoutTreemap(parent.amount_cents, entries.filter(n => n.kind !== 'rounding'), {
+  maxItems: 24, maxDepth: nested ? 1 : 0,
+  nested: nested ? (item: Box) => children(item.id).filter(n => n.kind !== 'rounding') : undefined,
+});
+const overflow = map.rectangles.find(rect => rect.item.id === '__treemap_other__');
+const overflowCount = overflow ? entries.filter(n => n.amount_cents > 0 && n.kind !== 'rounding').length - 23 : 0;
+const fills = ['#145b73', '#17788c', '#29667b', '#327d82', '#275c79', '#287a91', '#356b88', '#396f78', '#146a83', '#477b8e', '#345f72'];
+function label(rect: Rectangle<Box>) { return rect.item.id === '__treemap_other__' ? `${overflowCount} more boxes` : rect.item.short_name ?? rect.item.name; }
+function fullLabel(rect: Rectangle<Box>) { return `${label(rect)}, ${exact(rect.item.amount_cents)}${rect.item.id === '__treemap_other__' ? ', see the complete list' : ', open this box'}`; }
+function showName(rect: Rectangle<Box>) { return rect.width >= 105 && rect.height >= 57; }
+function showAmount(rect: Rectangle<Box>) { return rect.width >= 125 && rect.height >= 84; }
+---
+{map.positiveTotalCents > 0 && <figure class="budget-map">
+  <figcaption><strong>Where the positive amounts go</strong><span>Each rectangle’s area is proportional to its amount. Select a region to open its box; the list below includes every amount.</span></figcaption>
+  {map.positiveTotalCents !== parent.amount_cents && <p class="map-explanation">The rectangles use {exact(map.positiveTotalCents)} in positive amounts as their scale, not the {exact(parent.amount_cents)} net total. {map.negative.length ? `Reductions total ${exact(map.negative.reduce((sum, n) => sum + n.amount_cents, 0))} and appear in the list, not as positive area.` : 'The difference from the parent is not stretched into any rectangle.'}</p>}
+  <svg class="treemap" viewBox="0 0 1200 680" role="group" aria-label={`Proportional treemap of positive amounts inside ${parent.name}. The complete accessible list follows.`}>
+    <defs>{map.rectangles.map((rect, index) => <><clipPath id={`treemap-label-${index}`}><rect x={rect.x + 4} y={rect.y + 2} width={Math.max(0, rect.width - 8)} height={Math.max(0, rect.height - 4)} /></clipPath>{rect.children.map((sub, subIndex) => <clipPath id={`treemap-label-${index}-${subIndex}`}><rect x={sub.x + 4} y={sub.y + 2} width={Math.max(0, sub.width - 8)} height={Math.max(0, sub.height - 4)} /></clipPath>)}</>)}</defs>
+    {map.rectangles.map((rect, index) => <g>
+      <a href={rect.children.length && rect.width >= 110 && rect.height >= 65 ? undefined : rect.item.id === '__treemap_other__' ? '#all-boxes' : href(rect.item)} aria-label={rect.children.length && rect.width >= 110 && rect.height >= 65 ? undefined : fullLabel(rect)}>
+        <title>{fullLabel(rect)}</title><rect class={Math.min(rect.width, rect.height) < 4 ? 'micro' : ''} x={rect.x} y={rect.y} width={rect.width} height={rect.height} fill={fills[index % fills.length]} />
+        <g clip-path={`url(#treemap-label-${index})`}>{rect.children.length === 0 && showName(rect) && <text x={rect.x + 10} y={rect.y + 24} class="name">{label(rect)}</text>}
+        {rect.children.length === 0 && showAmount(rect) && <text x={rect.x + 10} y={rect.y + 46} class="value">{compact(rect.item.amount_cents)}</text>}</g>
+      </a>
+      {rect.children.map((sub, subIndex) => <a href={href(sub.item)} aria-label={`${sub.item.name}, ${exact(sub.item.amount_cents)}, open this box`}>
+        <title>{sub.item.name}: {exact(sub.item.amount_cents)}</title><rect class={Math.min(sub.width, sub.height) < 4 ? 'micro' : ''} x={sub.x} y={sub.y} width={sub.width} height={sub.height} fill={fills[(index + subIndex + 2) % fills.length]} />
+        <g clip-path={`url(#treemap-label-${index}-${subIndex})`}>{showName(sub) && <text x={sub.x + 8} y={sub.y + 23} class="name">{sub.item.short_name ?? sub.item.name}</text>}
+        {showAmount(sub) && <text x={sub.x + 8} y={sub.y + 44} class="value">{compact(sub.item.amount_cents)}</text>}</g>
+      </a>)}
+      {rect.children.length > 0 && <rect class="region-outline" x={rect.x} y={rect.y} width={rect.width} height={rect.height} />}
+      {rect.children.length > 0 && rect.width >= 110 && rect.height >= 65 && <a href={href(rect.item)} aria-label={`Open ${rect.item.name}, ${exact(rect.item.amount_cents)}`} class="parent-link"><title>Open {rect.item.name}</title><text clip-path={`url(#treemap-label-${index})`} x={rect.x + 10} y={rect.y + rect.height - 12}>{label(rect)} ↗</text></a>}
+    </g>)}
+  </svg>
+  <p class="mobile-hint">On small screens, use the complete linked table below to explore each box.</p>
+</figure>}
+<style>
+.budget-map{margin:1.1rem 0 1.5rem}.budget-map figcaption{display:flex;flex-wrap:wrap;gap:.25rem 1rem;align-items:baseline;margin-bottom:.65rem;color:var(--ink)}.budget-map figcaption strong{font-size:1.1rem}.budget-map figcaption span,.map-explanation{color:var(--muted);font-size:.92rem}.map-explanation{margin:.35rem 0 .7rem;max-width:85ch}.treemap{display:block;width:100%;height:auto;background:#d8e7eb;border:3px solid #16465e;border-radius:6px}.treemap rect{stroke:#f6f8f5;stroke-width:2;transition:filter .15s}.treemap rect.micro{stroke:none}.treemap rect.region-outline{fill:none;stroke:#f6f8f5;stroke-width:5;pointer-events:none}.treemap a:hover rect:not(.micro),.treemap a:focus-visible rect:not(.micro){filter:brightness(1.28);stroke:#ffcb45;stroke-width:4}.treemap a:focus-visible{outline:none}.treemap text{fill:#fff;font-size:16px;font-weight:760;pointer-events:none;paint-order:stroke;stroke:#193d50;stroke-width:2px;stroke-linejoin:round}.treemap .value{font-size:14px;font-weight:600}.treemap .parent-link text{font-size:14px;pointer-events:auto;text-decoration:underline;cursor:pointer}.treemap .parent-link:focus-visible text{fill:#ffe39c}.mobile-hint{display:none}@media(max-width:700px){.treemap{display:none}.mobile-hint{display:block;font-size:.92rem;color:var(--muted)}}
+</style>
