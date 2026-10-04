@@ -16,7 +16,7 @@ const {side=[],sideRef} = Astro.props as {side?:SideFact[];sideRef?:string};
   .side-facts{margin-block:1.5rem}
   .side-facts :global(summary){cursor:pointer;font-weight:600;padding:.55rem 0}
   .side-facts :global(summary:focus-visible){outline:2px solid currentColor;outline-offset:3px}
-  .side-facts :global(.side-facts-group){margin-block:.7rem;border-top:1px solid #bbb}
+  .side-facts :global(.side-facts-group){margin-block:.7rem;border-top:1px solid var(--line)}
   .side-facts :global(.side-facts-group > ul){padding-inline-start:1.5rem}
   .side-facts :global(.side-facts-group li){margin-block:.7rem}
   .side-facts :global(.side-fact-detail){margin-block:.35rem}
