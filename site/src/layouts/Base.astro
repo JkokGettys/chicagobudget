@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import { manifest } from '../lib/data';
 const {title='Chicago budget explorer', description='Open the boxes inside Chicago public budgets.'}=Astro.props;
 const current=Astro.url.pathname;
 const analyticsToken=import.meta.env.PUBLIC_CF_ANALYTICS_TOKEN;
@@ -41,8 +40,7 @@ const active=(url:string)=>current===url || (url!=='/find' && url!=='/about' && 
     <main id="main" class="wrap" tabindex="-1"><slot/></main>
     <footer class="site-footer">
       <div class="wrap">
-        <p>Numbers from public budget documents. {manifest.run_at && `Data built ${manifest.run_at}.`} Every paid-so-far figure states its own period.</p>
-        <nav aria-label="Footer navigation"><a href="/sources">Sources</a><a href="/glossary">Glossary</a><a href="/gaps">What we could not find</a><a href="/contribute">Contribute</a><a href="/style-guide">Style guide</a></nav>
+        <nav aria-label="Footer navigation"><a href="/disclosures">Disclosures</a><a href="/sources">Sources</a><a href="/glossary">Glossary</a><a href="/gaps">What we could not find</a><a href="/contribute">Contribute</a><a href="/style-guide">Style guide</a></nav>
       </div>
     </footer>
   </body>
