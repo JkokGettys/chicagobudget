@@ -7,14 +7,12 @@
       <p class="explorer-kicker">Explore the budgets</p>
       <h2 id="sankey-title">Follow a dollar, one level at a time.</h2>
     </div>
-    <p>Choose an independent budget, then open any line to see what is inside it. These budgets may overlap, so they are never added together.</p>
     <p class="explorer-fallback">Or browse the full <a href="/city">City</a>, <a href="/cps">schools</a>, and <a href="/parks">Park District</a> pages.</p>
   </header>
   <p class="explorer-status" data-status role="status" aria-live="polite">Loading budgets…</p>
   <div class="explorer-workspace">
     <section class="explorer-choose" aria-labelledby="explorer-choose-title">
       <h3 id="explorer-choose-title">Choose a budget</h3>
-      <p>Three separate starting points</p>
       <div data-roots class="explorer-roots"></div>
     </section>
     <div class="explorer-main" data-main hidden>
@@ -149,7 +147,6 @@
         chart.append(svg);
       }else add(chart,'p','No positive amounts to draw. See the list for adjustments and zero-dollar lines.').className='flow-no-ribbons';
       chartWrap.append(chart);
-      add(chartWrap,'p','Ribbon area shows positive amounts only. Select a ribbon or use the complete list.').className='flow-caption';
       body.append(chartWrap);
       const listSection=el('div');listSection.className='flow-list';
       const listHeading=el('div');listHeading.className='list-heading';add(listHeading,'h4','Smaller lines');add(listHeading,'span',parent.amount_cents===0?'Amount':'Amount · % of parent').className='list-amount-heading';listSection.append(listHeading);
@@ -178,7 +175,6 @@
         else note.textContent=`Listed positive lines total ${money(layout.positiveTotalCents)} of ${money(parent.amount_cents)}. The remainder has no ribbon.`;
         area.append(note);
       }
-      if(layout.zeroChildren.length)add(area,'p',`${layout.zeroChildren.length} zero-dollar ${layout.zeroChildren.length===1?'line is':'lines are'} included in the list, with no ribbon.`).className='flow-explanation';
       return area;
     };
     const renderDetail=async(node:Node,version:number,parent?:Node)=>{
@@ -219,28 +215,28 @@
     };
     const render=async(id:string)=>{
       const version=++renderVersion;renderRoots();
-      if(!id){main.hidden=true;panel.replaceChildren();detail.replaceChildren();status.textContent='Choose one of the three independent budgets to start exploring.';return}
-      main.hidden=false;panel.replaceChildren();detail.replaceChildren();status.textContent='Loading budget path…';
+      if(!id){main.hidden=true;panel.replaceChildren();detail.replaceChildren();status.textContent='';status.classList.add('sr-only');return}
+      main.hidden=false;panel.replaceChildren();detail.replaceChildren();status.classList.remove('sr-only');status.textContent='Loading budget path…';
       try{
         const path=await pathTo(id);if(version!==renderVersion)return;
         if(!path.length)throw Error('Budget line not found');
         renderCrumbs(path);const selected=path[path.length-1];
         const step=await renderPanel(selected);if(version!==renderVersion)return;panel.replaceChildren(step);
         await renderDetail(selected,version,path[path.length-2]);if(version!==renderVersion)return;
-        status.textContent=`Showing ${selected.name}. Select a line to drill down, or go back using the path.`;
-      }catch{if(version===renderVersion){main.hidden=true;status.textContent='This line is unavailable. Choose a budget to try again.'}}
+        status.classList.add('sr-only');status.textContent=`Showing ${selected.name}.`;
+      }catch{if(version===renderVersion){main.hidden=true;status.classList.remove('sr-only');status.textContent='This line is unavailable. Choose a budget to try again.'}}
     };
     window.addEventListener('popstate',()=>go(new URL(location.href).searchParams.get('box')??'','none'));
     Promise.all([fetchJson<Manifest>('/data/manifest.json'),fetchJson<Node[]>('/data/spine.json')]).then(async([data,spineNodes])=>{
       manifest=data;spine=new Map(spineNodes.map(node=>[node.id,node]));
       for(const id of roots){const node=await getNode(id);if(node)rootNodes.push(node)}
       go(new URL(location.href).searchParams.get('box')??'','none');
-    }).catch(()=>{status.textContent='Budget data is unavailable. Please refresh the page to try again.'});
+    }).catch(()=>{status.classList.remove('sr-only');status.textContent='Budget data is unavailable. Please refresh the page to try again.'});
   }
 </script>
 <style is:global>
   .sankey-explorer{--explorer-paper:var(--paper);--explorer-ink:var(--ink);--explorer-muted:var(--muted);--explorer-line:var(--line);--explorer-accent:var(--accent);--explorer-link:var(--link);color:var(--explorer-ink)}
-  .sankey-explorer [hidden]{display:none!important}.explorer-intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:end;gap:.5rem 2rem;border-bottom:1px solid var(--explorer-line);padding-bottom:1rem}.explorer-intro h2{font-size:clamp(1.45rem,2.5vw,2.1rem);line-height:1.16;letter-spacing:-.035em;margin:.2rem 0}.explorer-intro p{line-height:1.5;margin:.25rem 0;color:var(--explorer-muted)}.explorer-intro .explorer-kicker,.flow-overline,.detail-overline{font-size:.69rem;font-weight:750;text-transform:uppercase;letter-spacing:.12em;color:var(--explorer-accent)}.explorer-intro .explorer-fallback{grid-column:1/-1;font-size:.8rem}.sankey-explorer a{color:var(--explorer-link);text-underline-offset:3px}.explorer-status{font-size:.8rem;color:var(--explorer-muted);min-height:1.3em;margin:.8rem 0}
+  .sankey-explorer [hidden]{display:none!important}.sankey-explorer .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.explorer-intro{display:grid;grid-template-columns:1fr;border-bottom:1px solid var(--explorer-line);padding-bottom:1rem}.explorer-intro h2{font-size:clamp(1.45rem,2.5vw,2.1rem);line-height:1.16;letter-spacing:-.035em;margin:.2rem 0}.explorer-intro p{line-height:1.5;margin:.25rem 0;color:var(--explorer-muted)}.explorer-intro .explorer-kicker,.flow-overline,.detail-overline{font-size:.69rem;font-weight:750;text-transform:uppercase;letter-spacing:.12em;color:var(--explorer-accent)}.explorer-intro .explorer-fallback{font-size:.8rem}.sankey-explorer a{color:var(--explorer-link);text-underline-offset:3px}.explorer-status{font-size:.8rem;color:var(--explorer-muted);min-height:1.3em;margin:.8rem 0}
   .explorer-workspace{display:grid;grid-template-columns:minmax(210px,255px) minmax(0,1fr);gap:1.2rem}.explorer-choose{align-self:start}.explorer-choose h3{font-size:.95rem;margin:0}.explorer-choose>p{font-size:.75rem;color:var(--explorer-muted);margin:.25rem 0 .8rem}.explorer-roots{display:grid;gap:.5rem}.root-option{appearance:none;width:100%;display:flex;align-items:center;justify-content:space-between;text-align:left;gap:.5rem;border:1px solid var(--explorer-line);border-radius:.55rem;background:var(--explorer-paper);color:var(--explorer-ink);padding:.8rem;cursor:pointer}.root-option:hover{border-color:var(--explorer-accent);background:color-mix(in srgb,var(--explorer-accent) 4%,var(--explorer-paper))}.root-option[aria-current]{border-color:var(--explorer-accent);box-shadow:inset 3px 0 var(--explorer-accent);background:color-mix(in srgb,var(--explorer-accent) 7%,var(--explorer-paper))}.root-copy{display:grid;gap:.2rem;min-width:0}.root-copy strong{font-size:.83rem;line-height:1.25}.root-copy small{font-size:.66rem;line-height:1.25;color:var(--explorer-muted)}.root-amount{font-size:.9rem;font-weight:750;white-space:nowrap;font-variant-numeric:tabular-nums}
   .explorer-main{min-width:0;border:1px solid var(--explorer-line);border-radius:.7rem;overflow:hidden}.explorer-crumbs{display:flex;align-items:center;gap:.8rem;padding:.65rem .9rem;border-bottom:1px solid var(--explorer-line);min-width:0}.explorer-crumbs button{border:0;background:none;color:var(--explorer-link);font:inherit;cursor:pointer}.crumb-back{white-space:nowrap;font-size:.78rem;font-weight:700;padding:.3rem}.crumb-trail{display:flex;align-items:center;gap:.35rem;list-style:none;margin:0;padding:0;min-width:0;overflow-x:auto;scrollbar-width:thin}.crumb-trail li{display:flex;align-items:center;min-width:0;flex:none}.crumb-trail li+li:before{content:'/';color:var(--explorer-muted);margin-right:.35rem}.crumb-trail button{font-size:.75rem;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:.3rem}.crumb-trail button[aria-current]{color:var(--explorer-ink);font-weight:700;max-width:min(60vw,32rem)}
   .flow-step{padding:1rem}.flow-heading,.detail-heading{display:flex;justify-content:space-between;align-items:baseline;gap:.7rem}.flow-heading h3,.detail-heading h3{font-size:1.12rem;line-height:1.25;margin:.2rem 0 .7rem}.flow-overline,.detail-overline{margin:0}.flow-total,.detail-heading strong{font-size:1.12rem;white-space:nowrap;font-variant-numeric:tabular-nums}.flow-body{display:grid;grid-template-columns:minmax(200px,.8fr) minmax(260px,1.2fr);gap:1rem}.flow-visual h4,.flow-list h4{font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;margin:0 0 .6rem;color:var(--explorer-muted)}.flow-chart{position:relative;width:100%;background:repeating-linear-gradient(to bottom,transparent 0,transparent 55px,var(--explorer-line) 56px);overflow:hidden}.flow-source{position:absolute;left:0;top:0;width:19%;background:var(--explorer-ink);border-radius:3px 0 0 3px}.flow-ribbons{position:absolute;left:19%;top:0;width:35%;height:100%;overflow:visible}.flow-ribbons .ribbon{fill:var(--explorer-accent);opacity:.42;cursor:pointer}.flow-ribbons .ribbon:hover,.flow-ribbons .ribbon:focus{opacity:.78}.flow-ribbons .ribbon.overflow{fill:var(--explorer-muted);opacity:.38}.flow-target{position:absolute;left:54%;right:0;z-index:1;display:block;border:0;border-radius:0 3px 3px 0;box-sizing:border-box;background:var(--explorer-accent);color:var(--accent-ink, var(--explorer-paper));padding:0 .3rem;text-align:left;font-size:.67rem;line-height:1.1;font-weight:700;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;cursor:pointer}.flow-target:hover{filter:brightness(.82)}.flow-no-ribbons{font-size:.82rem;padding:1rem;color:var(--explorer-muted)}.flow-caption{font-size:.69rem;line-height:1.4;color:var(--explorer-muted);margin:.5rem 0 0}
