@@ -37,6 +37,9 @@
   const basis:Record<string,string>={budget:'In the budget',tied:'Adds up exactly',gov_estimate:'Government estimate',paid_to_date:'Paid so far',proxy:'Our estimate',residual:'Leftover',adjustment:'Adjustment'};
   const periodFor=(node:Node)=>node.period_label??node.period??((node.root??node.id.split('.')[0])==='cps'?'FY2026 · July 2025–June 2026':(node.root??node.id.split('.')[0])==='parks'?'Park District FY2026':'City calendar year 2026');
   const money=(cents:number)=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(cents/100);
+  // Negative adjustments retain their sign. A zero parent has no meaningful share.
+  const share=(amount:number,parent:number)=>parent===0?null:`${new Intl.NumberFormat('en-US',{style:'percent',minimumFractionDigits:1,maximumFractionDigits:1}).format(amount/Math.abs(parent))} of parent`;
+  const amountWithShare=(amount:number,parent:number)=>{const ratio=share(amount,parent);return ratio?`${money(amount)} · ${ratio}`:money(amount)};
   const short=(cents:number)=>{const n=Math.abs(cents)/100;const result=n>=1e9?`$${(n/1e9).toFixed(2)}b`:n>=1e6?`$${(n/1e6).toFixed(1)}m`:money(Math.abs(cents));return cents<0?`−${result}`:result};
   const el=<K extends keyof HTMLElementTagNameMap>(tag:K,text?:string):HTMLElementTagNameMap[K]=>{const item=document.createElement(tag);if(text!==undefined)item.textContent=text;return item};
   const add=(parent:Element,tag:keyof HTMLElementTagNameMap,text:string)=>{const item=el(tag,text);parent.append(item);return item};
@@ -135,7 +138,7 @@
         const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox',`0 0 ${layout.width} ${layout.height}`);svg.setAttribute('preserveAspectRatio','none');svg.classList.add('flow-ribbons');
         for(const row of layout.rows){
           const ribbon=document.createElementNS('http://www.w3.org/2000/svg','path');ribbon.setAttribute('d',row.path);ribbon.setAttribute('class',row.isOverflow?'ribbon overflow':'ribbon');
-          const label=row.isOverflow?`${row.children.length} additional lines, ${money(row.amount_cents)}. Browse the complete list.`:`${row.children[0].name}, ${money(row.amount_cents)}. Open this line.`;
+          const label=row.isOverflow?`${row.children.length} additional lines, ${amountWithShare(row.amount_cents,parent.amount_cents)}. Browse the complete list.`:`${row.children[0].name}, ${amountWithShare(row.amount_cents,parent.amount_cents)}. Open this line.`;
           ribbon.setAttribute('role','button');ribbon.setAttribute('tabindex','0');ribbon.setAttribute('aria-label',label);
           const open=()=>{if(row.isOverflow){search.focus();list.scrollIntoView({block:'nearest'})}else go(row.children[0].id)};
           ribbon.addEventListener('click',open);ribbon.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();open()}});svg.append(ribbon);
@@ -147,7 +150,7 @@
       add(chartWrap,'p','Ribbon area shows positive amounts only. Select a ribbon or use the complete list.').className='flow-caption';
       body.append(chartWrap);
       const listSection=el('div');listSection.className='flow-list';
-      const listHeading=el('div');listHeading.className='list-heading';add(listHeading,'h4',`All ${entries.length} smaller lines`);add(listHeading,'span','Amount').className='list-amount-heading';listSection.append(listHeading);
+      const listHeading=el('div');listHeading.className='list-heading';add(listHeading,'h4','Smaller lines');add(listHeading,'span',parent.amount_cents===0?'Amount':'Amount · % of parent').className='list-amount-heading';listSection.append(listHeading);
       const search=el('input');search.type='search';search.placeholder='Filter lines by name';search.setAttribute('aria-label',`Filter lines inside ${parent.name}`);listSection.append(search);
       const list=el('ul');list.setAttribute('aria-label',`Lines inside ${parent.name}`);listSection.append(list);
       const drawList=()=>{
@@ -156,7 +159,7 @@
           const li=el('li');const button=makeButton(node,'flow-list-link');
           const name=el('span');name.className='list-name';add(name,'span',node.name);
           if(node.amount_cents<0)add(name,'small','Adjustment · takes away');else if(node.amount_cents===0)add(name,'small','Zero-dollar line');else if(node.n_children)add(name,'small',`${node.n_children} smaller lines`);
-          button.append(name);add(button,'strong',money(node.amount_cents));li.append(button);list.append(li);
+          button.append(name);add(button,'strong',amountWithShare(node.amount_cents,parent.amount_cents));li.append(button);list.append(li);
         }
         if(!matches)add(list,'li','No lines match this filter.').className='list-empty';
       };
@@ -176,9 +179,9 @@
       if(layout.zeroChildren.length)add(area,'p',`${layout.zeroChildren.length} zero-dollar ${layout.zeroChildren.length===1?'line is':'lines are'} included in the list, with no ribbon.`).className='flow-explanation';
       return area;
     };
-    const renderDetail=async(node:Node,version:number)=>{
+    const renderDetail=async(node:Node,version:number,parent?:Node)=>{
       detail.replaceChildren();
-      const header=el('div');header.className='detail-heading';const heading=el('div');add(heading,'p',node.is_leaf||node.n_children===0?'Final line':'Selected line').className='detail-overline';add(heading,'h3',node.name);header.append(heading);add(header,'strong',money(node.amount_cents));detail.append(header);
+      const header=el('div');header.className='detail-heading';const heading=el('div');add(heading,'p',node.is_leaf||node.n_children===0?'Final line':'Selected line').className='detail-overline';add(heading,'h3',node.name);header.append(heading);add(header,'strong',parent?amountWithShare(node.amount_cents,parent.amount_cents):money(node.amount_cents));detail.append(header);
       const meta=el('p');meta.className='detail-meta';meta.textContent=`${title[node.root??node.id.split('.')[0]]??node.root??'Budget'} · ${periodFor(node)} · ${basis[node.basis??'']??node.basis??'Basis not stated'}`;detail.append(meta);
       if(node.amount_cents<0)add(detail,'p','This adjustment takes money away from its parent line.');
       if(node.note)add(detail,'p',node.note);
@@ -221,7 +224,7 @@
         if(!path.length)throw Error('Budget line not found');
         renderCrumbs(path);const selected=path[path.length-1];
         const step=await renderPanel(selected);if(version!==renderVersion)return;panel.replaceChildren(step);
-        await renderDetail(selected,version);if(version!==renderVersion)return;
+        await renderDetail(selected,version,path[path.length-2]);if(version!==renderVersion)return;
         status.textContent=`Showing ${selected.name}. Select a line to drill down, or go back using the path.`;
       }catch{if(version===renderVersion){main.hidden=true;status.textContent='This line is unavailable. Choose a budget to try again.'}}
     };
