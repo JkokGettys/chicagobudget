@@ -1,19 +1,28 @@
 ---
-// Mounted on the home page. Data and the chart are loaded only in the browser.
+// Mounted on the home page. Budget data is loaded in the browser, one branch at a time.
 ---
 <section class="sankey-explorer" data-sankey-explorer aria-labelledby="sankey-title">
   <header class="explorer-intro">
-    <p class="eyebrow">Follow the money</p>
-    <h2 id="sankey-title">Where does the budget go?</h2>
-    <p>Start with one government, then follow a ribbon into smaller and smaller budget lines. These are separate budgets that may overlap, not parts of a combined total.</p>
-    <p class="explorer-fallback">Browse as pages: <a href="/city">City</a> · <a href="/cps">Public schools</a> · <a href="/parks">Park District</a></p>
+    <div>
+      <p class="explorer-kicker">Explore the budgets</p>
+      <h2 id="sankey-title">Follow a dollar, one level at a time.</h2>
+    </div>
+    <p>Choose an independent budget, then open any line to see what is inside it. These budgets may overlap, so they are never added together.</p>
+    <p class="explorer-fallback">Or browse the full <a href="/city">City</a>, <a href="/cps">schools</a>, and <a href="/parks">Park District</a> pages.</p>
   </header>
   <p class="explorer-status" data-status role="status" aria-live="polite">Loading budgets…</p>
-  <div data-roots class="explorer-roots" aria-label="Choose a government"></div>
-  <nav data-crumbs class="explorer-crumbs" aria-label="Budget path" hidden></nav>
-  <p class="explorer-hint">Choose a budget, then follow a ribbon or search its smaller boxes. Scroll sideways to see each level →</p>
-  <div data-scroll class="explorer-scroll" tabindex="0" aria-label="Budget flow, scroll horizontally to see more levels" hidden><div data-panels class="explorer-panels"></div></div>
-  <section data-detail class="explorer-detail" aria-label="Selected budget box" hidden></section>
+  <div class="explorer-workspace">
+    <section class="explorer-choose" aria-labelledby="explorer-choose-title">
+      <h3 id="explorer-choose-title">Choose a budget</h3>
+      <p>Three separate starting points</p>
+      <div data-roots class="explorer-roots"></div>
+    </section>
+    <div class="explorer-main" data-main hidden>
+      <nav data-crumbs class="explorer-crumbs" aria-label="Budget path"></nav>
+      <div data-panel class="explorer-panel"></div>
+      <section data-detail class="explorer-detail" aria-label="Selected budget line"></section>
+    </div>
+  </div>
 </section>
 <script>
   import {layoutFlow} from '../lib/sankeyLayout';
@@ -26,6 +35,7 @@
   const roots=['city','cps','parks'];
   const title:Record<string,string>={city:'City of Chicago',cps:'Chicago Public Schools',parks:'Chicago Park District'};
   const basis:Record<string,string>={budget:'In the budget',tied:'Adds up exactly',gov_estimate:'Government estimate',paid_to_date:'Paid so far',proxy:'Our estimate',residual:'Leftover',adjustment:'Adjustment'};
+  const periodFor=(node:Node)=>node.period_label??node.period??((node.root??node.id.split('.')[0])==='cps'?'FY2026 · July 2025–June 2026':(node.root??node.id.split('.')[0])==='parks'?'Park District FY2026':'City calendar year 2026');
   const money=(cents:number)=>new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(cents/100);
   const short=(cents:number)=>{const n=Math.abs(cents)/100;const result=n>=1e9?`$${(n/1e9).toFixed(2)}b`:n>=1e6?`$${(n/1e6).toFixed(1)}m`:money(Math.abs(cents));return cents<0?`−${result}`:result};
   const el=<K extends keyof HTMLElementTagNameMap>(tag:K,text?:string):HTMLElementTagNameMap[K]=>{const item=document.createElement(tag);if(text!==undefined)item.textContent=text;return item};
@@ -35,8 +45,8 @@
   if(host){
     const rootArea=host.querySelector<HTMLElement>('[data-roots]')!;
     const crumbArea=host.querySelector<HTMLElement>('[data-crumbs]')!;
-    const scroll=host.querySelector<HTMLElement>('[data-scroll]')!;
-    const panels=host.querySelector<HTMLElement>('[data-panels]')!;
+    const main=host.querySelector<HTMLElement>('[data-main]')!;
+    const panel=host.querySelector<HTMLElement>('[data-panel]')!;
     const detail=host.querySelector<HTMLElement>('[data-detail]')!;
     const status=host.querySelector<HTMLElement>('[data-status]')!;
     let manifest:Manifest;
@@ -51,7 +61,7 @@
       if(!chunkCache.has(key)){
         const path=manifest.chunks[key];
         if(!/^chunks\/[a-z0-9-]+\.json$/.test(path))throw Error('Invalid data path');
-        chunkCache.set(key,fetchJson<Chunk>(`/data/${path}`).then(chunk=>{for(const node of chunk.nodes??[])nodeCache.set(node.id,node);return chunk}));
+        chunkCache.set(key,fetchJson<Chunk>(`/data/${path}`).then(chunk=>{for(const node of chunk.nodes??[])nodeCache.set(node.id,node);return chunk}).catch(error=>{chunkCache.delete(key);throw error}));
       }
       return chunkCache.get(key)!;
     };
@@ -87,105 +97,109 @@
     };
     const makeButton=(node:Node,klass:string)=>{
       const button=el('button');button.type='button';button.className=klass;
-      button.setAttribute('aria-label',`${node.name}, ${money(node.amount_cents)}${node.n_children?', open smaller boxes':''}`);
+      button.setAttribute('aria-label',`${node.name}, ${money(node.amount_cents)}${node.n_children?', open smaller lines':''}`);
       button.addEventListener('click',()=>go(node.id));return button;
     };
     const rootNodes:Node[]=[];
     const renderRoots=()=>{
       rootArea.replaceChildren();
       for(const node of rootNodes){
-        const button=makeButton(node,'root-card');button.dataset.gov=node.id;
+        const button=makeButton(node,'root-option');button.dataset.gov=node.id;
         if(current===node.id||current.startsWith(`${node.id}.`))button.setAttribute('aria-current','location');
-        add(button,'span',title[node.id]??node.name).className='root-name';
-        add(button,'strong',short(node.amount_cents));
-        add(button,'span','Explore this budget →').className='root-invite';
+        const text=el('span');text.className='root-copy';add(text,'strong',title[node.id]??node.name);add(text,'small',periodFor(node));button.append(text);
+        add(button,'span',money(node.amount_cents)).className='root-amount';
         rootArea.append(button);
       }
     };
     const renderCrumbs=(path:Node[])=>{
-      crumbArea.replaceChildren();crumbArea.hidden=!path.length;if(!path.length)return;
-      const home=el('button','All three budgets');home.type='button';home.addEventListener('click',()=>go(''));crumbArea.append(home);
-      for(const node of path){add(crumbArea,'span','›').setAttribute('aria-hidden','true');const button=el('button',node.short_name??node.name);button.type='button';if(node.id===current)button.setAttribute('aria-current','page');button.addEventListener('click',()=>go(node.id));crumbArea.append(button)}
+      crumbArea.replaceChildren();
+      const back=el('button',path.length>1?'← Back one level':'← All budgets');back.type='button';back.className='crumb-back';back.addEventListener('click',()=>go(path.length>1?path[path.length-2].id:''));crumbArea.append(back);
+      const trail=el('ol');trail.className='crumb-trail';
+      for(const node of path){const li=el('li');const button=el('button',node.short_name??node.name);button.type='button';if(node.id===current)button.setAttribute('aria-current','page');button.title=node.name;button.addEventListener('click',()=>go(node.id));li.append(button);trail.append(li)}
+      crumbArea.append(trail);
     };
-    const renderPanel=async(parent:Node,selectedNext:string|undefined):Promise<HTMLElement>=>{
+    const renderPanel=async(parent:Node):Promise<HTMLElement>=>{
       const entries=await getChildren(parent);
-      const panel=el('section');panel.className='flow-panel';panel.setAttribute('aria-label',`Inside ${parent.name}`);
-      const heading=add(panel,'h3',parent.name);heading.className='flow-heading';
-      add(panel,'p',`${money(parent.amount_cents)} · ${entries.length} smaller boxes`).className='flow-subhead';
-      if(!entries.length){add(panel,'p','This is a final budget line.');return panel}
-      const positives=entries.filter(node=>node.amount_cents>0);
-      const negatives=entries.filter(node=>node.amount_cents<0);
-      const zeroes=entries.filter(node=>node.amount_cents===0);
-      const chart=el('div');chart.className='flow-chart';
-      if(positives.length){
-        const flow=layoutFlow(parent.amount_cents,entries,{width:160,height:440,maxVisualChildren:11,gap:5});
-        chart.style.height=`${flow.height}px`;
-        const source=el('div');source.className='flow-source';source.dataset.gov=parent.root??parent.id;
-        source.style.height=`${Math.max(8,flow.sourceHeight)}px`;source.style.top='0px';
-        add(source,'span',short(parent.amount_cents));source.setAttribute('aria-hidden','true');chart.append(source);
-        const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('aria-hidden','true');svg.setAttribute('viewBox',`0 0 ${flow.width} ${flow.height}`);svg.setAttribute('preserveAspectRatio','none');svg.classList.add('flow-ribbons');
-        for(const row of flow.rows){
-          const ribbon=document.createElementNS('http://www.w3.org/2000/svg','path');ribbon.setAttribute('d',row.path);ribbon.setAttribute('class',row.isOverflow?'ribbon overflow':'ribbon');if(selectedNext&&row.children.some(child=>child.id===selectedNext))ribbon.classList.add('selected');
-          ribbon.addEventListener('click',()=>{if(row.isOverflow){search.focus();listSection.scrollIntoView({block:'nearest'})}else go(row.children[0].id)});
-          svg.append(ribbon);
-          const target=el('button');target.type='button';target.className='flow-target';target.style.top=`${row.y}px`;target.style.height=`${Math.max(2,row.height)}px`;if(selectedNext&&row.children.some(child=>child.id===selectedNext))target.classList.add('selected');
-          if(row.isOverflow){target.setAttribute('aria-label',`${row.children.length} more boxes; open searchable list`);target.addEventListener('click',()=>{search.focus();listSection.scrollIntoView({block:'nearest'})})}
-          else{const child=row.children[0];target.setAttribute('aria-label',`${child.name}, ${money(child.amount_cents)}; follow this ribbon`);target.addEventListener('click',()=>go(child.id))}
-          if(row.height>=23)add(target,'span',row.isOverflow?`${row.label} · ${short(row.amount_cents)}`:`${row.children[0]?.short_name??row.children[0]?.name} · ${short(row.amount_cents)}`);
-          chart.append(target);
+      const area=el('section');area.className='flow-step';area.setAttribute('aria-label',`Inside ${parent.name}`);
+      const heading=el('div');heading.className='flow-heading';
+      const titleBox=el('div');add(titleBox,'p',entries.length?'Inside this line':'End of this path').className='flow-overline';add(titleBox,'h3',parent.name);heading.append(titleBox);
+      add(heading,'strong',money(parent.amount_cents)).className='flow-total';area.append(heading);
+      if(!entries.length){add(area,'p','No smaller lines are listed here. Use the path above to explore a different branch.').className='flow-empty';return area}
+      const layout=layoutFlow(parent.amount_cents,entries,{width:180,height:280,maxVisualChildren:8,gap:4});
+      const body=el('div');body.className='flow-body';
+      const chartWrap=el('div');chartWrap.className='flow-visual';
+      add(chartWrap,'h4','Proportional flow');
+      const chart=el('div');chart.className='flow-chart';chart.style.height=`${layout.height}px`;
+      if(layout.rows.length){
+        const source=el('div');source.className='flow-source';source.style.height=`${layout.sourceHeight}px`;source.setAttribute('aria-label',`Positive outgoing lines: ${money(layout.positiveTotalCents)}`);source.title=`Positive outgoing lines: ${money(layout.positiveTotalCents)}`;chart.append(source);
+        const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox',`0 0 ${layout.width} ${layout.height}`);svg.setAttribute('preserveAspectRatio','none');svg.classList.add('flow-ribbons');
+        for(const row of layout.rows){
+          const ribbon=document.createElementNS('http://www.w3.org/2000/svg','path');ribbon.setAttribute('d',row.path);ribbon.setAttribute('class',row.isOverflow?'ribbon overflow':'ribbon');
+          const label=row.isOverflow?`${row.children.length} additional lines, ${money(row.amount_cents)}. Browse the complete list.`:`${row.children[0].name}, ${money(row.amount_cents)}. Open this line.`;
+          ribbon.setAttribute('role','button');ribbon.setAttribute('tabindex','0');ribbon.setAttribute('aria-label',label);
+          const open=()=>{if(row.isOverflow){search.focus();list.scrollIntoView({block:'nearest'})}else go(row.children[0].id)};
+          ribbon.addEventListener('click',open);ribbon.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();open()}});svg.append(ribbon);
+          if(row.height>=18){const target=el('button');target.type='button';target.className='flow-target';target.style.top=`${row.y}px`;target.style.height=`${row.height}px`;target.title=label;target.setAttribute('aria-label',label);target.textContent=row.isOverflow?`${row.children.length} more · ${short(row.amount_cents)}`:`${row.children[0].short_name??row.children[0].name} · ${short(row.amount_cents)}`;target.addEventListener('click',open);chart.append(target)}
         }
-        chart.append(svg);panel.append(chart);
-        if(flow.explanation)add(panel,'p',flow.explanation).className='flow-explanation';
-      }
-      if(negatives.length){const box=el('div');box.className='adjustment';add(box,'strong','Adjustments that take money away');const ul=el('ul');for(const node of negatives){const li=el('li');const button=makeButton(node,'text-node');button.textContent=`${node.name}: ${money(node.amount_cents)}`;li.append(button);ul.append(li)}box.append(ul);panel.append(box)}
-      if(zeroes.length)add(panel,'p',`${zeroes.length} zero-dollar ${zeroes.length===1?'line':'lines'} are included in the list below.`);
+        chart.append(svg);
+      }else add(chart,'p','No positive amounts to draw. See the list for adjustments and zero-dollar lines.').className='flow-no-ribbons';
+      chartWrap.append(chart);
+      add(chartWrap,'p','Ribbon area shows positive amounts only. Select a ribbon or use the complete list.').className='flow-caption';
+      body.append(chartWrap);
       const listSection=el('div');listSection.className='flow-list';
-      add(listSection,'h4',`All ${entries.length} smaller boxes`);
-      const search=el('input');search.type='search';search.placeholder='Find a smaller box';search.setAttribute('aria-label',`Search boxes inside ${parent.name}`);if(entries.length>11)listSection.append(search);
-      const list=el('ul');list.setAttribute('aria-label',`All boxes inside ${parent.name}`);listSection.append(list);
+      const listHeading=el('div');listHeading.className='list-heading';add(listHeading,'h4',`All ${entries.length} smaller lines`);add(listHeading,'span','Amount').className='list-amount-heading';listSection.append(listHeading);
+      const search=el('input');search.type='search';search.placeholder='Filter lines by name';search.setAttribute('aria-label',`Filter lines inside ${parent.name}`);listSection.append(search);
+      const list=el('ul');list.setAttribute('aria-label',`Lines inside ${parent.name}`);listSection.append(list);
       const drawList=()=>{
         list.replaceChildren();const query=search.value.trim().toLocaleLowerCase();let matches=0;
-        for(const node of entries){if(query&&!node.name.toLocaleLowerCase().includes(query))continue;matches++;
-          const li=el('li');if(node.id===selectedNext)li.classList.add('active');const button=makeButton(node,'text-node');
-          add(button,'span',node.name);add(button,'strong',money(node.amount_cents));
-          if(node.amount_cents<0)add(button,'small','takes away');else if(node.amount_cents===0)add(button,'small','zero-dollar line');
-          else if(node.n_children)add(button,'small',`${node.n_children} smaller boxes`);
-          li.append(button);list.append(li);
+        for(const node of entries){if(query&&!`${node.name} ${node.short_name??''}`.toLocaleLowerCase().includes(query))continue;matches++;
+          const li=el('li');const button=makeButton(node,'flow-list-link');
+          const name=el('span');name.className='list-name';add(name,'span',node.name);
+          if(node.amount_cents<0)add(name,'small','Adjustment · takes away');else if(node.amount_cents===0)add(name,'small','Zero-dollar line');else if(node.n_children)add(name,'small',`${node.n_children} smaller lines`);
+          button.append(name);add(button,'strong',money(node.amount_cents));li.append(button);list.append(li);
         }
-        if(!matches)add(list,'li','No boxes match this search.');
+        if(!matches)add(list,'li','No lines match this filter.').className='list-empty';
       };
-      search.addEventListener('input',drawList);drawList();panel.append(listSection);
-      return panel;
+      search.addEventListener('input',drawList);drawList();body.append(listSection);area.append(body);
+      if(layout.explanation){
+        const note=el('p');note.className='flow-explanation';
+        if(layout.positiveTotalCents>Math.max(0,parent.amount_cents)){
+          const adjustment=money(Math.abs(layout.negativeTotalCents));
+          note.textContent=layout.negativeTotalCents&&layout.positiveTotalCents+layout.negativeTotalCents===parent.amount_cents
+            ?`${money(layout.positiveTotalCents)} in positive lines minus ${adjustment} in adjustments = ${money(parent.amount_cents)} net. Ribbons show only the positive lines; adjustments are in the list.`
+            :`Positive lines total ${money(layout.positiveTotalCents)}, above this line’s ${money(parent.amount_cents)}. ${adjustment} in adjustments is listed separately. These figures do not form a simple sum.`;
+        }
+        else if(layout.negativeChildren.length)note.textContent=`Adjustments totaling ${money(Math.abs(layout.negativeTotalCents))} take money away. They appear in the list, not as positive ribbons.`;
+        else note.textContent=`Listed positive lines total ${money(layout.positiveTotalCents)} of ${money(parent.amount_cents)}. The remainder has no ribbon.`;
+        area.append(note);
+      }
+      if(layout.zeroChildren.length)add(area,'p',`${layout.zeroChildren.length} zero-dollar ${layout.zeroChildren.length===1?'line is':'lines are'} included in the list, with no ribbon.`).className='flow-explanation';
+      return area;
     };
     const renderDetail=async(node:Node,version:number)=>{
-      detail.replaceChildren();detail.hidden=false;
-      add(detail,'p',node.is_leaf||node.n_children===0?'Final budget line':'Selected budget box').className='detail-eyebrow';
-      add(detail,'h3',node.name);add(detail,'p',money(node.amount_cents)).className='detail-amount';
-      const gov=node.root??node.id.split('.')[0];
-      const defaultPeriod=gov==='cps'?'FY2026 (July 2025 to June 2026)':gov==='parks'?'Park District fiscal year 2026':'City calendar year 2026';
-      add(detail,'p',`${basis[node.basis??'']??node.basis??'Basis not stated'} · ${node.period_label??node.period??defaultPeriod}`);
-      if(node.amount_cents<0)add(detail,'p','This adjustment takes money away from its parent box.');
+      detail.replaceChildren();
+      const header=el('div');header.className='detail-heading';const heading=el('div');add(heading,'p',node.is_leaf||node.n_children===0?'Final line':'Selected line').className='detail-overline';add(heading,'h3',node.name);header.append(heading);add(header,'strong',money(node.amount_cents));detail.append(header);
+      const meta=el('p');meta.className='detail-meta';meta.textContent=`${title[node.root??node.id.split('.')[0]]??node.root??'Budget'} · ${periodFor(node)} · ${basis[node.basis??'']??node.basis??'Basis not stated'}`;detail.append(meta);
+      if(node.amount_cents<0)add(detail,'p','This adjustment takes money away from its parent line.');
       if(node.note)add(detail,'p',node.note);
       if(node.why)add(detail,'p',`Why: ${node.why}`);
-      if(node.collapse_into)add(detail,'p','This amount is included in another box; do not add it again.');
-      if(roots.includes(gov)){
-        const href=node.id===gov?`/${gov}`:`/${gov}/box/${encodeURIComponent(node.id)}`;
-        const link=el('a','Open full box page');link.href=href;detail.append(link);
-      }
+      if(node.collapse_into)add(detail,'p','This amount is included in another line; do not add it again.');
+      const gov=node.root??node.id.split('.')[0];
+      if(roots.includes(gov)){const link=el('a','Open full line page ↗');link.href=node.id===gov?`/${gov}`:`/${gov}/box/${encodeURIComponent(node.id)}`;detail.append(link)}
       if(node.source!==undefined){
-        const citations=el('div');add(citations,'h4','Sources');const list=el('ul');citations.append(list);detail.append(citations);
+        const citations=el('div');citations.className='detail-sources';add(citations,'h4','Sources');const list=el('ul');citations.append(list);detail.append(citations);
         try{
-          sourcesPromise??=fetchJson<Record<string,unknown>[]>('/data/sources.json');
+          sourcesPromise??=fetchJson<Record<string,unknown>[]>('/data/sources.json').catch(error=>{sourcesPromise=undefined;throw error});
           const sources=await sourcesPromise;if(version!==renderVersion)return;
           for(const index of (Array.isArray(node.source)?node.source:[node.source])){
             const source=sources[index];if(!source)continue;
             const item=el('li');const url=sourceUrl(source);const label=String(source.name??source.doc??source.dataset??`Source ${index+1}`);
             if(url){const link=el('a',label);link.href=url;link.target='_blank';link.rel='noopener noreferrer';item.append(link)}else item.textContent=label;list.append(item);
           }
-        }catch{add(list,'li','Sources could not be loaded. Open the full box page for citations.')}
+        }catch{if(version===renderVersion)add(list,'li','Sources could not be loaded. Open the full line page for citations.')}
       }
       if(node.side_ref||(node.side?.length??0)>0){
-        const disclosure=el('details');disclosure.className='detail-side';add(disclosure,'summary','More facts (not included in the budget ribbons)');const output=el('div');disclosure.append(output);detail.append(disclosure);
+        const disclosure=el('details');disclosure.className='detail-side';add(disclosure,'summary','More facts (not included in the budget flow)');const output=el('div');disclosure.append(output);detail.append(disclosure);
         disclosure.addEventListener('toggle',async()=>{
           if(!disclosure.open||disclosure.dataset.loaded==='true')return;
           disclosure.dataset.loaded='true';output.textContent='Loading more facts…';
@@ -199,24 +213,17 @@
       }
     };
     const render=async(id:string)=>{
-      const version=++renderVersion;status.textContent=id?'Loading budget path…':'';renderRoots();
-      if(!id){
-        detail.hidden=true;crumbArea.hidden=true;panels.replaceChildren();scroll.hidden=false;
-        try{for(const root of rootNodes){const panel=await renderPanel(root,undefined);if(version!==renderVersion)return;panels.append(panel)}}
-        catch{if(version===renderVersion){scroll.hidden=true;status.textContent='Some budget flows could not be loaded. Choose a government to try again.'}return}
-        status.textContent='Three independent budget flows. Choose a government or a smaller box to explore.';return
-      }
+      const version=++renderVersion;renderRoots();
+      if(!id){main.hidden=true;panel.replaceChildren();detail.replaceChildren();status.textContent='Choose one of the three independent budgets to start exploring.';return}
+      main.hidden=false;panel.replaceChildren();detail.replaceChildren();status.textContent='Loading budget path…';
       try{
         const path=await pathTo(id);if(version!==renderVersion)return;
-        if(!path.length)throw Error('Budget box not found');
-        renderCrumbs(path);panels.replaceChildren();scroll.hidden=false;
-        for(let i=0;i<path.length;i++){
-          const panel=await renderPanel(path[i],path[i+1]?.id);if(version!==renderVersion)return;panels.append(panel)
-        }
-        await renderDetail(path[path.length-1],version);if(version!==renderVersion)return;
-        status.textContent=`Showing ${path[path.length-1].name}. Follow a box in the list or use the breadcrumb to move back.`;
-        requestAnimationFrame(()=>{if(version===renderVersion)scroll.scrollTo({left:scroll.scrollWidth,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})});
-      }catch{if(version===renderVersion){scroll.hidden=true;detail.hidden=true;crumbArea.hidden=true;status.textContent='This box is unavailable. Choose City, CPS, or Parks to start again.'}}
+        if(!path.length)throw Error('Budget line not found');
+        renderCrumbs(path);const selected=path[path.length-1];
+        const step=await renderPanel(selected);if(version!==renderVersion)return;panel.replaceChildren(step);
+        await renderDetail(selected,version);if(version!==renderVersion)return;
+        status.textContent=`Showing ${selected.name}. Select a line to drill down, or go back using the path.`;
+      }catch{if(version===renderVersion){main.hidden=true;status.textContent='This line is unavailable. Choose a budget to try again.'}}
     };
     window.addEventListener('popstate',()=>go(new URL(location.href).searchParams.get('box')??'','none'));
     Promise.all([fetchJson<Manifest>('/data/manifest.json'),fetchJson<Node[]>('/data/spine.json')]).then(async([data,spineNodes])=>{
@@ -227,32 +234,15 @@
   }
 </script>
 <style is:global>
-  .sankey-explorer{margin:2rem 0 3rem;padding:clamp(1rem,3vw,2rem);border:1px solid #d5dfdf;border-radius:1.25rem;background:#f7faf9;color:#173036}
-  .explorer-intro{max-width:65ch}.explorer-intro h2{margin:.3rem 0;font-size:clamp(1.7rem,3.5vw,2.8rem)}.explorer-intro p{line-height:1.5}.explorer-intro .eyebrow,.detail-eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.74rem;font-weight:700;color:#496c76}
-  .sankey-explorer [hidden]{display:none!important}.explorer-fallback{font-size:.84rem}.explorer-status{min-height:1.5rem;font-size:.86rem;color:#4b6470}
-  .explorer-roots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1rem 0}
-  .root-card{text-align:left;border:2px solid #9bb7ad;border-radius:.8rem;background:#fff;padding:1.1rem;display:flex;flex-direction:column;gap:.6rem;min-height:10rem;cursor:pointer;color:inherit}
-  .root-card[data-gov="city"]{border-color:#286d77}.root-card[data-gov="cps"]{border-color:#7e648d}.root-card[data-gov="parks"]{border-color:#528664}
-  .root-card[aria-current]{background:#e4f1ed;box-shadow:0 0 0 2px #286d77}.root-card:hover{transform:translateY(-2px);box-shadow:0 5px 15px #17303621}
-  .root-name{font-weight:700;font-size:1.2rem}.root-card strong{font-size:1.55rem}.root-invite{margin-top:auto;font-size:.85rem}
-  .explorer-crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem;margin:1.4rem 0 .7rem}.explorer-crumbs button{border:0;background:none;padding:.3rem;color:#155668;text-decoration:underline;cursor:pointer}.explorer-crumbs button[aria-current]{color:inherit;font-weight:700;text-decoration:none}
-  .explorer-scroll{overflow-x:auto;overscroll-behavior-inline:contain;border:1px solid #ccdad8;background:#fff;border-radius:.8rem;scrollbar-color:#648e8b #e2ebea}
-  .explorer-panels{display:flex;align-items:flex-start;width:max-content;max-width:none}.flow-panel{box-sizing:border-box;width:440px;min-width:440px;padding:1.2rem;border-right:1px solid #d9e4e1}.flow-heading{margin:0;font-size:1.2rem}.flow-subhead{margin:.3rem 0 1rem;font-size:.85rem;color:#51656b}
-  .flow-chart{position:relative;width:100%;margin:1rem 0;background:repeating-linear-gradient(0deg,transparent,transparent 54px,#eef3f2 55px);overflow:hidden}
-  .flow-source{position:absolute;left:0;width:109px;box-sizing:border-box;border-radius:4px;background:#245f69;color:white;display:flex;align-items:center;justify-content:center;padding:3px;font-size:.85rem;font-weight:700;z-index:1}
-  .flow-ribbons{position:absolute;top:0;left:109px;width:160px;height:100%;overflow:visible}.flow-ribbons .ribbon{fill:#71a99b;opacity:.6;cursor:pointer}.flow-ribbons .ribbon:nth-child(even){fill:#8a8bb9}.flow-ribbons .ribbon.overflow{fill:#b1aaa0}.flow-ribbons .ribbon.selected{fill:#137583;opacity:.9}
-  .flow-target{position:absolute;left:269px;right:0;box-sizing:border-box;border:0;border-radius:3px;background:#4d9188;color:white;font-weight:600;font-size:.73rem;line-height:1.1;overflow:hidden;padding:0 4px;display:flex;align-items:center;text-align:left;cursor:pointer;z-index:1}.flow-target:hover,.flow-target.selected{background:#1d6874}.flow-target span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-  .flow-explanation{font-size:.82rem;color:#4e636b}.adjustment{border-left:3px solid #ae6559;background:#fcf2ed;padding:.6rem .8rem;font-size:.85rem}.adjustment ul{margin:.4rem 0;padding-left:1.3rem}.adjustment button{color:#833d37}
-  .flow-list{border-top:1px solid #dce6e2;margin-top:1rem;padding-top:.8rem}.flow-list h4{margin:.1rem 0 .6rem}.flow-list input{width:100%;padding:.55rem;border:1px solid #879c99;border-radius:.4rem}.flow-list ul{list-style:none;padding:0;margin:.5rem 0;max-height:18rem;overflow:auto}.flow-list li{border-bottom:1px solid #ebefed}.flow-list li.active{background:#e1efed}.flow-list .text-node{display:flex;align-items:baseline;justify-content:space-between;gap:.5rem;width:100%;text-align:left;border:0;background:none;padding:.6rem .3rem;color:#155668;cursor:pointer}.flow-list small{font-size:.7rem;white-space:nowrap}.flow-list strong{white-space:nowrap}.text-node:hover{text-decoration:underline}
-  .explorer-detail{margin-top:1.25rem;padding:1.25rem;border-radius:.8rem;border:1px solid #cadad5;background:#fff;max-width:72ch;overflow-wrap:anywhere}.explorer-detail h3{margin:.2rem 0}.explorer-detail .detail-amount{font-size:1.55rem;font-weight:700;margin:.35rem 0}.explorer-detail .detail-side{margin-top:1rem}.explorer-detail .detail-side summary{cursor:pointer;font-weight:700}.explorer-detail .side-facts-group{border-top:1px solid #ddd;margin-top:1rem}.explorer-detail dd{margin:0 0 .5rem 1rem}
-  .sankey-explorer button:focus-visible,.sankey-explorer input:focus-visible,.explorer-scroll:focus-visible,.sankey-explorer a:focus-visible{outline:3px solid #be6426;outline-offset:3px}
-  @media(max-width:680px){.explorer-roots{grid-template-columns:1fr}.root-card{min-height:7rem}.flow-panel{width:330px;min-width:330px;padding:.8rem}.flow-source{width:68px;font-size:.68rem}.flow-ribbons{left:68px;width:130px}.flow-target{left:198px;font-size:.64rem}.flow-chart{font-size:.72rem}}
-  @media(prefers-reduced-motion:reduce){.root-card:hover{transform:none}}
-  .sankey-explorer .explorer-hint{margin:1.2rem 0 .6rem;padding:.7rem 1rem;border-left:3px solid #2e8279;background:#eaf4f0;border-radius:0 .5rem .5rem 0;font-size:.9rem;font-weight:600;color:#28565b}
-  .sankey-explorer .root-card,.sankey-explorer .flow-target,.sankey-explorer .text-node,.sankey-explorer .explorer-crumbs button{transition:transform .22s ease,box-shadow .22s ease,background-color .22s ease,color .22s ease}
-  .sankey-explorer .root-card{box-shadow:0 4px 18px #1730360c}.sankey-explorer .root-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px #17303624}.sankey-explorer .root-invite{font-weight:700;color:#155668}
-  .sankey-explorer .explorer-crumbs button{border-radius:99px;background:#eaf2f0;padding:.4rem .75rem;text-decoration:none}.sankey-explorer .explorer-crumbs button:hover{background:#d1e8e3}.sankey-explorer .explorer-crumbs button[aria-current]{background:#205f67;color:#fff}
-  .sankey-explorer .flow-list .text-node:hover{background:#e8f4f1;text-decoration:none}.sankey-explorer .flow-target:hover{background:#185a65}.sankey-explorer .explorer-detail{box-shadow:0 12px 36px #17303612}
-  @media(max-width:680px){.sankey-explorer .explorer-roots{gap:.6rem}.sankey-explorer .root-card{min-height:0;padding:.85rem 1rem;gap:.2rem}.sankey-explorer .root-card strong{font-size:1.3rem}.sankey-explorer .flow-panel{width:min(86vw,360px);min-width:min(86vw,360px)}.sankey-explorer .flow-list .text-node{flex-wrap:wrap}.sankey-explorer .explorer-hint{font-size:.82rem}}
-  @media(prefers-reduced-motion:reduce){.sankey-explorer .root-card,.sankey-explorer .flow-target,.sankey-explorer .text-node,.sankey-explorer .explorer-crumbs button{transition:none}.sankey-explorer .root-card:hover{transform:none}}
+  .sankey-explorer{--explorer-paper:var(--paper,#fff);--explorer-ink:var(--ink,#17212b);--explorer-muted:var(--muted,#53616f);--explorer-line:var(--line,#d8dee5);--explorer-accent:var(--accent,#1557a0);--explorer-link:var(--link,#1557a0);margin:2rem 0 3rem;padding:clamp(1rem,2.5vw,2rem);border:1px solid var(--explorer-line);border-radius:1rem;background:var(--explorer-paper);color:var(--explorer-ink)}
+  .sankey-explorer [hidden]{display:none!important}.explorer-intro{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:end;gap:.5rem 2rem;border-bottom:1px solid var(--explorer-line);padding-bottom:1rem}.explorer-intro h2{font-size:clamp(1.45rem,2.5vw,2.1rem);line-height:1.16;letter-spacing:-.035em;margin:.2rem 0}.explorer-intro p{line-height:1.5;margin:.25rem 0;color:var(--explorer-muted)}.explorer-intro .explorer-kicker,.flow-overline,.detail-overline{font-size:.69rem;font-weight:750;text-transform:uppercase;letter-spacing:.12em;color:var(--explorer-accent)}.explorer-intro .explorer-fallback{grid-column:1/-1;font-size:.8rem}.sankey-explorer a{color:var(--explorer-link);text-underline-offset:3px}.explorer-status{font-size:.8rem;color:var(--explorer-muted);min-height:1.3em;margin:.8rem 0}
+  .explorer-workspace{display:grid;grid-template-columns:minmax(210px,255px) minmax(0,1fr);gap:1.2rem}.explorer-choose{align-self:start}.explorer-choose h3{font-size:.95rem;margin:0}.explorer-choose>p{font-size:.75rem;color:var(--explorer-muted);margin:.25rem 0 .8rem}.explorer-roots{display:grid;gap:.5rem}.root-option{appearance:none;width:100%;display:flex;align-items:center;justify-content:space-between;text-align:left;gap:.5rem;border:1px solid var(--explorer-line);border-radius:.55rem;background:var(--explorer-paper);color:var(--explorer-ink);padding:.8rem;cursor:pointer}.root-option:hover{border-color:var(--explorer-accent);background:color-mix(in srgb,var(--explorer-accent) 4%,var(--explorer-paper))}.root-option[aria-current]{border-color:var(--explorer-accent);box-shadow:inset 3px 0 var(--explorer-accent);background:color-mix(in srgb,var(--explorer-accent) 7%,var(--explorer-paper))}.root-copy{display:grid;gap:.2rem;min-width:0}.root-copy strong{font-size:.83rem;line-height:1.25}.root-copy small{font-size:.66rem;line-height:1.25;color:var(--explorer-muted)}.root-amount{font-size:.9rem;font-weight:750;white-space:nowrap;font-variant-numeric:tabular-nums}
+  .explorer-main{min-width:0;border:1px solid var(--explorer-line);border-radius:.7rem;overflow:hidden}.explorer-crumbs{display:flex;align-items:center;gap:.8rem;padding:.65rem .9rem;border-bottom:1px solid var(--explorer-line);min-width:0}.explorer-crumbs button{border:0;background:none;color:var(--explorer-link);font:inherit;cursor:pointer}.crumb-back{white-space:nowrap;font-size:.78rem;font-weight:700;padding:.3rem}.crumb-trail{display:flex;align-items:center;gap:.35rem;list-style:none;margin:0;padding:0;min-width:0;overflow-x:auto;scrollbar-width:thin}.crumb-trail li{display:flex;align-items:center;min-width:0;flex:none}.crumb-trail li+li:before{content:'/';color:var(--explorer-muted);margin-right:.35rem}.crumb-trail button{font-size:.75rem;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:.3rem}.crumb-trail button[aria-current]{color:var(--explorer-ink);font-weight:700}
+  .flow-step{padding:1rem}.flow-heading,.detail-heading{display:flex;justify-content:space-between;align-items:baseline;gap:.7rem}.flow-heading h3,.detail-heading h3{font-size:1.12rem;line-height:1.25;margin:.2rem 0 .7rem}.flow-overline,.detail-overline{margin:0}.flow-total,.detail-heading strong{font-size:1.12rem;white-space:nowrap;font-variant-numeric:tabular-nums}.flow-body{display:grid;grid-template-columns:minmax(200px,.8fr) minmax(260px,1.2fr);gap:1rem}.flow-visual h4,.flow-list h4{font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;margin:0 0 .6rem;color:var(--explorer-muted)}.flow-chart{position:relative;width:100%;background:repeating-linear-gradient(to bottom,transparent 0,transparent 55px,var(--explorer-line) 56px);overflow:hidden}.flow-source{position:absolute;left:0;top:0;width:19%;background:var(--explorer-ink);border-radius:3px 0 0 3px}.flow-ribbons{position:absolute;left:19%;top:0;width:35%;height:100%;overflow:visible}.flow-ribbons .ribbon{fill:var(--explorer-accent);opacity:.42;cursor:pointer}.flow-ribbons .ribbon:hover,.flow-ribbons .ribbon:focus{opacity:.78}.flow-ribbons .ribbon.overflow{fill:var(--explorer-muted);opacity:.38}.flow-target{position:absolute;left:54%;right:0;z-index:1;display:block;border:0;border-radius:0 3px 3px 0;box-sizing:border-box;background:var(--explorer-accent);color:var(--explorer-paper);padding:0 .3rem;text-align:left;font-size:.67rem;line-height:1.1;font-weight:700;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;cursor:pointer}.flow-target:hover{filter:brightness(.82)}.flow-no-ribbons{font-size:.82rem;padding:1rem;color:var(--explorer-muted)}.flow-caption{font-size:.69rem;line-height:1.4;color:var(--explorer-muted);margin:.5rem 0 0}
+  .flow-list{min-width:0}.list-heading{display:flex;justify-content:space-between;gap:.5rem}.list-amount-heading{font-size:.68rem;color:var(--explorer-muted)}.flow-list input{box-sizing:border-box;width:100%;padding:.5rem .6rem;border:1px solid var(--explorer-line);border-radius:.4rem;background:var(--explorer-paper);color:var(--explorer-ink);font:inherit;font-size:.8rem}.flow-list ul{list-style:none;margin:.4rem 0 0;padding:0;max-height:252px;overflow:auto;border-top:1px solid var(--explorer-line)}.flow-list li{border-bottom:1px solid var(--explorer-line)}.flow-list-link{width:100%;display:flex;align-items:center;justify-content:space-between;gap:.6rem;border:0;background:transparent;color:var(--explorer-ink);padding:.55rem .3rem;text-align:left;cursor:pointer}.flow-list-link:hover{background:color-mix(in srgb,var(--explorer-accent) 6%,var(--explorer-paper))}.list-name{display:grid;gap:.1rem;min-width:0;font-size:.79rem;line-height:1.25}.list-name small{font-size:.66rem;color:var(--explorer-muted)}.flow-list-link strong{font-size:.78rem;white-space:nowrap;font-variant-numeric:tabular-nums}.list-empty{padding:.8rem;font-size:.8rem;color:var(--explorer-muted)}.flow-explanation,.flow-empty{font-size:.77rem;line-height:1.45;margin:.8rem 0 0;color:var(--explorer-muted)}
+  .explorer-detail{border-top:1px solid var(--explorer-line);padding:1rem;background:color-mix(in srgb,var(--explorer-ink) 2%,var(--explorer-paper));font-size:.8rem;line-height:1.5;overflow-wrap:anywhere}.detail-heading h3{margin-bottom:.2rem}.detail-meta{color:var(--explorer-muted);margin:.2rem 0 .8rem}.explorer-detail>p:not(.detail-meta){max-width:74ch}.detail-sources{margin-top:.8rem}.detail-sources h4{font-size:.75rem;margin:.3rem 0}.detail-sources ul{margin:.2rem 0;padding-left:1.2rem}.detail-side{margin-top:.8rem}.detail-side summary{cursor:pointer;font-weight:700}.detail-side .side-facts-group{border-top:1px solid var(--explorer-line);margin-top:1rem}.detail-side dd{margin:0 0 .5rem 1rem}
+  .sankey-explorer button:focus-visible,.sankey-explorer input:focus-visible,.sankey-explorer a:focus-visible,.sankey-explorer summary:focus-visible,.sankey-explorer .ribbon:focus-visible{outline:3px solid var(--focus,#b25329);outline-offset:2px}
+  @media(max-width:900px){.explorer-workspace{grid-template-columns:1fr}.explorer-roots{grid-template-columns:repeat(3,minmax(0,1fr))}.root-option{align-items:flex-start;flex-direction:column}.explorer-choose>p{margin-bottom:.55rem}}
+  @media(max-width:620px){.sankey-explorer{padding:1rem}.explorer-intro{grid-template-columns:1fr}.explorer-intro .explorer-fallback{grid-column:auto}.explorer-roots{grid-template-columns:1fr;gap:.4rem}.root-option{padding:.6rem;flex-direction:row;align-items:center;justify-content:space-between}.root-copy strong{font-size:.78rem}.root-copy small{font-size:.63rem}.root-amount{font-size:.75rem}.flow-body{grid-template-columns:1fr}.flow-visual{max-width:100%}.flow-list ul{max-height:280px}.flow-heading,.detail-heading{align-items:flex-start;flex-direction:column;gap:0}.flow-total,.detail-heading strong{margin-bottom:.7rem}.explorer-crumbs{display:block}.crumb-trail{margin-top:.25rem}}
+  @media(min-width:621px){.sankey-explorer .root-option{flex-direction:column;align-items:flex-start}.sankey-explorer .root-amount{font-size:.8rem}}
 </style>
