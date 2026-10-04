@@ -1,4 +1,5 @@
-:root {
+:root,
+:root[data-theme='cobalt'] {
   color-scheme: light;
   --canvas: #f7f8fa;
   --paper: #ffffff;
@@ -6,15 +7,154 @@
   --muted: #53616f;
   --link: #1557a0;
   --accent: #1557a0;
+  --accent-ink: #ffffff;
   --focus: #1557a0;
   --line: #d8dee5;
   --line-strong: #adb9c5;
   --surface-subtle: #f1f4f7;
+  --button-bg: #17212b;
+  --button-ink: #ffffff;
+  --button-hover: #344556;
+  --header-bg: #ffffff;
+  --header-ink: #17212b;
+  --header-muted: #53616f;
+  --header-hover: #f1f4f7;
+  --header-border: #d8dee5;
+  --header-focus: #1557a0;
+  --header-cta-bg: #ffffff;
+  --header-cta-ink: #17212b;
+  --header-cta-hover-bg: #17212b;
+  --header-cta-hover-ink: #ffffff;
   --navy: #17212b;
+  --shadow: 0 8px 24px #17212b0a;
+  --menu-shadow: 0 14px 32px #17212b1c;
+  --basis-proxy: #8d6a22;
+  --basis-residual: #536274;
+  --basis-adjustment: #556278;
+  --basis-paid: #247054;
+  --basis-tied: #176771;
+  --basis-estimate: #665796;
+  --basis-budget: #1a5285;
+}
+
+:root[data-theme='ink'] {
+  color-scheme: light;
+  --canvas: #eef0f1;
+  --paper: #ffffff;
+  --ink: #14191e;
+  --muted: #414c55;
+  --link: #233b56;
+  --accent: #233b56;
+  --accent-ink: #ffffff;
+  --focus: #174a90;
+  --line: #c5cdd1;
+  --line-strong: #83939d;
+  --surface-subtle: #e7ebed;
+  --button-bg: #14191e;
+  --button-ink: #ffffff;
+  --button-hover: #35434e;
+  --header-bg: #14191e;
+  --header-ink: #ffffff;
+  --header-muted: #d0dbe1;
+  --header-hover: #35434e;
+  --header-border: #35434e;
+  --header-focus: #ffffff;
+  --header-cta-bg: #ffffff;
+  --header-cta-ink: #14191e;
+  --header-cta-hover-bg: #d0dbe1;
+  --header-cta-hover-ink: #14191e;
+  --navy: #14191e;
+  --shadow: 0 8px 24px #14191e1a;
+  --menu-shadow: 0 14px 32px #14191e33;
+  --basis-proxy: #625220;
+  --basis-residual: #475863;
+  --basis-adjustment: #4d536a;
+  --basis-paid: #285d4a;
+  --basis-tied: #285c67;
+  --basis-estimate: #554c76;
+  --basis-budget: #233b56;
+}
+
+:root[data-theme='midnight'] {
+  color-scheme: dark;
+  --canvas: #081521;
+  --paper: #102536;
+  --ink: #f3f8fc;
+  --muted: #b6cbd8;
+  --link: #79dcf6;
+  --accent: #68d9f5;
+  --accent-ink: #06202c;
+  --focus: #79e8ff;
+  --line: #3b5669;
+  --line-strong: #7994a5;
+  --surface-subtle: #1a3548;
+  --button-bg: #68d9f5;
+  --button-ink: #06202c;
+  --button-hover: #8be9ff;
+  --header-bg: #081521;
+  --header-ink: #f3f8fc;
+  --header-muted: #b6cbd8;
+  --header-hover: #1a3548;
+  --header-border: #3b5669;
+  --header-focus: #79e8ff;
+  --header-cta-bg: #68d9f5;
+  --header-cta-ink: #06202c;
+  --header-cta-hover-bg: #8be9ff;
+  --header-cta-hover-ink: #06202c;
+  --navy: #f3f8fc;
+  --shadow: 0 8px 24px #00000052;
+  --menu-shadow: 0 14px 32px #00000080;
+  --basis-proxy: #dbc77b;
+  --basis-residual: #a7bfd0;
+  --basis-adjustment: #b2b8e7;
+  --basis-paid: #81dfba;
+  --basis-tied: #79dcf6;
+  --basis-estimate: #c2b1ec;
+  --basis-budget: #68d9f5;
+}
+
+:root[data-theme='evergreen'] {
+  color-scheme: light;
+  --canvas: #e5eeeb;
+  --paper: #f8fbfa;
+  --ink: #102f2a;
+  --muted: #35544d;
+  --link: #125e4b;
+  --accent: #12604c;
+  --accent-ink: #ffffff;
+  --focus: #12604c;
+  --line: #abc0b9;
+  --line-strong: #759b8e;
+  --surface-subtle: #d8e6e1;
+  --button-bg: #12523f;
+  --button-ink: #ffffff;
+  --button-hover: #1d6a53;
+  --header-bg: #103d35;
+  --header-ink: #ffffff;
+  --header-muted: #d8ece5;
+  --header-hover: #22594d;
+  --header-border: #34695d;
+  --header-focus: #ffffff;
+  --header-cta-bg: #f8fbfa;
+  --header-cta-ink: #103d35;
+  --header-cta-hover-bg: #d8ece5;
+  --header-cta-hover-ink: #103d35;
+  --navy: #102f2a;
+  --shadow: 0 8px 24px #103d351c;
+  --menu-shadow: 0 14px 32px #103d3533;
+  --basis-proxy: #746421;
+  --basis-residual: #48635e;
+  --basis-adjustment: #4a6170;
+  --basis-paid: #12604c;
+  --basis-tied: #176572;
+  --basis-estimate: #60567a;
+  --basis-budget: #17566b;
+}
+
+:root {
   --max: 76rem;
   --radius: .75rem;
   --radius-sm: .375rem;
-  --shadow: 0 8px 24px #17212b0a;
   --body: 400 1rem/1.55 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
   /* Semantic aliases for page-level visualizations and future components. */
