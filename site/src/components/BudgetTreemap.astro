@@ -2,18 +2,38 @@
 import { children, compact, exact, href, type Box } from '../lib/data';
 import { layoutTreemap, type Rectangle } from '../lib/treemapLayout';
 const { parent, entries, nested = false } = Astro.props as { parent: Box; entries: Box[]; nested?: boolean };
-// Limit second-level data reads to the three overview pages, never to thousands of deep pages.
+// Second-level reads are restricted to overview pages, not thousands of deep pages.
 const map = layoutTreemap(parent.amount_cents, entries.filter(n => n.kind !== 'rounding'), {
   maxItems: 24, maxDepth: nested ? 1 : 0,
   nested: nested ? (item: Box) => children(item.id).filter(n => n.kind !== 'rounding') : undefined,
 });
 const overflow = map.rectangles.find(rect => rect.item.id === '__treemap_other__');
 const overflowCount = overflow ? entries.filter(n => n.amount_cents > 0 && n.kind !== 'rounding').length - 23 : 0;
-const fills = ['#145b73', '#17788c', '#29667b', '#327d82', '#275c79', '#287a91', '#356b88', '#396f78', '#146a83', '#477b8e', '#345f72'];
-function label(rect: Rectangle<Box>) { return rect.item.id === '__treemap_other__' ? `${overflowCount} more boxes` : rect.item.short_name ?? rect.item.name; }
-function fullLabel(rect: Rectangle<Box>) { return `${label(rect)}, ${exact(rect.item.amount_cents)}${rect.item.id === '__treemap_other__' ? ', see the complete list' : ', open this box'}`; }
-function showName(rect: Rectangle<Box>) { return rect.width >= 105 && rect.height >= 57; }
-function showAmount(rect: Rectangle<Box>) { return rect.width >= 125 && rect.height >= 84; }
+const fills = ['#14557f', '#11788b', '#284c78', '#187481', '#376493', '#155f82', '#0d6975', '#315783', '#246e99', '#226773', '#415c8a', '#127b89', '#295a7b', '#176c91'];
+const shortNames: Record<string, string> = {
+  'Chicago Police Department': 'Police', 'Chicago Fire Department': 'Fire',
+  'Chicago Department of Transportation': 'Transportation', 'Chicago Department of Aviation': 'Aviation',
+  'Department of Water Management': 'Water Management', 'Department of Streets and Sanitation': 'Streets & Sanitation',
+  'Chicago Department of Public Health': 'Public Health', 'Chicago Public Library': 'Public Library',
+  'Department of Family and Support Services': 'Family Services',
+  'Office of Emergency Management and Communications': 'Emergency Management',
+  'Civilian Office of Police Accountability': 'Police Accountability',
+  'Office of Public Safety Administration': 'Public Safety Admin',
+  'Department of Fleet and Facility Management': 'Fleet & Facilities',
+};
+function displayName(item: Box): string { return item.short_name ?? shortNames[item.name] ?? item.name; }
+function label(rect: Rectangle<Box>) { return rect.item.id === '__treemap_other__' ? `${overflowCount} more boxes` : displayName(rect.item); }
+function fullLabel(rect: Rectangle<Box>) { return `${rect.item.id === '__treemap_other__' ? label(rect) : rect.item.name}, ${exact(rect.item.amount_cents)}${rect.item.id === '__treemap_other__' ? ', see the complete list' : ', open this box'}`; }
+/** SVG viewBox units. Keep labels deliberately short, never let a clipped word span its neighbor. */
+function fit(text: string, width: number, averageGlyph = 8): string {
+  const limit = Math.max(0, Math.floor((width - 20) / averageGlyph));
+  return text.length <= limit ? text : limit > 3 ? `${text.slice(0, limit - 1).trimEnd()}…` : '';
+}
+function showName(rect: Rectangle<Box>) { return rect.width >= 90 && rect.height >= 46; }
+function showAmount(rect: Rectangle<Box>) { return rect.width >= 125 && rect.height >= 73; }
+function header(rect: Rectangle<Box>) { return rect.children.length > 0 && rect.width >= 110 && rect.height >= 65; }
+/** Names in the first row sit below the linked category band, without moving any data geometry. */
+function childLabelY(child: Rectangle<Box>, group: Rectangle<Box>): number { return Math.max(child.y + 21, header(group) ? group.y + 52 : child.y + 21); }
 ---
 {map.positiveTotalCents > 0 && <figure class="budget-map">
   <figcaption><strong>Where the positive amounts go</strong><span>Each rectangle’s area is proportional to its amount. Select a region to open its box; the list below includes every amount.</span></figcaption>
@@ -21,22 +41,27 @@ function showAmount(rect: Rectangle<Box>) { return rect.width >= 125 && rect.hei
   <svg class="treemap" viewBox="0 0 1200 680" role="group" aria-label={`Proportional treemap of positive amounts inside ${parent.name}. The complete accessible list follows.`}>
     <defs>{map.rectangles.map((rect, index) => <><clipPath id={`treemap-label-${index}`}><rect x={rect.x + 4} y={rect.y + 2} width={Math.max(0, rect.width - 8)} height={Math.max(0, rect.height - 4)} /></clipPath>{rect.children.map((sub, subIndex) => <clipPath id={`treemap-label-${index}-${subIndex}`}><rect x={sub.x + 4} y={sub.y + 2} width={Math.max(0, sub.width - 8)} height={Math.max(0, sub.height - 4)} /></clipPath>)}</>)}</defs>
     {map.rectangles.map((rect, index) => <g>
-      <a href={rect.children.length && rect.width >= 110 && rect.height >= 65 ? undefined : rect.item.id === '__treemap_other__' ? '#all-boxes' : href(rect.item)} aria-label={rect.children.length && rect.width >= 110 && rect.height >= 65 ? undefined : fullLabel(rect)}>
+      <a href={header(rect) ? undefined : rect.item.id === '__treemap_other__' ? '#all-boxes' : href(rect.item)} aria-label={header(rect) ? undefined : fullLabel(rect)}>
         <title>{fullLabel(rect)}</title><rect class={Math.min(rect.width, rect.height) < 4 ? 'micro' : ''} x={rect.x} y={rect.y} width={rect.width} height={rect.height} fill={fills[index % fills.length]} />
-        <g clip-path={`url(#treemap-label-${index})`}>{rect.children.length === 0 && showName(rect) && <text x={rect.x + 10} y={rect.y + 24} class="name">{label(rect)}</text>}
-        {rect.children.length === 0 && showAmount(rect) && <text x={rect.x + 10} y={rect.y + 46} class="value">{compact(rect.item.amount_cents)}</text>}</g>
+        {rect.children.length === 0 && showName(rect) && <text clip-path={`url(#treemap-label-${index})`} x={rect.x + 10} y={rect.y + 22} class="name">{fit(label(rect), rect.width)}</text>}
+        {rect.children.length === 0 && showAmount(rect) && <text clip-path={`url(#treemap-label-${index})`} x={rect.x + 10} y={rect.y + 41} class="value">{fit(compact(rect.item.amount_cents), rect.width, 7)}</text>}
       </a>
       {rect.children.map((sub, subIndex) => <a href={href(sub.item)} aria-label={`${sub.item.name}, ${exact(sub.item.amount_cents)}, open this box`}>
-        <title>{sub.item.name}: {exact(sub.item.amount_cents)}</title><rect class={Math.min(sub.width, sub.height) < 4 ? 'micro' : ''} x={sub.x} y={sub.y} width={sub.width} height={sub.height} fill={fills[(index + subIndex + 2) % fills.length]} />
-        <g clip-path={`url(#treemap-label-${index}-${subIndex})`}>{showName(sub) && <text x={sub.x + 8} y={sub.y + 23} class="name">{sub.item.short_name ?? sub.item.name}</text>}
-        {showAmount(sub) && <text x={sub.x + 8} y={sub.y + 44} class="value">{compact(sub.item.amount_cents)}</text>}</g>
+        <title>{sub.item.name}: {exact(sub.item.amount_cents)}</title><rect class={Math.min(sub.width, sub.height) < 4 ? 'micro' : ''} x={sub.x} y={sub.y} width={sub.width} height={sub.height} fill={fills[(index * 3 + subIndex + 2) % fills.length]} />
+        {showName(sub) && childLabelY(sub, rect) + 6 < sub.y + sub.height && <text clip-path={`url(#treemap-label-${index}-${subIndex})`} x={sub.x + 8} y={childLabelY(sub, rect)} class="name sub-name">{fit(displayName(sub.item), sub.width, 7.4)}</text>}
+        {showAmount(sub) && childLabelY(sub, rect) + 24 < sub.y + sub.height && <text clip-path={`url(#treemap-label-${index}-${subIndex})`} x={sub.x + 8} y={childLabelY(sub, rect) + 19} class="value">{fit(compact(sub.item.amount_cents), sub.width, 7)}</text>}
       </a>)}
       {rect.children.length > 0 && <rect class="region-outline" x={rect.x} y={rect.y} width={rect.width} height={rect.height} />}
-      {rect.children.length > 0 && rect.width >= 110 && rect.height >= 65 && <a href={href(rect.item)} aria-label={`Open ${rect.item.name}, ${exact(rect.item.amount_cents)}`} class="parent-link"><title>Open {rect.item.name}</title><text clip-path={`url(#treemap-label-${index})`} x={rect.x + 10} y={rect.y + rect.height - 12}>{label(rect)} ↗</text></a>}
+      {header(rect) && <a href={href(rect.item)} aria-label={`Open ${rect.item.name}, ${exact(rect.item.amount_cents)}`} class="parent-link">
+        <title>Open {rect.item.name}</title><rect class="parent-band" x={rect.x + 3} y={rect.y + 3} width={rect.width - 6} height="30" />
+        <rect class="band-accent" x={rect.x + 3} y={rect.y + 3} width="4" height="30" />
+        <text clip-path={`url(#treemap-label-${index})`} x={rect.x + 14} y={rect.y + 24}>{fit(label(rect), rect.width - 40, 8)} ↗</text>
+      </a>}
     </g>)}
   </svg>
   <p class="mobile-hint">On small screens, use the complete linked table below to explore each box.</p>
 </figure>}
 <style>
-.budget-map{margin:1.1rem 0 1.5rem}.budget-map figcaption{display:flex;flex-wrap:wrap;gap:.25rem 1rem;align-items:baseline;margin-bottom:.65rem;color:var(--ink)}.budget-map figcaption strong{font-size:1.1rem}.budget-map figcaption span,.map-explanation{color:var(--muted);font-size:.92rem}.map-explanation{margin:.35rem 0 .7rem;max-width:85ch}.treemap{display:block;width:100%;height:auto;background:#d8e7eb;border:3px solid #16465e;border-radius:6px}.treemap rect{stroke:#f6f8f5;stroke-width:2;transition:filter .15s}.treemap rect.micro{stroke:none}.treemap rect.region-outline{fill:none;stroke:#f6f8f5;stroke-width:5;pointer-events:none}.treemap a:hover rect:not(.micro),.treemap a:focus-visible rect:not(.micro){filter:brightness(1.28);stroke:#ffcb45;stroke-width:4}.treemap a:focus-visible{outline:none}.treemap text{fill:#fff;font-size:16px;font-weight:760;pointer-events:none;paint-order:stroke;stroke:#193d50;stroke-width:2px;stroke-linejoin:round}.treemap .value{font-size:14px;font-weight:600}.treemap .parent-link text{font-size:14px;pointer-events:auto;text-decoration:underline;cursor:pointer}.treemap .parent-link:focus-visible text{fill:#ffe39c}.mobile-hint{display:none}@media(max-width:700px){.treemap{display:none}.mobile-hint{display:block;font-size:.92rem;color:var(--muted)}}
+.budget-map{margin:1.1rem 0 1.5rem}.budget-map figcaption{display:flex;flex-wrap:wrap;gap:.25rem 1rem;align-items:baseline;margin-bottom:.65rem;color:var(--ink)}.budget-map figcaption strong{font-size:1.1rem}.budget-map figcaption span,.map-explanation{color:var(--muted);font-size:.92rem}.map-explanation{margin:.35rem 0 .7rem;max-width:85ch}
+.treemap{display:block;width:100%;height:auto;background:#0d2e45;border:3px solid #0d2e45;border-radius:4px}.treemap rect{stroke:#0d2e45;stroke-width:2.5;transition:filter .15s}.treemap rect.micro{stroke:none}.treemap rect.region-outline{fill:none;stroke:#09263b;stroke-width:5;pointer-events:none}.treemap a:hover rect:not(.micro):not(.parent-band):not(.band-accent),.treemap a:focus-visible rect:not(.micro):not(.parent-band):not(.band-accent){filter:brightness(1.3);stroke:#ffd47a;stroke-width:3}.treemap a:focus-visible{outline:none}.treemap text{fill:#fff;font-size:12px;font-weight:720;pointer-events:none;paint-order:stroke;stroke:#113347;stroke-width:1.5;stroke-linejoin:round}.treemap .sub-name{font-size:11.5px}.treemap .value{font-size:10.5px;font-weight:600;fill:#e7f1f4}.treemap .parent-band{fill:#0b2b43;fill-opacity:.93;stroke:none}.treemap .band-accent{fill:#e64b56;stroke:none}.treemap .parent-link text{font-size:12px;font-weight:800;stroke:none}.treemap .parent-link:hover .parent-band,.treemap .parent-link:focus-visible .parent-band{fill:#174f71;fill-opacity:1}.treemap .parent-link:focus-visible .parent-band{stroke:#ffd47a;stroke-width:2}.mobile-hint{display:none}@media(max-width:700px){.treemap{display:none}.mobile-hint{display:block;font-size:.92rem;color:var(--muted)}}
 </style>
