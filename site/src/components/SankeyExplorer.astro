@@ -11,6 +11,7 @@
   <p class="explorer-status" data-status role="status" aria-live="polite">Loading budgets…</p>
   <div data-roots class="explorer-roots" aria-label="Choose a government"></div>
   <nav data-crumbs class="explorer-crumbs" aria-label="Budget path" hidden></nav>
+  <p class="explorer-hint">Choose a budget, then follow a ribbon or search its smaller boxes. Scroll sideways to see each level →</p>
   <div data-scroll class="explorer-scroll" tabindex="0" aria-label="Budget flow, scroll horizontally to see more levels" hidden><div data-panels class="explorer-panels"></div></div>
   <section data-detail class="explorer-detail" aria-label="Selected budget box" hidden></section>
 </section>
@@ -214,7 +215,7 @@
         }
         await renderDetail(path[path.length-1],version);if(version!==renderVersion)return;
         status.textContent=`Showing ${path[path.length-1].name}. Follow a box in the list or use the breadcrumb to move back.`;
-        requestAnimationFrame(()=>{if(version===renderVersion)scroll.scrollTo({left:scroll.scrollWidth,behavior:'smooth'})});
+        requestAnimationFrame(()=>{if(version===renderVersion)scroll.scrollTo({left:scroll.scrollWidth,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})});
       }catch{if(version===renderVersion){scroll.hidden=true;detail.hidden=true;crumbArea.hidden=true;status.textContent='This box is unavailable. Choose City, CPS, or Parks to start again.'}}
     };
     window.addEventListener('popstate',()=>go(new URL(location.href).searchParams.get('box')??'','none'));
@@ -247,4 +248,11 @@
   .sankey-explorer button:focus-visible,.sankey-explorer input:focus-visible,.explorer-scroll:focus-visible,.sankey-explorer a:focus-visible{outline:3px solid #be6426;outline-offset:3px}
   @media(max-width:680px){.explorer-roots{grid-template-columns:1fr}.root-card{min-height:7rem}.flow-panel{width:330px;min-width:330px;padding:.8rem}.flow-source{width:68px;font-size:.68rem}.flow-ribbons{left:68px;width:130px}.flow-target{left:198px;font-size:.64rem}.flow-chart{font-size:.72rem}}
   @media(prefers-reduced-motion:reduce){.root-card:hover{transform:none}}
+  .sankey-explorer .explorer-hint{margin:1.2rem 0 .6rem;padding:.7rem 1rem;border-left:3px solid #2e8279;background:#eaf4f0;border-radius:0 .5rem .5rem 0;font-size:.9rem;font-weight:600;color:#28565b}
+  .sankey-explorer .root-card,.sankey-explorer .flow-target,.sankey-explorer .text-node,.sankey-explorer .explorer-crumbs button{transition:transform .22s ease,box-shadow .22s ease,background-color .22s ease,color .22s ease}
+  .sankey-explorer .root-card{box-shadow:0 4px 18px #1730360c}.sankey-explorer .root-card:hover{transform:translateY(-4px);box-shadow:0 12px 28px #17303624}.sankey-explorer .root-invite{font-weight:700;color:#155668}
+  .sankey-explorer .explorer-crumbs button{border-radius:99px;background:#eaf2f0;padding:.4rem .75rem;text-decoration:none}.sankey-explorer .explorer-crumbs button:hover{background:#d1e8e3}.sankey-explorer .explorer-crumbs button[aria-current]{background:#205f67;color:#fff}
+  .sankey-explorer .flow-list .text-node:hover{background:#e8f4f1;text-decoration:none}.sankey-explorer .flow-target:hover{background:#185a65}.sankey-explorer .explorer-detail{box-shadow:0 12px 36px #17303612}
+  @media(max-width:680px){.sankey-explorer .explorer-roots{gap:.6rem}.sankey-explorer .root-card{min-height:0;padding:.85rem 1rem;gap:.2rem}.sankey-explorer .root-card strong{font-size:1.3rem}.sankey-explorer .flow-panel{width:min(86vw,360px);min-width:min(86vw,360px)}.sankey-explorer .flow-list .text-node{flex-wrap:wrap}.sankey-explorer .explorer-hint{font-size:.82rem}}
+  @media(prefers-reduced-motion:reduce){.sankey-explorer .root-card,.sankey-explorer .flow-target,.sankey-explorer .text-node,.sankey-explorer .explorer-crumbs button{transition:none}.sankey-explorer .root-card:hover{transform:none}}
 </style>
