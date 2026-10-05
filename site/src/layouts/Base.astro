@@ -12,7 +12,7 @@ const active=(url:string)=>current===url || (url!=='/find' && url!=='/about' && 
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="description" content={description}/>
-    <meta name="theme-color" content="#075b84"/>
+    <meta name="theme-color" content="#f4f2ec"/>
     <title>{title} | Chicago budget explorer</title>
     {analyticsToken&&<script is:inline defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon={JSON.stringify({token:analyticsToken})}></script>}
   </head>
@@ -20,7 +20,8 @@ const active=(url:string)=>current===url || (url!=='/find' && url!=='/about' && 
     <a class="skip" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="wrap">
-        <a class="brand" href="/">Chicago Budget</a>
+        <a class="brand" href="/" aria-label="Chicago Budget home"><svg class="brand-mark" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true"><path d="M16 0 20 9 29.9 8 24 16 29.9 24 20 23 16 32 12 23 2.1 24 8 16 2.1 8 12 9Z" fill="currentColor"/></svg><span>Chicago<span class="brand-second">Budget</span></span></a>
+        <span class="brand-caption">Public money.<br/>A clearer picture.</span>
         <nav aria-label="Main navigation" class="nav desktop-nav">
           <a class="nav-primary" href="/#explore" aria-current={current==='/'?'page':undefined}>Explore</a>
           <a class="nav-primary nav-find" href="/find" aria-current={active('/find')?'page':undefined}>Find</a>
@@ -40,6 +41,7 @@ const active=(url:string)=>current===url || (url!=='/find' && url!=='/about' && 
     <main id="main" class="wrap" tabindex="-1"><slot/></main>
     <footer class="site-footer">
       <div class="wrap">
+        <div class="footer-heading"><span>Chicago Budget<span class="footer-star" aria-hidden="true">✶</span></span><p>An independent look at our public money.</p></div>
         <nav aria-label="Footer navigation"><a href="/disclosures">Disclosures</a><a href="/sources">Sources</a><a href="/glossary">Glossary</a><a href="/gaps">What we could not find</a><a href="/contribute">Contribute</a><a href="/style-guide">Style guide</a></nav>
       </div>
     </footer>

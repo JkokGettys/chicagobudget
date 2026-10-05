@@ -33,6 +33,13 @@ const builtAt = typeof manifest.run_at === 'string' && !Number.isNaN(Date.parse(
       <p>“Adds up exactly” means the listed detail reconciles to a published total. “Paid so far” describes actual payments only for the period shown, not a full-year budget or forecast. A contract value is not the same as an amount paid. See the <a href="/glossary">glossary and basis labels</a> for the meaning of each badge, and <a href="/about">about and methods</a> for how the boxes are built.</p>
     </section>
 
+    <section aria-labelledby="motion-heading">
+      <h2 id="motion-heading">What the moving dots mean</h2>
+      <p>The homepage flock is an illustration of a budget snapshot, not a live feed of transactions. Separation, alignment, and cohesion make the dots move like a flock. Movement speed, position, and clustering do not encode spending, geography, efficiency, or change over time.</p>
+      <p>Each selected budget uses 240 equal-value dots. Category counts are allocated in proportion to positive immediate budget lines, rounded to whole dots using the largest-remainder method. A very small category may round to zero dots, but remains in the linked list. The displayed percentages use the exact dollar amounts, not rounded dot counts. Where there are many categories, the smallest are grouped into an expandable “other categories” row.</p>
+      <p>Negative adjustments are not drawn as negative dots. The City headline is net of adjustments, while its dot shares use the sum of positive categories, which is shown beneath the list. The City, Schools, and Parks tabs change the denominator independently, so a dot does not have the same dollar value across budgets. Use the pause control for a still view. Reduced-motion preferences produce a static visualization automatically.</p>
+    </section>
+
     <section aria-labelledby="limits-heading">
       <h2 id="limits-heading">What the data cannot establish</h2>
       <p>Public records do not always identify projects, individual recipients, or payments within a budget line. A large final box does not mean one person or company received all of it. Positions are budgeted jobs or rates, not necessarily named employees or payments to individuals. Some smaller splits are estimates or residual calculations and should not be read as exact allocations printed by an agency.</p>

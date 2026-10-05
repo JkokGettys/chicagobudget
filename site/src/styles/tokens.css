@@ -1,47 +1,44 @@
 :root {
-  /* Chicago flag: lake blue, white field, and a restrained red star accent. */
+  /* JamesFeedback1: lake blue and Chicago red, with an editorial paper surface. */
   color-scheme: light;
-  --canvas: #edf5f8;
-  --paper: #ffffff;
-  --ink: #102b3b;
-  --muted: #455e6b;
-  --link: #075b84;
-  --accent: #b4082e;
+  --canvas: #f4f2ec;
+  --paper: #fffefa;
+  --ink: #18313e;
+  --muted: #50616a;
+  --link: #285f76;
+  --accent: #ae4338;
   --accent-ink: #ffffff;
-  --focus: #a00629;
-  --line: #bbd5e0;
-  --line-strong: #719fb4;
-  --surface-subtle: #e2f0f5;
-  --button-bg: #b4082e;
+  --focus: #9d332c;
+  --line: #d1d5cc;
+  --line-strong: #81918d;
+  --surface-subtle: #ebece4;
+  --button-bg: #193c4c;
   --button-ink: #ffffff;
-  --button-hover: #930521;
-  --header-bg: #075b84;
-  --header-ink: #ffffff;
-  --header-muted: #e2f0f5;
-  --header-hover: #176f97;
-  --header-border: #4892b3;
-  --header-focus: #ffffff;
-  --header-cta-bg: #ffffff;
-  --header-cta-ink: #102b3b;
-  --header-cta-hover-bg: #e2f0f5;
-  --header-cta-hover-ink: #102b3b;
-  --navy: #102b3b;
-  --shadow: 0 8px 24px #102b3b14;
-  --menu-shadow: 0 14px 32px #102b3b33;
+  --button-hover: #28566a;
+  --header-bg: #f4f2ec;
+  --header-ink: #18313e;
+  --header-muted: #50616a;
+  --header-hover: #e5e8df;
+  --header-border: #cbd1c6;
+  --header-focus: #9d332c;
+  --header-cta-bg: #193c4c;
+  --header-cta-ink: #ffffff;
+  --header-cta-hover-bg: #28566a;
+  --header-cta-hover-ink: #ffffff;
+  --navy: #18313e;
+  --shadow: 0 8px 24px #18313e0a;
+  --menu-shadow: 0 14px 32px #18313e22;
   --basis-proxy: #765c20;
   --basis-residual: #536471;
   --basis-adjustment: #575e7b;
   --basis-paid: #276753;
   --basis-tied: #176b7a;
   --basis-estimate: #685383;
-  --basis-budget: #075b84;
-
-  --max: 76rem;
-  --radius: .75rem;
-  --radius-sm: .375rem;
+  --basis-budget: #285f76;
+  --max: 80rem;
+  --radius: .6rem;
+  --radius-sm: .35rem;
   --body: 400 1rem/1.55 system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-
-  /* Semantic aliases for page-level visualizations and future components. */
   --color-bg: var(--canvas);
   --color-surface: var(--paper);
   --color-text: var(--ink);

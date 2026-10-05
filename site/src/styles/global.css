@@ -15,8 +15,11 @@ button:hover { background: var(--button-hover); }
 
 .site-header { position: sticky; top: 0; z-index: 20; background: var(--header-bg); color: var(--header-ink); border-bottom: 1px solid var(--header-border); }
 .site-header :where(a, summary):focus-visible { outline-color: var(--header-focus); }
-.site-header .wrap { display: flex; align-items: center; gap: clamp(.75rem, 2vw, 2rem); min-height: 4.25rem; }
-.brand { flex-shrink: 0; color: var(--header-ink); font-size: 1.05rem; font-weight: 750; letter-spacing: -.035em; line-height: 1.2; text-decoration: none; }
+.site-header .wrap { display: flex; align-items: center; gap: clamp(.75rem, 2vw, 2rem); min-height: 5rem; }
+.brand { display: inline-flex; align-items: center; gap: .65rem; flex-shrink: 0; color: var(--header-ink); font-size: 1.05rem; font-weight: 750; letter-spacing: -.04em; line-height: 1.03; text-decoration: none; }
+.brand-second { display: block; }
+.brand-mark { color: var(--accent); flex-shrink: 0; }
+.brand-caption { color: var(--muted); font-size: .66rem; line-height: 1.5; border-left: 1px solid var(--line); padding-left: 1.3rem; }
 .brand:hover { text-decoration: underline; }
 .nav { display: flex; align-items: center; gap: .2rem; }
 .desktop-nav { margin-left: auto; }
@@ -32,6 +35,10 @@ main > section:last-child { margin-bottom: 2rem; }
 
 .site-footer { margin-top: 3rem; padding: 2rem 0; border-top: 1px solid var(--line); background: var(--paper); color: var(--muted); font-size: .875rem; }
 .site-footer .wrap { display: block; }
+.footer-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
+.footer-heading > span { color: var(--ink); font-size: 1.25rem; font-weight: 700; letter-spacing: -.045em; }
+.footer-star { color: var(--accent); margin-left: .7rem; }
+.footer-heading p { margin: 0; font-size: .8rem; }
 .site-footer nav { display: flex; flex-wrap: wrap; align-content: start; gap: .5rem 1.5rem; }
 .site-footer a { color: var(--ink); font-weight: 600; }
 h1, h2, h3 { line-height: 1.14; letter-spacing: -.045em; text-wrap: balance; }
@@ -78,9 +85,14 @@ td.numeric { font-variant-numeric: tabular-nums; text-align: right; white-space:
 .search-results { list-style: none; padding: 0; }
 .search-results li { padding: 1rem 0; border-bottom: 1px solid var(--line); }
 
+@media (max-width: 1050px) {
+  .brand-caption { display: none; }
+}
 @media (max-width: 760px) {
   .site-header .wrap { gap: .5rem; min-height: 4rem; }
   .brand { margin-right: auto; font-size: .95rem; }
+  .brand-caption { display: none; }
+  .brand-mark { width: 24px; height: 24px; }
   .desktop-nav { display: none; }
   .mobile-primary { display: flex; gap: .1rem; }
   .mobile-primary a { min-height: 40px; padding: .4rem .55rem; font-size: .85rem; }
