@@ -10,46 +10,66 @@ const builtAt = typeof manifest.run_at === 'string' && !Number.isNaN(Date.parse(
   <section class="hero">
     <p class="eyebrow">Reading the numbers</p>
     <h1>Disclosures</h1>
-    <p class="lede">This site organizes public budget records to make them easier to explore. A box is a reported amount or a clearly labeled calculation, not necessarily money spent or paid.</p>
+    <p class="lede">Budgets are plans, not proof of spending. Each box shows a reported amount or a labeled calculation, with its period and sources.</p>
   </section>
 
-  <div class="stack">
+  <div class="stack disclosures">
     <section aria-labelledby="compare-heading">
       <h2 id="compare-heading">Three budgets, not one total</h2>
-      <p>The <a href="/city">City of Chicago</a>, <a href="/cps">Chicago Public Schools</a>, and <a href="/parks">Chicago Park District</a> publish separate budgets under different rules and periods. Their responsibilities and funding may overlap. Do not add their headline amounts together or interpret them as a single Chicago-wide budget.</p>
-      <p>The City's headline is a <strong>net</strong> budget. Money moved between City funds that is <a href="/city/counted-twice">counted twice</a> is shown separately to explain the gross figure, not added to the net headline.</p>
+      <p>The <a href="/city">City</a>, <a href="/cps">Schools</a>, and <a href="/parks">Park District</a> are separate governments with overlapping responsibilities and funding. <strong>Do not add their headline totals together.</strong></p>
+      <p>The City headline is <strong>net</strong>. Transfers between City funds that are <a href="/city/counted-twice">counted twice</a> explain the gross figure but are not added to the net headline.</p>
     </section>
 
     <section aria-labelledby="periods-heading">
-      <h2 id="periods-heading">Figures and periods</h2>
-      <p>City budget figures are for calendar year 2026. CPS fiscal year 2026 runs from July 2025 through June 2026. Park District figures are labeled FY2026. A budget is a plan or authorization, not a record of completed spending. Payments and project-spending figures may cover a shorter or different period, including partial-year or unaudited data. Check the period and basis on each box before comparing amounts.</p>
-      <p>Headline amounts are formatted for readability. Open a box for its exact dollar amount, label, period, notes, and source references. Dollar amounts throughout the site are in US dollars.</p>
+      <h2 id="periods-heading">Check the period</h2>
+      <ul class="period-list">
+        <li><strong>City:</strong> calendar year 2026.</li>
+        <li><strong>Schools:</strong> FY2026, July 2025–June 2026.</li>
+        <li><strong>Park District:</strong> labeled FY2026.</li>
+      </ul>
+      <p>Payments and project spending may cover different or partial periods, and may be unaudited. Check each box before comparing figures. All amounts are US dollars; open a box for its exact amount.</p>
     </section>
 
     <section aria-labelledby="flow-heading">
-      <h2 id="flow-heading">How to read the flow</h2>
-      <p>Open a line to see its immediate smaller lines. A line is a breakdown of its parent, not an additional amount to add to that parent. The proportional ribbons draw positive amounts only; the complete list alongside them also includes negative adjustments and zero-dollar lines. Negative adjustments reduce a total rather than representing a negative-sized service. More facts shown separately on a line are not included in its budget flow.</p>
-      <p>Where a source does not provide a reliable split, the path stops even if the remaining amount is large. A line may reflect a budget total, a published estimate, our own estimate, a leftover after known parts, or an adjustment.</p>
-      <p>“Adds up exactly” means the listed detail reconciles to a published total. “Paid so far” describes actual payments only for the period shown, not a full-year budget or forecast. A contract value is not the same as an amount paid. See the <a href="/glossary">glossary and basis labels</a> for the meaning of each badge, and <a href="/about">about and methods</a> for how the boxes are built.</p>
+      <h2 id="flow-heading">Shares and adjustments</h2>
+      <p>A child line is part of its parent, not an extra amount. <strong>Card and table percentages use the parent budget.</strong> Negative adjustments reduce that total, so positive lines can add up to more than 100%. Percentages are omitted when the parent is zero or negative.</p>
+      <p><strong>Dots and flow ribbons use positive amounts only.</strong> Their shares use the positive-category total, not the net budget. Negative and zero-dollar lines remain in the accompanying lists. Facts shown separately are outside the budget flow.</p>
+      <details class="reading-detail">
+        <summary>Estimates, payments, and missing detail</summary>
+        <p>A line can be a budget, published estimate, our estimate, leftover after known parts, or adjustment. Where no reliable split exists, the path stops. A large final box does not mean one person or company received all of it.</p>
+        <p>“Adds up exactly” means the detail reconciles to a published total. “Paid so far” covers only the period shown, not a full-year budget or forecast. A contract value is not an amount paid. Budgeted positions are not necessarily filled jobs or payments to named people.</p>
+        <p>See the <a href="/glossary">glossary</a>, <a href="/about">methods</a>, and <a href="/gaps">documented gaps</a>. The explorer is not a live ledger or a guarantee of complete agency records.</p>
+      </details>
     </section>
 
     <section aria-labelledby="motion-heading">
-      <h2 id="motion-heading">What the moving dots mean</h2>
-      <p>The homepage flock is an illustration of a budget snapshot, not a live feed of transactions. Separation, alignment, and cohesion make the dots move like a flock. Movement speed, position, and clustering do not encode spending, geography, efficiency, or change over time.</p>
-      <p>Each selected budget uses 240 equal-value dots. Category counts are allocated in proportion to positive immediate budget lines, rounded to whole dots using the largest-remainder method. A very small category may round to zero dots, but remains in the linked list. The displayed percentages use the exact dollar amounts, not rounded dot counts. Where there are many categories, the smallest are grouped into an expandable “other categories” row.</p>
-      <p>Negative adjustments are not drawn as negative dots. The City headline is net of adjustments, while its dot shares use the sum of positive categories, which is shown beneath the list. The City, Schools, and Parks tabs change the denominator independently, so a dot does not have the same dollar value across budgets. Use the pause control for a still view. Reduced-motion preferences produce a static visualization automatically.</p>
-    </section>
-
-    <section aria-labelledby="limits-heading">
-      <h2 id="limits-heading">What the data cannot establish</h2>
-      <p>Public records do not always identify projects, individual recipients, or payments within a budget line. A large final box does not mean one person or company received all of it. Positions are budgeted jobs or rates, not necessarily named employees or payments to individuals. Some smaller splits are estimates or residual calculations and should not be read as exact allocations printed by an agency.</p>
-      <p>The explorer is not a live ledger. It does not establish that appropriations were spent, contracts were fully paid, or every agency's records are complete. See <a href="/gaps">what we could not find</a> for documented unresolved large boxes and the coverage measures.</p>
+      <h2 id="motion-heading">What the dots mean</h2>
+      <p>The flock illustrates a budget snapshot, not live transactions. Dot counts represent budget shares. Movement, position, and clustering do not show spending over time, geography, or efficiency. Each budget has its own dollar value per dot.</p>
+      <details class="reading-detail">
+        <summary>Dot counts and motion controls</summary>
+        <p>Each budget uses 240 equal-value dots, allocated to positive immediate categories and rounded by the largest-remainder method. Tiny categories may round to zero dots but stay in the list. Displayed percentages use exact amounts, not rounded dot counts. Small categories may be grouped in an expandable “other categories” row.</p>
+        <p>Negative adjustments are not drawn as dots. The City headline is net, while its dot shares use the positive-category total shown beneath the list. Switching budgets changes the denominator independently.</p>
+        <p>Separation, alignment, and cohesion make the dots flock. Pause for a still view; reduced-motion preferences automatically stop animation.</p>
+      </details>
     </section>
 
     <section aria-labelledby="sources-heading">
-      <h2 id="sources-heading">Sources and data export</h2>
-      <p>Figures retain source references where available. Sources include budgets, reports, and datasets, which may use different definitions or reporting dates. Some records identify a document without a direct public web link. Use a box's own source and period to verify an individual figure, or browse the <a href="/sources">source records</a>. You can <a href="/contribute">report a correction</a> with the box URL and the conflicting source.</p>
-      {builtAt && <p>Current site data export built <time datetime={builtAt.toISOString()}>{builtAt.toLocaleString('en-US', { dateStyle: 'long', timeStyle: 'short', timeZone: 'UTC' })} UTC</time>. This is the export build time, not the publication date or reporting period of every source.</p>}
+      <h2 id="sources-heading">Verify a figure</h2>
+      <p>Use the box’s source and period, or browse the <a href="/sources">source records</a>. <a href="/contribute">Report a correction</a> with the box URL and conflicting source.</p>
+      <details class="reading-detail">
+        <summary>Source coverage and data export</summary>
+        <p>Sources include budgets, reports, and datasets with different definitions and dates. References are retained where available; some identify a document without a direct public link. Estimates and residual calculations are not exact allocations published by an agency.</p>
+        {builtAt && <p>Data export built <time datetime={builtAt.toISOString()}>{builtAt.toLocaleString('en-US', { dateStyle: 'long', timeStyle: 'short', timeZone: 'UTC' })} UTC</time>. This is the export time, not each source’s publication date or reporting period.</p>}
+      </details>
     </section>
   </div>
 </Base>
+<style>
+  .disclosures { max-width:75ch; }
+  .disclosures p, .period-list { line-height:1.65; }
+  .period-list { padding-left:1.2rem; }
+  .period-list li + li { margin-top:.35rem; }
+  .reading-detail { margin-top:1rem; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .reading-detail summary { padding:.85rem 0; min-height:44px; cursor:pointer; color:var(--link); font-weight:650; }
+  .reading-detail p { margin-top:.5rem; }
+</style>

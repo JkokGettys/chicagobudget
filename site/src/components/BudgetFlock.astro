@@ -40,9 +40,9 @@ const staticDots = city ? city.rows.flatMap((row, group) => {
         <canvas aria-hidden="true"></canvas>
         <button class="motion-button" type="button" hidden>Pause motion</button>
       </div>
-      <p class="selection" data-selection aria-live="polite" aria-atomic="true">Every dot is an equal share. Explore a category to see its part.</p>
-      <p class="motion-note">Motion is illustrative. Dot counts represent budget share.</p>
-      <p class="rounding-note">240 equal-value dots, rounded to whole dots. Movement is not spending over time.</p>
+      <p class="selection" data-selection aria-live="polite" aria-atomic="true">Explore a category to highlight its dots.</p>
+      <p class="motion-note">Dots show budget shares, not spending over time.</p>
+      <details class="dot-guide"><summary>How the dots work</summary><p>240 equal-value dots per budget, rounded to whole dots. Small categories may have no dots. Percentages use exact amounts, not dot counts. Each budget has its own dollar value per dot.</p><a href="/disclosures#motion-heading">Method and limits ↗</a></details>
     </div>
     <div class="legend-column">
       <div class="legend-heading"><span>Inside this budget</span><span>Share</span></div>
@@ -56,7 +56,7 @@ const staticDots = city ? city.rows.flatMap((row, group) => {
       <a class="explore-budget" data-explore href={city.href}>Explore the full budget <span aria-hidden="true">↗</span></a>
     </div>
   </div>
-  <footer class="flock-footer"><span>Follow the dots. Then follow the dollars.</span><nav aria-label="All budget pages">{budgets.map(b => <a href={b.href}>{b.label} <span aria-hidden="true">↗</span></a>)}</nav></footer>
+  <footer class="flock-footer"><span>Budget pages</span><nav aria-label="All budget pages">{budgets.map(b => <a href={b.href}>{b.label} <span aria-hidden="true">↗</span></a>)}</nav></footer>
 </budget-flock>}
 
 <script>
@@ -97,7 +97,7 @@ const staticDots = city ? city.rows.flatMap((row, group) => {
         highlighted = group;
         activeRows().forEach((row, i) => row.classList.toggle('is-highlighted', i === group));
         const row = budgets[selected].rows[group];
-        summary.textContent = row ? `${row.label} · ${row.exact} · ${row.share} of positive categories` : `${budgets[selected].title} · ${budgets[selected].total}. Every dot is an equal share.`;
+        summary.textContent = row ? `${row.label} · ${row.exact} · ${row.share} of positive categories` : `${budgets[selected].title} · Explore a category to highlight its dots.`;
         draw();
       };
       const seed = (preserveMotion = false) => {
@@ -205,7 +205,13 @@ const staticDots = city ? city.rows.flatMap((row, group) => {
   .motion-button:disabled { cursor:default; color:#b7c7c9; }
   .selection { min-height:43px; font-size:13px; line-height:1.55; color:#f3dfad; padding-top:15px; }
   .motion-note { font-size:11px; line-height:1.6; color:#c4d2d1; padding-top:10px; }
-  .rounding-note { font-size:10px; line-height:1.65; color:#9fb4b8; margin-top:3px !important; max-width:390px; }
+  .dot-guide { margin-top:8px; font-size:11px; line-height:1.65; color:#b7c7c9; max-width:390px; }
+  .dot-guide summary { cursor:pointer; min-height:44px; display:flex; align-items:center; gap:8px; list-style:none; }
+  .dot-guide summary::-webkit-details-marker { display:none; }
+  .dot-guide summary::before { content:'+'; font-size:16px; }
+  .dot-guide[open] summary::before { content:'−'; }
+  .dot-guide p { margin-bottom:8px; }
+  .dot-guide a { display:inline-block; padding-block:8px; }
   .legend-heading { display:flex; justify-content:space-between; text-transform:uppercase; letter-spacing:.13em; font-size:9px; color:#a6bec1; padding:4px 0 13px; }
   .flock-legend { padding:0; margin:0; list-style:none; }
   .flock-legend > li { border-top:1px solid #ffffff1a; border-radius:2px; transition:background .15s; }

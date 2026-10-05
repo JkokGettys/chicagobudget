@@ -10,9 +10,9 @@ const periods: Record<string, string> = {
   parks: 'Park District FY2026',
 };
 const descriptions: Record<string, string> = {
-  city: 'The streets we travel. The services we share. The everyday work of a city.',
-  cps: 'Classrooms, school buildings, and the people helping the next generation grow.',
-  parks: 'Our neighborhood gathering places, lakefront escapes, and room to play.',
+  city: 'Streets, public services, and the everyday work of a city.',
+  cps: 'Classrooms, school buildings, and the people who make them work.',
+  parks: 'Neighborhood parks, lakefront spaces, and room to play.',
 };
 const colors = ['#2f7189', '#b14b3e', '#597961', '#886a38', '#786495', '#567b80', '#8b646d', '#506372', '#807663', '#3d6877', '#7a624c'];
 const abbreviated = (cents: number) => {
@@ -34,21 +34,21 @@ const budgets = roots.map(root => {
         <h1 id="home-title">A city in motion.<br/><em>A budget you can see.</em></h1>
       </div>
       <div class="intro-aside">
-        <p>Streets. Schools. Neighborhood parks.<br/>Get a feel for where public money goes, then follow the details.</p>
+        <p>Explore the public money behind Chicago’s streets, schools, and parks.</p>
         <a class="intro-link" href="#budget-motion">See the big picture <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
     <section class="motion-section" id="budget-motion" aria-label="Budget in motion">
-      <div class="section-index"><span>01 <span aria-hidden="true">/</span> The big picture</span><span>Real budgets. A different perspective.</span></div>
+      <div class="section-index"><span>01 <span aria-hidden="true">/</span> The big picture</span></div>
       <BudgetFlock />
     </section>
 
     <section class="budget-directory" aria-labelledby="budgets-title">
-      <div class="section-index"><span>02 <span aria-hidden="true">/</span> Your way in</span><a href="/disclosures">How to read the numbers <span aria-hidden="true">↗</span></a></div>
+      <div class="section-index"><span>02 <span aria-hidden="true">/</span> Your way in</span><a href="/disclosures">Reading the numbers <span aria-hidden="true">↗</span></a></div>
       <div class="directory-heading">
         <h2 id="budgets-title">One city.<br/><em>Three different budgets.</em></h2>
-        <p>Pick the part of Chicago you’re curious about.<br/>Every budget opens into a story of its own.</p>
+        <p>Separate governments, overlapping responsibilities.<br/>These totals should not be added together.</p>
       </div>
       <div class="budget-grid">
         {budgets.map(({ root, title, node, period, positive, total }, i) => (
@@ -56,7 +56,7 @@ const budgets = roots.map(root => {
             <div class="card-top"><span class="card-number">0{i + 1}</span><span class="card-period">{period}</span></div>
             <h3><a href={`/${root}`}>{title}<span class="card-arrow" aria-hidden="true">↗</span></a></h3>
             <p class="card-description">{descriptions[root]}</p>
-            {node && <p class="card-amount" aria-label={exact(node.amount_cents)}><strong>{abbreviated(node.amount_cents).amount}</strong><span>{abbreviated(node.amount_cents).unit}</span></p>}
+            {node && <p class="card-amount" aria-label={`${exact(node.amount_cents)}${root === 'city' ? ' net budget' : ''}`}><strong>{abbreviated(node.amount_cents).amount}</strong><span>{abbreviated(node.amount_cents).unit}{root === 'city' ? ' · net' : ''}</span></p>}
             <div class="share-strip" aria-hidden="true">{positive.map((n, j) => <span style={`--share:${n.amount_cents / total * 100}%;--segment:${colors[j % colors.length]}`} />)}</div>
             <div class="card-bottom"><span>{positive.length} positive budget categories</span><a href={`/?box=${root}#explore`}>Follow the money <span aria-hidden="true">→</span></a></div>
           </article>
@@ -74,7 +74,7 @@ const budgets = roots.map(root => {
     </section>
 
     <section class="explorer-section" id="explore" aria-label="Detailed budget explorer">
-      <div class="section-index"><span>03 <span aria-hidden="true">/</span> Follow the money</span><a href="/sources">Backed by public sources <span aria-hidden="true">↗</span></a></div>
+      <div class="section-index"><span>03 <span aria-hidden="true">/</span> Follow the money</span><a href="/sources">Public sources <span aria-hidden="true">↗</span></a></div>
       <div class="explorer-frame"><SankeyExplorer /></div>
     </section>
     <aside class="closing-note"><span aria-hidden="true">✶</span><p>Less guesswork.<br/><strong>More understanding.</strong></p><a href="/about">About this project <span aria-hidden="true">↗</span></a></aside>
@@ -97,7 +97,7 @@ const budgets = roots.map(root => {
   .motion-section, .explorer-section { scroll-margin-top: 6rem; }
   .section-index { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .9rem 0 1.1rem; border-top: 1px solid var(--line); font-size: .68rem; letter-spacing: .075em; font-weight: 700; text-transform: uppercase; }
   .section-index > span:first-child > span { margin: 0 .8rem; color: var(--muted); }
-  .section-index > span:last-child { color: var(--muted); }
+  .section-index > span + span:last-child { color: var(--muted); }
   .section-index a { color: var(--muted); text-decoration: none; }
   .section-index a:hover { text-decoration: underline; }
   .budget-directory { margin-top: clamp(3rem, 7vw, 6rem); }
@@ -146,6 +146,6 @@ const budgets = roots.map(root => {
   .closing-note strong { color: var(--ink); font-weight: 650; }
   .closing-note a { margin-left: auto; font-size: .8rem; font-weight: 600; color: var(--ink); }
   @media (max-width: 1000px) { .motion-intro { grid-template-columns: 1fr; gap: 1.5rem; } .intro-aside { display: flex; align-items: center; justify-content: space-between; gap: 2rem; } .intro-aside p { margin: 0; } h1 { font-size: clamp(2.6rem, 7.3vw, 5rem); } .card-top { align-items: start; } .budget-card { padding: 1.15rem; } .card-period { max-width: 12rem; } }
-  @media (max-width: 720px) { .budget-grid { grid-template-columns: 1fr; } .budget-card { padding: 1.5rem; } .card-description { max-width: 45ch; margin-bottom: 1.3rem; } .card-amount strong { font-size: 2.8rem; } .card-bottom { gap: .9rem; } .directory-heading { flex-direction: column; align-items: start; gap: 1.2rem; } .search-band { grid-template-columns: 1fr; gap: 1.5rem; } .section-index { font-size: .6rem; letter-spacing: .04em; } .section-index > span:last-child { max-width: 14ch; text-align: right; } }
+  @media (max-width: 720px) { .budget-grid { grid-template-columns: 1fr; } .budget-card { padding: 1.5rem; } .card-description { max-width: 45ch; margin-bottom: 1.3rem; } .card-amount strong { font-size: 2.8rem; } .card-bottom { gap: .9rem; } .directory-heading { flex-direction: column; align-items: start; gap: 1.2rem; } .search-band { grid-template-columns: 1fr; gap: 1.5rem; } .section-index { font-size: .6rem; letter-spacing: .04em; } .section-index > span + span:last-child { max-width: 14ch; text-align: right; } }
   @media (max-width: 480px) { .motion-intro { padding-top: 2rem; } .edition { gap: .35rem; font-size: .55rem; letter-spacing: .045em; margin-bottom: 1.4rem; flex-wrap: wrap; } .edition-stars { font-size: .95rem; margin-right: .25rem; } h1 { font-size: clamp(2.3rem, 8.2vw, 3.25rem); letter-spacing: -.055em; } .intro-aside { flex-direction: column; align-items: start; gap: .7rem; } .intro-aside p { font-size: .85rem; } .intro-link { font-size: .8rem; } .section-index > span:first-child > span { margin-inline: .35rem; } .section-index a { max-width: 16ch; text-align: right; } .closing-note { flex-wrap: wrap; } .closing-note a { margin-left: 0; width: 100%; } .search-band { padding: 1.1rem; } }
 </style>
