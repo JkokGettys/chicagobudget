@@ -38,7 +38,6 @@ const staticDots = city ? city.rows.flatMap((row, group) => {
       <div class="flock-field">
         <svg class="static-flock" viewBox="0 0 720 440" aria-hidden="true">{staticDots.map(dot => <circle cx={dot.x} cy={dot.y} r="2.6" fill={dot.color} />)}</svg>
         <canvas aria-hidden="true"></canvas>
-        <span class="field-corner" aria-hidden="true">One budget.<br />Many moving parts.</span>
         <button class="motion-button" type="button" hidden>Pause motion</button>
       </div>
       <p class="selection" data-selection aria-live="polite" aria-atomic="true">Every dot is an equal share. Explore a category to see its part.</p>
@@ -202,7 +201,6 @@ const staticDots = city ? city.rows.flatMap((row, group) => {
   canvas { opacity:0; touch-action:pan-y; }
   .is-ready canvas { opacity:1; }
   .is-ready .static-flock { display:none; }
-  .field-corner { position:absolute; top:4px; left:0; font:italic 15px/1.5 Georgia,serif; color:#b5c8ca; pointer-events:none; }
   .motion-button { position:absolute; bottom:4px; left:0; color:#d6e3e2; border:1px solid #ffffff35; background:#142c38; border-radius:20px; padding:8px 13px; font:inherit; font-size:11px; cursor:pointer; }
   .motion-button:disabled { cursor:default; color:#b7c7c9; }
   .selection { min-height:43px; font-size:13px; line-height:1.55; color:#f3dfad; padding-top:15px; }
