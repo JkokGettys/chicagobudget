@@ -1,14 +1,16 @@
 ## What changed?
 
-- Box ids changed (if any):
+- Box IDs changed (if any):
 - Public source URL and page (for data):
 - Does this add any person's name to a website-facing field? No / Explain:
+- Does this intentionally change the versioned `data/public/2026/` release? No / Explain:
 
 ## Checks
 
-- [ ] `build/build_all.sh` passed locally, or explain why inputs are unavailable
-- [ ] `python3 build/verify_db.py` passed locally
-- [ ] Site checks in `site/package.json` passed if site changed
+- [ ] `build/build_all.sh` passed locally using the published input snapshot
+- [ ] For site changes: `cd site && npm ci && npm run check && npm test && npm run build`
+- [ ] For site changes: `python3 tests/check_site_dist.py site/dist`
+- [ ] Only intended files are staged; no generated database, site build, raw cache or markdown plans
 - [ ] I read the contributor agreement in `CONTRIBUTING.md`
 
-Maintainers check a source by hand and run the private leak check before any deployment. CI does not deploy.
+CI rebuilds budgets and checks website-display privacy using published rosters. Maintainers also check a source manually and inspect the deployed site before release. CI does not deploy.

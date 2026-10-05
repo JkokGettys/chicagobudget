@@ -7,8 +7,6 @@ permissions:
   contents: read
 jobs:
   build:
-    # No release asset exists yet. Keep the job visibly skipped until configured.
-    if: vars.CHICAGO_BUDGET_INPUTS_URL != ''
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -18,20 +16,15 @@ jobs:
           python-version: '3.11'
           cache: pip
       - run: python -m pip install -r requirements.txt
-      - name: Fetch and checksum versioned public raw inputs
-        env:
-          CHICAGO_BUDGET_INPUTS_URL: ${{ vars.CHICAGO_BUDGET_INPUTS_URL }}
+      - name: Restore and checksum published inputs and rosters
         run: bash build/fetch_inputs.sh
+      - run: python -m unittest discover -s tests -p 'test_inputs_restore.py'
       - name: Build and verify budgets
         run: |
           build/build_all.sh
           python build/verify_db.py
       - name: Export and validate site data
-        run: |
-          if [ -f build/export_site.py ]; then
-            python build/export_site.py
-            python build/validate_site_data.py
-          fi
+        run: python build/validate_site_data.py
       - uses: actions/upload-artifact@v4
         with:
           name: checked-budget-database
