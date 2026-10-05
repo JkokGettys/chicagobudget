@@ -2,7 +2,9 @@
 
 Static Astro site for the exported budget data in `public/data/`. Build the data with `python3 build/export_site.py` from the repository root, then in this directory run `npm ci`, `npm run check`, and `npm run build`. Astro's current checker needs Node 20.19+ or 22.12+; the project includes a local Node 22 dev dependency for machines with older system Node.
 
-The build writes `dist/` only. It does not deploy. Important box pages are pre-rendered; unrendered deep links use the static `/box-shell` and Cloudflare Pages `_redirects` rewrites. Keep those rewrites if changing hosts.
+The build writes `dist/` only. It does not deploy. Important box pages are pre-rendered; deep links also use the static `/box-shell/` and Cloudflare Pages `_redirects` rewrites. The rewrite destination must include its trailing slash: `/box-shell` triggers a Pages canonical redirect that loses the original box ID. Keep those rewrites if changing hosts. Test navigation against the deployed Pages preview, since Astro dev does not exercise `_redirects`.
+
+After deployment, run `PREVIEW_URL=https://your-preview.pages.dev node tests/navigation-browser.mjs` with Playwright installed (and `CHROMIUM_PATH` if needed). This follows budget category links, validates destination content, and exercises drill-down and return paths rather than only checking hrefs or generated files.
 
 ## Production deployment
 
