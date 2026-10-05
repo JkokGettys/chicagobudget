@@ -23,6 +23,7 @@
   </div>
 </section>
 <script>
+  import {displayName, nameSearchText} from '../lib/displayName';
   import {layoutFlow} from '../lib/sankeyLayout';
   import {renderSideFacts} from '../lib/sideFacts';
   import {sourceUrl} from '../lib/sources';
@@ -97,7 +98,7 @@
       void render(id,retainFocus);
     };
     const makeButton=(node:Node,klass:string)=>{
-      const button=el('button');button.type='button';button.className=klass;
+      const button=el('button');button.type='button';button.className=klass;button.title=node.name;
       // Native contents include the visible share and adjustment status.
       button.addEventListener('click',()=>go(node.id));return button;
     };
@@ -116,7 +117,7 @@
       crumbArea.replaceChildren();
       const back=el('button',path.length>1?'← Back one level':'← All budgets');back.type='button';back.className='crumb-back';back.addEventListener('click',()=>go(path.length>1?path[path.length-2].id:''));crumbArea.append(back);
       const trail=el('ol');trail.className='crumb-trail';
-      for(const node of path){const li=el('li');const button=el('button',node.short_name??node.name);button.type='button';if(node.id===current)button.setAttribute('aria-current','page');button.title=node.name;button.addEventListener('click',()=>go(node.id));li.append(button);trail.append(li)}
+      for(const node of path){const li=el('li');const button=el('button',displayName(node));button.type='button';if(node.id===current)button.setAttribute('aria-current','page');button.title=node.name;button.addEventListener('click',()=>go(node.id));li.append(button);trail.append(li)}
       crumbArea.append(trail);
       // Keep the latest level in view, leaving ancestors available by scrolling left.
       trail.scrollLeft=trail.scrollWidth;
@@ -125,7 +126,7 @@
       const entries=await getChildren(parent);
       const area=el('section');area.className='flow-step';area.setAttribute('aria-label',`Inside ${parent.name}`);
       const heading=el('div');heading.className='flow-heading';
-      const titleBox=el('div');add(titleBox,'p',entries.length?'Inside this line':'End of this path').className='flow-overline';add(titleBox,'h3',parent.name);heading.append(titleBox);
+      const titleBox=el('div');add(titleBox,'p',entries.length?'Inside this line':'End of this path').className='flow-overline';add(titleBox,'h3',displayName(parent)).title=parent.name;heading.append(titleBox);
       add(heading,'strong',money(parent.amount_cents)).className='flow-total';area.append(heading);
       if(!entries.length){add(area,'p','No smaller lines are listed here. Use the path above to explore a different branch.').className='flow-empty';return area}
       const layout=layoutFlow(parent.amount_cents,entries,{width:180,height:280,maxVisualChildren:8,gap:4});
@@ -142,7 +143,7 @@
           ribbon.setAttribute('role','button');ribbon.setAttribute('tabindex','0');ribbon.setAttribute('aria-label',label);
           const open=()=>{if(row.isOverflow){search.focus();list.scrollIntoView({block:'nearest'})}else go(row.children[0].id)};
           ribbon.addEventListener('click',open);ribbon.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();open()}});svg.append(ribbon);
-          if(row.height>=18){const target=el('button');target.type='button';target.className='flow-target';target.style.top=`${row.y}px`;target.style.height=`${row.height}px`;target.title=label;target.setAttribute('aria-label',label);target.textContent=row.isOverflow?`${row.children.length} more · ${short(row.amount_cents)}`:`${row.children[0].short_name??row.children[0].name} · ${short(row.amount_cents)}`;target.addEventListener('click',open);chart.append(target)}
+          if(row.height>=18){const target=el('button');target.type='button';target.className='flow-target';target.style.top=`${row.y}px`;target.style.height=`${row.height}px`;target.title=label;target.setAttribute('aria-label',label);target.textContent=row.isOverflow?`${row.children.length} more · ${short(row.amount_cents)}`:`${displayName(row.children[0])} · ${short(row.amount_cents)}`;target.addEventListener('click',open);chart.append(target)}
         }
         chart.append(svg);
       }else add(chart,'p','No positive amounts to draw. See the list for adjustments and zero-dollar lines.').className='flow-no-ribbons';
@@ -154,9 +155,9 @@
       const list=el('ul');list.setAttribute('aria-label',`Lines inside ${parent.name}`);listSection.append(list);
       const drawList=()=>{
         list.replaceChildren();const query=search.value.trim().toLocaleLowerCase();let matches=0;
-        for(const node of entries){if(query&&!`${node.name} ${node.short_name??''}`.toLocaleLowerCase().includes(query))continue;matches++;
+        for(const node of entries){if(query&&!nameSearchText(node).includes(query))continue;matches++;
           const li=el('li');const button=makeButton(node,'flow-list-link');
-          const name=el('span');name.className='list-name';add(name,'span',node.name);
+          const name=el('span');name.className='list-name';add(name,'span',displayName(node));
           if(node.amount_cents<0)add(name,'small','Adjustment · takes away');else if(node.amount_cents===0)add(name,'small','Zero-dollar line');else if(node.n_children)add(name,'small',`${node.n_children} smaller lines`);
           button.append(name);add(button,'strong',amountWithShare(node.amount_cents,parent.amount_cents));li.append(button);list.append(li);
         }
@@ -179,7 +180,8 @@
     };
     const renderDetail=async(node:Node,version:number,parent?:Node)=>{
       detail.replaceChildren();
-      const header=el('div');header.className='detail-heading';const heading=el('div');add(heading,'p',node.is_leaf||node.n_children===0?'Final line':'Selected line').className='detail-overline';add(heading,'h3',node.name);header.append(heading);add(header,'strong',parent?amountWithShare(node.amount_cents,parent.amount_cents):money(node.amount_cents));detail.append(header);
+      const header=el('div');header.className='detail-heading';const heading=el('div');add(heading,'p',node.is_leaf||node.n_children===0?'Final line':'Selected line').className='detail-overline';add(heading,'h3',displayName(node)).title=node.name;header.append(heading);add(header,'strong',parent?amountWithShare(node.amount_cents,parent.amount_cents):money(node.amount_cents));detail.append(header);
+      if(displayName(node)!==node.name){const official=el('details');add(official,'summary','Official budget title');add(official,'p',node.name);detail.append(official)}
       const meta=el('p');meta.className='detail-meta';meta.textContent=`${title[node.root??node.id.split('.')[0]]??node.root??'Budget'} · ${periodFor(node)} · ${basis[node.basis??'']??node.basis??'Basis not stated'}`;detail.append(meta);
       if(node.amount_cents<0)add(detail,'p','This adjustment takes money away from its parent line.');
       if(node.note)add(detail,'p',node.note);

@@ -1,6 +1,7 @@
 ---
 import { children, compact, exact, href, type Box } from '../lib/data';
 import { layoutTreemap, type Rectangle } from '../lib/treemapLayout';
+import { displayName } from '../lib/displayName';
 const { parent, entries, nested = false } = Astro.props as { parent: Box; entries: Box[]; nested?: boolean };
 // Second-level reads are restricted to overview pages, not thousands of deep pages.
 const map = layoutTreemap(parent.amount_cents, entries.filter(n => n.kind !== 'rounding'), {
@@ -10,18 +11,6 @@ const map = layoutTreemap(parent.amount_cents, entries.filter(n => n.kind !== 'r
 const overflow = map.rectangles.find(rect => rect.item.id === '__treemap_other__');
 const overflowCount = overflow ? entries.filter(n => n.amount_cents > 0 && n.kind !== 'rounding').length - 23 : 0;
 const fills = ['#14557f', '#11788b', '#284c78', '#187481', '#376493', '#155f82', '#0d6975', '#315783', '#246e99', '#226773', '#415c8a', '#127b89', '#295a7b', '#176c91'];
-const shortNames: Record<string, string> = {
-  'Chicago Police Department': 'Police', 'Chicago Fire Department': 'Fire',
-  'Chicago Department of Transportation': 'Transportation', 'Chicago Department of Aviation': 'Aviation',
-  'Department of Water Management': 'Water Management', 'Department of Streets and Sanitation': 'Streets & Sanitation',
-  'Chicago Department of Public Health': 'Public Health', 'Chicago Public Library': 'Public Library',
-  'Department of Family and Support Services': 'Family Services',
-  'Office of Emergency Management and Communications': 'Emergency Management',
-  'Civilian Office of Police Accountability': 'Police Accountability',
-  'Office of Public Safety Administration': 'Public Safety Admin',
-  'Department of Fleet and Facility Management': 'Fleet & Facilities',
-};
-function displayName(item: Box): string { return item.short_name ?? shortNames[item.name] ?? item.name; }
 function label(rect: Rectangle<Box>) { return rect.item.id === '__treemap_other__' ? `${overflowCount} more boxes` : displayName(rect.item); }
 function fullLabel(rect: Rectangle<Box>) { return `${rect.item.id === '__treemap_other__' ? label(rect) : rect.item.name}, ${exact(rect.item.amount_cents)}${rect.item.id === '__treemap_other__' ? ', see the complete list' : ', open this box'}`; }
 /** SVG viewBox units. Keep labels deliberately short, never let a clipped word span its neighbor. */
