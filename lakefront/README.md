@@ -66,4 +66,4 @@ If these are useful, they could move into `build/export_site.py` next to the oth
 
 `npm run build` produces a static `dist/`. A post-build step precompresses text files (brotli and gzip) and adds a `Dockerfile` and `Caddyfile` with strict security headers. That container is how the preview runs. Any static host works, including Cloudflare Pages like the main site. Set `SITE_URL` at build time to emit canonical and absolute preview-image URLs. Add `?still` to any page to render final states without animation.
 
-Data: ChicagoBudget.com (Getty Hill), CC BY 4.0. City of Chicago data is used under the City's notice, reproduced on the methods page.
+Data: ChicagoBudget.com, CC BY 4.0. City of Chicago data is used under the City's notice, reproduced on the methods page.

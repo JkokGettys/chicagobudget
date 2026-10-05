@@ -33,9 +33,8 @@ kbd { font: 11px var(--sans); border: 1px solid var(--rule-2); border-radius: 5p
 /* ---------- nav ---------- */
 .nav { position: sticky; top: 0; z-index: 20; background: rgba(255, 255, 255, .84); backdrop-filter: saturate(180%) blur(18px); -webkit-backdrop-filter: saturate(180%) blur(18px); border-bottom: 1px solid var(--rule) }
 .nav .wrap { display: flex; align-items: center; gap: 26px; height: 56px }
-.logo { display: flex; align-items: baseline; gap: 8px; text-decoration: none; color: var(--ink); font-family: var(--num); font-weight: 800; font-size: 24px; letter-spacing: .02em; text-transform: uppercase; white-space: nowrap }
+.logo { display: flex; align-items: baseline; gap: 8px; text-decoration: none; color: var(--ink); font-family: var(--num); font-weight: 800; font-size: 24px; letter-spacing: .01em; white-space: nowrap }
 .logo .star { width: 15px; height: 15px; align-self: center }
-.logo .tag { font: 600 12px var(--sans); letter-spacing: .02em; text-transform: none; color: var(--ink-2) }
 .nav nav { display: flex; gap: 20px; font-size: 14px; color: var(--ink-2) }
 .nav nav a { text-decoration: none; color: inherit; white-space: nowrap }
 .nav nav a:hover { color: var(--ink) }
@@ -280,11 +279,16 @@ table.list .linkbtn { color: var(--ink); font-weight: 500 }
 .tlist li b { font-family: var(--num); font-size: 20px; font-weight: 700; color: var(--ink); min-width: 58px }
 
 /* ---------- footer ---------- */
-.foot { padding: 60px 0 80px; color: var(--ink-2); font-size: 13px }
-.foot .cols { display: grid; grid-template-columns: 2fr 1.4fr 1fr; gap: 32px; border-top: 1px solid var(--rule); padding-top: 28px }
-.foot h4 { color: var(--ink); font-size: 13px; margin: 0 0 8px }
-.foot p { margin: 0 0 8px; max-width: 520px }
-.foot a { color: var(--ink-2) }
+.site-footer { margin-top: 48px; padding: 32px 0; border-top: 1px solid #d1d5cc; background: #fffefa; color: #50616a; font-size: 14px }
+.footer-heading { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 24px }
+.footer-heading > span { color: #18313e; font-size: 20px; font-weight: 700; letter-spacing: -.045em }
+.footer-star { color: #ae4338; margin-left: .7rem }
+.footer-heading p { margin: 0; font-size: 13px }
+.site-footer nav { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px }
+.site-footer a { color: #18313e; font-weight: 600 }
+.site-footer .footer-github { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin: -8px 0; border-radius: 6px }
+.site-footer .footer-github:hover { background: #ebece4 }
+.footer-credit { margin: 24px 0 0; font-size: 12px }
 
 /* ---------- methods page ---------- */
 .mhead { padding: 56px 0 18px; border-bottom: 1px solid var(--rule) }
@@ -315,6 +319,7 @@ table.list .linkbtn { color: var(--ink); font-weight: 500 }
 .gaps li b { font-family: var(--num); font-size: 22px; color: var(--ink); margin-right: 8px }
 .gaps li .gp { font-size: 13px; color: var(--ink-2) }
 .gaps li p { margin: 4px 0 0; font-size: 14px }
+.ptable-scroll { max-width: 100%; overflow-x: auto }
 .ptable td:first-child { white-space: nowrap; font-weight: 600; color: var(--ink) }
 .gloss { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; margin-top: 12px }
 .gloss div { border-top: 1px solid var(--rule); padding-top: 8px }
@@ -341,7 +346,7 @@ table.list .linkbtn { color: var(--ink); font-weight: 500 }
 }
 @media (max-width: 680px) {
   .wrap { padding: 0 16px }
-  .logo .tag { display: none }
+  .logo { font-size: 20px }
   .nav .find > span, .nav .find kbd { display: none }
   .nav .find { padding: 8px 10px }
   .hero { padding-top: 32px }
