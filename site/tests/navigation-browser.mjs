@@ -8,10 +8,11 @@ const base = process.env.PREVIEW_URL || 'http://127.0.0.1:4321';
 const browser = await chromium.launch({ headless: true, ...(process.env.CHROMIUM_PATH ? { executablePath: process.env.CHROMIUM_PATH } : {}) });
 const results = [];
 const errors = [];
-const coverage = { categories: {}, adjustments: {}, otherMembers: {}, drilldowns: {}, shellRoutes: [], nonPrerenderedRoutes: [] };
+const coverage = { categories: {}, adjustments: {}, otherMembers: {}, drilldowns: {}, shellRoutes: [], nonPrerenderedRoutes: [], searchResults: [] };
 const check = (label, passed) => { assert.ok(passed, label); results.push(label); };
 const normalize = value => value.replace(/\s+/g, ' ').trim();
 const path = url => decodeURIComponent(new URL(url, base).pathname).replace(/\/$/, '') || '/';
+const boxId = href => path(href).split('/box/')[1] || '';
 const selector = href => `a[href=${JSON.stringify(href)}]`;
 
 try {
@@ -29,6 +30,7 @@ try {
     const href = await link.getAttribute('href');
     assert.ok(href, 'navigation anchor has an href');
     const destination = new URL(href, page.url());
+    if (destination.pathname.includes('/box/')) check(`box anchor ends with a slash: ${href}`, destination.pathname.endsWith('/'));
     const previous = page.url();
     await link.click();
     if (previous !== destination.href) await page.waitForURL(url => url.href !== previous, { waitUntil: 'domcontentloaded' });
@@ -71,6 +73,7 @@ try {
       assert.ok(typeof member.name === 'string' && member.name.length > 0);
       assert.match(member.exact, /^-?\$[\d,]+\.\d{2}$/);
       assert.ok(member.href.startsWith(`/${budget.root}/box/`), `category has government/box/id URL: ${member.href}`);
+      assert.ok(member.href.endsWith('/'), `category href ends with a slash: ${member.href}`);
     }
     assert.equal(new Set(members.map(member => member.href)).size, members.length, 'categories are unique');
     coverage.categories[budget.root] = 0;
@@ -152,14 +155,14 @@ try {
     const response = await page.request.get(new URL(`/data/${file}`, base).href);
     assert.ok(response.ok(), `deployed chunk ${file} is available`);
     const chunk = await response.json();
-    deepTarget = chunk.nodes.find(node => node.depth > 4 && Math.abs(node.amount_cents) < 100_000_000 && budgets.some(b => b.root === node.root && b.rows.some(row => row.members.some(member => node.id.startsWith(`${decodeURIComponent(member.href.split('/box/')[1])}.`)))));
+    deepTarget = chunk.nodes.find(node => node.depth > 4 && Math.abs(node.amount_cents) < 100_000_000 && budgets.some(b => b.root === node.root && b.rows.some(row => row.members.some(member => node.id.startsWith(`${boxId(member.href)}.`)))));
     if (deepTarget) break;
   }
   assert.ok(deepTarget, 'deployed dataset contains a genuinely non-prerendered deep box');
   const budgetIndex = budgets.findIndex(b => b.root === deepTarget.root);
   const deepBudget = budgets[budgetIndex];
-  const deepRow = deepBudget.rows.find(row => row.members.some(member => deepTarget.id.startsWith(`${decodeURIComponent(member.href.split('/box/')[1])}.`)));
-  const category = deepRow.members.find(member => deepTarget.id.startsWith(`${decodeURIComponent(member.href.split('/box/')[1])}.`));
+  const deepRow = deepBudget.rows.find(row => row.members.some(member => deepTarget.id.startsWith(`${boxId(member.href)}.`)));
+  const category = deepRow.members.find(member => deepTarget.id.startsWith(`${boxId(member.href)}.`));
   await home();
   await page.locator(`budget-flock [data-budget="${budgetIndex}"]`).click();
   const deepPanel = page.locator(`budget-flock [data-panel="${budgetIndex}"]`);
@@ -167,18 +170,19 @@ try {
   await follow(deepPanel.locator(selector(category.href)));
   await verifyBox(category);
   for (let depth = 0; depth < 30; depth++) {
-    const currentId = decodeURIComponent(new URL(page.url()).pathname.split('/box/')[1]).replace(/\/$/, '');
+    const currentId = boxId(page.url());
     if (currentId === deepTarget.id) break;
     const links = await page.locator('#inside table tbody th a').evaluateAll(anchors => anchors.map(a => ({ href: a.getAttribute('href'), name: a.textContent.trim(), exact: a.closest('tr').querySelector('td').textContent.trim() })));
+    for (const link of links) check(`child href ends with a slash: ${link.href}`, link.href?.endsWith('/'));
     const child = links.find(link => {
-      const id = decodeURIComponent(link.href.split('/box/')[1] || '');
+      const id = boxId(link.href);
       return id && (id === deepTarget.id || deepTarget.id.startsWith(`${id}.`));
     });
     assert.ok(child, `real child link advances toward deep target ${deepTarget.id}`);
     await follow(page.locator('#inside table tbody th').locator(selector(child.href)));
     await verifyBox(child);
   }
-  const deepHref = `/${deepTarget.root}/box/${encodeURIComponent(deepTarget.id)}`;
+  const deepHref = `/${deepTarget.root}/box/${encodeURIComponent(deepTarget.id)}/`;
   await verifyBox({ href: deepHref, name: deepTarget.name, exact: new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(deepTarget.amount_cents / 100) });
   check('non-prerendered deep box renders through the dynamic shell', await page.locator('main #box').count() === 1);
   coverage.nonPrerenderedRoutes.push({ href: deepHref, depth: deepTarget.depth, amount_cents: deepTarget.amount_cents });
@@ -198,6 +202,21 @@ try {
       check('Explore navigation reaches correct homepage heading', (await page.locator('main h1').textContent()).replace(/\s/g, '') === target.heading.replace(/\s/g, ''));
     } else check(`${target.href}: correct primary page`, normalize(await page.locator('main h1').innerText()) === target.heading);
   }
+  // Search through /find's query handling, then click its real rendered result.
+  const searchRecord = budgets.find(b => b.root === 'city').rows.flatMap(row => row.members).find(member => /streets|water/i.test(member.name));
+  assert.ok(searchRecord, 'city categories include a Streets or Water search target');
+  const searchQuery = /streets/i.test(searchRecord.name) ? 'Streets' : 'Water';
+  const searchResponse = await page.goto(new URL(`/find?q=${encodeURIComponent(searchQuery)}&budget=city`, base).href, { waitUntil: 'domcontentloaded' });
+  check('search page responds successfully', searchResponse?.status() === 200);
+  check('search page has correct heading', normalize(await page.locator('main h1').innerText()) === 'Find a box');
+  check('search query is restored from URL', await page.getByLabel('Search budget boxes', { exact: true }).inputValue() === searchQuery);
+  const searchLink = page.locator('#results').getByRole('link', { name: searchRecord.name, exact: true });
+  await searchLink.waitFor({ state: 'visible' });
+  check('search result has the expected slash-terminated category href', await searchLink.getAttribute('href') === searchRecord.href);
+  await follow(searchLink);
+  await verifyBox(searchRecord);
+  coverage.searchResults.push({ query: searchQuery, href: searchRecord.href, name: searchRecord.name });
+
   await follow(page.getByRole('link', { name: 'Chicago Budget home', exact: true }));
   await page.locator('budget-flock.is-ready').waitFor();
   check('no client-side exceptions', errors.length === 0);
