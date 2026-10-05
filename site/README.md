@@ -10,7 +10,7 @@ After deployment, run `PREVIEW_URL=https://your-preview.pages.dev node tests/nav
 
 The public source is at `https://github.com/gettty/chicagobudget`. Production runs on the Cloudflare Pages project `chicagobudget`, with `chicagobudget.com` as its custom domain. From this directory, after regenerating the local data export, run `npm ci`, `npm run check`, `npm run build`, and `npm run deploy` using an authenticated Wrangler session or a securely provided `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. The deployment uploads `dist/` directly and does not commit exported datasets or generated HTML to Git.
 
-The original budget input archive and generated `public/data/` are intentionally untracked. A fresh checkout cannot build the complete site until those inputs are supplied and the root export process has run. GitHub Actions site checks also require the `CHICAGO_BUDGET_INPUTS_URL` repository variable. Do not switch to automatic Git-based Pages builds until the input pipeline has been configured and tested.
+The original pinned budget inputs and built `public/data/` remain untracked at their working paths, but exact source copies and the complete, versioned site dataset are published in [`../data/public/2026/`](../data/public/2026/). From a fresh checkout, `bash build/fetch_inputs.sh` restores the pinned raw inputs from that snapshot, then the root export process builds `public/data/`. GitHub Actions site checks still require the `CHICAGO_BUDGET_INPUTS_URL` repository variable to be set; do not assume automatic Git-based Pages deployment is configured.
 
 ## Motion-led design
 

@@ -2,13 +2,19 @@
 """Verify or package the pinned gitignored raw inputs, with path-safe ZIP extraction."""
 import argparse
 import hashlib
+import json
 import os
 from pathlib import Path
+import shutil
 import urllib.request
 import zipfile
 
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / 'build/inputs.sha256'
+PUBLIC_SOURCES = ROOT / 'data/public/2026/sources'
+ROSTERS = ('data/people/city_employees_2026.json',
+           'data/people/cps_positions_2025q4.json',
+           'data/people/parks_positions.json')
 
 
 def entries():
@@ -33,6 +39,41 @@ def verify():
     return missing
 
 
+def restore_published(missing):
+    """Recover pinned raw inputs from the checked-in, byte-preserving snapshot."""
+    expected = dict((relative, digest) for digest, relative in entries())
+    for relative in missing:
+        source = PUBLIC_SOURCES / relative
+        if not source.is_file():
+            raise ValueError(f'published input is missing: {relative}')
+        if hashlib.sha256(source.read_bytes()).hexdigest() != expected[relative]:
+            raise ValueError(f'published input checksum mismatch: {relative}')
+    for relative in missing:
+        destination = ROOT / relative
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(PUBLIC_SOURCES / relative, destination)
+
+
+def restore_rosters():
+    """Restore reviewed public roster inputs and verify catalog hashes first."""
+    missing = [relative for relative in ROSTERS if not (ROOT / relative).is_file()]
+    if not missing:
+        return
+    catalog = ROOT / 'data/public/2026/catalog.json'
+    entries_by_path = {item['path']: item for item in json.loads(catalog.read_text())['files']}
+    for relative in missing:
+        source = PUBLIC_SOURCES / relative
+        entry = entries_by_path.get('sources/' + relative)
+        if not source.is_file() or entry is None or entry['origin'] != relative:
+            raise ValueError(f'published roster is missing: {relative}')
+        if source.stat().st_size != entry['bytes'] or hashlib.sha256(source.read_bytes()).hexdigest() != entry['sha256']:
+            raise ValueError(f'published roster checksum mismatch: {relative}')
+    for relative in missing:
+        destination = ROOT / relative
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(PUBLIC_SOURCES / relative, destination)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('action', choices=['verify', 'package', 'fetch'])
@@ -41,26 +82,30 @@ def main():
     args = parser.parse_args()
     missing = verify()
     if args.action == 'fetch' and missing:
-        if not args.url or not args.url.startswith('https://'):
-            parser.error('missing pinned release URL: set CHICAGO_BUDGET_INPUTS_URL to the published HTTPS GitHub release asset')
-        archive = ROOT / 'build' / args.archive
-        urllib.request.urlretrieve(args.url, archive)
-        expected = (ROOT / 'build/inputs-archive.sha256').read_text().split()[0]
-        if hashlib.sha256(archive.read_bytes()).hexdigest() != expected:
-            raise ValueError('release ZIP checksum mismatch')
-        with zipfile.ZipFile(archive) as z:
-            allowed = {p for _, p in entries()}
-            if set(z.namelist()) != allowed:
-                raise ValueError('release ZIP file list differs from manifest')
-            for item in z.infolist():
-                target = ROOT / item.filename
-                target.parent.mkdir(parents=True, exist_ok=True)
-                with z.open(item) as src, target.open('wb') as dest:
-                    import shutil
-                    shutil.copyfileobj(src, dest)
+        if not args.url:
+            restore_published(missing)
+        else:
+            if not args.url.startswith('https://'):
+                parser.error('release URL must use HTTPS')
+            archive = ROOT / 'build' / args.archive
+            urllib.request.urlretrieve(args.url, archive)
+            expected = (ROOT / 'build/inputs-archive.sha256').read_text().split()[0]
+            if hashlib.sha256(archive.read_bytes()).hexdigest() != expected:
+                raise ValueError('release ZIP checksum mismatch')
+            with zipfile.ZipFile(archive) as z:
+                allowed = {p for _, p in entries()}
+                if set(z.namelist()) != allowed:
+                    raise ValueError('release ZIP file list differs from manifest')
+                for item in z.infolist():
+                    target = ROOT / item.filename
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    with z.open(item) as src, target.open('wb') as dest:
+                        shutil.copyfileobj(src, dest)
         missing = verify()
     if missing:
         raise SystemExit('missing raw inputs: ' + ', '.join(missing))
+    if args.action == 'fetch':
+        restore_rosters()
     if args.action == 'package':
         archive = ROOT / 'build' / args.archive
         with zipfile.ZipFile(archive, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as z:

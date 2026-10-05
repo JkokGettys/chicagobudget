@@ -1,0 +1,1339 @@
+Program,Program Description,State Function Code,State Function Description,Leaf Program,Level 1 Program Description,Level 2 Program Description,Level 3 Program Description
+P113032,Music-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P211208,ST Chapt 1-Attendance Services,,,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P002113,Social Work Services,,,0,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P211311,Social Services Outreach,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P111048,Early Childhood 3-4,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111049,Early Childhood KG,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111050,Reduced Class Size K-3,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113062,Gifted Summer Of Oppor-Mayor,,,1,Instruction,Regular Instruction Programs,High School
+P113066,History-Voc,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113071,Physical Ed-Boys-Voc,,,1,Instruction,Regular Instruction Programs,High School
+P113075,Foreign Language-German-HS,,,1,Instruction,Regular Instruction Programs,High School
+P221250,ISO CMSI Math 6-8 PD,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221253,ISO OSS PD,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111062,Music-Instrument-Elem,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113080,Foreign Language-Russian-HS,,,1,Instruction,Regular Instruction Programs,High School
+P113083,Music-Vocal HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113087,Music-Vocal-Voc,,,1,Instruction,Regular Instruction Programs,High School
+P113095,ISO - Advanced Placement,,,1,Instruction,Regular Instruction Programs,High School
+P221090,Non-Public Schools Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111096,Reading 4-8 Instruction,,,1,Instruction,Regular Instruction Programs,Elementary
+P113115,Music-Vocational,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113123,HS Redesign-Student Advisory,,,1,Instruction,Regular Instruction Programs,High School
+P113125,HS Orientation,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113132,Engineering Magnet Certified Teacher - Certified Non-Quota,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113134,Engineering Magnet Teachers-in-Training - Certified Non-Quota,,,1,Instruction,Regular Instruction Programs,High School
+P211012,Social and Emotional Learning Supports,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P212103,DCCP Specialist - Area 23,,,1,Support Services,Support Services - Pupils,Guidance Services
+P212105,DCCP Specialist - Area 25 and 28,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P264220,Performance Evaluation,002000,Support Services,1,Support Services,Support Services,Staff Services
+P264052,Workforce Analytics,002000,Support Services,1,Support Services,Support Services,Staff Services
+P233029,CLC Resident Principal Charge-Back,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P212008,Youth Outreach Worker Program,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P520001,Bond Redemptions,,,1,Debt Services,Debt Services - Bond Principal Retired,Bond Redemptions
+P006000,Provision For Contingencies,,,0,Provision For Contingencies,,
+P999999,Error,001000,Instruction,1,Error,,
+P241006,School Office Services,002000,Support Services,1,Support Services,Support Services - School Administration,Office Of Principal Service
+P241014,School Administration,002000,Support Services,1,Support Services,Support Services - School Administration,Office Of Principal Service
+P221084,HS Mathematics Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P266411,Technology Acquisitions Leasing,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P266415,E-Rate Consortium Cat - 1,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P002500,Support Services - Business,,,0,Support Services,Support Services - Business,
+P001400,Vocational Programs,,,0,Instruction,Vocational Programs,
+P221315,Leadership Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111012,Temporary Transfer To District,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P001000,Instruction,,,0,Instruction,,
+P112233,All City Drama/Literary Arts K-12,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P266418,Technology Purchases,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P266000,Data Processing Services,,,1,Support Services,Support Services,Data Processing Services
+P252209,E-Rate,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P002523,Receiving/Disbursing Services,,,0,Support Services,Support Services - Business,Fiscal Services
+P251164,Accounts Receivable - Revenue,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P142486,Building Maintenance,001000,Instruction,1,Instruction,Vocational Programs,Building Maintenance
+P009578,WAN - Software,,,1,Support Services,Other Supporting Services,WAN - Software
+P290002,General Salary S Bkt,,,1,Support Services,Other Supporting Services,General Salary S Bkt
+P252603,Initiatives and Support,,,1,Support Services,Support Services - Business,Fiscal Services
+P252605,Applied Research,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P252801,Investigations-Admin,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P111122,Montessori Magnet School - Certified Montessori Teacher Non-Quota Posi,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P144610,Wood Shop-Vocational,,,1,Instruction,Vocational Programs,Wood Shop-Vocational
+P144704,Drafting-Vocational,001000,Instruction,1,Instruction,Vocational Programs,Drafting-Vocational
+P144711,Welding-Vocational,001000,Instruction,1,Instruction,Vocational Programs,Welding-Vocational
+P144805,Machine Operator,001000,Instruction,1,Instruction,Vocational Programs,Machine Operator
+P213012,Food Allergy Management,,,1,Support Services,Support Services - Pupils,Health Services
+P254607,Student Identification Cards,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P111150,Technology Academy - Teachers-in-Training,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P001120,Middle/Junior High,,,0,Instruction,Regular Instruction Programs,Middle/Junior High
+P112007,Reduced Class Size Middle Grades Specialization,001000,Instruction,1,Instruction,Regular Instruction Programs,Middle/Junior High
+P002140,Psychological Services,,,0,Support Services,Support Services - Pupils,Psychological Services
+P214206,Psychological Services - Bilingual,,,1,Support Services,Support Services - Pupils,Psychological Services
+P145911,Industrial Coop Education-HS,,,1,Instruction,Vocational Programs,Industrial Coop Education-HS
+P255004,Transportation Services - Special Ed - Public,002000,Support Services,1,Support Services,Support Services - Business,Pupil Transportation Services
+P254905,Grants - Rental of School Buildings/Grounds,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254008,Prop Advisor Pg-Self Directed,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P119006,Academic HS - Grade 7-12,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119017,Science,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119020,SGSA Current Year Allocation,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119023,Educ Improv Init 1996-99/Instr,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P146905,Home Economics-Vocational,,,1,Instruction,Vocational Programs,Home Economics-Vocational
+P120409,Occupational Therapy,002000,Support Services,1,Support Services,Support Services - Pupils,Physical Therapy
+P255014,School Site Pickup - Transportation,002000,Support Services,1,Support Services,Support Services - Business,Pupil Transportation Services
+P255016,Transp Reg Track - Public School Transp for STLS,002000,Support Services,1,Support Services,Support Services - Business,Pupil Transportation Services
+P255019,Special Education - Public School Track E Student Transportation,,,1,Support Services,Support Services - Business,Pupil Transportation Services
+P009507,N O&M CIP,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P251392,Repairs & Improvements,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254009,Central Office Operations,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P119043,Back to School Campaign,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119046,Response to Intervention - (READ 180),001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P221005,Business Education-Curriculum,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P256206,Lunchroom Svcs-Region 5,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P256207,Lunchroom Svcs-Region 6,,,1,Support Services,Support Services - Business,Food Services
+P256216,Misc Lunchroom Operations,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P256901,Ecia-Child Parent Ctr-Food,,,1,Support Services,Support Services - Business,Food Services
+P254013,Reserve for New Schools-Facil,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254018,Integrated Facilities Management,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254020,Snow Removal,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P119063,OIP - Gifted,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119120,Charter/Contract SGSA 20th Day Ad,,,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P221013,Gifted Svc Ctr - Impr Of Instr,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221017,Bilingual ESL Instructional Support,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221024,TLCF-Oth Religions/Imp Of Inst,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P241008,Instr Adm-HS-Special Ed,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P212001,High School Restructuring,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P256103,General Charges - Food Services,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P009514,Contingencies,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P252004,Technology Management,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P001200,Special Education Programs,,,0,Instruction,Special Education Programs,
+P120304,Cognitive Developmental Delay Disabilities,001000,Instruction,1,Instruction,Special Education Programs,Educable Mentally Handicapped
+P221205,Communications-Admin,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221028,Enrichment Academies,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P002573,Warehousing/Distributing Services,,,0,Support Services,Support Services - Business,Internal Services
+P261013,Crisis Intervention,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P261017,OSS - Support Services,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P253513,Playlots,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P120502,Severe Learn Disb-City Wide,001000,Instruction,1,Instruction,Special Education Programs,Learning Disabled
+P221038,Achievement Academies,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P147403,Electronics,,,1,Instruction,Vocational Programs,Electronics
+P147404,Electronics-Vocational,,,1,Instruction,Vocational Programs,Electronics-Vocational
+P147601,Graphic Communications/Graphic Design,001000,Instruction,1,Instruction,Vocational Programs,Graphic Communications/Graphic Design
+P147701,Fashion Design And Tech-Voc,001000,Instruction,1,Instruction,Vocational Programs,Fashion Design And Tech-Voc
+P253519,Additions,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253530,American Disabilities Act/ADA,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P121404,Devel Primary (Sp Ed)-Elem,001000,Instruction,1,Instruction,Special Education Programs,Early Childhood Educ Handicap
+P149008,Business Ed-Gregg Shorthnd-HS,,,1,Instruction,Vocational Programs,Business Ed-Gregg Shorthnd-HS
+P149010,Business Ed-Typing-HS,,,1,Instruction,Vocational Programs,Business Ed-Typing-HS
+P149012,Business Ed-Gregg Shorthnd-Voc,,,1,Instruction,Vocational Programs,Business Ed-Gregg Shorthnd-Voc
+P221047,6-8 Science Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P290020,NCLB SES Program,002000,Support Services,1,Support Services,Other Supporting Services,NCLB SES Program
+P290005,Support Services,002000,Support Services,1,Support Services,Support Services,
+P262004,North Central Assn-Evaluation,,,1,Support Services,Support Services,Plan Research Devel Eval Services
+P223013,Assessments/Standards,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P122071,ISO OSS Instr,,,1,Instruction,Special Education Programs,Cross Categorical
+P127725,Special Education Instruction K-12,001000,Instruction,1,Instruction,Special Education Programs,Cross Categorical
+P262006,CDC YRBS,002000,Support Services,1,Support Services,Support Services,Plan Research Devel Eval Services
+P267983,Research & Evaluation Support Services,002000,Support Services,1,Support Services,Support Services,Plan Research Devel Eval Services
+P263005,External Relations,002000,Support Services,1,Support Services,Support Services,Information Services
+P264101,Administrative Support,002000,Support Services,1,Support Services,Support Services,Staff Services
+P264103,General Charges - Other Staff Services,002000,Support Services,1,Support Services,Support Services,Staff Services
+P231110,Commercial-Affirm Litigation,,,1,Support Services,Support Services - General Admin,Board Of Education Services
+P231111,Tort Claims-Admin Fee,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P125007,ECIA-Fine Arts,001000,Instruction,1,Instruction,Special Education Programs,Education Deprived/Remedial
+P125021,Mathematics - Curriculum Supports,001000,Instruction,1,Instruction,Special Education Programs,Education Deprived/Remedial
+P125023,STEM - Extended Student Learning,001000,Instruction,1,Instruction,Special Education Programs,Education Deprived/Remedial
+P221215,Language Arts-Curriculum,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P003700,Nonpublic School Pupil Services,,,0,Community Services,Nonpublic School Pupil Services,
+P370011,Federal - IDEA Nonpublic ( Independent),003000,Community Services,1,Community Services,Nonpublic School Pupil Services,Federal - IDEA Nonpublic ( Independent)
+P370015,Federal - IDEA Nonpublic (Catholic),003000,Community Services,1,Community Services,Nonpublic School Pupil Services,Federal - IDEA Nonpublic (Catholic)
+P140070,Career Employment Preparation,001000,Instruction,1,Instruction,Vocational Programs,Career Employment Preparation
+P140211,Educ/Career Vocational Develop,001000,Instruction,1,Instruction,Vocational Programs,Educ/Career Vocational Develop
+P222850,Library Service,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P227513,Library Service-Elementary,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P222401,Cps On-Demand/Safari Montage,,,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P160010,Summer Programs-Special Ed,001000,Instruction,1,Instruction,Summer School Programs,Summer Programs-Special Ed
+P160011,Summer School,001000,Instruction,1,Instruction,Summer School Programs,Summer School
+P390002,ECIA-Parnt Wkshp ST Dev-In,003000,Community Services,1,Community Services,Other Community Services,ECIA-Parnt Wkshp ST Dev-In
+P390007,Nonpublic Community Parent Involvement,003000,Community Services,1,Community Services,Other Community Services,Nonpublic Community Parent Involvement
+P300002,TITLE IVB-GUID - TXTBK - LBR - EQ,003000,Community Services,1,Community Services,TITLE IVB-GUID - TXTBK - LBR - EQ,
+P231606,Liability Benefits,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P231059,School And Family Support,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P222002,Other Govt Fd Pgm-Media Svcs,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P212112,Summer Transition,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P002122,Counseling Services,,,0,Support Services,Support Services - Pupils,Guidance Services
+P221235,Reading - Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P264214,Principal Sourcing & Recruitment,002000,Support Services,1,Support Services,Support Services,Staff Services
+P004100,Payments - Other Gov't Units,,,0,Nonprogrammed Charges,Payments - Other Gov't Units,
+P113028,Earth Sciences-Voc,,,1,Instruction,Regular Instruction Programs,High School
+P113029,Physics-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113036,Art-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P002100,Support Services - Pupils,,,0,Support Services,Support Services - Pupils,
+P111026,Intensive Read Prog-Elem,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111040,Music-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111044,Physical Education-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111054,G 3-8 Intr/Upper-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113064,History-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P221248,ISO Other MS PD,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221251,ISO CMSI Science 6-8 PD,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111058,Centers For Languages,,,1,Instruction,Regular Instruction Programs,Elementary
+P113082,Music-Instrument-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113104,English-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P221086,Specially-Designed Instruction: Wilson Language Training,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P227458,Supportive Services,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111084,International Baccalaureate,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111103,ISO CMSI Math 6-8 Inst,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111108,ISO Arts Ed Instr,,,1,Instruction,Regular Instruction Programs,Elementary
+P113106,Arts Ed Tools,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113112,Chemistry-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P212108,DCCP Specialist - Central Office,,,1,Support Services,Support Services - Pupils,Guidance Services
+P002645,Staff - Health Services,,,0,Support Services,Support Services,Staff Services
+P264001,Operation Support-Admin,002000,Support Services,1,Support Services,Support Services,Staff Services
+P264054,Absence & Disability Management,002000,Support Services,1,Support Services,Support Services,Staff Services
+P233007,Summer Programming Of Students,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P233016,Government Funded Svcs Admin,,,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P212023,Post Secondary Education,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P212025,Students/Corr Facility Screen,,,1,Support Services,Support Services - Pupils,Guidance Services
+P212030,College Bridge,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P221069,School Improvement - Data Leadership Teams -PD,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221072,Response to Intervention (RTI),002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221073,Fine & Performing Arts Magnet Program - PD,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221074,International Baccalaureate (IB) Elementary Schools - PD,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P410001,Payment To Other Govt Units,004000,Total Payments to Other District & Govt Units,1,Nonprogrammed Charges,Payments - Other Gov't Units,Payments For Regular Programs
+P004190,Other Payments to In-State Gov't,,,0,Nonprogrammed Charges,Payments - Other Gov't Units,Other Payments to In-State Gov't
+P266206,PMO,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P252504,Grants Management,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P266209,NCLB Supplementary Services,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P002410,Office Of Principal Service,,,0,Support Services,Support Services - School Administration,Office Of Principal Service
+P212041,Guidance,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P212042,Step Up Counseling,,,1,Support Services,Support Services - Pupils,Guidance Services
+P221648,Science Curriculum,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221077,CDC HIV Prevention PD,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221083,LRE - Forty Schools Project,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P109981,Vacancy Factor,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111002,Kindergarten-Elem Special Ed,,,1,Instruction,Regular Instruction Programs,Elementary
+P266407,Enterprise Financial Systems,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P266410,CPS @ WORK Initiative,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P251006,ONS Business Services,002000,Support Services,1,Support Services,Support Services - School Administration,Other Support Services - School Admin
+P230004,School Support Center Central,002000,Support Services,1,Support Services,Support Services - Business,Direction Business Support Services
+P251001,Operations - Support Services,002000,Support Services,1,Support Services,Support Services - Business,Direction Business Support Services
+P221304,Administrative Institute,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221314,Reading First PD,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221316,New Leaders New Schools,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P113014,Social Studies-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P266419,E-Rate Consortium Cat - 2,,,1,Support Services,Support Services,Data Processing Services
+P266420,Enterprise Application Center,,,1,Support Services,Support Services,Data Processing Services
+P009487,iProcurement,,,1,Support Services,Other Supporting Services,iProcurement
+P110338,Grants-Reimbursable Claims,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P221317,HS Transformation PD,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221550,Staff Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111037,Reading-Middle Grades Support,001000,Instruction,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P009559,Boiler/Mechanical,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253006,Other Gov Fd-Fac Acq & Contr,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009492,Data Warehouse,002000,Support Services,1,Support Services,Other Supporting Services,Data Warehouse
+P009572,SIS - Implement,002000,Support Services,1,Support Services,Other Supporting Services,SIS - Implement
+P009575,IMPACT,002000,Support Services,1,Support Services,Other Supporting Services,IMPACT
+P009577,WAN - Upgrades,002000,Support Services,1,Support Services,Other Supporting Services,WAN - Upgrades
+P009592,EIM,,,1,Support Services,Other Supporting Services,EIM
+P009594,Infrastructure Services,002000,Support Services,1,Support Services,Other Supporting Services,Infrastructure Services
+P252002,Fiscal Office,,,1,Support Services,Support Services - Business,Fiscal Services
+P111127,IB Teacher-in-Training Teacher,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111128,REACH Reassigned Teachers,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P144603,CTE- Construction,001000,Instruction,1,Instruction,Vocational Programs,CTE- Construction
+P144607,Carpentry-Vocational,001000,Instruction,1,Instruction,Vocational Programs,Carpentry-Vocational
+P144702,Auto Body Repair,,,1,Instruction,Vocational Programs,Auto Body Repair
+P213014,Blood Borne Pathogens,,,1,Support Services,Support Services - Pupils,Health Services
+P254034,O&M Southwest,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P111154,LISC ISS Extended Day,,,1,Instruction,Regular Instruction Programs,Elementary
+P113141,PASS Marshall,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P117825,High School Support,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P213017,Health Service Nurses (HSN),002000,Support Services,1,Support Services,Support Services - Pupils,Health Services
+P214004,Oth Gfp-Psychological Svcs,002000,Support Services,1,Support Services,Support Services - Pupils,Psychological Services
+P254036,Stadiums,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254038,Sodexo IFM,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P002550,Pupil Transportation Services,,,0,Support Services,Support Services - Business,Pupil Transportation Services
+P002552,Vehicle Operation Services,,,0,Support Services,Support Services - Business,Pupil Transportation Services
+P254007,Custodial Services,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P119022,Reserve for New Schools-Instr,,,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119025,Phys Ed-Athletic Claims,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P146006,Computer Programming,001000,Instruction,1,Instruction,Vocational Programs,Computer Programming
+P146901,Home Economics-Elem-Special Ed,,,1,Instruction,Vocational Programs,Home Economics-Elem-Special Ed
+P146904,Home Economics-HS,001000,Instruction,1,Instruction,Vocational Programs,Home Economics-HS
+P147301,Commercial Art-HS,,,1,Instruction,Vocational Programs,Commercial Art-HS
+P121001,Speech Correction Services,002000,Support Services,1,Support Services,Support Services - Pupils,Speech Pathology And Audiology
+P231116,Property Loss Reserve Fund,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P009451,Masonary/Windows,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009506,Asset Management Repairs,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009509,SS O&M CIP,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P119027,PreK Instruction,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119041,Teen Pregnancy Program,,,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119051,Charter/Contract School Small School Subsidy,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P256214,Lunchroom Services,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P254023,Privatized Custodians,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254026,Privatized Engineers Overtime,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P119062,OIP - Foreign Language,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P221015,Dual Language Program,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P256013,NSS - Lunch Program,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P256019,NSS - Sales to Pupils - Other,,,1,Support Services,Support Services - Business,Food Services
+P256020,NSS - Sales to Adults,,,1,Support Services,Support Services - Business,Food Services
+P256105,Purchase Of Food,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P009515,Region 6 O&M CIP,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P320016,Tuition Based After School - 21st Century,,,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P888889,Contingency - Local,001000,Instruction,1,Instruction,Regular Instruction Programs,Contingency - Local
+P120207,TMH-Elementary,,,1,Instruction,Special Education Programs,Trainable Mentally Handicapped
+P257001,Mail Services,002000,Support Services,1,Support Services,Support Services - Business,Internal Services
+P261002,Special Education-Admin,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P261008,Children And Family Benefits Unit,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P251372,Energy Surveillance Mgmnt,,,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253511,Campus Parks,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P120503,Learning Disabilities,001000,Instruction,1,Instruction,Special Education Programs,Learning Disabled
+P001206,Visual Impairment- P001206,,,0,Instruction,Special Education Programs,Visual Impairment- P001206
+P221043,Supported Core Reading Materials Adoption,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P261027,Spec Serv - Planning and Evaluation,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P002621,Planning Research Dev,,,0,Support Services,Support Services,Plan Research Devel Eval Services
+P253516,Lockers,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253526,Interior Renovation,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P148004,Health Occupations-Choap-Voc,,,1,Instruction,Vocational Programs,Health Occupations-Choap-Voc
+P290011,SES Aim High Administration,002000,Support Services,1,Support Services,Other Supporting Services,SES Aim High Administration
+P290025,Central Programs Support,002000,Support Services,1,Support Services,Other Supporting Services,Central Programs Support
+P253540,Cost Estimating,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P122013,Cross Cat-TBI/LD,,,1,Instruction,Special Education Programs,Cross Categorical
+P124907,Travel Training Instruction for Diverse Learners,001000,Instruction,1,Instruction,Special Education Programs,Special Education
+P001250,Education Deprived/Remedial,,,0,Instruction,Special Education Programs,Education Deprived/Remedial
+P221059,BEWL Project Initiatives,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P149015,Business Ed-Accounting-Voc,001000,Instruction,1,Instruction,Vocational Programs,Business Ed-Accounting-Voc
+P263001,School Partners,002000,Support Services,1,Support Services,Support Services,Information Services
+P263002,OMBUDSMAN,,,1,Support Services,Support Services,Information Services
+P231109,Worker's Compensation,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P125019,HS - Evening School,001000,Instruction,1,Instruction,Special Education Programs,Education Deprived/Remedial
+P131001,Evening School Program,001000,Instruction,1,Instruction,Adult/Continuing ED Program,Adult Basic Education
+P140007,CTE - Information Processing,001000,Instruction,1,Instruction,Vocational Programs,CTE - Information Processing
+P150014,Football,001000,Instruction,1,Instruction,Interscholastic Programs,Football
+P150018,Track and Feild,001000,Instruction,1,Instruction,Interscholastic Programs,Track and Feild
+P221214,CTE General Administration,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221218,R O T C-Curriculum,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P370003,Nonpublic Fine Arts,003000,Community Services,1,Community Services,Nonpublic School Pupil Services,Nonpublic Fine Arts
+P370004,Nonpublic Instructional & Support Services,003000,Community Services,1,Community Services,Nonpublic School Pupil Services,Nonpublic Instructional & Support Services
+P370014,Federal - IDEA Nonpublic (Islamic),003000,Community Services,1,Community Services,Nonpublic School Pupil Services,Federal - IDEA Nonpublic (Islamic)
+P003900,Other Community Services,,,0,Community Services,Other Community Services,
+P231601,Labor And Employee Rels,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P140104,Horticulture-Vocational,001000,Instruction,1,Instruction,Vocational Programs,Horticulture-Vocational
+P221225,Auto Driver Ed-Curriculum,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P160021,School Improvement - School Based Instructional Support - Summer/Inter,,,1,Instruction,Summer School Programs,School Improvement - School Based Instructional Support - Summer/Inter
+P390006,ECIA-Child-Parent-Com Svc,,,1,Community Services,Other Community Services,ECIA-Child-Parent-Com Svc
+P390012,OST Community School Services,003000,Community Services,1,Community Services,Other Community Services,OST Community School Services
+P228950,Federal - Nonpublic - Inst (Independant),003000,Community Services,1,Community Services,Federal - Nonpublic - Inst (Independant),
+P230002,HS Transformation Project - Admin,,,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P222005,ISO Library Automation,,,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P211203,Evaluation And Data Analysis,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P180007,State Bilingual Instruction,001000,Instruction,1,Instruction,Bilingual Programs,State Bilingual Instruction
+P221237,Science - Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P264212,Teacher Housing Resource Center,,,1,Support Services,Support Services,Staff Services
+P113030,Physics-Vocational,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P211206,Attendance Services,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P211210,Attendance Services,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P211001,Attendance & Social Work,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P111030,Mathematics -Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111053,G 1-3 Primary-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113076,Foreign Language-Italian-HS,,,1,Instruction,Regular Instruction Programs,High School
+P111064,Music Enrichment-Elem,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111069,Homeless Education Program,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111072,Grades 6-8-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113079,Foreign Language-Polish-HS,,,1,Instruction,Regular Instruction Programs,High School
+P113096,CTE Law and Public Safety,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P222004,Library Service-Elem-Spec Ed,,,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P111082,English-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111100,ISO CMSI Science K-5 Inst,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113113,Earth Sciences- HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P264219,Talent Acquisition,002000,Support Services,1,Support Services,Support Services,Staff Services
+P002660,Data Processing Services,,,0,Support Services,Support Services,Data Processing Services
+P233005,ODLSS Procedural Safeguards,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P233009,Safe Schools Project-Admin,,,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P233010,Other Govt Funded Prog-Admin,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P233011,Equal Educ Opportunity-Admin,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P233015,Magnet School Program,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P233021,Ecia-Management Services,,,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P233030,Acad Vocational Instr Sup-Adm,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P252206,Budget Development,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P212020,Counseling-HS-Gt50% Sp Ed,,,1,Support Services,Support Services - Pupils,Guidance Services
+P212021,Cultural Education,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P212029,Summer Quest,,,1,Support Services,Support Services - Pupils,Guidance Services
+P221238,ISO Core Reading PD,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221239,ISO CMSI Math K-5 PD,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221075,International Baccalaureate (IB) High Schools - PD,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221076,CDC Minority HIV PD,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P600002,Contingency For Project Expansion,006000,Provision for Contingencies,1,Provision For Contingencies,Contingency For Project Expansion,
+P900001,ADP Adjustment,,,1,ADP Adjustment,,
+P002361,Claims Paid From Self Insurance Fund,,,0,Support Services,Support Services - General Admin,Claims Paid From Self Insurance Fund
+P213412,Medical And School Health Svcs,002000,Support Services,1,Support Services,Support Services - Pupils,Health Services
+P221080,AIO - Improvement of Instruction,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221081,Math and Science Initiative,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P110004,Distance Learning,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111001,Prior Year Carry Over Fund 124,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P266402,TECHXL Services,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P266406,COMP STUDNT INFORM SYSTEMS-EL,,,1,Support Services,Support Services,Data Processing Services
+P266408,TECHXL - Network Support Fee,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P249003,School Admin Svcs-Special Ed,002000,Support Services,1,Support Services,Support Services - School Administration,Other Support Services - School Admin
+P266421,Enterprise Database Management,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P266004,Enterprise Technology Support Services,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P002520,Fiscal Services,,,0,Support Services,Support Services - Business,Fiscal Services
+P002524,Payroll Services,,,0,Support Services,Support Services - Business,Fiscal Services
+P111046,Reading - High School Support,001000,Instruction,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221004,Demonstration School Projects,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P141501,CTE - Project Lead the Way,001000,Instruction,1,Instruction,Vocational Programs,CTE - Project Lead the Way
+P009555,Chimney,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009567,All Other,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253001,Network Services (E-Rate: CPS),002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009585,LAN - Wiring,002000,Support Services,1,Support Services,Other Supporting Services,LAN - Wiring
+P009588,Oracle Software,002000,Support Services,1,Support Services,Other Supporting Services,Oracle Software
+P252505,Medicaid Reimbursement Program,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P002526,Internal Auditing Services,,,0,Support Services,Support Services - Business,Fiscal Services
+P252802,Audit Services,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P111115,CSR Committee - Reduced Class Size K-1,,,1,Instruction,Regular Instruction Programs,Elementary
+P111129,Tenured and Leave - Reassigned Teachers,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P144605,Brick Masonry,001000,Instruction,1,Instruction,Vocational Programs,Brick Masonry
+P144803,Industrial Arts,001000,Instruction,1,Instruction,Vocational Programs,Industrial Arts
+P213015,AED/CPR,002000,Support Services,1,Support Services,Support Services - Pupils,Health Services
+P213016,School Nurses (CSN),,,1,Support Services,Support Services - Pupils,Health Services
+P254403,School Furniture & Equipment,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254612,Security Services,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P253546,Special Ed Program Facility Upgrades,,,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009413,Contingency for Closed POs,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253548,Academic Enhancement Program Facility Upgrades,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P111151,Reading First - Instruction,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111113,Appendix H - Displaced Tenured Teachers - 10 Months,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P002150,Speech Pathology And Audiology,,,0,Support Services,Support Services - Pupils,Speech Pathology And Audiology
+P254456,Supplies Res,,,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P119007,Cadre Sub-Teacher Program B,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119019,St Chapt 1-Learning Center,,,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119021,SGSA Prior Year Allocation,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P255023,Special Education - Alternate Mode Track E Student Transportation,,,1,Support Services,Support Services - Business,Pupil Transportation Services
+P002560,Food Services,,,0,Support Services,Support Services - Business,Food Services
+P009446,New School Openings Other,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009457,Stairs and Doors,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009463,Bathrooms,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009467,All Other,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P119048,Extended Learning - Instruction,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P241004,Special Education-School Admin,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221006,Reading Improv Pgm-Supp Svcs,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221011,Improvement of Instruction,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P256209,Summer Lunchroom Program-Ops,,,1,Support Services,Support Services - Business,Food Services
+P256213,Early Childhood-Prekg-Food,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P256217,Lunchroom Svcs-Region 4,,,1,Support Services,Support Services - Business,Food Services
+P254022,Pest control,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P119053,Employer Pension True-ups for Charter/Contract Schools,,,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119068,OEP - Computer Education,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P221016,ODLSS Transition Services,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P256017,NSS - Sales to Pupils - A la Carte,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P256120,Lunchroom Equipment,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P002531,Facilities ACQ/Const - Service Area Director,,,0,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253101,Planning and Development,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P320014,After School Enrichment Program,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P320015,Tuition Based After School,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P888888,Contingency Balancing Program,001000,Instruction,1,Instruction,Regular Instruction Programs,Contingency Balancing Program
+P112501,Teacher Assistant Credentials,001000,Instruction,1,Instruction,Pre-K Programs,Teacher Assistant Credentials
+P001203,Educable Mentally Handicapped,,,0,Instruction,Special Education Programs,Educable Mentally Handicapped
+P120302,EMH-HS,,,1,Instruction,Special Education Programs,Educable Mentally Handicapped
+P221201,Acad Pgm Imp-Math/Science,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221209,Lrng Tech-Special Initiatives,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221211,Gear Up,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P257304,Warehousing,002000,Support Services,1,Support Services,Support Services - Business,Internal Services
+P261005,OSS - Operations,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P253506,Capital Bond Fund,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253514,VOCATIONAL TECHNOLOGY,,,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P001208,Deaf,,,0,Instruction,Special Education Programs,Deaf
+P147401,Electrician,,,1,Instruction,Vocational Programs,Electrician
+P147402,Electricity-Vocational,001000,Instruction,1,Instruction,Vocational Programs,Electricity-Vocational
+P147602,Graphic Arts-Vocational,,,1,Instruction,Vocational Programs,Graphic Arts-Vocational
+P147901,Hotel And Rest Mgmt-Voc,,,1,Instruction,Vocational Programs,Hotel And Rest Mgmt-Voc
+P002622,Development Services,,,0,Support Services,Support Services,Plan Research Devel Eval Services
+P002623,Evaluation Services,,,0,Support Services,Support Services,Plan Research Devel Eval Services
+P262403,ONS Planning and Development,,,1,Support Services,Support Services,Plan Research Devel Eval Services
+P253524,Playground Program,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253531,Energy Efficiency Projects,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P122793,Oth Health Imp-Autistic,,,1,Instruction,Special Education Programs,Other Health Impairment
+P001214,Early Childhood Educ Handicap,,,0,Instruction,Special Education Programs,Early Childhood Educ Handicap
+P121401,Early Childhood Special Education Pre-K,001000,Instruction,1,Instruction,Special Education Programs,Early Childhood Educ Handicap
+P122004,Cross Cat-LD/BD-RESOURCE,001000,Instruction,1,Instruction,Special Education Programs,Cross Categorical
+P122008,Cross Cat-TMH/PH,,,1,Instruction,Special Education Programs,Cross Categorical
+P148101,Office Occupations-HS,001000,Instruction,1,Instruction,Vocational Programs,Office Occupations-HS
+P149003,Finance Academy,001000,Instruction,1,Instruction,Vocational Programs,Finance Academy
+P149005,Accounting,001000,Instruction,1,Instruction,Vocational Programs,Accounting
+P221055,Language & Cultural - Compliance,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P003200,Community Recreation Services,,,0,Community Services,Community Recreation Services,
+P320001,Swimming Pool Program,003000,Community Services,1,Community Services,Community Recreation Services,Swimming Pool Program
+P253538,Elevator Modernization,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P122011,Cross Cat-TMH/OHI,,,1,Instruction,Special Education Programs,Cross Categorical
+P121406,PreK 0-3,001000,Instruction,1,Instruction,Special Education Programs,Early Childhood Educ Handicap
+P125002,Esea-Self-Cont Approach,001000,Instruction,1,Instruction,Special Education Programs,Education Deprived/Remedial
+P125006,Inst-Read/Math/Lang Arts,001000,Instruction,1,Instruction,Special Education Programs,Education Deprived/Remedial
+P150005,High School Sports,001000,Instruction,1,Instruction,Interscholastic Programs,High School Sports
+P150006,Elementary Sports,001000,Instruction,1,Instruction,Interscholastic Programs,Elementary Sports
+P150008,Debate - High School,001000,Instruction,1,Instruction,Interscholastic Programs,Debate - High School
+P262008,Performance Data & Policy,002000,Support Services,1,Support Services,Support Services,Plan Research Devel Eval Services
+P002630,Information Services,,,0,Support Services,Support Services,Information Services
+P264201,Admin-Teacher Personnel,002000,Support Services,1,Support Services,Support Services,Staff Services
+P002311,BOE - Services Area Director,,,0,Support Services,Support Services - General Admin,Board Of Education Services
+P231107,Transactional,,,1,Support Services,Support Services - General Admin,Board Of Education Services
+P001300,Adult/Continuing ED Program,,,0,Instruction,Adult/Continuing ED Program,
+P140004,CTE - Business Systems,001000,Instruction,1,Instruction,Vocational Programs,CTE - Business Systems
+P001600,Summer School Programs,,,0,Instruction,Summer School Programs,
+P001650,Gifted Programs,,,0,Instruction,Summer School Programs,Gifted Programs
+P160006,Third Grade Summer Bridge,,,1,Instruction,Summer School Programs,Third Grade Summer Bridge
+P321850,Community Relations,003000,Community Services,1,Community Services,Community Recreation Services,Community Relations
+P370002,ECIA-PLANT OPERATION-NONPUBLIC,003000,Community Services,1,Community Services,Nonpublic School Pupil Services,ECIA-PLANT OPERATION-NONPUBLIC
+P370005,Non-Public School Pupils Services,003000,Community Services,1,Community Services,Nonpublic School Pupil Services,Non-Public School Pupils Services
+P370013,Federal - IDEA Nonpublic (Jewish),003000,Community Services,1,Community Services,Nonpublic School Pupil Services,Federal - IDEA Nonpublic (Jewish)
+P231126,Turn Around Schools - ADMIN,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P140101,Agricultural Academy,001000,Instruction,1,Instruction,Vocational Programs,Agricultural Academy
+P140102,Horticulture Production,001000,Instruction,1,Instruction,Vocational Programs,Horticulture Production
+P140505,Culinary Arts,001000,Instruction,1,Instruction,Vocational Programs,Culinary Arts
+P002224,Educational Television Services,,,0,Support Services,Support Services - Instruction Staff,Education Media Services
+P221224,Mathematics-Curriculum,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P160013,Ninth Grade Summer Bridge,001000,Instruction,1,Instruction,Summer School Programs,Ninth Grade Summer Bridge
+P160017,Summer Enrichment for High Performing Schools,001000,Instruction,1,Instruction,Summer School Programs,Summer Enrichment for High Performing Schools
+P160018,Freshman Summer Enrichment,001000,Instruction,1,Instruction,Summer School Programs,Freshman Summer Enrichment
+P162058,Summer Schl-Tuition Basis Prog,001000,Instruction,1,Instruction,Summer School Programs,Summer Schl-Tuition Basis Prog
+P221032,Step Up,001000,Instruction,1,Instruction,Summer School Programs,Step Up
+P390008,Other Gfp-Comm Svcs,003000,Community Services,1,Community Services,Other Community Services,Other Gfp-Comm Svcs
+P228952,Federal - Nonpublic - Inst (Christian),003000,Community Services,1,Community Services,Federal - Nonpublic - Inst (Christian),
+P300004,Special Ed-Comm Serv,003000,Community Services,1,Community Services,Special Ed-Comm Serv,
+P232105,Region Office-Support,002000,Support Services,1,Support Services,Support Services - General Admin,Executive Administration Se
+P212111,DCCP Pathways and Pipeline,,,1,Support Services,Support Services - Pupils,Guidance Services
+P212201,Counseling-HS-Lt50% Sp Ed,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P180001,Bilingual Resource Program,001000,Instruction,1,Instruction,Bilingual Programs,Bilingual Resource Program
+P180040,ELL/LEP Programs,001000,Instruction,1,Instruction,Bilingual Programs,ELL/LEP Programs
+P221234,Professional Develop/Curriculum Develp,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221236,Mathematics - Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P264206,National Board Certification,002000,Support Services,1,Support Services,Support Services,Staff Services
+P300013,Non-Public Professional Development,003000,Community Services,1,Community Services,Non-Public Professional Development,
+P004000,Nonprogrammed Charges,,,0,Nonprogrammed Charges,,
+P002112,Attendance Services,,,0,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P002114,Pupil Accounting Services,,,0,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P111041,Arts-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113068,Physical Ed-Girls-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113069,Physical Education-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113070,Physical Ed -Boys-HS,,,1,Instruction,Regular Instruction Programs,High School
+P221246,ISO Other Reading PD,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221259,ISO - Advanced Placement Professional Development,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111065,Follow Through- Instruction,,,1,Instruction,Regular Instruction Programs,Elementary
+P111066,Early Childhood-Instruction,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111073,Communication Arts-Elementary,,,1,Instruction,Regular Instruction Programs,Elementary
+P111074,Music Enrichment-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111075,Creative Writing,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113085,Foreign Language-Spanish-Voc,,,1,Instruction,Regular Instruction Programs,High School
+P113097,ISO - Service Learning,,,1,Instruction,Regular Instruction Programs,High School
+P113101,Special Services-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P221117,Computer Education,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111080,International Baccalaureate-El,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111088,CPS Scholars,,,1,Instruction,Regular Instruction Programs,Elementary
+P111095,Reading K-3 Instruction,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111097,ISO Core Reading Inst,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111109,ISO - IDS Instruction (HST),,,1,Instruction,Regular Instruction Programs,Elementary
+P113109,General Science-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113114,Foreign Language-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113119,R O T C-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P212106,DCCP Specialist - Area 26,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P264222,Teacher Pathways and Training,002000,Support Services,1,Support Services,Support Services,Staff Services
+P002661,Data Proc - Service Area Director,,,0,Support Services,Support Services,Data Processing Services
+P233012,Acad Accountability Council,,,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P233014,Demonstration And Pilot Prgms,,,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P212012,Special Educ-Guidance,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P212013,Counseling & Guidance Svcs,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P221240,ISO CMSI Science K-5 PD,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221242,Early Childhood Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P600005,Special Income Fund 124 Contingency,006000,Provision for Contingencies,1,Provision For Contingencies,Special Income Fund 124 Contingency,
+P002662,Systems Analysis Services,,,0,Support Services,Support Services,Data Processing Services
+P266204,Data Center,,,1,Support Services,Support Services,Data Processing Services
+P002400,Support Services - School Administration,,,0,Support Services,Support Services - School Administration,
+P241010,Instr Admin-Elem-Evgc,,,1,Support Services,Support Services - School Administration,Office Of Principal Service
+P241017,SSC Premium Services,002000,Support Services,1,Support Services,Support Services - School Administration,Office Of Principal Service
+P002131,Health Services - Area Director,,,0,Support Services,Support Services - Pupils,Health Services
+P213002,Vision Program,002000,Support Services,1,Support Services,Support Services - Pupils,Health Services
+P213005,Early Childhood-Med-Health Svc,002000,Support Services,1,Support Services,Support Services - Pupils,Health Services
+P111005,Pre-Kg 4 Yr Olds-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P002663,Programming Services,,,0,Support Services,Support Services,Data Processing Services
+P002510,Direction Business Support Services,,,0,Support Services,Support Services - Business,Direction Business Support Services
+P230003,School Support Center North,,,1,Support Services,Support Services - Business,Direction Business Support Services
+P221311,Instruc Training And Support,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P001100,Regular Instruction Programs,,,0,Instruction,Regular Instruction Programs,
+P111102,ISO Other MS Inst,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P266424,ITS Asset Management,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P266003,ITS Training,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P002900,Other Supporting Services,,,0,Support Services,Other Supporting Services,
+P251163,Accounts Receivable - Grants & Reimbursable Claims,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P221002,World Language Instr Supp,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P140625,Electronics,001000,Instruction,1,Instruction,Vocational Programs,Electronics
+P140630,Heating Air Conditioning and Refrigeration Mechanic,001000,Instruction,1,Instruction,Vocational Programs,Heating Air Conditioning and Refrigeration Mechanic
+P009553,Roofs,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253002,Network Services (E-Rate: SLD),002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253020,Facility Supplement for Charter/Contract Schools,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009574,SIS - Support,002000,Support Services,1,Support Services,Other Supporting Services,SIS - Support
+P290001,General Salary S Bkt,002000,Support Services,1,Support Services,Other Supporting Services,General Salary S Bkt
+P223012,City-Wide Testing,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P253544,Child Award,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P252601,Ethics,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P144601,Architectural Drafting,001000,Instruction,1,Instruction,Vocational Programs,Architectural Drafting
+P144703,Drafting-HS,,,1,Instruction,Vocational Programs,Drafting-HS
+P254605,School Safety Services,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P002549,Other - Oper/Maintenance Services,,,0,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P253545,Individual Accommodations,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253547,Auditorium Renovations,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253536,Emergency Capital Repairs,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P002540,Operations Maintainance - Plant Services,,,0,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P111152,Technology Academy - Quota Teachers-in-Training,,,1,Instruction,Regular Instruction Programs,Elementary
+P112005,Middle Grades Specialization,001000,Instruction,1,Instruction,Regular Instruction Programs,Middle/Junior High
+P112006,Middle Grades Specialization - Non-Quota positions,001000,Instruction,1,Instruction,Regular Instruction Programs,Middle/Junior High
+P002142,Psycological Testing Services,,,0,Support Services,Support Services - Pupils,Psychological Services
+P002143,Psycological Counseling Services,,,0,Support Services,Support Services - Pupils,Psychological Services
+P214301,Psychological Services,002000,Support Services,1,Support Services,Support Services - Pupils,Psychological Services
+P254310,Custodial Services-Park Dist,,,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254901,Network Services (Non E-Rate),002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254001,Financial Reporting & Compliance,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254005,Roving Crew,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P146002,Computer Education-HS,001000,Instruction,1,Instruction,Vocational Programs,Computer Education-HS
+P215001,Audiology,002000,Support Services,1,Support Services,Support Services - Pupils,Speech Pathology And Audiology
+P120408,Physical Therapy Services,002000,Support Services,1,Support Services,Support Services - Pupils,Physical Therapy
+P255017,Transp Track E Cal - Public School Transp for STLS,,,1,Support Services,Support Services - Business,Pupil Transportation Services
+P002561,Food SV - SV Area Director,,,0,Support Services,Support Services - Business,Food Services
+P009511,SW O&M CIP,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P002542,Care/Upkeep - Building Services,,,0,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P111101,ISO Algebra Inst,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P221009,Special Initiatives,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P256102,Compliance And Support Sevices,,,1,Support Services,Support Services - Business,Food Services
+P256218,Lunchroom Svcs-Region 2,,,1,Support Services,Support Services - Business,Food Services
+P241012,Instr Admin - Vocational,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P256119,FOOD SERVICES-NUTRITION SVCS,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P002571,Internal Svcs - Services Area Director,,,0,Support Services,Support Services - Business,Internal Services
+P256101,Food Services-General Office,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P009518,Aramark IFM - CIP,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009522,CIP Management,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009526,All Other,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009536,Construction,,,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P221207,Internal Communications,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221025,Oth Govt Fded Pjj-1Mpr Of Inst,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P257306,Warehouse-Scrap Metal,002000,Support Services,1,Support Services,Support Services - Business,Internal Services
+P002600,Support Services,,,0,Support Services,Support Services,
+P002610,Direction - Central Support Services,,,0,Support Services,Support Services,Direction - Central Support Services
+P261018,Best Practices,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P002569,Other Food Services,,,0,Support Services,Support Services - Business,Food Services
+P253202,Real Estate Property Management,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P002535,Building Acquisition Construction And Improvement Services,,,0,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253007,Life Safety,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P122730,Multiple Handicpd-Elem-Special,,,1,Instruction,Special Education Programs,Physical Impairment
+P120205,TMH-HS,,,1,Instruction,Special Education Programs,Trainable Mentally Handicapped
+P001212,Behavior Disordered,,,0,Instruction,Special Education Programs,Behavior Disordered
+P221039,Literacy Writing - Initiative,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P147501,Photography-HS,001000,Instruction,1,Instruction,Vocational Programs,Photography-HS
+P261019,Specialized Schools,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P261025,ODLSS Resource Management & System Supports,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P231124,Strategic Planning and Development: Administration,002000,Support Services,1,Support Services,Support Services,Plan Research Devel Eval Services
+P253515,Energy,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253517,New Schools,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253520,Temporary Unit,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P121203,Behavior Disordered-HS-Spec Ed,,,1,Instruction,Special Education Programs,Behavior Disordered
+P121301,Home/Hosp-HS-Special Ed,001000,Instruction,1,Instruction,Special Education Programs,Other Health Impairment
+P122003,Cross Cat-EMH/LD,001000,Instruction,1,Instruction,Special Education Programs,Cross Categorical
+P149001,Business Education-Elem,,,1,Instruction,Vocational Programs,Business Education-Elem
+P149011,Business Ed-Trg-Voc,,,1,Instruction,Vocational Programs,Business Ed-Trg-Voc
+P221049,6-8 Mathematics Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221051,CTE - Instructional Support,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P320003,Community Hlth Pe Rec & Safety,003000,Community Services,1,Community Services,Community Recreation Services,Community Hlth Pe Rec & Safety
+P320010,After School Matters: Words37,003000,Community Services,1,Community Services,Community Recreation Services,After School Matters: Words37
+P253532,Turn Around Schools - Facilities,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253537,Utility Relocation,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253542,Facilities Data Management Project,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P122012,Cross Cat-TMH/SPMH,,,1,Instruction,Special Education Programs,Cross Categorical
+P120506,Mod/Sev Learn Dis-HS-Spec Ed,001000,Instruction,1,Instruction,Special Education Programs,Learning Disabled
+P150010,Science Fair,001000,Instruction,1,Instruction,Interscholastic Programs,Science Fair
+P150011,Math Leagues,001000,Instruction,1,Instruction,Interscholastic Programs,Math Leagues
+P320020,Other After Schools Programs,003000,Community Services,1,Community Services,Community Recreation Services,Other After Schools Programs
+P002310,Board Of Education Services,,,0,Support Services,Support Services - General Admin,Board Of Education Services
+P231108,Labor Services,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P140005,CTE - Childcare Worker,001000,Instruction,1,Instruction,Vocational Programs,CTE - Childcare Worker
+P140008,CTE - Partnership Development,001000,Instruction,1,Instruction,Vocational Programs,CTE - Partnership Development
+P150016,Cheerleading,001000,Instruction,1,Instruction,Interscholastic Programs,Cheerleading
+P150019,Cross Country,001000,Instruction,1,Instruction,Interscholastic Programs,Cross Country
+P165002,Gifted Reimbursement - Instruc,,,1,Instruction,Summer School Programs,Gifted Programs
+P221219,Professional Library,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P390001,Safe Schools-Comm Serv,,,1,Community Services,Other Community Services,Safe Schools-Comm Serv
+P231114,General Liability Insurance,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P261016,Risk Management Administration,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P140345,Electrician,001000,Instruction,1,Instruction,Vocational Programs,Electrician
+P221227,Curriculum Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P228958,Federal - Nonpublic - Inst (Catholic),003000,Community Services,1,Community Services,Federal - Nonpublic - Inst (Catholic),
+P300008,Community/Parent Involvement,003000,Community Services,1,Community Services,Community/Parent Involvement,
+P300011,ONS External Relations & Special Projects,003000,Community Services,1,Community Services,ONS External Relations & Special Projects,
+P231605,Principal Preparation and Development - Admin,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P232102,Executive Administration,002000,Support Services,1,Support Services,Support Services - General Admin,Executive Administration Se
+P250002,Intergovernmental Affairs,002000,Support Services,1,Support Services,Support Services - General Admin,Executive Administration Se
+P233002,Lang & Cult Educ-Admin,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P222209,Computer/Media Techonology Services,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P223011,Business Management Services,,,1,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P221229,Back To School Campaign,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P264209,Staffing Services,002000,Support Services,1,Support Services,Support Services,Staff Services
+P300014,Parent Involvement - Attendance Services,003000,Community Services,1,Community Services,Parent Involvement - Attendance Services,
+P113024,Biology-Vocational,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113034,Performing And Creative Arts,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P002110,Attendance/Social Work Services,,,0,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P211207,School Attendance,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P211302,Social Work Svcs-Bilingual,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P111032,General Science,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113072,Physical Ed-Girls-Voc,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113077,Foreign Language-Latin-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P221244,Alternative Certification Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221258,Turn Around Schools,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221260,ISO - Instructional Leadership Teams,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111059,Oth GFP-Inst-Elem,,,1,Instruction,Regular Instruction Programs,Elementary
+P113081,Foreign Language-Spanish-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113094,Reading 9-12 Instruction,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P222204,Library Service-HS,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P111112,Reduced Class Size K-8 (Push-In / Pull-Out Services),001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113110,International Baccalaureate-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113122,Social Studies-History-Voc,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113129,Geography-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P211004,SIP - Differentiated Instruction Support Strategies - Attendance and S,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P002121,Guidance Services - Area Director,,,0,Support Services,Support Services - Pupils,Guidance Services
+P212107,DCCP Specialist - Area 54,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P264221,Other Talent Operations,002000,Support Services,1,Support Services,Support Services,Staff Services
+P264223,Talent Compensation,002000,Support Services,1,Support Services,Support Services,Staff Services
+P264051,Human Resources Support,002000,Support Services,1,Support Services,Support Services,Staff Services
+P264055,Training and Leadership Development,002000,Support Services,1,Support Services,Support Services,Staff Services
+P233018,Gifted Reimbursement - Admin,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P233032,State and Federal Compliance,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P212007,General Diagnostic Cntr Svcs,,,1,Support Services,Support Services - Pupils,Guidance Services
+P212028,Student Development,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P212031,SIP - Differentiated Instruction Support Strategies - Guidance,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P221241,Area-Based Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221243,ISO - IDS Professional Development (HST),002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221071,Extended Learning - Improvement of Instruction,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P005000,Debt Services,,,0,Debt Services,,
+P005200,Debt Services - Bond Principal Retired,,,0,Debt Services,Debt Services - Bond Principal Retired,
+P600004,Contingency for Expansion - Federal & State,,,1,Provision For Contingencies,Contingency for Expansion - Federal & State,
+P266202,NCLB Accountability,,,1,Support Services,Support Services,Data Processing Services
+P266203,Technical Support,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P230010,Administrative Support,002000,Support Services,1,Support Services,Support Services - General Admin,Administrative Support
+P241001,School Office Services,002000,Support Services,1,Support Services,Support Services - School Administration,Office Of Principal Service
+P241013,Instr Admin - Elementary,002000,Support Services,1,Support Services,Support Services - School Administration,Office Of Principal Service
+P230007,ONS School Support,,,1,Support Services,Support Services - School Administration,Other Support Services - School Admin
+P213011,Health Services,002000,Support Services,1,Support Services,Support Services - Pupils,Health Services
+P221261,Service Learning Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221651,Social Studies Curriculum,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111004,Regular Kg-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111006,Pre-Kg 3 Yr Olds-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111008,Grades 1-8-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P261112,Education Technology,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P266404,TECHXL - Service Desk,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P266412,TECHXL - Extended Support,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P230001,AMPS - Admin,002000,Support Services,1,Support Services,Support Services - Business,Direction Business Support Services
+P230005,School Support Center South,002000,Support Services,1,Support Services,Support Services - Business,Direction Business Support Services
+P250004,Policy,,,1,Support Services,Support Services - Business,Direction Business Support Services
+P221312,Alternative Certification,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111013,Special Services-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P000000,,,,1,,,
+P111015,Reassigned Teachers - IB,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P112144,Social Studies-HS-Spec Ed,,,1,Instruction,Regular Instruction Programs,High School
+P113016,Social Studies-Vocational,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113022,International Baccalaureate-El,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P266422,Governance,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P266002,Tech Crew,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P009473,SIS - Software,002000,Support Services,1,Support Services,Other Supporting Services,SIS - Software
+P252502,Controller's Office,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P252503,Administration/Finance,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P221001,School Instructional Support Services,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P141701,CTE - Medical Assistant,001000,Instruction,1,Instruction,Vocational Programs,CTE - Medical Assistant
+P009551,Masonary/Windows,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009557,Stairs and Doors,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009589,Oracle Consultants,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009541,New School Openings,,,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009582,LAN Upgrade,002000,Support Services,1,Support Services,Other Supporting Services,LAN Upgrade
+P009595,E-Rate (LAN),002000,Support Services,1,Support Services,Other Supporting Services,E-Rate (LAN)
+P009596,Applications,002000,Support Services,1,Support Services,Other Supporting Services,Applications
+P290003,Misc General Charges,002000,Support Services,1,Support Services,Other Supporting Services,Misc General Charges
+P111126,IB Trained Teacher,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P142541,Plumbing Pipe Fit-Vocational,001000,Instruction,1,Instruction,Vocational Programs,Plumbing Pipe Fit-Vocational
+P142585,Fashion Merchandising-HS,,,1,Instruction,Vocational Programs,Fashion Merchandising-HS
+P144701,Automotive Mechanic,001000,Instruction,1,Instruction,Vocational Programs,Automotive Mechanic
+P002544,Care/Upkeep - Equipment Services,,,0,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P002546,Security Services,,,0,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254611,Central Service Security,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P009414,Contingencies,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009436,Construction,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P113145,School Actions Student Instructional Supports,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P144806,Machine Drafting-Vocational,,,1,Instruction,Vocational Programs,Machine Drafting-Vocational
+P144807,Machine Shop-HS,001000,Instruction,1,Instruction,Vocational Programs,Machine Shop-HS
+P144904,CTE - Navistar Diesel,001000,Instruction,1,Instruction,Vocational Programs,CTE - Navistar Diesel
+P254904,Early Childhood-Med-Plant Main,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254006,Ecia-Child Prnt Ctr-Pl Op,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P009465,FAA/ADA,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009508,WS O&M CIP,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P119031,NCLB Current Year Allocation,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119035,Other Instr Purposes Misc,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P241003,Special Ed Admin-Elem-Specl Ed,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P256106,Vending Services,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P256202,Lunchroom Svcs-Region 1,,,1,Support Services,Support Services - Business,Food Services
+P256204,Lunchroom Svcs-Region 3,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P256212,Lunchroom Services-Summer Schl,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P254024,Privatized Custodians Overtime,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254025,Privatized Engineers,,,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P119055,Budget Use Only-CH/CO Future Use 3,,,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119061,OIP - Social Studies,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119066,OEP - Art,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119069,Substitute Teacher Holiday Pay,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P221014,Gifted Reimbursement-Imp Of In,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221018,ECIA-Improv Of Instruc,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P241011,Instr Admin-HS,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P256009,Food Service,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P256015,NSS - After-school program: Supper & Snacks,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P009516,Sodexo - CIP,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P120202,Intellectual Disabilities,001000,Instruction,1,Instruction,Special Education Programs,Trainable Mentally Handicapped
+P119067,OEP - Learning Center,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P120206,Severe and Profound Intellectual Disabilities,001000,Instruction,1,Instruction,Special Education Programs,Trainable Mentally Handicapped
+P221210,Media,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P261001,School-Based Spec Ed Svcs,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P261011,Mentor Connection - Special Service,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P253201,Cell Tower Installation Program,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253508,Renovations,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P120404,Physical Disabilities,001000,Instruction,1,Instruction,Special Education Programs,Physical Impairment
+P120412,Assistive Technology,001000,Instruction,1,Instruction,Special Education Programs,Physical Impairment
+P120501,Severe Learn Disb-Elem,,,1,Instruction,Special Education Programs,Learning Disabled
+P120504,Learning Disabilities-HS,001000,Instruction,1,Instruction,Special Education Programs,Learning Disabled
+P120801,Hearing Impairment Deaf,001000,Instruction,1,Instruction,Special Education Programs,Deaf
+P221044,Teacher Induction & Mentoring,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221046,K-5 Science Professional Development,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P147302,Commercial Art-Vocational,,,1,Instruction,Vocational Programs,Commercial Art-Vocational
+P261021,School Health and Partnerships,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P261028,Direction of Central Support Services,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P264216,ONS Recruitment,002000,Support Services,1,Support Services,Support Services,Plan Research Devel Eval Services
+P001213,Other Health Impairment,,,0,Instruction,Special Education Programs,Other Health Impairment
+P148002,Medical Health Career Academy,001000,Instruction,1,Instruction,Vocational Programs,Medical Health Career Academy
+P221048,K-5 Mathematics Professional Development,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P253534,Modern Schools Across Chicago Expansion,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P223014,DIBELS - Assessment,,,1,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P223015,Elementary Career Development Online Assessment Project,,,1,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P223018,Saturday Assessment,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P122014,Cross Cat-PH/OHI,,,1,Instruction,Special Education Programs,Cross Categorical
+P261006,Citywide Special Ed Projects,001000,Instruction,1,Instruction,Special Education Programs,Cross Categorical
+P124906,Specially-Designed Instruction,001000,Instruction,1,Instruction,Special Education Programs,Special Education
+P125005,Child Parent Center,001000,Instruction,1,Instruction,Special Education Programs,Education Deprived/Remedial
+P221065,ISO RTI - Response to Intervention PD,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221066,Teaching Residency and Internship,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P150002,Extra Curricular Activities - Clubs,001000,Instruction,1,Instruction,Interscholastic Programs,Extra Curricular Activities - Clubs
+P150009,Debate - Middle School,001000,Instruction,1,Instruction,Interscholastic Programs,Debate - Middle School
+P263004,Marketing,002000,Support Services,1,Support Services,Support Services,Information Services
+P002642,Recruitment/Placement Services,,,0,Support Services,Support Services,Staff Services
+P124904,Tuition for Special Education Private Programs,001000,Instruction,1,Instruction,Special Education Programs,Special Education
+P221217,Hlth PeRec and Sfty-Curriculum,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P264202,Recruitment And Staffing,002000,Support Services,1,Support Services,Support Services,Staff Services
+P231122,Non-Tort Claims: Major Settlement,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P231006,Employee Engagement,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P140050,Practical Arts & Voc Ed (Pave),001000,Instruction,1,Instruction,Vocational Programs,Practical Arts & Voc Ed (Pave)
+P140240,ST Chapt 1-Career Employ Prep,001000,Instruction,1,Instruction,Vocational Programs,ST Chapt 1-Career Employ Prep
+P140402,Climate Maintenance-Voc,001000,Instruction,1,Instruction,Vocational Programs,Climate Maintenance-Voc
+P222208,Library Service - Elementary,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P160009,Summer School Program,001000,Instruction,1,Instruction,Summer School Programs,Summer School Program
+P250005,Chief Of Staff,002000,Support Services,1,Support Services,Support Services - General Admin,Executive Administration Se
+P222001,Telecommunications & Broadcast,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P180002,Bilingual ESL - Elementary,001000,Instruction,1,Instruction,Bilingual Programs,Bilingual ESL - Elementary
+P264207,Teacher Sourcing & Recruitment,002000,Support Services,1,Support Services,Support Services,Staff Services
+P264208,Teacher Recertification - Professional Standards,,,1,Support Services,Support Services,Staff Services
+P264215,Enterprise Learning Management (ELM),,,1,Support Services,Support Services,Staff Services
+P264217,Talent Management,002000,Support Services,1,Support Services,Support Services,Staff Services
+P212024,Alternative Schools,,,1,Instruction,Alternative Instruction Programs,Alternative Schools
+P111028,Social Studies-Elem,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111043,Phys Ed-Elem-Special Ed,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113040,Physical Ed-HS-Special Ed,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113074,Foreign Language-French-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P221252,ISO Writing PD,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111056,Physical Ed-Gr 1-8 Elem,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111057,Physical Ed-Gr 1-8 Elem,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111079,General Science-Elem,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113090,Grants-Citywide Misc Fndtns,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P002220,Education Media Services,,,0,Support Services,Support Services - Instruction Staff,Education Media Services
+P222205,Library Service-Vocational,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P222207,Learning Center,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P111098,ISO Other Reading Inst,,,1,Instruction,Regular Instruction Programs,Elementary
+P113111,Biology-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113118,Physical Education-Vocational,,,1,Instruction,Regular Instruction Programs,High School
+P212102,DCCP Specialist - Area 21,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P212104,DCCP Specialist - Area 24,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P264218,Sister Cities Recruitment Exchange Program,002000,Support Services,1,Support Services,Support Services,Staff Services
+P264053,HR4U,002000,Support Services,1,Support Services,Support Services,Staff Services
+P212016,School Climate/Counseling Etc,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P212022,Guidance Svcs-EL-Lt50% Sp Ed,,,1,Support Services,Support Services - Pupils,Guidance Services
+P005100,Debt Services - Interest,,,0,Debt Services,Debt Services - Interest,
+P600001,SPECIAL EDUC-CONTINGENCY EXPAN,,,1,Provision For Contingencies,SPECIAL EDUC-CONTINGENCY EXPAN,
+P266205,Web Services,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P236101,Property Loss,,,1,Support Services,Support Services - General Admin,Claims Paid From Self Insurance Fund
+P241018,OST Planning and Development (Incubation),,,1,Support Services,Support Services - School Administration,Office Of Principal Service
+P213004,Vision Testing-City Wide,002000,Support Services,1,Support Services,Support Services - Pupils,Health Services
+P001110,Elementary,,,0,Instruction,Regular Instruction Programs,Elementary
+P110001,Workers & Unemployment Compensation,,,1,Instruction,Regular Instruction Programs,Elementary
+P111011,Reassigned Teachers - Appendix H Section 5.A.6,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P266409,Managed Print Services,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P266414,Enterprise Server and Software,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P249002,Administrative Office Aide,002000,Support Services,1,Support Services,Support Services - School Administration,Other Support Services - School Admin
+P251003,General Charges - Business Support Admin,002000,Support Services,1,Support Services,Support Services - Business,Direction Business Support Services
+P221301,Special Initiatives,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221307,Staff Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111014,Reassigned Teachers - School Actions,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111020,English-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113006,Mathematics-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113010,English-Vocational,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113012,Communication Arts-HS,,,1,Instruction,Regular Instruction Programs,High School
+P113018,Mathematics-Vocational,,,1,Instruction,Regular Instruction Programs,High School
+P266417,Enterprise Architecture,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P009489,Oracle Consultants,,,1,Support Services,Other Supporting Services,Oracle Consultants
+P009491,IEP,002000,Support Services,1,Support Services,Other Supporting Services,IEP
+P002522,Budgeting Services,,,0,Support Services,Support Services - Business,Fiscal Services
+P221318,OST Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P009573,SIS - Software/Hardware,002000,Support Services,1,Support Services,Other Supporting Services,SIS - Software/Hardware
+P009580,Information Security,002000,Support Services,1,Support Services,Other Supporting Services,Information Security
+P009587,iProcurement,,,1,Support Services,Other Supporting Services,iProcurement
+P211201,Compliance Reporting,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P213013,Diabetes Management,002000,Support Services,1,Support Services,Support Services - Pupils,Health Services
+P254604,School Safety Administration,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254610,Security-Police Officers,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P259400,Operations And Maintenance,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009441,New School Openings,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P254501,Telecom (Non E-Rate),002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P111131,FPA Teacher-in-Training Teacher (non-quota & quota),,,1,Instruction,Regular Instruction Programs,Elementary
+P001130,High School,,,0,Instruction,Regular Instruction Programs,High School
+P390003,Service Learning,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P144808,Machine Shop-Vocational,,,1,Instruction,Vocational Programs,Machine Shop-Vocational
+P145921,Job Readiness Program,,,1,Instruction,Vocational Programs,Job Readiness Program
+P145932,COOP Work Training,001000,Instruction,1,Instruction,Vocational Programs,COOP Work Training
+P254039,Aramark IFM,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P255001,Transportation Administration,002000,Support Services,1,Support Services,Support Services - Business,Pupil Transportation Services
+P255006,Transportation - Special Ed - Nonpublic Bkt,002000,Support Services,1,Support Services,Support Services - Business,Pupil Transportation Services
+P253507,Capital Project,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P254002,Engineer Services,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P009442,Small and Contract,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P119001,Misc Exec Supp Svc Charges,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119004,Other General Charges,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119008,Cadre Sub-Teacher Program A,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119010,Other Instructional Programs,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119015,Reading,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P146001,Computer Education-Elementary,001000,Instruction,1,Instruction,Vocational Programs,Computer Education-Elementary
+P146005,Computer Ed-Ok-Elem,,,1,Instruction,Vocational Programs,Computer Ed-Ok-Elem
+P147101,Beauty Culture-Vocational,001000,Instruction,1,Instruction,Vocational Programs,Beauty Culture-Vocational
+P002190,Other Support Services - Pupil,,,0,Support Services,Support Services - Pupils,Other Support Services - Pupil
+P210001,Family Student Supports,002000,Support Services,1,Support Services,Support Services - Pupils,Other Support Services - Pupil
+P009461,Electrical,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P254101,Asset Management,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P119029,CTU Instr Supplies-Indiv Tchrs,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119030,Indian ESAA-Instr,,,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119034,Special Instr Programs,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119038,Grants-Supplemental Sp Bkt,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P002210,Improvement Of Instructional Services,,,0,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P002211,Imp of Inst - SV Area Director,,,0,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P232106,Region Office-Admin,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P241002,Special Ed Admin-HS-Special Ed,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221007,Other Instr Purposes Res,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221010,Special Ed-Improv Of Instruc,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P119064,OIP - Physical Education,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119065,OEP - Music,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119111,Vacancy Sub Coverage,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P256014,NSS - Breakfast Program,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P009531,Additions,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P252006,ERP Modernization,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P320009,Elementary After School Programs,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P120204,TMH-HS-Special Ed,,,1,Instruction,Special Education Programs,Trainable Mentally Handicapped
+P120301,EMH-Elem-Special Ed,001000,Instruction,1,Instruction,Special Education Programs,Educable Mentally Handicapped
+P221202,Acad Pgm Imp-Drug Free Program,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221206,Learning Technology,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221030,Staff Tng & Devel/Spec Ed,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P002532,Land Acquisitions And Development Services,,,0,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P120402,Multiple Disabilities,001000,Instruction,1,Instruction,Special Education Programs,Physical Impairment
+P120602,Vision Impairment Blind,001000,Instruction,1,Instruction,Special Education Programs,Visual Impairment- P001206
+P001207,Hearing Impairment,,,0,Instruction,Special Education Programs,Hearing Impairment
+P148001,Allied Health,001000,Instruction,1,Instruction,Vocational Programs,Allied Health
+P261023,PBIS,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P002620,Plan Research Devel Eval Services,,,0,Support Services,Support Services,Plan Research Devel Eval Services
+P122865,Emotionally Disturbed-HS,,,1,Instruction,Special Education Programs,Behavior Disordered
+P122002,Cross Cat-EMH/LD/BD,001000,Instruction,1,Instruction,Special Education Programs,Cross Categorical
+P149006,Business Ed-Trg-HS,001000,Instruction,1,Instruction,Vocational Programs,Business Ed-Trg-HS
+P290069,Homeless Education Program - Non-Instructional,002000,Support Services,1,Support Services,Other Supporting Services,Homeless Education Program - Non-Instructional
+P297920,Other Government Funded - Support Services,002000,Support Services,1,Support Services,Other Supporting Services,Other Government Funded - Support Services
+P299700,Interfund Alloc-Lunchroom Fund,002000,Support Services,1,Support Services,Other Supporting Services,Interfund Alloc-Lunchroom Fund
+P320008,Playgrounds and Stadia,003000,Community Services,1,Community Services,Community Recreation Services,Playgrounds and Stadia
+P320013,Advanced Arts at Gallery 37,003000,Community Services,1,Community Services,Community Recreation Services,Advanced Arts at Gallery 37
+P223016,SIP - Assessments,,,1,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P001249,Special Education,,,0,Instruction,Special Education Programs,Special Education
+P001500,Interscholastic Programs,,,0,Instruction,Interscholastic Programs,
+P262005,Educator Effectiveness,002000,Support Services,1,Support Services,Support Services,Plan Research Devel Eval Services
+P262402,Research Eval and Account-Admin,002000,Support Services,1,Support Services,Support Services,Plan Research Devel Eval Services
+P002641,Staff Services - Service Area Director,,,0,Support Services,Support Services,Staff Services
+P002300,Support Services - General Admin,,,0,Support Services,Support Services - General Admin,
+P231102,Litigation,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P231112,Tort Claims-Major Settlements,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P150015,Basketball,001000,Instruction,1,Instruction,Interscholastic Programs,Basketball
+P150017,Swimming,001000,Instruction,1,Instruction,Interscholastic Programs,Swimming
+P221216,Libraries-Curriculum,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P321851,Parent Support Centers,003000,Community Services,1,Community Services,Community Recreation Services,Parent Support Centers
+P370010,Federal - IDEA Nonpublic (Lutheran),003000,Community Services,1,Community Services,Nonpublic School Pupil Services,Federal - IDEA Nonpublic (Lutheran)
+P231117,Support Services,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P231118,Municipal Finance,,,1,Support Services,Support Services - General Admin,Board Of Education Services
+P002314,Election Services,,,0,Support Services,Support Services - General Admin,Board Of Education Services
+P002316,Staff Relations/Negotiations,,,0,Support Services,Support Services - General Admin,Board Of Education Services
+P140020,Vocational Student Services,001000,Instruction,1,Instruction,Vocational Programs,Vocational Student Services
+P140212,Career Exploration Program,001000,Instruction,1,Instruction,Vocational Programs,Career Exploration Program
+P140320,Painting & Decorating,,,1,Instruction,Vocational Programs,Painting & Decorating
+P221220,Library Automation,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221223,Library-Services & Tech Act,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P001700,Driver Education Programs,,,0,Instruction,Driver Education Programs,
+P390014,NonPublic Sup Counseling Services,003000,Community Services,1,Community Services,Other Community Services,NonPublic Sup Counseling Services
+P221022,Federal - Nonpublic - Inst (Lutheran),003000,Community Services,1,Community Services,Federal - Nonpublic - Inst (Lutheran),
+P228953,Federal - Nonpublic - Inst (Jewish),003000,Community Services,1,Community Services,Federal - Nonpublic - Inst (Jewish),
+P300007,Bilingual Parent/Community Services,003000,Community Services,1,Community Services,Bilingual Parent/Community Services,
+P231607,Employee Wellness,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P002330,Special Area Admin Services,,,0,Support Services,Support Services - General Admin,Special Area Admin Services
+P222010,Extended Learning - Technology,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P160008,Summer Cool Program,001000,Instruction,1,Instruction,Summer School Programs,Summer Cool Program
+P180008,Bilingual ESL - High School,001000,Instruction,1,Instruction,Bilingual Programs,Bilingual ESL - High School
+P300012,Reading First - Community Service,003000,Community Services,1,Community Services,Reading First - Community Service,
+P004110,Payments For Regular Programs,,,0,Nonprogrammed Charges,Payments - Other Gov't Units,Payments For Regular Programs
+P113035,All City Arts K-12,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113038,Physical Education-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P001900,Alternative Instruction Programs,,,0,Instruction,Alternative Instruction Programs,
+P002000,Support Services,,,0,Support Services,,
+P211301,Social Work Services,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P111024,Art Enrichment-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111039,Music-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111042,Art-Elem-Special Ed,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111055,Classroom Instruction-Supp-El,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113042,R O T C-Vocational,,,1,Instruction,Regular Instruction Programs,High School
+P113046,Reduced Class Size HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113073,Other Govt Fnded Pgms-Instr,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P221245,Recognizing Excellence in Academic Leadership (REAL),002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221247,ISO Algebra PD,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221257,AMPS Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111060,Foreign Language-French-Elem,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111061,Foreign Language-Spanish-Elem,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111070,Kindergarten-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113078,Foreign Language-French-Voc,,,1,Instruction,Regular Instruction Programs,High School
+P113086,Music-Instrument-Voc,,,1,Instruction,Regular Instruction Programs,High School
+P113103,Comparability Positions,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P221089,Personalized Learning Instructional Supports,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P227924,Early Childhood-Improv Of Inst,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P233031,Literacy Program,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111085,Early Childhood: Subcontracting,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113117,Art-Vocational,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113121,Automobile Driver Education,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113133,Engineering Magnet Teachers-in-Training - Certified Quota,,,1,Instruction,Regular Instruction Programs,High School
+P211009,Truancy Hotline,,,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P211010,Tier 1 Services,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P211011,Tier II/III Services,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P212101,DCCP Specialist - Area 19,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P264502,Employee Services,002000,Support Services,1,Support Services,Support Services,Staff Services
+P266102,Business Services,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P233019,Early Childhood-Prekg-Admn,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P211703,Guidance,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P212002,Guidance Svcs-El-Gt50% Sp Ed,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P212017,Other Govt Fnded Prjts-Guidnce,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P419001,Payroll Salvage,004000,Total Payments to Other District & Govt Units,1,Nonprogrammed Charges,Payments - Other Gov't Units,Other Payments to In-State Gov't
+P005140,Bonds,,,0,Debt Services,Debt Services - Interest,Bonds
+P514001,Bond Interest,005000,Debt Services,1,Debt Services,Debt Services - Interest,Bonds
+P266208,Service Desk,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P252211,Education Liaison - School Support,,,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P233033,Private School - Admin,002000,Support Services,1,Support Services,Support Services - General Admin,Private School - Admin
+P002130,Health Services,,,0,Support Services,Support Services - Pupils,Health Services
+P213007,Lisc Iss Health Services,,,1,Support Services,Support Services - Pupils,Health Services
+P221262,OST School Support,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221085,HS Science Professional Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P002664,Data Processing - Oper Services,,,0,Support Services,Support Services,Data Processing Services
+P249001,Programming Of Students-Reg,002000,Support Services,1,Support Services,Support Services - School Administration,Other Support Services - School Admin
+P251002,School Council Relations,002000,Support Services,1,Support Services,Support Services - Business,Direction Business Support Services
+P251470,School Climate Team,002000,Support Services,1,Support Services,Support Services - Business,Direction Business Support Services
+P221305,School Based Problem Solving,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221309,Donations-Staff Development,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P252210,Capital Planning Budget,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P009544,Leased Buildings,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009546,School Transitions,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009563,Bathrooms,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009565,FAA/ADA,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P111125,SIP - Differentiated Instruction Support Strategies- Instruction,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P144611,CTE - Plumbing,,,1,Instruction,Vocational Programs,CTE - Plumbing
+P144710,Welding,001000,Instruction,1,Instruction,Vocational Programs,Welding
+P119016,Mathematics,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P259600,Equipment Leasing Program,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P231115,Property Damage Insurance,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254504,ITS Tech Pool Funding,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P113140,PASS Harper,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P001190,Other Regular Instruction K-12,,,0,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P213018,Licensed Practical Nurses (LPN),,,1,Support Services,Support Services - Pupils,Health Services
+P144809,CTE - Associated Equipment Distributors Foundation (AEDF),,,1,Instruction,Vocational Programs,CTE - Associated Equipment Distributors Foundation (AEDF)
+P144902,AVIATION-VOCATIONAL,001000,Instruction,1,Instruction,Vocational Programs,AVIATION-VOCATIONAL
+P144905,CTE - Logistics,,,1,Instruction,Vocational Programs,CTE - Logistics
+P254035,O&M Far South,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254037,Sodexo,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P253831,Bus Svc-Field Trips-Reg,002000,Support Services,1,Support Services,Support Services - Business,Pupil Transportation Services
+P254907,WAN-ERATE,,,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254004,Utilities,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P118996,Other Instr Purposes Res,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119009,Teacher Substitutes/Overtime,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119018,St Chapt 1-Social Studies,,,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P146003,Computer Ed-Voc/Apprentice,001000,Instruction,1,Instruction,Vocational Programs,Computer Ed-Voc/Apprentice
+P147201,Culinary Arts,001000,Instruction,1,Instruction,Vocational Programs,Culinary Arts
+P002160,Physical Therapy,,,0,Support Services,Support Services - Pupils,Physical Therapy
+P255015,Transportation-Special Prog,002000,Support Services,1,Support Services,Support Services - Business,Pupil Transportation Services
+P255022,Special Education - Alternate Mode Regular Track Student Transportatio,,,1,Support Services,Support Services - Business,Pupil Transportation Services
+P255052,General Transportation Services,002000,Support Services,1,Support Services,Support Services - Business,Pupil Transportation Services
+P002541,O&M - Services Area Director,,,0,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P119047,School Improvement - School Based Instructional Support - After School,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119050,Charter/Contract Per Pupil Revenue K-12 Tuition,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119052,Charter/Contract School Facility Subsidy/Charges,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P219005,School Recess Support,002000,Support Services,1,Support Services,Support Services - Pupils,Other Support Services - Pupil
+P002200,Support Services - Instruction Staff,,,0,Support Services,Support Services - Instruction Staff,
+P221430,Administrative Support,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P256104,Food Services-Field Operations,,,1,Support Services,Support Services - Business,Food Services
+P254011,Landscaping,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254012,Oth Govt Fd Prog-Oper/Maint,,,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254021,Trash Removal,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254027,Boiler and Chillers,,,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254028,Moves,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254031,O&M North,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254033,O&M South,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P119059,Budget Use Only-CH/CO Future Use 7,,,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119060,OIP - Language Arts,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P119045,Other Enrichment Programs,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P250003,Charter Schools - Support Services,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P221023,TLCF-Catholic/Imp Of Instr,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P241016,Instructional Administration,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P002212,Inst/Curriculum Development SE,,,0,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P256016,NSS - Sales to Pupils - Lunch,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P002570,Internal Services,,,0,Support Services,Support Services - Business,Internal Services
+P122722,EMH-HS-Special Ed,001000,Instruction,1,Instruction,Special Education Programs,Educable Mentally Handicapped
+P221033,Small Learning Communities,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221036,Test Preparation,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P257101,Purchasing & Contracts Admin,002000,Support Services,1,Support Services,Support Services - Business,Internal Services
+P251148,Real Estate Administration,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P001204,Physical Impairment,,,0,Instruction,Special Education Programs,Physical Impairment
+P120407,Traumatic Brain Injury,001000,Instruction,1,Instruction,Special Education Programs,Physical Impairment
+P120411,Phys Handicpd-Elem,001000,Instruction,1,Instruction,Special Education Programs,Physical Impairment
+P001205,Learning Disabled,,,0,Instruction,Special Education Programs,Learning Disabled
+P122954,Mod/Sev Learn Dis-Biling-Elem,001000,Instruction,1,Instruction,Special Education Programs,Learning Disabled
+P120701,Hearing Impaired-HS,001000,Instruction,1,Instruction,Special Education Programs,Hearing Impairment
+P221037,Advancement Via Individual Determination (AVID),002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221041,CLIP - Chicago Literacy Initiative Partnership,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P262301,ONS Accountability,002000,Support Services,1,Support Services,Support Services,Plan Research Devel Eval Services
+P290006,General Salary S Bkt,002000,Support Services,1,Support Services,Other Supporting Services,General Salary S Bkt
+P253518,Annex,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253521,Overhead,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253522,Environment,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253523,Network,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P121201,Behavior Disordered,,,1,Instruction,Special Education Programs,Behavior Disordered
+P121202,Behavior Disabilities,001000,Instruction,1,Instruction,Special Education Programs,Behavior Disordered
+P121302,Autism,001000,Instruction,1,Instruction,Special Education Programs,Other Health Impairment
+P001220,Cross Categorical,,,0,Instruction,Special Education Programs,Cross Categorical
+P122001,Cross Cat-AUT/LD,001000,Instruction,1,Instruction,Special Education Programs,Cross Categorical
+P122007,Cross Cat-EMH/TMH,001000,Instruction,1,Instruction,Special Education Programs,Cross Categorical
+P149014,Product Marketing / Entrepreneurship,001000,Instruction,1,Instruction,Vocational Programs,Product Marketing / Entrepreneurship
+P299711,Interfund Alloc-Equipment Fund,002000,Support Services,1,Support Services,Other Supporting Services,Interfund Alloc-Equipment Fund
+P253539,Developer Services and Permitting,002000,Support Services,1,Support Services,Developer Services and Permitting,
+P253533,Modern Schools Across Chicago,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P253543,Parent Award,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P122016,Cross Cat-EMH/PH,,,1,Instruction,Special Education Programs,Cross Categorical
+P221057,BEWL Newcomer Center,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221061,Dual Language Instr Supp,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221068,School Improvement - Area Based Programs - PD,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P150013,Chess Program,001000,Instruction,1,Instruction,Interscholastic Programs,Chess Program
+P002640,Staff Services,,,0,Support Services,Support Services,Staff Services
+P228120,Categ Assessment/Testing,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P231001,Student Discipline,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P231002,Academic Support Services,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P231004,Board Of Education - Admin,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P231101,Legal Services,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P125008,Title I - Neglected & Delinquent Programs,001000,Instruction,1,Instruction,Special Education Programs,Education Deprived/Remedial
+P001310,Adult Basic Education,,,0,Instruction,Adult/Continuing ED Program,Adult Basic Education
+P140006,CTE - Hospitality,001000,Instruction,1,Instruction,Vocational Programs,CTE - Hospitality
+P150020,Special Olympics,001000,Instruction,1,Instruction,Interscholastic Programs,Special Olympics
+P217662,IASA-Nonpublic Summer,003000,Community Services,1,Community Services,Nonpublic School Pupil Services,IASA-Nonpublic Summer
+P370007,NonPublic HomeSchool/Other,003000,Community Services,1,Community Services,Nonpublic School Pupil Services,NonPublic HomeSchool/Other
+P370012,Federal - IDEA Nonpublic (Christian),003000,Community Services,1,Community Services,Nonpublic School Pupil Services,Federal - IDEA Nonpublic (Christian)
+P373280,ECIA-HEALTH SERVICES-NONPUBLIC,003000,Community Services,1,Community Services,Nonpublic School Pupil Services,ECIA-HEALTH SERVICES-NONPUBLIC
+P231113,Tort Claims-Casualty,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P231121,New School Development-Admin,,,1,Support Services,Support Services - General Admin,Board Of Education Services
+P231127,Turn Around Schools - HS ADMIN,,,1,Support Services,Support Services - General Admin,Board Of Education Services
+P231401,Reform-LSC Elections,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P140060,Police and Fire Training - Voc,001000,Instruction,1,Instruction,Vocational Programs,Police and Fire Training - Voc
+P140205,Broadcast Technology,001000,Instruction,1,Instruction,Vocational Programs,Broadcast Technology
+P221226,Paideia Program,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P171002,Driver Education,001000,Instruction,1,Instruction,Driver Education Programs,Driver Education
+P264203,Employee Solutions,002000,Support Services,1,Support Services,Support Services,Staff Services
+P390030,Parent Training,003000,Community Services,1,Community Services,Other Community Services,Parent Training
+P231012,Official Duties-Board Members,,,1,Support Services,Support Services - General Admin,Board Of Education Services
+P231021,School Law,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P230008,Reading First - Administration,,,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P222006,ISO Library Matching Grants,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Education Media Services
+P211202,Data Management,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P211204,Assessment,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P001710,VOC Education - Handicapped,,,0,Instruction,VOC Education - Handicapped,
+P171001,Second Trans Exper Pgm (Step),,,1,Instruction,VOC Education - Handicapped,Second Trans Exper Pgm (Step)
+P001800,Bilingual Programs,,,0,Instruction,Bilingual Programs,
+P264211,Human Resources Technology,002000,Support Services,1,Support Services,Support Services,Staff Services
+P264213,Talent Operations,002000,Support Services,1,Support Services,Support Services,Staff Services
+P113026,Chemistry-Vocational,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P211209,Drop-Out Prevention,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P211401,Record Retention & Specl Pjts,002000,Support Services,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P111036,Advanced Placement Program,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111051,Reduced Class Size 4-5,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111052,G 3-8 Intr/Upper-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113044,Auto Driver Ed-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113048,Geography-Voc-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113065,History-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113067,Classroom Instruction-Supp-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P111063,Music-Vocal-Elem,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111076,Social Studies-Elem,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111078,Mathematics-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113084,Music Instrument Strings-HS,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113098,OST High School Programs Instruction/Regular,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P113102,Discretionary Positions,,,1,Instruction,Regular Instruction Programs,High School
+P221087,Specially-Designed Instruction: Orton-Gillingham Training,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221088,Specially-Designed Instruction: Picture Exchange Communication System,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P002222,School Library Services,,,0,Support Services,Support Services - Instruction Staff,Education Media Services
+P111081,Foreign Language-Elementary,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111099,ISO CMSI Math Inst,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111104,ISO CMSI Science 6-8 Inst,,,1,Instruction,Regular Instruction Programs,Elementary
+P111105,ISO Other Library Inst,,,1,Instruction,Regular Instruction Programs,Elementary
+P111106,ISO Writing Instr,,,1,Instruction,Regular Instruction Programs,Elementary
+P111110,Student Book Fees,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113130,Language Arts,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P211029,Professional Development - Attendance Services,,,1,Support Services,Support Services - Pupils,Attendance/Social Work Services
+P002120,Guidance Services,,,0,Support Services,Support Services - Pupils,Guidance Services
+P266101,Business Services,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P233004,Spec Ed & Pupil Support-Admin,002000,Support Services,1,Support Services,Support Services - General Admin,Special Area Admin Services
+P212004,Character Education,,,1,Support Services,Support Services - Pupils,Guidance Services
+P002490,Other Support Services - School Admin,,,0,Support Services,Support Services - School Administration,Other Support Services - School Admin
+P212032,School Actions Student Guidance Supports,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P212040,Elementary Career Development,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P213006,Health Services-School Nurses,002000,Support Services,1,Support Services,Support Services - Pupils,Health Services
+P221078,CDC Asthma PD,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P266301,Communication Training and Change Management,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P249006,OST External Relations & Special Projects,,,1,Support Services,Support Services - School Administration,Other Support Services - School Admin
+P250007,Small Schools Support Services,,,1,Support Services,Support Services - Business,Direction Business Support Services
+P221676,Library-Improvement Initiative,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P002213,Instruction Staff Training Services,,,0,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221302,School Developmnt/Intervention,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P111016,Debate-Critical Thinking,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P111022,Fgn Language Enrichment-Elem,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P113020,Gen Science-Vocational,001000,Instruction,1,Instruction,Regular Instruction Programs,High School
+P266423,Identity Management,002000,Support Services,1,Support Services,Support Services,Data Processing Services
+P009474,SIS - Hardware,,,1,Support Services,Other Supporting Services,SIS - Hardware
+P009477,WAN - Upgrades,,,1,Support Services,Other Supporting Services,WAN - Upgrades
+P009483,LAN - Server,,,1,Support Services,Other Supporting Services,LAN - Server
+P252301,Bureau of Disbursements & Business Services,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P252302,Bureau Of Treasury,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P252401,Payroll Services,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P252402,Centralized Payroll Services,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P002525,Financial Accounting Services,,,0,Support Services,Support Services - Business,Fiscal Services
+P252501,Bureau Of General Accounting,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P111045,Reading - Elementary Support,001000,Instruction,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221003,General Charges - Improvement Of Instruction Services,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P140705,Auto Body Repair,001000,Instruction,1,Instruction,Vocational Programs,Auto Body Repair
+P142158,Computer Education Bkt,,,1,Instruction,Vocational Programs,Computer Education Bkt
+P009561,Electrical,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009590,Oracle Other,002000,Support Services,1,Support Services,Other Supporting Services,Oracle Other
+P290004,General Salary S Bucket,002000,Support Services,1,Support Services,Other Supporting Services,General Salary S Bucket
+P252001,Management And Budget-Admin,002000,Support Services,1,Support Services,Support Services - Business,Fiscal Services
+P144606,Carpentry,001000,Instruction,1,Instruction,Vocational Programs,Carpentry
+P144608,Wood Shop-HS,,,1,Instruction,Vocational Programs,Wood Shop-HS
+P144612,Ground Breakers Program,001000,Instruction,1,Instruction,Vocational Programs,Ground Breakers Program
+P254608,School Security Personnel,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254613,School Actions Safety and Security,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P009406,Asset Management Repairs,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009426,All Other,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P111153,Real Men Read,001000,Instruction,1,Instruction,Regular Instruction Programs,Elementary
+P112002,JROTC Middle Schools,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P214000,Psychological Services,,,1,Support Services,Support Services - Pupils,Psychological Services
+P214001,School Psychologist Intern,,,1,Support Services,Support Services - Pupils,Psychological Services
+P254902,Bureau of Risk & Benefits Mgmt,,,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P255581,Campus Managers,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P253743,General Transportation Services - Homeless,002000,Support Services,1,Support Services,Support Services - Business,Pupil Transportation Services
+P254903,Rental Program,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P254003,Operations-Apprentice Pgm,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P009444,Leased Buildings,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P119014,St Chapt 1-Language Arts,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P146007,St Chapt 1-Computer Education,,,1,Instruction,Vocational Programs,St Chapt 1-Computer Education
+P146903,Home Economics-HS-Special Ed,,,1,Instruction,Vocational Programs,Home Economics-HS-Special Ed
+P147202,Chef Training-Vocational,,,1,Instruction,Vocational Programs,Chef Training-Vocational
+P219002,LISC ISS Social Supports,,,1,Support Services,Support Services - Pupils,Other Support Services - Pupil
+P255013,Childrens Welfare Attdnt Prgm,,,1,Support Services,Support Services - Business,Pupil Transportation Services
+P255018,Transp - Non-Public School Transportation for STLS,,,1,Support Services,Support Services - Business,Pupil Transportation Services
+P255021,Options Student Transportation,002000,Support Services,1,Support Services,Support Services - Business,Pupil Transportation Services
+P255051,School Bus Aides-Special Ed,002000,Support Services,1,Support Services,Support Services - Business,Pupil Transportation Services
+P119028,Music Instr Wind Prc-HS,,,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P002562,Food Prep/Dispensing Services,,,0,Support Services,Support Services - Business,Food Services
+P254032,O&M West,002000,Support Services,1,Support Services,Support Services - Business,Operations Maintainance - Plant Services
+P009512,Change Orders,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P119070,Personalized Learning Instruction,001000,Instruction,1,Instruction,Regular Instruction Programs,Other Regular Instruction K-12
+P221021,Other Gfp-Improv Of Instr,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P256011,Food,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P256012,Nutrition Support Service POS,,,1,Support Services,Support Services - Business,Food Services
+P256219,New Hire Pool,002000,Support Services,1,Support Services,Support Services - Business,Food Services
+P255007,ECIA-CPC-Trans,,,1,Support Services,Support Services - Business,Pupil Transportation Services
+P009513,FS O&M CIP,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009517,Sodexo IFM - CIP,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009524,CPS Management,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P009538,Land Acquisition,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P002530,Facilities Acquisitions/Construction Services,,,0,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P001125,Pre-K Programs,,,0,Instruction,Pre-K Programs,
+P001202,Trainable Mentally Handicapped,,,0,Instruction,Special Education Programs,Trainable Mentally Handicapped
+P221029,Professional Development - Attendance Services,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221034,Instructional Design Systems (IDS),002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P257104,Business Enterprise Development,002000,Support Services,1,Support Services,Support Services - Business,Internal Services
+P257302,Warehousing & Distribution-Adm,,,1,Support Services,Support Services - Business,Internal Services
+P253504,Financial & Administrative Services,002000,Support Services,1,Support Services,Support Services - Business,Facilities Acquisitions/Construction Services
+P221040,Striving Readers,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P147801,Practical Nursing,001000,Instruction,1,Instruction,Vocational Programs,Practical Nursing
+P261026,Spec Serv - MIS,002000,Support Services,1,Support Services,Support Services,Direction - Central Support Services
+P002624,Planning Services,,,0,Support Services,Support Services,Plan Research Devel Eval Services
+P290009,Oth Gfp-Supp Serv-Other,002000,Support Services,1,Support Services,Other Supporting Services,Oth Gfp-Supp Serv-Other
+P121207,Emotional Disturbance Disabilities,001000,Instruction,1,Instruction,Special Education Programs,Behavior Disordered
+P122006,Cross Cat-EMH/BD,001000,Instruction,1,Instruction,Special Education Programs,Cross Categorical
+P149004,Business Education-Vocational,001000,Instruction,1,Instruction,Vocational Programs,Business Education-Vocational
+P221052,CTE - Curriculum,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221056,Other Lang & Cult Pgms,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P290012,SES Outreach,002000,Support Services,1,Support Services,Other Supporting Services,SES Outreach
+P290030,Non-SBB Tuition for Charter/Contract Schools,002000,Support Services,1,Support Services,Other Supporting Services,Non-SBB Tuition for Charter/Contract Schools
+P299709,Interfund Alloc-Pension Fund,002000,Support Services,1,Support Services,Other Supporting Services,Interfund Alloc-Pension Fund
+P003000,Community Services,,,0,Community Services,,
+P320006,After School Academy,003000,Community Services,1,Community Services,Community Recreation Services,After School Academy
+P223017,Summer Assessment,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P122009,Cross Cat-LD/BD-INSTR,001000,Instruction,1,Instruction,Special Education Programs,Cross Categorical
+P111086,Special Education Teacher Assignments - Charter and Contract,001000,Instruction,1,Instruction,Special Education Programs,Special Education
+P221060,Heritage Language Instr Supp,,,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221067,School Improvement - School Based Programs - PD,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P150001,Academic Decathlon-HS,001000,Instruction,1,Instruction,Interscholastic Programs,Academic Decathlon-HS
+P150012,Spelling Bee,001000,Instruction,1,Instruction,Interscholastic Programs,Spelling Bee
+P262007,Demographics,002000,Support Services,1,Support Services,Support Services,Plan Research Devel Eval Services
+P231602,Healthcare and Benefits Management,002000,Support Services,1,Support Services,Support Services,Staff Services
+P231005,Reform,,,1,Support Services,Support Services - General Admin,Board Of Education Services
+P125020,Science - Curriculum Supports,001000,Instruction,1,Instruction,Special Education Programs,Education Deprived/Remedial
+P125022,Technology and Engineering - Curriculum Supports,001000,Instruction,1,Instruction,Special Education Programs,Education Deprived/Remedial
+P125024,Homework Assistance,001000,Instruction,1,Instruction,Special Education Programs,Education Deprived/Remedial
+P131002,Oth GFP-Homeless-Instruction,001000,Instruction,1,Instruction,Adult/Continuing ED Program,Oth GFP-Homeless-Instruction
+P140009,Science - Health,001000,Instruction,1,Instruction,Vocational Programs,Science - Health
+P140010,JPTA-WECEP,001000,Instruction,1,Instruction,Vocational Programs,JPTA-WECEP
+P140011,JPTA-PEP,,,1,Instruction,Vocational Programs,JPTA-PEP
+P160002,Summer Program Assessment,,,1,Instruction,Summer School Programs,Summer Program Assessment
+P160005,Summer Bridge,001000,Instruction,1,Instruction,Summer School Programs,Summer Bridge
+P221212,Achievement Academies-Support,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P370008,Non Public Professional Development,003000,Community Services,1,Community Services,Nonpublic School Pupil Services,Non Public Professional Development
+P231125,External Resources & Partnership - Administration,002000,Support Services,1,Support Services,Support Services - General Admin,Board Of Education Services
+P140225,Cosmetology,001000,Instruction,1,Instruction,Vocational Programs,Cosmetology
+P160014,Summer Jobs Program,001000,Instruction,1,Instruction,Summer School Programs,Summer Jobs Program
+P160015,OST High School Programs Summer School,,,1,Instruction,Summer School Programs,OST High School Programs Summer School
+P390011,Community School Initiative,003000,Community Services,1,Community Services,Other Community Services,Community School Initiative
+P390015,Community Arts Sustaining Academics (CASA),,,1,Community Services,Other Community Services,Community Arts Sustaining Academics (CASA)
+P300006,Early Childhood-Comm Serv,003000,Community Services,1,Community Services,Early Childhood-Comm Serv,
+P300010,SMART/Alternatives to Expulsion,003000,Community Services,1,Community Services,SMART/Alternatives to Expulsion,
+P002320,Executive Administration Se,,,0,Support Services,Support Services - General Admin,Executive Administration Se
+P002321,Office - Superintendent Services,,,0,Support Services,Support Services - General Admin,Executive Administration Se
+P002230,Assessment And Testing,,,0,Support Services,Support Services - Instruction Staff,Assessment And Testing
+P212109,DCCP Counseling,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P212110,DCCP College Tours/Fairs,002000,Support Services,1,Support Services,Support Services - Pupils,Guidance Services
+P180006,Bilingual Education-Elem,001000,Instruction,1,Instruction,Bilingual Programs,Bilingual Education-Elem
+P182876,Bilingual Centers-HS,,,1,Instruction,Bilingual Programs,Bilingual Centers-HS
+P221231,Acad Pgm Imp-Visual/Perf Arts,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P221232,Program Develop Tech Supp,002000,Support Services,1,Support Services,Support Services - Instruction Staff,Improvement Of Instructional Services
+P264204,Admin-Career Service Personnel,002000,Support Services,1,Support Services,Support Services,Staff Services
+P264205,Sub Teacher Assignment Svcs,002000,Support Services,1,Support Services,Support Services,Staff Services

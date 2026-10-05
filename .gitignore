@@ -1,6 +1,7 @@
 __pycache__/
 .DS_Store
 raw/
+!data/public/2026/sources/raw/
 data/people/
 build/out/
 build/raw-inputs-*.zip

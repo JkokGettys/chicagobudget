@@ -1,0 +1,2 @@
+# Published snapshot files preserve upstream bytes, including original CSV line endings.
+data/public/2026/** -text
