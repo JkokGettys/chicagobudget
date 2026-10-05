@@ -3,10 +3,10 @@ import { createServer } from 'node:http';
 import { once } from 'node:events';
 
 // Synthetic HTTP-cache regression, NOT a deployed-site/component integration test.
-// Run from the repository root: node tests/cache-navigation-browser.mjs
-// Uses site/node_modules, or PLAYWRIGHT_MODULE / CHROMIUM_PATH overrides.
+// Run from site: node tests/cache-navigation-browser.mjs
+// Uses Playwright, or PLAYWRIGHT_MODULE / CHROMIUM_PATH overrides.
 // No routing, service workers, cache disabling, build, or deployment is involved.
-const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || '../site/node_modules/playwright/index.mjs');
+const { chromium } = await import(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const original = '/city/box/city.infrastructure-services';
 const canonical = `${original}/`;
 const heading = 'Streets & Infrastructure Services';
