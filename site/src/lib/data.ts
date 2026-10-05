@@ -25,7 +25,7 @@ export function children(id:string):Box[]{
 }
 export const roots = ['city','cps','parks'] as const;
 export const titles:Record<string,string>={city:'City of Chicago',cps:'Chicago Public Schools',parks:'Chicago Park District','city-twice':'Counted twice'};
-export function href(n:Box){const root=n.root==='city-twice'?'city':n.root??n.id.split('.')[0];return n.id==='city-twice'?'/city/counted-twice':n.id===root?`/${root}`:`/${root}/box/${n.id}`;}
+export function href(n:Box){const root=n.root==='city-twice'?'city':n.root??n.id.split('.')[0];return n.id==='city-twice'?'/city/counted-twice':n.id===root?`/${root}`:`/${root}/box/${n.id}/`;}
 export function compact(cents:number){const n=Math.abs(cents)/100;const value=n>=1e9?`$${(n/1e9).toFixed(2)} billion`:n>=1e6?`$${(n/1e6).toFixed(1)} million`:`$${Math.round(n).toLocaleString('en-US')}`;return cents<0?`takes away ${value}`:value;}
 export function exact(cents:number){return new Intl.NumberFormat('en-US',{style:'currency',currency:'USD'}).format(cents/100)}
 export const basisLabels:Record<string,string>={budget:'In the budget',tied:'Adds up exactly',gov_estimate:'Government estimate',paid_to_date:'Paid so far',proxy:'Our estimate',residual:'Leftover',adjustment:'Adjustment'};

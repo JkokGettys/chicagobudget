@@ -12,7 +12,7 @@ import Base from '../layouts/Base.astro';
   const labels:Record<string,string>={budget:'In the budget',tied:'Adds up exactly',gov_estimate:'Government estimate',paid_to_date:'Paid so far',proxy:'Our estimate',residual:'Leftover',adjustment:'Adjustment'};
   const gov=location.pathname.split('/')[1];
   const id=decodeURIComponent(location.pathname.split('/box/')[1]??'').replace(/\/$/,'');
-  const href=(id:string)=>id===gov?`/${gov}`:id==='city-twice'?'/city/counted-twice':`/${gov}/box/${encodeURIComponent(id)}`;
+  const href=(id:string)=>id===gov?`/${gov}`:id==='city-twice'?'/city/counted-twice':`/${gov}/box/${encodeURIComponent(id)}/`;
   const get=async(path:string)=>{const response=await fetch(`/data/${path}`);if(!response.ok)throw Error('Data not available');return response.json()};
   async function render(){
     try{

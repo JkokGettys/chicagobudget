@@ -186,7 +186,7 @@
       if(node.why)add(detail,'p',`Why: ${node.why}`);
       if(node.collapse_into)add(detail,'p','This amount is included in another line; do not add it again.');
       const gov=node.root??node.id.split('.')[0];
-      if(roots.includes(gov)){const link=el('a','Open full line page ↗');link.href=node.id===gov?`/${gov}`:`/${gov}/box/${encodeURIComponent(node.id)}`;detail.append(link)}
+      if(roots.includes(gov)){const link=el('a','Open full line page ↗');link.href=node.id===gov?`/${gov}`:`/${gov}/box/${encodeURIComponent(node.id)}/`;detail.append(link)}
       if(node.source!==undefined){
         const citations=el('div');citations.className='detail-sources';add(citations,'h4','Sources');const list=el('ul');citations.append(list);detail.append(citations);
         try{
