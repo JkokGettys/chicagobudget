@@ -47,7 +47,8 @@ try {
     });
     const heading = normalize(await page.locator('main h1').innerText());
     check(`${record.href}: not an error page`, !/Box not found|Could not open this box|404/i.test(heading));
-    check(`${record.href}: correct heading (${record.name})`, heading === normalize(record.name));
+    const officialHeading = normalize(await page.locator('main h1').getAttribute('title') || heading);
+    check(`${record.href}: correct heading (${record.name})`, heading === normalize(record.name) || officialHeading === normalize(record.name));
     // Static pages have a compact headline plus an exact strong value. The
     // dynamic shell uses the exact amount as its headline. Never match a child.
     const amounts = await page.locator('main header .amount, main header p strong').allTextContents();

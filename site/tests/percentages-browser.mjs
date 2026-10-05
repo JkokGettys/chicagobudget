@@ -23,7 +23,7 @@ try {
     if(output && [1440,375].includes(width)){await mkdir(output,{recursive:true});await page.screenshot({path:join(output,`budget-shares-${width}.png`),fullPage:true});}
   }
   await page.locator('#box .tile').first().click();
-  await page.waitForFunction(()=>document.querySelector('#box h1')?.textContent==='Chicago Department of Transportation');
+  await page.waitForFunction(()=>document.querySelector('#box h1')?.getAttribute('title')==='Chicago Department of Transportation');
   const parent=Number((await page.locator('#box header .amount').innerText()).replace(/[$,]/g,''));
   for(const row of await page.locator('#inside tbody tr').all()){
     const amount=Number((await row.locator('td').first().innerText()).replace(/[$,]/g,''));
