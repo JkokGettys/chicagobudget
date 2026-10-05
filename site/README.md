@@ -12,11 +12,11 @@ The public source is at `https://github.com/gettty/chicagobudget`. Production ru
 
 The original budget input archive and generated `public/data/` are intentionally untracked. A fresh checkout cannot build the complete site until those inputs are supplied and the root export process has run. GitHub Actions site checks also require the `CHICAGO_BUDGET_INPUTS_URL` repository variable. Do not switch to automatic Git-based Pages builds until the input pipeline has been configured and tested.
 
-## JamesFeedback1 design preview
+## Motion-led design
 
-This branch is an alternative motion-led UI for comparison, not a change to `main`. It pairs an editorial paper-and-lake-blue interface with a real boid simulation. Dot counts represent positive budget shares using largest-remainder allocation. All amounts, source links, budget pages, and the deep explorer continue to use the existing data export. Reduced-motion, pause, offscreen suspension, and a no-JavaScript SVG/list fallback are supported.
+The production site pairs an editorial paper-and-lake-blue interface with a data-driven boid simulation. Dot counts represent positive budget shares using largest-remainder allocation. All amounts, source links, budget pages, and the deep explorer continue to use the existing data export. Reduced-motion, pause, offscreen suspension, and a no-JavaScript SVG/list fallback are supported.
 
-Use `npm run deploy:preview` after building to publish only the `JamesFeedback1` Cloudflare Pages preview. **Do not run `npm run deploy` from this branch**, since that command targets production.
+For production, run `npm run deploy` **only from `main` after checks and build**. `npm run deploy:preview` publishes the `JamesFeedback1` Pages preview and does not update the production custom domain.
 
 Validation: `npm run check` and `npm test`. For real browser checks, run `npx playwright install chromium`, start `npm run dev` in another terminal, then `npm run test:browser`. Set `PREVIEW_URL` to test a deployed preview, `SCREENSHOT_DIR` for captures, or `CHROMIUM_PATH` to reuse an installed Chromium executable. `PLAYWRIGHT_MODULE` optionally selects an existing Playwright module. The browser suite checks data switching, animation/pause/reduced-motion, keyboard access, no-JS fallback, mobile overflow, and the existing deep explorer.
 
