@@ -1,0 +1,242 @@
+---
+import { roots, children, box, href, exact, compact } from '../lib/data';
+import { allocateParticles } from '../lib/budgetFlock';
+const colors = ['#7bd6f1', '#ff8d79', '#acd5ba', '#f3dfad', '#c6b5ee', '#e6b8ce', '#9fbbe5', '#c9cfbd'];
+const periods = { city: 'Calendar year 2026', cps: 'FY2026 · July 2025–June 2026', parks: 'Park District FY2026' };
+const labels = { city: 'City', cps: 'Schools', parks: 'Parks' };
+const budgets = roots.flatMap(root => {
+  const node = box(root);
+  if (!node) return [];
+  const all = children(root), positive = all.filter(n => n.amount_cents > 0).sort((a, b) => b.amount_cents - a.amount_cents);
+  const denominator = positive.reduce((sum, n) => sum + n.amount_cents, 0);
+  const groups = positive.length > 8 ? [...positive.slice(0, 7).map(n => [n]), positive.slice(7)] : positive.map(n => [n]);
+  const rows = groups.map((members, i) => {
+    const amount = members.reduce((sum, n) => sum + n.amount_cents, 0);
+    return { label: members.length > 1 ? `${members.length} other categories` : members[0].name, amount, exact: exact(amount), share: `${(denominator ? amount / denominator * 100 : 0).toFixed(1)}%`, color: colors[i], href: members.length === 1 ? href(members[0]) : href(node), members: members.map(n => ({ name: n.name, href: href(n), exact: exact(n.amount_cents), share: `${(n.amount_cents / denominator * 100).toFixed(1)}%` })) };
+  });
+  return [{ root, title: node.name, label: labels[root], total: compact(node.amount_cents), exact: exact(node.amount_cents), period: node.period_label || periods[root], href: href(node), denominator, scale: denominator === node.amount_cents ? `Shares of ${exact(denominator)} in positive budget categories.` : `Shares of ${exact(denominator)} in positive categories, not the ${exact(node.amount_cents)} net budget.`, adjustments: all.filter(n => n.amount_cents < 0).map(n => ({ name: n.name, href: href(n), exact: exact(n.amount_cents) })), rows }];
+});
+const city = budgets[0];
+---
+{city && <budget-flock class="flock" data-budgets={JSON.stringify(budgets)}>
+  <header class="flock-header">
+    <div><p class="eyebrow">Budget in motion</p><h2 data-title>{city.title}</h2></div>
+    <div class="flock-controls" hidden><div class="segments" role="group" aria-label="Choose a separate budget">{budgets.map((b, i) => <button type="button" data-budget={i} aria-pressed={i === 0 ? 'true' : 'false'}>{b.label}</button>)}</div></div>
+  </header>
+  <div class="flock-meta"><p><strong data-total title={city.exact}>{city.total}</strong><span data-period>{city.period}</span></p><span class="separate">Three governments. Separate budgets.</span></div>
+  <div class="flock-body">
+    <div class="field-column">
+      <div class="flock-field">
+        <svg class="static-flock" viewBox="0 0 720 440" aria-hidden="true">{city.rows.flatMap((row, group) => {
+          const count = allocateParticles(city.rows.map(r => r.amount))[group];
+          const angle = group * Math.PI * 2 / city.rows.length - Math.PI / 2;
+          const x = 360 + Math.cos(angle) * 210, y = 220 + Math.sin(angle) * 125;
+          return Array.from({ length: count }, (_, i) => { const a = i * 2.399963; const radius = Math.sqrt((i + .5) / count) * (30 + Math.sqrt(count) * 4); return <circle cx={x + Math.cos(a) * radius} cy={y + Math.sin(a) * radius * .72} r="2.6" fill={row.color} />; });
+        })}</svg>
+        <canvas aria-hidden="true"></canvas>
+        <span class="field-corner" aria-hidden="true">One budget.<br />Many moving parts.</span>
+        <button class="motion-button" type="button" hidden>Pause motion</button>
+      </div>
+      <p class="selection" data-selection aria-live="polite" aria-atomic="true">Every dot is an equal share. Explore a category to see its part.</p>
+      <p class="motion-note">Motion is illustrative. Dot counts represent budget share.</p>
+      <p class="rounding-note">240 equal-value dots, rounded to whole dots. Movement is not spending over time.</p>
+    </div>
+    <div class="legend-column">
+      <div class="legend-heading"><span>Inside this budget</span><span>Share</span></div>
+      {budgets.map((budget, bi) => <div class="budget-panel" data-panel={bi} hidden={bi !== 0}>
+        <ol class="flock-legend">{budget.rows.map((row, ri) => <li data-group={ri} style={`--group-color:${row.color}`}>
+          {row.members.length === 1 ? <a class="legend-row" href={row.href}><span class="swatch" aria-hidden="true"></span><span class="row-copy"><span class="row-name">{row.label}</span><span class="row-amount">{row.exact}</span></span><span class="row-share">{row.share}<span class="row-arrow" aria-hidden="true">↗</span></span></a> : <details><summary class="legend-row"><span class="swatch" aria-hidden="true"></span><span class="row-copy"><span class="row-name">{row.label}</span><span class="row-amount">{row.exact}</span></span><span class="row-share">{row.share}<span class="row-arrow" aria-hidden="true">+</span></span></summary><ul class="other-categories">{row.members.map(member => <li><a href={member.href}>{member.name}<span>{member.exact} · {member.share}</span></a></li>)}</ul></details>}
+        </li>)}</ol>
+        <p class="scale-note">{budget.scale}</p>
+        {budget.adjustments.map(adjustment => <p class="adjustment-note"><a href={adjustment.href}>{adjustment.exact} adjustment</a> is not drawn as dots.</p>)}
+      </div>)}
+      <a class="explore-budget" data-explore href={city.href}>Explore the full budget <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <footer class="flock-footer"><span>Follow the dots. Then follow the dollars.</span><nav aria-label="All budget pages">{budgets.map(b => <a href={b.href}>{b.label} <span aria-hidden="true">↗</span></a>)}</nav></footer>
+</budget-flock>}
+
+<script>
+  import { allocateParticles, stepBoids, type Boid, type Attractor } from '../lib/budgetFlock';
+  type Budget = { title: string; total: string; exact: string; period: string; href: string; rows: { label: string; amount: number; exact: string; share: string; color: string }[] };
+  class BudgetFlock extends HTMLElement {
+    private teardown?: () => void;
+    connectedCallback() {
+      if (this.teardown) return;
+      const budgets: Budget[] = JSON.parse(this.dataset.budgets || '[]');
+      const canvas = this.querySelector('canvas')!;
+      const ctx = canvas.getContext('2d');
+      if (!ctx || !budgets.length) return;
+      const abort = new AbortController(), signal = abort.signal;
+      const query = <T extends HTMLElement>(selector: string) => this.querySelector<T>(selector)!;
+      const media = matchMedia('(prefers-reduced-motion: reduce)');
+      let selected = 0, highlighted = -1, pinned = -1, paused = false, visible = false;
+      let width = 720, height = 440, boids: Boid[] = [], targets: Attractor[] = [], counts: number[] = [];
+      let raf = 0, previous = 0;
+      const pause = query<HTMLButtonElement>('.motion-button');
+      const summary = query('[data-selection]');
+      const activeRows = () => Array.from(this.querySelectorAll<HTMLElement>(`[data-panel="${selected}"] .flock-legend > li`));
+      const draw = () => {
+        ctx.clearRect(0, 0, width, height);
+        targets.forEach((target, i) => {
+          ctx.beginPath(); ctx.arc(target.x, target.y, 37 + Math.sqrt(counts[i]) * 4, 0, Math.PI * 2);
+          ctx.strokeStyle = budgets[selected].rows[i].color; ctx.globalAlpha = highlighted === i ? .17 : .055; ctx.lineWidth = 1; ctx.stroke();
+        });
+        boids.forEach(b => {
+          ctx.globalAlpha = highlighted < 0 || highlighted === b.group ? .92 : .17;
+          ctx.fillStyle = budgets[selected].rows[b.group].color;
+          ctx.beginPath(); ctx.arc(b.x, b.y, highlighted === b.group ? 3.3 : 2.65, 0, Math.PI * 2); ctx.fill();
+        });
+        ctx.globalAlpha = 1;
+      };
+      const highlight = (group: number, force = false) => {
+        if (highlighted === group && !force) return;
+        highlighted = group;
+        activeRows().forEach((row, i) => row.classList.toggle('is-highlighted', i === group));
+        const row = budgets[selected].rows[group];
+        summary.textContent = row ? `${row.label} · ${row.exact} · ${row.share} of positive categories` : `${budgets[selected].title} · ${budgets[selected].total}. Every dot is an equal share.`;
+        draw();
+      };
+      const seed = () => {
+        counts = allocateParticles(budgets[selected].rows.map(r => r.amount));
+        targets = counts.map((_, i) => {
+          const angle = i * Math.PI * 2 / counts.length - Math.PI / 2;
+          return { x: width * .5 + Math.cos(angle) * width * .30, y: height * .50 + Math.sin(angle) * height * .29 };
+        });
+        boids = counts.flatMap((count, group) => Array.from({ length: count }, (_, i) => {
+          const angle = i * 2.399963 + group, radius = Math.sqrt((i + .5) / count) * Math.min(width * .14, 28 + Math.sqrt(count) * 4);
+          return { x: targets[group].x + Math.cos(angle) * radius, y: targets[group].y + Math.sin(angle) * radius * .8, vx: Math.cos(angle) * .6, vy: Math.sin(angle) * .6, group };
+        }));
+        draw();
+      };
+      const canRun = () => !paused && !media.matches && !document.hidden && visible;
+      const frame = (time: number) => {
+        raf = 0;
+        if (!canRun()) return;
+        boids = stepBoids(boids, targets, width, height, previous ? (time - previous) / (1000 / 60) : 1);
+        previous = time; draw(); raf = requestAnimationFrame(frame);
+      };
+      const sync = () => {
+        cancelAnimationFrame(raf); raf = 0; previous = 0;
+        pause.textContent = media.matches ? 'Reduced motion · static' : paused ? 'Resume motion' : 'Pause motion';
+        pause.disabled = media.matches;
+        pause.setAttribute('aria-pressed', String(paused || media.matches));
+        if (canRun()) raf = requestAnimationFrame(frame);
+      };
+      const resize = () => {
+        const rect = canvas.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
+        width = Math.max(1, rect.width); height = Math.max(1, rect.height);
+        canvas.width = Math.round(width * dpr); canvas.height = Math.round(height * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0); seed();
+      };
+      this.querySelectorAll<HTMLButtonElement>('[data-budget]').forEach(button => button.addEventListener('click', () => {
+        selected = Number(button.dataset.budget); pinned = -1; highlighted = -1;
+        const budget = budgets[selected];
+        query('[data-title]').textContent = budget.title;
+        query('[data-total]').textContent = budget.total; query('[data-total]').title = budget.exact;
+        query('[data-period]').textContent = budget.period;
+        query<HTMLAnchorElement>('[data-explore]').href = budget.href;
+        this.querySelectorAll<HTMLElement>('[data-panel]').forEach(panel => panel.hidden = Number(panel.dataset.panel) !== selected);
+        this.querySelectorAll('[data-budget]').forEach(tab => tab.setAttribute('aria-pressed', String(tab === button)));
+        seed(); highlight(-1, true); sync();
+      }, { signal }));
+      this.querySelectorAll<HTMLElement>('.flock-legend > li').forEach(row => {
+        const show = () => highlight(Number(row.dataset.group));
+        row.addEventListener('pointerenter', show, { signal });
+        row.addEventListener('pointerleave', () => highlight(pinned), { signal });
+        row.addEventListener('focusin', show, { signal });
+        row.addEventListener('focusout', event => { if (!row.contains(event.relatedTarget as Node)) highlight(pinned); }, { signal });
+      });
+      const hit = (event: PointerEvent | MouseEvent) => {
+        const rect = canvas.getBoundingClientRect(), x = event.clientX - rect.left, y = event.clientY - rect.top;
+        let nearest = -1, distance = 42 * 42;
+        boids.forEach(b => { const d = (b.x - x) ** 2 + (b.y - y) ** 2; if (d < distance) { distance = d; nearest = b.group; } });
+        return nearest;
+      };
+      canvas.addEventListener('pointermove', event => highlight(hit(event)), { signal });
+      canvas.addEventListener('pointerleave', () => highlight(pinned), { signal });
+      canvas.addEventListener('click', event => { const group = hit(event); pinned = pinned === group ? -1 : group; highlight(pinned); }, { signal });
+      pause.addEventListener('click', () => { paused = !paused; sync(); }, { signal });
+      media.addEventListener('change', sync, { signal });
+      document.addEventListener('visibilitychange', sync, { signal });
+      const observer = new IntersectionObserver(entries => { visible = entries[0].isIntersecting; sync(); });
+      const resizer = new ResizeObserver(resize);
+      query('.flock-controls').hidden = false; pause.hidden = false;
+      this.classList.add('is-ready'); resize(); resizer.observe(canvas); observer.observe(canvas); sync();
+      this.teardown = () => { abort.abort(); cancelAnimationFrame(raf); observer.disconnect(); resizer.disconnect(); this.classList.remove('is-ready'); };
+      document.addEventListener('astro:before-swap', () => this.disconnectedCallback(), { once: true, signal });
+    }
+    disconnectedCallback() { this.teardown?.(); this.teardown = undefined; }
+  }
+  if (!customElements.get('budget-flock')) customElements.define('budget-flock', BudgetFlock);
+</script>
+
+<style>
+  .flock { display:block; width:100%; box-sizing:border-box; background:#142c38; color:#f3f1e9; padding:clamp(24px,4vw,52px); border-radius:4px; overflow:hidden; }
+  .flock *, .flock *::before, .flock *::after { box-sizing:border-box; }
+  .flock [hidden] { display:none !important; }
+  .flock p, .flock h2 { margin:0; }
+  .flock a { color:inherit; }
+  .flock-header { display:flex; justify-content:space-between; gap:24px; align-items:center; }
+  .eyebrow { text-transform:uppercase; letter-spacing:.19em; font-size:10px; font-weight:700; color:#b2c7cc; margin-bottom:12px !important; }
+  .flock h2 { font-family:Georgia,'Times New Roman',serif; font-size:clamp(25px,3vw,39px); font-weight:400; letter-spacing:-.025em; line-height:1.15; color:#f3f1e9; }
+  .segments { display:flex; padding:4px; border:1px solid #51646a; border-radius:30px; gap:3px; }
+  .segments button { appearance:none; border:0; font:inherit; font-size:13px; color:#e3e9e8; background:transparent; border-radius:24px; padding:10px 19px; cursor:pointer; }
+  .segments button[aria-pressed=true] { background:#f0e9d7; color:#142c38; }
+  .flock-meta { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:23px 0 24px; border-bottom:1px solid #ffffff24; }
+  .flock-meta p { display:flex; align-items:baseline; gap:17px; flex-wrap:wrap; }
+  .flock-meta strong { font-size:clamp(24px,3vw,35px); font-weight:400; letter-spacing:-.04em; font-variant-numeric:tabular-nums; }
+  .flock-meta [data-period], .separate { font-size:11px; color:#b7c7c9; }
+  .flock-body { display:grid; grid-template-columns:minmax(0,1.45fr) minmax(280px,1fr); gap:clamp(24px,4vw,60px); padding:24px 0 30px; }
+  .flock-field { position:relative; height:440px; }
+  canvas, .static-flock { position:absolute; inset:0; width:100%; height:100%; }
+  canvas { opacity:0; touch-action:pan-y; }
+  .is-ready canvas { opacity:1; }
+  .is-ready .static-flock { display:none; }
+  .field-corner { position:absolute; top:4px; left:0; font:italic 15px/1.5 Georgia,serif; color:#b5c8ca; pointer-events:none; }
+  .motion-button { position:absolute; bottom:4px; left:0; color:#d6e3e2; border:1px solid #ffffff35; background:#142c38; border-radius:20px; padding:8px 13px; font:inherit; font-size:11px; cursor:pointer; }
+  .motion-button:disabled { cursor:default; color:#b7c7c9; }
+  .selection { min-height:43px; font-size:13px; line-height:1.55; color:#f3dfad; padding-top:15px; }
+  .motion-note { font-size:11px; line-height:1.6; color:#c4d2d1; padding-top:10px; }
+  .rounding-note { font-size:10px; line-height:1.65; color:#9fb4b8; margin-top:3px !important; max-width:390px; }
+  .legend-heading { display:flex; justify-content:space-between; text-transform:uppercase; letter-spacing:.13em; font-size:9px; color:#a6bec1; padding:4px 0 13px; }
+  .flock-legend { padding:0; margin:0; list-style:none; }
+  .flock-legend > li { border-top:1px solid #ffffff1a; border-radius:2px; transition:background .15s; }
+  .flock-legend > li.is-highlighted { background:#ffffff09; }
+  .legend-row { display:flex; align-items:center; gap:11px; text-decoration:none; padding:11px 0; cursor:pointer; list-style:none; }
+  .legend-row::-webkit-details-marker { display:none; }
+  .swatch { flex:0 0 7px; height:7px; border-radius:50%; background:var(--group-color); }
+  .row-copy { flex:1; min-width:0; }
+  .row-name { font-size:12px; line-height:1.35; display:block; color:#ecf0eb; }
+  .row-amount { display:block; font-size:10px; color:#adbec0; margin-top:3px; font-variant-numeric:tabular-nums; }
+  .row-share { flex-shrink:0; font-size:13px; color:var(--group-color); font-variant-numeric:tabular-nums; }
+  .row-arrow { font-size:11px; display:inline-block; width:18px; text-align:right; color:#9eb6bb; }
+  .other-categories { list-style:none; padding:0 0 12px 18px; margin:0; }
+  .other-categories a { display:block; padding:7px 0; font-size:11px; text-decoration:none; }
+  .other-categories span { display:block; color:#b2c5c7; font-size:10px; margin-top:3px; }
+  .scale-note, .adjustment-note { font-size:10px; line-height:1.65; color:#b4c6c7; }
+  .scale-note { padding-top:15px; border-top:1px solid #ffffff24; }
+  .adjustment-note { margin-top:6px !important; }
+  .explore-budget { display:flex; justify-content:space-between; margin-top:23px; padding:13px 0; font-size:12px; text-decoration:none; border-bottom:1px solid #839b9d; }
+  .flock-footer { display:flex; justify-content:space-between; gap:16px; align-items:center; border-top:1px solid #ffffff24; padding-top:20px; font-size:11px; color:#b5c8c9; }
+  .flock-footer nav { display:flex; gap:23px; }
+  .flock-footer a { text-decoration:none; }
+  .flock a:hover { color:#fff; text-decoration:underline; text-underline-offset:4px; }
+  .flock :is(a,button,summary):focus-visible { outline:2px solid #f3dfad; outline-offset:5px; border-radius:3px; }
+  @media (max-width:760px) {
+    .flock { padding:25px 22px; }
+    .flock-header { flex-direction:column; align-items:flex-start; gap:20px; }
+    .flock-controls, .segments { width:100%; }
+    .segments button { flex:1; }
+    .flock-meta { align-items:flex-start; }
+    .flock-meta p { gap:6px; flex-direction:column; }
+    .separate { max-width:110px; text-align:right; line-height:1.6; padding-top:4px; }
+    .flock-body { grid-template-columns:1fr; gap:32px; padding-top:22px; }
+    .flock-field { height:340px; }
+    .selection { min-height:56px; }
+    .row-name { font-size:13px; }
+    .legend-row { padding:13px 0; }
+    .flock-footer { flex-direction:column; align-items:flex-start; }
+  }
+  @media (prefers-reduced-motion:reduce) { .flock-legend > li { transition:none; } }
+</style>
