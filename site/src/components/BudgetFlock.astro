@@ -17,6 +17,15 @@ const budgets = roots.flatMap(root => {
   return [{ root, title: node.name, label: labels[root], total: compact(node.amount_cents), exact: exact(node.amount_cents), period: node.period_label || periods[root], href: href(node), denominator, scale: denominator === node.amount_cents ? `Shares of ${exact(denominator)} in positive budget categories.` : `Shares of ${exact(denominator)} in positive categories, not the ${exact(node.amount_cents)} net budget.`, adjustments: all.filter(n => n.amount_cents < 0).map(n => ({ name: n.name, href: href(n), exact: exact(n.amount_cents) })), rows }];
 });
 const city = budgets[0];
+const staticDots = city ? city.rows.flatMap((row, group) => {
+  const count = allocateParticles(city.rows.map(r => r.amount))[group];
+  const angle = group * Math.PI * 2 / city.rows.length - Math.PI / 2;
+  const x = 360 + Math.cos(angle) * 210, y = 220 + Math.sin(angle) * 125;
+  return Array.from({ length: count }, (_, i) => {
+    const a = i * 2.399963, radius = Math.sqrt((i + .5) / count) * (30 + Math.sqrt(count) * 4);
+    return { x: x + Math.cos(a) * radius, y: y + Math.sin(a) * radius * .72, color: row.color };
+  });
+}) : [];
 ---
 {city && <budget-flock class="flock" data-budgets={JSON.stringify(budgets)}>
   <header class="flock-header">
@@ -27,12 +36,7 @@ const city = budgets[0];
   <div class="flock-body">
     <div class="field-column">
       <div class="flock-field">
-        <svg class="static-flock" viewBox="0 0 720 440" aria-hidden="true">{city.rows.flatMap((row, group) => {
-          const count = allocateParticles(city.rows.map(r => r.amount))[group];
-          const angle = group * Math.PI * 2 / city.rows.length - Math.PI / 2;
-          const x = 360 + Math.cos(angle) * 210, y = 220 + Math.sin(angle) * 125;
-          return Array.from({ length: count }, (_, i) => { const a = i * 2.399963; const radius = Math.sqrt((i + .5) / count) * (30 + Math.sqrt(count) * 4); return <circle cx={x + Math.cos(a) * radius} cy={y + Math.sin(a) * radius * .72} r="2.6" fill={row.color} />; });
-        })}</svg>
+        <svg class="static-flock" viewBox="0 0 720 440" aria-hidden="true">{staticDots.map(dot => <circle cx={dot.x} cy={dot.y} r="2.6" fill={dot.color} />)}</svg>
         <canvas aria-hidden="true"></canvas>
         <span class="field-corner" aria-hidden="true">One budget.<br />Many moving parts.</span>
         <button class="motion-button" type="button" hidden>Pause motion</button>
