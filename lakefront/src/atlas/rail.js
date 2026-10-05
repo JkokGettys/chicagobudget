@@ -75,7 +75,7 @@ export async function renderRail(rail, ctx) {
   if (d.n && d.n !== d.w) parts.push(el('p', { class: 'note' }, d.n));
   for (const c of d.cv || []) if (CAVEAT[c]) parts.push(el('p', { class: 'caveat' }, CAVEAT[c]));
   if (d.x) parts.push(...extras(d.x));
-  if (d.sd && d.sd.length) parts.push(facts(d.sd, n));
+  if (d.sd && d.sd.length) parts.push(facts(d.sd, n, t));
   const srcIdx = [].concat(d.s ?? []).filter((x) => Number.isInteger(x));
   if (srcIdx.length) {
     const box = el('div', { class: 'sources' }, el('h4', null, srcIdx.length > 1 ? 'Sources' : 'Source'));
@@ -165,7 +165,7 @@ function factLine(s, n) {
 
 const SECTION_ORDER = ['Paid so far', 'Last year', 'More facts'];
 
-function facts(list, n) {
+function facts(list, n, token) {
   list = [...list].sort((a, b) => SECTION_ORDER.indexOf(a.sec || 'More facts') - SECTION_ORDER.indexOf(b.sec || 'More facts'));
   const shown = list.slice(0, 6);
   const wrap = el('div', { class: 'facts' }, el('h4', null, 'More facts, not added into this box'));
@@ -177,6 +177,13 @@ function facts(list, n) {
     if (items && items.length) {
       li.append(el('ol', { class: 'items' }, items.slice(0, 5).map((it) =>
         el('li', null, el('span', null, it.is_individual ? 'Individual (name hidden)' : it.vendor || 'Payment'), typeof it.amount === 'number' ? el('b', null, money(it.amount)) : null))));
+    }
+    if (Number.isInteger(s.s)) {
+      const citation = el('div', { class: 'fact-source' });
+      li.append(citation);
+      D.sources().then((all) => {
+        if (token === railToken) citation.replaceChildren(sourceLine(all[s.s]));
+      });
     }
     ul.append(li);
   };

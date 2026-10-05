@@ -74,6 +74,9 @@ export function loadTree() {
     treeLoaded = true;
     contextReady = false;
     return true;
+  }).catch((error) => {
+    treePromise = null;
+    throw error;
   });
   return treePromise;
 }
@@ -92,7 +95,13 @@ export async function details(id) {
   const n = byId.get(id);
   if (!n) return null;
   const file = Math.floor(n.idx / chunkSize);
-  if (!detailFiles.has(file)) detailFiles.set(file, getJSON(`details/${file}.json`).catch(() => ({})));
+  if (!detailFiles.has(file)) {
+    const request = getJSON(`details/${file}.json`).catch(() => {
+      detailFiles.delete(file);
+      return {};
+    });
+    detailFiles.set(file, request);
+  }
   const d = await detailFiles.get(file);
   return d[String(n.idx)] || {};
 }

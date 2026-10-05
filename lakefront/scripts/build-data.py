@@ -109,7 +109,7 @@ def purpose_of(nid):
         if len(parts) < 3:
             return None
         sub = '.'.join(parts[:3])
-        p = 'pensions' if nodes[sub]['name'].startswith('Pensions') else 'benefits'
+        p = 'pensions' if sub == 'cps.pensions.pension' else 'gov' if sub == 'cps.pensions.pay' else 'benefits'
     return p
 
 
@@ -464,10 +464,10 @@ revenue = json.load(open(REPO / 'data/context_revenue_2026.json'))
 AV = 'city.infrastructure-services.chicago-department-of-aviation'
 av_split = collections.Counter()
 for n in nodes.values():
-    if n['is_leaf'] and n['id'].startswith(AV + '.') and n['amount_cents'] > 0:
-        names = ' '.join([n['name']] + [nodes['.'.join(n['id'].split('.')[:i])]['name'] for i in range(4, len(n['id'].split('.')))])
+    if n['is_leaf'] and n['id'].startswith(AV + '.'):
+        names = ' '.join([n['name']] + [nodes['.'.join(n['id'].split('.')[:i])]['name'] for i in range(3, len(n['id'].split('.')))])
         low = names.lower()
-        key = 'airport' if re.search(r"o'hare airport money|midway airport money|airport fund", low) else 'grants' if 'grant' in low else 'other'
+        key = 'airport' if re.search(r"o'hare airport money|midway airport money|airport fund|midway airport|o'hare international airport", low) else 'grants' if 'grant' in low else 'other'
         av_split[key] += n['amount_cents']
 av_total = sum(av_split.values()) or 1
 CPS_SMALL = ['cps.citywide.transportation', 'cps.citywide.food', 'cps.citywide.early-childhood']

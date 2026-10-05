@@ -33,6 +33,7 @@ Node 18 or newer and Python 3.
 cd lakefront
 npm ci
 npm run data      # data/public/2026/site → lakefront/public/data
+npm test          # financial attribution and fetch retry regressions
 npm run dev       # http://127.0.0.1:5179
 npm run build     # static site in dist/
 ```

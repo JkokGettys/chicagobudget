@@ -6,6 +6,7 @@
   "description": "Lakefront: a visual-first, one-page explorer for Chicago's 2026 budgets, built on ChicagoBudget.com's open data.",
   "scripts": {
     "data": "python3 scripts/build-data.py",
+    "test": "python3 -m unittest discover -s tests -p 'financial*.py' && node --test tests/*.test.js",
     "dev": "vite",
     "build": "vite build && node scripts/postbuild.mjs",
     "preview": "vite preview"

@@ -409,7 +409,11 @@ export function initAtlas(core) {
     if (!D.isTreeLoaded()) {
       results.replaceChildren(el('div', { class: 'empty' }, `Loading all ${count(core.meta.nodes)} boxes…`));
       results.classList.add('on');
-      await D.loadTree();
+      try { await D.loadTree(); }
+      catch {
+        if (q.value.trim() === term) results.replaceChildren(el('div', { class: 'empty' }, 'Could not load the budget boxes. Check your connection and try again.'));
+        return;
+      }
       if (q.value.trim() !== term) return;
     }
     const hits = D.search(term, 9);
@@ -419,7 +423,7 @@ export function initAtlas(core) {
     results.classList.add('on');
   }
   function pick(id) { results.classList.remove('on'); q.blur(); go(id, 'jump'); }
-  q.addEventListener('focus', () => D.loadTree());
+  q.addEventListener('focus', () => D.loadTree().catch(() => {}));
   q.addEventListener('input', runSearch);
   q.addEventListener('keydown', (e) => {
     const items = [...results.querySelectorAll('button')];
