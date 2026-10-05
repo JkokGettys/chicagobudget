@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works · Lakefront</title>
+<meta name="description" content="How Lakefront reads Chicago’s 2026 budgets: what the labels mean, money counted twice, how far down the boxes go, and where every number comes from.">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs><symbol id="star" viewBox="-10 -10 20 20"><path fill="currentColor" d="M0,-10 L2.6,-4.5 L8.66,-5 L5.2,0 L8.66,5 L2.6,4.5 L0,10 L-2.6,4.5 L-8.66,5 L-5.2,0 L-8.66,-5 L-2.6,-4.5 Z"/></symbol></defs>
+</svg>
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="/" aria-label="Lakefront home"><svg class="star" aria-hidden="true"><use href="#star"/></svg>Lakefront<span class="tag">Chicago’s 2026 budgets</span></a>
+    <nav aria-label="Sections"><a href="/#top">Overview</a><a href="/#notable">Notable numbers</a><a href="/#explore">Explore</a><a href="/#share">Your share</a><a href="/methods" aria-current="page">How it works</a></nav>
+    <a class="find" href="/#explore" aria-label="Open the explorer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span>Open the explorer</span></a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="mhead">
+    <p class="kicker"><svg class="star" aria-hidden="true"><use href="#star"/></svg>How it works</p>
+    <h1>Reading the numbers, and where they come from</h1>
+    <p class="deck">Lakefront shows the 2026 budgets of three Chicago governments as boxes inside boxes. This page explains what a box is, what its label means, where the data stops, and how this site groups the money.</p>
+    <nav class="mtoc" aria-label="On this page">
+      <a href="#three-budgets">Three budgets</a><a href="#boxes">Boxes</a><a href="#labels">Labels</a><a href="#twice">Counted twice</a><a href="#depth">How far down</a><a href="#gaps">What the data cannot show</a><a href="#groups">How this site groups money</a><a href="#privacy">Privacy</a><a href="#glossary">Glossary</a><a href="#sources">Sources</a><a href="#credit">Credit</a>
+    </nav>
+  </div>
+
+  <section class="msec" id="three-budgets">
+    <h2>Three budgets, not one</h2>
+    <p>The <b>City of Chicago</b>, <b>Chicago Public Schools</b> and the <b>Chicago Park District</b> are separate governments. Each passes its own budget under its own rules. The City and the Park District budget by calendar year; CPS’s fiscal year 2026 runs from July 2025 to June 2026.</p>
+    <p>The front page adds the three together only to show their relative size. Treat the combined figure as three budgets side by side, not one Chicago-wide budget: some money moves between these governments, and their periods differ.</p>
+    <p>A budget is a plan. It says what each government expects to spend, not what it has already spent. Where a box shows actual payments, it is labelled <b>Paid so far</b> with its period.</p>
+  </section>
+
+  <section class="msec" id="boxes">
+    <h2>Boxes inside boxes</h2>
+    <p>Every budget is a tree of boxes. Each box equals the sum of the boxes inside it, to the cent. You can open boxes until you reach one that has no detail inside it. That last box says, in one sentence, why it cannot be opened further.</p>
+    <p>Some boxes subtract money, such as savings targets or corrections. They appear in the list view and below the map, not as tiles, because a tile cannot have a negative size.</p>
+    <p>“More facts” on a box, like last year’s budget, 2025 pay by job title, or payments made so far, are context. They are never added into the box’s amount.</p>
+  </section>
+
+  <section class="msec" id="labels">
+    <h2>What the labels mean</h2>
+    <div class="labels" id="labelList"></div>
+  </section>
+
+  <section class="msec" id="twice">
+    <h2>Money counted twice</h2>
+    <p>The City’s ordinance prints a gross total. Part of it is money that moves from one City fund to another, such as pension payments and reimbursements, so it would be counted twice if added up. This site uses the City’s <b>net</b> total and keeps the counted-twice money in its own branch.</p>
+    <div class="eq" id="reconcile"></div>
+    <p>The ordinance’s single adjustment figure cannot be fully rebuilt from its line items. The part that no line explains is shown as its own box: “Adjustment the budget office makes that no line explains.”</p>
+  </section>
+
+  <section class="msec" id="depth">
+    <h2>How far down the boxes go</h2>
+    <p>The share of each budget’s dollars that ends in a small box, measured by the size of the last box you can reach. “Strict” judges that box by its whole amount. The “build rule” counts a group of budgeted positions as small when the pay for each position is under $1 million.</p>
+    <div class="cov" id="coverage"></div>
+  </section>
+
+  <section class="msec" id="gaps">
+    <h2>What the data cannot show</h2>
+    <p>Some boxes stop while they are still large. That does not mean all the money went to one person or company. It means public records do not show a reliable smaller split. The largest dead ends:</p>
+    <ol class="gaps" id="gapList"></ol>
+  </section>
+
+  <section class="msec" id="groups">
+    <h2>How this site groups the money</h2>
+    <p>Two groupings on Lakefront are not official categories. Both are classifications of existing boxes, and both still add up to the official totals.</p>
+    <p><b>Purposes.</b> Every top-level box of each budget is assigned to one of nine purposes:</p>
+    <table class="ptable"><thead><tr><th scope="col">Purpose</th><th scope="col">What it contains</th><th scope="col" class="n">2026</th></tr></thead><tbody id="purposeRows"></tbody></table>
+    <p><b>What the money pays for.</b> Each final box is classed as pay and benefits for today’s workers, services, supplies and construction, or pensions and debt. Pension and loan payments at the top of each budget count as pensions and debt. Otherwise the class comes from the budget’s own spending-type boxes (such as “Pay for workers” or “Contracts and services”), with a keyword rule where a budget has none. Pension contributions inside a school’s own budget count as pay, because they are part of today’s staff costs.</p>
+    <p><b>Bubbles.</b> The front-page circles are boxes of <span data-meta="bubble_min">about $12 million</span> or more. Smaller boxes are grouped into one circle per parent, and leftovers under <span data-meta="bubble_drawn">$3 million</span> and negative adjustments are not drawn. Group totals still use the official sums.</p>
+  </section>
+
+  <section class="msec" id="privacy">
+    <h2>Privacy</h2>
+    <p>No individual’s name appears on this site. Budgeted positions are job titles and pay rates, not named employees. When a payment goes to a person rather than a business, the upstream data replaces the name with “Individual (name hidden)” and keeps the amount. Pay averages are not shown for job titles with fewer than five people.</p>
+    <p id="individuals"></p>
+  </section>
+
+  <section class="msec" id="glossary">
+    <h2>Glossary</h2>
+    <dl class="gloss" id="glossaryList"></dl>
+  </section>
+
+  <section class="msec" id="sources">
+    <h2>Sources</h2>
+    <p>Every box links to its own source. These are the records the most boxes cite, by government:</p>
+    <div id="sourceLists"></div>
+  </section>
+
+  <section class="msec" id="credit">
+    <h2>Credit and license</h2>
+    <p>Data and writing: <b>ChicagoBudget.com (Getty Hill)</b>, licensed <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, from the open repository <a href="https://github.com/gettty/chicagobudget">gettty/chicagobudget</a>. Lakefront changes the data’s presentation: it regroups boxes into purposes and types, divides amounts per resident, and reformats labels. Some definitions on this page are adapted from ChicagoBudget.com’s glossary and disclosures.</p>
+    <p>Lakefront is an independent design. It is not affiliated with or endorsed by the City of Chicago, Chicago Public Schools, the Chicago Park District or ChicagoBudget.com. Source records keep their publishers’ own terms.</p>
+    <p id="city-notice"><b>City of Chicago data notice.</b> This site provides applications using data that has been modified for use from its original source, www.cityofchicago.org, the official website of the City of Chicago. The City of Chicago makes no claims as to the content, accuracy, timeliness, or completeness of any of the data provided at this site. The data provided at this site is subject to change at any time. It is understood that the data provided at this site is being used at one’s own risk.</p>
+    <p class="fine" id="built"></p>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap cols">
+    <div><h4>Lakefront</h4><p>Chicago’s 2026 budgets, every dollar on one page.</p></div>
+    <div><h4>Data</h4><p>ChicagoBudget.com (Getty Hill), CC BY 4.0.</p></div>
+    <div><h4>More</h4><p><a href="/">Back to the budgets</a></p></div>
+  </div>
+</footer>
+<script type="module" src="/src/methods.js"></script>
+</body>
+</html>
