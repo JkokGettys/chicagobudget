@@ -101,13 +101,18 @@ const staticDots = city ? city.rows.flatMap((row, group) => {
         summary.textContent = row ? `${row.label} · ${row.exact} · ${row.share} of positive categories` : `${budgets[selected].title} · ${budgets[selected].total}. Every dot is an equal share.`;
         draw();
       };
-      const seed = () => {
+      const seed = (preserveMotion = false) => {
+        const previousBoids = boids;
         counts = allocateParticles(budgets[selected].rows.map(r => r.amount));
         targets = counts.map((_, i) => {
           const angle = i * Math.PI * 2 / counts.length - Math.PI / 2;
           return { x: width * .5 + Math.cos(angle) * width * .30, y: height * .50 + Math.sin(angle) * height * .29 };
         });
+        let particleIndex = 0;
         boids = counts.flatMap((count, group) => Array.from({ length: count }, (_, i) => {
+          const previousBoid = previousBoids[particleIndex++];
+          // Reassign equal-value dots, not dollar values. Existing motion carries into the new flock.
+          if (preserveMotion && previousBoid) return { ...previousBoid, group };
           const angle = i * 2.399963 + group, radius = Math.sqrt((i + .5) / count) * Math.min(width * .14, 28 + Math.sqrt(count) * 4);
           return { x: targets[group].x + Math.cos(angle) * radius, y: targets[group].y + Math.sin(angle) * radius * .8, vx: Math.cos(angle) * .6, vy: Math.sin(angle) * .6, group };
         }));
@@ -142,7 +147,7 @@ const staticDots = city ? city.rows.flatMap((row, group) => {
         query<HTMLAnchorElement>('[data-explore]').href = budget.href;
         this.querySelectorAll<HTMLElement>('[data-panel]').forEach(panel => panel.hidden = Number(panel.dataset.panel) !== selected);
         this.querySelectorAll('[data-budget]').forEach(tab => tab.setAttribute('aria-pressed', String(tab === button)));
-        seed(); highlight(-1, true); sync();
+        seed(canRun()); highlight(-1, true); sync();
       }, { signal }));
       this.querySelectorAll<HTMLElement>('.flock-legend > li').forEach(row => {
         const show = () => highlight(Number(row.dataset.group));
