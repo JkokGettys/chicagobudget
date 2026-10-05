@@ -31,7 +31,7 @@ def check(dist: Path) -> None:
     assert files and len(files) < 19_000, f"Static file budget exceeded: {len(files)}"
     redirects = (dist / "_redirects").read_text()
     for gov in ("city", "cps", "parks"):
-        assert f"/{gov}/box/* /box-shell 200" in redirects
+        assert f"/{gov}/box/* /box-shell/ 200" in redirects
     assert (dist / "box-shell" / "index.html").is_file()
     forbidden = (b"data/people/", b"raw/", "\u2014".encode())
     links: set[str] = set()
