@@ -86,7 +86,7 @@
       while(next&&!visited.has(next)&&path.length<24){visited.add(next);const node=await getNode(next);if(!node)break;path.unshift(node);next=node.parent_id??null}
       return roots.includes(path[0]?.id)?path:[];
     };
-    const go=(id:string,historyMode:'push'|'replace'|'none'='push')=>{
+    const go=(id:string,historyMode:'push'|'replace'|'none'='push',retainFocus=historyMode!=='none')=>{
       if(id===current&&historyMode==='push')return;
       current=id;
       if(historyMode!=='none'){
@@ -94,11 +94,11 @@
         if(id)url.searchParams.set('box',id);else url.searchParams.delete('box');
         window.history[historyMode==='push'?'pushState':'replaceState']({},'',url);
       }
-      void render(id);
+      void render(id,retainFocus);
     };
     const makeButton=(node:Node,klass:string)=>{
       const button=el('button');button.type='button';button.className=klass;
-      button.setAttribute('aria-label',`${node.name}, ${money(node.amount_cents)}${node.n_children?', open smaller lines':''}`);
+      // Native contents include the visible share and adjustment status.
       button.addEventListener('click',()=>go(node.id));return button;
     };
     const rootNodes:Node[]=[];
@@ -213,9 +213,9 @@
         });
       }
     };
-    const render=async(id:string)=>{
+    const render=async(id:string,retainFocus=false)=>{
       const version=++renderVersion;renderRoots();
-      if(!id){main.hidden=true;panel.replaceChildren();detail.replaceChildren();status.textContent='';status.classList.add('sr-only');return}
+      if(!id){main.hidden=true;panel.replaceChildren();detail.replaceChildren();status.textContent='';status.classList.add('sr-only');if(retainFocus)rootArea.querySelector<HTMLElement>('.root-option')?.focus({preventScroll:true});return}
       main.hidden=false;panel.replaceChildren();detail.replaceChildren();status.classList.remove('sr-only');status.textContent='Loading budget path…';
       try{
         const path=await pathTo(id);if(version!==renderVersion)return;
@@ -224,6 +224,8 @@
         const step=await renderPanel(selected);if(version!==renderVersion)return;panel.replaceChildren(step);
         await renderDetail(selected,version,path[path.length-2]);if(version!==renderVersion)return;
         status.classList.add('sr-only');status.textContent=`Showing ${selected.name}.`;
+        // Wait past the native Enter activation before focusing the new path.
+        if(retainFocus)requestAnimationFrame(()=>{if(version===renderVersion)crumbArea.querySelector<HTMLElement>('[aria-current="page"]')?.focus({preventScroll:true})});
       }catch{if(version===renderVersion){main.hidden=true;status.classList.remove('sr-only');status.textContent='This line is unavailable. Choose a budget to try again.'}}
     };
     window.addEventListener('popstate',()=>go(new URL(location.href).searchParams.get('box')??'','none'));
