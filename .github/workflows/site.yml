@@ -1,16 +1,14 @@
 name: Site checks
 on:
   pull_request:
-    paths: ['site/**', 'build/export_site.py', 'build/validate_site_data.py', 'tests/check_site_dist.py', '.github/workflows/site.yml']
+    paths: ['site/**', 'build/**', 'data/splits/**', 'data/public/**', 'tests/check_site_dist.py', '.github/workflows/site.yml']
   push:
     branches: [main]
-    paths: ['site/**', 'build/export_site.py', 'build/validate_site_data.py', 'tests/check_site_dist.py', '.github/workflows/site.yml']
+    paths: ['site/**', 'build/**', 'data/splits/**', 'data/public/**', 'tests/check_site_dist.py', '.github/workflows/site.yml']
 permissions:
   contents: read
 jobs:
   site:
-    # Static pages need the checked export, which needs the unpublished input asset.
-    if: vars.CHICAGO_BUDGET_INPUTS_URL != ''
     runs-on: ubuntu-latest
     timeout-minutes: 15
     defaults:
@@ -26,13 +24,8 @@ jobs:
         working-directory: .
       - name: Rebuild and validate site inputs
         working-directory: .
-        env:
-          CHICAGO_BUDGET_INPUTS_URL: ${{ vars.CHICAGO_BUDGET_INPUTS_URL }}
         run: |
-          bash build/fetch_inputs.sh
           bash build/build_all.sh
-          python build/export_site.py
-          python build/validate_site_data.py
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -40,5 +33,6 @@ jobs:
           cache-dependency-path: site/package-lock.json
       - run: npm ci
       - run: npm run check
+      - run: npm test
       - run: npm run build
       - run: python ../tests/check_site_dist.py dist

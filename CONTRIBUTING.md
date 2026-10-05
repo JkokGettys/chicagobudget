@@ -6,7 +6,20 @@ Data contributions fix numbers, add detail or improve explanations. Site contrib
 
 ## Local setup and a split example
 
-Use Python 3.11+, SQLite and `python3 -m pip install -r requirements.txt`. Site work also needs Node 22+. The builders currently need public-source extracts under `raw/` that are not committed. See the root README for this reproducibility limitation. Do not add the local `raw/` or `data/people/` directories wholesale; any publication of source records needs per-file provenance, redistribution and data-quality review. Public-source names are not prohibited from repository data merely because the website omits them.
+Use Python 3.11+, SQLite and Node 22+ for site work. The [2026 public snapshot](data/README.md) contains the pinned raw inputs and roster records; `build/fetch_inputs.sh` checks their hashes and restores them to ignored working paths. A fresh checkout needs no private archive. Never add the entire local `raw/` or `data/people/` directory to a PR. Source records can include names, but website-facing fields must not.
+
+For your first change:
+
+```sh
+python3 -m pip install -r requirements.txt
+bash build/fetch_inputs.sh
+build/build_all.sh
+# For a website change, after the data build:
+cd site && npm ci && npm run check && npm test && npm run build
+cd .. && python3 tests/check_site_dist.py site/dist
+```
+
+Start with a small sourced correction in `data/splits/<gov>/` or a focused change in `site/`. The generated `data/budget.db`, `site/public/data/`, and `site/dist/` are ignored working files. Do not force-add them or the exploratory raw cache. Only update the versioned `data/public/2026/` release when intentionally publishing a new checked dataset, then run `python3 scripts/publish_site_dataset.py` and `python3 tests/check_public_dataset.py` after the site build. Check `git status` and your staged diff before opening a PR.
 
 Find a box with `sqlite3 data/budget.db "select id, amount_cents from nodes where name like '%Overtime%' limit 10;"`. A split file targets one existing box and names its exact expected dollar amount:
 
@@ -25,7 +38,7 @@ Find a box with `sqlite3 data/budget.db "select id, amount_cents from nodes wher
 
 Replace the example id, figures and URL with real public evidence. Amounts are dollars, with cents allowed. A City ordinance line may be targeted by fund, department, authority and account instead. Every piece needs a public source URL (and page where applicable). Add a `why` sentence to an unsplit piece of $10M or more. Pieces cannot exceed the target; the remainder becomes a visible residual. Mismatched expected amounts and invalid splits are logged and skipped, never forced. Use one file per topic.
 
-Run `build/build_all.sh`: the builders check exact parent sums and official root totals, basis and source, explanations for large leaves, unique sibling names, finite amounts and available privacy scans. `build/verify_db.py` checks the finished database again. If the site exporter and validator are present, also run `python3 build/export_site.py` and `python3 build/validate_site_data.py`. For site changes, use `npm ci` and the scripts available in `site/package.json`.
+Run `build/build_all.sh`: the builders check exact parent sums and official root totals, basis and source, explanations for large leaves, unique sibling names, finite amounts and website-display privacy. `build/verify_db.py` and `build/validate_site_data.py` run as part of that build. For site changes, also run the Node checks above. CI rebuilds the public inputs and tests both data and site changes; no CI workflow deploys the site.
 
 ## Ground rules
 
@@ -39,7 +52,7 @@ Run `build/build_all.sh`: the builders check exact parent sums and official root
 
 ## Review and sensitive reports
 
-A maintainer reviews each pull request and checks at least one changed data piece against its source. Include changed box ids, source links and local test results in the PR template. The private roster leak check runs only on the maintainer's machine; CI cannot substitute for it, and merge does not deploy. If a person's name appears on the website, report it privately through a [GitHub security advisory](../../security/advisories/new), not a public issue. The maintainer aims to fix confirmed exposure within a day.
+A maintainer reviews each pull request and checks at least one changed data piece against its source. Include changed box IDs, source links and local test results in the PR template. The website name-leak check uses the published rosters restored by the fetch step and runs in CI; the maintainer also checks the actual deployed site before release. Merge does not deploy. If a person's name appears on the website, report it privately through a [GitHub security advisory](https://github.com/gettty/chicagobudget/security/advisories/new), not a public issue. The maintainer aims to fix confirmed exposure within a day.
 
 ## Contributor agreement
 
