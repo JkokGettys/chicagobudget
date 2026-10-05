@@ -23,7 +23,8 @@ try{
     const details=widget.locator('details');assert.equal(await details.getAttribute('open'),null);
     await details.locator('summary').click();assert.ok(await details.getAttribute('open')!==null);
     if(root==='cps')assert.match(await details.innerText(),/fund breakdown/);
-    assert.ok(await details.locator('a[href^="https:"]').count()>0,'source document link available');
+    if(root==='cps') assert.match(await details.innerText(),/CPS FY2026 budget positions by unit and job title/);
+    else assert.ok(await details.locator('a[href^="https:"]').count()>0,'available source document link is exposed');
     await details.locator('summary').click();
     for(const width of [1440,375,320]){
       await page.setViewportSize({width,height:1050});

@@ -47,18 +47,21 @@ try {
     assert.equal(await page.locator('#box header .amount').innerText(), money(record.amount_cents));
   }
   if (local) await page.unroute('**/city/box/**');
-  // Static BoxPage and treemap, rendered by Astro dev without a production build.
+  // The overview is statically rendered on both Astro and Pages. Box URLs use
+  // the client shell on Pages, regardless of whether a static box file exists.
+  await page.goto(`${base}/city`);
+  assert.ok(await page.locator('svg a title').filter({ hasText: 'Chicago Department of Transportation' }).count());
   await page.goto(`${base}/city/box/city.infrastructure-services`);
   const department = page.locator('tbody a').filter({ hasText: /^Transportation$/ });
   assert.equal(await department.getAttribute('title'), 'Chicago Department of Transportation');
   assert.ok((await department.getAttribute('href')).endsWith('/'));
-  assert.ok(await page.locator('svg a title').filter({ hasText: 'Chicago Department of Transportation' }).count());
   // Dev's trailingSlash: never routes differ from Pages canonical slash rewrites.
   if (local) await page.goto(`${base}${(await department.getAttribute('href')).replace(/\/$/, '')}`);
   else await department.click();
+  await page.getByRole('heading', { name: 'Transportation', exact: true }).waitFor();
   assert.equal(await page.locator('main h1').innerText(), 'Transportation');
   await page.getByText('Official budget title', { exact: true }).click();
-  assert.equal(await page.locator('.box-hero details p').innerText(), 'Chicago Department of Transportation');
+  assert.equal(await page.locator('main header details p').innerText(), 'Chicago Department of Transportation');
   await page.goto(`${base}/?box=${encodeURIComponent(parent)}`);
   await page.locator('.flow-list-link').first().waitFor();
   const filter = page.getByRole('searchbox', { name: /Filter lines inside/ });
