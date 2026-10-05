@@ -52,7 +52,12 @@ try {
   const reduced = await image(); await delay(200);
   check('reduced motion is visually static', reduced === await image());
   await page.emulateMedia({ reducedMotion: 'no-preference' });
-  await page.evaluate(() => scrollTo(0, 0));
+  await page.waitForFunction(() => !document.querySelector('budget-flock .motion-button')?.disabled);
+  await page.evaluate(() => scrollTo({ top: document.body.scrollHeight, behavior: 'instant' }));
+  await delay(150);
+  const offscreen = await image(); await delay(180);
+  check('offscreen canvas stops advancing', offscreen === await image());
+  await page.evaluate(() => scrollTo({ top: 0, behavior: 'instant' }));
   await delay(200);
   if (output) await page.screenshot({ path: join(output, 'james-desktop.png') });
   for (const width of [1024, 800, 768, 375, 320]) {

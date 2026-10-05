@@ -11,7 +11,7 @@ test('largest remainder sums exactly, preserves proportions and resolves ties st
   assert.deepEqual(allocateParticles([3, 1], 240), [180, 60]);
   assert.deepEqual(allocateParticles([1, 1, 1], 10), [4, 3, 3]);
   assert.deepEqual(allocateParticles([999999, 1], 240), [240, 0]);
-  const weights = [460957064000, 326655536000, 284322141400, 184697840500, 110117873300, 100873418100, 85220034000, 143110243000];
+  const weights = [460957064000, 326655536000, 284322141400, 184697840500, 110117873300, 100873418100, 85220034000, 143110243200];
   const result = allocateParticles(weights);
   assert.equal(result.reduce((a, b) => a + b, 0), 240);
   result.forEach((n, i) => assert.ok(Math.abs(n - weights[i] / weights.reduce((a, b) => a + b, 0) * 240) < 1));
