@@ -1,0 +1,16 @@
+---
+import {isPersonnelNode, staffingText, staffingSources} from '../lib/headcount';
+import {staffingIndex} from '../lib/headcountData';
+import {sources} from '../lib/data';
+import {sourceUrl} from '../lib/sources';
+const {id} = Astro.props as {id: string};
+const summary = isPersonnelNode({id}) ? staffingIndex()[id] : undefined;
+const text = summary ? staffingText(summary) : undefined;
+const citations = summary ? staffingSources(summary, sources, sourceUrl) : [];
+---
+{text && <aside class="staffing-count" aria-label="Budgeted staffing"><div>{text.lines.map(line => <p><strong>{line}</strong></p>)}</div><p class="staffing-note">{text.caption}</p><details><summary>How this is counted</summary><p>{text.note}</p>{citations.map(citation => <p>{citation.url ? <a href={citation.url} rel="noopener noreferrer">{citation.label}</a> : citation.label}</p>)}</details></aside>}
+<style is:global>
+.staffing-count:not(:empty){border-left:3px solid var(--accent);padding:.2rem 0 .2rem .8rem;margin:.8rem 0;max-width:75ch}
+.staffing-count p{margin:.2rem 0!important;font-size:.95rem}
+.staffing-count .staffing-note,.staffing-count details{font-size:.85rem;color:var(--muted);line-height:1.45}
+</style>
