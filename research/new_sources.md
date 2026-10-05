@@ -1,6 +1,6 @@
 # New sources: what the other research files did not use
 
-Author: gap-hunter agent (second pass), 2026-10-01. Scope: sources NOT already used in `PLAN.md` or the other `research/*.md` files and not already read by `scripts/*.py`. Downloads are in `raw/gap/` (gitignored). The quick checks behind the "Verified" column are in `scripts/gap_sources.py` (re-runnable, read only, no big downloads).
+Author: gap-hunter agent (second pass), 2026-10-01. Scope: sources not already used in an earlier planning draft or the other `research/*.md` files and not already read by `scripts/*.py`. Downloads are in `raw/gap/` (gitignored). The quick checks behind the "Verified" column are in `scripts/gap_sources.py` (re-runnable, read only, no big downloads).
 
 **Verified** means I fetched the URL or queried the API in this session and looked at the response (status, row counts, or file text). **Not verified** means I only know the link from a page I read, or I could not get at the data. I have not invented any URL. Every URL below comes from a downloaded page, a script, a catalog record, or a fetch I ran.
 
@@ -46,7 +46,7 @@ Rank is by value toward "every node under $1M with public data", then by effort.
 - Effort: S. Join on `title_code` and section code to `v2t2-vajc`. Check the match rate first.
 
 ### 2. Budget history 2011-2025 (verified IDs and row counts via API today)
-`PLAN.md` says "many IDs" but no file lists them and no script reads anything older than 2025. Appropriations ordinance dataset per year (row count):
+Earlier research mentioned many IDs, but no file listed them and no script read anything older than 2025. Appropriations ordinance dataset per year (row count):
 
 | Year | Appropriations | Rows | Positions | Rows |
 |---|---|---:|---|---:|
@@ -190,7 +190,7 @@ From `raw/gap/BudgetData.html`: Budget at a Glance, Workforce Vacancies Report, 
 
 ## 5. Catalog scan method and result
 
-Files: `raw/gap/catalog_all.json` (2,024 assets in the portal catalog) and `catalog_admin_finance.json` (302, "Administration & Finance" category). I compared every 4-4 character dataset id against ids mentioned in `PLAN.md`, `research/*.md` and `scripts/*.py`. Then I filtered unused datasets by name, by description (budget, expenditure, appropriation, spending, "amount paid") and by column names containing amount, cost, payment, paid, fee, fine, salary, budget, expend or award.
+Files: `raw/gap/catalog_all.json` (2,024 assets in the portal catalog) and `catalog_admin_finance.json` (302, "Administration & Finance" category). I compared every 4-4 character dataset id against IDs mentioned in an earlier planning draft, `research/*.md` and `scripts/*.py`. Then I filtered unused datasets by name, by description (budget, expenditure, appropriation, spending, "amount paid") and by column names containing amount, cost, payment, paid, fee, fine, salary, budget, expend or award.
 
 Result: no unused dataset is a *spending ledger* for the City. The only unused ones with dollar columns that touch City spending are ARPA expenditures (row 5), the incentive datasets (row 4), `tnbd-5zz7` reimbursements, and the fines and enforcement sets (row 13). The Payments dataset `s4vu-giwb` has these columns only: amount, contract_number, vendor_name, voucher_number, department_name, check_date. It has **no funding-line or appropriation field**, which is why row 9 (Tableau) matters. Everything else in the portal is operational (permits, 311, crashes), or a saved view of a dataset we use.
 

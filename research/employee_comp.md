@@ -4,9 +4,9 @@ Reproduce: `python3 scripts/people_fetch.py && python3 scripts/people_build_city
 
 ## Decision on names
 
-**Names are stored locally and never published.** The full records with names live in `data/people/` (gitignored, so they are never committed): `city_employees_2026.json`, `cps_positions_2025q4.json`, `parks_positions.json` (no names exist for the Park District), plus `data/people/README.md` with field definitions. The site shows **job titles only**, from three committed files with no names: `data/comp_city_2025.json`, `data/comp_cps.json`, `data/comp_parks.json`. Checked: no roster or payroll name string appears in any committed file.
+**The website omits names; the public source records are not subject to that display rule.** At this snapshot, the full records with names live in `data/people/` (gitignored and not yet committed): `city_employees_2026.json`, `cps_positions_2025q4.json`, `parks_positions.json` (no names exist for the Park District), plus `data/people/README.md` with field definitions. The site shows **job titles only**, from three committed files with no names: `data/comp_city_2025.json`, `data/comp_cps.json`, `data/comp_parks.json`. The fact that these local source extracts are not yet on GitHub does not mean public records must have names removed before publication; provenance, upstream terms and other fields still require review.
 
-**Small-group rule, applied in every committed file.** A department x title group (CPS: unit x job title) with fewer than 5 people is rolled into "Other titles (groups under 5 people)" within its department. Median, mean and p90 are shown only for groups of 5 or more (p90 needs 10). If the rolled-up bucket itself holds fewer than 5 people, the smallest shown titles are pulled in until it has 5, so a subtraction cannot reveal one person. Departments and CPS units with fewer than 5 people have no pay dollars (Police Board, License Appeal Commission, and 44 small CPS units). "Top earner" findings are by title only. Title counts below 5 are folded into an "other" count. No single-person maximum is published anywhere.
+**Small-group rule for the website-facing aggregate files.** A department x title group (CPS: unit x job title) with fewer than 5 people is rolled into "Other titles (groups under 5 people)" within its department. Median, mean and p90 are shown only for groups of 5 or more (p90 needs 10). If the rolled-up bucket itself holds fewer than 5 people, the smallest shown titles are pulled in until it has 5, so a subtraction cannot reveal one person. Departments and CPS units with fewer than 5 people have no pay dollars (Police Board, License Appeal Commission, and 44 small CPS units). "Top earner" findings are by title only. Title counts below 5 are folded into an "other" count. No single-person maximum is published anywhere.
 
 ## 1. Sources and coverage
 
@@ -115,7 +115,7 @@ Pay categories (defined in `meta.definitions` in the file): **regular** (A0005 /
 
 ## 6. Name display
 
-Decision made: **titles only on the site, names stored locally in `data/people/` (gitignored) for analysis.** Groups under 5 people get no per-person statistics and roll into "other titles" within their department or unit. Top earners are reported by title. If this is revisited, note that the source datasets themselves (City roster, CPS roster) are public and name-level, so the choice is about what this site amplifies, not about secrecy.
+Decision made: **titles only on the site; public source data may retain names.** The present local extracts are in `data/people/` (gitignored), but this is a publication-status fact, not a permanent requirement to redact public-source names. Groups under 5 people get no per-person statistics on the site and roll into "other titles" within their department or unit. Top earners are reported by title. The City and CPS source datasets are public and name-level; the display decision is about what this site amplifies, not about secrecy.
 
 ## 7. Files
 

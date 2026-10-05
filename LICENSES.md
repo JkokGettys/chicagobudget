@@ -7,7 +7,7 @@ Copyright (c) 2026 Getty Hill. This project is open: anyone may reuse it under t
 | Part of the repository | License | File |
 |---|---|---|
 | Code: everything under `build/`, `scripts/`, `site/` and any other source code or configuration | MIT | `LICENSE` |
-| Data and writing: `data/` (except `data/people/`, which is not published), the generated database `budget.db`, files under `research/`, documentation, and the text of the website | Creative Commons Attribution 4.0 International (CC BY 4.0) | `LICENSE-DATA` |
+| This project's original data processing, structure, estimates and writing in `data/`, `research/`, documentation and the website | Creative Commons Attribution 4.0 International (CC BY 4.0) | `LICENSE-DATA` |
 
 ## How to give credit (CC BY 4.0)
 
@@ -19,7 +19,7 @@ Say if you changed anything.
 
 ## Public records underneath
 
-The numbers come from public records published by the City of Chicago, Chicago Public Schools, the Chicago Park District and other governments (see `research/` and the Sources page on the site for every source). Facts and government records are not owned by this project, and each source keeps its own terms of use. These licenses cover this project's own work: the cleaning, matching, structure, estimates, code and writing.
+The numbers come from public records published by the City of Chicago, Chicago Public Schools, the Chicago Park District and other governments (see `research/` and the Sources page on the site for every source). Facts and government records are not owned by this project, and each source keeps its own terms of use. These licenses cover this project's own work: the cleaning, matching, structure, estimates, code and writing. Public source records can contain names. The website's choice not to display individuals' names does not change or redact the underlying public records.
 
 ## Name and logo
 

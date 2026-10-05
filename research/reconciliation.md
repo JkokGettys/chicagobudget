@@ -15,7 +15,7 @@ Author: gap-hunter agent, 2026-09-30. Everything here is reproducible: `python3 
 | Budget Recommendations (rec book p. 603; Overview pp. 32 and 34, "$16.6B") | 18,350,767,715 | 1,679,051,626 | 117,145,000 | **16,554,571,089** |
 | **Passed ordinance** (p. 544, Summary G) | **18,668,568,460** | **1,700,089,446** | **125,926,011** | **16,842,553,003** |
 
-Both gross figures are reproduced to the dollar from the open datasets (`6694-f78c` ordinance; `axxr-vais` recommendations, not previously pulled). The "$16.6B" and "$1.80B" quoted in `PLAN.md` and `research/finance_general.md` come from the Overview, which describes the *proposed* budget. Note the $1.80B itself is the sum of transfers ($1,679.1M) and debt proceeds ($117.1M) in that book (Overview p. 34: $1,796.2M). It is not "internal transfers" alone.
+Both gross figures are reproduced to the dollar from the open datasets (`6694-f78c` ordinance; `axxr-vais` recommendations, not previously pulled). The "$16.6B" and "$1.80B" quoted in earlier research and `research/finance_general.md` come from the Overview, which describes the *proposed* budget. Note the $1.80B itself is the sum of transfers ($1,679.1M) and debt proceeds ($117.1M) in that book (Overview p. 34: $1,796.2M). It is not "internal transfers" alone.
 
 **Recommendation:** label the site total "$16.84B (as passed)" and footnote that the Mayor's proposal said $16.6B. Do not force our number to $16.6B. Our $18.67B gross is the right base.
 

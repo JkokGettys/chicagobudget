@@ -6,7 +6,7 @@ Data contributions fix numbers, add detail or improve explanations. Site contrib
 
 ## Local setup and a split example
 
-Use Python 3.11+, SQLite and `python3 -m pip install -r requirements.txt`. Site work also needs Node 22+. The builders currently need public-source extracts under `raw/` that are not committed. See the root README for this reproducibility limitation. Never commit `raw/` or `data/people/`.
+Use Python 3.11+, SQLite and `python3 -m pip install -r requirements.txt`. Site work also needs Node 22+. The builders currently need public-source extracts under `raw/` that are not committed. See the root README for this reproducibility limitation. Do not add the local `raw/` or `data/people/` directories wholesale; any publication of source records needs per-file provenance, redistribution and data-quality review. Public-source names are not prohibited from repository data merely because the website omits them.
 
 Find a box with `sqlite3 data/budget.db "select id, amount_cents from nodes where name like '%Overtime%' limit 10;"`. A split file targets one existing box and names its exact expected dollar amount:
 
@@ -31,7 +31,7 @@ Run `build/build_all.sh`: the builders check exact parent sums and official root
 
 - Every number needs a public source. Never guess a number. If something is our estimate, it must be labeled as an estimate.
 - Write in plain language a 13-year-old can follow.
-- Do not add names of private individuals to anything the website shows.
+- Do not add individuals' names to anything the website shows. This is a presentation rule, not a rule to redact name fields from public-source datasets.
 - Report problems as GitHub issues.
 - Use only public documents and datasets with URLs. Do not scale a number to fit. Prefer official figures; label an estimate `proxy` and explain its method.
 - Never put an individual's name in a box label, note, explanation or side label. Business names are okay. Public source files may contain public-record names, but the site hides individuals.

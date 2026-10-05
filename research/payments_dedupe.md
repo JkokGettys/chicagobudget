@@ -81,7 +81,7 @@ Other pieces that dropped out of 2025 after dedupe: K.L.E.O. contract 232050 ($1
 | Distinct vendors in items | 14,855 | 14,137 | -4.8% |
 | Top 25 vendors, ranked by 2026 YTD | 1,797.2M | 2,184.4M | +21.5% |
 
-`PLAN.md` quotes $7.57B vs $7.77B (-2.5%) for the same months. I did not reproduce that basis. The figures here come straight from the two deduped files and include the $99M lines.
+An earlier estimate quoted $7.57B vs $7.77B (-2.5%) for the same months. I did not reproduce that basis. The figures here come straight from the two deduped files and include the $99M lines.
 
 Top 25 vendors by 2026 YTD ($M, vendor items, names as in the data; "from" means a 2025 base under $5M):
 
